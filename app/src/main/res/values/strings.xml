@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Interview Revision</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">by Ahmet Ince</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Interview Prep Grid Texts-->
+    <string name="topText">Go through each of the projects or components of your resume and ensure that you can talk about them in
+detail. Filling out a grid like this may help:</string>
+    <string name="belowTable">Along the top, as columns, you should list all the major aspects of your resume, including each project, job,
+or activity. Along the side, as rows, you should list the common behavioural questions.
+Study this grid before your interview. Reducing each story to just a couple of keywords may make the grid
+easier to study and recall. You can also more easily have this grid in front of you during an interview without
+it being a distraction.
+</string>
+
+    <!--Behavioural Questions-->
+    <string-array name="behaviouralQuestions">
+        <item>So, tell me about yourself.</item>
+        <item>How would a friend or colleague describe you?</item>
+        <item>What are your strengths?</item>
+        <item>What are your weaknesses?</item>
+        <item>How do you handle a challenge?</item>
+        <item>Tell me about a challenging client-facing situation and how you handled it.</item>
+        <item>Describe a time when you anticipated a problem was coming and you came up with options to solve it.</item>
+        <item>Tell me about a time when you had to manage multiple responsibilities. How did you handle that?</item>
+        <item>Tell me about the toughest decision you have had to make in the past x months.</item>
+        <item>Have you ever made a mistake? How did you handle it? </item>
+        <item>Tell me about how you worked effectively under pressure.</item>
+        <item>Describe a time when you led by example.</item>
+        <item>Give an example of how you worked on a team.</item>
+        <item>What do you do if you disagree with someone at work?</item>
+        <item>Tell me about a time you had to work closely with someone whose personality or work style clashed with yours.</item>
+        <item>Sometimes we have an all-hands-on-deck situation that may require everyone to work extra hours. How would you handle that?</item>
+        <item>What is your biggest professional mistake? How did you handle it?</item>
+        <item>Give me an example of a time when you failed to hit a deadline.</item>
+        <item>Tell me about a time you learned a new skill. How did you approach it and how to did you apply your new learning?</item>
+        <item>What are you most proud of? Why?</item>
+        <item>Give an example of how you set goals.</item>
+        <item>Give an example of a goal you reached and how you achieved it.</item>
+        <item>Tell me about a goal you failed to achieve.</item>
+    </string-array>
+
+    <!--Behavioural Answers -->
+    <string-array name="behaviouralAnswers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

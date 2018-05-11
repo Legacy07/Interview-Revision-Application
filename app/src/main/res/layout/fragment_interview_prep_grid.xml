@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InterviewPrepGridFragment">
+
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/topText"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topText"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="*">
+
+            <!--table created -->
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Common Questions"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Project 1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Project 2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Project n"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Challenges" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Mistakes/ Failures" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Enjoyed" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Leadership" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Conflicts" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="What You'd Do Differently" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+
+                <TextView
+                    android:background="@drawable/rounded_box"
+                    android:padding="3dip"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/belowTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/belowTable"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</ScrollView>
