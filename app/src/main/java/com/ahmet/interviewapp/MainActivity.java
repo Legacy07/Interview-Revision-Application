@@ -77,24 +77,32 @@ public class MainActivity extends AppCompatActivity
             InterviewFragment interviewFragment = new InterviewFragment();
             FragmentManager manager = getSupportFragmentManager();
             //replacing the fragment with the layout
-            manager.beginTransaction().replace(R.id.content_layout, interviewFragment).commit();
+            manager.beginTransaction().replace(R.id.content_layout, interviewFragment).addToBackStack(null).commit();
 
 
         } else if (id == R.id.technical) {
 
         } else if (id == R.id.algorithm) {
 
+        } else if (id == R.id.coding) {
+
         } else if (id == R.id.about) {
 
         } else if (id == R.id.contact) {
 
-        }
-        else if (id == R.id.references) {
+        } else if (id == R.id.references) {
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getSupportActionBar().show();
+
     }
 }

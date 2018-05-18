@@ -31,4 +31,10 @@ public class InterviewPrepGridFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
+
+    }
 }

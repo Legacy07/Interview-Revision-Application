@@ -16,6 +16,10 @@
             android:id="@+id/algorithm"
             android:icon="@drawable/ic_algorithm"
             android:title="Algorithm" />
+        <item
+            android:id="@+id/coding"
+            android:icon="@drawable/ic_coding"
+            android:title="Coding Questions" />
 
     </group>
 

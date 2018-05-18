@@ -36,7 +36,7 @@ public class InterviewFragment extends Fragment {
                 BehaviouralQuestionsFragment behaviouralQuestionsFragment = new BehaviouralQuestionsFragment();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 //replacing the fragment with the layout
-                manager.beginTransaction().replace(R.id.content_layout, behaviouralQuestionsFragment).commit();
+                manager.beginTransaction().replace(R.id.content_layout, behaviouralQuestionsFragment).addToBackStack(null).commit();
             }
         });
 

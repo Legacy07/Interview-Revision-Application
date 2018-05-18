@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/groupBoxinsideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/coloured_box"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/layoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="Behavioural Questions"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/informationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupBoxinsideLayout"
+        android:background="@drawable/square_edittext"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/interviewPrepButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/informationTextView"
+        android:text="Interview Preparation Grid"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

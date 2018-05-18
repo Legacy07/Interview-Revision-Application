@@ -5,29 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".BehaviouralQuestionsFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:gravity="center_horizontal"
-        android:textSize="18sp"
-        android:textColor="@color/colorBlack"
-        android:text="Behavioural questions are asked to get to know your personality, to understand your resume more deeply,
-and just to ease you into an interview. They are important questions and can be prepared for. " />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Interview Preparation Grid"
-        android:id="@+id/interviewPrepButton"
-        android:layout_below="@id/textView"/>
-
     <ListView
         android:id="@+id/behaviouralListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/interviewPrepButton"
-        android:layout_marginTop="10dp" />
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
