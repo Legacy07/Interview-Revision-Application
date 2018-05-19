@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_bar_fragments.TechnicalQuestionsFragment">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/technicalTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+        <!--table created -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/javaButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/ic_java"
+                android:text="Java"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/androidButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/ic_android"
+                android:text="Android"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/csharpButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/ic_c_sharp"
+                android:text="C#"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/htmlButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/ic_html"
+                android:text="HTML"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/phpButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PHP"
+                android:drawableBottom="@drawable/ic_php"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cssButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/ic_css"
+                android:text="CSS"
+                android:textSize="18sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>

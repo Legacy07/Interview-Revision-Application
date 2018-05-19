@@ -34,8 +34,20 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="D:\Desktop\InterviewApp\menu.png" />
-                                      <entry key="outputName" value="ic_menu" />
+                                      <entry key="imageAsset" value="D:\Desktop\InterviewApp\css.png" />
+                                      <entry key="outputName" value="ic_css" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                            <entry key="notification">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="D:\Desktop\InterviewApp\html.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

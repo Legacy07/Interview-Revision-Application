@@ -1,15 +1,15 @@
-package com.ahmet.interviewapp;
+package com.ahmet.interviewapp.Models;
 
 /**
  * Created by Turkish Legacy on 03/08/2017.
  */
 
-public class BehaviouralQuestions {
+public class Questions {
 
     String questions = "";
     int id = 0;
 
-    public BehaviouralQuestions() {
+    public Questions() {
     }
 
     public String getQuestions() {

@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp;
+package com.ahmet.interviewapp.behavioural_questions;
 
 
 import android.content.Intent;
@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,15 +15,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.ahmet.interviewapp.Adaptors.QuestionsListViewAdaptor;
+import com.ahmet.interviewapp.Models.AddQuestions;
+import com.ahmet.interviewapp.InterviewPrepGridFragment;
+import com.ahmet.interviewapp.Models.Questions;
+import com.ahmet.interviewapp.R;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 
 public class BehaviouralQuestionsFragment extends Fragment {
@@ -32,9 +32,9 @@ public class BehaviouralQuestionsFragment extends Fragment {
 
     ListView behaviouraListview;
 
-    ArrayList<BehaviouralQuestions> questionsArrayList = new ArrayList<>();
-    BehaviouralQuestions behaviouralQuestions;
-    BehaviouralQuestionsListViewAdaptor listViewAdaptor;
+    ArrayList<Questions> questionsArrayList = new ArrayList<>();
+    Questions questions;
+    QuestionsListViewAdaptor listViewAdaptor;
 
     AlertDialog alert;
 
@@ -51,9 +51,13 @@ public class BehaviouralQuestionsFragment extends Fragment {
 
         behaviouraListview = (ListView) view.findViewById(R.id.behaviouralListView);
         //initialise Adaptor
-        listViewAdaptor = new BehaviouralQuestionsListViewAdaptor(getActivity(), questionsArrayList);
+        listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), questionsArrayList);
 
-        addQuestions();
+        AddQuestions addQuestions = new AddQuestions();
+        //get the questions from array string
+        String[] array = getResources().getStringArray(R.array.behaviouralQuestions);
+        //add the questions in listview
+        addQuestions.add(getActivity(), questions,questionsArrayList, array, listViewAdaptor );
         behaviouraListview.setAdapter(listViewAdaptor);
 
         behaviouraListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -138,31 +142,7 @@ public class BehaviouralQuestionsFragment extends Fragment {
 
         }
     }
-    //add questions in listview
-    public void addQuestions() {
-        behaviouralQuestions = new BehaviouralQuestions();
-        //without this, it will duplicate itself everytime the user goes back from another fragment
-        questionsArrayList.clear();
-        try {
-            //get the questions from resources
-            String[] array = getResources().getStringArray(R.array.behaviouralQuestions);
 
-            //output the questions in a listview
-            for (int i = 0; i < array.length; i++) {
-                behaviouralQuestions = new BehaviouralQuestions();
-
-                String questions = array[i];
-                //add the questions from array
-                behaviouralQuestions.setQuestions(i + 1 + "- " + questions);
-                questionsArrayList.add(behaviouralQuestions);
-
-            }
-            listViewAdaptor.notifyDataSetChanged();
-        } catch (Exception e) {
-            showMessage("Error", e.getMessage());
-        }
-
-    }
 
     public void showMessage(String title, String Message) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());

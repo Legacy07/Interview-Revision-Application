@@ -1,10 +1,7 @@
-package com.ahmet.interviewapp;
+package com.ahmet.interviewapp.behavioural_questions;
 
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
@@ -12,8 +9,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
+
+import com.ahmet.interviewapp.Models.AddAnswers;
+import com.ahmet.interviewapp.Models.Answers;
+import com.ahmet.interviewapp.Models.Questions;
+import com.ahmet.interviewapp.R;
+import com.ahmet.interviewapp.Adaptors.SliderAdapter;
+
+import java.util.ArrayList;
 
 
 public class BehaviouralSlides extends Fragment implements View.OnClickListener {
@@ -21,6 +25,11 @@ public class BehaviouralSlides extends Fragment implements View.OnClickListener 
     ViewPager viewPager;
     SliderAdapter sliderAdapter;
 
+    ArrayList<Questions> questionsArrayList = new ArrayList<>();
+    ArrayList<Answers> answersArrayList = new ArrayList<>();
+
+    Answers answers;
+    Questions questions;
     int screen = 0;
     Button rightButton, leftButton, centerButton;
 
@@ -35,7 +44,8 @@ public class BehaviouralSlides extends Fragment implements View.OnClickListener 
         View view = inflater.inflate(R.layout.fragment_behavioural_slides, container, false);
 
         viewPager = (ViewPager) view.findViewById(R.id.view_pager);
-        sliderAdapter = new SliderAdapter(getActivity());
+        sliderAdapter = new SliderAdapter(getActivity(), questionsArrayList, answersArrayList);
+
         viewPager.setAdapter(sliderAdapter);
         //on page scrolled
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -54,6 +64,13 @@ public class BehaviouralSlides extends Fragment implements View.OnClickListener 
 
             }
         });
+
+        AddAnswers addAnswers = new AddAnswers();
+        String[] answersArray = getResources().getStringArray(R.array.behaviouralAnswers);
+        String[] questionsArray = getResources().getStringArray(R.array.behaviouralQuestions);
+        //retrieve the answers and add to slide
+        addAnswers.add(getActivity(), answers, questions, answersArrayList, questionsArrayList, answersArray, questionsArray, sliderAdapter  );
+        //load the corresponding slide to the question
         loadSlide();
         leftButton = (Button) view.findViewById(R.id.leftButton);
         rightButton = (Button) view.findViewById(R.id.rightButton);

@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp;
+package com.ahmet.interviewapp.Adaptors;
 
 
 import android.content.Context;
@@ -9,31 +9,33 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.ahmet.interviewapp.Models.Questions;
+import com.ahmet.interviewapp.R;
+
 import java.util.ArrayList;
 
-public class BehaviouralQuestionsListViewAdaptor extends BaseAdapter {
+public class QuestionsListViewAdaptor extends BaseAdapter {
 
-    EditText searchTextVariable;
     Context context;
     //array list for foods class
-    ArrayList<BehaviouralQuestions> behaviouralQuestionsArrayList;
+    ArrayList<Questions> questionsArrayList;
     LayoutInflater inflater;
 
-    public BehaviouralQuestionsListViewAdaptor(Context c, ArrayList<BehaviouralQuestions> behaviouralQuestions) {
+    public QuestionsListViewAdaptor(Context c, ArrayList<Questions> questions) {
         this.context = c;
-        this.behaviouralQuestionsArrayList = behaviouralQuestions;
+        this.questionsArrayList = questions;
     }
 
     //get the size of the arraylist
     @Override
     public int getCount() {
-        return behaviouralQuestionsArrayList.size();
+        return questionsArrayList.size();
     }
 
     //get the items
     @Override
     public Object getItem(int position) {
-        return behaviouralQuestionsArrayList.get(position);
+        return questionsArrayList.get(position);
     }
 
     //get position of the item to get the item
@@ -54,7 +56,7 @@ public class BehaviouralQuestionsListViewAdaptor extends BaseAdapter {
         //textviews initialised
         TextView text = (TextView) convertView.findViewById(R.id.behaviouralTextView);
         //place gathered item into text view to output
-        text.setText(behaviouralQuestionsArrayList.get(position).getQuestions());
+        text.setText(questionsArrayList.get(position).getQuestions());
 
 
         //event handler if clicked

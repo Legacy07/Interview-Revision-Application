@@ -1,10 +1,7 @@
 package com.ahmet.interviewapp;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -14,8 +11,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ahmet.interviewapp.nav_bar_fragments.InterviewFragment;
+import com.ahmet.interviewapp.nav_bar_fragments.TechnicalQuestionsFragment;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    FragmentManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        manager = getSupportFragmentManager();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -75,12 +79,16 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.interview) {
             //open interview fragment
             InterviewFragment interviewFragment = new InterviewFragment();
-            FragmentManager manager = getSupportFragmentManager();
             //replacing the fragment with the layout
             manager.beginTransaction().replace(R.id.content_layout, interviewFragment).addToBackStack(null).commit();
 
 
         } else if (id == R.id.technical) {
+            //open technical questions fragment
+            TechnicalQuestionsFragment technicalQuestionsFragment = new TechnicalQuestionsFragment();
+            //replacing the fragment with the layout
+            manager.beginTransaction().replace(R.id.content_layout, technicalQuestionsFragment).addToBackStack(null).commit();
+
 
         } else if (id == R.id.algorithm) {
 

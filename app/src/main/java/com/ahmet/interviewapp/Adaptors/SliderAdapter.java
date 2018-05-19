@@ -1,45 +1,44 @@
-package com.ahmet.interviewapp;
+package com.ahmet.interviewapp.Adaptors;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.ahmet.interviewapp.Models.Questions;
+import com.ahmet.interviewapp.Models.Answers;
+import com.ahmet.interviewapp.R;
+
+import java.util.ArrayList;
 
 public class SliderAdapter extends PagerAdapter {
 
     Context context;
     LayoutInflater layoutInflater;
 
-    String[] behaviouralAnswersArray;
-    String[] behaviouralQuestionsArray;
+    ArrayList<Answers> answersList;
+    ArrayList<Questions> questionsList;
 
 
-    public SliderAdapter(Context context) {
+    public SliderAdapter(Context context, ArrayList<Questions> questions, ArrayList<Answers> answers) {
         this.context = context;
-        behaviouralAnswersArray = context.getResources().getStringArray(R.array.behaviouralAnswers);
-        behaviouralQuestionsArray = context.getResources().getStringArray(R.array.behaviouralQuestions);
+        this.questionsList = questions;
+        this.answersList = answers;
 
     }
 
     @Override
     public int getCount() {
-        return behaviouralAnswersArray.length;
+        return answersList.size();
     }
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view == (ScrollView) object;
+        return view == (RelativeLayout) object;
     }
 
     @NonNull
@@ -51,8 +50,8 @@ public class SliderAdapter extends PagerAdapter {
         TextView answersTextView = (TextView) view.findViewById(R.id.behaviouralslideTextview);
         TextView questionsTextView = (TextView) view.findViewById(R.id.behaviouralslideQuestionsTextview);
 
-        answersTextView.setText(behaviouralAnswersArray[position]);
-        questionsTextView.setText(position + 1 + "- " + behaviouralQuestionsArray[position]);
+        answersTextView.setText((CharSequence) answersList.get(position).getAnswers());
+        questionsTextView.setText(position + 1 + "- " + questionsList.get(position).getQuestions());
 
         container.addView(view);
         return view;
@@ -61,6 +60,6 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        container.removeView((ScrollView) object);
+        container.removeView((RelativeLayout) object);
     }
 }
