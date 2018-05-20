@@ -1,6 +1,9 @@
 package com.ahmet.interviewapp.Models;
 
+import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 
 import com.ahmet.interviewapp.Adaptors.SliderAdapter;
@@ -56,4 +59,39 @@ public class AddAnswers {
             Log.d("Slider Error", e.getMessage());
         }
     }
+
+    //go to next slide
+    public void loadNextSlide(ViewPager viewPager, SliderAdapter sliderAdapter) {
+
+        int nextSlide = viewPager.getCurrentItem() + 1;
+
+        if (nextSlide < sliderAdapter.getCount()) {
+
+            viewPager.setCurrentItem(nextSlide);
+        } else {
+            viewPager.setCurrentItem(0);
+        }
+    }
+
+    //go to previous slide
+    public void loadPreviousSlide(ViewPager viewPager, SliderAdapter sliderAdapter) {
+        int previousSlide = viewPager.getCurrentItem() - 1;
+
+        if (previousSlide < sliderAdapter.getCount()) {
+
+            viewPager.setCurrentItem(previousSlide);
+        }
+    }
+
+    //load the initial slide from the clicked list item
+    public void loadSlide(Activity activity, SliderAdapter sliderAdapter, ViewPager viewPager) {
+        //get the position
+        Bundle bundle = activity.getIntent().getExtras();
+        int pos = bundle.getInt("Position");
+        //set the current position
+        if (pos < sliderAdapter.getCount()) {
+            viewPager.setCurrentItem(pos);
+        }
+    }
+
 }

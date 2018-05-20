@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".behavioural_questions.BehaviouralAnswers">
+    tools:context=".technical_questions.JavaTechnicalAnswers">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/view_pager"
+        android:id="@+id/javaViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -15,14 +14,14 @@
     </android.support.v4.view.ViewPager>
 
     <Button
-        android:id="@+id/rightButton"
+        android:id="@+id/javaRightButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:background="@drawable/ic_right" />
     <Button
-        android:id="@+id/centerButton"
+        android:id="@+id/javaCenterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -30,10 +29,11 @@
         android:background="@drawable/ic_menu" />
 
     <Button
-        android:id="@+id/leftButton"
+        android:id="@+id/javaLeftButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:background="@drawable/ic_left" />
+
 </RelativeLayout>

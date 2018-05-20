@@ -20,7 +20,7 @@ import com.ahmet.interviewapp.Adaptors.SliderAdapter;
 import java.util.ArrayList;
 
 
-public class BehaviouralSlides extends Fragment implements View.OnClickListener {
+public class BehaviouralAnswers extends Fragment implements View.OnClickListener {
 
     ViewPager viewPager;
     SliderAdapter sliderAdapter;
@@ -28,12 +28,13 @@ public class BehaviouralSlides extends Fragment implements View.OnClickListener 
     ArrayList<Questions> questionsArrayList = new ArrayList<>();
     ArrayList<Answers> answersArrayList = new ArrayList<>();
 
+    AddAnswers addAnswers;
     Answers answers;
     Questions questions;
     int screen = 0;
     Button rightButton, leftButton, centerButton;
 
-    public BehaviouralSlides() {
+    public BehaviouralAnswers() {
     }
 
 
@@ -65,17 +66,20 @@ public class BehaviouralSlides extends Fragment implements View.OnClickListener 
             }
         });
 
-        AddAnswers addAnswers = new AddAnswers();
+        addAnswers = new AddAnswers();
+        //get the string arrays
         String[] answersArray = getResources().getStringArray(R.array.behaviouralAnswers);
         String[] questionsArray = getResources().getStringArray(R.array.behaviouralQuestions);
         //retrieve the answers and add to slide
-        addAnswers.add(getActivity(), answers, questions, answersArrayList, questionsArrayList, answersArray, questionsArray, sliderAdapter  );
+        addAnswers.add(getActivity(), answers, questions, answersArrayList, questionsArrayList, answersArray, questionsArray, sliderAdapter);
         //load the corresponding slide to the question
-        loadSlide();
+        addAnswers.loadSlide(getActivity(), sliderAdapter, viewPager);
+
+        //initialise buttons
         leftButton = (Button) view.findViewById(R.id.leftButton);
         rightButton = (Button) view.findViewById(R.id.rightButton);
         centerButton = (Button) view.findViewById(R.id.centerButton);
-
+        //set click listener on buttons
         leftButton.setOnClickListener(this);
         rightButton.setOnClickListener(this);
         centerButton.setOnClickListener(this);
@@ -90,11 +94,11 @@ public class BehaviouralSlides extends Fragment implements View.OnClickListener 
 
         switch (view.getId()) {
             case R.id.rightButton:
-                loadNextSlide();
+                addAnswers.loadNextSlide(viewPager, sliderAdapter);
 
                 break;
             case R.id.leftButton:
-                loadPreviousSlide();
+                addAnswers.loadPreviousSlide(viewPager, sliderAdapter);
                 break;
             case R.id.centerButton:
                 BehaviouralQuestionsFragment behaviouralQuestionsFragment = new BehaviouralQuestionsFragment();
@@ -104,38 +108,6 @@ public class BehaviouralSlides extends Fragment implements View.OnClickListener 
                 break;
         }
 
-    }
-
-    //go to next slide
-    private void loadNextSlide() {
-
-        int nextSlide = viewPager.getCurrentItem() + 1;
-
-        if (nextSlide < sliderAdapter.getCount()) {
-
-            viewPager.setCurrentItem(nextSlide);
-        }
-    }
-
-    //go to previous slide
-    private void loadPreviousSlide() {
-        int previousSlide = viewPager.getCurrentItem() - 1;
-
-        if (previousSlide < sliderAdapter.getCount()) {
-
-            viewPager.setCurrentItem(previousSlide);
-        }
-    }
-
-    //load the initial slide from the clicked list item
-    private void loadSlide() {
-        //get the position
-        Bundle bundle = getActivity().getIntent().getExtras();
-        int pos = bundle.getInt("Position");
-        //set the current position
-        if (pos < sliderAdapter.getCount()) {
-            viewPager.setCurrentItem(pos);
-        }
     }
 
     @Override

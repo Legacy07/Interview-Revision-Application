@@ -64,10 +64,10 @@ public class BehaviouralQuestionsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 //open slides when clicked on a list item
-                BehaviouralSlides behaviouralSlides = new BehaviouralSlides();
+                BehaviouralAnswers behaviouralAnswers = new BehaviouralAnswers();
 
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_layout, behaviouralSlides).addToBackStack(null).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_layout, behaviouralAnswers).addToBackStack(null).commit();
                 //send the position of the item so it opens the corresponding slide to the question
                 Bundle bundle = new Bundle();
                 bundle.putInt("Position", position);

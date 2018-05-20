@@ -1,8 +1,10 @@
 package com.ahmet.interviewapp.technical_questions;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -53,15 +55,15 @@ public class JavaTechnicalQuestionsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 //open slides when clicked on a list item
-//                BehaviouralSlides behaviouralSlides = new BehaviouralSlides();
-//
-//                FragmentManager fragmentManager = getFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.content_layout, behaviouralSlides).addToBackStack(null).commit();
-                //send the position of the item so it opens the corresponding slide to the question
-//                Bundle bundle = new Bundle();
-//                bundle.putInt("Position", position);
-//                Intent intent = getActivity().getIntent();
-//                intent.putExtras(bundle);
+                JavaTechnicalAnswers javaTechnicalAnswers = new JavaTechnicalAnswers();
+
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_layout, javaTechnicalAnswers).addToBackStack(null).commit();
+//                send the position of the item so it opens the corresponding slide to the question
+                Bundle bundle = new Bundle();
+                bundle.putInt("Position", position);
+                Intent intent = getActivity().getIntent();
+                intent.putExtras(bundle);
             }
         });
 
@@ -70,16 +72,6 @@ public class JavaTechnicalQuestionsFragment extends Fragment {
 
         return view;
     }
-
-
-    public void showMessage(String title, String Message) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setCancelable(true);
-        builder.setTitle(title);
-        builder.setMessage(Message);
-        builder.show();
-    }
-
 
     @Override
     public void onResume() {
