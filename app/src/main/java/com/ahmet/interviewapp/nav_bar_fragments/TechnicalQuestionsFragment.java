@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.ahmet.interviewapp.R;
+import com.ahmet.interviewapp.technical_questions.AndroidTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.technical_questions.JavaTechnicalQuestionsFragment;
 
 
@@ -68,6 +69,8 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
                 break;
 
             case R.id.androidButton:
+                AndroidTechnicalQuestionsFragment androidTechnicalQuestionsFragment = new AndroidTechnicalQuestionsFragment();
+                manager.beginTransaction().replace(R.id.content_layout, androidTechnicalQuestionsFragment).addToBackStack(null).commit();
 
                 break;
             case R.id.csharpButton:

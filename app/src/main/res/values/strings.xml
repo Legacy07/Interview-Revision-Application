@@ -666,6 +666,9 @@
         <item>
             What are static initializers and when would you use them?
         </item>
+        <item>
+            What is serialization? How do you implement it?
+        </item>
     </string-array>
 
     <!--Java Technical Answers-->
@@ -1634,5 +1637,909 @@
 
         </item>
     </string-array>
+
+    <!--Android Technical Questions-->
+    <string-array name="androidTechnicalQuestions">
+        <item>
+            Why did you become an Android developer? What are some of the advantages of the Android platform?
+        </item>
+        <item>
+            What are the latest Android versions? The most important Oreo new features?
+        </item>
+        <item>
+            What Is the Google Android SDK?
+        </item>
+        <item>
+            What is the Android Architecture?
+        </item>
+        <item>
+            Describe the Android Framework.
+        </item>
+        <item>
+             What is AAPT?
+        </item>
+        <item>
+            Mention Native Android Actions?
+        </item>
+        <item>
+            Describe Activities.
+        </item>
+        <item>
+             What do you know about Material design?
+        </item>
+        <item>
+            What’s the difference between Dialog and AlertDialog in Android?
+        </item>
+        <item>
+            What’s the difference between FrameLayout, GridLayout, ConstraintLayout, LinearLayout and RelativeLayout and which has better performance?
+        </item>
+        <item>
+            What are Intents and Describe three common use cases for using an Intent.
+        </item>
+        <item>
+            Where should you use implicit and explicit intent?
+        </item>
+        <item>
+            What is the function of an intent filter?
+        </item>
+        <item>
+            What are containers?
+        </item>
+        <item>
+             What do you think are some disadvantages of Android?
+        </item>
+        <item>
+            What are the four essential states of an activity?
+        </item>
+        <item>
+            What are the seven lifecycle methods of Android activity and what is their purpose?
+        </item>
+        <item>
+            The last callback in the lifecycle of an activity is onDestroy().
+            The system calls this method on your activity as the final signal that your activity instance is being completely
+            removed from the system memory. Usually, the system will call onPause() and onStop() before calling onDestroy().
+            Describe a scenario, though, where onPause() and onStop() would not be invoked.
+        </item>
+        <item>
+            What is the importance of settings permissions in app development?
+        </item>
+        <item>
+            Enumerate the three key loops when monitoring an activity.
+        </item>
+        <item>
+            What is the difference between a fragment and an activity? Explain the relationship between the two.
+        </item>
+        <item>
+            Which method is called only once in a fragment life cycle?
+        </item>
+        <item>
+            When is the onStop() method invoked?
+        </item>
+        <item>
+            What are the different states wherein a process is based?
+        </item>
+        <item>
+            How to communicate between fragments?
+        </item>
+        <item>
+            What is ANR, When does it occur and How can it be prevented?
+        </item>
+        <item>
+            What role does Dalvik play in Android development?
+        </item>
+        <item>
+            What is the AndroidManifest.xml?
+        </item>
+        <item>
+            What is AIDL and What data types are supported?
+        </item>
+        <item>
+            What is the difference between foreground and visible lifetime?
+        </item>
+        <item>
+            What is the difference between a regular bitmap and a nine-patch image?
+        </item>
+        <item>
+            How many types we can store data in Android Phone, which is better approaches
+            in SharedPreferences and SQLite to save small data or large data ?
+        </item>
+        <item>
+            What is SQLite? How does it differ from client-server database management systems?
+        </item>
+        <item>
+            What is DDMS and what can it do?
+        </item>
+        <item>
+            What is a ContentProvider and what is it typically used for?
+        </item>
+        <item>
+            Under what condition could the code sample crash your application? How would you modify the code to avoid this potential problem?
+            Explain your answer.
+        </item>
+        <item>
+            Suppose that you are starting a service in an Activity as follows:
+            \nIntent service = new Intent(context, MyService.class);
+            \nstartService(service);
+            \nwhere MyService accesses a remote server via an Internet connection.
+            \nIf the Activity is showing an animation that indicates some kind of progress, what issue might you encounter and
+            how could you address it?
+        </item>
+        <item>
+            What is the difference between Service, IntentService, Thread and AsyncTask? How is each used?
+        </item>
+        <item>
+            How to run the service even after killing the application in android ?
+        </item>
+        <item>
+            Normally, in the process of carrying out a screen reorientation, the Android platform tears down the foreground activity
+            and recreates it, restoring each of the view values in the activity’s layout.
+            \nIn an app you’re working on, you notice that a view’s value is not being restored after screen reorientation.
+            What could be a likely cause of the problem that you should verify, at a minimum, about that particular view?
+        </item>
+        <item>
+            What is the relationship between the life cycle of an AsyncTask and an Activity?
+            What problems can this result in? How can these problems be avoided?
+        </item>
+        <item>
+            What is difference between Serializable and Parcelable ? Which is best approach in Android ?
+        </item>
+        <item>
+            What are "launch modes"? What are the two mechanisms by which they can be defined? What specific types of
+            launch modes are supported?
+        </item>
+        <item>
+            What is a broadcast receiver?
+        </item>
+        <item>
+            When dealing with multiple resources, which one takes precedence?
+        </item>
+
+    </string-array>
+
+    <!--Android Technical Answers -->
+    <string-array name="androidTechnicalAnswers">
+        <!--Why did you become an android developer? what are some of the advantages of the Android platform?-->
+        <item>
+            You want a developer who really knows how to play to the strengths of your chosen platform.
+            Some key advantages of Android are listed below for your convenience.
+            \n\n&#8226; Open Source: No licenses, no distribution or development fees.
+            \n\n&#8226; DVM (Dalvik Virtual Machine): DVM is a highly optimized virtual machine for mobile devices.
+            \n\n&#8226; Platform Diversity: Since Android is open-source, it has been adopted by a wide range of manufacturers of mobile devices.
+            \n\n&#8226; Experience with Java: Java is the language of choice for Android app development.
+            Those who already have years of experience in Java will feel right at home developing for Android.
+        </item>
+        <!--What are the latest Android versions? The most important Oreo new features?-->
+        <item>
+            Android Versions with Code names From 2015 which are supported by Google.
+            \n\n - October 2015: Marshmallow 6.0 - 6.0.1, API level 23
+            \n\n - August 2016: Nougat 7.0 - 7.1.2, API level 24 - 25
+            \n\n - August 2017: Oreo 8.0 - 8.1, API level 26 - 27
+            \n\n - May 2018: Android P (Beta) - 9, API level 28
+
+            \n\nNoticeable Features:
+
+            \n\n&#8226; Power Saving:
+            \nFor one, Google has put automatic limits on background app activities in the latest version of Android.
+            This means that the operating system will specifically limit background usage including broadcasts, background services,
+            and location updates. This translates to less energy consumption by apps when you are not actively using them and longer
+            battery life as a result.
+
+            \n\n&#8226; Better and more Secure Apps:
+            \nGoogle is now very active in nudging developers towards optimizing their apps. Google Play Protect is a background service
+            that will quietly analyze the behavior of apps in an effort to detect malware and, if found, automatically remove it from
+            your device and from the Play Store itself (exactly how that part works is still a bit fuzzy right now).
+            \nGoogle is also being a bit stricter on developers when it comes to stability and performance.
+            If the app falls in the bottom 25 percent, the dev will get a warning and if there are no improvements,
+            it might result in the app being pulled off the Google Play Store.
+
+            \n\n&#8226; Preventing Boot Loops:
+            \nThis is a great feature to be introduced in the new Android 8.0 Oreo. Rescue Party is a feature that helps prevent boot loops.
+            Boot loop, if you are unfamiliar with the term, is what happens when the device starts up and restarts immediately over and over.
+            \nWhen core systems are not running well, Android will take notice of that and try to return them to their default states.
+            If that doesn’t work, it will reboot automatically in the Recovery Mode and provide the option of a factory reset as a last
+            ditch effort.
+
+            \n\n&#8226; Wi-Fi Aware:
+            \nCompatible smartphones will be able to use Neighbor Awareness Networking and communicate with nearby devices without an
+            internet connection.
+            \n"Wi-Fi Aware continuously discovers other devices within a user’s Wi-Fi range prior to association, making it easy to find
+            nearby information and services available that match preferences set by the user. Wi-Fi Aware devices bring users a more
+            interesting, relevant, and productive mobility experience. An individual in a subway station can connect to a person within
+            proximity to play a game, while simultaneously receiving train schedule updates without the need for an internet connection.
+            Co-workers on a lunch break can establish peer-to-peer connections to share photos, while also maintaining a connection to
+            the company network.
+            \nWi-Fi Aware is a key enabler of a truly personalized social, local, and mobile experience and works well in crowded environments.
+            Wi-Fi Aware is poised for mass adoption, with native support available in the Android Oreo operating system."
+
+            \n\n&#8226; Google Autofill:
+            \nGoogle resolves this annoyance by bringing Autofill password management to Android. This feature allows you to manage all
+            of your passwords in a single place, and will result in an easier and more secure way to log into your accounts.
+            And the best part is that it syncs across devices, so if you’ve used Google Autofill while browsing the internet with Chrome,
+            you’ll have access to all that log in information via your mobile device, too, as long as you’re using the same Google Account.
+
+            \n\n&#8226; For developer features, check https://developer.android.com/about/versions/oreo/android-8.0.
+
+        </item>
+        <!--What is the Google Android SDK?-->
+        <item>
+            The Google Android SDK is a toolset that developers need in order to write apps on Android enabled devices.
+            It contains a graphical interface that emulates an Android driven handheld environment, allowing them to test
+            and debug their codes.
+        </item>
+        <!--What is the Android Architecture?-->
+        <item>
+          The Android software stack is typically divided into the five main components detailed below.
+            \n\n &#8226; Linux Kernel: The base layer of an application that directly interfaces with the device hardware - this is the level
+            that deals with hardware drivers like the camera, keypad, and display.
+            \n\n &#8226; Native Libraries: Resting on top of the Linux Kernel are a set of open-source libraries,
+            including the SQLite database, libc, and the WebKit browser engine.
+            \n\n &#8226; Android Runtime: The Dalvik Virtual Machine is in the same level as the Native Libraries and allows
+            every Android app to run its own processes.
+            \n\n &#8226; Application Framework: The next layer up provides higher-level services in the form of Java classes to
+            applications on the device. The key services to know are the Activity Manager, Content Providers, Resource Manager,
+            Notifications Manager, and the View System.
+            \n\n &#8226; Applications: The top layer is the Android App itself. This is the level where applications are actually
+            installed, and the one developers are most familiar with.
+        </item>
+        <!--Describe the Android Framework?-->
+        <item>
+            The Android Framework is an important aspect of the Android Architecture. Here you can find all the classes and methods
+            that developers would need in order to write applications on the Android environment.
+        </item>
+        <!--What is AAPT?-->
+        <item>
+            AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with
+            zip-compatible archives, which includes creating, extracting as well as viewing its contents.
+            \nSo It is the default tool of the Android SDK to pack all classes and resources in an APK file.
+        </item>
+        <!--Mention Native Android actions?-->
+        <item>
+            The following non-comprehensive list shows some of the native actions available as static string constants in the Intent class.
+            When creating implicit Intents you can use these actions, called Activity Intents, to start Activities and sub-Activities
+            within your own applications.
+
+            \n\n - action_answer: Opens an Activity that handles incoming calls. Currently this is handled by the native in-call screen.
+
+            \n\n - action_call: Brings up a phone dialer and immediately initiates a call using the number supplied in the Intent URI.
+            Generally it's considered better form to use action_dial if possible.
+
+            \n\n - action_delete: Starts an Activity that lets you delete the data specified at the Intent's data URI.
+
+            \n\n - action_dial Brings up a dialer application with the number to dial pre-populated from the Intent URI.
+            By default this is handled by the native Android phone dialer. The dialer can normalize most number schemas:
+            for example, tel:555-1234 and tel:(212) 555 1212 are both valid numbers.
+
+            \n\n - action_edit Requests an Activity that can edit the data at the specified Intent URI.
+
+            \n\n - action_insert Opens an Activity capable of inserting new items into the Cursor specified in the Intent URI.
+            When called as a sub-Activity it should return a URI to the newly inserted item.
+
+            \n\n - action_pick Launches a sub-Activity that lets you pick an item from the Content Provider specified by the Intent URI.
+            When closed it should return a URI to the item that was picked. The Activity launched depends on the data being picked:
+            for example, passing content://contacts/people will invoke the native contacts list.
+
+            \n\n - action_search Launches the Activity used for performing a search. Supply the search term as a string in the Intent's
+            extras using thffiearchManager.QUERY key.
+
+            \n\n - action_sendto Launches an Activity to send a message to the contact specified by the Intent URI.
+
+            \n\n - action_send Launches an Activity that sends the data specified in the Intent. The recipient contact needs to be
+            selected by the resolved Activity. Use setType to set the MIME type of the transmitted data.
+
+        </item>
+        <!--Describe Activities.-->
+        <item>
+            An activity is a single, focused thing that the user can do. Almost all activities interact with the user, so the Activity class
+            takes care of creating a window for you in which you can place your UI with setContentView(View).
+            \nWhile activities are often presented to the user as full-screen windows, they can also be used in other ways:
+            as floating windows (via a theme with windowIsFloating set) or embedded inside of another activity (using ActivityGroup).
+            There are two methods almost all subclasses of Activity will implement:
+
+            \n\n &#8226; onCreate(Bundle) is where you initialize your activity.
+            Most importantly, here you will usually call setContentView(int) with a layout resource defining your UI, and using
+            findViewById(int) to retrieve the widgets in that UI that you need to interact with programmatically.
+            \n\n &#8226; onPause() is where you deal with the user leaving your activity. Most importantly,
+            any changes made by the user should at this point be committed (usually to the ContentProvider holding the data).
+            \n\n To be of use with Context.startActivity(), all activity classes must have a corresponding &lt;activity&gt;
+            declaration in their package's AndroidManifest.xml.
+
+        </item>
+        <!--What do you know about Material Design-->
+        <item>
+            Material design is a comprehensive guide for visual, motion, and interaction design across platforms and devices.
+            To use material design in Android apps, follow the guidelines and
+            use the new components and styles available in the material design support library.
+            \n\nAndroid provides the following features to help you build material design apps:
+
+            \n\n &#8226; A material design app theme to style all your UI widgets
+            \n\n &#8226; Widgets for complex views such as lists and cards
+            \n\n &#8226; New APIs for custom shadows and animations
+
+        </item>
+        <!--What's the difference between Dialog and AlertDialog Android?-->
+        <item>
+            Dialogs in Android are used to shows alerts for making decisions or to edit a single value.
+            But there are some differences between an AlertDialog and a BasicDialog.
+            \nIn an AlertDialog you always want to show a message and at least one Button for user interaction.
+            In a BasicDialog you have a custom view to a TextView or something more complex.
+            \n\nFurthermore AlertDialog is derived from Dialog and provides additional functionality in terms of
+            Dialog Title, Icon, 3 lines of message you can display to the user.
+            It also provides for lists, checkboxes etc. So you can decide which one to choose yourself.
+        </item>
+        <!--What’s the difference between FrameLayout, GridLayout, ConstraintLayout, LinearLayout and RelativeLayout
+        and which has better performance?-->
+        <item>
+            &#8226; ConstraintLayout: ConstraintLayout allows you to create large and complex layouts with a flat view hierarchy
+            (no nested view groups). It's similar to RelativeLayout in that all views are laid out according to relationships
+            between sibling views and the parent layout, but it's more flexible than RelativeLayout and easier to use with Android
+            Studio's Layout Editor.
+            \nAll the power of ConstraintLayout is available directly from the Layout Editor's visual tools, because the layout API
+            and the Layout Editor were specially built for each other. So you can build your layout with ConstraintLayout entirely by
+            drag-and-dropping instead of editing the XML.
+
+            \n\n&#8226; FrameLayout: FrameLayout is designed to block out an area on the screen to display a single item. Generally,
+            FrameLayout should be used to hold a single child view, because it can be difficult to organize child views in a way that's
+            scalable to different screen sizes without the children overlapping each other. You can, however, add multiple children to a
+            FrameLayout and control their position within the FrameLayout by assigning gravity to each child, using the android:layout_gravity
+            attribute.
+            \nChild views are drawn in a stack, with the most recently added child on top. The size of the FrameLayout is the size of
+            its largest child (plus padding), visible or not (if the FrameLayout's parent permits). Views that are GONE are used for
+            sizing only if setConsiderGoneChildrenWhenMeasuring() is set to true.
+
+            \n\n&#8226; GridLayout: A layout that places its children in a rectangular grid.
+            \nThe grid is composed of a set of infinitely thin lines that separate the viewing area into cells.
+            Throughout the API, grid lines are referenced by grid indices. A grid with N columns has N + 1 grid indices that run
+            from 0 through N inclusive. Regardless of how GridLayout is configured, grid index 0 is fixed to the leading edge of the
+            container and grid index N is fixed to its trailing edge (after padding is taken into account).
+
+            \n\n&#8226; LinearLayout: LinearLayout is a view group that aligns all children in a single direction,
+            vertically or horizontally. You can specify the layout direction with the android:orientation attribute.
+            \nAll children of a LinearLayout are stacked one after the other, so a vertical list will only have one child per row,
+            no matter how wide they are, and a horizontal list will only be one row high (the height of the tallest child, plus padding).
+            A LinearLayout respects margins between children and the gravity (right, center, or left alignment) of each child.
+
+            \n\n&#8226; RelativeLayout: RelativeLayout is a view group that displays child views in relative positions.
+            The position of each view can be specified as relative to sibling elements (such as to the left-of or below another view)
+            or in positions relative to the parent RelativeLayout area (such as aligned to the bottom, left or center).
+            A RelativeLayout is a very powerful utility for designing a user interface because it can eliminate nested view groups
+            and keep your layout hierarchy flat, which improves performance. If you find yourself using several nested LinearLayout
+            groups, you may be able to replace them with a single RelativeLayout.
+
+            \n\nConclusion: A detailed performance testing is made in - https://android-developers.googleblog.com/2017/08/understanding-performance-benefits-of.html
+        </item>
+        <!--What are intents and Describe three common use cases for using an Intent.-->
+        <item>
+            An Intent is a messaging object you can use to request an action from another app component.
+            Although intents facilitate communication between components in several ways, there are three fundamental use cases:
+
+            \n\n &#8226; Starting an activity:
+            \n - An Activity represents a single screen in an app. You can start a new instance of an
+            Activity by passing an Intent to startActivity(). The Intent describes the activity to start and carries any necessary data.
+            \nIf you want to receive a result from the activity when it finishes, call startActivityForResult(). Your activity receives the result as a separate Intent object in your activity's onActivityResult() callback. For more information, see the Activities guide.
+
+            \n\n &#8226; Starting a service:
+            \n - A Service is a component that performs operations in the background without a user interface.
+            With Android 5.0 (API level 21) and later, you can start a service with JobScheduler.
+            For more information about JobScheduler, see its API-reference documentation.
+            \nFor versions earlier than Android 5.0 (API level 21), you can start a service by using methods of the Service class.
+            You can start a service to perform a one-time operation (such as downloading a file) by passing an Intent to startService().
+            The Intent describes the service to start and carries any necessary data.
+            \nIf the service is designed with a client-server interface, you can bind to the service from another component
+            by passing an Intent to bindService(). For more information, see the Services guide.
+
+            \n\n &#8226; Delivering a broadcast:
+            - A broadcast is a message that any app can receive. The system delivers various broadcasts for system events,
+            such as when the system boots up or the device starts charging. You can deliver a broadcast to other apps by passing
+            an Intent to sendBroadcast() or sendOrderedBroadcast().
+
+            \n\n There are two types of intents:
+
+            \n\n - Explicit intents specify which application will satisfy the intent, by supplying either the target app's package name
+            or a fully-qualified component class name. You'll typically use an explicit intent to start a component in your own app,
+            because you know the class name of the activity or service you want to start. For example, you might start a new activity
+            within your app in response to a user action, or start a service to download a file in the background.
+
+            \n\n - Implicit intents do not name a specific component, but instead declare a general action to perform, which allows a
+            component from another app to handle it. For example, if you want to show the user a location on a map, you can use an
+            implicit intent to request that another capable app show a specified location on a map.
+
+        </item>
+        <!--Where should you use implicit and explicit intent? -->
+        <item>
+            You'll typically use an explicit intent to start a component in your own app,
+            because you know the class name of the activity or service you want to start. For example, you might start a new activity
+            within your app in response to a user action, or start a service to download a file in the background.
+
+            \n\n - Implicit intents do not name a specific component, but instead declare a general action to perform, which allows a
+            component from another app to handle it. For example, if you want to show the user a location on a map, you can use an
+            implicit intent to request that another capable app show a specified location on a map.
+
+        </item>
+        <!--What is the function of an intentfilter?-->
+        <item>
+            Specifies the types of intents that an activity, service, or broadcast receiver can respond to.
+            An intent filter declares the capabilities of its parent component — what an activity or service
+            can do and what types of broadcasts a receiver can handle. It opens the component to receiving intents
+            of the advertised type, while filtering out those that are not meaningful for the component.
+            \n\nMost of the contents of the filter are described by its &lt;action&gt;, &lt;category&gt;, and &lt;data&gt; subelements.
+        </item>
+        <!--What are containers?-->
+        <item>
+            Containers, as the name itself implies, holds objects and widgets together, depending on which specific items are needed and
+            in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even child containers, as examples.
+        </item>
+        <!--What do you think are some disadvantages of Android?-->
+        <item>
+            Given that Android is an open-source platform, and the fact that different Android operating systems have been released
+            on different mobile devices, there’s no clear cut policy to how applications can adapt with various OS versions and upgrades.
+            One app that runs on this particular version of Android OS may or may not run on another version. Another disadvantage is
+            that since mobile devices such as phones and tabs come in different sizes and forms, it poses a challenge for developers to
+            create apps that can adjust correctly to the right screen size and other varying features and specs.
+        </item>
+        <!--What are the four essential states of an activity?-->
+        <item>
+             – Active – if the activity is at the foreground
+            \n\n – Paused – if the activity is at the background and still visible
+            \n\n – Stopped – if the activity is not visible and therefore is hidden or obscured by another activity
+            \n\n – Destroyed – when the activity process is killed or completed terminated
+        </item>
+        <!--What are the seven lifecycle methods of Android activity and what is their purpose?-->
+        <item>
+            The seven lifecycle methods of Android activity are onCreate(), onStart(), onRestart(), onResume(), onPause(), onStop(),
+            and onDestroy(). Their purpose is to help structure your code around how you want an activity to perform throughout its
+            lifecycle on the device.
+
+            \nFor example, onCreate() is where you would perform your static setup, from creating views to binding data to lists.
+            It is always immediately followed by onStart(), where the app will be made visible to the user.
+
+            \nWhat you’re looking for in their response is a solid grasp of the lifecycle of an Android app.
+            The functions of these methods are pretty self-explanatory based on their names.
+
+        </item>
+        <!--The last callback in the lifecycle of an activity is onDestroy().
+        The system calls this method on your activity as the final signal that your activity instance is being completely
+        removed from the system memory. Usually, the system will call onPause() and onStop() before calling onDestroy().
+        Describe a scenario, though, where onPause() and onStop() would not be invoked.-->
+        <item>
+            onPause() and onStop() will not be invoked if finish() is called from within the onCreate() method.
+            This might occur, for example, if you detect an error during onCreate() and call finish() as a result.
+            In such a case, though, any cleanup you expected to be done in onPause() and onStop() will not be executed.
+
+            \n\nAlthough onDestroy() is the last callback in the lifecycle of an activity, it is worth mentioning that this callback
+            may not always be called and should not be relied upon to destroy resources. It is better have the resources created in
+            onStart() and onResume(), and have them destroyed in onStop() and onPause(), respectively.
+        </item>
+        <!--What is the importance of settings permissions in app development?-->
+        <item>
+            The purpose of a permission is to protect the privacy of an Android user. Android apps must request permission to access
+            sensitive user data (such as contacts and SMS), as well as certain system features (such as camera and internet).
+            Depending on the feature, the system might grant the permission automatically or might prompt the user to approve the request.
+        </item>
+        <!--Enumerate the three key loops when monitoring an activity-->
+        <item>
+            – Entire lifetime – activity happens between onCreate and onDestroy
+            \n\n– Visible lifetime – activity happens between onStart and onStop
+            \n\n– Foreground lifetime – activity happens between onResume and onPause
+        </item>
+        <!--What is the difference between a fragment and an activity? Explain the relationship between the two.-->
+        <item>
+            An activity is typically a single, focused operation that a user can perform (such as dial a number, take a picture,
+            send an email, view a map, etc.). Yet at the same time, there is nothing that precludes a developer from creating an
+            activity that is arbitrarily complex.
+
+            \n\nActivity implementations can optionally make use of the Fragment class for purposes such as producing more modular code,
+            building more sophisticated user interfaces for larger screens, helping scale applications between small and large screens,
+            and so on. Multiple fragments can be combined within a single activity and, conversely, the same fragment can often be reused
+            across multiple activities. This structure is largely intended to foster code reuse and facilitate economies of scale.
+
+            \n\nA fragment is essentially a modular section of an activity, with its own lifecycle and input events, and which can be
+            added or removed at will. It is important to remember, though, that a fragment’s lifecycle is directly affected by its host
+            activity’s lifecycle; i.e., when the activity is paused, so are all fragments in it, and when the activity is destroyed,
+            so are all of its fragments.
+
+        </item>
+        <!--Which method is called only once in a fragment life cycle?-->
+        <item>
+            onAttached();
+        </item>
+        <!--When is the onStop() method invoked?-->
+        <item>
+            A call to onStop method happens when an activity is no longer visible to the user, either because another activity has
+            taken over or if in front of that activity.
+        </item>
+        <!--What are the different states wherein a process is based?-->
+        <item>
+            There are 4 possible states:
+            – foreground activity
+            – visible activity
+            – background activity
+            – empty process
+        </item>
+        <!--How to communicate between fragments?-->
+        <item>
+            In order to reuse the Fragment UI components, you should build each as a completely self-contained, modular component that
+            defines its own layout and behavior. Once you have defined these reusable Fragments, you can associate them with an Activity
+            and connect them with the application logic to realize the overall composite UI.
+
+            \n\nOften you will want one Fragment to communicate with another, for example to change the content based on a user event.
+            All Fragment-to-Fragment communication is done either through a shared ViewModel or through the associated Activity.
+            \nTwo Fragments should never communicate directly.
+
+            \n\nTo allow a Fragment to communicate up to its Activity, you can define an interface in the Fragment class and implement it
+            within the Activity. The Fragment captures the interface implementation during its onAttach() lifecycle method and can
+            then call the Interface methods in order to communicate with the Activity.
+
+            \n\nExample: Define an Interface
+
+            \n\n public class HeadlinesFragment extends ListFragment {
+            \nOnHeadlineSelectedListener mCallback;
+            \n
+            \n          // Container Activity must implement this interface
+            \n        public interface OnHeadlineSelectedListener {
+            \n      public void onArticleSelected(int position);
+            \n    }
+            \n
+            \n          @Override
+            \n        public void onAttach(Activity activity) {
+            \n      super.onAttach(activity);
+            \n
+            \n          // This makes sure that the container activity has implemented
+            \n        // the callback interface. If not, it throws an exception
+            \n      try {
+            \n    mCallback = (OnHeadlineSelectedListener) activity;
+            \n  } catch (ClassCastException e) {
+            \nthrow new ClassCastException(activity.toString()
+            \n+ " must implement OnHeadlineSelectedListener");
+            \n}
+            \n}
+            \n
+            \n          ...
+            \n        }
+
+            \n\n Now the fragment can deliver messages to the activity by calling the onArticleSelected() method
+            (or other methods in the interface) using the mCallback instance of the OnHeadlineSelectedListener interface.
+
+            \nFor example, the following method in the fragment is called when the user clicks on a list item. The fragment uses the
+            callback interface to deliver the event to the parent activity.
+
+            \n\n Implement The Interface
+            \nIn order to receive event callbacks from the fragment, the activity that hosts it must implement
+            the interface defined in the fragment class.
+
+            \n\n public static class MainActivity extends Activity
+            \n implements HeadlinesFragment.OnHeadlineSelectedListener{
+            \n ...
+            \n
+            \n  public void onArticleSelected(int position) {
+            \n   // The user selected the headline of an article from the HeadlinesFragment
+            \n // Do something here to display that article
+            \n }
+            \n }
+
+            \n\n Deliver a Message to a Fragment
+
+            \n The host activity can deliver messages to a fragment by capturing the Fragment instance with findFragmentById(),
+            then directly call the fragment's public methods.
+            \nFor instance, imagine that the activity shown above may contain another fragment that's used to display the item specified
+            by the data returned in the above callback method. In this case, the activity can pass the information received in the
+            callback method to the other fragment that will display the item:
+
+            \n\n public static class MainActivity extends Activity
+            \n implements HeadlinesFragment.OnHeadlineSelectedListener{
+            \n ...
+            \n
+            \n          public void onArticleSelected(int position) {
+            \n       // The user selected the headline of an article from the HeadlinesFragment
+            \n    // Do something here to display that article
+            \n
+            \n          ArticleFragment articleFrag = (ArticleFragment)
+            \n       getSupportFragmentManager().findFragmentById(R.id.article_fragment);
+            \n
+            \n          if (articleFrag != null) {
+            \n       // If article frag is available, we're in two-pane layout...
+            \n
+            \n          // Call a method in the ArticleFragment to update its content
+            \n       articleFrag.updateArticleView(position);
+            \n    } else {
+            \n // Otherwise, we're in the one-pane layout and must swap frags...
+            \n
+            \n          // Create fragment and give it an argument for the selected article
+            \n       ArticleFragment newFragment = new ArticleFragment();
+            \n    Bundle args = new Bundle();
+            \n args.putInt(ArticleFragment.ARG_POSITION, position);
+            \n newFragment.setArguments(args);
+            \n
+            \n          FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            \n
+            \n          // Replace whatever is in the fragment_container view with this fragment,
+            \n       // and add the transaction to the back stack so the user can navigate back
+            \n    transaction.replace(R.id.fragment_container, newFragment);
+            \n transaction.addToBackStack(null);
+            \n
+            \n          // Commit the transaction
+            \n       transaction.commit();
+            \n    }
+            \n }
+            \n }
+
+        </item>
+        <!--What is ANR, when does it occur and how can it be prevented?-->
+        <item>
+            ‘ANR’ in Android is 'Application Not Responding.' It means when the user is interacting with the activity,
+            and the activity is in the onResume() method, a dialog appears displaying "application not responding."
+
+            \n\nIt happens because we start a heavy and long running task like downloading data in the main UI thread.
+            To avoid ANR, an app should perform lengthy database or networking operations in separate threads.
+            For background task-intensive apps, you can alleviate pressure from the UI thread by using the IntentService.
+            Other solution can be to perform your heavy tasks in the background using Async Task class.
+
+            \n\nIn general, it helps to always define time-outs for all your web service calls and to remain ever vigilant
+            for infinite loops in complex calculations.
+        </item>
+        <!--What role does Dalvik play in Android development?-->
+        <item>
+            Dalvik serves as a virtual machine, and it is where every Android application runs.
+            Through Dalvik, a device is able to execute multiple virtual machines efficiently through better memory management.
+        </item>
+        <!--What is the AndroidManifest.xml?-->
+        <item>
+            Every app project must have an AndroidManifest.xml file (with precisely that name) at the root of the project source set.
+            The manifest file describes essential information about your app to the Android build tools, the Android operating system,
+            and Google Play.
+
+            \n\nAmong many other things, the manifest file is required to declare the following:
+            \n\n&#8226; The app's package name, which usually matches your code's namespace. The Android build tools use this to determine
+            the location of code entities when building your project. When packaging the app, the build tools replace this value with the
+            application ID from the Gradle build files, which is used as the unique app identifier on the system and on Google Play.
+            \n\n&#8226; The components of the app, which include all activities, services, broadcast receivers, and content providers.
+            Each component must define basic properties such as the name of its Kotlin or Java class. It can also declare capabilities
+            such as which device configurations it can handle, and intent filters that describe how the component can be started.
+            \n\n&#8226; The permissions that the app needs in order to access protected parts of the system or other apps.
+            It also declares any permissions that other apps must have if they want to access content from this app.
+            \n\n&#8226; The hardware and software features the app requires, which affects which devices can install the app from
+            Google Play.
+        </item>
+        <!--What is AIDL and What data types are supported by AIDL?-->
+        <item>
+            AIDL, or Android Interface Definition Language, handles the interface requirements between a client and a service
+            so both can communicate at the same level through interprocess communication or IPC. This process involves breaking
+            down objects into primitives that Android can understand. This part is required simply because a process cannot
+            access the memory of the other process.
+
+            \n\nAIDL has support for the following data types:
+            \n - string
+            \n - charSequence
+            \n - List
+            \n - Map
+            \n - all native Java data types like int,long, char and Boolean
+        </item>
+        <!--What is the difference between foreground and visible lifetime?-->
+        <item>
+            The Visible Lifetime: Although this is termed the "visible lifetime", the app may not be directly visible and interacting
+            with the user at any one time if it is not in the foreground. The feature that distinguishes this lifetime is that,
+            even if not in the foreground, the app maintains resources such that it can instantaneously return to the foreground.
+
+            \n\nThe Foreground Lifetime: During foreground lifetime the activity is in front of all other activities and interacting
+            with the user.
+
+            \n\nSo If you display an Activity on the screen and the user is interacting with it, it is both in the foreground and visible.
+            \nBetween onResume() and onPause() called foreground lifetime.
+
+            If you start another Activity, which is transparent and shows a dialog box over the previous Activity, then the new Activity
+            (the dialog box) is in the foreground and the old Activity is not in the foreground but still visible.
+            \nBetween onStart() and onStop() called visible lifetime
+        </item>
+        <!--What is the difference between a regular bitmap and a nine-patch image?-->
+        <item>
+            In general, a Nine-patch image allows resizing that can be used as background or other image size requirements for
+            the target device. The Nine-patch refers to the way you can resize the image: 4 corners that are unscaled,
+            4 edges that are scaled in 1 axis, and the middle one that can be scaled into both axes.
+        </item>
+        <!--How many types we can store data in Android Phone, which is better approaches
+        in SharedPreferences and SQLite to save small data or large data ?-->
+        <item>
+            Android provides several options for you to save your app data. The solution you choose depends on your specific needs,
+            such as how much space your data requires, what kind of data you need to store, and whether the data should be private
+            to your app or accessible to other apps and the user.
+
+            \n\nThe different data storage options available on Android:
+
+            \n\n - Internal file storage: Store app-private files on the device file system.
+            \n\n - External file storage: Store files on the shared external file system. This is usually for shared user files, such as photos.
+            \n\n - Shared preferences: Store private primitive data in key-value pairs.
+            \n\n - Databases: Store structured data in a private database.
+
+            \n\n Internal File Storage:
+            \n\n - Internal Storage;
+            \n By default, files saved to the internal storage are private to your app, and other apps cannot access them
+            (nor can the user, unless they have root access). This makes internal storage a good place for internal app data that the
+            user doesn't need to directly access. The system provides a private directory on the file system for each app where you can
+            organize any files your app needs.
+
+            \nWhen the user uninstalls your app, the files saved on the internal storage are removed. Because of this behavior,
+            you should not use internal storage to save anything the user expects to persist independently of your app. For example,
+            if your app allows users to capture photos, the user would expect that they can access those photos even after they
+            uninstall your app. So you should instead save those types of files to the public external storage.
+
+            \n\n - Internal cache files;
+            \n If you'd like to keep some data temporarily, rather than store it persistently,
+            you should use the special cache directory to save the data. Each app has a private cache directory specifically for
+            these kinds of files. When the device is low on internal storage space, Android may delete these cache files to recover space.
+            However, you should not rely on the system to clean up these files for you. You should always maintain the cache files yourself
+            and stay within a reasonable limit of space consumed, such as 1MB. When the user uninstalls your app, these files are removed.
+
+            \n\n External File Storage:
+            \n\n Every Android device supports a shared "external storage" space that you can use to save files. This space is called
+            external because it's not a guaranteed to be accessible—it is a storage space that users can mount to a computer as an
+            external storage device, and it might even be physically removable (such as an SD card). Files saved to the external storage
+            are world-readable and can be modified by the user when they enable USB mass storage to transfer files on a computer.
+
+            \n So before you attempt to access a file in external storage in your app, you should check for the availability of the external
+            storage directories as well as the files you are trying to access.
+
+            \n Most often, you should use external storage for user data that should be accessible to other apps and saved even if the user
+            uninstalls your app, such as captured photos or downloaded files. The system provides standard public directories for these
+            kinds of files, so the user has one location for all their photos, ringtones, music, and such.
+
+            \n\n Shared Preferences:
+            \n\n If you don't need to store a lot of data and it doesn't require structure, you should use SharedPreferences.
+            The SharedPreferences APIs allow you to read and write persistent key-value pairs of primitive data types:
+            booleans, floats, ints, longs, and strings.
+
+            \n\n The key-value pairs are written to XML files that persist across user sessions, even if your app is killed. You can
+            manually specify a name for the file or use per-activity files to save your data.
+
+            \n\n The API name "shared preferences" is a bit misleading because the API is not strictly for saving "user preferences,"
+            such as what ringtone a user has chosen. You can use SharedPreferences to save any kind of simple data, such as the user's
+            high score.
+
+            \n\n Databases:
+            \n\n Android provides full support for SQLite databases. Any database you create is accessible only by your app.
+
+            \nThe SQLite APIs are fairly low-level and require a great deal of time and effort to use. For example:
+
+            \n\nThere is no compile-time verification of raw SQL queries.
+            As your schema changes, you need to update the affected SQL queries manually. This process can be time consuming and error prone.
+            You need to write lots of boilerplate code to convert between SQL queries and Java data objects.
+
+            \n\nThe Room persistence library takes care of these concerns for you while providing an abstraction layer over SQLite.
+            Therefore the Room library provides an object-mapping abstraction layer that allows fluent database access while harnessing
+            the full power of SQLite.
+        </item>
+        <!--What is SQLite? How does it differ from client-server database management systems?-->
+        <item>
+            SQLite is the open-source relational database of choice for Android applications. The SQLite engine is serverless,
+            transactional, and self-contained. Instead of the typical client-server relationship of most database management systems,
+            the SQLite engine is integrally linked with the application. The library can also be called dynamically, and makes use
+            of simple function calls that reduce latency in database access.
+        </item>
+        <!--What is DDMS and what can it do?-->
+        <item>
+            DDMS is short for Dalvik Debug Monitor Server. It ships natively with Android and contains a number of useful debugging
+            features including:
+            \n - location data spoofing
+            \n - port-forwarding
+            \n - network traffic tracking
+            \n - incoming call/SMS spoofing
+            \n - thread and heap information
+            \n - screen capture
+            \n - and the ability to simulate network state, speed and latency.
+        </item>
+        <!--What is a ContentProvider and what is it typically used for?-->
+        <item>
+            A ContentProvider manages access to a structured set of data. It encapsulates the data and provide mechanisms for defining
+            data security. ContentProvider is the standard interface that connects data in one process with code running in another process.
+        </item>
+        <!--Under what condition could the code sample below crash your application? How would you modify the code to avoid this -->
+        <!--potential problem? Explain your answer.-->
+        <item>
+            Sample Code:
+            \n\n Intent sendIntent = new Intent();
+            \n sendIntent.setAction(Intent.ACTION_SEND);
+            \n sendIntent.putExtra(Intent.EXTRA_TEXT, textMessage);
+            \n sendIntent.setType(HTTP.PLAIN_TEXT_TYPE); // "text/plain" MIME type
+            \n startActivity(sendIntent);
+
+            \n\n An implicit intent specifies an action that can invoke any app on the device able to perform the action.
+            Using an implicit intent is useful when your app cannot perform the action, but other apps probably can.
+            If there is more than one application registered that can handle this request, the user will be prompted
+            to select which one to use.
+
+            However, it is possible that there are no applications that can handle your intent. In this case, your application will
+            crash when you invoke startActivity(). To avoid this, before calling startActivity() you should first verify that there
+            is at least one application registered in the system that can handle the intent. To do this use resolveActivity() on your
+            intent object.
+            \n\nAnswer:
+            \n\n // Verify that there are applications registered to handle this intent
+            \n // (resolveActivity returns null if none are registered)
+            \n if (sendIntent.resolveActivity(getPackageManager()) != null) {
+            \n startActivity(sendIntent);
+            \n }
+        </item>
+        <!--Suppose that you are starting a service in an Activity as follows:-->
+        <!--\nIntent service = new Intent(context, MyService.class);-->
+        <!--\nstartService(service);-->
+        <!--\nwhere MyService accesses a remote server via an Internet connection.-->
+        <!--\nIf the Activity is showing an animation that indicates some kind of progress, what issue might you encounter and-->
+        <!--how could you address it?-->
+        <item>
+            Responses from a remote service via the Internet can often take some time, either due to networking latencies,
+            or load on the remote server, or the amount of time it takes for the remote service to process and respond to the request.
+
+            \nAs a result, if such a delay occurs, the animation in the activity (and even worse, the entire UI thread) could be
+            blocked and could appear to the user to be “frozen” while the client waits for a response from the service.
+            This is because the service is started on the main application thread (or UI thread) in the Activity.
+
+            \nThe problem can (and should) be avoided by relegating any such remote requests to a background thread or, when feasible,
+            using an an asynchronous response mechanism.
+
+            \n\nNote well: Accessing the network from the UI thread throws a runtime exception in newer
+            Android versions which causes the app to crash.
+        </item>
+        <!--What is the difference between Service and IntentService? How is each used?-->
+        <item>
+            Service is the base class for Android services that can be extended to create any service. A class that directly extends
+            Service runs on the main thread so it will block the UI (if there is one) and should therefore either be used only for
+            short tasks or should make use of other threads for longer tasks.
+
+            \n\nIntentService is a subclass of Service that handles asynchronous requests (expressed as "Intents") on demand.
+            Clients send requests through startService(Intent) calls. The service is started as needed, handles each Intent
+            in turn using a worker thread, and stops itself when it runs out of work. Writing an IntentService can be quite simple;
+            just extend the IntentService class and override the onHandleIntent(Intent intent) method where you can manage all incoming
+            requests.
+        </item>
+        <!--How to run the service even after killing the application in Android?      -->
+        <item>
+            The service will still have a chance of being killed by the kernel in a state of low memory if it is low priority. So you have two
+            options:
+            \n\n 1)Keep it running in the foreground by calling the startForeground() method.
+            \n\n 2)Restart the service if it gets killed. Here is a part of the example from the docs where they talk about restarting the
+            service after it is killed:
+            \n\n public int onStartCommand(Intent intent, int flags, int startId) {
+            \n Toast.makeText(this, "service starting", Toast.LENGTH_SHORT).show();
+            \n
+            \n // For each start request, send a message to start a job and deliver the
+            \n // start ID so we know which request we're stopping when we finish the job
+            \n Message msg = mServiceHandler.obtainMessage();
+            \n msg.arg1 = startId;
+            \n mServiceHandler.sendMessage(msg);
+            \n
+            \n // If we get killed, after returning from here, restart
+            \n return START_STICKY;
+            \n }
+        </item>
+
+        <item>
+
+        </item>
+
+        <item>
+
+        </item>
+
+        <item>
+
+        </item>
+
+        <item>
+
+        </item>
+
+        <item>
+
+        </item>
+
+        <item>
+
+        </item>
+
+        <item>
+
+        </item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
