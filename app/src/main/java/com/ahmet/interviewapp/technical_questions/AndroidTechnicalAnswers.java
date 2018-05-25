@@ -2,6 +2,7 @@ package com.ahmet.interviewapp.technical_questions;
 
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
@@ -9,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.ahmet.interviewapp.Adaptors.SliderAdapter;
 import com.ahmet.interviewapp.Models.AddAnswers;
@@ -33,7 +33,7 @@ public class AndroidTechnicalAnswers extends Fragment implements View.OnClickLis
     Answers answers;
     Questions questions;
     int screen = 0;
-    Button androidRightButton, androidLeftButton, androidCenterButton;
+    FloatingActionButton androidRightButton, androidLeftButton, androidCenterButton;
 
     public AndroidTechnicalAnswers() {
         // Required empty public constructor
@@ -44,9 +44,9 @@ public class AndroidTechnicalAnswers extends Fragment implements View.OnClickLis
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_android_technical_answers, container, false);
+        View view = inflater.inflate(R.layout.answer_slides, container, false);
 
-        viewPager = (ViewPager) view.findViewById(R.id.androidViewPager);
+        viewPager = (ViewPager) view.findViewById(R.id.view_pager);
         sliderAdapter = new SliderAdapter(getActivity(), questionsArrayList, answersArrayList);
 
         viewPager.setAdapter(sliderAdapter);
@@ -78,9 +78,9 @@ public class AndroidTechnicalAnswers extends Fragment implements View.OnClickLis
         addAnswers.loadSlide(getActivity(), sliderAdapter, viewPager);
 
         //initialise buttons
-        androidLeftButton = (Button) view.findViewById(R.id.androidLeftButton);
-        androidRightButton = (Button) view.findViewById(R.id.androidRightButton);
-        androidCenterButton = (Button) view.findViewById(R.id.androidCenterButton);
+        androidLeftButton = view.findViewById(R.id.leftButton);
+        androidRightButton = view.findViewById(R.id.rightButton);
+        androidCenterButton = view.findViewById(R.id.centerButton);
         //set click listener on buttons
         androidLeftButton.setOnClickListener(this);
         androidRightButton.setOnClickListener(this);
@@ -89,33 +89,31 @@ public class AndroidTechnicalAnswers extends Fragment implements View.OnClickLis
         //hide the title bar
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
-
         return view;
     }
-    @Override
-    public void onPause() {
-        super.onPause();
-        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
-
-    }
-
     @Override
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.androidRightButton:
+            case R.id.rightButton:
                 addAnswers.loadNextSlide(viewPager, sliderAdapter);
                 break;
-            case R.id.androidLeftButton:
+            case R.id.leftButton:
                 addAnswers.loadPreviousSlide(viewPager, sliderAdapter);
                 break;
-            case R.id.androidCenterButton:
+            case R.id.centerButton:
                 AndroidTechnicalQuestionsFragment androidTechnicalQuestionsFragment = new AndroidTechnicalQuestionsFragment();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 //replacing the fragment with the layout
                 manager.beginTransaction().replace(R.id.content_layout, androidTechnicalQuestionsFragment).addToBackStack(null).commit();
                 break;
         }
+
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
     }
 }

@@ -2,14 +2,17 @@ package com.ahmet.interviewapp.behavioural_questions;
 
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.view.animation.AlphaAnimation;
+import android.widget.Toast;
 
 import com.ahmet.interviewapp.Models.AddAnswers;
 import com.ahmet.interviewapp.Models.Answers;
@@ -32,7 +35,9 @@ public class BehaviouralAnswers extends Fragment implements View.OnClickListener
     Answers answers;
     Questions questions;
     int screen = 0;
-    Button rightButton, leftButton, centerButton;
+    FloatingActionButton rightButton, leftButton, centerButton;
+
+    AlphaAnimation animation1, animation2;
 
     public BehaviouralAnswers() {
     }
@@ -42,7 +47,16 @@ public class BehaviouralAnswers extends Fragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_behavioural_slides, container, false);
+        View view = inflater.inflate(R.layout.answer_slides, container, false);
+
+        //initialise buttons
+        leftButton = view.findViewById(R.id.leftButton);
+        rightButton = view.findViewById(R.id.rightButton);
+        centerButton = view.findViewById(R.id.centerButton);
+        //set click listener on buttons
+        leftButton.setOnClickListener(this);
+        rightButton.setOnClickListener(this);
+        centerButton.setOnClickListener(this);
 
         viewPager = (ViewPager) view.findViewById(R.id.view_pager);
         sliderAdapter = new SliderAdapter(getActivity(), questionsArrayList, answersArrayList);
@@ -65,6 +79,30 @@ public class BehaviouralAnswers extends Fragment implements View.OnClickListener
 
             }
         });
+//        viewPager.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                switch (motionEvent.getAction()) {
+//                    case MotionEvent.ACTION_UP:
+//                        animation1 = new AlphaAnimation(1, 0);
+//                        animation1.setDuration(500);
+//                        animation1.setStartOffset(500);
+//                        animation1.setFillAfter(true);
+//                        rightButton.startAnimation(animation1);
+//                        break;
+//                    case MotionEvent.ACTION_DOWN:
+//                        animation2 = new AlphaAnimation(0,1);
+//                        animation2.setDuration(500);
+//                        animation2.setStartOffset(500);
+//                        animation2.setFillAfter(true);
+//                        rightButton.startAnimation(animation2);
+//
+//                        break;
+//                }
+//
+//                return false;
+//            }
+//        });
 
         addAnswers = new AddAnswers();
         //get the string arrays
@@ -75,14 +113,6 @@ public class BehaviouralAnswers extends Fragment implements View.OnClickListener
         //load the corresponding slide to the question
         addAnswers.loadSlide(getActivity(), sliderAdapter, viewPager);
 
-        //initialise buttons
-        leftButton = (Button) view.findViewById(R.id.leftButton);
-        rightButton = (Button) view.findViewById(R.id.rightButton);
-        centerButton = (Button) view.findViewById(R.id.centerButton);
-        //set click listener on buttons
-        leftButton.setOnClickListener(this);
-        rightButton.setOnClickListener(this);
-        centerButton.setOnClickListener(this);
         //hide the title bar
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
@@ -111,9 +141,21 @@ public class BehaviouralAnswers extends Fragment implements View.OnClickListener
     }
 
     @Override
-    public void onPause() {
-        super.onPause();
-        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
     }
+
+    //    @Override
+//    public boolean onTouch(View view, MotionEvent event) {
+//
+//        animation1 = new AlphaAnimation(1, 0);
+//        animation1.setDuration(500);
+//        animation1.setStartOffset(500);
+//        animation1.setFillAfter(true);
+//        rightButton.startAnimation(animation1);
+//
+//        return false;
+//    }
 }

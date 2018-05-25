@@ -39,9 +39,9 @@ public class JavaTechnicalQuestionsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_java_technical_questions, container, false);
+        View view = inflater.inflate(R.layout.questions_layout, container, false);
 
-        javaTechnicalListView = (ListView) view.findViewById(R.id.javaTechnicalListView);
+        javaTechnicalListView = (ListView) view.findViewById(R.id.listView);
         //initialise Adaptor
         listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), questionsArrayList);
 

@@ -30,7 +30,7 @@ import java.util.ArrayList;
 public class BehaviouralQuestionsFragment extends Fragment {
 
 
-    ListView behaviouraListview;
+    ListView behaviouralListview;
 
     ArrayList<Questions> questionsArrayList = new ArrayList<>();
     Questions questions;
@@ -47,9 +47,9 @@ public class BehaviouralQuestionsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_behavioural_questions, container, false);
+        View view = inflater.inflate(R.layout.questions_layout, container, false);
 
-        behaviouraListview = (ListView) view.findViewById(R.id.behaviouralListView);
+        behaviouralListview = (ListView) view.findViewById(R.id.listView);
         //initialise Adaptor
         listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), questionsArrayList);
 
@@ -58,9 +58,9 @@ public class BehaviouralQuestionsFragment extends Fragment {
         String[] array = getResources().getStringArray(R.array.behaviouralQuestions);
         //add the questions in listview
         addQuestions.add(getActivity(), questions,questionsArrayList, array, listViewAdaptor );
-        behaviouraListview.setAdapter(listViewAdaptor);
+        behaviouralListview.setAdapter(listViewAdaptor);
 
-        behaviouraListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        behaviouralListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 //open slides when clicked on a list item

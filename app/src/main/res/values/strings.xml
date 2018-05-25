@@ -51,7 +51,7 @@
         <item>A typical structure that works well for many people is essentially chronological, with the opening sentence
             describing their current job and the conclusion discussing their relevant and interesting hobbies outside
             of work (if any).\n
-            \n 1. Current Role [Headline Only]: "I&#39;m a software engineer at Microworks, where I&#39;ve been leading the
+            \n 1. Current Role [Headline Only]: "I\'m a software engineer at Microworks, where I\'ve been leading the
             Android team for the last five years:
             \n 2. College: My background is in computer science. I did my undergrad at Berkeley and spent a few
             summers working at startups, including one where I attempted to launch my own business.
@@ -62,10 +62,10 @@
             which was what brought me to Microworks. Here, I did the initial system architecture, which has scaled
             pretty well with our rapid growth. I then took an opportunity to lead the Android team. I do manage a
             team of three, but my role is primarily with technical leadership: architecture, coding, etc.
-            \n 5. Outside of Work: Outside of work, I&#39;ve been participating in some hackathons-mostly doing iOS
-            development there as a way to learn it more deeply. I&#39;m also active as a moderator on online forums
+            \n 5. Outside of Work: Outside of work, I\'ve been participating in some hackathons-mostly doing iOS
+            development there as a way to learn it more deeply. I\'m also active as a moderator on online forums
             around Android development.
-            \n 6. Wrap Up: I&#39;m looking now for something new, and your company caught my eye. I&#39;ve always loved the
+            \n 6. Wrap Up: I\'m looking now for something new, and your company caught my eye. I\'ve always loved the
             connection with the user, and I really want to get back to a smaller environment too.
         </item>
         <!--How would a friend or colleague describe you?-->
@@ -163,12 +163,12 @@
         <item>
             1. Recall a challenge that was significant, but one that you consider a success. Most importantly, you want to be able to discuss a
             real professional challenge, not an arbitrary or annoying occurrence. You also want to be able to define how you met the challenge
-            successfully. If possible, mention a challenge most relevant to the role you’re applying to. In your answer, you&#39;
+            successfully. If possible, mention a challenge most relevant to the role you’re applying to. In your answer, you\'
             ll want to set up the challenge clearly and succinctly.
-            2. Don’t just say what you did — explain how you did it. The employer is interested in learning your approach to a challenge,
+            \n\2. Don’t just say what you did — explain how you did it. The employer is interested in learning your approach to a challenge,
             including the actions you took and your thought process. Don’t skip ahead to the end result. Use specifics to describe what you
             did to contribute to the solution.
-            3. Emphasize the outcome and what you learned from it. Employers want to hire individuals who can turn challenges into
+            \n\n3. Emphasize the outcome and what you learned from it. Employers want to hire individuals who can turn challenges into
             opportunities. When brainstorming an answer, think about ways to emphasize how you made the most of a difficult time. Of course,
             in the real world, it’s not possible to wave a magic wand and transform every difficulty into a grand success.
             It is possible to learn from your hardships, and then apply what you learned to future challenges.
@@ -226,7 +226,7 @@
             \n\n Example:
             \n\nMy partner left for a new job right in the middle of a major project and her responsibilities fell to me.
             It was a huge challenge! I spent a day prioritizing the project steps and created a timeline for keeping everything on track.
-            I ended up putting in some extra hours, but the project was completed by deadline.”</item>
+            I ended up putting in some extra hours, but the project was completed by deadline.</item>
         <!--Tell me about the toughest decision you have had to make in the past x months.-->
         <item>
             1. Pick the Right Challenge
@@ -262,8 +262,8 @@
             after making that mistake. You might also explain the steps you took to make sure that mistake never happened again.
             \n\nWhen talking about what you learned, try to emphasize skills or qualities you gained that are important for the job you’re interviewing
             for now. You might also explain that something you struggled with a long time ago has actually become one of your strengths.
-            \n\nYou want your example of a mistake to be honest. However, it's a good idea not to mention a mistake that would be critical for success
-            in the new position. For instance, give an example from your last position that isn't specifically related to the job requirements
+            \n\nYou want your example of a mistake to be honest. However, it\'s a good idea not to mention a mistake that would be critical for success
+            in the new position. For instance, give an example from your last position that isn\'t specifically related to the job requirements
             for the new position.
             \n\n Examples:
             \n\n - One thing I have learned from past mistakes is when to ask for help. I have learned that it is far better to ask for
@@ -352,11 +352,11 @@
             work we helped him with.
             \n\n - When I was a junior, I worked on a case project for a marketing class where six of us were asked to analyze the
             marketing practices of Amazon.com and make recommendations for alternative approaches.
-            \nEarly on we floundered in an effort to find a focus. I suggested that we look at Amazon's advertising strategy
+            \nEarly on we floundered in an effort to find a focus. I suggested that we look at Amazon\'s advertising strategy
             within the social media.
             \nI led a discussion about the pros and cons of that topic and encouraged a couple of the more reticent members to chime in.
-            Two of the group members didn't initially embrace my original proposal. However, I was able to draw consensus after
-            incorporating their suggestion that we focus on targeted advertising within Facebook based on users' expressed interests.
+            Two of the group members didn\'t initially embrace my original proposal. However, I was able to draw consensus after
+            incorporating their suggestion that we focus on targeted advertising within Facebook based on users\' expressed interests.
             \n We ended up working hard as a group, receiving very positive feedback from our professor, and getting an A grade on the project.
             \n\n - I have years of experience on team projects at my previous marketing job and that has helped me develop into a strong
             listener who can resolve conflict and ensure timely completion of projects.
@@ -385,7 +385,7 @@
             the company if it had been overlooked. I went directly to him and called it to his attention so he could fix it before it affected the
             final outcome.
             \n\n - I feel that the best way to deal with any challenges is to meet them head-on. When I found that one of my colleagues was saying
-            things that weren't true behind my back, I went to him and talked it through. It turned out that he had misunderstood what I had said,
+            things that weren\'t true behind my back, I went to him and talked it through. It turned out that he had misunderstood what I had said,
             and I was able to set the record straight with him, and my supervisor.
         </item>
         <!--Tell me about a time you had to work closely with someone whose personality or work style clashed with yours.-->
@@ -483,10 +483,71 @@
         </item>
         <!--Tell me about a time you learned a new skill. How did you approach it and how to did you apply your new learning?-->
         <item>
+            The interviewer wants to know that you can learn new skills, under pressure.
+            Hiring managers want to hear that you are willing to put in the effort required to learn new skills,
+            even when it may seem difficult.
 
+            \n\nThink about times when your company implemented new software, or when you learned a new procedure.
+            Perhaps your employer has asked you to attend a workshop at the last minute, or you had to study for a policy exam.
+            These make great examples! Discuss how you diligently studied related materials, attended a training seminar,
+            or bought a book to help you learn the new content.
+
+            \n\nKeep in mind; this is another excellent opportunity to express that you accept workplace changes with ease.
+
+            \n\nExamples:
+
+            \n\n - In my most recent role, I was unfamiliar with their hospital record keeping system. After a few days of on the job
+            training, I was able to maintain the hospital record keeping system, but I still wasn\'t happy with my fluency.
+            I found tutorials online and spent evenings training myself to a deeper level of knowledge. It was nice to dive in,
+            learn the system well, and have that sense of accomplishment early on in my role.
+
+            \n\n - When I first began my administration career, I started as a temp with an agency.
+            Placed in a variety of roles that changed weekly and sometimes even daily, I often jumped into roles where there was a lot
+            to learn in a short time. Deadlines were often due yesterday. I utilized and maximized my resources to the fullest.
+            I learned about plenty of industries and best of all, had fun doing it!
+
+            \n\n - When I started my first sales position, I took a pay cut for a highly commissioned opportunity.
+            I had to hit the ground running to get commissioned more quickly and move up the ranks. I had to learn the car industry
+            in no time so that I could start making appointments and sales. I spent the first week shadowing everyone I could,
+            reading the industry publications after hours, and even went to a dealership on the weekend to walk through as though
+            I were purchasing a used car. I wanted to understand them from the customer perspective. By Monday, I felt fully ramped
+            and was making appointments and running demos.
         </item>
         <!--What are you most proud of? Why?-->
         <item>
+            The way you answer this question shows what you value, where you find satisfaction and can let them know if you will
+            be a good fit in their company. What you find important shows them the kind of environment you will do well in.
+            Their job is to figure out if you’ll do well in their company’s environment, so they ask a lot of questions that
+            will help them learn more about you. Many companies look for self-motivated individuals who will push themselves
+            towards success rather than need to be pushed.
+
+            \n\nPoints to Emphasize:
+            \nYou know that the interviewer is trying to figure out what motivates you, so there are a few key traits that you want
+            to make sure to touch on.
+
+            \n\n - Try to focus on experiences and traits that can tie into the position you are applying for.
+            \n\n - Talk about what led you to the moment that made you so proud.
+            \n\n - Discuss what you did after this moment of success.
+            \n\n - Give details about how you plan to achieve this pride again.
+            \n\n - Letting the interviewer know that you strive to have proud moments again will show that you have goals for yourself.
+
+            \n\n Examples:
+
+            \n\n - I am most proud of when one of the biggest clients of company ABC was about to switch suppliers and I had to stop
+            them from switching. I used the excellent personal relationship that I had built up with the client over the past year to
+            persuade them to stay with our company and negotiated new terms. The result was that they placed even more orders than the
+            previous quarter.
+
+            \n\n - I am most proud of when a Google algorithm update made the company I was working for organic traffic plummet and
+            their Adwords spend increase. My job was to fix the site to make sure that it was compliant with the new Google Update
+            and also wouldn\'t be affected by any updates for the foreseeable future. I spent hours fixing the blog and putting a new
+            content plan in place to keep everything controlled. The plan worked, the organic traffic picked up, and the company reduced
+            its Adwords budget.
+
+            \n\nBut, don’t limit your response purely to work achievements; personal accomplishments can be just as important and telling.
+            If this is to be your first job, there may be things you achieved at college or university that you were particularly proud of.
+            If you’ve had a break from employment to raise a family, you could be most proud of what your children have achieved because
+            of the values you instilled in them as they were growing up.
 
         </item>
         <!--Give an example of how you set goals.-->
@@ -500,18 +561,18 @@
         </item>
         <!--Give an example of a goal you reached and how you achieved it.-->
         <item>
-            While you don't need to be incredibly specific with this answer,
-            demonstrate your understanding of the company and industry and clearly communicate the path you're on:
+            While you don\'t need to be incredibly specific with this answer,
+            demonstrate your understanding of the company and industry and clearly communicate the path you\'re on:
             \n\n &#8226; Details your accomplishments to date to show that you have already been able to effectively achieve goals.
             \n &#8226; Delineate the ways in which your goals align with the job at hand.
             \n &#8226; Describe any tangible achievements on the horizon.
             \n &#8226; Convince the interviewer that this position is key to your plan for success.
             \n &#8226; Describe your personal qualities that will enable you to achieve your goals.
             \n\n Avoid answering in a way that puts the focus on salary (raises, bonuses, commission) or job titles.
-            While you want to avoid a vague response, it's best to stay away from goals that may or may not be something you can achieve at the
+            While you want to avoid a vague response, it\'s best to stay away from goals that may or may not be something you can achieve at the
             company.
-            \n You wouldn't, for instance, want to lay out your strategy for being promoted to a management-level position while interviewing at
-            a company that doesn't have that role available.
+            \n You wouldn\'t, for instance, want to lay out your strategy for being promoted to a management-level position while interviewing at
+            a company that doesn\'t have that role available.
             \n\n Examples:
             \n\n - When I started working for XYZ Company, I wanted to achieve the Employee of the Month title. It was a motivational
             challenge, and not all the employees took it that seriously, but I really wanted that parking spot, and my picture on the wall.
@@ -524,7 +585,7 @@
             The goal is to evaluate how the candidate deals with adversity, disappointment, and failure.
             (Plus, sometimes knowing when to give up is as important as knowing when to start.)
             \n\n Typical Structure -
-            \n\n -  The interviewee set a huge goal, didn't achieve that goal, takes responsibility for not having achieved the goal...
+            \n\n -  The interviewee set a huge goal, didn\'t achieve that goal, takes responsibility for not having achieved the goal...
             and not only takes responsibility but also learned from the experience: About himself, about what to do next time,
             about what motivates him, about what is truly important to him...
             \n\n Example:
@@ -735,7 +796,7 @@
         <item>
             Their main difference is their implementation which causes different performance for different operations.
             ArrayList is implemented as a resizable array. As more elements are added to ArrayList, its size is increased dynamically.
-            It's elements can be accessed directly by using the get and set methods, since ArrayList is essentially an array.
+            It\'s elements can be accessed directly by using the get and set methods, since ArrayList is essentially an array.
             \n\n LinkedList is implemented as a double linked list. Its performance on add and remove is better than Arraylist,
             but worse on get and set methods. Vector is similar with ArrayList, but it is synchronized.
             ArrayList is a better choice if your program is thread-safe. Vector and ArrayList require space as more elements are added.
@@ -747,7 +808,7 @@
         <!--What is the difference between equals() and == ?-->
         <item>
             Equals() method is defined in Object class in Java and used for checking equality of two objects defined by business logic.
-            \n “==” or equality operator in Java is a binary operator provided by Java programming language and used to compare primitives
+            \n "==" or equality operator in Java is a binary operator provided by Java programming language and used to compare primitives
             and objects. public boolean equals(Object o) is the method provided by the Object class.
             \n The default implementation uses == operator to compare two objects.
             \n\n Therefore the equals() method compares the "value" inside String instances (on the heap) irrespective
@@ -758,10 +819,10 @@
         </item>
         <!--What are the differences between Heap and Stack Memory?-->
         <item>
-            Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer's RAM .
+            Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer\'s RAM .
 
             \n\n Variables allocated on the stack are stored directly to the memory and access to this memory is very fast, and
-            it's allocation is dealt with when the program is compiled. When a function or a method calls another function which
+            it\'s allocation is dealt with when the program is compiled. When a function or a method calls another function which
             in turns calls another function etc., the execution of all those functions remains suspended until the very last function
             returns its value. The stack is always reserved in a LIFO (Last in First out) order, the most recently reserved block is
             always the next block to be freed. This makes it really simple to keep track of the stack, freeing a block from the stack
@@ -772,7 +833,7 @@
             This makes it much more complex to keep track of which parts of the heap are allocated or free at any given time.
 
             \n\n You can use the stack if you know exactly how much data you need to allocate before compile time and it is not too big.
-            \nYou can use heap if you don't know exactly how much data you will need at runtime or if you need to allocate a lot of data.
+            \nYou can use heap if you don\'t know exactly how much data you will need at runtime or if you need to allocate a lot of data.
             \n\n In a multi-threaded situation each thread will have its own completely independent stack but they will share the heap.
             Stack is thread specific and Heap is application specific. The stack is important to consider in exception handling and thread
             executions.
@@ -819,7 +880,7 @@
             The inheritance mechanism is very useful in code reuse.
             \n The following are some limitations of Java class inheritance: A subclass cannot inherit private members of its superclass.
             Constructor and initializer blocks cannot be inherited by a subclass. A subclass can have only one superclass.
-            \n\n The keyword “extends” is used to derive a subclass from the superclass, as illustrated by the following syntax:
+            \n\n The keyword "extends" is used to derive a subclass from the superclass, as illustrated by the following syntax:
             \n\n class Name_of_subclass extends Name_of superclass
             \n { //new fields and methods that would define the subclass go here }
             \n\n If you want to derive a subclass Rectangle from a superclass Shapes, you can do it as follows:
@@ -1023,7 +1084,7 @@
             whereas all methods of an interface must be defined as public (they are defined public by default).
 
             \n &#8226; When inheriting an abstract class, a concrete child class must define the abstract methods,
-            whereas an abstract class can extend another abstract class and abstract methods from the parent class don't have to be defined.
+            whereas an abstract class can extend another abstract class and abstract methods from the parent class don\'t have to be defined.
 
             \n &#8226; Similarly, an interface extending another interface is not responsible for implementing methods from the parent
             interface. This is because interfaces cannot define any implementation.
@@ -1190,7 +1251,7 @@
             \n public static void main( String args[])
             \n {
             \n final int a=10;   // Final variable
-            \n a=50;             //Error as value can't be changed
+            \n a=50;             //Error as value can\'t be changed
             \n }
 
             \n\n Finally
@@ -1248,7 +1309,7 @@
             the method in which the error occurred and proceeds through the call stack in the reverse order in
             which the methods were called. When an appropriate handler is found, the runtime system passes the
             exception to the handler.
-            \n Also, there's a note-worthy point: Only unchecked exceptions are propagated. Checked exceptions throw compilation error
+            \n Also, there\'s a note-worthy point: Only unchecked exceptions are propagated. Checked exceptions throw compilation error
 
             \n\n Lets say, we have a chain of methods where method3() calls method2() and method2() calls method1(). So when
             \n 1) An exception occurs in the method3() and in method3() we don’t have any exception handler.
@@ -1410,9 +1471,9 @@
             decimal digits. Another significant difference between float and double is their storage requirement,
             double is more expensive than float. It takes 8 bytes to store a variable while float just takes 4 bytes.
             Which means, if memory is constraint than its better to use float than double. BTW, the double type also has larger
-            range than float and if your numbers don't fit well in float then you have to use double in Java. It's also worth noting
+            range than float and if your numbers don\'t fit well in float then you have to use double in Java. It\'s also worth noting
             that floating point numbers or real numbers are by default double in Java. If you want to store them into float variable,
-            you need to either cast them or use a prefix 'f' or 'F'.
+            you need to either cast them or use a prefix \'f\' or \'F\'.
 
             \n\n Also to note that: float uses 1 bits for sign, 8 bits for exponent and 23 bits for mantissa,
             while double uses 1 bits for sign, 11 bits for exponent and 52 bits for mantissa.
@@ -1444,7 +1505,7 @@
             \n  // Next thread ID to be assigned
             \n private static final AtomicInteger nextId = new AtomicInteger(0);
             \n
-            \n // Thread local variable containing each thread's ID
+            \n // Thread local variable containing each thread\'s ID
             \n  private static final ThreadLocal&lt;Integer&gt; threadId =
             \n  new ThreadLocal&lt;Integer&gt;() {
             \n  @Override protected Integer initialValue() {
@@ -1452,7 +1513,7 @@
             \n  }
             \n  };
             \n
-            \n // Returns the current thread's unique ID, assigning it if necessary
+            \n // Returns the current thread\'s unique ID, assigning it if necessary
             \n public static int get() {
             \n return threadId.get();
             \n }
@@ -1636,6 +1697,101 @@
         }
 
         </item>
+        <!--what is serialization? how do you implement it?-->
+        <item>
+            Serialization is the process of converting an object into a stream of bytes in order to store an object into memory,
+            so that it can be recreated at a later time, while still keeping the object\'s original state and data.
+
+            \n\nAfter a serialized object has been written into a file, it can be read from the file and deserialized that is,
+            the type information and bytes that represent the object and its data can be used to recreate the object in memory.
+
+            \n\nMost impressive is that the entire process is JVM independent, meaning an object can be serialized on one platform and
+            deserialized on an entirely different platform.
+
+            \n\nClasses ObjectInputStream and ObjectOutputStream are high-level streams that contain the methods for serializing
+            and deserializing an object.
+
+            \n\n Example:
+
+            \n\n Suppose that we have the following Employee class, which implements the Serializable interface;
+
+            \n\npublic class Employee implements java.io.Serializable {
+            \npublic String name;
+            \npublic String address;
+            \npublic transient int SSN;
+            \npublic int number;
+            \n
+            \n        public void mailCheck() {
+            \n      System.out.println("Mailing a check to " + name + " " + address);
+            \n    }
+            \n  }
+
+            \n\n Serializing an Object;
+
+            \n\nimport java.io.*;
+            \n public class SerializeDemo {
+            \n
+            \n          public static void main(String [] args) {
+            \n       Employee e = new Employee();
+            \n    e.name = "Reyan Ali";
+            \n  e.address = "Phokka Kuan, Ambehta Peer";
+            \n e.SSN = 11122333;
+            \n e.number = 101;
+            \n
+            \n          try {
+            \n       FileOutputStream fileOut =
+            \n    new FileOutputStream("/tmp/employee.ser");
+            \n ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            \n out.writeObject(e);
+            \n out.close();
+            \n  fileOut.close();
+            \n System.out.printf("Serialized data is saved in /tmp/employee.ser");
+            \n } catch (IOException i) {
+            \n i.printStackTrace();
+            \n }
+            \n }
+            \n }
+
+            \n\n Note − When serializing an object to a file, the standard convention in Java is to give the file a .ser extension.
+
+            \n\n Deserializing an Object
+
+            \n\n import java.io.*;
+            \n  public class DeserializeDemo {
+            \n
+            \n          public static void main(String [] args) {
+            \n       Employee e = null;
+            \n    try {
+            \n FileInputStream fileIn = new FileInputStream("/tmp/employee.ser");
+            \n ObjectInputStream in = new ObjectInputStream(fileIn);
+            \n e = (Employee) in.readObject();
+            \n in.close();
+            \n fileIn.close();
+            \n } catch (IOException i) {
+            \n i.printStackTrace();
+            \n return;
+            \n } catch (ClassNotFoundException c) {
+            \n System.out.println("Employee class not found");
+            \n c.printStackTrace();
+            \n return;
+            \n }
+            \n
+            \n    System.out.println("Deserialized Employee...");
+            \n System.out.println("Name: " + e.name);
+            \n System.out.println("Address: " + e.address);
+            \n System.out.println("SSN: " + e.SSN);
+            \n System.out.println("Number: " + e.number);
+            \n  }
+            \n }
+
+            \n\n Output:
+
+            \n\n Deserialized Employee...
+            \n Name: Reyan Ali
+            \n Address:Phokka Kuan, Ambehta Peer
+            \n SSN: 0
+            \n Number:101
+        </item>
     </string-array>
 
     <!--Android Technical Questions-->
@@ -1781,7 +1937,7 @@
             What problems can this result in? How can these problems be avoided?
         </item>
         <item>
-            What is difference between Serializable and Parcelable ? Which is best approach in Android ?
+            What is the difference between Serializable and Parcelable ? Which is best approach in Android ?
         </item>
         <item>
             What are "launch modes"? What are the two mechanisms by which they can be defined? What specific types of
@@ -1806,7 +1962,8 @@
             \n\n&#8226; DVM (Dalvik Virtual Machine): DVM is a highly optimized virtual machine for mobile devices.
             \n\n&#8226; Platform Diversity: Since Android is open-source, it has been adopted by a wide range of manufacturers of mobile devices.
             \n\n&#8226; Experience with Java: Java is the language of choice for Android app development.
-            Those who already have years of experience in Java will feel right at home developing for Android.
+
+            \n\nThose who already have years of experience in Java will feel right at home developing for Android.
         </item>
         <!--What are the latest Android versions? The most important Oreo new features?-->
         <item>
@@ -1857,7 +2014,7 @@
             And the best part is that it syncs across devices, so if you’ve used Google Autofill while browsing the internet with Chrome,
             you’ll have access to all that log in information via your mobile device, too, as long as you’re using the same Google Account.
 
-            \n\n&#8226; For developer features, check https://developer.android.com/about/versions/oreo/android-8.0.
+            \n\nFor developer features, check https://developer.android.com/about/versions/oreo/android-8.0.
 
         </item>
         <!--What is the Google Android SDK?-->
@@ -1901,9 +2058,9 @@
             \n\n - action_answer: Opens an Activity that handles incoming calls. Currently this is handled by the native in-call screen.
 
             \n\n - action_call: Brings up a phone dialer and immediately initiates a call using the number supplied in the Intent URI.
-            Generally it's considered better form to use action_dial if possible.
+            Generally it\'s considered better form to use action_dial if possible.
 
-            \n\n - action_delete: Starts an Activity that lets you delete the data specified at the Intent's data URI.
+            \n\n - action_delete: Starts an Activity that lets you delete the data specified at the Intent\'s data URI.
 
             \n\n - action_dial Brings up a dialer application with the number to dial pre-populated from the Intent URI.
             By default this is handled by the native Android phone dialer. The dialer can normalize most number schemas:
@@ -1918,7 +2075,7 @@
             When closed it should return a URI to the item that was picked. The Activity launched depends on the data being picked:
             for example, passing content://contacts/people will invoke the native contacts list.
 
-            \n\n - action_search Launches the Activity used for performing a search. Supply the search term as a string in the Intent's
+            \n\n - action_search Launches the Activity used for performing a search. Supply the search term as a string in the Intent\'s
             extras using thffiearchManager.QUERY key.
 
             \n\n - action_sendto Launches an Activity to send a message to the contact specified by the Intent URI.
@@ -1941,7 +2098,7 @@
             \n\n &#8226; onPause() is where you deal with the user leaving your activity. Most importantly,
             any changes made by the user should at this point be committed (usually to the ContentProvider holding the data).
             \n\n To be of use with Context.startActivity(), all activity classes must have a corresponding &lt;activity&gt;
-            declaration in their package's AndroidManifest.xml.
+            declaration in their package\'s AndroidManifest.xml.
 
         </item>
         <!--What do you know about Material Design-->
@@ -1954,7 +2111,6 @@
             \n\n &#8226; A material design app theme to style all your UI widgets
             \n\n &#8226; Widgets for complex views such as lists and cards
             \n\n &#8226; New APIs for custom shadows and animations
-
         </item>
         <!--What's the difference between Dialog and AlertDialog Android?-->
         <item>
@@ -1970,20 +2126,20 @@
         and which has better performance?-->
         <item>
             &#8226; ConstraintLayout: ConstraintLayout allows you to create large and complex layouts with a flat view hierarchy
-            (no nested view groups). It's similar to RelativeLayout in that all views are laid out according to relationships
-            between sibling views and the parent layout, but it's more flexible than RelativeLayout and easier to use with Android
-            Studio's Layout Editor.
-            \nAll the power of ConstraintLayout is available directly from the Layout Editor's visual tools, because the layout API
+            (no nested view groups). It\'s similar to RelativeLayout in that all views are laid out according to relationships
+            between sibling views and the parent layout, but it\'s more flexible than RelativeLayout and easier to use with Android
+            Studio\'s Layout Editor.
+            \nAll the power of ConstraintLayout is available directly from the Layout Editor\'s visual tools, because the layout API
             and the Layout Editor were specially built for each other. So you can build your layout with ConstraintLayout entirely by
             drag-and-dropping instead of editing the XML.
 
             \n\n&#8226; FrameLayout: FrameLayout is designed to block out an area on the screen to display a single item. Generally,
-            FrameLayout should be used to hold a single child view, because it can be difficult to organize child views in a way that's
+            FrameLayout should be used to hold a single child view, because it can be difficult to organize child views in a way that\'s
             scalable to different screen sizes without the children overlapping each other. You can, however, add multiple children to a
             FrameLayout and control their position within the FrameLayout by assigning gravity to each child, using the android:layout_gravity
             attribute.
             \nChild views are drawn in a stack, with the most recently added child on top. The size of the FrameLayout is the size of
-            its largest child (plus padding), visible or not (if the FrameLayout's parent permits). Views that are GONE are used for
+            its largest child (plus padding), visible or not (if the FrameLayout\'s parent permits). Views that are GONE are used for
             sizing only if setConsiderGoneChildrenWhenMeasuring() is set to true.
 
             \n\n&#8226; GridLayout: A layout that places its children in a rectangular grid.
@@ -2015,7 +2171,7 @@
             \n\n &#8226; Starting an activity:
             \n - An Activity represents a single screen in an app. You can start a new instance of an
             Activity by passing an Intent to startActivity(). The Intent describes the activity to start and carries any necessary data.
-            \nIf you want to receive a result from the activity when it finishes, call startActivityForResult(). Your activity receives the result as a separate Intent object in your activity's onActivityResult() callback. For more information, see the Activities guide.
+            \nIf you want to receive a result from the activity when it finishes, call startActivityForResult(). Your activity receives the result as a separate Intent object in your activity\'s onActivityResult() callback. For more information, see the Activities guide.
 
             \n\n &#8226; Starting a service:
             \n - A Service is a component that performs operations in the background without a user interface.
@@ -2034,8 +2190,8 @@
 
             \n\n There are two types of intents:
 
-            \n\n - Explicit intents specify which application will satisfy the intent, by supplying either the target app's package name
-            or a fully-qualified component class name. You'll typically use an explicit intent to start a component in your own app,
+            \n\n - Explicit intents specify which application will satisfy the intent, by supplying either the target app\'s package name
+            or a fully-qualified component class name. You\'ll typically use an explicit intent to start a component in your own app,
             because you know the class name of the activity or service you want to start. For example, you might start a new activity
             within your app in response to a user action, or start a service to download a file in the background.
 
@@ -2046,7 +2202,7 @@
         </item>
         <!--Where should you use implicit and explicit intent? -->
         <item>
-            You'll typically use an explicit intent to start a component in your own app,
+             - You\'ll typically use an explicit intent to start a component in your own app,
             because you know the class name of the activity or service you want to start. For example, you might start a new activity
             within your app in response to a user action, or start a service to download a file in the background.
 
@@ -2089,10 +2245,10 @@
             and onDestroy(). Their purpose is to help structure your code around how you want an activity to perform throughout its
             lifecycle on the device.
 
-            \nFor example, onCreate() is where you would perform your static setup, from creating views to binding data to lists.
+            \n\nFor example, onCreate() is where you would perform your static setup, from creating views to binding data to lists.
             It is always immediately followed by onStart(), where the app will be made visible to the user.
 
-            \nWhat you’re looking for in their response is a solid grasp of the lifecycle of an Android app.
+            \n\nWhat you’re looking for in their response is a solid grasp of the lifecycle of an Android app.
             The functions of these methods are pretty self-explanatory based on their names.
 
         </item>
@@ -2117,9 +2273,9 @@
         </item>
         <!--Enumerate the three key loops when monitoring an activity-->
         <item>
-            – Entire lifetime – activity happens between onCreate and onDestroy
-            \n\n– Visible lifetime – activity happens between onStart and onStop
-            \n\n– Foreground lifetime – activity happens between onResume and onPause
+            – Entire lifetime – activity happens between onCreate and onDestroy.
+            \n\n– Visible lifetime – activity happens between onStart and onStop.
+            \n\n– Foreground lifetime – activity happens between onResume and onPause.
         </item>
         <!--What is the difference between a fragment and an activity? Explain the relationship between the two.-->
         <item>
@@ -2140,7 +2296,7 @@
         </item>
         <!--Which method is called only once in a fragment life cycle?-->
         <item>
-            onAttached();
+                             - onAttached();
         </item>
         <!--When is the onStop() method invoked?-->
         <item>
@@ -2219,8 +2375,8 @@
             \n\n Deliver a Message to a Fragment
 
             \n The host activity can deliver messages to a fragment by capturing the Fragment instance with findFragmentById(),
-            then directly call the fragment's public methods.
-            \nFor instance, imagine that the activity shown above may contain another fragment that's used to display the item specified
+            then directly call the fragment\'s public methods.
+            \nFor instance, imagine that the activity shown above may contain another fragment that\'s used to display the item specified
             by the data returned in the above callback method. In this case, the activity can pass the information received in the
             callback method to the other fragment that will display the item:
 
@@ -2236,12 +2392,12 @@
             \n       getSupportFragmentManager().findFragmentById(R.id.article_fragment);
             \n
             \n          if (articleFrag != null) {
-            \n       // If article frag is available, we're in two-pane layout...
+            \n       // If article frag is available, we\'re in two-pane layout...
             \n
             \n          // Call a method in the ArticleFragment to update its content
             \n       articleFrag.updateArticleView(position);
             \n    } else {
-            \n // Otherwise, we're in the one-pane layout and must swap frags...
+            \n // Otherwise, we\'re in the one-pane layout and must swap frags...
             \n
             \n          // Create fragment and give it an argument for the selected article
             \n       ArticleFragment newFragment = new ArticleFragment();
@@ -2265,7 +2421,7 @@
         </item>
         <!--What is ANR, when does it occur and how can it be prevented?-->
         <item>
-            ‘ANR’ in Android is 'Application Not Responding.' It means when the user is interacting with the activity,
+            \'ANR\' in Android is \'Application Not Responding.\' It means when the user is interacting with the activity,
             and the activity is in the onResume() method, a dialog appears displaying "application not responding."
 
             \n\nIt happens because we start a heavy and long running task like downloading data in the main UI thread.
@@ -2288,7 +2444,7 @@
             and Google Play.
 
             \n\nAmong many other things, the manifest file is required to declare the following:
-            \n\n&#8226; The app's package name, which usually matches your code's namespace. The Android build tools use this to determine
+            \n\n&#8226; The app\'s package name, which usually matches your code\'s namespace. The Android build tools use this to determine
             the location of code entities when building your project. When packaging the app, the build tools replace this value with the
             application ID from the Gradle build files, which is used as the unique app identifier on the system and on Google Play.
             \n\n&#8226; The components of the app, which include all activities, services, broadcast receivers, and content providers.
@@ -2353,7 +2509,7 @@
             \n\n - Internal Storage;
             \n By default, files saved to the internal storage are private to your app, and other apps cannot access them
             (nor can the user, unless they have root access). This makes internal storage a good place for internal app data that the
-            user doesn't need to directly access. The system provides a private directory on the file system for each app where you can
+            user doesn\'t need to directly access. The system provides a private directory on the file system for each app where you can
             organize any files your app needs.
 
             \nWhen the user uninstalls your app, the files saved on the internal storage are removed. Because of this behavior,
@@ -2362,7 +2518,7 @@
             uninstall your app. So you should instead save those types of files to the public external storage.
 
             \n\n - Internal cache files;
-            \n If you'd like to keep some data temporarily, rather than store it persistently,
+            \n If you\'d like to keep some data temporarily, rather than store it persistently,
             you should use the special cache directory to save the data. Each app has a private cache directory specifically for
             these kinds of files. When the device is low on internal storage space, Android may delete these cache files to recover space.
             However, you should not rely on the system to clean up these files for you. You should always maintain the cache files yourself
@@ -2370,7 +2526,7 @@
 
             \n\n External File Storage:
             \n\n Every Android device supports a shared "external storage" space that you can use to save files. This space is called
-            external because it's not a guaranteed to be accessible—it is a storage space that users can mount to a computer as an
+            external because it\'s not a guaranteed to be accessible—it is a storage space that users can mount to a computer as an
             external storage device, and it might even be physically removable (such as an SD card). Files saved to the external storage
             are world-readable and can be modified by the user when they enable USB mass storage to transfer files on a computer.
 
@@ -2382,7 +2538,7 @@
             kinds of files, so the user has one location for all their photos, ringtones, music, and such.
 
             \n\n Shared Preferences:
-            \n\n If you don't need to store a lot of data and it doesn't require structure, you should use SharedPreferences.
+            \n\n If you don\'t need to store a lot of data and it doesn\'t require structure, you should use SharedPreferences.
             The SharedPreferences APIs allow you to read and write persistent key-value pairs of primitive data types:
             booleans, floats, ints, longs, and strings.
 
@@ -2390,7 +2546,7 @@
             manually specify a name for the file or use per-activity files to save your data.
 
             \n\n The API name "shared preferences" is a bit misleading because the API is not strictly for saving "user preferences,"
-            such as what ringtone a user has chosen. You can use SharedPreferences to save any kind of simple data, such as the user's
+            such as what ringtone a user has chosen. You can use SharedPreferences to save any kind of simple data, such as the user\'s
             high score.
 
             \n\n Databases:
@@ -2499,7 +2655,7 @@
             \n Toast.makeText(this, "service starting", Toast.LENGTH_SHORT).show();
             \n
             \n // For each start request, send a message to start a job and deliver the
-            \n // start ID so we know which request we're stopping when we finish the job
+            \n // start ID so we know which request we\'re stopping when we finish the job
             \n Message msg = mServiceHandler.obtainMessage();
             \n msg.arg1 = startId;
             \n mServiceHandler.sendMessage(msg);
@@ -2508,38 +2664,88 @@
             \n return START_STICKY;
             \n }
         </item>
-
+        <!--Normally, in the process of carrying out a screen reorientation, the Android platform tears down the foreground activity-->
+        <!--and recreates it, restoring each of the view values in the activity’s layout.-->
+        <!--\nIn an app you’re working on, you notice that a view’s value is not being restored after screen reorientation.-->
+        <!--What could be a likely cause of the problem that you should verify, at a minimum, about that particular view?-->
         <item>
+            You should verify that it has a valid id. In order for the Android system to restore the state of the views in your activity,
+            each view must have a unique ID, supplied by the android:id attribute.
+
+            \n\n Complete guide about the concept is on https://developer.android.com/guide/components/activities/activity-lifecycle#java.
+        </item>
+        <!--What is the relationship between the life cycle of an AsyncTask and an Activity? What problems can this result in? How can -->
+        <!--these problems be avoided?-->
+        <item>
+            An AsyncTask is not tied to the life cycle of the Activity that contains it. So, for example, if you start an AsyncTask inside
+            an Activity and the user rotates the device, the Activity will be destroyed (and a new Activity instance will be created) but the
+            AsyncTask will not die but instead goes on living until it completes.
+
+            \n\nThen, when the AsyncTask does complete, rather than updating the UI of the new Activity, it updates the former instance
+            of the Activity (i.e., the one in which it was created but that is not displayed anymore!).
+            This can lead to an Exception (of the type java.lang.IllegalArgumentException: View not attached to window manager if you use,
+            for instance, findViewById to retrieve a view inside the Activity).
+
+            \n\nThere’s also the potential for this to result in a memory leak since the AsyncTask maintains a reference to the Activity,
+            which prevents the Activity from being garbage collected as long as the AsyncTask remains alive.
+
+            \n\nFor these reasons, using AsyncTasks for long-running background tasks is generally a bad idea.
+            Rather, for long-running background tasks, a different mechanism (such as a service) should be employed.
+        </item>
+        <!--What is difference between Serializable and Parcelable ? Which is best approach in Android ?-->
+        <item>
+            Serializable is a standard Java interface. You simply mark a class Serializable by implementing the interface, and
+            Java will automatically serialize it in certain situations.
+
+            \n\nParcelable is an Android specific interface where you implement the serialization yourself.
+            It was created to be far more efficient than Serializable, and to get around some problems with the default
+            Java serialization scheme.
+        </item>
+        <!--What are launch modes? What are the two mechanisms by which they can be defined? What specific types of launch modes are supported?-->
+        <item>
+            A "launch mode" is the way in which a new instance of an activity is to be associated with the current task.
+
+            \n\nLaunch modes may be defined using one of two mechanisms:
+
+            \n\n 1- Manifest file. When declaring an activity in a manifest file, you can specify how the activity should associate with tasks
+            when it starts. Supported values include:
+
+            \n\n &#8226; standard (default). Multiple instances of the activity class can be instantiated and multiple instances can be added
+            to the same task or different tasks. This is the common mode for most of the activities.
+            \n &#8226; singleTop. The difference from standard is, if an instance of the activity already exists at the top of the
+            current task and the system routes the intent to this activity, no new instance will be created because it will fire off an
+            onNewIntent() method instead of creating a new object.
+            \n &#8226; singleTask. A new task will always be created and a new instance will be pushed to the task as the root.
+            However, if any activity instance exists in any tasks, the system routes the intent to that activity instance through
+            the onNewIntent() method call. In this mode, activity instances can be pushed to the same task. This mode is useful
+            for activities that act as the entry points.
+            \n &#8226; singleInstance. Same as singleTask, except that the no activities instance can be pushed into the same
+            task of the singleInstance’s. Accordingly, the activity with launch mode is always in a single activity instance task.
+            This is a very specialized mode and should only be used in applications that are implemented entirely as one activity.
+
+            \n\n 2- Intent flags. Calls to startActivity() can include a flag in the Intent that declares if and how the new activity should be associated with the current task. Supported values include:
+
+            \n\n &#8226; FLAG_ACTIVITY_NEW_TASK. Same as singleTask value in Manifest file (see above).
+            \n &#8226; FLAG_ACTIVITY_SINGLE_TOP. Same as singleTop value in Manifest file (see above).
+            \n &#8226; FLAG_ACTIVITY_CLEAR_TOP. If the activity being started is already running in the current task,
+            then instead of launching a new instance of that activity, all of the other activities on top of it are destroyed
+            and this intent is delivered to the resumed instance of the activity (now on top), through onNewIntent().
+            There is no corresponding value in the Manifest file that produces this behavior.
 
         </item>
-
+        <!--What is a broadcast receiver?-->
         <item>
-
+            Broadcast Receivers simply respond to broadcast messages from other applications or from the system itself.
+            These messages are sometimes called events or intents. For example, applications can also initiate broadcasts to
+            let other applications know that some data has been downloaded to the device and is available for them to use,
+            so this is broadcast receiver who will intercept this communication and will initiate appropriate action.
         </item>
-
+        <!--When dealing with multiple resources, which one takes precedence?-->
         <item>
-
+            Assuming that all of these multiple resources are able to match the configuration of a device, the ‘locale’ qualifier
+            almost always takes the highest precedence over the others.
         </item>
-
-        <item>
-
-        </item>
-
-        <item>
-
-        </item>
-
-        <item>
-
-        </item>
-
-        <item>
-
-        </item>
-
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

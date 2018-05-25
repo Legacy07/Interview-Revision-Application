@@ -2,6 +2,7 @@ package com.ahmet.interviewapp.technical_questions;
 
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
@@ -34,7 +35,7 @@ public class JavaTechnicalAnswers extends Fragment implements View.OnClickListen
     Answers answers;
     Questions questions;
     int screen = 0;
-    Button javaRightButton, javaLeftButton, javaCenterButton;
+    FloatingActionButton javaRightButton, javaLeftButton, javaCenterButton;
 
     public JavaTechnicalAnswers() {
     }
@@ -44,9 +45,9 @@ public class JavaTechnicalAnswers extends Fragment implements View.OnClickListen
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_java_technical_answers, container, false);
+        View view = inflater.inflate(R.layout.answer_slides, container, false);
 
-        viewPager = (ViewPager) view.findViewById(R.id.javaViewPager);
+        viewPager = (ViewPager) view.findViewById(R.id.view_pager);
         sliderAdapter = new SliderAdapter(getActivity(), questionsArrayList, answersArrayList);
 
         viewPager.setAdapter(sliderAdapter);
@@ -78,9 +79,9 @@ public class JavaTechnicalAnswers extends Fragment implements View.OnClickListen
         addAnswers.loadSlide(getActivity(), sliderAdapter, viewPager);
 
         //initialise buttons
-        javaLeftButton = (Button) view.findViewById(R.id.javaLeftButton);
-        javaRightButton = (Button) view.findViewById(R.id.javaRightButton);
-        javaCenterButton = (Button) view.findViewById(R.id.javaCenterButton);
+        javaLeftButton = view.findViewById(R.id.leftButton);
+        javaRightButton =  view.findViewById(R.id.rightButton);
+        javaCenterButton = view.findViewById(R.id.centerButton);
         //set click listener on buttons
         javaLeftButton.setOnClickListener(this);
         javaRightButton.setOnClickListener(this);
@@ -91,27 +92,26 @@ public class JavaTechnicalAnswers extends Fragment implements View.OnClickListen
         return view;
     }
     @Override
-    public void onPause() {
-        super.onPause();
-        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
-
-    }
-
-    @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.javaRightButton:
+            case R.id.rightButton:
                 addAnswers.loadNextSlide(viewPager, sliderAdapter);
                 break;
-            case R.id.javaLeftButton:
+            case R.id.leftButton:
                 addAnswers.loadPreviousSlide(viewPager, sliderAdapter);
                 break;
-            case R.id.javaCenterButton:
+            case R.id.centerButton:
                 JavaTechnicalQuestionsFragment javaTechnicalQuestionsFragment = new JavaTechnicalQuestionsFragment();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 //replacing the fragment with the layout
                 manager.beginTransaction().replace(R.id.content_layout, javaTechnicalQuestionsFragment).addToBackStack(null).commit();
                 break;
         }
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+
     }
 }

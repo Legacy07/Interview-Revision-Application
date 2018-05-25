@@ -80,6 +80,9 @@ public class AddAnswers {
         if (previousSlide < sliderAdapter.getCount()) {
 
             viewPager.setCurrentItem(previousSlide);
+        } else {
+            int lastSlide = sliderAdapter.getCount() + 1;
+            viewPager.setCurrentItem(lastSlide);
         }
     }
 

@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.ahmet.interviewapp.Models.Questions;
@@ -51,7 +50,7 @@ public class QuestionsListViewAdaptor extends BaseAdapter {
             inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.behavioural_listview, parent, false);
+            convertView = inflater.inflate(R.layout.questions_listview, parent, false);
         }
         //textviews initialised
         TextView text = (TextView) convertView.findViewById(R.id.behaviouralTextView);

@@ -4,10 +4,12 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.Models.Answers;
@@ -45,7 +47,7 @@ public class SliderAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.behavioural_slide_layout, container, false);
+        View view = layoutInflater.inflate(R.layout.slide_adaptor_layout, container, false);
 
         TextView answersTextView = (TextView) view.findViewById(R.id.behaviouralslideTextview);
         TextView questionsTextView = (TextView) view.findViewById(R.id.behaviouralslideQuestionsTextview);
