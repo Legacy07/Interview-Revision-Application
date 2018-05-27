@@ -53,19 +53,10 @@ public class QuestionsListViewAdaptor extends BaseAdapter {
             convertView = inflater.inflate(R.layout.questions_listview, parent, false);
         }
         //textviews initialised
-        TextView text = (TextView) convertView.findViewById(R.id.behaviouralTextView);
+        TextView text = (TextView) convertView.findViewById(R.id.questionsTextView);
         //place gathered item into text view to output
         text.setText(questionsArrayList.get(position).getQuestions());
 
-
-        //event handler if clicked
-      /*  final int pos = position;
-        convertView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });*/
         return convertView;
     }
 }

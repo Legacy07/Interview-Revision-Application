@@ -25,11 +25,9 @@ public class JavaTechnicalQuestionsFragment extends Fragment {
 
 
     ListView javaTechnicalListView;
-
     ArrayList<Questions> questionsArrayList = new ArrayList<>();
     Questions questions;
     QuestionsListViewAdaptor listViewAdaptor;
-
 
     public JavaTechnicalQuestionsFragment() {
     }
@@ -67,7 +65,6 @@ public class JavaTechnicalQuestionsFragment extends Fragment {
             }
         });
 
-
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Java Technical Questions");
 
         return view;
@@ -77,6 +74,5 @@ public class JavaTechnicalQuestionsFragment extends Fragment {
     public void onResume() {
         super.onResume();
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
-
     }
 }

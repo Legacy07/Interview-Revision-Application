@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="algorithm_topics">
+        <item>
+            Data Structures
+        </item>
+        <item>
+            Searching
+        </item>
+        <item>
+            Sorting
+        </item>
+        <item>
+            Graph Algorithm
+        </item>
+        <item>
+            Advanced Algorithms
+        </item>
+    </string-array>
+    <string-array name="data_structures">
+        <item>
+            Arrays - Basics
+        </item>
+        <item>
+            Arrays - Summing Elements of an Array
+        </item>
+        <item>
+            Arrays - Find the Mean of a set of numbers
+        </item>
+        <item>
+            Arrays - Finding the Maximum Element
+        </item>
+        <item>
+            Arrays - Create a copy of an Array
+        </item>
+        <item>
+            Arrays - Multi-Dimensional Arrays
+        </item>
+        <item>
+            Arrays - Matrix Addition
+        </item>
+        <item>
+            Arrays - Matrix Multiplication
+        </item>
+        <item>
+            Linked Lists - Basic
+        </item>
+        <item>
+            Linked Lists - Singly Linked List
+        </item>
+        <item>
+            Linked Lists - Doubly Linked List
+        </item>
+        <item>
+            ArrayLists - Basics
+        </item>
+        <item>
+            ArrayLists - Generic ArrayList
+        </item>
+        <item>
+            ArrayLists - Loop ArrayList
+        </item>
+        <item>
+            Enumeration - Basics
+        </item>
+        <item>
+            Enumeration - Generic Enumeration
+        </item>
+        <item>
+            BitSet - Basics
+        </item>
+        <item>
+            BitSet - Generic BitSet
+        </item>
+        <item>
+            Stacks - Basics
+        </item>
+        <item>
+            Stacks - Generic Stack
+        </item>
+        <item>
+            Stacks - Arrays to Stack
+        </item>
+        <item>
+           Vector - Basics
+        </item>
+        <item>
+            Vector - Generic Vector
+        </item>
+        <item>
+            Hash Tables - Basics
+        </item>
+        <item>
+            Hash Tables - Generic Hash Table
+        </item>
+            Trees - Basics
+        <item>
+            Trees - Generic Tree
+        </item>
+        <item>
+            Trees - Traversals (Inorder, Preorder and Postorder)
+        </item>
+        <item>
+            Binary Tree - Basics
+        </item>
+        <item>
+            Binary Tree - Generic Binary Tree
+        </item>
+
+    </string-array>
+
+    
+    
+    
+    
+    
+</resources>

@@ -2,7 +2,7 @@
     <string name="app_name">Interview Revision</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">by Ahmet Ince</string>
+    <string name="nav_header_title">Interview Revision</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="what_is_behavioural_questions">Behavioural questions are asked to get to know your personality, to understand your resume more deeply,
@@ -2746,6 +2746,9 @@
             almost always takes the highest precedence over the others.
         </item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
