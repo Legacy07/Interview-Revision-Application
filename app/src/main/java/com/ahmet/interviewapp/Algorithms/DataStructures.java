@@ -1,18 +1,22 @@
 package com.ahmet.interviewapp.Algorithms;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.ahmet.interviewapp.Adaptors.QuestionsListViewAdaptor;
 import com.ahmet.interviewapp.Models.AddQuestions;
 import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.R;
+import com.ahmet.interviewapp.technical_questions.JavaTechnicalAnswers;
 
 import java.util.ArrayList;
 
@@ -42,6 +46,22 @@ public class DataStructures extends Fragment {
         AddQuestions addQuestions = new AddQuestions();
         addQuestions.add(getActivity(), questions, arrayList, questionsArray, listViewAdaptor);
         listView.setAdapter(listViewAdaptor);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                //open slides when clicked on a list item
+                DataStructuresAnswers dataStructuresAnswers = new DataStructuresAnswers();
+
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_layout, dataStructuresAnswers).addToBackStack(null).commit();
+//                send the position of the item so it opens the corresponding slide to the question
+                Bundle bundle = new Bundle();
+                bundle.putInt("Position", position);
+                Intent intent = getActivity().getIntent();
+                intent.putExtras(bundle);
+            }
+        });
+
 
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Data Structures");
 
