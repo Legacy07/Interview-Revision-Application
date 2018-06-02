@@ -109,6 +109,12 @@
         <item>
             Binary Tree - Generic Binary Tree
         </item>
+        <item>
+            Binary Search Tree - Basics
+        </item>
+        <item>
+            Binary Search Tree - Generic Binary Search Tree
+        </item>
 
     </string-array>
 
@@ -1236,6 +1242,35 @@
      \n    */
    \n }}
         </item>
+        <!--Binary Search Tree - basic-->
+        <item>
+
+        </item>
+        <!--Binary search tree generic-->
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+
 
     </string-array>
+
+
 </resources>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sorting">
+        <item>
+            Bubble Sort - Basics
+        </item>
+        <item>
+            Bubble Sort - Generic Bubble Sort
+        </item>
+        <item>
+            Selection Sort - Basics
+        </item>
+        <item>
+            Selection Sort - Generic Selection Sort
+        </item>
+        <item>
+            Insertion Sort - Basics
+        </item>
+        <item>
+            Insertion Sort - Generic Insertion Sort
+        </item>
+        <item>
+            Quick Sort - Basics
+        </item>
+        <item>
+            Quick Sort - Generic Quick Sort
+        </item>
+        <item>
+            Merge Sort - Basics
+        </item>
+        <item>
+            Merge Sort - Generic Merge Sort
+        </item>
+        <item>
+            Heap Sort - Basics
+        </item>
+        <item>
+            Heap Sort - Generic Heap Sort
+        </item>
+        <item>
+            Counting Sort - Basics
+        </item>
+        <item>
+            Counting Sort - Generic Counting Sort
+        </item>
+        <item>
+            Radix Sort - Basics
+        </item>
+        <item>
+            Radix Sort - Generic Radix Sort
+        </item>
+        <item>
+            Bucket Sort - Basics
+        </item>
+        <item>
+            Bucket Sort - Generic Bucket Sort
+        </item>
+    </string-array>
+
+    <string-array name="sorting_answers">
+        <!--Bubble Sort - basic-->
+        <item>
+            One of the oldest sorts known to man due to its simplicity.
+
+            \nBased on the properly of a sorted list that any two adjacent elements are in sorted order.
+
+            \nIn a typical iteration, each adjacent pair of elements is compared, starting with the first two elements,
+            all the way to the final two elements
+
+            \nEach time two elements are compared;
+            – if they are already in sorted order, nothing is done to them and the next pair of elements is compared.
+            - in the case where the two elements are not in sorted order, the two elements are swapped, putting them in order.
+
+            \n\nExample:
+            \nFirst Pass:
+            \n( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1.
+            \n( 1 5 4 2 8 ) –>  ( 1 4 5 2 8 ), Swap since 5 > 4
+            \n( 1 4 5 2 8 ) –>  ( 1 4 2 5 8 ), Swap since 5 > 2
+            \n( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ), Now, since these elements are already in order (8 > 5), algorithm does not swap them.
+            \n
+            \n          Second Pass:
+            \n        ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 )
+            \n      ( 1 4 2 5 8 ) –> ( 1 2 4 5 8 ), Swap since 4 > 2
+            \n    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+            \n  ( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 )
+            \nNow, the array is already sorted, but our algorithm does not know if it is completed.
+            The algorithm needs one whole pass without any swap to know it is sorted.
+            \n
+            \n          Third Pass:
+            \n        ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+            \n      ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+            \n    ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+            \n  ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
+
+            \n\nTime complexity is O(n2).
+            \n\nMemory Space Complexity is O(1).
+
+        </item>
+        <!--Bubble Sort - generic-->
+        <item>
+            // Java program for implementation of Bubble Sort
+
+            \n\nclass BubbleSort
+            \n{
+            \nvoid bubbleSort(int arr[])
+            \n{
+            \nint n = arr.length;
+            \nfor (int i = 0; i &lt; n-1; i++)
+            \nfor (int j = 0; j &lt; n-i-1; j++)
+            \nif (arr[j] > arr[j+1])
+            \n{
+            \n// swap temp and arr[i]
+            \nint temp = arr[j];
+            \narr[j] = arr[j+1];
+            \narr[j+1] = temp;
+            \n}
+            \n }
+            \n
+            \n          /* Prints the array */
+            \n        void printArray(int arr[])
+            \n      {
+            \n    int n = arr.length;
+            \n  for (int i=0; i&lt;n; ++i)
+            \nSystem.out.print(arr[i] + " ");
+            \nSystem.out.println();
+            \n}
+            \n
+            \n          // Driver method to test above
+            \n        public static void main(String args[])
+            \n      {
+            \n    BubbleSort ob = new BubbleSort();
+            \n  int arr[] = {64, 34, 25, 12, 22, 11, 90};
+            \nob.bubbleSort(arr);
+            \nSystem.out.println("Sorted array");
+            \nob.printArray(arr);
+            \n}            }
+
+            \n\nOutput:
+            \nSorted array:
+            \n11 12 22 25 34 64 90
+        </item>
+        <!--Selection Sort - basic-->
+        <item>
+            The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
+            from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array;
+
+            \n\n1) The subarray which is already sorted.
+            \n2) Remaining subarray which is unsorted.
+
+            \n\nIn every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
+
+            \n\nFollowing example explains the above steps:
+
+            \n\narr[] = 64 25 12 22 11
+
+            \n\n// Find the minimum element in arr[0...4]
+            \n// and place it at beginning
+            \n11 25 12 22 64
+            \n
+            \n          // Find the minimum element in arr[1...4]
+            \n        // and place it at beginning of arr[1...4]
+            \n      11 12 25 22 64
+            \n
+            \n          // Find the minimum element in arr[2...4]
+            \n        // and place it at beginning of arr[2...4]
+            \n      11 12 22 25 64
+            \n
+            \n          // Find the minimum element in arr[3...4]
+            \n        // and place it at beginning of arr[3...4]
+            \n      11 12 22 25 64
+
+            \n\nTime Complexity is O(n2).
+            \n\nMemory Space Complexity is O(1).
+
+        </item>
+        <!--Selection Sort - Generic-->
+        <item>
+            // Java program for implementation of Selection Sort
+            \nclass SelectionSort
+            \n{
+            \nvoid sort(int arr[])
+            \n{
+            \nint n = arr.length;
+            \n
+            \n          // One by one move boundary of unsorted subarray
+            \n        for (int i = 0; i &lt; n-1; i++)
+            \n      {
+            \n    // Find the minimum element in unsorted array
+            \n  int min_idx = i;
+            \nfor (int j = i+1; j &lt; n; j++)
+            \nif (arr[j] &lt; arr[min_idx])
+            \nmin_idx = j;
+            \n
+            \n          // Swap the found minimum element with the first
+            \n        // element
+            \n      int temp = arr[min_idx];
+            \n    arr[min_idx] = arr[i];
+            \n  arr[i] = temp;
+            \n}
+            \n}
+            \n
+            \n          // Prints the array
+            \n        void printArray(int arr[])
+            \n      {
+            \n    int n = arr.length;
+            \n  for (int i=0; i&lt;n; ++i)
+            \nSystem.out.print(arr[i]+" ");
+            \nSystem.out.println();
+            \n}
+            \n
+            \n          // Driver code to test above
+            \n        public static void main(String args[])
+            \n      {
+            \n    SelectionSort ob = new SelectionSort();
+            \n  int arr[] = {64,25,12,22,11};
+            \nob.sort(arr);
+            \nSystem.out.println("Sorted array");
+            \nob.printArray(arr);
+            \n}}
+
+            \n\nOutput:
+            \nSorted array:
+            \n11 12 22 25 64
+
+        </item>
+        <!--Insertion Sort - basic-->
+        <item>
+            The approach of Insertion Sort:
+             \n - Pick any item and insert it into its proper place in a sorted sublist
+             \n - Repeat until all items have been inserted
+
+            \n\n(One implementation) in more detail:
+            \n - Consider the first item to be a sorted sublist (of one item)
+            \n – Insert the second item into the sorted sublist, shifting items as necessary to make room to insert the new addition
+            \n - Insert the third item into the sorted sublist (of two items), shifting as necessary
+            \n - Repeat until all values are inserted into their proper position
+
+            \n\nExample:
+
+            \n\n12, 11, 13, 5, 6
+
+            \nLet us loop for i = 1 (second element of the array) to 5 (Size of input array)
+            \n
+            \n          i = 1. Since 11 is smaller than 12, move 12 and insert 11 before 12
+            \n        11, 12, 13, 5, 6
+            \n
+            \n          i = 2. 13 will remain at its position as all elements in A[0..I-1] are smaller than 13
+            \n        11, 12, 13, 5, 6
+            \n
+            \n          i = 3. 5 will move to the beginning and all other elements from 11 to 13 will move one position ahead of their current position.
+            \n        5, 11, 12, 13, 6
+            \n
+            \n          i = 4. 6 will move to position after 5, and elements from 11 to 13 will move one position ahead of their current position.
+            \n        5, 6, 11, 12, 13
+
+            \n\n Time Complexity is O(n2).
+            \n\nMemory Space Complexity is O(1).
+
+        </item>
+        <!--Insertion Sort - generic-->
+        <item>
+            // Java program for implementation of Insertion Sort
+            \n class InsertionSort
+            \n{
+            \n/*Function to sort array using insertion sort*/
+            \nvoid sort(int arr[])
+            \n{
+            \nint n = arr.length;
+            \nfor (int i=1; i&lt;n; ++i)
+            \n{
+            \nint key = arr[i];
+            \nint j = i-1;
+            \n
+            \n         /* Move elements of arr[0..i-1], that are
+            \n       greater than key, to one position ahead
+            \n     of their current position */
+            \n   while (j&gt;=0 &amp;&amp; arr[j] &gt; key)
+            \n {
+            \narr[j+1] = arr[j];
+            \nj = j-1;
+            \n }
+            \n arr[j+1] = key;
+            \n}
+            \n}
+            \n
+            \n         /* A utility function to print array of size n*/
+            \n       static void printArray(int arr[])
+            \n     {
+            \n   int n = arr.length;
+            \n for (int i=0; i&lt;n; ++i)
+            \nSystem.out.print(arr[i] + " ");
+            \n
+            \n         System.out.println();
+            \n       }
+            \n
+            \n         // Driver method
+            \n       public static void main(String args[])
+            \n     {
+            \n   int arr[] = {12, 11, 13, 5, 6};
+            \n
+            \n         InsertionSort ob = new InsertionSort();
+            \n       ob.sort(arr);
+            \n
+            \n   printArray(arr);
+            \n }            }
+
+            \n\nOutput:
+            \n5 6 11 12 13
+
+        </item>
+        <!--Quick Sort - basic-->
+        <item>
+            - Fast sorting algorithm
+            \n - Compares items and swaps them if they are out of sequence
+            \n - However, here the list is divided into smaller lists which can then be sorted (Divide and Conquer approach)
+            \n - Usually done through recursion
+            \n - The premise of quicksort is to separate the "big" elements from the "small" elements repeatedly.
+
+            \n\n&#8226; Choose a "pivot" value that will be used to divide big and small numbers
+            \n - different methods to choose a pivot value
+            \n - e.g. we can simply use the first element of the list as the pivot value
+
+            \n\n&#8226; Once the pivot value selected
+            \n - all values smaller than the pivot are placed toward the beginning of the set
+            \n - all the ones larger than the pivot are placed to the right
+            \n - this process essentially sets the pivot value in the correct place each time
+
+            \n\n&#8226; Apply quicksort algorithm recursively to the left and the right parts (each side of the pivot).
+
+            \n\nExample:
+            \n\narr[] = {10, 80, 30, 90, 40, 50, 70}
+            \nIndexes:  0   1   2   3   4   5   6
+            \n
+            \n          low = 0, high =  6, pivot = arr[h] = 70
+            \n        Initialize index of smaller element, i = -1
+            \n
+            \n          Traverse elements from j = low to high-1
+            \n        j = 0 : Since arr[j] &lt;= pivot, do i++ and swap(arr[i], arr[j])
+            \n      i = 0
+            \n    arr[] = {10, 80, 30, 90, 40, 50, 70} // No change as i and j
+            \n  // are same
+            \n
+            \n          j = 1 : Since arr[j] &gt; pivot, do nothing
+            \n        // No change in i and arr[]
+            \n
+            \n          j = 2 : Since arr[j] &lt;= pivot, do i++ and swap(arr[i], arr[j])
+            \n        i = 1
+            \n      arr[] = {10, 30, 80, 90, 40, 50, 70} // We swap 80 and 30
+            \n
+            \n          j = 3 : Since arr[j] &gt; pivot, do nothing
+            \n        // No change in i and arr[]
+            \n
+            \n          j = 4 : Since arr[j] &lt;= pivot, do i++ and swap(arr[i], arr[j])
+            \n        i = 2
+            \n      arr[] = {10, 30, 40, 90, 80, 50, 70} // 80 and 40 Swapped
+            \n    j = 5 : Since arr[j] &lt;= pivot, do i++ and swap arr[i] with arr[j]
+            \n  i = 3
+            \narr[] = {10, 30, 40, 50, 80, 90, 70} // 90 and 50 Swapped
+            \n
+            \n          We come out of loop because j is now equal to high-1.
+            \n        Finally we place pivot at correct position by swapping
+            \n      arr[i+1] and arr[high] (or pivot)
+            \n    arr[] = {10, 30, 40, 50, 70, 90, 80} // 80 and 70 Swapped
+            \n
+            \n          Now 70 is at its correct place. All elements smaller than
+            \n        70 are before it and all elements greater than 70 are after
+            \n      it.
+
+            \n\nTime Complexity for Average Case is O(n log n) and Worst Case is O(n2).
+            \n\nMemory Space Complexity is (log n) Best Case, (n) Average Case.
+
+        </item>
+        <!--Quick Sort - generic-->
+        <item>
+            // Java program for implementation of QuickSort
+
+            \nclass QuickSort
+            \n{
+            /* This function takes last element as pivot,
+            places the pivot element at its correct
+            position in sorted array, and places all
+            smaller (smaller than pivot) to left of
+            pivot and all greater elements to right
+            of pivot */
+            \nint partition(int arr[], int low, int high)
+            \n{
+            \nint pivot = arr[high];
+            \nint i = (low-1); // index of smaller element
+            \nfor (int j=low; j&lt;high; j++)
+            \n {
+            \n// If current element is smaller than or
+            \n// equal to pivot
+            \nif (arr[j] &lt;= pivot)
+            \n{
+            \ni++;
+            \n
+            \n          // swap arr[i] and arr[j]
+            \n        int temp = arr[i];
+            \n      arr[i] = arr[j];
+            \n    arr[j] = temp;
+            \n  }
+            \n}
+            \n
+            \n          // swap arr[i+1] and arr[high] (or pivot)
+            \n        int temp = arr[i+1];
+            \n      arr[i+1] = arr[high];
+            \n    arr[high] = temp;
+            \n
+            \n          return i+1;
+            \n        }
+            \n
+            \n
+            \n          /* The main function that implements QuickSort()
+            \n        arr[] --> Array to be sorted,
+            \n      low  --> Starting index,
+            \n    high  --> Ending index */
+            \n  void sort(int arr[], int low, int high)
+            \n{
+            \nif (low &lt; high)
+            \n{
+            \n/* pi is partitioning index, arr[pi] is
+            \nnow at right place */
+            \nint pi = partition(arr, low, high);
+            \n
+            \n          // Recursively sort elements before
+            \n        // partition and after partition
+            \n      sort(arr, low, pi-1);
+            \n    sort(arr, pi+1, high);
+            \n  }
+            \n}
+            \n
+            \n          /* A utility function to print array of size n */
+            \n        static void printArray(int arr[])
+            \n      {
+            \n    int n = arr.length;
+            \n  for (int i=0; i&lt;n; ++i)
+            \nSystem.out.print(arr[i]+" ");
+            \nSystem.out.println();
+            \n}
+            \n
+            \n          // Driver program
+            \n        public static void main(String args[])
+            \n      {
+            \n    int arr[] = {10, 7, 8, 9, 1, 5};
+            \n  int n = arr.length;
+            \n
+            \n          QuickSort ob = new QuickSort();
+            \n        ob.sort(arr, 0, n-1);
+            \n
+            \n          System.out.println("sorted array");
+            \n        printArray(arr);
+            \n      }            }
+            \n\nOutput:
+            \nSorted array:
+            \n1 5 7 8 9 10
+
+        </item>
+        <!--Merge Sort - basic-->
+        <item>
+
+        </item>
+        <!--Merge Sort - generic-->
+        <item>
+
+        </item>
+        <!--Heap Sort - basic-->
+        <item>
+
+        </item>
+        <!--Heap Sort - generic-->
+        <item>
+
+        </item>
+        <!--Counting Sort - basic-->
+        <item>
+
+        </item>
+        <!--Counting Sort - generic-->
+        <item>
+
+        </item>
+        <!--Radix Sort - basic-->
+        <item>
+
+        </item>
+        <!--Radix Sort - generic-->
+        <item>
+
+        </item>
+        <!--Bucket Sort - basic-->
+        <item>
+
+        </item>
+        <!--Bucket Sort - generic-->
+        <item>
+
+        </item>
+    </string-array>
+    
+</resources>
