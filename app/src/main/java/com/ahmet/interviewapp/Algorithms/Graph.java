@@ -1,64 +1,32 @@
 package com.ahmet.interviewapp.Algorithms;
 
-import android.content.Context;
-import android.net.Uri;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
+import com.ahmet.interviewapp.Adaptors.QuestionsListViewAdaptor;
+import com.ahmet.interviewapp.Models.AddQuestions;
+import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link Graph.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link Graph#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
 public class Graph extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    ListView listView;
 
-    private OnFragmentInteractionListener mListener;
-
+    ArrayList<Questions> arrayList = new ArrayList<>();
+    Questions questions;
+    QuestionsListViewAdaptor listViewAdaptor;
     public Graph() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Graph.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Graph newInstance(String param1, String param2) {
-        Graph fragment = new Graph();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -67,45 +35,42 @@ public class Graph extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.questions_layout, container, false);
 
-        return  view;
-    }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
+        listView = (ListView) view.findViewById(R.id.listView);
+        //initialise Adaptor
+        listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), arrayList);
+
+        String[] questionsArray = getResources().getStringArray(R.array.graph_algorithms);
+        //add the questions in listview
+        AddQuestions addQuestions = new AddQuestions();
+        addQuestions.add(getActivity(), questions, arrayList, questionsArray, listViewAdaptor);
+        listView.setAdapter(listViewAdaptor);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                //open slides when clicked on a list item
+                GraphAnswers graphanswers = new GraphAnswers();
+
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_layout, graphanswers).addToBackStack(null).commit();
+//                send the position of the item so it opens the corresponding slide to the question
+                Bundle bundle = new Bundle();
+                bundle.putInt("Position", position);
+                Intent intent = getActivity().getIntent();
+                intent.putExtras(bundle);
+            }
+        });
+
+
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Graph Algorithms");
+
+        return view;
     }
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
 }

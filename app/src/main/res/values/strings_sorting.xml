@@ -44,12 +44,6 @@
             Counting Sort - Generic Counting Sort
         </item>
         <item>
-            Radix Sort - Basics
-        </item>
-        <item>
-            Radix Sort - Generic Radix Sort
-        </item>
-        <item>
             Bucket Sort - Basics
         </item>
         <item>
@@ -457,44 +451,434 @@
         </item>
         <!--Merge Sort - basic-->
         <item>
+            Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two
+            halves and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r)
+            is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
 
+            \n\nPseudo code for details;
+            \n\nMergeSort(arr[], l,  r)
+            \nIf r > l
+            \n1. Find the middle point to divide the array into two halves:
+            \nmiddle m = (l+r)/2
+            \n2. Call mergeSort for first half:
+            \nCall mergeSort(arr, l, m)
+            \n3. Call mergeSort for second half:
+            \nCall mergeSort(arr, m+1, r)
+            \n4. Merge the two halves sorted in step 2 and 3:
+            \nCall merge(arr, l, m, r)
+
+            \n\nHere's how merge sort uses divide-and-conquer:
+
+            \n\n 1 - Divide by finding the number q of the position midway between p and r.
+            Do this step the same way we found the midpoint in binary search: add p and r , divide by 2, and round down.
+
+            \n\n 2 - Conquer by recursively sorting the subarrays in each of the two subproblems created by the divide step.
+            That is, recursively sort the subarray array[p..q] and recursively sort the subarray array[q+1..r].
+
+            \n\n 3 - Combine by merging the two sorted subarrays back into the single sorted subarray array[p..r].
+
+            \n\nWe need a base case. The base case is a subarray containing fewer than two elements, that is, when p≥r,
+            is greater than or equal to, r, since a subarray with no elements or just one element is already sorted.
+            So we'll divide-conquer-combine only when p &lt; r.
+
+            \n\nLet's see an example. Let's start with array holding [14, 7, 3, 12, 9, 11, 6, 2],
+            so that the first subarray is actually the full array, array[0..7] ( p = 0 and r = 7).
+            This subarray has at least two elements, and so it's not a base case.
+
+            \n\n - In the divide step, we compute q = 3.
+
+            \n\n - The conquer step has us sort the two subarrays array[0..3], which contains [14, 7, 3, 12], and array[4..7],
+            which contains [9, 11, 6, 2]. When we come back from the conquer step, each of the two subarrays is sorted: array[0..3]
+            contains [3, 7, 12, 14] and array[4..7] contains [2, 6, 9, 11], so that the full array is [3, 7, 12, 14, 2, 6, 9, 11].
+
+            \n\n - Finally, the combine step merges the two sorted subarrays in the first half and the second half,
+            producing the final sorted array [2, 3, 6, 7, 9, 11, 12, 14].
+
+            \n\nHow did the subarray array[0..3] become sorted? The same way. It has more than two elements, and so it's not a base case.
+            With p = 0 and r = 3, compute q = 1, recursively sort array[0..1] ([14, 7]) and array[2..3] ([3, 12]), resulting in array[0..3]
+            containing [7, 14, 3, 12], and merge the first half with the second half, producing [3, 7, 12, 14].
+
+            \n\nHow did the subarray array[0..1] become sorted? With p = 0 and r = 1, compute q = 0, recursively sort array[0..0] ([14])
+            and array[1..1] ([7]), resulting in array[0..1] still containing [14, 7], and merge the first half with the second half,
+            producing [7, 14].
+
+            \n\nThe subarrays array[0..0] and array[1..1] are base cases, since each contains fewer than two elements.
+
+            n\nTime Complexity is O(n log n) and Space Complexity is O(n).
         </item>
         <!--Merge Sort - generic-->
         <item>
+            /* Java program for Merge Sort */
 
+            \n\nclass MergeSort
+            \n{
+            \n            // Merges two subarrays of arr[].
+            \n          // First subarray is arr[l..m]
+            \n        // Second subarray is arr[m+1..r]
+            \n      void merge(int arr[], int l, int m, int r)
+            \n    {
+            \n  // Find sizes of two subarrays to be merged
+            \nint n1 = m - l + 1;
+            \nint n2 = r - m;
+            \n
+            \n          /* Create temp arrays */
+            \n        int L[] = new int [n1];
+            \n      int R[] = new int [n2];
+            \n
+            \n          /*Copy data to temp arrays*/
+            \n        for (int i=0; i&lt;n1; ++i)
+            \n      L[i] = arr[l + i];
+            \n    for (int j=0; j&lt;n2; ++j)
+            \n  R[j] = arr[m + 1+ j];
+            \n
+            \n
+            \n          /* Merge the temp arrays */
+            \n
+            \n          // Initial indexes of first and second subarrays
+            \n        int i = 0, j = 0;
+            \n
+            \n          // Initial index of merged subarray array
+            \n        int k = l;
+            \n      while (i &lt; n1 &amp;&amp; j &lt; n2)
+            \n    {
+            \n  if (L[i] &lt;= R[j])
+            \n{
+            \narr[k] = L[i];
+            \ni++;
+            \n}
+            \nelse
+            \n{
+            \narr[k] = R[j];
+            \n j++;
+            \n}
+            \nk++;
+            \n }
+            \n
+            \n          /* Copy remaining elements of L[] if any */
+            \n        while (i &lt; n1)
+            \n      {
+            \n    arr[k] = L[i];
+            \n  i++;
+            \nk++;
+            \n}
+            \n
+            \n          /* Copy remaining elements of R[] if any */
+            \n        while (j &lt; n2)
+            \n      {
+            \n    arr[k] = R[j];
+            \n  j++;
+            \nk++;
+            \n}
+            \n}
+            \n
+            \n          // Main function that sorts arr[l..r] using
+            \n        // merge()
+            \n      void sort(int arr[], int l, int r)
+            \n    {
+            \n  if (l &lt; r)
+            \n{
+            \n// Find the middle point
+            \nint m = (l+r)/2;
+            \n
+            \n          // Sort first and second halves
+            \n        sort(arr, l, m);
+            \n      sort(arr , m+1, r);
+            \n
+            \n          // Merge the sorted halves
+            \n        merge(arr, l, m, r);
+            \n      }
+            \n    }
+            \n
+            \n          /* A utility function to print array of size n */
+            \n        static void printArray(int arr[])
+            \n      {
+            \n    int n = arr.length;
+            \n  for (int i=0; i&lt;n; ++i)
+            \nSystem.out.print(arr[i] + " ");
+            \nSystem.out.println();
+            \n}
+            \n
+            \n          // Driver method
+            \n        public static void main(String args[])
+            \n      {
+            \n    int arr[] = {12, 11, 13, 5, 6, 7};
+            \n
+            \n          System.out.println("Given Array");
+            \n        printArray(arr);
+            \n
+            \n          MergeSort ob = new MergeSort();
+            \n        ob.sort(arr, 0, arr.length-1);
+            \n
+            \n          System.out.println("\nSorted array");
+            \n        printArray(arr);
+            \n      }            }
+
+            \n\nOutput:
+            \nGiven array is
+            \n12 11 13 5 6 7
+            \n
+            \n          Sorted array is
+            \n        5 6 7 11 12 13
         </item>
         <!--Heap Sort - basic-->
         <item>
+            Heap sort is a comparison based sorting technique based on Binary Heap data structure.
+            It is similar to selection sort where we first find the maximum element and place the maximum element at the end.
+            We repeat the same process for remaining element.
+
+            \n\nWhat is a Heap?
+
+            \n\nHeap is a special tree-based data structure, that satisfies the following special heap properties:
+
+            \n\n 1- Shape Property: Heap data structure is always a Complete Binary Tree, which means all levels of the tree are fully filled.
+
+            \n\n 2- Heap Property: All nodes are either greater than or equal to or less than or equal to each of its children.
+            If the parent nodes are greater than their child nodes, heap is called a Max-Heap, and
+            if the parent nodes are smaller than their child nodes, heap is called Min-Heap.
+
+            \n\nHow Heap Sort Works?
+            \nHeap sort algorithm is divided into two basic parts:
+
+            \n\n - Creating a Heap of the unsorted list/array.
+            \n\n - Then a sorted array is created by repeatedly removing the largest/smallest element from the heap,
+            and inserting it into the array. The heap is reconstructed after each removal.
+
+            \n\nInitially on receiving an unsorted list, the first step in heap sort is to create a Heap data structure(Max-Heap or Min-Heap).
+            Once heap is built, the first element of the Heap is either largest or smallest(depending upon Max-Heap or Min-Heap),
+            so we put the first element of the heap in our array. Then we again make heap using the remaining elements,
+            to again pick the first element of the heap and put it into the array.
+            We keep on doing the same repeatedly until we have the complete sorted list in our array.
+
+            \n\nTime Complexity is O(n log n) and space complexity is O(k + n).
 
         </item>
         <!--Heap Sort - generic-->
         <item>
+            // Java program for implementation of Heap Sort
 
+            \n\npublic class HeapSort
+            \n          {
+            \n        public void sort(int arr[])
+            \n      {
+            \n    int n = arr.length;
+            \n
+            \n          // Build heap (rearrange array)
+            \n        for (int i = n / 2 - 1; i >= 0; i--)
+            \n      heapify(arr, n, i);
+            \n
+            \n          // One by one extract an element from heap
+            \n        for (int i=n-1; i>=0; i--)
+            \n      {
+            \n    // Move current root to end
+            \n  int temp = arr[0];
+            \narr[0] = arr[i];
+            \narr[i] = temp;
+            \n
+            \n          // call max heapify on the reduced heap
+            \n        heapify(arr, i, 0);
+            \n      }
+            \n    }
+            \n
+            \n          // To heapify a subtree rooted with node i which is
+            \n        // an index in arr[]. n is size of heap
+            \n      void heapify(int arr[], int n, int i)
+            \n    {
+            \n  int largest = i;  // Initialize largest as root
+            \nint l = 2*i + 1;  // left = 2*i + 1
+            \nint r = 2*i + 2;  // right = 2*i + 2
+            \n
+            \n          // If left child is larger than root
+            \n        if (l &lt; n &amp;&amp; arr[l] > arr[largest])
+            \n      largest = l;
+            \n
+            \n          // If right child is larger than largest so far
+            \n        if (r &lt; n &amp;&amp; arr[r] > arr[largest])
+            \n      largest = r;
+            \n
+            \n          // If largest is not root
+            \n        if (largest != i)
+            \n      {
+            \n    int swap = arr[i];
+            \n  arr[i] = arr[largest];
+            \narr[largest] = swap;
+            \n
+            \n          // Recursively heapify the affected sub-tree
+            \n        heapify(arr, n, largest);
+            \n      }
+            \n    }
+            \n
+            \n          /* A utility function to print array of size n */
+            \n        static void printArray(int arr[])
+            \n      {
+            \n    int n = arr.length;
+            \n  for (int i=0; i&lt;n; ++i)
+            \nSystem.out.print(arr[i]+" ");
+            \nSystem.out.println();
+            \n}
+            \n
+            \n          // Driver program
+            \n        public static void main(String args[])
+            \n      {
+            \n    int arr[] = {12, 11, 13, 5, 6, 7};
+            \n  int n = arr.length;
+            \n
+            \n          HeapSort ob = new HeapSort();
+            \n        ob.sort(arr);
+            \n
+            \n           System.out.println("Sorted array is");
+            \n          printArray(arr);
+            \n        }            }
+
+            \n\nOutput:
+            \nSorted array is
+            \n5 6 7 11 12 13
         </item>
         <!--Counting Sort - basic-->
         <item>
+            Counting sort is a sorting technique based on keys between a specific range.
+            It works by counting the number of objects having distinct key values (kind of hashing).
+            Then doing some arithmetic to calculate the position of each object in the output sequence.
 
+            \n\nLet us understand it with the help of an example.
+            \nFor simplicity, consider the data in the range 0 to 9.
+            \nInput data: 1, 4, 1, 2, 7, 5, 2
+            \n1) Take a count array to store the count of each unique object.
+            \nIndex:     0  1  2  3  4  5  6  7  8  9
+            \nCount:     0  2  2  0   1  1  0  1  0  0
+            \n
+            \n          2) Modify the count array such that each element at each index
+            \n        stores the sum of previous counts.
+            \n      Index:     0  1  2  3  4  5  6  7  8  9
+            \n    Count:     0  2  4  4  5  6  6  7  7  7
+            \n
+            \n          The modified count array indicates the position of each object in
+            \n        the output sequence.
+            \n
+            \n         3) Output each object from the input sequence followed by
+            \n       decreasing its count by 1.
+            \n     Process the input data: 1, 4, 1, 2, 7, 5, 2. Position of 1 is 2.
+            \n   Put data 1 at index 2 in output. Decrease count by 1 to place
+            \n next data 1 at an index 1 smaller than this index.
+
+            \n\nTime Complexity and space complexity are O(k + n).
         </item>
         <!--Counting Sort - generic-->
         <item>
+            // Java implementation of Counting Sort
 
-        </item>
-        <!--Radix Sort - basic-->
-        <item>
-
-        </item>
-        <!--Radix Sort - generic-->
-        <item>
-
+            \nclass CountingSort
+            \n           {
+            \n         void sort(char arr[])
+            \n       {
+            \n     int n = arr.length;
+            \n
+            \n          // The output character array that will have sorted arr
+            \n        char output[] = new char[n];
+            \n
+            \n          // Create a count array to store count of inidividul
+            \n        // characters and initialize count array as 0
+            \n      int count[] = new int[256];
+            \n    for (int i=0; i&lt;256; ++i)
+            \n  count[i] = 0;
+            \n
+            \n          // store count of each character
+            \n        for (int i=0; i&lt;n; ++i)
+            \n      ++count[arr[i]];
+            \n
+            \n          // Change count[i] so that count[i] now contains actual
+            \n        // position of this character in output array
+            \n      for (int i=1; i&lt;=255; ++i)
+            \n    count[i] += count[i-1];
+            \n
+            \n          // Build the output character array
+            \n        for (int i = 0; i&lt;n; ++i)
+            \n      {
+            \n    output[count[arr[i]]-1] = arr[i];
+            \n  --count[arr[i]];
+            \n}
+            \n
+            \n          // Copy the output array to arr, so that arr now
+            \n        // contains sorted characters
+            \n      for (int i = 0; i&lt;n; ++i)
+            \n    arr[i] = output[i];
+            \n  }
+            \n
+            \n          // Driver method
+            \n        public static void main(String args[])
+            \n      {
+            \n    CountingSort ob = new CountingSort();
+            \n  char arr[] = {'g', 'e', 'e', 'k', 's', 'f', 'o',
+            \n'r', 'g', 'e', 'e', 'k', 's'
+            \n};
+            \n
+            \n          ob.sort(arr);
+            \n
+            \n          System.out.print("Sorted character array is ");
+            \n        for (int i=0; i&lt;arr.length; ++i)
+            \n      System.out.print(arr[i]);
+            \n    }            }
+            \n\nOutput:
+            \nSorted character array is eeeefggkkorss
         </item>
         <!--Bucket Sort - basic-->
         <item>
+            Bucket sort is mainly useful when input is uniformly distributed over a range. For example, consider the following problem.
+            \nSort a large set of floating point numbers which are in range from 0.0 to 1.0 and are uniformly distributed across the range.
+            \nHow do we sort the numbers efficiently?
+
+            \n\nA simple way is to apply a comparison based sorting algorithm. The lower bound for Comparison based sorting algorithm
+            (Merge Sort, Heap Sort, Quick-Sort .. etc) is Ω(n Log n), i.e., they cannot do better than nLogn.
+            Can we sort the array in linear time? Counting sort can not be applied here as we use keys as index in counting sort.
+
+            \n\nHere keys are floating point numbers.
+            The idea is to use bucket sort. Following is bucket algorithm.
+
+            \n\nbucketSort(arr[], n)
+            \n1) Create n empty buckets (Or lists).
+            \n2) Do following for every array element arr[i].
+            \n.......a) Insert arr[i] into bucket[n*array[i]]
+            \n3) Sort individual buckets using insertion sort.
+            \n4) Concatenate all sorted buckets.
+
+            \n\nTime complexity; Average O(n) Worst case O(n*n). Space Complexity is O(n + k).
 
         </item>
         <!--Bucket Sort - generic-->
         <item>
-
+            \npublic class BucketSort{
+            \n
+            \n          public static void sort(int[] a, int maxVal) {
+            \n        int [] bucket=new int[maxVal+1];
+            \n
+            \n          for (int i=0; i&lt;bucket.length; i++) {
+            \n        bucket[i]=0;
+            \n      }
+            \n
+            \n          for (int i=0; i&lt;a.length; i++) {
+            \n        bucket[a[i]]++;
+            \n      }
+            \n
+            \n          int outPos=0;
+            \n        for (int i=0; i&lt;bucket.length; i++) {
+            \n      for (int j=0; j&lt;bucket[i]; j++) {
+            \n    a[outPos++]=i;
+            \n  }
+            \n}
+            \n}
+            \n
+            \n
+            \n          public static void main(String[] args) {
+            \n        int maxVal=5;
+            \n      int [] data= {5,3,0,2,4,1,0,5,2,3,1,4};
+            \n
+            \n          System.out.println("Before: " + Arrays.toString(data));
+            \n        sort(data,maxVal);
+            \n      System.out.println("After:  " + Arrays.toString(data));
+            \n    }            }
+            \n\nOutput:
+            \nBefore: [5, 3, 0, 2, 4, 1, 0, 5, 2, 3, 1, 4]
+            \nAfter:  [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
         </item>
     </string-array>
-    
+
 </resources>

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="graph_algorithms">
+        <item>
+            Representations of graphs
+        </item>
+        <item>
+            Breadth-First Search
+        </item>
+        <item>
+            Depth-First Search
+        </item>
+        <item>
+            Topological Sort
+        </item>
+        <item>
+            Strongly Connected Components
+        </item>
+        <item>
+            Minimum Spanning Trees
+        </item>
+        <item>
+            Kruskal\'s Algorithm
+        </item>
+        <item>
+            Prim\'s Algorithm
+        </item>
+        <item>
+            Dijkstra\'s Algorithm
+        </item>
+        <item>
+            The Floyd-Warshall Algorithm
+        </item>
+        <item>
+            Flow Networks
+        </item>
+        <item>
+            The Ford Fulkerson method
+        </item>
+        <item>
+            Maximum Bipartile Matching
+        </item>
+        <item>
+            Push relabel Algorithm
+        </item>
+        <item>
+            The relabel-to-front Algorithm
+        </item>
+
+    </string-array>
+    <string-array name="graph_algorithms_answers">
+        <!--Representations of graphs-->
+        <item>
+            Graph is a data structure that consists of following two components:
+            \n\n 1. A finite set of vertices also called as nodes.
+            \n\n 2. A finite set of ordered pair of the form (u, v) called as edge.
+            The pair is ordered because (u, v) is not same as (v, u) in case of a directed graph(di-graph).
+            The pair of the form (u, v) indicates that there is an edge from vertex u to vertex v. The edges may contain weight/value/cost.
+
+            \n\nGraphs are used to represent many real-life applications: Graphs are used to represent networks.
+            The networks may include paths in a city or telephone network or circuit network.
+            Graphs are also used in social networks like linkedIn, Facebook.
+            For example, in Facebook, each person is represented with a vertex(or node).
+            Each node is a structure and contains information like person id, name, gender and locale.
+
+            \n\nFollowing two are the most commonly used representations of a graph.
+            \n\n 1. Adjacency Matrix
+            \n\n 2. Adjacency List
+            \nThere are other representations also like, Incidence Matrix and Incidence List.
+            The choice of the graph representation is situation specific. It totally depends on the type of operations to be
+            performed and ease of use.
+
+            \n\nAdjacency Matrix:
+            \nAdjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph.
+            Let the 2D array be adj[][], a slot adj[i][j] = 1 indicates that there is an edge from vertex i to vertex j.
+            Adjacency matrix for undirected graph is always symmetric. Adjacency Matrix is also used to represent weighted graphs.
+            If adj[i][j] = w, then there is an edge from vertex i to vertex j with weight w.
+
+            \n\nAdjacency List:
+            \nAn array of linked lists is used. Size of the array is equal to the number of vertices.
+            Let the array be array[]. An entry array[i] represents the linked list of vertices adjacent to the ith vertex.
+            This representation can also be used to represent a weighted graph. The weights of edges can be stored in nodes of linked lists.
+
+            \n\nExample:
+
+            \n\n// Java Program to demonstrate adjacency list
+            \n// representation of graphs
+            \nimport java.util.LinkedList;
+\n
+            \n          public class GFG
+            \n        {
+            \n      // A user define class to represent a graph.
+            \n    // A graph is an array of adjacency lists.
+            \n  // Size of array will be V (number of vertices
+            \n// in graph)
+            \nstatic class Graph
+            \n {
+            \nint V;
+            \nLinkedList&lt;Integer&gt; adjListArray[];
+            \n
+            \n          // constructor
+            \n        Graph(int V)
+            \n      {
+            \n    this.V = V;
+            \n
+            \n          // define the size of array as
+            \n        // number of vertices
+            \n      adjListArray = new LinkedList[V];
+            \n
+            \n          // Create a new list for each vertex
+            \n      // such that adjacent nodes can be stored
+            \n       for(int i = 0; i &lt; V ; i++){
+            \n      adjListArray[i] = new LinkedList&lt;&gt;();
+            \n    }
+            \n  }
+            \n}
+            \n
+            \n          // Adds an edge to an undirected graph
+            \n        static void addEdge(Graph graph, int src, int dest)
+            \n      {
+            \n    // Add an edge from src to dest.
+            \n  graph.adjListArray[src].addFirst(dest);
+            \n
+            \n          // Since graph is undirected, add an edge from dest
+            \n        // to src also
+            \n      graph.adjListArray[dest].addFirst(src);
+            \n    }
+            \n
+            \n          // A utility function to print the adjacency list
+            \n        // representation of graph
+            \n      static void printGraph(Graph graph)
+            \n    {
+            \n  for(int v = 0; v &lt; graph.V; v++)
+            \n{
+            \nSystem.out.println("Adjacency list of vertex "+ v);
+            \nSystem.out.print("head");
+            \nfor(Integer pCrawl: graph.adjListArray[v]){
+            \nSystem.out.print(" -> "+pCrawl);
+            \n}
+            \nSystem.out.println("\n");
+            \n}
+            \n}
+            \n
+            \n        // Driver program to test above functions
+            \n          public static void main(String args[])
+            \n        {
+            \n      // create the graph given in above figure
+            \n    int V = 5;
+            \n  Graph graph = new Graph(V);
+            \naddEdge(graph, 0, 1);
+            \naddEdge(graph, 0, 4);
+            \n addEdge(graph, 1, 2);
+            \naddEdge(graph, 1, 3);
+            \naddEdge(graph, 1, 4);
+            \naddEdge(graph, 2, 3);
+            \naddEdge(graph, 3, 4);
+            \n
+            \n          // print the adjacency list representation of
+            \n        // the above graph
+            \n      printGraph(graph);
+            \n    }            }
+
+            \n\nOutput:
+            \n Adjacency list of vertex 0
+            \n head -> 1-> 4
+            \n
+            \n          Adjacency list of vertex 1
+            \n        head -> 0-> 2-> 3-> 4
+            \n
+            \n          Adjacency list of vertex 2
+            \n        head -> 1-> 3
+            \n
+            \n          Adjacency list of vertex 3
+            \n        head -> 1-> 2-> 4
+            \n
+            \n          Adjacency list of vertex 4
+            \n        head -> 0-> 1-> 3
+        </item>
+        <!--Breadth-First Search-->
+        <item>
+            Breadth First Traversal (or Search) for a graph is similar to Breadth First Traversal of a tree.
+            The only catch here is, unlike trees, graphs may contain cycles, so we may come to the same node again.
+            To avoid processing a node more than once, we use a boolean visited array.
+            For simplicity, it is assumed that all vertices are reachable from the starting vertex.
+
+            \n\nBreadth-first search assigns two values to each vertex v:
+
+            \n\n - A distance, giving the minimum number of edges in any path from the source vertex to vertex v.
+            \n - The predecessor vertex of v vv along some shortest path from the source vertex.
+            The source vertex's predecessor is some special value, such as null, indicating that it has no predecessor.
+
+            \n\nIn BFS, we initially set the distance and predecessor of each vertex to the special value (null).
+            We start the search at the source and assign it a distance of 0. Then we visit all the neighbors of the source and give each
+            neighbor a distance of 1 and set its predecessor to be the source. Then we visit all the neighbors of the vertices whose
+            distance is 1 and that have not been visited before, and we give each of these vertices a distance of 2 and set its predecessor
+            to be vertex from which we visited it. We keep going until all vertices reachable from the source vertex have been visited,
+            always visiting all vertices at distance k from the source before visiting any vertex at distance k+1, plus, 1.
+
+            \n\nExample:
+
+            \n\n// Java program to print BFS traversal from a given source vertex.
+            \n// BFS(int s) traverses vertices reachable from s.
+            \nimport java.io.*;
+            \nimport java.util.*;
+            \n
+            \n          // This class represents a directed graph using adjacency list
+            \n        // representation
+            \n      class Graph
+            \n    {
+            \n  private int V;   // No. of vertices
+            \n private LinkedList&lt;Integer&gt; adj[]; //Adjacency Lists
+            \n
+            \n          // Constructor
+            \n        Graph(int v)
+            \n      {
+            \n    V = v;
+            \n  adj = new LinkedList[v];
+            \nfor (int i=0; i&lt;v; ++i)
+            \n adj[i] = new LinkedList();
+            \n}
+            \n
+            \n          // Function to add an edge into the graph
+            \n        void addEdge(int v,int w)
+            \n      {
+            \n    adj[v].add(w);
+            \n  }
+            \n
+            \n          // prints BFS traversal from a given source s
+            \n        void BFS(int s)
+            \n      {
+            \n    // Mark all the vertices as not visited(By default
+            \n  // set as false)
+            \nboolean visited[] = new boolean[V];
+            \n
+            \n          // Create a queue for BFS
+            \n        LinkedList&lt;Integer&gt; queue = new LinkedList&lt;Integer&gt;();
+            \n
+            \n          // Mark the current node as visited and enqueue it
+            \n        visited[s]=true;
+            \n      queue.add(s);
+            \n
+            \n          while (queue.size() != 0)
+            \n        {
+            \n      // Dequeue a vertex from queue and print it
+            \n    s = queue.poll();
+            \n  System.out.print(s+" ");
+            \n
+            \n           // Get all adjacent vertices of the dequeued vertex s
+            \n         // If a adjacent has not been visited, then mark it
+            \n          // visited and enqueue it
+            \n        Iterator^lt;Integer&gt; i = adj[s].listIterator();
+            \n      while (i.hasNext())
+            \n    {
+            \n  int n = i.next();
+            \nif (!visited[n])
+            \n{
+            \nvisited[n] = true;
+            \nqueue.add(n);
+            \n }
+            \n}
+            \n }
+            \n}
+            \n
+            \n          // Driver method to
+            \n        public static void main(String args[])
+            \n      {
+            \n    Graph g = new Graph(4);
+            \n
+            \n          g.addEdge(0, 1);
+            \n        g.addEdge(0, 2);
+            \n      g.addEdge(1, 2);
+            \n    g.addEdge(2, 0);
+            \n  g.addEdge(2, 3);
+            \ng.addEdge(3, 3);
+            \n
+            \n          System.out.println("Following is Breadth First Traversal "+
+            \n        "(starting from vertex 2)");
+            \n
+            \n          g.BFS(2);
+            \n        }
+            \n      }
+            \n\nOutput:
+            \nFollowing is Breadth First Traversal (starting from vertex 2)
+            \n2 0 3 1
+        </item>
+        <!--Depth-First Search-->
+        <item>
+
+        </item>
+        <!--Topological Sort-->
+        <item>
+            Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge uv,
+            vertex u comes before v in the ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
+
+            \n\nWe recommend to first see implementation of DFS here. We can modify DFS to find Topological Sorting of a graph.
+            In DFS, we start from a vertex, we first print it and then recursively call DFS for its adjacent vertices.
+            In topological sorting, we use a temporary stack. We don’t print the vertex immediately, we first recursively
+            call topological sorting for all its adjacent vertices, then push it to a stack. Finally, print contents of stack.
+
+            \nNote that a vertex is pushed to stack only when all of its adjacent vertices (and their adjacent vertices and so on)
+            are already in stack.
+
+            \n\nExample:
+            \n            // A Java program to print topological sorting of a DAG
+            \n          import java.io.*;
+            \n        import java.util.*;
+            \n
+            \n          // This class represents a directed graph using adjacency
+            \n        // list representation
+            \n      class Graph
+            \n    {
+            \n  private int V;   // No. of vertices
+            \nprivate LinkedList&lt;Integer&gt; adj[]; // Adjacency List
+            \n
+            \n          //Constructor
+            \n        Graph(int v)
+            \n      {
+            \n    V = v;
+            \n  adj = new LinkedList[v];
+            \nfor (int i=0; i&lt;v; ++i)
+            \nadj[i] = new LinkedList();
+            \n }
+            \n
+            \n          // Function to add an edge into the graph
+            \n        void addEdge(int v,int w) { adj[v].add(w); }
+            \n
+            \n          // A recursive function used by topologicalSort
+            \n        void topologicalSortUtil(int v, boolean visited[],
+            \n      Stack stack)
+            \n    {
+            \n  // Mark the current node as visited.
+            \nvisited[v] = true;
+            \nInteger i;
+            \n
+            \n          // Recur for all the vertices adjacent to this
+            \n      // vertex
+            \n    Iterator&lt;Integer&gt; it = adj[v].iterator();
+            \n    while (it.hasNext())
+            \n      {
+            \n  i = it.next();
+            \nif (!visited[i])
+            \ntopologicalSortUtil(i, visited, stack);
+            \n}
+            \n
+            \n          // Push current vertex to stack which stores result
+            \n        stack.push(new Integer(v));
+            \n      }
+            \n
+            \n          // The function to do Topological Sort. It uses
+            \n        // recursive topologicalSortUtil()
+            \n      void topologicalSort()
+            \n    {
+            \n  Stack stack = new Stack();
+            \n
+            \n          // Mark all the vertices as not visited
+            \n      boolean visited[] = new boolean[V];
+            \n        for (int i = 0; i &lt; V; i++)
+            \n      visited[i] = false;
+            \n
+            \n          // Call the recursive helper function to store
+            \n        // Topological Sort starting from all vertices
+            \n      // one by one
+            \n    for (int i = 0; i &lt; V; i++)
+            \n  if (visited[i] == false)
+            \ntopologicalSortUtil(i, visited, stack);
+            \n
+            \n          // Print contents of stack
+            \n        while (stack.empty()==false)
+            \n      System.out.print(stack.pop() + " ");
+            \n    }
+            \n
+            \n          // Driver method
+            \n        public static void main(String args[])
+            \n      {
+            \n    // Create a graph given in the above diagram
+            \n  Graph g = new Graph(6);
+            \ng.addEdge(5, 2);
+            \n          g.addEdge(5, 0);
+            \n        g.addEdge(4, 0);
+            \n      g.addEdge(4, 1);
+            \n    g.addEdge(2, 3);
+            \n  g.addEdge(3, 1);
+            \n
+            \n          System.out.println("Following is a Topological " +
+            \n        "sort of the given graph");
+            \n      g.topologicalSort();
+            \n    }            }
+
+            \n\nOutput:
+            \nFollowing is a Topological Sort of the given graph
+            \n 5 4 2 3 1 0
+        </item>
+        <!--Strongly Connected Components-->
+        <item>
+            A directed graph is strongly connected if there is a path between all pairs of vertices.
+            A strongly connected component (SCC) of a directed graph is a maximal strongly connected subgraph.
+
+            \n\nWe can find all strongly connected components in O(V+E) time using Kosaraju’s algorithm. Following is detailed Kosaraju’s algorithm.
+            \n 1) Create an empty stack ‘S’ and do DFS traversal of a graph. In DFS traversal,
+            after calling recursive DFS for adjacent vertices of a vertex, push the vertex to stack.
+            \n 2) Reverse directions of all arcs to obtain the transpose graph.
+            \n 3) One by one pop a vertex from S while S is not empty. Let the popped vertex be ‘v’. Take v as source and do DFS
+            (call DFSUtil(v)). The DFS starting from v prints strongly connected component of v.
+
+            \n\n// Java implementation of Kosaraju's algorithm to print all SCCs
+            \nimport java.io.*;
+            \nimport java.util.*;
+            \nimport java.util.LinkedList;
+            \n
+            \n          // This class represents a directed graph using adjacency list
+            \n        // representation
+            \n      class Graph
+            \n    {
+            \n  private int V;   // No. of vertices
+            \nprivate LinkedList&lt;Integer&gt; adj[]; //Adjacency List
+            \n
+            \n          //Constructor
+            \n        Graph(int v)
+            \n      {
+            \n    V = v;
+            \n  adj = new LinkedList[v];
+            \nfor (int i=0; i&lt;v; ++i)
+            \nadj[i] = new LinkedList();
+            \n}
+            \n
+            \n          //Function to add an edge into the graph
+            \n        void addEdge(int v, int w)  { adj[v].add(w); }
+            \n
+            \n          // A recursive function to print DFS starting from v
+            \n       void DFSUtil(int v,boolean visited[])
+            \n    {
+            \n      // Mark the current node as visited and print it
+            \n    visited[v] = true;
+            \n  System.out.print(v + " ");
+            \n
+            \n          int n;
+            \n
+            \n          // Recur for all the vertices adjacent to this vertex
+            \n        Iterator&lt;Integer&gt; i =adj[v].iterator();
+            \n      while (i.hasNext())
+            \n    {
+            \n  n = i.next();
+            \nif (!visited[n])
+            \nDFSUtil(n,visited);
+            \n}
+            \n}
+            \n
+            \n          // Function that returns reverse (or transpose) of this graph
+            \n        Graph getTranspose()
+            \n      {
+            \n    Graph g = new Graph(V);
+            \n    for (int v = 0; v &lt; V; v++)
+            \n  {
+            \n// Recur for all the vertices adjacent to this vertex
+            \nIterator&lt;Integer&gt; i =adj[v].listIterator();
+            \n           while(i.hasNext())
+            \n         g.adj[i.next()].add(v);
+            \n       }
+            \n     return g;
+            \n   }
+            \n
+            \n          void fillOrder(int v, boolean visited[], Stack stack)
+            \n        {
+            \n      // Mark the current node as visited and print it
+            \n    visited[v] = true;
+            \n
+            \n          // Recur for all the vertices adjacent to this vertex
+            \n        Iterator&lt;Integer&gt; i = adj[v].iterator();
+            \n      while (i.hasNext())
+            \n    {
+            \n  int n = i.next();
+            \nif(!visited[n])
+            \nfillOrder(n, visited, stack);
+            \n}
+            \n
+            \n          // All vertices reachable from v are processed by now,
+            \n        // push v to Stack
+            \n      stack.push(new Integer(v));
+            \n    }
+            \n
+            \n          // The main function that finds and prints all strongly
+            \n        // connected components
+            \n      void printSCCs()
+            \n    {
+            \n  Stack stack = new Stack();
+            \n
+            \n          // Mark all the vertices as not visited (For first DFS)
+            \n        boolean visited[] = new boolean[V];
+            \n      for(int i = 0; i &lt; V; i++)
+            \n    visited[i] = false;
+            \n
+            \n          // Fill vertices in stack according to their finishing
+            \n        // times
+            \n      for (int i = 0; i &lt; V; i++)
+            \n    if (visited[i] == false)
+            \n  fillOrder(i, visited, stack);
+            \n
+            \n          // Create a reversed graph
+            \n        Graph gr = getTranspose();
+            \n
+            \n        // Mark all the vertices as not visited (For second DFS)
+            \n          for (int i = 0; i &lt; V; i++)
+            \n      visited[i] = false;
+            \n
+            \n          // Now process all vertices in order defined by Stack
+            \n        while (stack.empty() == false)
+            \n      {
+            \n    // Pop a vertex from stack
+            \n  int v = (int)stack.pop();
+            \n
+            \n          // Print Strongly connected component of the popped vertex
+            \n        if (visited[v] == false)
+            \n      {
+            \n    gr.DFSUtil(v, visited);
+            \n  System.out.println();
+            \n}
+            \n}
+            \n }
+            \n
+            \n          // Driver method
+            \n        public static void main(String args[])
+            \n      {
+            \n    // Create a graph given in the above diagram
+            \n  Graph g = new Graph(5);
+            \n g.addEdge(1, 0);
+            \ng.addEdge(0, 2);
+            \ng.addEdge(2, 1);
+            \ng.addEdge(0, 3);
+            \ng.addEdge(3, 4);
+            \n
+            \n          System.out.println("Following are strongly connected components "+
+            \n        "in given graph ");
+            \n      g.printSCCs();
+            \n    }            }
+
+            \n\nOutput:
+            \nFollowing are strongly connected components in given graph
+            \n0 1 2
+            \n3
+            \n4
+
+            \n\nTime Complexity: The above algorithm calls DFS, fins reverse of the graph and again calls DFS.
+            DFS takes O(V+E) for a graph represented using adjacency list. Reversing a graph also takes O(V+E) time.
+            For reversing the graph, we simple traverse all adjacency lists.
+
+            \n\nThe above algorithm is asymptotically best algorithm, but there are other algorithms like Tarjan’s algorithm and
+            path-based which have same time complexity but find SCCs using single DFS.
+        </item>
+        <!--Minimum Spanning Trees-->
+        <item>
+
+        </item>
+        <!--Kruskals Algorithm-->
+        <item>
+
+        </item>
+        <!--Prims Algorithm-->
+        <item>
+
+        </item>
+        <!--Djiktras Algorithm-->
+        <item>
+
+        </item>
+        <!--The floyd-warshall Algorithm-->
+        <item>
+
+        </item>
+        <!--Flow networks-->
+        <item>
+
+        </item>
+        <!--The ford fulkerson method-->
+        <item>
+
+        </item>
+        <!--Maximum bipartile matching-->
+        <item>
+
+        </item>
+        <!--Push Relabel Algorithm-->
+        <item>
+
+        </item>
+        <!--the relabel-to-front Algorithm-->
+        <item>
+
+        </item>
+
+    </string-array>
+
+
+</resources>
