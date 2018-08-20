@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp.Algorithms;
+package com.ahmet.interviewapp.cliche_questions;
 
 
 import android.content.Intent;
@@ -16,19 +16,23 @@ import com.ahmet.interviewapp.Adaptors.QuestionsListViewAdaptor;
 import com.ahmet.interviewapp.Models.AddQuestions;
 import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.R;
+import com.ahmet.interviewapp.behavioural_questions.BehaviouralAnswers;
 
 import java.util.ArrayList;
 
-public class Advanced extends Fragment {
+public class Cliche_Questions extends Fragment {
+
 
 
     ListView listView;
 
-    ArrayList<Questions> arrayList = new ArrayList<>();
+    ArrayList<Questions> questionsArrayList = new ArrayList<>();
     Questions questions;
     QuestionsListViewAdaptor listViewAdaptor;
-    public Advanced() {
-        }
+
+    public Cliche_Questions() {
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,25 +40,26 @@ public class Advanced extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.questions_layout, container, false);
 
-
         listView = (ListView) view.findViewById(R.id.listView);
         //initialise Adaptor
-        listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), arrayList);
+        listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), questionsArrayList);
 
-        String[] questionsArray = getResources().getStringArray(R.array.graph_algorithms);
-        //add the questions in listview
         AddQuestions addQuestions = new AddQuestions();
-        addQuestions.add(getActivity(), questions, arrayList, questionsArray, listViewAdaptor);
+        //get the questions from array string
+        String[] array = getResources().getStringArray(R.array.cliche_questions);
+        //add the questions in listview
+        addQuestions.add(getActivity(), questions,questionsArrayList, array, listViewAdaptor );
         listView.setAdapter(listViewAdaptor);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 //open slides when clicked on a list item
-                AdvancedAnswers advancedAnswers = new AdvancedAnswers();
+                Cliche_Answers cliche_answers = new Cliche_Answers();
 
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_layout, advancedAnswers).addToBackStack(null).commit();
-//                send the position of the item so it opens the corresponding slide to the question
+                fragmentManager.beginTransaction().replace(R.id.content_layout, cliche_answers).addToBackStack(null).commit();
+                //send the position of the item so it opens the corresponding slide to the question
                 Bundle bundle = new Bundle();
                 bundle.putInt("Position", position);
                 Intent intent = getActivity().getIntent();
@@ -62,16 +67,19 @@ public class Advanced extends Fragment {
             }
         });
 
-
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Advanced Algorithms");
+        // slider https://www.youtube.com/watch?v=byLKoPgB7yA
+        //actionbar title change
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Cliché Questions");
 
         return view;
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        //show the title bar
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
-    }
 
+    }
 }

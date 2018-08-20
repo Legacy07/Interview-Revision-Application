@@ -13,9 +13,9 @@
         <item>
             Graph Algorithm
         </item>
-        <item>
-            Advanced Algorithms
-        </item>
+        <!--<item>-->
+            <!--Advanced Algorithms-->
+        <!--</item>-->
     </string-array>
 
     <string-array name="data_structures">

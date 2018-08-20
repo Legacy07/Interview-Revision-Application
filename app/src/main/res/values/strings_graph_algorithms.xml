@@ -40,12 +40,12 @@
         <item>
             The Ford Fulkerson method
         </item>
-        <item>
-            Maximum Bipartite Matching
-        </item>
-        <item>
-            Push relabel Algorithm
-        </item>
+        <!--<item>-->
+            <!--Maximum Bipartite Matching-->
+        <!--</item>-->
+        <!--<item>-->
+            <!--Push relabel Algorithm-->
+        <!--</item>-->
 
     </string-array>
     <string-array name="graph_algorithms_answers">
@@ -187,7 +187,7 @@
 
             \n\n - A distance, giving the minimum number of edges in any path from the source vertex to vertex v.
             \n - The predecessor vertex of v vv along some shortest path from the source vertex.
-            The source vertex's predecessor is some special value, such as null, indicating that it has no predecessor.
+            The source vertex\'s predecessor is some special value, such as null, indicating that it has no predecessor.
 
             \n\nIn BFS, we initially set the distance and predecessor of each vertex to the special value (null).
             We start the search at the source and assign it a distance of 0. Then we visit all the neighbors of the source and give each
@@ -325,7 +325,7 @@
             \n          //Function to add an edge into the graph
             \n        void addEdge(int v, int w)
             \n      {
-            \n    adj[v].add(w);  // Add w to v's list.
+            \n    adj[v].add(w);  // Add w to v\'s list.
             \n  }
             \n
             \n          // A function used by DFS
@@ -491,7 +491,7 @@
             \n 3) One by one pop a vertex from S while S is not empty. Let the popped vertex be ‘v’. Take v as source and do DFS
             (call DFSUtil(v)). The DFS starting from v prints strongly connected component of v.
 
-            \n\n// Java implementation of Kosaraju's algorithm to print all SCCs
+            \n\n// Java implementation of Kosaraju\'s algorithm to print all SCCs
             \nimport java.io.*;
             \nimport java.util.*;
             \nimport java.util.LinkedList;
@@ -648,11 +648,11 @@
             \nThe standard application is to a problem like phone network design. You have a business with several offices;
             you want to lease phone lines to connect them up with each other; and the phone company charges different amounts of money to
             connect different pairs of cities. You want a set of lines that connects all your offices with a minimum total cost.
-            It should be a spanning tree, since if a network isn't a tree you can always remove some edges and save money.
+            It should be a spanning tree, since if a network isn\'t a tree you can always remove some edges and save money.
             \nA less obvious application is that the minimum spanning tree can be used to approximately solve the traveling salesman problem.
             A convenient formal way of defining this problem is to find the shortest path that visits each point at least once.
 
-            \n\nKruskal's and Prim's algorithms are used to find the minimum spanning tree.
+            \n\nKruskal\'s and Prim\'s algorithms are used to find the minimum spanning tree.
         </item>
         <!--Greedy Algorithms-->
         <item>
@@ -754,7 +754,7 @@
             \nsubsets[xroot].rank++;
             \n}            }
             \n
-            \n          // The main function to construct MST using Kruskal's algorithm
+            \n          // The main function to construct MST using Kruskal\'s algorithm
             \n        void KruskalMST()
             \n      {
             \n    Edge result[] = new Edge[V];  // Tnis will store the resultant MST
@@ -793,7 +793,7 @@
             \n          int x = find(subsets, next_edge.src);
             \n        int y = find(subsets, next_edge.dest);
             \n
-            \n        // If including this edge does't cause cycle,
+            \n        // If including this edge does\'t cause cycle,
             \n          // include it in result and increment the index
             \n      // of result for next edge
             \n  if (x != y)
@@ -874,7 +874,7 @@
             (the set that contains already included vertices).
 
             \n\nImplementation:
-            \n\n// A Java program for Prim's Minimum Spanning Tree (MST) algorithm.
+            \n\n// A Java program for Prim\'s Minimum Spanning Tree (MST) algorithm.
             \n            // The program is for adjacency matrix representation of the graph
             \n
             \n          import java.util.*;
@@ -1023,7 +1023,7 @@
 
             \n\nImplementation:
 
-            \n\n// A Java program for Dijkstra's single source shortest path algorithm.
+            \n\n// A Java program for Dijkstra\'s single source shortest path algorithm.
             \n// The program is for adjacency matrix representation of the graph
             \nimport java.util.*;
             \nimport java.lang.*;
@@ -1057,7 +1057,7 @@
             \nSystem.out.println(i+" tt "+dist[i]);
             \n}
             \n
-            \n          // Funtion that implements Dijkstra's single source shortest path
+            \n          // Funtion that implements Dijkstra\'s single source shortest path
             \n        // algorithm for a graph represented using adjacency matrix
             \n      // representation
             \n    void dijkstra(int graph[][], int src)
@@ -1276,7 +1276,7 @@
             \nThe maximum flow problem is the problem of finding the maximum admissible flow through a single source,
             single sink flow network. It was originally formulated in 1954 by mathematicians attempting to model Soviet
             railway traffic flow. Well known solutions for the maximum flow problem include the Ford-Fulkerson algorithm,
-            Edmonds-Karp algorithm, and Dinic's algorithm.
+            Edmonds-Karp algorithm, and Dinic\'s algorithm.
             \nMaximum flow algorithms have an enormous range of applications. Examples include airline flight crew scheduling,
             the circulation-demand problem (where goods with location dependent demand must be transported using routes with
             limited capacity), and determining when during a sports season to eliminate losing teams.
@@ -1315,21 +1315,165 @@
             way to transport ore from individual mines to individual factories. Thus, ore from one mine may be sent to multiple
             factories, while one factory may use the ore from many mines. In this case, the cost function is dependent on the
             Euclidean distance between each mine and factory, as well as the cost of available transportation methods between the two.
-            Obviously, mining isn't the only industry whose transportation concerns can be formulated in this fashion,
+            Obviously, mining isn\'t the only industry whose transportation concerns can be formulated in this fashion,
             so the problem itself is very general, as are its applications.
         </item>
         <!--The ford fulkerson method-->
         <item>
+            The Ford-Fulkerson algorithm is an algorithm that tackles the max-flow min-cut problem.
+            That is, given a network with vertices and edges between those vertices that have certain weights,
+            how much "flow" can the network process at a time? Flow can mean anything, but typically it means data through a computer network.
+
+            \n\nIt was discovered in 1956 by Ford and Fulkerson. This algorithm is sometimes referred to as a method because parts of
+            its protocol are not fully specified and can vary from implementation to implementation. An algorithm typically refers to a
+            specific protocol for solving a problem, whereas a method is a more general approach to a problem.
+
+            \n\nThe Ford-Fulkerson algorithm assumes that the input will be a graph, G, along with a source vertex, s, and a sink vertex, t.
+            The graph is any representation of a weighted graph where vertices are connected by edges of specified weights.
+            There must also be a source vertex and sink vertex to understand the beginning and end of the flow network.
+
+            \n\nTime Complexity: Time complexity of the above algorithm is O(max_flow * E). We run a loop while there is an augmenting path.
+            In worst case, we may add 1 unit flow in every iteration. Therefore the time complexity becomes O(max_flow * E).
+
+            \n\nImplementation
+
+            \n\n// Java program for implementation of Ford Fulkerson algorithm
+            \nimport java.util.*;
+            \nimport java.lang.*;
+            \nimport java.io.*;
+            \nimport java.util.LinkedList;
+
+            \n\nclass MaxFlow
+            \n{
+            \nstatic final int V = 6;    //Number of vertices in graph
+
+            \n/* Returns true if there is a path from source \'s\' to sink
+            \n            \'t\' in residual graph. Also fills parent[] to store the
+            \n          path */
+            \n        boolean bfs(int rGraph[][], int s, int t, int parent[])
+            \n      {
+            \n    // Create a visited array and mark all vertices as not
+            \n  // visited
+            \nboolean visited[] = new boolean[V];
+            \n for(int i=0; i&lt;V; ++i)
+            \n visited[i]=false;
+
+            \n// Create a queue, enqueue source vertex and mark
+            \n// source vertex as visited
+            \n LinkedList&lt;Integer&gt; queue = new LinkedList&lt;Integer&gt;();
+            \n queue.add(s);
+            \nvisited[s] = true;
+            \n parent[s]=-1;
+            \n
+            \n          // Standard BFS Loop
+            \n        while (queue.size()!=0)
+            \n      {
+            \n    int u = queue.poll();
+            \n
+            \n          for (int v=0; v &lt; V; v++)
+            \n        {
+            \n      if (visited[v]==false &amp;&amp; rGraph[u][v] > 0)
+            \n    {
+            \n  queue.add(v);
+            \nparent[v] = u;
+            \n visited[v] = true;
+            \n }
+            \n }
+            \n }
+            \n
+            \n          // If we reached sink in BFS starting from source, then
+            \n        // return true, else false
+            \n    return (visited[t] == true);
+            \n      }
+            \n
+            \n          // Returns tne maximum flow from s to t in the given graph
+            \n        int fordFulkerson(int graph[][], int s, int t)
+            \n      {
+            \n    int u, v;
+            \n
+            \n          // Create a residual graph and fill the residual graph
+            \n        // with given capacities in the original graph as
+            \n      // residual capacities in residual graph
+            \n
+            \n          // Residual graph where rGraph[i][j] indicates
+            \n        // residual capacity of edge from i to j (if there
+            \n      // is an edge. If rGraph[i][j] is 0, then there is
+            \n    // not)
+            \n  int rGraph[][] = new int[V][V];
+            \n
+            \n          for (u = 0; u &lt; V; u++)
+            \n        for (v = 0; v &lt; V; v++)
+            \n      rGraph[u][v] = graph[u][v];
+            \n
+            \n          // This array is filled by BFS and to store path
+            \n        int parent[] = new int[V];
+            \n
+            \n          int max_flow = 0;  // There is no flow initially
+            \n
+            \n          // Augment the flow while tere is path from source
+            \n        // to sink
+            \n      while (bfs(rGraph, s, t, parent))
+            \n    {
+            \n  // Find minimum residual capacity of the edhes
+            \n// along the path filled by BFS. Or we can say
+            \n// find the maximum flow through the path found.
+            \nint path_flow = Integer.MAX_VALUE;
+            \nfor (v=t; v!=s; v=parent[v])
+            \n{
+            \nu = parent[v];
+            \npath_flow = Math.min(path_flow, rGraph[u][v]);
+            \n}
+            \n
+            \n          // update residual capacities of the edges and
+            \n        // reverse edges along the path
+            \n      for (v=t; v != s; v=parent[v])
+            \n    {
+            \n  u = parent[v];
+            \nrGraph[u][v] -= path_flow;
+            \nrGraph[v][u] += path_flow;
+            \n }
+            \n
+            \n          // Add path flow to overall flow
+            \n        max_flow += path_flow;
+            \n      }
+            \n
+            \n          // Return the overall flow
+            \n        return max_flow;
+            \n      }
+            \n
+            \n          // Driver program to test above functions
+            \n        public static void main (String[] args) throws java.lang.Exception
+            \n      {
+            \n    // Let us create a graph shown in the above example
+            \n  int graph[][] =new int[][] { {0, 16, 13, 0, 0, 0},
+            \n{0, 0, 10, 12, 0, 0},
+            \n          {0, 4, 0, 0, 14, 0},
+            \n        {0, 0, 9, 0, 0, 20},
+            \n      {0, 0, 0, 7, 0, 4},
+            \n    {0, 0, 0, 0, 0, 0}
+            \n  };
+            \nMaxFlow m = new MaxFlow();
+            \n
+            \n          System.out.println("The maximum possible flow is " +
+            \n        m.fordFulkerson(graph, 0, 5));
+            \n
+            \n          }
+            \n        }
+
+            \n\nOutput:
+
+            \n\nThe maximum possible flow is 23
 
         </item>
         <!--Maximum bipartite matching-->
-        <item>
+        <!--<item>-->
+            <!---->
+        <!--</item>-->
 
-        </item>
         <!--Push Relabel Algorithm-->
-        <item>
-
-        </item>
+        <!--<item>-->
+        <!---->
+        <!--</item>-->
 
     </string-array>
 

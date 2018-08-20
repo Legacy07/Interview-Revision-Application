@@ -12,6 +12,7 @@ import android.widget.Button;
 
 import com.ahmet.interviewapp.R;
 import com.ahmet.interviewapp.behavioural_questions.BehaviouralQuestionsFragment;
+import com.ahmet.interviewapp.cliche_questions.Cliche_Questions;
 
 
 public class InterviewFragment extends Fragment implements View.OnClickListener {
@@ -37,6 +38,8 @@ public class InterviewFragment extends Fragment implements View.OnClickListener 
 
         behaviouralButton.setOnClickListener(this);
         technicalButton.setOnClickListener(this);
+        clicheButton.setOnClickListener(this);
+        tipsbutton.setOnClickListener(this);
 
         manager = getActivity().getSupportFragmentManager();
 
@@ -62,7 +65,12 @@ public class InterviewFragment extends Fragment implements View.OnClickListener 
 
                 break;
 
+            case R.id.clicheButton:
+                Cliche_Questions cliche_questions = new Cliche_Questions();
+                //replacing the fragment with the layout
+                manager.beginTransaction().replace(R.id.content_layout, cliche_questions).addToBackStack(null).commit();
 
+                break;
         }
     }
 }

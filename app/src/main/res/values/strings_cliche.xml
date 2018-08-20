@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cliche_questions">
+        <item>
+            What interests you about this job?
+        </item>
+        <item>
+            What would you do in your first 90 days in this position?
+        </item>
+        <item>
+            Why do you want to work for us?
+        </item>
+        <item>
+            What draws you to this industry?
+        </item>
+        <item>
+            Tell me about your previous employment.
+        </item>
+        <item>
+            Where do you see yourself in 5 years?
+        </item>
+        <item>
+            What differs you from other candidates? Why should we hire you?
+        </item>
+        <item>
+            How would you describe your ideal job?
+        </item>
+        <item>
+            What sort of salary are you ideally looking for?
+        </item>
+        <item>
+            Why did you choose your university, and what factors influenced your decision?
+        </item>
+        <item>
+            If you had to describe yourself in one word, what would it be?
+        </item>
+        <item>
+            How do you define and measure success?
+        </item>
+        <item>
+            What’s your work style like?
+        </item>
+        <item>
+            What did you like least about your last job?
+        </item>
+        <item>
+            What’s a goal you have for self-improvement in the next year?
+        </item>
+        <item>
+            What three qualities do you look for in a workplace?
+        </item>
+        <item>
+            Do you prefer a more structured work environment or one where you can be more entrepreneurial?
+        </item>
+        <item>
+            Why do you have a gap in your job history?
+        </item>
+        <item>
+            What are your career goals?
+        </item>
+        <item>
+            If I called your boss right now and asked him what is an area that you could improve on, what would he say?
+        </item>
+        <item>
+            What was the last book you’ve read for fun?
+        </item>
+        <item>
+            How would you fire someone?
+        </item>
+    </string-array>
+
+    <string-array name="cliche_answers">
+        <!--What interests you about this job?-->
+        <item>
+            To help prepare for the interview, carefully read the job posting, noting the stated requirements regarding skills and experience.
+            You can also see if there is additional information about the job you\'re applying for on the company website.
+
+            \n\nIf the job listing is short, and there is little (or no) information on the company website, you can look up similar job
+            listings on job sites like Indeed.com. You can also Google the job title to get some general information.
+
+            \n\nBefore your interview, make a list of your skills and experiences that match the stated requirements.
+            Think about specific examples of how you successfully applied these skills to other positions and bone up on
+            how to match your qualifications to a job.
+
+            \n\nWhen answering the question don\'t talk about how you would benefit from the job. For example, answers like,
+            "I want a job that will help me build my career" make you seem more focused on yourself rather than how your background benefits
+            the company. However, don\'t be afraid of showing your enthusiasm for the job. You want to emphasize that you are both qualified,
+            and passionate, about the position.
+
+            \n\nExamples:
+
+            \n\n&#8226;I am extremely interested in this job as Human Resources Manager. As you mentioned in the job listing,
+            I would be responsible for recruiting, orientation, and training. I was responsible for all three of these
+            functions in my most recent position. As Human Resources Assistant Manager at XYZ Company, I recruited over
+            100 employees and led training for all new staff members in a department of 45 people.
+            I am interested in this job because it would allow me to use my previous experience while continuing to develop my expertise
+            in new areas of responsibility.
+
+            \n\n&#8226;I am interested in this job as a programmer because I am extremely interested in, and skilled at, learning and excelling at
+            new technologies. I have already learned and mastered programs and languages ranging from Python to Java, and
+            I look forward to mastering more programs as they\'re developed. I am also interested in creative problem solving,
+            a skill I developed when working as an analyst for the past ten years.
+        </item>
+        <!--What will you do in your first 90 days in this position?-->
+        <item>
+            One way to address this question, if by presenting a 30-60-90-Day plan for your first days on the job. If done correctly,
+            this will demonstrate that you understand what’s required of you, and that you have the skills and experience needed to do the
+            job successfully. Even if you are not asked this question during the interview, it’s good to go through the process of creating a
+            30-60-90-day plan prior to the interview. There will be many opportunities in the interview to present your plan to the interviewer,
+            and it will demonstrate that you\'re serious about the position and have come prepared.
+
+            \n\nExamples:
+            I am delighted that you asked this question because I have created a 30-60-90-day plan based on my understanding of the role.
+            The first thing I’ll do is to meet with my boss to get a clear understanding of her expectations and the challenges and projects
+            that are most important to address.  I will learn what my boss expects from me, and how she measures success in the role.
+            Next, I will meet with members of the team, and other coworkers to understand how the position fits in with the larger team.
+            Finally, I will take the time to complete training on all aspects of the position, so I have the knowledge needed to get to work.
+
+            \n\nTips for Creating an Effective 30-60-90 Day Plan
+
+            \n\n&#8226; The Plan has to be customized and targeted to a specific employer – a generic plan defeats the purpose of the exercise.
+            \n\n &#8226; Conduct thorough research to identify the top three strategic initiatives of the organization.
+            Look for clues to alert you as to what issues are keeping managers up at night. Places to conduct your research for your
+            30-60-90 Day Plan include: The corporate website, Google, Twitter, the company’s page on LinkedIn, and
+            the profiles of people who work for the organization, LinkedIn groups where they hangout, and industry groups.
+
+            \n\n&#8226; It should be one to four pages in length, with as little or as much detail as you are comfortable sharing about
+            what you will do during the first 90 days on the job for which you are applying. The examples below are possible activities
+            during each time period. Use the information you uncovered during your company research to customize your Plan for the company,
+            and make sure that you address the three most important strategic initiatives you identified.
+
+            \n&#8226;Introduction: An overview of what you would like to accomplish the first three months on the job.
+            \n&#8226;30-Day Plan/First 30 days on the job: During the first 30 days on the job, time is spent attending training,
+            meeting team members, learning the organization’s systems and its products and services, reviewing procedures and client accounts.
+            \n&#8226;60-Day Plan/First 60 days on the job : Studying best practices in the industry, setting goals for the next 30 days,
+            meeting with supervisor to gather feedback, building relationships with your colleagues, identifying potential mentors,
+            reviewing the efficiency of company processes and procedures, visiting other department, and continuing to attend training.
+            \n&#8226;90-Day Plan/First 90 days on the job: Obtaining feedback on new processes and procedures,
+            implementing new strategies and procedures, and addressing the three strategic initiatives.
+
+            \n\n&#8226;It will take a while to create your 30-60-90 Day Plan so don’t start preparing it the night before your interview.
+            Make your plan as visually attractive as possible and use it to close in your interview.
+
+        </item>
+        <!--Why do you want to work for us?-->
+        <item>
+            - Research the company thoroughly
+
+            \n\nIf you’re explaining why you want to work for a particular company, you must research the employer in question.
+
+            \n\nYou may already have a fairly solid idea of why you want to work for the company.
+            After all, you’ve applied for a job there. But it’s important to top up your knowledge so you can cover all reasons,
+            show why you’re a great fit for the company and, ultimately, provide a convincing answer.
+
+            \n\nTherefore, you need to get an idea of the employer’s mission and values, delving deeper into how it operates
+            day-to-day and making a note of any highlights its recently seen. This is to work out not only what you admire,
+            but where you fit in.
+
+            \n\nWe recommend visiting the employer’s ‘about us’ pages and its social media platforms.
+            You should aim to get an idea of what the company does and what it stands for, and therefore, what appeals to you.
+
+            \n\nYou may also like to check out recent press and media coverage featuring the company to use in your response.
+            You can do this in some ways from checking the company’s site for recent press releases, Googling its name in the
+            news and reading industry publications in case there are any mentions of research, achievements or awards.
+
+            - Highlight your goals in line with company objectives
+
+            \n\nOff the back of your research, you should also get an idea of what an ideal employee looks like.
+            So, now that you’re familiar with the company’s mission, values and objective, it’s time to align them with your own goals.
+
+            \n\nThis is to prove that not only is the company a good match for you but that you are a good match for it.
+
+            \n\nPull out a couple of company objectives or qualities that you admire most and recognise in yourself. For example,
+            if the company prides itself on supporting its customers, you might note this as a value you find important.
+
+            \n\nThen, you need to anchor these values to what you can bring to the team. For example, since you and the company
+            value supporting customers, you may like to add that you have worked in a variety of customer-facing environments,
+            handing you valuable experience that will ensure this company objective is fulfilled.
+
+            \n\nExamples:
+
+            \n\nI want to work for this company because the tone and style of your band is something I deeply associate with –
+            it’s part of my philosophy. You market yourselves to a millennial audience and, as a millennial with two years’ of experience
+            in marketing; I know I’d make a valuable addition to your team as the tone of the brand and what it stands for comes naturally
+            to me.
+
+            \n\nThis company is a leader in its industry and I have a huge amount of admiration and respect for that.
+            My previous role was with an industry leader, and although it was a different industry, I am familiar with the
+            pressures and workings of maintaining this excellent standard. As a result, I know this company is the next best move
+            for me due to what I value and the experience I have.
+        </item>
+        <!--What draws you to this industry?-->
+        <item>
+            Know the industry well before the interview. You should understand what makes the industry attractive as a
+            place to work and reflect that in your answer. This is a due diligence question to measure whether
+            you have done your employer and industry research in advance.
+
+            \n\nExamples:
+
+            \n\n&#8226; I have worked in the financial services industry for most of my career and my experience is well aligned with the
+            needs of the insurance industry. I have specifically supported the insurance sector during my last role, so I have a
+            solid understanding of the business drivers for the insurance industry…
+
+            \n\n&#8226; I worked in the technology department for an insurance company as my internship last summer.
+            That experience has focused my desire to be fully committed to working in tech specifically within the tech industry.
+            The tools we used in my internship were first class, but tech was always a sideline department, rather than being the
+            primary focus. So I’m looking to be all in with tech in my future career.
+        </item>
+        <!--Tell me about your previous employment?-->
+        <item>
+            When the hiring manager asks you questions related to the experience that qualifies you for the job,
+            it\'s important to be very specific about your skills and experience. Instead of answering it broadly,
+            try to use specific examples of how your past work prepares you for the new role.
+
+            \n\nThe best way to respond is to describe your responsibilities in detail and to connect them to the job you are interviewing for.
+            Tie your responsibilities in with those listed in the job description for the new position. That way, the employer will see that you have the qualifications necessary to do the job.
+            Focus most on your responsibilities that are directly related to the new job\'s requirements.
+
+            \n\nQuantify your response
+
+            \n\nWhenever possible, quantify your response. The interviewer is looking to hire the candidate who can best solve a problem
+            for the company, whether that’s boosting sales or acquiring customers or hitting some other metric.
+            If you can demonstrate that you were able to solve a similar problem at your current or previous job,
+            you’ll stand out from the competition.
+
+            \n\nStatistics are particularly persuasive. If you can show that you increased sales by X percent or saved the company Y
+            amount of money, you’ll give the hiring manager a good argument for offering you the job.
+
+            \n\nIt\'s also important to be honest and accurate. Don\'t embellish your job, because you don\'t know who the hiring manager will be
+            speaking with when they check your references. Even if they don’t follow up in depth, you don’t want to spend the rest of your
+            career waiting to be found out – or talk your way into a role for which you’re currently unprepared.
+
+            \n\nExamples:
+
+            \n\n&#8226; I developed extensive skills in working with customers, even when they were distressed.
+            I\'m excellent at deescalating situations and finding a way to make the customer happy.
+            Our customer satisfaction rating rose 10 percent during my tenure at my previous employer.
+            Since the role of your marketing department is to improve customers\' impressions of the company,
+            my experience will be an asset to your team.
+
+            \n\n&#8226; My work experience has been nothing but top notch. When I completed my accounting degree,
+            I went right to the best firm in the city and was hired as an intern. I was able to use the internship time towards my MBA,
+            which I just complete this past spring. Working with the best of the best has made me an asset to any company that will hire me.
+
+        </item>
+        <!--Where do you see yourself in 5 years?-->
+        <item>
+            Examples:
+
+            \n\n - The bullshit approach: I am really looking forward to spending the next five years in an organization where I feel I share all
+            of its values, especially when it comes to [some values]. I would love to have the opportunity to demonstrate my leadership
+            capabilities when the time is right, hopefully within 5 years and contribute to its growing success.
+
+            \n\n - The honest and genuine approach: Judging by the fact that where I saw myself in the past is never where I ended up,
+            it\’s really hard to say where I will be 5 years from now. If you asked me this question 10 years ago, when I was working at
+            Standard &amp; Poor’s as an analyst, I\'d tell you I wanted to be an investment banker and make a million dollar bonus.
+            Then 5 years later, I was a project management consultant, then sustainability consultant...and now here I am interviewing
+            for a management consulting role which I can confidently do very well.
+
+            \n\nSo you see, where I wanted to be almost never happened, and it’s really hard to say now where I will be in 5 years.
+
+            \n\nBut I guarantee you this. I will do my best in this role and have a wonderful career at your company
+            with your team and with your leadership. And when the time comes, I will assume more leadership roles,
+            hopefully easing some of your intense work load.
+        </item>
+        <!--What differs you from other candidates? why should we hire you?-->
+        <item>
+            The FAB(Feature - Advantage - Benefit) Approach
+
+            \n\nFeature examples:
+            \nCommunication Skills
+            \nIT and Development Skills; Programming languages, different technologies.
+            \nProblem Solving, Self-Learning, Hungry for Achievement/Success
+            \nA Qualification
+            \nA language you speak.
+
+            \n\nA feature is fixed so you can define them for the company\'s needs.
+
+            \n\nTherefore a feature should have its \'Advantages\' suchlike the knowledge of programming allows you to create programs and solve problems.
+            (You should of course extend this in detail specifically to the job criteria.)
+
+            \n\nFinally, the feature should benefit the company in this case and you should try to sell the benefit to the interviewer with examples.
+            \nFor instance: I have self taught myself Android development for my final year project in university and achieved a first. This
+            shows that you have the feature of self-learning which has the advantages of not depending on others and achieving great results at the end.
+
+
+
+        </item>
+        <!--How would you describe your ideal job?-->
+        <item>
+            Even if the job you’re applying for actually is your dream job, you need to be able to backup your answer with factual
+            reasons as to why it is, otherwise you’ll risk your answer sounding vague - or worse, fake.
+
+            \n\nConversely, if the job you’re applying for is more of a stepping stone to the job you really want
+            (or quite far from your ideal role), you should focus on any aspects that do bear some resemblance to what you want to be doing.
+            If you really can’t find any, it might be a good idea to reconsider why you’re applying for the position in the first place.
+
+            \n\nUnless you’re sure the role you’re applying for only focuses on a very specific set of tasks,
+            it’s a good idea not to gear your answer around one particular area, as it could make it sound like you’re only interested or
+            passionate about a small part of the role. Equally, if you’re applying for a target- or commission-based sales role,
+            you should always avoid citing money as a major consideration in your dream role - it will make you seem financially motivated,
+            as opposed to really caring about the role itself.
+
+            \n\nExamples:
+
+            \n\n&#8226; My dream role is a job where I can use my interpersonal skills and connections to increase my company\'s client base.
+            I\'m really results-driven and thrive on working to a deadline, so it would also be a role that relied heavily on my
+            ability to negotiate and close deals within an allotted time frame, as that’s one of the ways I get the greatest job satisfaction.
+
+            \n\n&#8226; My ideal job is one where I get to solve problems and build new applications.
+            I love to test out new technology and I\'m a team player. I\'m happiest when I\'m part of a busy team who are all working to
+            fix a particular software problem that will ultimately benefit the whole organisation.
+
+        </item>
+        <!--What sort of salary are you ideally looking for?-->
+        <item>
+            Once you know the average salary, match your expectations to that. For instance, if the average salary is around £25,000,
+            then if asked about it say that you\'re looking for a salary that\'s around £24,000 to £26,000.
+
+            \n\nIt\'s important that you get this right. If your salary demands are too low, you could be seen as undervaluing yourself.
+            Too high, and you could be seen as either overvaluing yourself, or as being too motivated by money,
+            to the point where you\'d be liable to leave the job as soon as a higher-paying position came up.
+
+            \n\nIn general, you shouldn\'t talk about money as a prime motivator for you.
+            Of course, you need to put food on the table and want to be properly rewarded for your work,
+            but you don\'t want to give the impression that it takes precedence over everything, like being interested in the work itself.
+
+            \n\nYou should also avoid asking about salary yourself. It makes it appear like you’ve not done your research,
+            or that you\'re interested in the job purely for financial reasons. Let them bring up the subject.
+
+
+        </item>
+        <!--Why did you choose your university and what factors influenced your decision?-->
+        <item>
+            Whether you originally picked the school because it offered a great curriculum for your chosen major,
+            had an incredible faculty or was the most affordable school in your state, you likely put some thought
+            into picking the place where you were going to spend the next four years.
+            When preparing your answer, mention one or two key things that led to your decision and show how these things have
+            shaped your experience at the school.
+
+            \n\nOnce you\'ve established the process that led you to attend your chosen college or university,
+            connect this back to the job opportunity you\'re applying for. If your major doesn\'t directly relate to the position,
+            talk about relevant skills you\'ve learned through electives or experience you’ve gained through internships.
+            Since employers are interested in how you evaluate opportunities and make decisions, showing that you\'ve thoughtfully
+            considered the current opportunity will reassure them that you’re committed to the position and the organization.
+
+            \n\nI originally chose to attend XYZ University because ______________. During the time I\'ve spent there,
+            I\'ve been lucky enough to have access to ______________. My education has given me a solid foundation for a career in _________
+            and I\'m so glad I made the decision to go to school there. The experiences I\'ve had at XYZ University have also shaped
+            my decision to apply for this position. I want a role that will allow me to put the things I\'ve learned into practice
+            and develop my skills even further. I know that this position would be a good fit for me and I\'m excited about the possibility
+            of joining the team.
+        </item>
+        <!--If you had to describe yourself in one word, what would it be?-->
+        <item>
+            It isn’t enough to choose a word that only describes your personality, no matter how accurate it is.
+            You could be any number of wonderful things… happy, resilient, warm, smart, a great friend, generous,
+            kind, and so on… but these answers won’t do anything to help convince them to hire you.
+
+            \n\nWhat you want to do is think about the job and what qualities would be especially good for someone to be successful in
+            that role, and then choose one of those that applies to you.
+
+            \n\nWhat are some possibilities for good words to choose?
+
+            \n\nPersonally, my answer would be \'dynamic.\' For me, this is a good word because I change, adapt,
+            and do whatever I need to do in order to succeed.
+
+            \n\nSome Examples:
+
+            \n - Successful (if you’re successful in other places, chances are you’ll be successful here, too)
+            \n - Motivated (great for roles where you’ll be working more independently)
+            \n - Strategic (great for planning roles or leadership roles)
+            \n - Enthusiastic (may be a good word for roles needing a change agent)
+            \n - Organized (good for managers or those working with a lot of moving parts)
+            \n - Focused
+            \n - Productive
+            \n - Steady
+            \n - Creative
+            \n - Active
+            \n - Helpful
+            \n - Responsible
+            \n - Dedicated
+            \n - Honest
+            \n - Versatile
+            \n - Valuable
+            \n - Flexible
+            \n - Tenacious
+            \n - Analytical
+
+            \n\nWhatever answer you choose, be prepared to follow up with an explanation or example of how you embodied that
+            trait in your work life in the past. Structure your answer with the STAR technique
+            (tell the Situation or Task you faced, the Action you took that is an example of your trait, and the Result you got from it).
+        </item>
+        <!--How do you define and measure success?-->
+        <item>
+             - Give an honest answer. Don’t try to turn your answer into a conversation about metaphysics. Be honest and define success
+            from your own perspective. There’s nothing wrong with telling the truth. The recruiter wants to hear something that’s
+            straightforward and genuine.
+
+            \n\n - Don’t be too focused on the position. If you try to define success as being employed at the top level, think again.
+            Reorder your priorities — don’t let a management position be the goal that defines success. If you give that sort of answer,
+            the recruiter may assume that you put too much emphasis on rank.
+
+            \n\n - Get to know the company’s goals. The goals of the company you want to work for should also be part of your own
+            professional goals. No matter what position you’re applying for, your definition of success should be inline with how
+            the company evaluates success.
+
+            \n\n - Don’t lose yourself in the process. Add a personal touch to your answer by mentioning a personal goal.
+            This will help you stand out.
+
+            \n\n - Know your goals. Sometimes it can be hard to ace this question, especially if you don’t know what your goals are.
+            Before applying for a job, make sure you have a clear picture of what you want in life and work to determine how you can
+            achieve it through your chosen career path.
+
+            \n\n - Be positive. Present yourself as a goal-oriented person. This question determines what environment you belong in
+            according to your own judgment. Never tell the recruiter that you’re already successful. The recruiter might assume you
+            won’t take on new challenges.
+
+            \n\n - Keep in mind that success is what you make it. You cannot be successful in an instant. Be humble and give your
+            honest opinion of how you define success. Don’t focus on money and power. Perhaps you want to be a more effective team
+            player for the company. Try to think objectively and avoid focusing too much on salary figures and job ranking.
+        </item>
+        <!--Whats your work style like?-->
+        <item>
+            When answering this question, it is important to keep the particular job in mind.
+            Avoid clichés (like "hard worker" and "good communication skills") and focus on specific elements of your work style
+            that fit the position and company.
+
+            \n\nDo your research before the job interview. Analyze the job listing to match your qualifications with their requirements,
+            and prepare answers that show how your work style makes you the best candidate for the job.
+
+            \n\nThen, go a little further. Review the company\'s website, media kit (almost always available on their site),
+            and social media presence to learn which qualities are most valued at the organization. Most employers have a
+            strong idea of the kind of person who\'ll succeed on their team.
+
+            <!--<string name="link"><a href="https://digg.com/2018/tech-companies-job-listings-language">roundup of top terms in tech-->
+            <!--employers\' job listings</a></string>-->
+            \n\nThis roundup of top terms in tech employers\' job listings shows how various companies brand themselves when staffing up.
+            Slack is looking for workers who build "lasting relationships" and "care deeply," for example,
+            while Uber prides itself on a "high-performance culture" and is looking for folks who\'ll do "whatever it takes."
+            (https://digg.com/2018/tech-companies-job-listings-language).
+
+            \n\nIt\'s also important to be honest, while still highlighting the positive. Don\'t claim to be a perfectionist
+            if you\'re a big-picture person; instead, emphasize your vision and commitment to quality.
+
+           \n\nWhen composing your answer, you might want to focus on:
+
+            \n\n&#8226; Speed and accuracy – If you work quickly and efficiently, you might mention this in your answer,
+            especially if the job requires meeting tight deadlines. However, it\'s important to impress the interviewer with your
+            competency and accuracy, rather than just your speed. If you say you work at a fast and steady pace, emphasize the
+            strategies you use to avoid making mistakes.
+
+            \n\n&#8226; Structuring your day – You may want to focus on how you organize your day. Do you prefer to do your most
+            difficult tasks in the morning? Do you prefer to focus on one assignment at a time, or multitask? You might also mention
+            how many hours you typically work. If you are someone who always goes above and beyond, and stays late to complete tasks, say so.
+
+            \n\n&#8226; Working alone or in collaboration – The employer might want to know if you prefer to work solo or in collaboration.
+            Think carefully about the job before answering this question. Most jobs require at least some collaboration, so even
+            if you prefer working alone, emphasize that you value others’ input.
+
+            \n\n&#8226; Taking direction – Another important element of your work style is how you like to communicate with your boss.
+            Do you prefer to take constant direction, or do you like to be given a task and left alone to complete it? Thinking about
+            your ideal relationship with your employer will help both you and the interviewer decide if you are a good fit for the job.
+
+            \n\n&#8226; Your communication style – If this job requires constant communication, you might want to emphasize how you
+            communicate with employers, staff, and clients throughout the workday. Do you prefer email, phone conversations, or
+            in-person meetings? Again, think about what this job requires before you answer.
+
+            \n\nExamples:
+
+            \n\n - My work style is extremely flexible – working on so many different projects requires me to be adaptive. In general,
+            I try to work on one project at a time, working as quickly but efficiently as possible to achieve the highest results.
+            All of my projects require collaboration, so I use the team environment to check for errors. I am a perfectionist and a
+            driven worker, and I think my clear communication skills allow me to bring out the best in any team, in any project.
+
+            \n\n - I am extremely dependable. I have rarely missed a day of work, and am known for coming in early and staying late
+            to finish important tasks and achieve results. This dependability extends to my collaborative work as well.
+            I always meet deadlines and help my teammates to meet theirs as well. For example, on my last project, a teammate
+            was struggling to complete his assignment for the team, and I stayed late every day that week to help him not only
+            complete his assignment but exceed our initial estimations for the project.
+
+        </item>
+        <!--What did you like least about your last job?-->
+        <item>
+            While this is a negative question in search of a negative answer, you want to begin your answer with something upbeat that
+            shows you\'re generally not a negative person, that shows you generally look for the good in situations.
+            You\'ll probably want to note your overall satisfaction with your job, and even give one specific thing you\'ve
+            found valuable about the job.
+
+            \n\nYou say: "I\'ve given this question some thought, and overall I\'ve been very satisfied with my job.
+            I\'ve been able to work with some really interesting people."
+
+            \n\nWhen you get to the meat of this question, you\'ll benefit by doing some advance planning, as you\'ll likely get some
+            iteration of this question (it might sound something more like "Why are you looking to leave your current job?").
+            Create a list of those things responsible for your dissatisfaction. Spend some time looking at your list for patterns.
+            Are there some projects that recur on your list? Are there some situations you don\'t want to get into again?
+            This exercise will help you identify things to watch for and to ask questions about during the interview.
+
+            \n\nAs you look for the answer to the question you\'re being asked, try to focus on an element of the work itself rather
+            than company politics (which may be messy if your interviewer knows people at your company) or people
+            (the recruiter may translate this answer into your being difficult). Try to limit yourself to one issue,
+            such as workload, lack of growth or lack of flexibility.
+
+            \n\nYou say: "I have to say that I did have a job where there was an inordinate amount of paperwork."
+            Notice the word "inordinate." Not a normal load paperwork, but an unusually large amount.
+
+           \n\nUse your closing sentence to acknowledge how this particular negative situation hampered you from deploying one
+            of your key skills, so that the interviewer sees you as someone who wants to be able to work to their best potential.
+
+            \n\nYou say: "The paperwork has bogged me down, and prevented me from doing what I do best, which is working with people."
+        </item>
+        <!--Whats a goal you have for self-improvement in the next year?-->
+        <item>
+            Strive to make your answer relate to work in some appreciable way, but don’t get hung up on making it all about the job:
+
+            \n\n&#8226; Discuss ways to you want to improve and relate them to on-going efforts and ways in which you have already
+            improved yourself.
+            \n\n&#8226; Some general answers can be work-related, such as discussing a desire to improve your communication habits.
+            \n\n&#8226; Think on your feet to avoid long delays—good self-awareness is often considered to be a good trait.
+            \n\n&#8226; For best results, keep a positive, upbeat tone in your response.
+
+            \n\nMake sure you give this question genuine thought and an honest response. Interviewers will likely see through flimsy replies.
+
+            \n\nExamples:
+            \n\nAt the moment, I\'m learning to speak Spanish in order to make it easier to communicate with a larger number of people.
+            I\'m also focused on developing my technical skills so I can pursue an interest in programming in the future, particularly
+            since a lot of the knowledge I pick up will benefit me professionally as well.
+        </item>
+        <!--What three qualities you look for in a workplace?-->
+        <item>
+            - Be sincere
+            \n\nTo avoid giving a canned, predictable response, you need to know what you really want in a workplace—and understand that
+            isn\'t the same as what others may want.
+
+            \n\n"Think about what an ideal company really does look like for you," says John J. Brady, executive director of
+            Protem Partners in Philadelphia. "When you know what it looks like, you can answer truthfully, which will also
+            come across more convincingly."
+
+            \n\nYou need to have a clear idea of the type of environment that enables you to do your best work,
+            says Marilyn Santiesteban, assistant director of career services at the Bush School of Government &amp;
+            Public Service at Texas A&amp;M University. "Do you work best in a collaborative team, or is a solo practitioner
+            more your style? Do you like fast-paced, innovative environments or more hierarchical if-it-isn\'t-broke-don\'t-fix-it ones?
+            Be clear about how these elements enable your top performance."
+
+            \n\nYou say: "My ideal company is one that values individual employees and encourages them to speak up and share ideas,
+            but that also has a commitment to sustainability".
+
+            \n\n - Demonstrate alignment
+            \n\nGiving an answer based on how your own values overlap with the company\'s values is key to positioning yourself well,
+            Jennae says. And here\'s where doing your homework on the company pays off. "Use a specific value or two that resonated
+            with you and provide direct evidence as to why it represents your ideal," she says. This shows both alignment and preparation.
+
+            \n\nYou say: "I know sustainability is part of your mission and something you consider in every project the company undertakes."
+
+            \n\n - Focus on what you can offer
+            \n\nYour ideal company should help make you an ideal employee—and you want to show that.
+
+            \n\n"A response that focuses exclusively on perks and benefits to employees probably won’t go over very well,"
+            Brady notes. "It suggests you’re only interested in what you get, rather than what you contribute to the corporate community."
+
+            \n\nYour answer should show you’ve researched the company and the challenges it faces, Jennae says.
+            In your ideal company, you will be part of the solution to those problems.
+
+            \n\nYou say: "My ideal company would present exciting challenges that allow me to use my interest in and
+            experience with growing sustainability efforts, and I see how my experience developing metrics could be
+            useful here to propel the business forward".
+
+        </item>
+        <!--Do you prefer a more structures work environment or one where you can be more entrepreneurial?-->
+        <item>
+            The hiring manager is making sure you will be a good fit for his or her particular workplace environment.
+            What the manager is most concerned with is whether or not you are extreme in your desire for structure or flexibility.
+            If you present yourself as passionately wanting one or the other, it may signal to the interviewer that you lack the
+            ability to find balance.
+
+            \n\n - Points to Emphasize
+            \n\nWhen answering this question, you’ll want to make sure that you come across as ready and willing to fit
+            into the company’s existing work environment.
+
+            \n\n&#8226; Keep a middle ground by expressing interest in a structured environment and having the qualifications to
+            be a self-starter.
+            \n\n&#8226; Highlight skills related to following directions and streamlining necessary processes as they arise.
+            \n\n&#8226; Show that you can follow an existing format and make changes when it best suits the company.
+            \n\n&#8226; Emphasize that you are a well-rounded individual who can amend yourself to a situation.
+            \n\nThe most important rule to follow when answering this question is to not limit your answer to an either/or scenario.
+
+            \n\nExamples:
+            I prefer a work culture that blends the best of both worlds. I enjoy working with a company\'s established structure,
+            as well as having an entrepreneurial spirit when I come across an outdated procedure or see an area that can be improved.
+            I like to take all important proposals to a supervisor before implementing large changes.
+        </item>
+        <!--Why do you have a gap in your job history?-->
+        <item>
+            - Be honest
+            \n\nThe single most important thing to remember when dealing with a gap in your CV is that, whatever your reason for taking
+            a break from employment, honesty is (almost) always the best policy.
+
+            \n\nYou don’t have to go into everything in detail (some situations may benefit from discretion),
+            but leaving it out completely or lying about the reason will only make the gaps stand out further.
+
+            \n\nAdditionally, never be tempted to extend your period of employment in a previous position,
+            just to cover up the gaps. There is every chance that the interviewer will call your previous employers to verify your time there.
+
+            \n\n - Be Proactive
+            \n\nIf you’re struggling to find work, and feel that gaps in your employment history are to blame, always try and be proactive.
+
+            \n\nUse your time off to take a course, seek some professional mentoring, or take up a voluntary position. This will demonstrate
+            to the employer that you’re utilising your time effectively, and help set your CV apart.
+
+            \n\nIf you can’t find a voluntary position or course to suit you, there are always other ways of demonstrating your talents.
+
+            \n\nWriting a blog, for example, can be a great way to showcase your skills, and also actively exhibit your willingness to
+            further your career.
+
+            \n\n - Be Positive
+            \n\nInstead of apologising for your gaps, try and put a positive spin on them.
+
+            \n\nChanging your phrasing from "I couldn’t find a job" to "I decided to take a few months out to re-focus my career pursue
+            a position within my desired industry" can make your career gap look deliberate rather than desperate.
+
+            \n\nAlso, if taking a break wasn’t your decision, a bit of positivity can go a long way. Focus on what you learned from
+            the experience and what steps you’ve taken to implement positive changes to your career to improve your overall performance.
+        </item>
+        <!--What are your career goals?-->
+        <item>
+            Start with short-term goals, then move to long-term goals. You probably have a good sense of your short-term goals,
+            such as getting a job with an employer like the one you are currently interviewing for. Start by describing these goals,
+            then move on to more long-term plans.
+
+            \n\nThen, spend some time setting your short and long-term career goals.
+
+            \n\nExplain the actions you\'ll take. Listing goals is not going to make for a strong answer.
+            You also want to (briefly) explain steps you will take to achieve those goals. For example,
+            if you want to take on a management role, explain the steps you have taken, or will take, to become a manager.
+
+            \n\nPerhaps you are developing your leadership skills by running group projects, or you plan
+            to attend a series of leadership conferences, or you are pursuing a specialized management certification.
+
+            \n\nDescribing your plan demonstrates that you are thinking analytically about your career
+            future and your potential growth within the company. For example, if you plan to further your education,
+            explain it in a way that enhances your worth to the company.
+
+            \n\nExamples:
+
+            \n\n&#8226; In the short term, I hope to work as a sales representative for a company such as yours – one with a mission based on
+            great customer service and care. Working as a sales representative for a company I believe in will prepare me to hopefully
+            take on expanded team leadership responsibilities in the future, as these become available.
+
+            \n\n&#8226; My current, short-term goal is to develop and use my marketing and communications skills in a job similar
+            to this one. However, I eventually want to develop into a position that allows me to continue to use these skills while
+            also managing a marketing group. I will prepare myself for this goal by taking on leadership positions in team projects,
+            and by developing my professional career by attending leadership conferences such as the one put on annually by your company.
+        </item>
+        <!--if i called your boss right now and asked him what is an area that you could improve on, what would he say?-->
+        <item>
+            Keep these things in mind as you go, and you should do just fine.
+
+            \n\n&#8226; If you feel like your current boss would mention that you have been improving in a core area, mention that
+            so that you can talk about how.
+            \n\n&#8226; It might be worthwhile to discuss how this area where you need improvement fits into the overall picture for the job,
+            so they understand how this skill or task fits into your job description.
+            \n\n&#8226; The best thing you can do is focus on something you are fairly new to doing,
+            so that you can show how you grow into tasks and what you do to improve as you acclimate.
+            \n\n&#8226; Remember, they want sober assessment. Try to be lightly positive, but not overconfident.
+
+            \n\nMistakes you should avoid:
+
+            \n\n&#8226; Never use this as an opportunity to question your boss\'s judgment about your performance.
+            This is a toxic strategy that hiring managers will pick up on right away.
+            \n\n&#8226; Don\'t focus too much on your individual negative performances or get lost in anecdotes,
+            this is about more general tasks or traits.
+            \n\n&#8226; Avoid blame-shifting, especially if you are interviewing for a position that is heavily team-oriented.
+            \n\n&#8226; You should not be your own biggest critic. It’s important to be honest, but keep your language
+            direct and informative and avoid talking yourself down.
+
+            \n\nExamples:
+            \n\nI think my boss would probably say I take a bit more than I should, and it makes me tire out.
+            We\'ve strategized this together, and I have developed a stronger sense about when to delegate over time,
+            but I still do have ups and downs in my productivity because of the occasional over-scheduling.
+
+        </item>
+        <!--What was the last book you've read for fun-->
+        <item>
+            There are certain things to keep in mind when answering personal questions.
+
+            \n\n&#8226; Talk about a book you actually read and liked
+            \n\n&#8226; If possible, talk about a book you read that is relevant to the field in which you are applying
+            \n\n&#8226; If the interviewer has read it too, feel free to ask their opinion on it
+            \n\n&#8226; Be truthful in your response
+
+            \n\nIf you are asked this question, the interviewer is just trying to learn more about you as a person.
+            \nThere is no need to get caught up in trying to give the perfect response.
+
+            \n\nExamples:
+            \n\n - I recently read Outliers by Malcolm Gladwell, which provided a really in-depth look of what it takes to achieve success
+            in anything.
+
+            \n\nThe good part of being asked these types of personal questions is that there is a good chance the interviewer
+            enjoys the same things you do. Then you can both talk about it and develop a good rapport.
+            You may be coming into this interview with the same type of skills as other candidates,
+            but being asked about your personal life is your opportunity to make yourself stand apart so that a hiring manager
+            will remember you when the interview is over. Liking good books will not automatically get you the job,
+            but it is another factor employers consider.
+        </item>
+        <!--How would you fire someone?-->
+        <item>
+            In properly answering this question it is critical that you show a respect for the managerial duty,
+            as well as the knowledge and skill to perform it.
+
+            \n\n&#8226; Express that you would stick closely to company protocol.
+            \n\n&#8226; Show that you understand that this is sometimes a necessary duty that you are capable of performing.
+            \n\n&#8226; Clearly explain the steps that you would take from start to finish.
+            \n\n&#8226; Demonstrate sternness, yet remain respectful.
+
+            \n\nFirst, I would consult with HR about the appropriate protocol. Second, I would then inform the employee of their termination,
+            stating the things that they did well along with those that they did poorly. Finally, I would allow them to ask any questions
+            to ensure that any confusion or issues are addressed.
+        </item>
+    </string-array>
+
+</resources>

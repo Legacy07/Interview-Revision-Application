@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="advanced_algorithms">
+
+        <item>
+
+        </item>
+
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+
+    </string-array>
+
+    <string-array name="advanced_algorithms_answers">
+
+        <item>
+
+        </item>
+
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+
+    </string-array>
+
+
+</resources>
