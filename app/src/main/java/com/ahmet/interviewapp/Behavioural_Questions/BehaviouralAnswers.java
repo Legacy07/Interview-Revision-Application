@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp.Algorithms;
+package com.ahmet.interviewapp.Behavioural_Questions;
 
 
 import android.os.Bundle;
@@ -10,19 +10,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
 
-import com.ahmet.interviewapp.Adaptors.SliderAdapter;
 import com.ahmet.interviewapp.Models.AddAnswers;
 import com.ahmet.interviewapp.Models.Answers;
 import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.R;
+import com.ahmet.interviewapp.Adaptors.SliderAdapter;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class DataStructuresAnswers extends Fragment implements View.OnClickListener {
+
+public class BehaviouralAnswers extends Fragment implements View.OnClickListener {
 
     ViewPager viewPager;
     SliderAdapter sliderAdapter;
@@ -36,8 +35,9 @@ public class DataStructuresAnswers extends Fragment implements View.OnClickListe
     int screen = 0;
     FloatingActionButton rightButton, leftButton, centerButton;
 
-    public DataStructuresAnswers() {
-        // Required empty public constructor
+    AlphaAnimation animation1, animation2;
+
+    public BehaviouralAnswers() {
     }
 
 
@@ -77,11 +77,35 @@ public class DataStructuresAnswers extends Fragment implements View.OnClickListe
 
             }
         });
+//        viewPager.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                switch (motionEvent.getAction()) {
+//                    case MotionEvent.ACTION_UP:
+//                        animation1 = new AlphaAnimation(1, 0);
+//                        animation1.setDuration(500);
+//                        animation1.setStartOffset(500);
+//                        animation1.setFillAfter(true);
+//                        rightButton.startAnimation(animation1);
+//                        break;
+//                    case MotionEvent.ACTION_DOWN:
+//                        animation2 = new AlphaAnimation(0,1);
+//                        animation2.setDuration(500);
+//                        animation2.setStartOffset(500);
+//                        animation2.setFillAfter(true);
+//                        rightButton.startAnimation(animation2);
+//
+//                        break;
+//                }
+//
+//                return false;
+//            }
+//        });
 
         addAnswers = new AddAnswers();
         //get the string arrays
-        String[] answersArray = getResources().getStringArray(R.array.data_structures_answers);
-        String[] questionsArray = getResources().getStringArray(R.array.data_structures);
+        String[] answersArray = getResources().getStringArray(R.array.behaviouralAnswers);
+        String[] questionsArray = getResources().getStringArray(R.array.behaviouralQuestions);
         //retrieve the answers and add to slide
         addAnswers.add(getActivity(), answers, questions, answersArrayList, questionsArrayList, answersArray, questionsArray, sliderAdapter);
         //load the corresponding slide to the question
@@ -89,6 +113,7 @@ public class DataStructuresAnswers extends Fragment implements View.OnClickListe
 
         //hide the title bar
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+
         return view;
     }
 
@@ -104,10 +129,10 @@ public class DataStructuresAnswers extends Fragment implements View.OnClickListe
                 addAnswers.loadPreviousSlide(viewPager, sliderAdapter);
                 break;
             case R.id.centerButton:
-                DataStructures dataStructures = new DataStructures();
+                BehaviouralQuestionsFragment behaviouralQuestionsFragment = new BehaviouralQuestionsFragment();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 //replacing the fragment with the layout
-                manager.beginTransaction().replace(R.id.content_layout, dataStructures).addToBackStack(null).commit();
+                manager.beginTransaction().replace(R.id.content_layout, behaviouralQuestionsFragment).addToBackStack(null).commit();
                 break;
         }
 
@@ -120,5 +145,15 @@ public class DataStructuresAnswers extends Fragment implements View.OnClickListe
 
     }
 
-
+    //    @Override
+//    public boolean onTouch(View view, MotionEvent event) {
+//
+//        animation1 = new AlphaAnimation(1, 0);
+//        animation1.setDuration(500);
+//        animation1.setStartOffset(500);
+//        animation1.setFillAfter(true);
+//        rightButton.startAnimation(animation1);
+//
+//        return false;
+//    }
 }

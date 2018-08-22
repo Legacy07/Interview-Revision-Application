@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp.technical_questions;
+package com.ahmet.interviewapp.Cliche_Questions;
 
 
 import android.os.Bundle;
@@ -19,9 +19,7 @@ import com.ahmet.interviewapp.R;
 
 import java.util.ArrayList;
 
-
-public class AndroidTechnicalAnswers extends Fragment implements View.OnClickListener {
-
+public class Cliche_Answers extends Fragment implements View.OnClickListener{
 
     ViewPager viewPager;
     SliderAdapter sliderAdapter;
@@ -35,9 +33,7 @@ public class AndroidTechnicalAnswers extends Fragment implements View.OnClickLis
     int screen = 0;
     FloatingActionButton androidRightButton, androidLeftButton, androidCenterButton;
 
-    public AndroidTechnicalAnswers() {
-        // Required empty public constructor
-    }
+    public Cliche_Answers() { }
 
 
     @Override
@@ -70,8 +66,8 @@ public class AndroidTechnicalAnswers extends Fragment implements View.OnClickLis
 
         addAnswers = new AddAnswers();
         //get the string arrays
-        String[] answersArray = getResources().getStringArray(R.array.androidTechnicalAnswers);
-        String[] questionsArray = getResources().getStringArray(R.array.androidTechnicalQuestions);
+        String[] answersArray = getResources().getStringArray(R.array.cliche_answers);
+        String[] questionsArray = getResources().getStringArray(R.array.cliche_questions);
         //retrieve the answers and add to slide
         addAnswers.add(getActivity(), answers, questions, answersArrayList, questionsArrayList, answersArray, questionsArray, sliderAdapter);
         //load the corresponding slide to the question
@@ -102,10 +98,10 @@ public class AndroidTechnicalAnswers extends Fragment implements View.OnClickLis
                 addAnswers.loadPreviousSlide(viewPager, sliderAdapter);
                 break;
             case R.id.centerButton:
-                AndroidTechnicalQuestionsFragment androidTechnicalQuestionsFragment = new AndroidTechnicalQuestionsFragment();
+                Cliche_Questions cliche_questions = new Cliche_Questions();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 //replacing the fragment with the layout
-                manager.beginTransaction().replace(R.id.content_layout, androidTechnicalQuestionsFragment).addToBackStack(null).commit();
+                manager.beginTransaction().replace(R.id.content_layout, cliche_questions).addToBackStack(null).commit();
                 break;
         }
 
@@ -116,4 +112,5 @@ public class AndroidTechnicalAnswers extends Fragment implements View.OnClickLis
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
     }
+
 }

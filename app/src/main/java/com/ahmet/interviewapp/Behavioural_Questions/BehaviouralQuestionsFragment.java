@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp.behavioural_questions;
+package com.ahmet.interviewapp.Behavioural_Questions;
 
 
 import android.content.Intent;
@@ -20,7 +20,6 @@ import android.widget.TextView;
 
 import com.ahmet.interviewapp.Adaptors.QuestionsListViewAdaptor;
 import com.ahmet.interviewapp.Models.AddQuestions;
-import com.ahmet.interviewapp.InterviewPrepGridFragment;
 import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.R;
 

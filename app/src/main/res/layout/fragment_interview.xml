@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".nav_bar_fragments.InterviewFragment">
+    tools:context=".Nav_Bar_Fragments.InterviewFragment">
 
     <Button
         android:id="@+id/behaviouralButton"

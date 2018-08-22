@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp.nav_bar_fragments;
+package com.ahmet.interviewapp.Nav_Bar_Fragments;
 
 
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.ahmet.interviewapp.R;
-import com.ahmet.interviewapp.behavioural_questions.BehaviouralQuestionsFragment;
-import com.ahmet.interviewapp.cliche_questions.Cliche_Questions;
+import com.ahmet.interviewapp.Behavioural_Questions.BehaviouralQuestionsFragment;
+import com.ahmet.interviewapp.Cliche_Questions.Cliche_Questions;
 
 
 public class InterviewFragment extends Fragment implements View.OnClickListener {
@@ -70,6 +70,11 @@ public class InterviewFragment extends Fragment implements View.OnClickListener 
                 //replacing the fragment with the layout
                 manager.beginTransaction().replace(R.id.content_layout, cliche_questions).addToBackStack(null).commit();
 
+                break;
+
+            case R.id.tipsButton:
+                TipsFragment tipsFragment = new TipsFragment();
+                manager.beginTransaction().replace(R.id.content_layout, tipsFragment).addToBackStack(null).commit();
                 break;
         }
     }

@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp;
+package com.ahmet.interviewapp.Behavioural_Questions;
 
 
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.ahmet.interviewapp.R;
 
 
 /**

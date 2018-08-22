@@ -10,11 +10,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-import com.ahmet.interviewapp.nav_bar_fragments.AlgorithmsFragment;
-import com.ahmet.interviewapp.nav_bar_fragments.InterviewFragment;
-import com.ahmet.interviewapp.nav_bar_fragments.TechnicalQuestionsFragment;
+import com.ahmet.interviewapp.Nav_Bar_Fragments.AlgorithmsFragment;
+import com.ahmet.interviewapp.Nav_Bar_Fragments.InterviewFragment;
+import com.ahmet.interviewapp.Nav_Bar_Fragments.TechnicalQuestionsFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

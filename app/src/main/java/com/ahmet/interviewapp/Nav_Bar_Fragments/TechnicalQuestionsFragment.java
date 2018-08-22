@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp.nav_bar_fragments;
+package com.ahmet.interviewapp.Nav_Bar_Fragments;
 
 
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.ahmet.interviewapp.R;
-import com.ahmet.interviewapp.technical_questions.AndroidTechnicalQuestionsFragment;
-import com.ahmet.interviewapp.technical_questions.JavaTechnicalQuestionsFragment;
+import com.ahmet.interviewapp.Technical_Questions.AndroidTechnicalQuestionsFragment;
+import com.ahmet.interviewapp.Technical_Questions.JavaTechnicalQuestionsFragment;
 
 
 public class TechnicalQuestionsFragment extends Fragment implements View.OnClickListener {

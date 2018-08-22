@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp.technical_questions;
+package com.ahmet.interviewapp.Tips;
 
 
 import android.os.Bundle;
@@ -10,20 +10,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.ahmet.interviewapp.Adaptors.SliderAdapter;
+import com.ahmet.interviewapp.Cliche_Questions.Cliche_Questions;
 import com.ahmet.interviewapp.Models.AddAnswers;
 import com.ahmet.interviewapp.Models.Answers;
 import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.R;
-import com.ahmet.interviewapp.behavioural_questions.BehaviouralQuestionsFragment;
 
 import java.util.ArrayList;
 
-
-public class JavaTechnicalAnswers extends Fragment implements View.OnClickListener {
+public class InterviewTipsAnswers extends Fragment implements View.OnClickListener {
 
     ViewPager viewPager;
     SliderAdapter sliderAdapter;
@@ -34,12 +32,8 @@ public class JavaTechnicalAnswers extends Fragment implements View.OnClickListen
     AddAnswers addAnswers;
     Answers answers;
     Questions questions;
-    int screen = 0;
-    FloatingActionButton javaRightButton, javaLeftButton, javaCenterButton;
 
-    public JavaTechnicalAnswers() {
-    }
-
+    FloatingActionButton leftButton, rightButton, centerButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -71,28 +65,30 @@ public class JavaTechnicalAnswers extends Fragment implements View.OnClickListen
 
         addAnswers = new AddAnswers();
         //get the string arrays
-        String[] answersArray = getResources().getStringArray(R.array.javaTechnicalAnswers);
-        String[] questionsArray = getResources().getStringArray(R.array.javaTechnicalQuestions);
+        String[] answersArray = getResources().getStringArray(R.array.interviewTopicTips);
+        String[] questionsArray = getResources().getStringArray(R.array.interviewTopic);
         //retrieve the answers and add to slide
         addAnswers.add(getActivity(), answers, questions, answersArrayList, questionsArrayList, answersArray, questionsArray, sliderAdapter);
         //load the corresponding slide to the question
         addAnswers.loadSlide(getActivity(), sliderAdapter, viewPager);
 
         //initialise buttons
-        javaLeftButton = view.findViewById(R.id.leftButton);
-        javaRightButton =  view.findViewById(R.id.rightButton);
-        javaCenterButton = view.findViewById(R.id.centerButton);
+        leftButton = view.findViewById(R.id.leftButton);
+        rightButton = view.findViewById(R.id.rightButton);
+        centerButton = view.findViewById(R.id.centerButton);
         //set click listener on buttons
-        javaLeftButton.setOnClickListener(this);
-        javaRightButton.setOnClickListener(this);
-        javaCenterButton.setOnClickListener(this);
+        leftButton.setOnClickListener(this);
+        rightButton.setOnClickListener(this);
+        centerButton.setOnClickListener(this);
 
         //hide the title bar
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+
         return view;
     }
     @Override
     public void onClick(View view) {
+
         switch (view.getId()) {
             case R.id.rightButton:
                 addAnswers.loadNextSlide(viewPager, sliderAdapter);
@@ -101,12 +97,13 @@ public class JavaTechnicalAnswers extends Fragment implements View.OnClickListen
                 addAnswers.loadPreviousSlide(viewPager, sliderAdapter);
                 break;
             case R.id.centerButton:
-                JavaTechnicalQuestionsFragment javaTechnicalQuestionsFragment = new JavaTechnicalQuestionsFragment();
+                InterviewTips interviewTips = new InterviewTips();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 //replacing the fragment with the layout
-                manager.beginTransaction().replace(R.id.content_layout, javaTechnicalQuestionsFragment).addToBackStack(null).commit();
+                manager.beginTransaction().replace(R.id.content_layout, interviewTips).addToBackStack(null).commit();
                 break;
         }
+
     }
     @Override
     public void onResume() {
@@ -114,4 +111,5 @@ public class JavaTechnicalAnswers extends Fragment implements View.OnClickListen
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
     }
+
 }

@@ -1,4 +1,4 @@
-package com.ahmet.interviewapp.cliche_questions;
+package com.ahmet.interviewapp.Technical_Questions;
 
 
 import android.content.Intent;
@@ -16,21 +16,19 @@ import com.ahmet.interviewapp.Adaptors.QuestionsListViewAdaptor;
 import com.ahmet.interviewapp.Models.AddQuestions;
 import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.R;
-import com.ahmet.interviewapp.behavioural_questions.BehaviouralAnswers;
 
 import java.util.ArrayList;
 
-public class Cliche_Questions extends Fragment {
+
+public class JavaTechnicalQuestionsFragment extends Fragment {
 
 
-
-    ListView listView;
-
+    ListView javaTechnicalListView;
     ArrayList<Questions> questionsArrayList = new ArrayList<>();
     Questions questions;
     QuestionsListViewAdaptor listViewAdaptor;
 
-    public Cliche_Questions() {
+    public JavaTechnicalQuestionsFragment() {
     }
 
 
@@ -40,26 +38,25 @@ public class Cliche_Questions extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.questions_layout, container, false);
 
-        listView = (ListView) view.findViewById(R.id.listView);
+        javaTechnicalListView = (ListView) view.findViewById(R.id.listView);
         //initialise Adaptor
         listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), questionsArrayList);
 
-        AddQuestions addQuestions = new AddQuestions();
-        //get the questions from array string
-        String[] array = getResources().getStringArray(R.array.cliche_questions);
+        String[] questionsArray = getResources().getStringArray(R.array.javaTechnicalQuestions);
         //add the questions in listview
-        addQuestions.add(getActivity(), questions,questionsArrayList, array, listViewAdaptor );
-        listView.setAdapter(listViewAdaptor);
+        AddQuestions addQuestions = new AddQuestions();
+        addQuestions.add(getActivity(), questions, questionsArrayList, questionsArray, listViewAdaptor);
+        javaTechnicalListView.setAdapter(listViewAdaptor);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        javaTechnicalListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 //open slides when clicked on a list item
-                Cliche_Answers cliche_answers = new Cliche_Answers();
+                JavaTechnicalAnswers javaTechnicalAnswers = new JavaTechnicalAnswers();
 
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_layout, cliche_answers).addToBackStack(null).commit();
-                //send the position of the item so it opens the corresponding slide to the question
+                fragmentManager.beginTransaction().replace(R.id.content_layout, javaTechnicalAnswers).addToBackStack(null).commit();
+//                send the position of the item so it opens the corresponding slide to the question
                 Bundle bundle = new Bundle();
                 bundle.putInt("Position", position);
                 Intent intent = getActivity().getIntent();
@@ -67,19 +64,14 @@ public class Cliche_Questions extends Fragment {
             }
         });
 
-        // slider https://www.youtube.com/watch?v=byLKoPgB7yA
-        //actionbar title change
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Cliché Questions");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Java Technical Questions");
 
         return view;
-
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        //show the title bar
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
-
     }
 }
