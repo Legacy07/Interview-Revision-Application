@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group_discussion_topic">
+        <item>
+            What is a Group Discussion?
+        </item>
+        <item>
+            Preparing
+        </item>
+        <item>
+            During the Group Discussion
+        </item>
+        <item>
+            The Do\'s and Don\'t\'s
+        </item>
+    </string-array>
+
+    <string-array name="group_discussion_topic_tips">
+        <!--//what is a group discussion?-->
+        <item>
+            Normally group discussions are used in the selection process for management trainees and executive positions.
+            The objective of a group discussion is to mainly check your team playing skills because as a manager,
+            you will be working in organisations with people. Employers are looking for candidates who have potential
+            to be executives and to lead teams of people.
+
+            \n\nThe group discussion is a test of your interactive skills and how good you are at communicating with other people.
+            You\'ll have to be able to understand the other person\'s point of view while making your point and ensure that your
+            team as a whole reaches a win-win situation; in other words a solution/agreement which is both
+            feasible and accepted by all members of the team. A group discussion, to that extent, is a simulated managerial setting.
+
+            \n\n&#8226; Groups of 8-10 candidates are formed into a leaderless group, and are given a specific situation to analyse
+            and discuss within a given time limit, which may vary between twenty minutes and forty-five minutes.
+            \n\n&#8226; They may be given a case study and asked to come out with a solution for a problem.
+            \n\n&#8226; They may be given a topic and are asked to discuss the same.
+
+            \n\nSkills assessed during a Group Discussion:
+
+            \n\n&#8226; Leadership Skills – Ability to take leadership roles and be able to lead, inspire and carry the team along to help them achieve
+            the group\'s objectives.
+
+            \n\n&#8226; Communication Skills – Candidates will be assessed in terms of clarity of thought, expression and aptness of language.
+            One key aspect is listening. It indicates a willingness to accommodate others views.
+
+            \n\n&#8226; Interpersonal Skills – People skills are an important aspect of any job. They are reflected in the ability to interact
+            with other members of the group in a brief situation. Emotional maturity and balance promotes good interpersonal relationships.
+            The person has to be more people centric and less self-centred.
+
+            \n\n&#8226; Persuasive Skills – The ability to analyse and persuade others to see the problem from multiple perspectives.
+
+            Essentially, the group discussion is a test of your ability to think on your feet, your analytical prowess and your
+            ability to make your point in a team-based environment.
+
+        </item>
+        <!--Preparing-->
+        <item>
+
+        </item>
+        <!--During the Group discussion-->
+        <item>
+
+        </item>
+        <!--the dos and donts-->
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+
+    </string-array>
+</resources>
