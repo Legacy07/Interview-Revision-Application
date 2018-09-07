@@ -20,11 +20,7 @@ import com.ahmet.interviewapp.R;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class TelephoneInterviewTipsAnswers extends Fragment implements View.OnClickListener{
-
+public class GroupDiscussionTipsAnswers extends Fragment implements View.OnClickListener{
 
     ViewPager viewPager;
     SliderAdapter sliderAdapter;
@@ -37,6 +33,7 @@ public class TelephoneInterviewTipsAnswers extends Fragment implements View.OnCl
     Questions questions;
 
     FloatingActionButton leftButton, rightButton, centerButton;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,8 +64,8 @@ public class TelephoneInterviewTipsAnswers extends Fragment implements View.OnCl
 
         addAnswers = new AddAnswers();
         //get the string arrays
-        String[] answersArray = getResources().getStringArray(R.array.telephoneInterviewTopicTips);
-        String[] questionsArray = getResources().getStringArray(R.array.telephoneInterviewTopics);
+        String[] answersArray = getResources().getStringArray(R.array.group_discussion_topic_tips);
+        String[] questionsArray = getResources().getStringArray(R.array.group_discussion_topic);
         //retrieve the answers and add to slide
         addAnswers.add(getActivity(), answers, questions, answersArrayList, questionsArrayList, answersArray, questionsArray, sliderAdapter);
         //load the corresponding slide to the question
@@ -99,10 +96,10 @@ public class TelephoneInterviewTipsAnswers extends Fragment implements View.OnCl
                 addAnswers.loadPreviousSlide(viewPager, sliderAdapter);
                 break;
             case R.id.centerButton:
-                TelephoneInterviewTips telephoneInterviewTips = new TelephoneInterviewTips();
+                GroupDiscussionTips groupDiscussionTips = new GroupDiscussionTips();
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 //replacing the fragment with the layout
-                manager.beginTransaction().replace(R.id.content_layout, telephoneInterviewTips).addToBackStack(null).commit();
+                manager.beginTransaction().replace(R.id.content_layout, groupDiscussionTips).addToBackStack(null).commit();
                 break;
         }
 

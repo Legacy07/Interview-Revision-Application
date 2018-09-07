@@ -12,7 +12,7 @@ import android.widget.Button;
 
 import com.ahmet.interviewapp.R;
 import com.ahmet.interviewapp.Tips.CvTips;
-import com.ahmet.interviewapp.Tips.GroupTips;
+import com.ahmet.interviewapp.Tips.GroupDiscussionTips;
 import com.ahmet.interviewapp.Tips.InterviewTips;
 import com.ahmet.interviewapp.Tips.TelephoneInterviewTips;
 
@@ -66,7 +66,7 @@ public class TipsFragment extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.groupTipsButton:
-                GroupTips groupTips = new GroupTips();
+                GroupDiscussionTips groupTips = new GroupDiscussionTips();
                 fragmentManager.beginTransaction().replace(R.id.content_layout, groupTips).addToBackStack(null).commit();
 
                 break;
