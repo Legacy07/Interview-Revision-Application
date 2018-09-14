@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cvTopics">
+        <item>
+            CV(Curriculum Vitae) or Resume?
+        </item>
+        <item>
+            Tailor and Format CV
+        </item>
+        <item>
+            Action Verbs/Power Words
+        </item>
+        <item>
+            Key Points to Include
+        </item>
+        <item>
+            The Header
+        </item>
+        <item>
+            Summary
+        </item>
+        <item>
+            Educational History
+        </item>
+        <item>
+            Work Experience
+        </item>
+        <item>
+            Any Hard/Soft and Transferable skills
+        </item>
+        <item>
+            Awards and honours
+        </item>
+        <item>
+            Any published work
+        </item>
+        <item>
+            Interests/Hobbies
+        </item>
+        <item>
+            References
+        </item>
+        <item>
+            The Do\'s and Don\'t\'s
+        </item>
+    </string-array>
+
+    <string-array name="cvTopicsTips">
+        <!--Cv or Resume-->
+        <item>
+            There are three major differences between CVs and resumes are the length, the purpose and the layout.
+            A resume is a brief summary of your skills and experience over one or two pages, a CV is more detailed
+            and can stretch well beyond two pages. The resume will be tailored to each position whereas the CV
+            will stay put and any changes will be in the cover letter.
+
+            \n\nA CV has a clear chronological order listing the whole career of the individual whereas a resume\'s
+            information can be shuffled around to best suit the applicant. I would say the main difference between a resume and
+            a CV is that a CV is intended to be a full record of your career history and a resume is a brief, targeted list
+            of skills and achievements.
+
+            \n\nA resume is the preferred application document in the US and Canada. Americans and Canadians would only use a
+            CV when applying for a job abroad or if searching for an academic or research oriented position.
+
+            \n\nIn the UK, Ireland and New Zealand, a CV is used in all contexts and resumes aren\'t used at all.
+            The CV prevails in mainland Europe and there is even a European Union CV format available for download.
+
+            \n\nIn Germany, the CV is more commonly known as a Lebenslauf (true to the latin origins) and is only one of many application
+            document the poor German job seekers must produce to get an interview.
+
+            \n\nIn Australia, India and South Africa, the terms resume and CV are used interchangeably.
+            The term resume is used more for jobs in the private sector and CV is more commonplace when applying for public service positions.
+        </item>
+        <!--Tailor and format CV-->
+        <item>
+            It takes a recruiter less than one minute to scan a programmer resume and to start a short list of eligible candidates
+            for an interview. A resume format with dark colors for the heading with a column of content to the right of the article
+            is more appealing to the eye than a general resume.
+
+            \n\nThe art of writing a resume is to format the resume using a chronological, functional, or combination format.
+            I recommend you think about what to write before you begin because it will need a combination of technical skills
+            with qualitative data, interpersonal skills, achievements, volunteer work, or freelance experience to stand out
+            from the pile of resumes recruiters often receive. As a recruiter scans your resume,
+            it has to tell a story of your past, present, and where you plan to be in the future.
+
+            \n\nAlso, it\'s important to tailor your CV:
+
+            \n\n - Tailoring your Skills
+            \n\nSkills are the most important thing to change when you tailor your CV.
+            A straightforward way to do this is by looking at the skills desired by the employer in question and listing
+            any of the skills you have, how you acquired them and where you’ve put them into practice.
+
+            \n\n - Tailoring your Experience
+            \n\nYou can\'t change your employment history, but you can select what employment and experience is included on your CV.
+            Although everyone says that you should list your most recent employment on your CV, a better tip would be to list all
+            recent and relevant work experience. What is relevant, of course, relies upon the job you’re applying for.
+            As mentioned before, relevant experience will be completely different for a bar job compared with an engineering vacancy.
+
+            \n\n - Tailoring your Hobbies
+            \n\nIt\'s really not a good idea to stick with "Going to the gym, seeing friends and popular culture"
+            as your hobbies on every CV you send. In fact, it’s not a good idea to have those boring, "generic" hobbies on any CV.
+
+            \n\nMake sure your hobbies reflect you as a person and your ability to do the role you are applying for,
+            as well as your passion for that industry.
+
+            \n\nFor example, if you’re applying for a creative position, emphasise your love of drawing,
+            visiting art galleries or your passion for a particular artist. Going for a role that requires
+            a lot of writing? Try focusing on a particular genre of literature that you enjoy, or if you\'re
+            going for a role that holds a lot of responsibility, focus on your love for hobbies that include team work (e.g. sports).
+        </item>
+        <!--Action Verbs/Power words-->
+        <item>
+            Using action verbs in resume writing is as easy as any other form of writing, so long as you know what to include and
+            what to look for. Here are two tests to determine if you are using passive voice in your resume writing:
+
+            \n\n 1 - Verb Test: Look for helping verbs, especially forms of the verb “to be.”
+
+            \n\n 2 - "By You" Test: Can you insert the phrase "by you" after the verb? Does the sentence still make grammatical sense?
+            If yes, this signifies passive voice.
+
+            \n\nScan the resume for these warning signs and replace passive resume writing with more active verbs and sentences.
+            Here are a few examples of passive resume sentences:
+
+            \n\n 1 - A 20 percent revenue growth was realized in our department over two years.
+
+            \n\n 2 - A promotion to supervisor was awarded to me after only one year of service.
+
+            \n\n 3 - Responsibility was recognized as one of my strengths.
+
+            \n\nHere are the same examples rewritten using active voice:
+
+            \n\n 1 - My team realized 20 percent revenue growth over two years.
+
+            \n\n 2 - After only one year, I earned a promotion to supervisor.
+
+            \n\n 3 - Recognized for responsibility and proactive decisions.
+
+            \n\nThe only time when passive voice is appropriate is when you want to draw more attention to results instead of yourself.
+            This is very rare, and you should focus on your achievements rather than your company\'s results.
+
+            \n\nMake your resume shine with achievements
+            \nAnother action-word strategy is to use "achieving" language rather than "doing" language.
+            How do you determine if the sentence is doing or achieving? Ask yourself three simple questions:
+
+            \n\n 1 - Can anyone perform this function?
+
+            \n\n 2 - Is this the standard, run-of-the-mill description?
+
+            \n\n 3 - Did any results come from this action?
+
+            \n\nIf your answers are yes, yes, and no, you are listing descriptions that only show what you can do.
+            What you want instead is to show what you have achieved.
+
+            \n\nHere are a few examples of "doing" sentences and how to convert them into "achieving" sentences:
+
+            \n\n&#8226; Doing: Responsible for inventory control and ordering products.
+
+            \n\n&#8226; Achieving: Optimize inventory by monitoring for product shortages and ensuring efficient service usage.
+
+            \n\n&#8226; Doing: Help company sell more products and gain revenue.
+
+            \n\n&#8226; Achieving: Increase profit margins by creating effective sales plans and implementing strategies to solidify
+            client retention.
+
+            \n\nUsing action verbs and active voice makes all the difference in your resume, so it\'s worth the extra effort.
+            Show the employer what you can bring to the table by listing past achievements and notable contributions and you\'ll
+            increase your chance of getting an interview.
+        </item>
+        <!--key points to include-->
+        <item>
+            Whether a potential employer asks to see your curriculum vitae, CV or resume, they\'re looking for one thing –
+            a document that proves why you\'re the ideal candidate to invest their time and money in. Essentially it\'s
+            a sales brochure, pinpointing the interesting USPs (unique selling points) that make you stand out from the crowd.
+
+            \nThere\'s no universally accepted format, but your CV should cover these elements:
+
+            \n\n&#8226; Your Details in the Header Section.
+            \n\n&#8226; A Brief Bio
+            \n\n&#8226; Work Experience
+            \n\n&#8226; Educational History
+            \n\n&#8226; Skills
+            \n\n&#8226; Interests
+            \n\n&#8226; References
+        </item>
+        <!--the header-->
+        <item>
+
+        </item>
+        <!--summary-->
+        <item>
+
+        </item>
+        <!--educational history-->
+        <item>
+
+        </item>
+        <!--Work experience-->
+        <item>
+
+        </item>
+        <!--Any hard/Soft and Transferable Skills-->
+        <item>
+
+        </item>
+        <!--Awards and Honours-->
+        <item>
+
+        </item>
+        <!--Any published work-->
+        <item>
+
+        </item>
+        <!--Interests/Hobbies-->
+        <item>
+
+        </item>
+        <!--References-->
+        <item>
+
+        </item>
+        <!--The do's and don't's-->
+        <item>
+<!--https://www.myworldofwork.co.uk/getting-job/building-cv-->
+        </item>
+
+    </string-array>
+
+</resources>
