@@ -26,6 +26,9 @@
             Work Experience
         </item>
         <item>
+            Work Experience with no Experience
+        </item>
+        <item>
             Any Hard/Soft and Transferable skills
         </item>
         <item>
@@ -80,7 +83,41 @@
             I recommend you think about what to write before you begin because it will need a combination of technical skills
             with qualitative data, interpersonal skills, achievements, volunteer work, or freelance experience to stand out
             from the pile of resumes recruiters often receive. As a recruiter scans your resume,
-            it has to tell a story of your past, present, and where you plan to be in the future.
+            it has to tell a story of your past, present, and where you plan to be in the future. So, it\'s a good idea to format your CV
+            in a reverse-chronological format.
+
+            \n\n&#8226; It front-loads your strengths and shows the peak of your career at the top of the resume.
+            \n\n&#8226; It makes the whole thing searchable.
+            \n\n&#8226; It saves recruiter\'s time.
+
+            \n\n - The Layout
+
+            \n\nMaking your CV fit on one side of a page of A4 is a good approach if you have not had work experience before or
+            have perhaps just had one job since leaving school. For most other people fitting their educational background and
+            various work experiences and achievements into such a small space is not likely to be realistic.
+
+            \n\nIf possible, keep your CV layout to two sides of A4 and three at the most.
+            This may mean you are tempted to squash a lot of information in by reducing typeface sizes and using small sub-headings.
+            Generally speaking, this is a mistake and you are better off cutting things and shortening sentences to make your content
+            fit the size of CV you are looking for.
+
+            \n\n - TypeFace
+            \n\nConventional typefaces are the best ones to go for when writing a CV. It is hard to imagine the circumstances in which a
+            simple choice of Times New Roman would be frowned upon. However, to make your CV stand out from the pack,
+            other ones like Mistral, Calibri or Arial are quite acceptable.
+
+            \n\nAvoid informal-looking fonts such as Comic Sans or AR Carter. If you have any doubts about your choice,
+            then change the typeface for something more conventional. Only if you are going for a graphic design job or
+            similar should you even consider the funkier typefaces.
+
+            \n\n - Font Size
+            \n\nYour name at the top of the CV can be in a larger font size than the rest of the CV.
+            Use a similar font size for headings that break up sections of your CV along the way.
+            If you are pushed for room, then simply make sub headings bold rather than employing a larger font size.
+
+            \n\nFor the main body of the text try not to go too small. A font size of about 11 is as small as you should go
+            otherwise what you are saying is likely to be hard to read. On the other hand you should not go so large that your
+            CV appears to have been padded out.
 
             \n\nAlso, it\'s important to tailor your CV:
 
@@ -183,18 +220,234 @@
         </item>
         <!--the header-->
         <item>
+            Make it easy for employers to get in touch. Include your name, address, main phone number and email address.
+            Don\'t use email addresses that look unprofessional.
 
+            \n\nAlso, help a recruiter understand the value an organization will gain by hiring you.
+            One way to accomplish an effective use of links is to show off your work by adding
+            hyperlinks to an online portfolio, work samples, or blog posts to a programmer resume.
+            Here are a few examples of links on a CV:
+
+            \n\n&#8226; LinkedIn profile
+            \n&#8226; Personal Website/Blog
+            \n&#8226; GitHub link
+            \n&#8226; StackOverflow link
+            \n&#8226; Upwork Profile (Freelance work)
         </item>
         <!--summary-->
         <item>
+            A summary of a career is a four to five sentence description that highlights a career which includes soft skills and
+            technical skills with a few references to your ability to work effectively in a team. Here are a few ways to
+            outline an opening summary:
 
+            \n\n&#8226; Reference the number of years in an industry
+            \n&#8226; Present skills in training employees
+            \n&#8226; Enhance tech programs completed in your position
+
+            \n\nThe ultimate goal is to craft the resume with no fluff;
+            only include quantitative content that shows a human resource recruiter you are fit for the position.
+
+            \n\nExamples:
+
+            \n\n&#8226; Results-oriented C programmer with 8+ years experience developing, testing, and maintaining enterprise software applications.
+            Designed and developed over 30 advanced applications from use cases and functional requirements.
+            Investigated new technologies to make sure that XYZ Corp remained the leader in setting industry standards in past years.
+
+            \n\n&#8226; Designed a customer Customer Relationship Management (CRM) software that reduced administrative work by 35% in the first 90 days".
+
+            \n\n&#8226; Hard-working listing programmer with a flair for creating elegant solutions in the least amount of time.
+            As a freelance programmer, created SAS datasets of clinical data and developed macro programs to improve efficiency
+            and quality of data management for Takeda Pharmaceuticals. Looking to use my programming skills to help boost
+            Piper Companies\' data management efficiency.
         </item>
         <!--educational history-->
         <item>
+            What qualifications you choose to include on your CV is largely dependent
+            on what stage of your career you’re in, and where your most impressive accomplishments lie.
+
+            \n\n - If you\'ve just left school…
+            \n\nIf you\'re a recent school leaver, place emphasis on your GCSEs, A levels, or any other accomplishments you\'ve
+            achieved whilst you were in education.
+
+            \nAs most roles you apply for won\'t be looking for much direct work experience,
+            this is a great way to help sell yourself for a role. At the very least, a pass in Maths and English is essential for
+            many jobs, so be sure to include these.
+
+            \nList the subjects you studied and your grades, but feel free to condense them down into less detailed descriptions
+            if you’re not sure they\'re your strongest selling point. This will also allow more space for other experience
+            e.g. part time/summer jobs that directly relate to the role you\'re applying for.
+
+            \n\n - If you’ve just left University…
+            \n\nAs a recent graduate you should always focus on your degree, and include college and school level information with less detail.
+
+            \nIf you have a large number of GCSEs, list the amount and the grades you got rather than each individual subject
+            (e.g. 11 GCSEs A-C). This saves space and makes your CV clearer and easier to read.
+
+            \nWork experience should also come secondary to education at this stage. Structure your CV by including your
+            degree information first, and then go on to include any jobs you may have held in the following section.
+
+            \nIncluding individual modules isn\'t absolutely necessary, but could increase your chances if the modules relate
+            closely to the role you\'re applying for. If you don\'t have a lot of work experience, this is a good way to
+            demonstrate your skills and ability to do the job.
+
+            \n\n - If you\'re still studying…
+            \n\nIf you\'re still in education, or you\'re developing your knowledge by taking an additional qualification,
+            information on your current area of study is likely to be the most relevant.
+
+            \nInclude any predicted grades, if you have them, and dates for when you’re likely to complete your studies.
+            You may also choose to add in more information about the modules you’ve covered so far, especially if they\'re
+            directly related to the role.
+
+            \nThis way, employers can identify any specific knowledge you\'ve
+            already gained in the industry, and won\'t be in the dark about completion dates when it comes to offering you the role.
+
+            \n\n - If you have a professional qualification…
+            \n\nPerhaps you haven\'t been in education for a while, and have decided to brush up on your knowledge in an industry
+            or learn something. In this case, you would benefit most from detailing your most recent educational qualification,
+            and keeping the others brief.
+
+            \nIf you aren\'t that far removed from education, and it relates equally to the role, then place an equal amount of
+            emphasis on each qualification.
+
+            \nIf you took a course for the purpose of developing current skills and gaining a higher-level role in a career you
+            already have experience in, then make sure previous work experience or related education is also adequately included.
+            This enables the employer to see how you’ve grown and developed, and they will admire your dedication to the field.
+
+            \n\n - If you\'ve been in employment for a while…
+            \nIf you\'ve taken a break from your career, it\'s likely that you\'ve developed an extensive portfolio of
+            work experience on your CV.
+
+            \nDon\'t add unnecessary clutter by including a great deal of education on top of that – especially if it happened 10 years ago.
+            Detailing jobs you\'ve had that represent your talents and skills, not to mention, dedication and passion for the industry you\'re in,
+            will be what attracts most prospective employers.
+
+            \nInclude your education, but detailed descriptions aren\'t necessary in this situation; condense information into short
+            lists, with grades and courses – but there\'s no need for module choices or individual subjects to be addressed in detail.
+
+            \n\nRemember: what you include is heavily dependent on what kind of role you\'re applying for and its requirements.
+            Take the time to read the job specification and skills needed and cater your CV to that.
+
+            \nBear in mind that your most successful achievements (educational or otherwise) are the ones worth showcasing,
+            so draw attention to your most impressive accomplishments and focus on what paints you in the best light from an employer\'s
+            perspective.
 
         </item>
         <!--Work experience-->
         <item>
+            The work experience section of your CV is where you show your professional track record.
+            It needs to be accurate, highlight your achievements and include relevant points that prove you\'re the right person for the job.
+
+            \n\n1. Draw parallels
+            \n\nList your previous jobs in chronological order with the most recent employment first.
+            If there are some parallels between your old company and the new one you are applying to, then it\'s worth providing
+            information about their similarities. This can show the hiring manager that you have the skills for the job and it
+            is important if your current company isn\'t well known.
+
+            \n\nAs an example, this might include stating that your previous employer worked with many clients in the media sector,
+            if you know this is a key customer base for the company you\'re applying to.
+
+            \n\n2. Be factual
+            \n\nAll aspects of your CV, including your dates of employment, must be factually correct.
+            If you have a gap in employment and are worried about how this may come across, you can always enter dates as month-to-month
+            or even year-to-year, rather than specific dates.
+
+            \n\nFor jobs that were many years ago, or if you’ve had a number of jobs in a relatively short period, you can group these jobs,
+            for example, \'2001-2003 worked in temporary roles within the retail sector\'.
+
+            \n\n3. Prove you have what they want
+            \n\nResearch the job details and personal specifications for the type of job you want. Then,
+            under each of the jobs in your experience section, use bullet points to illustrate that you have exactly the skills and expertise they’re after.
+
+            \nRemember to be specific. If they want sales experience, then specify how many customers you dealt with,
+            the types of responsibilities you had and give an example to show off your skills.
+
+            \n\nFor Example: \'I have experience in a demanding sales role where I was required to meet monthly customer targets.
+            I dealt with X customers on a daily basis making X amount of sales in a period of X months, exceeding my target by X%.
+            This role taught me how to handle a busy and dynamic environment. I learnt to adapt to different customer needs to meet
+            my monthly goals.\'
+
+            \n\n4. Voluntary work counts
+            \n\nWhere you have limited work experience, or are looking to change career entirely, other experience outside of paid employment
+            could show your capabilities. This might include unpaid work placements, community activities, such as working with a
+            charity or being a student representative for your course.
+
+            \n\nEmployers will respond positively to reading about any extracurricular activities you\'re involved in,
+            especially if they demonstrate energy and community spirit, because these are exactly the kind of behaviours
+            they want in their employees.
+
+            \n\n5. Highlight your achievements
+            \n\nMany job hunters write their CVs like a job description. They faithfully list the duties they performed and their
+            responsibilities. However, they fail to show the positive impact of their teamwork or contribution to the organisation as a whole.
+
+            \n\nEnsure you don\'t make this mistake by using achievement statements instead.
+            \nFor instance:
+            \n\n&#8226; Since taking over the credit control function, over 95% of long-standing debts have been recovered,
+            some of which had been owing for more than two years
+            \n&#8226; Trained 50 staff in Excel, which increased the capabilities of employees and their time efficiency in producing reports
+            \n&#8226; Developed a new policy that significantly reduced risks to public health by making it mandatory for
+            organisations to train and induct staff properly.
+
+            \n\nThe examples show how you can expand upon your skills and show how you have delivered meaningful results to the organisation,
+            its customers and wider society.
+
+            \n\n6. Use positive language
+            \n\nChoose your words carefully to reflect that you are a high performing, \'can-do\' type of employee.
+            Use positive action words, such as ‘excellent’, ‘initiated’ and ‘accelerated’ to show the calibre and pace at
+            which you have been working.
+
+            \n\nNever include any implicit criticisms about previous jobs. If you refer to difficult challenges,
+            explain how you helped overcome them or omit them completely.
+
+            \n\n7. Focus on your strengths
+            \n\nIf you are looking for a job that is different from your previous work experience, then instead of using the heading
+            \'career history\' and listing your jobs chronologically, try using \'key skills and experience\'.
+            This will give you the flexibility to draw attention to the most relevant career experiences you have had.
+
+            \n\nYou will still need to include a short employment history with dates, but this can be relegated to the second page.
+            The aim is to convince the recruiter that you are a great candidate on the first page.
+            This approach also works well for people who have noticeable gaps in their employment history.
+
+
+
+        </item>
+        <!--work experience with no experience-->
+        <item>
+            - Use structure to your advantage
+            \nIf you have no work experience, your degree is likely to be your biggest selling point.
+            But no two degrees are the same, nor are the specialised skills or results.
+
+            \n\nOur template has \'placements &amp; projects\' section ahead of \'Education &amp; qualifications\'.
+            However, if you think your grades and qualifications are more impressive than your projects,
+            feel free to switch the sections around.
+
+            \nRemember, the more impressive your achievement, the further up your CV it should sit.
+
+            \n\n - Focus on transferable skills
+            \nDespite your limited experience in employment, remember that you have plenty of transferable skills to offer
+            thanks to your degree.
+
+            \nThat\'s right; your three years of swotting got you more than just a shiny certificate.
+
+            \n\nTransferable skills, otherwise known as soft skills, are utilised in every role and every industry.
+            And the best part is that you’ve developed a mountain of them through your degree.
+
+            \n\nGave a group presentation? That\'s teamwork, communication, leadership and presenting skills right there.
+            Submitted your assignments on time? Well you developed time management and organisation skills, too.
+
+            \n\nFocus on your transferable skills in your CV and you’ll show any employer you\'ve got more to offer than a brand new
+            qualification.
+
+            \n\n - Saving space
+            \nIf you\'re struggling to keep your CV to two pages, here are a few quick ways to make room.
+
+            \nFirstly, try narrowing the margins or removing the footer.
+
+            \nSecondly, try reducing the font size. However, make sure you don\'t reduce your font size below 10 or recruiters will
+            have to invest in a magnifying glass.
+
+            \n\nLastly, try neatening up your grades into one line. For example, you might write your GCSE results like this:
+
+            \n10 GCSEs grades A* – C, including B in English and C in Maths.
 
         </item>
         <!--Any hard/Soft and Transferable Skills-->
