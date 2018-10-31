@@ -72,34 +72,10 @@
     <string-array name="cliche_answers">
         <!--What interests you about this job?-->
         <item>
-            To help prepare for the interview, carefully read the job posting, noting the stated requirements regarding skills and experience.
-            You can also see if there is additional information about the job you\'re applying for on the company website.
-
-            \n\nIf the job listing is short, and there is little (or no) information on the company website, you can look up similar job
-            listings on job sites like Indeed.com. You can also Google the job title to get some general information.
-
-            \n\nBefore your interview, make a list of your skills and experiences that match the stated requirements.
-            Think about specific examples of how you successfully applied these skills to other positions and bone up on
-            how to match your qualifications to a job.
-
-            \n\nWhen answering the question don\'t talk about how you would benefit from the job. For example, answers like,
-            "I want a job that will help me build my career" make you seem more focused on yourself rather than how your background benefits
-            the company. However, don\'t be afraid of showing your enthusiasm for the job. You want to emphasize that you are both qualified,
-            and passionate, about the position.
-
-            \n\nExamples:
-
-            \n\n&#8226;I am extremely interested in this job as Human Resources Manager. As you mentioned in the job listing,
-            I would be responsible for recruiting, orientation, and training. I was responsible for all three of these
-            functions in my most recent position. As Human Resources Assistant Manager at XYZ Company, I recruited over
-            100 employees and led training for all new staff members in a department of 45 people.
-            I am interested in this job because it would allow me to use my previous experience while continuing to develop my expertise
-            in new areas of responsibility.
-
-            \n\n&#8226;I am interested in this job as a programmer because I am extremely interested in, and skilled at, learning and excelling at
-            new technologies. I have already learned and mastered programs and languages ranging from Python to Java, and
-            I look forward to mastering more programs as they\'re developed. I am also interested in creative problem solving,
-            a skill I developed when working as an analyst for the past ten years.
+            <![CDATA[<html><pre style="text-align:center">
+           
+            </pre></html>
+            ]]>
         </item>
         <!--What will you do in your first 90 days in this position?-->
         <item>

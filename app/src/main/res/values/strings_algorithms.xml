@@ -1113,10 +1113,10 @@
             \n}
             \nSystem.out.println();
             \n
-            \n    // Deposit 1,000 into Zara's account
+            \n    // Deposit 1,000 into Zara\'s account
             \n  bal = ((Double)balance.get("Zara")).doubleValue();
             \nbalance.put("Zara", new Double(bal + 1000));
-            \nSystem.out.println("Zara's new balance: " + balance.get("Zara"));
+            \nSystem.out.println("Zara\'s new balance: " + balance.get("Zara"));
             \n}
 
             \n\nOutput:
@@ -1126,7 +1126,7 @@
             \nDaisy: 99.22
             \nAyan: 1378.0
             \n
-            \n          Zara's new balance: 4434.34
+            \n          Zara\'s new balance: 4434.34
         </item>
         <!--Trees basic -->
         <item>

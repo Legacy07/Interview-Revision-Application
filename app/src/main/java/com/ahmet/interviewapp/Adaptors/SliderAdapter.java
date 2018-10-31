@@ -3,6 +3,7 @@ package com.ahmet.interviewapp.Adaptors;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -52,7 +53,7 @@ public class SliderAdapter extends PagerAdapter {
         TextView answersTextView = (TextView) view.findViewById(R.id.behaviouralslideTextview);
         TextView questionsTextView = (TextView) view.findViewById(R.id.behaviouralslideQuestionsTextview);
 
-        answersTextView.setText((CharSequence) answersList.get(position).getAnswers());
+        answersTextView.setText(Html.fromHtml(String.valueOf((CharSequence) answersList.get(position).getAnswers())));
         questionsTextView.setText(position + 1 + "- " + questionsList.get(position).getQuestions());
 
         container.addView(view);
