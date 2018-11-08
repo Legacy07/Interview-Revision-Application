@@ -28,6 +28,7 @@
     <string-array name="telephoneInterviewTopicTips">
         <!--what is tel interview-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             Telephone interviews often take place during the early stages of the job interview process.
             Some recruiters will use them as a method of shortlisting; others as an opportunity to learn
             more about the candidates who are applying to work for them.
@@ -55,6 +56,8 @@
             If, for example, they say that they will be discussing your motivations for applying, draw up a list of your skills and
             explain how they fit in with the company and the position that you have applied for,
             including positives about the company such as their track record, successes and opportunities for development.
+            </pre></html>
+            ]]>
         </item>
         <!--Before the tel interview-->
         <item>

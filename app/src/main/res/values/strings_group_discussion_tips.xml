@@ -18,6 +18,7 @@
     <string-array name="group_discussion_topic_tips">
         <!--what is a group discussion?-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             Normally group discussions are used in the selection process for management trainees and executive positions.
             The objective of a group discussion is to mainly check your team playing skills because as a manager,
             you will be working in organisations with people. Employers are looking for candidates who have potential
@@ -50,6 +51,8 @@
             Essentially, the group discussion is a test of your ability to think on your feet, your analytical prowess and your
             ability to make your point in a team-based environment.
 
+            </pre></html>
+            ]]>
         </item>
         <!--Preparing-->
         <item>
