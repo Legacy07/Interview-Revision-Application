@@ -51,7 +51,7 @@
         </item>
     </string-array>
 
-    <string-array name="cvTopicsTips">
+        <string-array name="cvTopicsTips">
         <!--Cv or Resume-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
@@ -126,272 +126,42 @@
         <!--Examples of transferable skills-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            Although this is by no means a comprehensive list, here are some great examples of transferable skills you can use in your CV:
-
-            \n\n&#8226; Leadership
-            \nThis skill is extremely versatile, and whilst it\'s typically linked to management positions, being a good leader is essential
-            in almost every job – even if only in some situations.
-
-            \nTo reference it in your CV, refer to times where you\'ve demonstrated great leadership – whether it\'s through motivating
-            others in order to achieve a shared goal, leading a project, heading up training and development for a team, or
-            even through your hobbies and interests (e.g. coaching a sports team).
-
-            \n\n&#8226; Time management
-            \nTime management is a vital skill for any role, that not only proves you can work to deadlines – but also that you\'re
-            able to complete tasks in the most time-effective way, create to-do-lists, delegate, ask for help,
-            and break up projects accordingly.
-
-            \nWhether it\'s that you’ve had experience stacking shelves within a set time in a retail store,
-            you\'ve completed projects within a deadline, or you’ve carried out construction work that met the time-sensitive needs
-            of a client, you\'ll have at least one example of time management to reference in your CV.
-
-            \n\n&#8226; Prioritisation
-            \nPrioritising tasks effectively is essential if you want to get anything done, on time,
-            and to a high standard. That\'s why it\'s a key skill that the vast majority of employers value.
-
-            \nProve you\'re able to assess your workload, adjust your schedule, and organise tasks in order of importance by
-            giving tangible examples in your CV. For example, it could be that your ability to be ruthless and say no to
-            certain tasks enabled you to complete others which had a higher level of importance, or you implemented time
-            saving techniques to get small tasks done faster (e.g. spreadsheets, templates).
-
-            \n\n&#8226; Delegation
-            \nWhilst delegation is primarily important for managers, supervisors, or anyone in a senior position, that doesn\'t
-            mean those without a background in management aren\'t able to demonstrate this skill.
-
-            \nFor example, if you\'ve ever mentored or tutored someone (whether it was at work or school), or trained another colleague
-            in a particular system, procedure, or task, you’ll be able to prove you could be a good delegator.
-            It\'s all about how you frame your skills, the examples you give, and how you link back to the criteria specified in the
-            job description.
-
-            \n\n&#8226; Listening
-            \nLet\'s face it, everyone is likely to have good listening skills, no matter where your experience lies.
-            This means demonstrating them in your CV should be easy.
-
-            \nThink about times where your ability to listen well resulted in a positive outcome – whether it\'s that you’re great at
-            following instructions (which meant your work was done specifically to a client\'s requirements),
-            you\'re able to absorb knowledge quickly when taught (whether it was in a meeting, at university,
-            or anywhere else), or you delivered excellent customer service by listening carefully to a customer\'s needs.
-
-            \n\n&#8226; Communication
-            \nAlthough it\'s particularly important in customer facing industries, good communication is an extremely versatile
-            skill that\'s an important part of every role – which contributes to the smooth running of any workplace.
-
-            \nLuckily, that means everyone has it. Examples of communication skills could range from instances where you communicated
-            with a customer or client to fulfil their needs or resolve a problem, to times where you worked together with your
-            colleagues to achieve a joint goal.
-
-            \n\n&#8226; Research &amp; analysis
-            \nMany roles require some level of research and analysis ability – making it an important skill to make known to employers.
-
-            \nThe examples you include may differ depending on the role and what\'s required (particularly if the vacancy calls for harder
-            skills, e.g. knowledge of Google Analytics), but a basic level of research and analysis skills can be shown
-            in anything from university essays, to any form of gathering, organising, and evaluating information – whether it\'s
-            sales figures, website visits, or technical reports.
+            Although this is by no means a comprehensive list, here are some great examples of transferable skills you can use in your CV:<br /><br />- <strong>Leadership</strong><br />This skill is extremely versatile, and whilst it\'s typically linked to management positions, being a good leader is essential<br />in almost every job &ndash; even if only in some situations.<br /><br />To reference it in your CV, refer to times where you\'ve demonstrated great leadership &ndash; whether it\'s through motivating<br />others in order to achieve a shared goal, leading a project, heading up training and development for a team, or<br />even through your hobbies and interests (e.g. coaching a sports team).<br /><br />- <strong>Time management</strong><br />Time management is a vital skill for any role, that not only proves you can work to deadlines &ndash; but also that you\'re<br />able to complete tasks in the most time-effective way, create to-do-lists, delegate, ask for help,<br />and break up projects accordingly.<br /><br />Whether it\'s that you\'ve had experience stacking shelves within a set time in a retail store,<br />you\'ve completed projects within a deadline, or you\'ve carried out construction work that met the time-sensitive needs<br />of a client, you\'ll have at least one example of time management to reference in your CV.<br /><br />- <strong>Prioritisation</strong><br />\nPrioritising tasks effectively is essential if you want to get anything done, on time,<br />and to a high standard. That\'s why it\'s a key skill that the vast majority of employers value.<br /><br />Prove you\'re able to assess your workload, adjust your schedule, and organise tasks in order of importance by<br />giving tangible examples in your CV. For example, it could be that your ability to be ruthless and say no to<br />certain tasks enabled you to complete others which had a higher level of importance, or you implemented time<br />saving techniques to get small tasks done faster (e.g. spreadsheets, templates).<br /><br />- <strong>Delegation</strong><br />Whilst delegation is primarily important for managers, supervisors, or anyone in a senior position, that doesn\'t<br />mean those without a background in management aren\'t able to demonstrate this skill.<br /><br />For example, if you\'ve ever mentored or tutored someone (whether it was at work or school), or trained another colleague<br />in a particular system, procedure, or task, you\'ll be able to prove you could be a good delegator.<br />It\'s all about how you frame your skills, the examples you give, and how you link back to the criteria specified in the<br />job description.<br /><br />- <strong>Listening</strong><br />Let\'s face it, everyone is likely to have good listening skills, no matter where your experience lies.<br />This means demonstrating them in your CV should be easy.<br /><br />Think about times where your ability to listen well resulted in a positive outcome &ndash; whether it\'s that you&rsquo;re great at<br />following instructions (which meant your work was done specifically to a client\'s requirements),<br />you\'re able to absorb knowledge quickly when taught (whether it was in a meeting, at university,<br />or anywhere else), or you delivered excellent customer service by listening carefully to a customer\'s needs.<br /><br />- <strong>Communication</strong><br />Although it\'s particularly important in customer facing industries, good communication is an extremely versatile<br />skill that\'s an important part of every role &ndash; which contributes to the smooth running of any workplace.<br /><br />Luckily, that means everyone has it. Examples of communication skills could range from instances where you communicated<br />with a customer or client to fulfil their needs or resolve a problem, to times where you worked together with your<br />colleagues to achieve a joint goal.<br /><br />- <strong>Research &amp; Analysis</strong><br />Many roles require some level of research and analysis ability &ndash; making it an important skill to make known to employers.<br /><br />The examples you include may differ depending on the role and what\'s required (particularly if the vacancy calls for harder<br />skills, e.g. knowledge of Google Analytics), but a basic level of research and analysis skills can be shown<br />in anything from university essays, to any form of gathering, organising, and evaluating information &ndash; whether it\'s<br />sales figures, website visits, or technical reports.
             </pre></html>
             ]]>
         </item>
         <!--Awards and Honours-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            In a competitive academic and job market, many students or recent grads find themselves lost in the shuffle,
-            especially when other applicants have similar academic or work histories. Academic and work accomplishments are
-            what set you apart from the hundreds, perhaps thousands, of other candidates vying for the same seat in college
-            or that job you really want. Admissions directors and hiring managers know that past achievement usually predicts
-            future performance. They also know that achievers are self-starters, motivated, and an asset to their school or company.
-
-            \n\nRemember, admissions directors and hiring managers have dozens of resumes to review on a daily basis.
-            In that sea of paper, accomplishments are what capture and retain their interest, so to make certain that
-            you get noticed, highlight your academic or work-related honors, awards, and accomplishments.
-
-            \n\nWhen describing honors, awards, or accomplishments on your resume, it is important to maximize the use of language and wording in order to get your point across in the strongest way. Keep the following tips in mind:
-
-            \n\n1. Avoid writing vague self-serving statements on your student resume by using quantifying data.
-            \nWeak: High School Senior with good grades
-
-            \n\nStrong: High School Senior consistently named to the Honor Roll, 2000-2004 Member of the National Honor Society
-
-            \n\n2. Avoid accomplishments that have nothing to do with your future career goal, your current job search, or
-            those that do not enhance your candidacy.
-            \nDon’t use: Beauty contest "Miss Congeniality" winner
-
-            \n\nUse: Won Award at High School Science Fair, 2002
-
-            \n\n3. Be specific with details to capture and retain interest.
-            \nWeak: Won Award for Best Art.
-
-            \n\nStrong: Earned Excellence Award for Art Work (pen &amp; ink drawings), 2008-2010
-
-            \n\nWeak: Helped customers in showroom.
-
-            \n\nStrong: Increased sales by $5,000 during summer by helping clients in showroom. This resulted in sales to 8 out of 10
-            customers.
-
-            \n\nAccomplishments, no matter how stellar, will do little to enhance your chances of getting into school or getting a job,
-            unless they are properly showcased in your student resume or entry-level resume. If you bury them within your daily duties
-            or general academic information, they may not be seen. Remember, admissions directors and hiring managers have many resumes
-            to review. If it’s hard for them to find important information on your resume, they may pass on your candidacy.
-
-            \n\nYou should emphasize your academic, work, or volunteer recognitions by creating a specific honors, awards,
-            and accomplishments section of your resume. Make sure to provide the following details when including your accomplishments:
-
-            \n\n - Date of recognition or award
-            \n - Purpose of award and accomplishment it recognizes (i.e., Academic, athletic, job related)
-            \n - Significance of award (i.e., What did you have to accomplish? Only one who received the award? )
-            \n - Scope of the award (i.e.: National, regional, or local)
-            \n - As you can see, there are a variety of ways to market and display your academic and career accomplishments.
+            In a competitive academic and job market, many students or recent grads find themselves lost in the shuffle,<br />especially when other applicants have similar academic or work histories. Academic and work accomplishments are<br />what set you apart from the hundreds, perhaps thousands, of other candidates vying for the same seat in college<br />or that job you really want. Admissions directors and hiring managers know that past achievement usually predicts<br />future performance. They also know that achievers are self-starters, motivated, and an asset to their school or company.<br /><br />Remember, admissions directors and hiring managers have dozens of resumes to review on a daily basis.<br />In that sea of paper, accomplishments are what capture and retain their interest, so to make certain that<br />you get noticed, highlight your academic or work-related honors, awards, and accomplishments.<br /><br />When describing honors, awards, or accomplishments on your resume, it is important to maximize the use of language and wording in order to get your point across in the strongest way. Keep the following tips in mind:<br /><br />1. Avoid writing vague self-serving statements on your student resume by using quantifying data.<br /><strong>Weak</strong>: High School Senior with good grades<br /><br /><strong>Strong</strong>: High School Senior consistently named to the Honor Roll, 2000-2004 Member of the National Honor Society<br /><br />2. Avoid accomplishments that have nothing to do with your future career goal, your current job search, or<br />those that do not enhance your candidacy.<br /><strong>Don\'t use</strong>: Beauty contest "Miss Congeniality" winner<br /><br /><strong>Use</strong>: Won Award at High School Science Fair, 2002<br /><br />3. Be specific with details to capture and retain interest.<br /><strong>Weak</strong>: Won Award for Best Art.<br /><br /><strong>Strong</strong>: Earned Excellence Award for Art Work (pen &amp; ink drawings), 2008-2010<br /><br /><strong>Weak</strong>: Helped customers in showroom.<br /><br /><strong>Strong</strong>: Increased sales by $5,000 during summer by helping clients in showroom. This resulted in sales to 8 out of 10<br />customers.<br /><br />Accomplishments, no matter how stellar, will do little to enhance your chances of getting into school or getting a job,<br />unless they are properly showcased in your student resume or entry-level resume. If you bury them within your daily duties<br />or general academic information, they may not be seen. Remember, admissions directors and hiring managers have many resumes<br />to review. If it&rsquo;s hard for them to find important information on your resume, they may pass on your candidacy.<br /><br />You should emphasize your academic, work, or volunteer recognitions by creating a specific honors, awards,<br />and accomplishments section of your resume. Make sure to provide the following details when including your accomplishments:<br /><br />- Date of recognition or award<br />- Purpose of award and accomplishment it recognizes (i.e., Academic, athletic, job related)<br />- Significance of award (i.e., What did you have to accomplish? Only one who received the award? )<br />- Scope of the award (i.e.: National, regional, or local)<br />- As you can see, there are a variety of ways to market and display your academic and career accomplishments.
             </pre></html>
             ]]>
         </item>
         <!--Any published work-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            If you have only a few publications to list and your publication history isn’t a requirement for the job,
-            the best approach is to summarize your work in the accomplishments section of your resume.
-            Add a bullet point that says something like, "Published in ABC magazine and XYZ Journal."
-            If the interviewer is interested in learning more, he will ask. Bring copies of your published work to the interview to
-            share when asked.
+            If you have only a few publications to list and your publication history isn\'t a requirement for the job,<br />the best approach is to summarize your work in the accomplishments section of your resume.<br />Add a bullet point that says something like, "Published in ABC magazine and XYZ Journal."<br />If the interviewer is interested in learning more, he will ask. Bring copies of your published work to the interview to<br />share when asked.
             </pre></html>
             ]]>
         </item>
         <!--Interests/Hobbies-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            While your CV tells the story of your qualifications and your career, the hobbies and interest section reveals a
-            little more of your personality.
-
-            \n\nBenefits of including hobbies on your CV include:
-
-            \n\n - Demonstrating your relevant skills for the role
-            \n - Helps your CV stand out from the crowd
-            \n - Makes your CV more individual
-            \n - Allows you to show voluntary and community-focused projects
-            \n - Gives you something to talk about during your interview
-
-            \n\nSome recruiters are absolute advocates, believing them to be an integral part of well-rounded application. Conversely,
-            some may only consider them important if it\'s a close decision, or if company fit/culture becomes a factor.
-
-            \n\nAs a general rule, most recruiters will only be interested in your hobbies if they\'re relevant to the role and,
-            crucially – if you\'ve ticked all the other boxes.
-
-            \n\nSo not everyone\'s a fan of Morris Dancing. But surely it\'s better to include something to help sell yourself
-            than leave more blank space, right? Wrong.
-
-            \n\nUnfortunately, not everyone\'s a fan of traditional English folk dancing. And unless you\'ve applied for a job
-            where these skills will be particularly useful, they\'ll probably not help you get the job.
-
-            \n\nWherever possible, your hobbies and interests should reinforce your application and the idea that you\'ll be the right
-            fit for the role – even if it\'s just through transferable skills.
-
-            \n\nIf you do decide to include some hobbies, style can be just as importance as substance.
-
-            \n\nBullet points are fine, but should not be used as a way to list all of your activities individually with zero context.
-            The most effective CVs have their hobbies backing up everything the recruiter has read so far.
-
-            \n\nFor example, a \'weekly five-a-side game with friends\' becomes a lot more attractive when written as
-            \'successfully organised a range of regional five-a-side football tournaments, including managing all bookings,
-            venues and participants and helping coach my own team\'.
-
-            \n\nAnother Example:
-            \n\nAvid blogger and social media user, and an owner of my own blog.
-            Not only do I use it to write and edit articles about all topics related to sports (specifically football),
-            I also use it as a platform to sell advertising space on a CPC basis. Whilst studying, I also successfully organised a
-            range of regional five-a-side football tournaments, including managing all bookings, venues and participants and helping
-            coach my own team, and contributed to the sports section in the student newspaper and social sites.
-
-            \n\nIf you can\'t think of any particular passions or interests you pursue, don\'t be tempted to just stick to clichés.
-
-            \n\nSocialising with friends, eating out and going to the cinema may be accurate, but are all unlikely to add value to your
-            application. And it\'s far better to lose the section completely than to offer up a token gesture.
-
-            \n\nIf you really want something to set yourself apart, you could also take up volunteering.
-            Not only is it a great hobby to have, it can also help get your foot in the door in your chosen industry.
-
-            \n\nWho should include them:
-            \n - School leavers
-            \n - Graduates
-            \n - Those lacking experience
-            \n - Those applying for roles which are directly related to their hobbies
-
-            \n\nWho should delete them:
-            \n - Those who want to cut down their CV
-            \n - Those who don\'t know what to say
-            \n - Those who have no real hobbies
+            While your CV tells the story of your qualifications and your career, the hobbies and interest section reveals a<br />little more of your personality.<br /><br />Benefits of including hobbies on your CV include:<br /><br />- Demonstrating your relevant skills for the role<br />- Helps your CV stand out from the crowd<br />- Makes your CV more individual<br />- Allows you to show voluntary and community-focused projects<br />- Gives you something to talk about during your interview<br /><br />Some recruiters are absolute advocates, believing them to be an integral part of well-rounded application. Conversely,<br />some may only consider them important if it\'s a close decision, or if company fit/culture becomes a factor.<br /><br />As a general rule, most recruiters will only be interested in your hobbies if they\'re relevant to the role and,<br />crucially &ndash; if you\'ve ticked all the other boxes.<br /><br />So not everyone\'s a fan of Morris Dancing. But surely it\'s better to include something to help sell yourself<br />than leave more blank space, right? Wrong.<br /><br />Unfortunately, not everyone\'s a fan of traditional English folk dancing. And unless you\'ve applied for a job<br />where these skills will be particularly useful, they\'ll probably not help you get the job.<br /><br />Wherever possible, your hobbies and interests should reinforce your application and the idea that you\'ll be the right<br />fit for the role &ndash; even if it\'s just through transferable skills.<br /><br />If you do decide to include some hobbies, style can be just as importance as substance.<br /><br />Bullet points are fine, but should not be used as a way to list all of your activities individually with zero context.<br />The most effective CVs have their hobbies backing up everything the recruiter has read so far.<br /><br />F<strong>or example;</strong> a \'weekly five-a-side game with friends\' becomes a lot more attractive when written as<br />\'successfully organised a range of regional five-a-side football tournaments, including managing all bookings,<br />venues and participants and helping coach my own team\'.<br /><br /><strong>Another Example</strong>:<br />Avid blogger and social media user, and an owner of my own blog.<br />Not only do I use it to write and edit articles about all topics related to sports (specifically football),<br />I also use it as a platform to sell advertising space on a CPC basis. Whilst studying, I also successfully organised a<br />range of regional five-a-side football tournaments, including managing all bookings, venues and participants and helping<br />coach my own team, and contributed to the sports section in the student newspaper and social sites.<br /><br />If you can\'t think of any particular passions or interests you pursue, don\'t be tempted to just stick to clich&eacute;s.<br /><br />Socialising with friends, eating out and going to the cinema may be accurate, but are all unlikely to add value to your<br />application. And it\'s far better to lose the section completely than to offer up a token gesture.<br /><br />If you really want something to set yourself apart, you could also take up volunteering.<br />Not only is it a great hobby to have, it can also help get your foot in the door in your chosen industry.<br /><br /><strong>Who should include them</strong>:<br />- School leavers<br />- Graduates<br />- Those lacking experience<br />- Those applying for roles which are directly related to their hobbies<br /><br /><strong>Who should delete them</strong>:<br />- Those who want to cut down their CV<br />- Those who don\'t know what to say<br />- Those who have no real hobbies
             </pre></html>
             ]]>
         </item>
         <!--References-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            Almost 60&#37; of employers claim that they have had to withdraw an offer of employment after receiving poor references about
-            successful applicants. So, just because you have managed to wow your future employer at interview stage and convinced them
-            that you are the best person for the job, it does not mean that you can get away with poorly prepared references.
-
-            \n\nReferences act as a third party endorsement – they are used by hiring managers as reassurance that you are who you
-            say you are and will do for them what you claim you have done for your previous employers.
-
-            \n\nTherefore, given the high number of rejections, it is important to prepare your references properly.
-
-            \n\nDon\'t include the details
-            \nDon\'t give the names and contact details of your referees on your CV. You should simply state that
-            \'References are available on request\'. Employers will ask you for details if and when they are ready
-            to offer you a position. After all, you wouldn\'t want your current employer being asked if they would
-            re-hire you when you haven\'t even told them you\'re leaving!
-
-            \n\nProviding the right kind of information
-            \nNowadays, hiring managers can only request details from former employers that cover:
-
-            \n\n&#8226; Length of employment
-            \n&#8226; Previous job title
-            \n&#8226; Brief details of responsibility
-            \n&#8226; Overall performance
-            \n&#8226; Time-keeping and attendance
-            \n&#8226; Reason for leaving
-            \n&#8226; Employers can also ask your previous company if they would re-hire you should you apply for a position there
-            in the future.
-
-            \n\nChoose your referees carefully
-            \n85% of employers will check at least one of your references when offering you a position – typically your most recent
-            employer - so it is important that you choose the right and responsive people to can testify for your working practices.
-
-            \n\nPersonal references are not advisable because they are more likely to be complimentary and positive,
-            so it is best to avoid them – having Grandma Doris saying what \'a lovely lad\' you are isn\'t going to hold much weight.
-
-            \n\nThat said, it is not written in stone that you have to use a former employer as a reference.
-            Business acquaintances, customers and organisation leaders can all make good references, too.
-            If you don\'t have much in terms of work experience, you\'re advised to use one of your tutors.
+            Almost 60% of employers claim that they have had to withdraw an offer of employment after receiving poor references about<br />successful applicants. So, just because you have managed to wow your future employer at interview stage and convinced them<br />that you are the best person for the job, it does not mean that you can get away with poorly prepared references.<br /><br />References act as a third party endorsement &ndash; they are used by hiring managers as reassurance that you are who you<br />say you are and will do for them what you claim you have done for your previous employers.<br /><br />Therefore, given the high number of rejections, it is important to prepare your references properly.<br /><br /><strong>Don\'t include the details</strong><br />Don\'t give the names and contact details of your referees on your CV. You should simply state that<br />\'References are available on request\'. Employers will ask you for details if and when they are ready<br />to offer you a position. After all, you wouldn\'t want your current employer being asked if they would<br />re-hire you when you haven\'t even told them you\'re leaving!<br /><br /><strong>Providing the right kind of information</strong><br />Nowadays, hiring managers can only request details from former employers that cover:<br /><br />- Length of employment<br />- Previous job title<br />- Brief details of responsibility<br />- Overall performance<br />- Time-keeping and attendance<br />- Reason for leaving<br />- Employers can also ask your previous company if they would re-hire you should you apply for a position there<br />in the future.<br /><br /><strong>Choose your referees carefully</strong><br />85% of employers will check at least one of your references when offering you a position &ndash; typically your most recent<br />employer - so it is important that you choose the right and responsive people to can testify for your working practices.<br /><br />Personal references are not advisable because they are more likely to be complimentary and positive,<br />so it is best to avoid them &ndash; having Grandma Doris saying what \'a lovely lad\' you are isn\'t going to hold much weight.<br /><br />That said, it is not written in stone that you have to use a former employer as a reference.<br />Business acquaintances, customers and organisation leaders can all make good references, too.<br />If you don\'t have much in terms of work experience, you\'re advised to use one of your tutors.
             </pre></html>
             ]]>
         </item>
         <!--The do's and don't's-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-           Do\'s
-
-            \n\n&#8226; Tailor your CV to every job.
-            \n&#8226; Use spell check and proofread before you send.
-            \n&#8226; Keep it concise with no more than two sides.
-            \n&#8226; Choose a professional font.
-            \n&#8226; Present things in a logical order.
-            \n&#8226; Create a professional email address.
-            \n&#8226; Include contact details.
-            \n&#8226; Maintain consistent formatting.
-            \n&#8226; Begin sentences with verbs, rather than writing in the first person.
-            \n&#8226; Bullet point your achievements and responsibilities, providing more information for your more recent roles.
-
-            \n\nDon\'t\'s
-
-            \n\n&#8226; Include irrelevant work experience.
-            \n&#8226; Try to include too much.
-            \n&#8226; include unnecessary references.
-            \n&#8226; Make the same application for every role.
-            \n&#8226; However tempting, don\'t make your CV too long – your CV needs to reflect all of your selling points, nothing else.
-            \n&#8226; Include a photograph of yourself on your CV unless necessary – the vast majority of professional jobs go to the person with the best looking CV, not the photograph.
-            \n&#8226; Use clichés. Everyone likes to say they’re a team player with great communication skills who can work under pressure. Instead, use your experience to demonstrate how you can do those things.
-            \n&#8226; Lie or embellish the truth on your CV – things are easily checked and a small untruth could blow your chance of success.
-            \n&#8226; List every process or package you’ve ever worked with, trained on, heard of or read on the job specification.
-            \n&#8226; Use tables and graphics such as ClipArt – they can look untidy and unsightly.
-            \n&#8226; Be tempted to shrink the font or reduce the margins to get more information in.
-            \n&#8226; Include pages of obscure testimonials, references, newspaper cuttings and brochures.
+            <strong>Do\'s</strong><br /><br /> - Tailor your CV to every job.<br /> - Use spell check and proofread before you send.<br /> - Keep it concise with no more than two sides.<br /> - Choose a professional font.<br /> - Present things in a logical order.<br /> - Create a professional email address.<br /> - Include contact details.<br /> - Maintain consistent formatting.<br /> - Begin sentences with verbs, rather than writing in the first person.<br /> - Bullet point your achievements and responsibilities, providing more information for your more recent roles.<br /><br /><strong>Don\'t\'s</strong><br /><br /> - Include irrelevant work experience.<br /> - Try to include too much.<br /> - include unnecessary references.<br /> - Make the same application for every role.<br /> - However tempting, don\'t make your CV too long &ndash; your CV needs to reflect all of your selling points, nothing else.<br /> - Include a photograph of yourself on your CV unless necessary &ndash; the vast majority of professional jobs go to the person with the best looking CV, not the photograph.<br /> - Use clich&eacute;s. Everyone likes to say they\'re a team player with great communication skills who can work under pressure. Instead, use your experience to demonstrate how you can do those things.<br /> - Lie or embellish the truth on your CV &ndash; things are easily checked and a small untruth could blow your chance of success.<br /> - List every process or package you\'ve ever worked with, trained on, heard of or read on the job specification.<br /> - Use tables and graphics such as ClipArt &ndash; they can look untidy and unsightly.<br /> - Be tempted to shrink the font or reduce the margins to get more information in.<br /> - Include pages of obscure testimonials, references, newspaper cuttings and brochures.
             </pre></html>
             ]]>
         </item>
