@@ -453,280 +453,115 @@ Give a brief overview of the project or situation. Provide only enough backgroun
     <string-array name="javaTechnicalAnswers">
         <!--Explain JVM, JRE and JDK?-->
         <item>
-            JVM (Java Virtual Machine): It is an abstract machine.
-            It is a specification that provides run-time environment in which java bytecode can be executed. It follows three notations:
-            \n &#8226; Specification: It is a document that describes the implementation of the Java virtual machine. It is provided by Sun and other companies.
-            \n &#8226; Implementation: It is a program that meets the requirements of JVM specification.
-            \n &#8226; Runtime Instance: An instance of JVM is created whenever you write a java command on the command prompt and run the class.
-            \n\n
-            JRE (Java Runtime Environment) : JRE refers to a runtime environment in which java bytecode can be executed.
-            It implements the JVM (Java Virtual Machine) and provides all the class libraries and other support files that
-            JVM uses at runtime. So JRE is a software package that contains what is required to run a Java program.
-            Basically, it’s an implementation of the JVM which physically exists.
-            \n\n
-            JDK(Java Development Kit) : It is the tool necessary to compile, document and package Java programs.
-            The JDK completely includes JRE which contains tools for Java programmers. The Java Development Kit is provided free of charge.
-            Along with JRE, it includes an interpreter/loader, a compiler (javac), an archiver (jar), a documentation generator (javadoc)
-            and other tools needed in Java development. In short, it contains JRE + development tools.
+            <![CDATA[<html><pre style="text-align:center">
+            <strong>JVM </strong>(<strong>Java Virtual Machine</strong>): It is an abstract machine.<br />It is a specification that provides run-time environment in which java bytecode can be executed. It follows three notations:<br />- <strong>Specification</strong>: It is a document that describes the implementation of the Java virtual machine. It is provided by Sun and other companies.<br />- <strong>Implementation</strong>: It is a program that meets the requirements of JVM specification.<br />- <strong>Runtime Instance</strong>: An instance of JVM is created whenever you write a java command on the command prompt and run the class.<br /><br /><strong>JRE</strong> (<strong>Java Runtime Environment</strong>): JRE refers to a runtime environment in which java bytecode can be executed.<br />It implements the JVM (Java Virtual Machine) and provides all the class libraries and other support files that<br />JVM uses at runtime. So JRE is a software package that contains what is required to run a Java program.<br />Basically, it\'s an implementation of the JVM which physically exists.<br /><br /><strong>JDK</strong> (<strong>Java Development Kit</strong>): It is the tool necessary to compile, document and package Java programs.<br />The JDK completely includes JRE which contains tools for Java programmers. The Java Development Kit is provided free of charge.<br />Along with JRE, it includes an interpreter/loader, a compiler (javac), an archiver (jar), a documentation generator (javadoc)<br />and other tools needed in Java development. In short, it contains JRE + development tools.
+            </pre></html>
+            ]]>
         </item>
         <!--Explain public static void main(String args[]).-->
         <item>
-            public : Public is an access modifier, which is used to specify who can access this method. Public means that this Method will
-            be accessible by any Class.
-            \n\n static : It is a keyword in java which identifies it is class based i.e it can be accessed without creating the instance
-            of a Class.
-            \n\n void : It is the return type of the method. Void defines the method which will not return any value.
-            \n\n main: It is the name of the method which is searched by JVM as a starting point for an application with a particular
-            signature only. It is the method where the main execution occurs.
-            \n\nString args[] : It is the parameter passed to the main method.
+            <![CDATA[<html><pre style="text-align:center">
+            <strong>public</strong>: Public is an access modifier, which is used to specify who can access this method. Public means that this Method will<br />be accessible by any Class.<br />static: It is a keyword in java which identifies it is class based i.e it can be accessed without creating the instance<br />of a Class.<br /><strong>void</strong>: It is the return type of the method. Void defines the method which will not return any value.<br /><strong>main</strong>: It is the name of the method which is searched by JVM as a starting point for an application with a particular<br />signature only. It is the method where the main execution occurs.<br /><strong>String args[]</strong>: It is the parameter passed to the main method.
+            </pre></html>
+            ]]>
         </item>
         <!--Why Java is platform independent?-->
         <item>
-            Platform independent practically means "write once run anywhere". Java is called so because of its byte codes which can run
-            on any system irrespective of its underlying operating system.
+            <![CDATA[<html><pre style="text-align:center">
+            Platform independent practically means "write once run anywhere". Java is called so because of its byte codes which can run<br />on any system irrespective of its underlying operating system.
+            </pre></html>
+            ]]>
         </item>
         <!--Why java is not 100% Object-oriented?-->
         <item>
-            Java is not 100% Object-oriented because it makes use of eight primitive datatypes such as boolean, byte, char, int, float,
-            double, long, short which are not objects.
+            <![CDATA[<html><pre style="text-align:center">
+            Java is not 100% Object-oriented because it makes use of eight primitive datatypes such as boolean, byte, char, int, float,<br />double, long, short which are not objects.
+            </pre></html>
+            ]]>
         </item>
         <!--What are wrapper classes?-->
         <item>
-            Wrapper classes converts the java primitives into the reference types (objects). Every primitive data type has a class dedicated
-            to it. These are known as wrapper classes because they “wrap” the primitive data type into an object of that class.
-            Refer to the below image which displays different primitive type, wrapper class and constructor argument.
+            <![CDATA[<html><pre style="text-align:center">
+            Wrapper classes converts the java primitives into the reference types (objects). Every primitive data type has a class dedicated<br />to it. These are known as wrapper classes because they "wrap" the primitive data type into an object of that class.<br />Refer to the below image which displays different primitive type, wrapper class and constructor argument.
+            </pre></html>
+            ]]>
         </item>
         <!--What are constructors in Java?-->
         <item>
-            In Java, constructor refers to a block of code which is used to initialize an object. It must have the same name as that
-            of the class. Also, it has no return type and it is automatically called when an object is created.
-            \n\nThere are two types of constructors:
-            \n 1. Default constructor
-            \n 2. Parameterized constructor
+            <![CDATA[<html><pre style="text-align:center">
+            In Java, constructor refers to a block of code which is used to initialize an object. It must have the same name as that<br />of the class. Also, it has no return type and it is automatically called when an object is created.<br /><br />There are two types of constructors:<br />1. Default constructor<br />2. Parameterized constructor
+             </pre></html>
+            ]]>
         </item>
         <!--What is singleton class and how can we make a class singleton?-->
         <item>
-            Singleton class is a class whose only one instance can be created at any given time,
-            in one JVM. A class can be made singleton by making its constructor private.
+            <![CDATA[<html><pre style="text-align:center">
+            Singleton class is a class whose only one instance can be created at any given time,<br />in one JVM. A class can be made singleton by making its constructor private.
+             </pre></html>
+            ]]>
         </item>
         <!--What is the difference between Array list, Linked list and Vector?-->
         <item>
-            Their main difference is their implementation which causes different performance for different operations.
-            ArrayList is implemented as a resizable array. As more elements are added to ArrayList, its size is increased dynamically.
-            It\'s elements can be accessed directly by using the get and set methods, since ArrayList is essentially an array.
-            \n\n LinkedList is implemented as a double linked list. Its performance on add and remove is better than Arraylist,
-            but worse on get and set methods. Vector is similar with ArrayList, but it is synchronized.
-            ArrayList is a better choice if your program is thread-safe. Vector and ArrayList require space as more elements are added.
-            \n\n Vector each time doubles its array size, while ArrayList grow 50% of its size each time. LinkedList, however, also implements
-            Queue interface which adds more methods than ArrayList and Vector, such as offer(), peek(), poll(), etc.
-            \n\n Note: The default initial capacity of an ArrayList is pretty small.
-            It is a good habit to construct the ArrayList with a higher initial capacity. This can avoid the resizing cost.
+             <![CDATA[<html><pre style="text-align:center">
+            Their main difference is their implementation which causes different performance for different operations.<br />ArrayList is implemented as a resizable array. As more elements are added to ArrayList, its size is increased dynamically.<br />It\'s elements can be accessed directly by using the get and set methods, since ArrayList is essentially an array.<br /><br /><strong>LinkedList</strong> is implemented as a double linked list. Its performance on add and remove is better than Arraylist,<br />but worse on get and set methods. Vector is similar with ArrayList, but it is synchronized.<br /><strong>ArrayList</strong> is a better choice if your program is thread-safe. Vector and ArrayList require space as more elements are added.<br /><br /><strong>Vector</strong> each time doubles its array size, while ArrayList grow 50% of its size each time. LinkedList, however, also implements<br />Queue interface which adds more methods than ArrayList and Vector, such as offer(), peek(), poll(), etc.<br /><br /><strong>Note</strong>: The default initial capacity of an ArrayList is pretty small.<br />It is a good habit to construct the ArrayList with a higher initial capacity. This can avoid the resizing cost.<br />Also, Vector is deprecated.
+            </pre></html>
+            ]]>
         </item>
         <!--What is the difference between equals() and == ?-->
         <item>
-            Equals() method is defined in Object class in Java and used for checking equality of two objects defined by business logic.
-            \n "==" or equality operator in Java is a binary operator provided by Java programming language and used to compare primitives
-            and objects. public boolean equals(Object o) is the method provided by the Object class.
-            \n The default implementation uses == operator to compare two objects.
-            \n\n Therefore the equals() method compares the "value" inside String instances (on the heap) irrespective
-            if the two object references refer to the same String instance or not.
-            \n On the other hand, the "==" operator compares the value
-            of two object references to see whether they refer to the same String instance.
-            \n For example: method can be overridden like String class. equals() method is used to compare the values of two objects.
+            <![CDATA[<html><pre style="text-align:center">
+            Equals() method is defined in Object class in Java and used for checking equality of two objects defined by business logic.<br />"==" or equality operator in Java is a binary operator provided by Java programming language and used to compare primitives<br />and objects. public boolean equals(Object o) is the method provided by the Object class.<br />The default implementation uses == operator to compare two objects.<br /><br />Therefore the equals() method compares the "value" inside String instances (on the heap) irrespective<br />if the two object references refer to the same String instance or not.<br />On the other hand, the "==" operator compares the value<br />of two object references to see whether they refer to the same String instance.<br /><br /><strong>For example</strong>: method can be overridden like String class. equals() method is used to compare the values of two objects.
+            </pre></html>
+            ]]>
         </item>
         <!--What are the differences between Heap and Stack Memory?-->
         <item>
-            Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer\'s RAM .
-
-            \n\n Variables allocated on the stack are stored directly to the memory and access to this memory is very fast, and
-            it\'s allocation is dealt with when the program is compiled. When a function or a method calls another function which
-            in turns calls another function etc., the execution of all those functions remains suspended until the very last function
-            returns its value. The stack is always reserved in a LIFO (Last in First out) order, the most recently reserved block is
-            always the next block to be freed. This makes it really simple to keep track of the stack, freeing a block from the stack
-            is nothing more than adjusting one pointer.
-            \n\n Variables allocated on the heap have their memory allocated at run time and accessing this memory is a bit slower,
-            but the heap size is only limited by the size of virtual memory. Element of the heap have no dependencies with each other
-            and can always be accessed randomly at any time. You can allocate a block at any time and free it at any time.
-            This makes it much more complex to keep track of which parts of the heap are allocated or free at any given time.
-
-            \n\n You can use the stack if you know exactly how much data you need to allocate before compile time and it is not too big.
-            \nYou can use heap if you don\'t know exactly how much data you will need at runtime or if you need to allocate a lot of data.
-            \n\n In a multi-threaded situation each thread will have its own completely independent stack but they will share the heap.
-            Stack is thread specific and Heap is application specific. The stack is important to consider in exception handling and thread
-            executions.
-
+            <![CDATA[<html><pre style="text-align:center">
+           Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer\'s RAM .<br /><br />Variables allocated on the stack are stored directly to the memory and access to this memory is very fast, and<br />it\'s allocation is dealt with when the program is compiled. When a function or a method calls another function which<br />in turns calls another function etc., the execution of all those functions remains suspended until the very last function<br />returns its value. The stack is always reserved in a LIFO (Last in First out) order, the most recently reserved block is<br />always the next block to be freed. This makes it really simple to keep track of the stack, freeing a block from the stack<br />is nothing more than adjusting one pointer.<br /><br />Variables allocated on the heap have their memory allocated at run time and accessing this memory is a bit slower,<br />but the heap size is only limited by the size of virtual memory. Element of the heap have no dependencies with each other<br />and can always be accessed randomly at any time. You can allocate a block at any time and free it at any time.<br />This makes it much more complex to keep track of which parts of the heap are allocated or free at any given time.<br /><br />You can use the stack if you know exactly how much data you need to allocate before compile time and it is not too big.<br />You can use heap if you don\'t know exactly how much data you will need at runtime or if you need to allocate a lot of data.<br /><br />In a multi-threaded situation each thread will have its own completely independent stack but they will share the heap.<br />Stack is thread specific and Heap is application specific. The stack is important to consider in exception handling and thread<br />executions.
+            </pre></html>
+            ]]>
         </item>
         <!--What is Polymorphism and runtime polymorphism or dynamic method dispatch?-->
         <item>
-            Polymorphism is briefly described as "one interface, many implementations".
-            Polymorphism is a characteristic of being able to assign a different meaning or usage to something in different contexts
-            – specifically, to allow an entity such as a variable, a function, or an object to have more than one form.
-            There are two types of polymorphism:
-            \n\n Compile time polymorphism
-            \n Run time polymorphism
-            \n\n Compile time polymorphism is method overloading whereas Runtime time polymorphism is done using inheritance and interface.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Polymorphism is briefly described as "one interface, many implementations".<br />Polymorphism is a characteristic of being able to assign a different meaning or usage to something in different contexts<br />specifically, to allow an entity such as a variable, a function, or an object to have more than one form.<br />There are two types of polymorphism:<br />- Compile time polymorphism<br />- Run time polymorphism<br /><br />Compile time polymorphism is method overloading whereas Runtime time polymorphism is done using inheritance and interface.<br /><br />In Java, runtime polymorphism or dynamic method dispatch is a process in which a call to an overridden method is resolved at<br />runtime rather than at compile-time. In this process, an overridden method is called through the reference variable of a superclass.<br /><br />Example:<br /><br /></pre>
 
-            \n\n In Java, runtime polymorphism or dynamic method dispatch is a process in which a call to an overridden method is resolved at
-            runtime rather than at compile-time. In this process, an overridden method is called through the reference variable of a superclass.
+            <pre style="margin: 0; line-height: 125%;"> <em style="color: #008800; font-weight: bold;">class</em> <em style="color: #bb0066; font-weight: bold;">Car</em> <br /><em style="color: #333333;"> {</em>
+ <em style="color: #333399; font-weight: bold;">void</em> <em style="color: #0066bb; font-weight: bold;">run</em><em style="color: #333333;">()<br /></em> <em style="color: #333333;">{<br /></em><em style="background-color: #ffffff;"> System</em><em style="color: #333333;">.</em><em style="color: #0000cc;">out</em><em style="color: #333333;">.</em><em style="color: #0000cc;">println</em><em style="color: #333333;">("</em><em style="background-color: #ffffff;">car is running"</em><em style="color: #333333;">);<br /></em> <em style="color: #333333;">}<br /></em> <em style="color: #333333;">}<br /></em> <em style="color: #008800; font-weight: bold;">class</em> <em style="color: #bb0066; font-weight: bold;">Audi</em> <em style="color: #008800; font-weight: bold;">extends</em><em style="background-color: #ffffff;"> Car<br /> </em><em style="color: #333333;">{<br /></em> <em style="color: #333399; font-weight: bold;">void</em> <em style="color: #0066bb; font-weight: bold;">run</em><em style="color: #333333;">()<br /></em> <em style="color: #333333;">{<br /></em><em style="background-color: #ffffff;"> System</em><em style="color: #333333;">.</em><em style="color: #0000cc;">out</em><em style="color: #333333;">.</em><em style="color: #0000cc;">prinltn</em><em style="color: #333333;">("</em><em style="background-color: #ffffff;">Audi is running safely with </em><em style="color: #0000dd; font-weight: bold;">100</em><em style="background-color: #ffffff;">km"</em><em style="color: #333333;">);<br /></em> <em style="color: #333333;">}<br /></em> <em style="color: #008800; font-weight: bold;">public</em> <em style="color: #008800; font-weight: bold;">static</em> <em style="color: #333399; font-weight: bold;">void</em> <em style="color: #0066bb; font-weight: bold;">main</em><em style="color: #333333;">(</em><em style="background-color: #ffffff;">String args</em><em style="color: #333333;">[])<br /></em> <em style="color: #333333;">{<br /></em><em style="background-color: #ffffff;"> Car b</em><em style="color: #333333;">=</em> <em style="color: #008800; font-weight: bold;">new</em><em style="background-color: #ffffff;"> Audi</em><em style="color: #333333;">();</em>    <em style="color: #888888;">//upcasting<br /></em><em style="background-color: #ffffff;"> b</em><em style="color: #333333;">.</em><em style="color: #0000cc;">run</em><em style="color: #333333;">();<br /></em> <em style="color: #333333;">}<br /></em> <em style="color: #333333;">}</em>
+</pre>
 
-            \n\n Example:
-
-            \n\n class Car {
-            \n void run()
-            \n {
-            \n System.out.println(“car is running”);
-            \n }
-            \n }
-            \n class Audi extends Car {
-            \n void run()
-            \n {
-            \n System.out.prinltn(“Audi is running safely with 100km”);
-            \n }
-            \n public static void main(String args[])
-            \n {
-            \n Car b= new Audi();    //upcasting
-            \n b.run();
-            \n }
-            \n }
+            </pre></html>
+            ]]>
         </item>
         <!--What is inheritance-->
         <item>
-            Inheritance is the process wherein characteristics are inherited from ancestors. Similarly, in Java,
-            a subclass inherits the characteristics (properties and methods) of its superclass (ancestor).
-            \n For example, a vehicle is a superclass and a car is a subclass. The car (subclass) inherits all of the vehicle’s properties.
-            The inheritance mechanism is very useful in code reuse.
-            \n The following are some limitations of Java class inheritance: A subclass cannot inherit private members of its superclass.
-            Constructor and initializer blocks cannot be inherited by a subclass. A subclass can have only one superclass.
-            \n\n The keyword "extends" is used to derive a subclass from the superclass, as illustrated by the following syntax:
-            \n\n class Name_of_subclass extends Name_of superclass
-            \n { //new fields and methods that would define the subclass go here }
-            \n\n If you want to derive a subclass Rectangle from a superclass Shapes, you can do it as follows:
-            \n class Rectangle extends Shapes { …. }
+            <![CDATA[<html><pre style="text-align:center">
+           <pre>Inheritance is the process wherein characteristics are inherited from ancestors. Similarly, in Java,<br />a subclass inherits the characteristics (properties and methods) of its superclass (ancestor).<br />For example, a vehicle is a superclass and a car is a subclass. The car (subclass) inherits all of the vehicle&rsquo;s properties.<br />The inheritance mechanism is very useful in code reuse.<br />The following are some limitations of Java class inheritance: A subclass cannot inherit private members of its superclass.<br />Constructor and initializer blocks cannot be inherited by a subclass. A subclass can have only one superclass.<br /><br />The keyword "extends" is used to derive a subclass from the superclass, as illustrated by the following syntax:</pre>
 
+            <pre><em>class Name_of_subclass extends Name_of superclass</em><br />{ //new fields and methods that would define the subclass go here }<br /><br />If you want to derive a subclass Rectangle from a superclass Shapes, you can do it as follows:<br /><em>class Rectangle extends Shapes { &hellip;. }</em></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is Abstraction?-->
         <item>
-            Data Abstraction is the property by virtue of which only the essential details are displayed to the user.
-            The trivial or the non-essentials units are not displayed to the user.
-            E.g. A car is viewed as a car rather than its individual components.
-            \n\n Data Abstraction may also be defined as the process of identifying only the required characteristics of an object
-            ignoring the irrelevant details.The properties and behaviors of an object differentiate it from other objects of similar type
-            and also help in classifying/grouping the objects.
-            \n\n Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the
-            speed of car or applying brakes will stop the car but he does not know about how on pressing the accelerator the speed is
-            actually increasing, he does not know about the inner mechanism of the car or the implementation of accelerator,
-            brakes etc in the car. This is what abstraction is.
-            \n\n In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+            <![CDATA[<html><pre style="text-align:center">
 
-            \n\n Abstract classes and Abstract methods :
-            \n\n 1. An abstract class is a class that is declared with abstract keyword.
-            \n 2. An abstract method is a method that is declared without an implementation.
-            \n 3. An abstract class may or may not have all abstract methods. Some of them can be concrete methods
-            \n 4. A method defined abstract must always be redefined in the subclass,thus making overriding compulsory OR either make subclass itself abstract.
-            \n 5. Any class that contains one or more abstract methods must also be declared with abstract keyword.
-            \n 6. There can be no object of an abstract class.That is, an abstract class can not be directly instantiated with the new operator.
-            \n 7. An abstract class can have parametrized constructors and default constructor is always present in an abstract class.
+            <pre>Data Abstraction is the property by virtue of which only the essential details are displayed to the user.<br />The trivial or the non-essentials units are not displayed to the user.<br />E.g. A car is viewed as a car rather than its individual components.<br /><br />Data Abstraction may also be defined as the process of identifying only the required characteristics of an object<br />ignoring the irrelevant details.The properties and behaviors of an object differentiate it from other objects of similar type<br />and also help in classifying/grouping the objects.<br /><br />Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the<br />speed of car or applying brakes will stop the car but he does not know about how on pressing the accelerator the speed is<br />actually increasing, he does not know about the inner mechanism of the car or the implementation of accelerator,<br />brakes etc in the car. This is what abstraction is.<br /><br />In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.<br /><br />Abstract classes and Abstract methods :<br />1. An abstract class is a class that is declared with abstract keyword.<br />2. An abstract method is a method that is declared without an implementation.<br />3. An abstract class may or may not have all abstract methods. Some of them can be concrete methods<br />4. A method defined abstract must always be redefined in the subclass,thus making overriding compulsory OR either make subclass itself abstract.<br />5. Any class that contains one or more abstract methods must also be declared with abstract keyword.<br />6. There can be no object of an abstract class.That is, an abstract class can not be directly instantiated with the new operator.<br />7. An abstract class can have parametrized constructors and default constructor is always present in an abstract class.<br /><br />Consider a classic "shape" example, perhaps used in a computer-aided design system or game simulation.<br />The base type is "shape" and each shape has a color, size and so on. From this, specific types of shapes are<br />derived(inherited)-circle, square, triangle and so on &ndash; each of which may have additional characteristics and behaviors.<br /><br />For example, certain shapes can be flipped. Some behaviors may be different, such as when you want to calculate the area<br />of a shape. The type hierarchy embodies both the similarities and differences between the shapes.<br /><br />Example:</pre>
 
-            \n\n Consider a classic "shape" example, perhaps used in a computer-aided design system or game simulation.
-            The base type is "shape" and each shape has a color, size and so on. From this, specific types of shapes are
-            derived(inherited)-circle, square, triangle and so on – each of which may have additional characteristics and behaviors.
-            \n For example, certain shapes can be flipped. Some behaviors may be different, such as when you want to calculate the area
-            of a shape. The type hierarchy embodies both the similarities and differences between the shapes.
+          <pre style="margin: 0; line-height: 125%;"><em style="color: #008800; font-weight: bold;">abstract</em> <em style="color: #008800; font-weight: bold;">class</em> <em style="color: #bb0066; font-weight: bold;">Shape<br /></em><em style="color: #333333;">{<br /></em>String color<em style="color: #333333;">;<br /></em><br /><em style="color: #888888;">// these are abstract methods<br /></em><em style="color: #008800; font-weight: bold;">abstract</em> <em style="color: #333399; font-weight: bold;">double</em> <em style="color: #0066bb; font-weight: bold;">area</em><em style="color: #333333;">();<br /></em><em style="color: #008800; font-weight: bold;">public</em> <em style="color: #008800; font-weight: bold;">abstract</em> String <em style="color: #0066bb; font-weight: bold;">toString</em><em style="color: #333333;">();<br /></em><br /><em style="color: #888888;">// abstract class can have constructor<br /></em><em style="color: #008800; font-weight: bold;">public</em> <em style="color: #0066bb; font-weight: bold;">Shape</em><em style="color: #333333;">(</em>String color<em style="color: #333333;">)</em> <em style="color: #333333;">{<br /></em> System<em style="color: #333333;">.</em><em style="color: #0000cc;">out</em><em style="color: #333333;">.</em><em style="color: #0000cc;">println</em><em style="color: #333333;">(</em><em style="background-color: #fff0f0;">"Shape constructor called"</em><em style="color: #333333;">);<br /></em> <em style="color: #008800; font-weight: bold;">this</em><em style="color: #333333;">.</em><em style="color: #0000cc;">color</em> <em style="color: #333333;">=</em> color<em style="color: #333333;">;<br /></em> <em style="color: #333333;">}<br /></em>
+<br /><em style="color: #888888;">// this is a concrete method<br /></em><em style="color: #008800; font-weight: bold;">public</em> String <em style="color: #0066bb; font-weight: bold;">getColor</em><em style="color: #333333;">()</em> <em style="color: #333333;">{<br /></em><em style="color: #008800; font-weight: bold;">return</em> color<em style="color: #333333;">;<br /></em><em style="color: #333333;">}<br /></em><em style="color: #333333;">}<br /></em><em style="color: #008800; font-weight: bold;">class</em> <em style="color: #bb0066; font-weight: bold;">Circle</em> <em style="color: #008800; font-weight: bold;">extends</em> Shape<br /><em style="color: #333333;">{<br /></em><em style="color: #333399; font-weight: bold;">double</em> radius<em style="color: #333333;">;<br /></em><br /><em style="color: #008800; font-weight: bold;">public</em> <em style="color: #0066bb; font-weight: bold;">Circle</em><em style="color: #333333;">(</em>String color<em style="color: #333333;">,</em><em style="color: #333399; font-weight: bold;">double</em> radius<em style="color: #333333;">)</em> <em style="color: #333333;">{<br /></em><br /><em style="color: #888888;">// calling Shape constructor<br /></em> <em style="color: #008800; font-weight: bold;">super</em><em style="color: #333333;">(</em>color<em style="color: #333333;">);<br /></em> System<em style="color: #333333;">.</em><em style="color: #0000cc;">out</em><em style="color: #333333;">.</em><em style="color: #0000cc;">println</em><em style="color: #333333;">(</em><em style="background-color: #fff0f0;">"Circle constructor called"</em><em style="color: #333333;">);<br /></em><em style="color: #008800; font-weight: bold;">this</em><em style="color: #333333;">.</em><em style="color: #0000cc;">radius</em> <em style="color: #333333;">=</em> radius<em style="color: #333333;">;<br /></em><em style="color: #333333;">}<br /></em><br /> <em style="color: #555555; font-weight: bold;">@Override<br /></em> <em style="color: #333399; font-weight: bold;">double</em> <em style="color: #0066bb; font-weight: bold;">area</em><em style="color: #333333;">()</em> <em style="color: #333333;">{<br /></em> <em style="color: #008800; font-weight: bold;">return</em> Math<em style="color: #333333;">.</em><em style="color: #0000cc;">PI</em> <em style="color: #333333;">*</em> Math<em style="color: #333333;">.</em><em style="color: #0000cc;">pow</em><em style="color: #333333;">(</em>radius<em style="color: #333333;">,</em> <em style="color: #0000dd; font-weight: bold;">2</em><em style="color: #333333;">);<br /></em> <em style="color: #333333;">}<br /></em><br /><em style="color: #555555; font-weight: bold;">@Override<br /></em> <em style="color: #008800; font-weight: bold;">public</em> String <em style="color: #0066bb; font-weight: bold;">toString</em><em style="color: #333333;">()</em> <em style="color: #333333;">{<br /></em><em style="color: #008800; font-weight: bold;">return</em> <em style="background-color: #fff0f0;">"Circle color is "</em> <em style="color: #333333;">+</em> <em style="color: #008800; font-weight: bold;">super</em><em style="color: #333333;">.</em><em style="color: #0000cc;">color</em> <em style="color: #333333;">+<br /></em><em style="background-color: #fff0f0;">"and area is : "</em> <em style="color: #333333;">+</em> area<em style="color: #333333;">();<br /></em><em style="color: #333333;">}<br /></em><br /><em style="color: #333333;">}<br /></em> <em style="color: #008800; font-weight: bold;">class</em> <em style="color: #bb0066; font-weight: bold;">Rectangle</em> <em style="color: #008800; font-weight: bold;">extends</em> Shape<em style="color: #333333;">{<br /></em>
+<em style="color: #333399; font-weight: bold;">double</em> length<em style="color: #333333;">;<br /></em> <em style="color: #333399; font-weight: bold;">double</em> width<em style="color: #333333;">;<br /></em><br /><em style="color: #008800; font-weight: bold;">public</em> <em style="color: #0066bb; font-weight: bold;">Rectangle</em><em style="color: #333333;">(</em>String color<em style="color: #333333;">,</em><em style="color: #333399; font-weight: bold;">double</em> length<em style="color: #333333;">,</em><em style="color: #333399; font-weight: bold;">double</em> width<em style="color: #333333;">)</em> <em style="color: #333333;">{<br /></em> <em style="color: #888888;">// calling Shape constructor<br /></em><em style="color: #008800; font-weight: bold;">super</em><em style="color: #333333;">(</em>color<em style="color: #333333;">);<br /></em>System<em style="color: #333333;">.</em><em style="color: #0000cc;">out</em><em style="color: #333333;">.</em><em style="color: #0000cc;">println</em><em style="color: #333333;">(</em><em style="background-color: #fff0f0;">"Rectangle constructor called"</em><em style="color: #333333;">);<br /></em><em style="color: #008800; font-weight: bold;">this</em><em style="color: #333333;">.</em><em style="color: #0000cc;">length</em> <em style="color: #333333;">=</em> length<em style="color: #333333;">;<br /></em><em style="color: #008800; font-weight: bold;">this</em><em style="color: #333333;">.</em><em style="color: #0000cc;">width</em> <em style="color: #333333;">=</em> width<em style="color: #333333;">;<br /></em><em style="color: #333333;">}<br /></em><br /><em style="color: #555555; font-weight: bold;">@Override<br /></em> <em style="color: #333399; font-weight: bold;">double</em> <em style="color: #0066bb; font-weight: bold;">area</em><em style="color: #333333;">()</em> <em style="color: #333333;">{<br /></em> <em style="color: #008800; font-weight: bold;">return</em> length<em style="color: #333333;">*</em>width<em style="color: #333333;">;<br /></em><em style="color: #333333;">}<br /></em><br /><em style="color: #555555; font-weight: bold;">@Override<br /></em><em style="color: #008800; font-weight: bold;">public</em> String <em style="color: #0066bb; font-weight: bold;">toString</em><em style="color: #333333;">()</em> <em style="color: #333333;">{<br /></em><em style="color: #008800; font-weight: bold;">return</em> <em style="background-color: #fff0f0;">"Rectangle color is "</em> <em style="color: #333333;">+</em> <em style="color: #008800; font-weight: bold;">super</em><em style="color: #333333;">.</em><em style="color: #0000cc;">color</em> <em style="color: #333333;">+<br /></em><em style="background-color: #fff0f0;">"and area is : "</em> <em style="color: #333333;">+</em> area<em style="color: #333333;">();<br /></em><em style="color: #333333;">}<br /></em><br /><em style="color: #333333;">}<br /></em><em style="color: #008800; font-weight: bold;">public</em> <em style="color: #008800; font-weight: bold;">class</em> <em style="color: #bb0066; font-weight: bold;">Test<br /></em><em style="color: #333333;">{<br /></em><em style="color: #008800; font-weight: bold;">public</em> <em style="color: #008800; font-weight: bold;">static</em> <em style="color: #333399; font-weight: bold;">void</em> <em style="color: #0066bb; font-weight: bold;">main</em><em style="color: #333333;">(</em>String<em style="color: #333333;">[]</em> args<em style="color: #333333;">)<br /></em><em style="color: #333333;">{<br /></em>Shape s1 <em style="color: #333333;">=</em> <em style="color: #008800; font-weight: bold;">new</em> Circle<em style="color: #333333;">(</em><em style="background-color: #fff0f0;">"Red"</em><em style="color: #333333;">,</em> <em style="color: #6600ee; font-weight: bold;">2.2</em><em style="color: #333333;">);<br /></em>Shape s2 <em style="color: #333333;">=</em> <em style="color: #008800; font-weight: bold;">new</em> Rectangle<em style="color: #333333;">(</em><em style="background-color: #fff0f0;">"Yellow"</em><em style="color: #333333;">,</em> <em style="color: #0000dd; font-weight: bold;">2</em><em style="color: #333333;">,</em> <em style="color: #0000dd; font-weight: bold;">4</em><em style="color: #333333;">);<br /></em><br />System<em style="color: #333333;">.</em><em style="color: #0000cc;">out</em><em style="color: #333333;">.</em><em style="color: #0000cc;">println</em><em style="color: #333333;">(</em>s1<em style="color: #333333;">.</em><em style="color: #0000cc;">toString</em><em style="color: #333333;">());<br /></em>System<em style="color: #333333;">.</em><em style="color: #0000cc;">out</em><em style="color: #333333;">.</em><em style="color: #0000cc;">println</em><em style="color: #333333;">(</em>s2<em style="color: #333333;">.</em><em style="color: #0000cc;">toString</em><em style="color: #333333;">());<br /></em><em style="color: #333333;">}<br /></em><em style="color: #333333;">}<br /></em>
+</pre>
 
-            \n\n Example:
+           <pre><strong>Output</strong>:<br /><em> Shape constructor called</em><br /><em> Circle constructor called</em><br /><em> Shape constructor called</em><br /><em> Rectangle constructor called</em><br /><em> Circle color is Redand area is : 15.205308443374602</em><br /><em> Rectangle color is Yellowand area is : 8.0</em></pre>
 
-            \n\n abstract class Shape
-            \n{
-            \nString color;
-            \n
-            \n// these are abstract methods
-            \nabstract double area();
-            \npublic abstract String toString();
-            \n
-            \n          // abstract class can have constructor
-            \n        public Shape(String color) {
-            \n      System.out.println("Shape constructor called");
-            \n    this.color = color;
-            \n  }
-            \n
-            \n
-            \n// this is a concrete method
-            \npublic String getColor() {
-            \nreturn color;
-            \n}
-            \n}
-            \nclass Circle extends Shape
-            \n{
-            \ndouble radius;
-            \n
-            \npublic Circle(String color,double radius) {
-            \n
-            \n          // calling Shape constructor
-            \n        super(color);
-            \n      System.out.println("Circle constructor called");
-            \n    this.radius = radius;
-            \n  }
-            \n
-            \n          @Override
-            \n        double area() {
-            \n      return Math.PI * Math.pow(radius, 2);
-            \n    }
-            \n
-            \n          @Override
-            \n        public String toString() {
-            \n      return "Circle color is " + super.color +
-            \n    "and area is : " + area();
-            \n  }
-            \n
-            \n          }
-            \n        class Rectangle extends Shape{
-            \n
-            \n          double length;
-            \n        double width;
-            \n
-            \n          public Rectangle(String color,double length,double width) {
-            \n        // calling Shape constructor
-            \n      super(color);
-            \n    System.out.println("Rectangle constructor called");
-            \n  this.length = length;
-            \nthis.width = width;
-            \n}
-            \n
-            \n          @Override
-            \n        double area() {
-            \n      return length*width;
-            \n    }
-            \n
-            \n          @Override
-            \n        public String toString() {
-            \n      return "Rectangle color is " + super.color +
-            \n    "and area is : " + area();
-            \n  }
-            \n
-            \n          }
-            \n        public class Test
-            \n      {
-            \n    public static void main(String[] args)
-            \n  {
-            \nShape s1 = new Circle("Red", 2.2);
-            \nShape s2 = new Rectangle("Yellow", 2, 4);
-            \n
-            \n          System.out.println(s1.toString());
-            \n        System.out.println(s2.toString());
-            \n      }
-            \n    }
-            \n\nOutput:
-
-            \n\n Shape constructor called
-            \n Circle constructor called
-            \n Shape constructor called
-            \n Rectangle constructor called
-            \n Circle color is Redand area is : 15.205308443374602
-            \n Rectangle color is Yellowand area is : 8.0
-
+            </pre></html>
+            ]]>
         </item>
         <!--What is Encapsulation?-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
+
             Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a
             single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through
             the methods of their current class. Therefore, it is also known as data hiding.
@@ -789,6 +624,9 @@ Give a brief overview of the project or situation. Provide only enough backgroun
             \n
             \n Output
             \n Name : James Age : 20
+
+            </pre></html>
+            ]]>
         </item>
         <!--What is the difference between abstract classes and interfaces?-->
         <item>
