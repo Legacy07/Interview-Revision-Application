@@ -561,791 +561,203 @@ Give a brief overview of the project or situation. Provide only enough backgroun
         <!--What is Encapsulation?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
-            Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a
-            single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through
-            the methods of their current class. Therefore, it is also known as data hiding.
-            \n\n To achieve encapsulation in Java −
-            \n &#8226; Declare the variables of a class as private.
-            \n &#8226; Provide public setter and getter methods to modify and view the variables values.
-
-            \n\n Examples:
-            \n\n
-            /* File name : EncapTest.java */
-            \npublic class EncapTest {
-            \nprivate String name;
-            \nprivate String idNum;
-            \nprivate int age;
-            \n
-            \npublic int getAge() {
-            \nreturn age;
-            \n}
-            \n
-            \npublic String getName() {
-            \nreturn name;
-            \n}
-            \n
-            \n public String getIdNum() {
-            \nreturn idNum;
-            \n}
-            \n
-            \n public void setAge( int newAge) {
-            \n age = newAge;
-            \n }
-
-            \n public void setName(String newName) {
-            \n name = newName;
-            \n  }
-            \n
-            \n public void setIdNum( String newId) {
-            \n idNum = newId;
-            \n  }
-            \n  }
-
-            \n\n The public setXXX() and getXXX() methods are the access points of the instance variables of the EncapTest class.
-            Normally, these methods are referred as getters and setters. Therefore, any class that wants to access the variables should
-            access them through these getters and setters.
-            \nThe variables of the EncapTest class can be accessed using the following program −
-            \n\n
-            /* File name : RunEncap.java */
-            \npublic class RunEncap {
-            \n
-            \n          public static void main(String args[]) {
-            \n        EncapTest encap = new EncapTest();
-            \n      encap.setName("James");
-            \n    encap.setAge(20);
-            \n  encap.setIdNum("12343ms");
-            \n
-            \n          System.out.print("Name : " + encap.getName() + " Age : " + encap.getAge());
-            \n        }
-            \n      }
-
-            \n\n This will produce the following result −
-            \n
-            \n Output
-            \n Name : James Age : 20
-
+            <pre>Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a<br />single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through<br />the methods of their current class. Therefore, it is also known as data hiding.<br />To achieve encapsulation in Java; <br />- Declare the variables of a class as private.<br />- Provide public setter and getter methods to modify and view the variables values.<br /><br /><strong>Examples</strong>:</pre>
+<pre><em>/* File name : EncapTest.java */</em><br /><em>public class EncapTest {</em><br /><em>private String name;</em><br /><em>private String idNum;</em><br /><em>private int age;</em><br /><br /><em>public int getAge() {</em><br /><em>return age;</em><br /><em>}</em><br /><br /><em>public String getName() {</em><br /><em>return name;</em><br /><em>}</em><br /><br /><em>public String getIdNum() {</em><br /><em>return idNum;</em><br /><em>}</em><br /><br /><em>public void setAge( int newAge) {</em><br /><em>age = newAge;</em><br /><em>}</em><br /><br /><em>public void setName(String newName) {</em><br /><em>name = newName;</em><br /><em>}</em><br /><br /><em>public void setIdNum( String newId) {</em><br /><em>idNum = newId;</em><br /><em>}</em><br /><em>}</em><br /><br />The public setXXX() and getXXX() methods are the access points of the instance variables of the EncapTest class.<br />Normally, these methods are referred as getters and setters. Therefore, any class that wants to access the variables should<br />access them through these getters and setters.<br />The variables of the EncapTest class can be accessed using the following program; <br /><br /><em>/* File name : RunEncap.java */</em><br /><em>public class RunEncap {</em><br /><br /><em>   public static void main(String args[]) </em><br /><em>   {</em><br /><em>      EncapTest encap = new EncapTest();</em><br /><em>      encap.setName("James");</em><br /><em>      encap.setAge(20);</em><br /><em>      encap.setIdNum("12343ms");</em><br /><br /><em>      System.out.print("Name : " + encap.getName() + " Age : " + encap.getAge());</em><br /><em>   }</em><br /><em>}</em></pre>
+<pre>This will produce the following result &minus;<br /><br /><strong>Output;</strong><br />Name : James Age : 20</pre>
             </pre></html>
             ]]>
         </item>
         <!--What is the difference between abstract classes and interfaces?-->
         <item>
-            The key technical differences between an abstract class and an interface are:
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>The key technical differences between an <strong>abstract class</strong> and an <strong>interface</strong> are:<br /><br />- Abstract classes can have constants, members, method stubs (methods without a body) and defined methods,<br />whereas interfaces can only have constants and methods stubs.<br /><br />- Methods and members of an abstract class can be defined with any visibility,<br />whereas all methods of an interface must be defined as public (they are defined public by default).<br /><br />- When inheriting an abstract class, a concrete child class must define the abstract methods,<br />whereas an abstract class can extend another abstract class and abstract methods from the parent class don\'t have to be defined.<br /><br />- Similarly, an interface extending another interface is not responsible for implementing methods from the parent<br />interface. This is because interfaces cannot define any implementation.<br /><br />- A child class can only extend a single class (abstract or concrete), whereas an interface can extend<br />or a class can implement multiple other interfaces.<br /><br />- A child class can define abstract methods with the same or less restrictive visibility,<br />whereas a class implementing an interface must define the methods with the exact same visibility (public).</pre>
 
-            \n\n &#8226; Abstract classes can have constants, members, method stubs (methods without a body) and defined methods,
-            whereas interfaces can only have constants and methods stubs.
-
-            \n &#8226; Methods and members of an abstract class can be defined with any visibility,
-            whereas all methods of an interface must be defined as public (they are defined public by default).
-
-            \n &#8226; When inheriting an abstract class, a concrete child class must define the abstract methods,
-            whereas an abstract class can extend another abstract class and abstract methods from the parent class don\'t have to be defined.
-
-            \n &#8226; Similarly, an interface extending another interface is not responsible for implementing methods from the parent
-            interface. This is because interfaces cannot define any implementation.
-
-            \n &#8226; A child class can only extend a single class (abstract or concrete), whereas an interface can extend
-            or a class can implement multiple other interfaces.
-
-            \n &#8226; A child class can define abstract methods with the same or less restrictive visibility,
-            whereas a class implementing an interface must define the methods with the exact same visibility (public).
-
+            </pre></html>
+            ]]>
         </item>
         <!--What is method overloading and method overriding?-->
         <item>
-            Method Overloading :
-            \n\n &#8226; In Method Overloading, Methods of the same class shares the same name but each method must have different
-            number of parameters or parameters having different types and order.
-            \n &#8226; Method Overloading is to “add” or “extend” more to method’s behavior.
-            \n &#8226; It is a compile time polymorphism.
-            \n &#8226; The methods must have different signature.
-            \n &#8226; It may or may not need inheritance in Method Overloading.
-
-            \n\n Example:
-            \n\n class Adder {
-            \nStatic int add(int a, int b)
-            \n{
-            \nreturn a+b;
-            \n}
-            \nStatic double add( double a, double b)
-            \n{
-            \nreturn a+b;
-            \n}
-            \npublic static void main(String args[])
-            \n{
-            \nSystem.out.println(Adder.add(11,11));
-            \nSystem.out.println(Adder.add(12.3,12.6));
-            \n}}
-
-            \n\n Method Overriding:
-            \n\n &#8226; In Method Overriding, sub class have the same method with same name and exactly the same number and
-            type of parameters and same return type as a super class.
-            \n Method Overriding is to “Change” existing behavior of method.
-            \n It is a run time polymorphism.
-            \n The methods must have same signature.
-            \n It always requires inheritance in Method Overriding.
-
-            \n\n Example:
-            \n\n class Car {
-            \n void run(){
-            \n System.out.println(“car is running”);
-            \n }
-            \n Class Audi extends Car{
-            \n void run()
-            \n {
-            \n System.out.prinltn(“Audi is running safely with 100km”);
-            \n }
-            \n public static void main( String args[])
-            \n {
-            \n Car b=new Audi();
-            \n b.run();
-            \n }
-            \n }
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><strong>Method Overloading</strong>:<br />- In Method Overloading, Methods of the same class shares the same name but each method must have different<br />number of parameters or parameters having different types and order.<br />- Method Overloading is to "add" or "extend" more to method\'s behavior.<br />- It is a compile time polymorphism.<br />- The methods must have different signature.<br />- It may or may not need inheritance in Method Overloading.</pre>
+<pre> <br /><strong>Example</strong>:<br /><em>class Adder {</em><br /><em>Static int add(int a, int b)</em><br /><em>{</em><br /><em>return a+b;</em><br /><em>}</em><br /><em>Static double add( double a, double b)</em><br /><em>{</em><br /><em>return a+b;</em><br /><em>}</em><br /><em>public static void main(String args[])</em><br /><em>{</em><br /><em>System.out.println(Adder.add(11,11));</em><br /><em>System.out.println(Adder.add(12.3,12.6));</em><br /><em>}}</em><br /><br /><strong>Method Overriding:</strong><br /><br />- In Method Overriding, sub class have the same method with same name and exactly the same number and<br />type of parameters and same return type as a super class.<br />- Method Overriding is to "Change" existing behavior of method.<br />- It is a run time polymorphism.<br />- The methods must have same signature.<br />- It always requires inheritance in Method Overriding.<br /><br /><strong>Example</strong>:<br /><br /><em>class Car {</em><br /><em>void run(){</em><br /><em>System.out.println("car is running");</em><br /><em>}</em><br /><em>Class Audi extends Car{</em><br /><em>void run()</em><br /><em>{</em><br /><em>System.out.prinltn("Audi is running safely with 100km");</em><br /><em>}</em><br /><em>public static void main( String args[])</em><br /><em>{</em><br /><em>Car b=new Audi();</em><br /><em>b.run();</em><br /><em>}</em><br /><em>}</em></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Can you override a private or static method in Java?-->
         <item>
-            You cannot override a private or static method in Java. If you create a similar method with same return type and same
-            method arguments in child class then it will hide the super class method; this is known as method hiding. Similarly,
-            you cannot override a private method in sub class because it’s not accessible there. What you can do is create another
-            private method with the same name in the child class.
+             <![CDATA[<html><pre style="text-align:center">
+             <pre>You cannot override a private or static method in Java. If you create a similar method with same return type and same<br />method arguments in child class then it will hide the super class method; this is known as method hiding. Similarly,<br />you cannot override a private method in sub class because it\'s not accessible there. What you can do is create another<br />private method with the same name in the child class.<br /><br /><strong>Example</strong>:<br /><br /><em>class Base {</em><br /><em>private static void display() {</em><br /><em>System.out.println("Static or class method from Base");</em><br /><em>}</em><br /><em>public void print() {</em><br /><em>System.out.println("Non-static or instance method from Base");</em><br /><em>}</em><br /><em>class Derived extends Base {</em><br /><em>private static void display() {</em><br /><em>System.out.println("Static or class method from Derived");</em><br /><em>}</em><br /><em>public void print() {</em><br /><em>System.out.println("Non-static or instance method from Derived");</em><br /><em>}</em><br /><em>public class test {</em><br /><em>public static void main(String args[])</em><br /><em>{</em><br /><em>Base obj= new Derived();</em><br /><em>obj1.display();</em><br /><em>obj1.print();</em><br /><em>}</em><br /><em>}</em></pre>
 
-            \n\n Example:
-            \n\n class Base {
-            \n private static void display() {
-            \n System.out.println("Static or class method from Base");
-            \n }
-            \n public void print() {
-            \n System.out.println("Non-static or instance method from Base");
-            \n }
-            \n class Derived extends Base {
-            \n private static void display() {
-            \n System.out.println("Static or class method from Derived");
-            \n }
-            \n public void print() {
-            \n System.out.println("Non-static or instance method from Derived");
-            \n }
-            \n public class test {
-            \n public static void main(String args[])
-            \n {
-            \n Base obj= new Derived();
-            \n obj1.display();
-            \n obj1.print();
-            \n }
-            \n }
-
+            </pre></html>
+            ]]>
         </item>
         <!--What is multiple inheritance? Is it supported by Java?-->
         <item>
-            If a child class inherits the property from multiple classes is known as multiple inheritance. Java does not allow to
-            extend multiple classes.
-            The problem with multiple inheritance is that if multiple parent classes have a same method name, then at runtime
-            it becomes difficult for the compiler to decide which method to execute from the child class.
-            Therefore, Java doesn’t support multiple inheritance. The problem is commonly referred as Diamond Problem.
+            <![CDATA[<html><pre style="text-align:center">
+           <pre>If a child class inherits the property from multiple classes is known as multiple inheritance. Java does not allow to<br />extend multiple classes.<br />The problem with multiple inheritance is that if multiple parent classes have a same method name, then at runtime<br />it becomes difficult for the compiler to decide which method to execute from the child class.<br />Therefore, Java doesn\'t support multiple inheritance. The problem is commonly referred as Diamond Problem.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is Association? -->
         <item>
-            Association is a relationship where all object have their own lifecycle and there is no owner.
-            Let’s take an example of Teacher and Student. Multiple students can associate with a single teacher and
-            a single student can associate with multiple teachers but there is no ownership between the objects and
-            both have their own lifecycle. These relationship can be one to one, One to many, many to one and many to many.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><strong>Association</strong> is a relationship where all object have their own lifecycle and there is no owner.<br />Let\'s take an example of Teacher and Student. Multiple students can associate with a single teacher and<br />a single student can associate with multiple teachers but there is no ownership between the objects and<br />both have their own lifecycle. These relationship can be one to one, One to many, many to one and many to many.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What do you mean by aggregation?-->
         <item>
-            Aggregation is a specialized form of Association where all object have their own lifecycle but there is ownership and
-            child object can not belongs to another parent object. Let’s take an example of Department and teacher.
-            A single teacher can not belong to multiple departments, but if we delete the department teacher object will not destroy.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><strong>Aggregation</strong> is a specialized form of Association where all object have their own lifecycle but there is ownership and<br />child object can not belongs to another parent object. Let\'s take an example of Department and teacher.<br />A single teacher can not belong to multiple departments, but if we delete the department teacher object will not destroy.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is composition in Java?-->
         <item>
-            Composition is again specialized form of Aggregation and we can call this as a "death" relationship.
-            It is a strong type of Aggregation. Child object dose not have their lifecycle and if parent object deletes
-            all child object will also be deleted. Let’s take again an example of relationship between House and rooms.
-            House can contain multiple rooms there is no independent life of room and any room can not belong to two different house
-            if we delete the house room will automatically delete.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><strong>Composition</strong> is again specialized form of Aggregation and we can call this as a "death" relationship.<br />It is a strong type of Aggregation. Child object dose not have their lifecycle and if parent object deletes<br />all child object will also be deleted. Let\'s take again an example of relationship between House and rooms.<br />House can contain multiple rooms there is no independent life of room and any room can not belong to two different house<br />if we delete the house room will automatically delete.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is the difference between Error & Exception and how can you handle Java exceptions??-->
         <item>
-            An error is an irrecoverable condition occurring at runtime. Such as OutOfMemory error.
-            These JVM errors you can not repair them at runtime.Though error can be caught in catch block but the execution
-            of application will come to a halt and is not recoverable.
-            \n While exceptions are conditions that occur because of bad input or human error etc.
-            e.g. FileNotFoundException will be thrown if the specified file does not exist.
-            Or a NullPointerException will take place if you try using a null reference.
-            In most of the cases it is possible to recover from an exception
-            (probably by giving user a feedback for entering proper values etc).
-            \n\n There are five keywords used to handle exceptions in java:
-
-            \n\n 1. try
-            \n 2. catch
-            \n 3. finally
-            \n 4. throw
-            \n 5. throws
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>An error is an irrecoverable condition occurring at runtime. Such as OutOfMemory error.<br />These JVM errors you can not repair them at runtime.Though error can be caught in catch block but the execution<br />of application will come to a halt and is not recoverable.<br />While exceptions are conditions that occur because of bad input or human error etc.<br />e.g. FileNotFoundException will be thrown if the specified file does not exist.<br />Or a NullPointerException will take place if you try using a null reference.<br />In most of the cases it is possible to recover from an exception<br />(probably by giving user a feedback for entering proper values etc).<br /><br />There are five keywords used to handle exceptions in Java:<br /><br />1. try<br />2. catch<br />3. finally<br />4. throw<br />5. throws</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What are the differences between Checked Exception and Unchecked Exception?-->
         <item>
-            Checked Exception
-            \n\n &#8226; The classes that extend Throwable class except RuntimeException and Error are known as checked exceptions.
-            \n &#8226; Checked exceptions are checked at compile-time.
-            \n &#8226; Example: IOException, SQLException etc.
-            \n\n Unchecked Exception
-            \n &#8226; The classes that extend RuntimeException are known as unchecked exceptions.
-            \n &#8226; Unchecked exceptions are not checked at compile-time.
-            \n &#8226; Example: ArithmeticException, NullPointerException etc.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><strong>Checked Exception</strong><br />- The classes that extend Throwable class except RuntimeException and Error are known as checked exceptions.<br />- Checked exceptions are checked at compile-time.<br />- Example: IOException, SQLException etc.<br /><br /><strong>Unchecked Exception</strong><br />- The classes that extend RuntimeException are known as unchecked exceptions.<br />- Unchecked exceptions are not checked at compile-time.<br />- Example: ArithmeticException, NullPointerException etc.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What purpose does the keywords final, finally, and finalize fulfill?-->
         <item>
-            Final:
-            \n Final is used to apply restrictions on class, method and variable. Final class can’t be inherited,
-            final method can’t be overridden and final variable value can’t be changed.
-            \n\n Example:
-            \n\n class FinalVarExample {
-            \n public static void main( String args[])
-            \n {
-            \n final int a=10;   // Final variable
-            \n a=50;             //Error as value can\'t be changed
-            \n }
-
-            \n\n Finally
-            \n Finally is used to place important code, it will be executed whether exception is handled or not.
-
-            \n\n Example:
-            \n\n class FinallyExample {
-            \n public static void main(String args[]){
-            \n try {
-            \n int x=100;
-            \n }
-            \n catch(Exception e) {
-            \n System.out.println(e);
-            \n }
-            \n finally {
-            \n System.out.println("finally block is executing");}
-            \n }}
-            \n }
-
-            \n\n Finalize
-            \n Finalize is used to perform clean up processing just before object is garbage collected.
-
-            \n\n Example:
-            \n\n class FinalizeExample {
-            \n public void finalize() {
-            \n System.out.println("Finalize is called");
-            \n }
-            \n public static void main(String args[])
-            \n {
-            \n FinalizeExample f1=new FinalizeExample();
-            \n FinalizeExample f2=new FinalizeExample();
-            \n f1= NULL;
-            \n f2=NULL;
-            \n System.gc();
-            \n }
-            \n }
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><strong>Final</strong>:<br />Final is used to apply restrictions on class, method and variable. Final class can\'t be inherited,<br />final method can\'t be overridden and final variable value can\'t be changed.<br /><br /><strong>Example</strong>:<br /><em>class FinalVarExample {</em><br /><br /><em>public static void main( String args[])</em><br /><em>{</em><br /><em>final int a=10;   // Final variable</em><br /><em>a=50;             //Error as value can\'t be changed</em><br /><em>}</em><br /><br /><strong>Finally:</strong><br />Finally is used to place important code, it will be executed whether exception is handled or not.<br /><br /><strong>Example</strong>:<br /><em>class FinallyExample {</em><br /><br /><em>public static void main(String args[]){</em><br /><em>try {</em><br /><em>int x=100;</em><br /><em>}</em><br /><em>catch(Exception e) {</em><br /><em>System.out.println(e);</em><br /><em>}</em><br /><em>finally {</em><br /><em>System.out.println("finally block is executing");}</em><br /><em>}}</em><br /><em>}</em><br /><br /><strong>Finalize</strong><br />Finalize is used to perform clean up processing just before object is garbage collected.<br /><br /><strong>Example</strong>:<br /><em>class FinalizeExample {</em><br /><br /><em>public void finalize() {</em><br /><em>System.out.println("Finalize is called");</em><br /><em>}</em><br /><br /><em>public static void main(String args[])</em><br /><em>{</em><br /><em>FinalizeExample f1=new FinalizeExample();</em><br /><em>FinalizeExample f2=new FinalizeExample();</em><br /><em>f1= NULL;</em><br /><em>f2=NULL;</em><br /><em>System.gc();</em><br /><em>}</em><br /><em>}</em></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What are the differences between throw and throws?-->
         <item>
-            1. throws clause is used to declare an exception and throw keyword is used to throw an exception explicitly.
-            \n 2. If we see syntax wise then throw is followed by an instance variable and throws is followed by exception class names.
-            \n 3. The keyword throw is used inside method body to invoke an exception and throws clause is used in method declaration
-            (signature).
-            \n 4. You cannot declare multiple exceptions with throw. You can declare multiple exception e.g. public void method()throws
-            IOException,SQLException.
-            \n 5. checked exceptions can not be propagated with throw only because it is explicitly used to throw an particular exception. checked exception can be propagated with throws.
-
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>1. throws clause is used to declare an exception and throw keyword is used to throw an exception explicitly.<br />2. If we see syntax wise then throw is followed by an instance variable and throws is followed by exception class names.<br />3. The keyword throw is used inside method body to invoke an exception and throws clause is used in method declaration<br />(signature).<br />4. You cannot declare multiple exceptions with throw. You can declare multiple exception e.g. public void method()throws<br />IOException,SQLException.<br />5. Checked Exceptions can not be propagated with throw only because it is explicitly used to throw an particular exception. checked exception can be propagated with throws.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is exception propagation?-->
         <item>
-            After a method throws an exception, the runtime system searches the call stack for a method that
-            contains a block of code(exception handler) that can handle the exception. The search begins with
-            the method in which the error occurred and proceeds through the call stack in the reverse order in
-            which the methods were called. When an appropriate handler is found, the runtime system passes the
-            exception to the handler.
-            \n Also, there\'s a note-worthy point: Only unchecked exceptions are propagated. Checked exceptions throw compilation error
-
-            \n\n Lets say, we have a chain of methods where method3() calls method2() and method2() calls method1(). So when
-            \n 1) An exception occurs in the method3() and in method3() we don’t have any exception handler.
-            \n 2) Uncaught exception will be propagated downward in stack i.e it will check appropriate exception handler in the method2().
-            \n 3) Again in method2 if we don’t have any exception handler then again exception is propagated downward to method1()
-            where it finds exception handler.
-
-            \n\n Example:
-
-            \n\n  class ExceptionPropagation{
-            \n
-            \n          void method3(){
-            \n       int result = 100 / 0;  //Exception Generated
-            \n    }
-            \n
-            \n          void method2(){
-            \n       method3();
-            \n    }
-            \n
-            \n          void method1(){
-            \n       try{
-            \n    method2();
-            \n } catch(Exception e){
-            \n System.out.println("Exception is handled here");
-            \n }
-            \n }
-            \n
-            \n          public static void main(String args[]){
-            \n       ExceptionPropagation obj=new ExceptionPropagation();
-            \n    obj.method1();
-            \n System.out.println("Continue with Normal Flow...");
-            \n }
-            \n }
-
-            \n\n Output :
-
-            \n Exception is handled here
-
-            \n Continue with Normal Flow...
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>After a method throws an exception, the runtime system searches the call stack for a method that<br />contains a block of code(exception handler) that can handle the exception. The search begins with<br />the method in which the error occurred and proceeds through the call stack in the reverse order in<br />which the methods were called. When an appropriate handler is found, the runtime system passes the<br />exception to the handler.<br />Also, there\'s a note-worthy point: Only unchecked exceptions are propagated. Checked exceptions throw compilation error<br /><br />Lets say, we have a chain of methods where method3() calls method2() and method2() calls method1(). So when<br />1) An exception occurs in the method3() and in method3() we don\'t have any exception handler.<br />2) Uncaught exception will be propagated downward in stack i.e it will check appropriate exception handler in the method2().<br />3) Again in method2 if we don\'t have any exception handler then again exception is propagated downward to method1()<br />where it finds exception handler.<br /><br /><strong>Example</strong>:<br /><br /><em>class ExceptionPropagation{</em><br /><br /><em>void method3(){</em><br /><em>      int result = 100 / 0;  //Exception Generated</em><br /><em>}</em><br /><br /><em>void method2(){</em><br /><em>      method3();</em><br /><em>}</em><br /><br /><em>void method1(){</em><br /><em>try{</em><br /><em>   method2();</em><br /><em>} catch(Exception e){</em><br /><em>System.out.println("Exception is handled here");</em><br /><em>}</em><br /><em>}</em><br /><br /><em>public static void main(String args[]){</em><br /><em>ExceptionPropagation obj=new ExceptionPropagation();</em><br /><em>obj.method1();</em><br /><em>System.out.println("Continue with Normal Flow...");</em><br /><em>}</em><br /><em>}</em><br /><br /><strong>Output</strong>:<br /><br />Exception is handled here<br /><br />Continue with Normal Flow...</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--How to create a custom Exception?-->
         <item>
-            &#8226; class New1Exception extends Exception { }               // this will create Checked Exception
-            \n &#8226; class NewException extends IOException { }             // this will create Checked exception
-            \n &#8226;class NewException extends NullPointerException { }  // this will create UnChecked exception
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>- class New1Exception extends Exception { }               // this will create Checked Exception<br />- class NewException extends IOException { }             // this will create Checked exception<br />- class NewException extends NullPointerException { }  // this will create UnChecked exception</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What are the important methods of Java Exception Class?-->
         <item>
-            Exception and all of it’s subclasses doesn’t provide any specific methods and all of the methods are defined in the base
-            class Throwable.
-            \n\n
-            1. String getMessage() – This method returns the message String of Throwable and the message can be provided while creating the exception through it’s constructor.
-            \n 2. String getLocalizedMessage() – This method is provided so that subclasses can override it to provide locale specific message to the calling program. Throwable class implementation of this method simply use getMessage() method to return the exception message.
-            \n 3. Synchronized Throwable getCause() – This method returns the cause of the exception or null id the cause is unknown.
-            \n 4. String toString() – This method returns the information about Throwable in String format, the returned String contains the name of Throwable class and localized message.
-            \n 5. void printStackTrace() – This method prints the stack trace information to the standard error stream, this method is overloaded and we can pass PrintStream or PrintWriter as argument to write the stack trace information to the file or stream.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Exception and all of it\'s subclasses doesn\'t provide any specific methods and all of the methods are defined in the base<br />class Throwable.<br /><br />1. String getMessage() &ndash; This method returns the message String of Throwable and the message can be provided while creating the exception through it\'s constructor.<br />2. String getLocalizedMessage() &ndash; This method is provided so that subclasses can override it to provide locale specific message to the calling program. Throwable class implementation of this method simply use getMessage() method to return the exception message.<br />3. Synchronized Throwable getCause() &ndash; This method returns the cause of the exception or null id the cause is unknown.<br />4. String toString() &ndash; This method returns the information about Throwable in String format, the returned String contains the name of Throwable class and localized message.<br />5. void printStackTrace() &ndash; This method prints the stack trace information to the standard error stream, this method is overloaded and we can pass PrintStream or PrintWriter as argument to write the stack trace information to the file or stream.<br /><br /></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What are the differences between processes and threads?-->
         <item>
-            Key difference: Thread and Process are two closely related terms in multi-threading.
-            The main difference between the two terms is that the threads are a part of a process,
-            i.e. a process may contain one or more threads, but a thread cannot contain a process.
-            \n\n In programming, there are two basic units of execution: processes and threads.
-            They both execute a series of instructions. Both are initiated by a program or the operating system.
-            This article helps to differentiate between the two units.
-            \n\n Process A process is an instance of a program that is being executed. It contains the program code and its current activity.
-            Depending on the operating system, a process may be made up of multiple threads of execution that execute instructions
-            concurrently. A program is a collection of instructions; a process is the actual execution of those instructions.
-            \n\n A process has a self-contained execution environment. It has a complete set of private basic run-time resources;
-            in particular, each process has its own memory space. Processes are often considered similar to other programs or applications.
-            However, the running of a single application may in fact be a set of cooperating processes.
-            To facilitate communication between the processes, most operating systems use Inter Process Communication (IPC) resources,
-            such as pipes and sockets. The IPC resources can also be used for communication between processes on different systems.
-            \n Most applications in a virtual machine run as a single process. However, it can create additional processes using a process
-            builder object.
-            \n\n In computers, a thread can execute even the smallest sequence of programmed instructions that can be managed independently
-            by an operating system. The applications of threads and processes differ from one operating system to another.
-            However, the threads are made of and exist within a process; every process has at least one. Multiple threads can also
-            exist in a process and share resources, which helps in efficient communication between threads.
-            \n\n On a single processor, multitasking takes place as the processor switches between different threads; it is known
-            as multithreading. The switching happens so frequently that the threads or tasks are perceived to be running at the same time.
-            \n Threads can truly be concurrent on a multiprocessor or multi-core system, with every processor or core executing the
-            separate threads simultaneously.
-            \n\n In summary, threads may be considered lightweight processes, as they contain simple sets of instructions and can
-            run within a larger process. Computers can run multiple threads and processes at the same time.
-
-            \n\n Comparison between Process and Thread:
-
-            \n\n Process:
-            \n\n &#8226; An executing instance of a program is called a process.
-            \n &#8226; It has its own copy of the data segment of the parent process.
-            \n &#8226; Processes must use inter-process communication to communicate with sibling processes.
-            \n &#8226; Processes have considerable overhead.
-            \n &#8226; New processes require duplication of the parent process.
-            \n &#8226; Processes can only exercise control over child processes.
-            \n &#8226; Any change in the parent process does not affect child processes.
-            \n &#8226; Run in separate memory spaces.
-            \n &#8226; Most file descriptors are not shared.
-            \n &#8226; There is no sharing of file system context.
-            \n &#8226; It does not share signal handling.
-            \n &#8226; Process is controlled by the operating system.
-            \n &#8226; Processes are independent.
-
-            \n\n Thread:
-            \n\n &#8226; A thread is a subset of the process.
-            \n &#8226; It has direct access to the data segment of its process.
-            \n &#8226; Threads can directly communicate with other threads of its process.
-            \n &#8226; Threads have almost no overhead.
-            \n &#8226; New threads are easily created.
-            \n &#8226; Threads can exercise considerable control over threads of the same process.
-            \n &#8226; Any change in the main thread may affect the behavior of the other threads of the process.
-            \n &#8226; Run in shared memory spaces.
-            \n &#8226; It shares file descriptors.
-            \n &#8226; It shares file system context.
-            \n &#8226; It shares signal handling.
-            \n &#8226; Threads are controlled by programmer in a program.
-            \n &#8226; Threads are dependent.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Key difference: Thread and Process are two closely related terms in multi-threading.<br />The main difference between the two terms is that the threads are a part of a process,<br />i.e. a process may contain one or more threads, but a thread cannot contain a process.<br /><br />In programming, there are two basic units of execution: processes and threads.<br />They both execute a series of instructions. Both are initiated by a program or the operating system.<br />This article helps to differentiate between the two units.<br /><br />Process A process is an instance of a program that is being executed. It contains the program code and its current activity.<br />Depending on the operating system, a process may be made up of multiple threads of execution that execute instructions<br />concurrently. A program is a collection of instructions; a process is the actual execution of those instructions.<br /><br />A process has a self-contained execution environment. It has a complete set of private basic run-time resources;<br />in particular, each process has its own memory space. Processes are often considered similar to other programs or applications.<br />However, the running of a single application may in fact be a set of cooperating processes.<br />To facilitate communication between the processes, most operating systems use Inter Process Communication (IPC) resources,<br />such as pipes and sockets. The IPC resources can also be used for communication between processes on different systems.<br />Most applications in a virtual machine run as a single process. However, it can create additional processes using a process<br />builder object.<br /><br />In computers, a thread can execute even the smallest sequence of programmed instructions that can be managed independently<br />by an operating system. The applications of threads and processes differ from one operating system to another.<br />However, the threads are made of and exist within a process; every process has at least one. Multiple threads can also<br />exist in a process and share resources, which helps in efficient communication between threads.<br /><br />On a single processor, multitasking takes place as the processor switches between different threads; it is known<br />as multithreading. The switching happens so frequently that the threads or tasks are perceived to be running at the same time.<br />Threads can truly be concurrent on a multiprocessor or multi-core system, with every processor or core executing the<br />separate threads simultaneously.<br /><br />In summary, threads may be considered lightweight processes, as they contain simple sets of instructions and can<br />run within a larger process. Computers can run multiple threads and processes at the same time.<br /><br />Comparison between <strong>Process</strong> and <strong>Thread</strong>:<br /><br /><strong>Process</strong>:<br />- An executing instance of a program is called a process.<br />- It has its own copy of the data segment of the parent process.<br />- Processes must use inter-process communication to communicate with sibling processes.<br />- Processes have considerable overhead.<br />- New processes require duplication of the parent process.<br />- Processes can only exercise control over child processes.<br />- Any change in the parent process does not affect child processes.<br />- Run in separate memory spaces.<br />- Most file descriptors are not shared.<br />- There is no sharing of file system context.<br />- It does not share signal handling.<br />- Process is controlled by the operating system.<br />- Processes are independent.<br /><br /><strong>Thread</strong>:<br />- A thread is a subset of the process.<br />- It has direct access to the data segment of its process.<br />- Threads can directly communicate with other threads of its process.<br />- Threads have almost no overhead.<br />- New threads are easily created.<br />- Threads can exercise considerable control over threads of the same process.<br />- Any change in the main thread may affect the behavior of the other threads of the process.<br />- Run in shared memory spaces.<br />- It shares file descriptors.<br />- It shares file system context.<br />- It shares signal handling.<br />- Threads are controlled by programmer in a program.<br />- Threads are dependent.</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--What is synchronizations?-->
         <item>
-            Synchronization refers to multi-threading. A synchronized block of code can be executed by only one thread at a time.
-            As Java supports execution of multiple threads, two or more threads may access the same fields or objects.
-            Synchronization is a process which keeps all concurrent threads in execution to be in sync. Synchronization avoids
-            memory consistency errors caused due to inconsistent view of shared memory. When a method is declared as synchronized
-            the thread holds the monitor for that method’s object. If another thread is executing the synchronized method the thread
-            is blocked until that thread releases the monitor.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><strong>Synchronization</strong> refers to multi-threading. A synchronized block of code can be executed by only one thread at a time.<br />As Java supports execution of multiple threads, two or more threads may access the same fields or objects.<br />Synchronization is a process which keeps all concurrent threads in execution to be in sync. Synchronization avoids<br />memory consistency errors caused due to inconsistent view of shared memory. When a method is declared as synchronized<br />the thread holds the monitor for that method\'s object. If another thread is executing the synchronized method the thread<br />is blocked until that thread releases the monitor.</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--Can we write multiple catch blocks under single try blocks?-->
         <item>
-            It is possible to have multiple catch blocks under single try block but the approach should be from specific to general.
-            \n\n Example:
-            \n\n public class Example {
-            \n public static void main(String args[]) {
-            \n try {
-            \n int a[]= new int[10];
-            \n a[10]= 10/0;
-            \n }
-            \n catch(ArithmeticException e)
-            \n {
-            \n System.out.println("Arithmetic exception in first catch block");
-            \n }
-            \n catch(ArrayIndexOutOfBoundsException e)
-            \n {
-            \n System.out.println("Array index out of bounds in second catch block");
-            \n }
-            \n catch(Exception e)
-            \n {
-            \n System.out.println("Any exception in third catch block");
-            \n }
-            \n }
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>It is possible to have multiple catch blocks under single try block but the approach should be from specific to general.<br /><br /><strong>Example</strong>:<br /><em>public class Example {</em><br /><em>public static void main(String args[]) {</em><br /><em>try {</em><br /><em>int a[]= new int[10];</em><br /><em>a[10]= 10/0;</em><br /><em>}</em><br /><em>catch(ArithmeticException e)</em><br /><em>{</em><br /><em>System.out.println("Arithmetic exception in first catch block");</em><br /><em>}</em><br /><em>catch(ArrayIndexOutOfBoundsException e)</em><br /><em>{</em><br /><em>System.out.println("Array index out of bounds in second catch block");</em><br /><em>}</em><br /><em>catch(Exception e)</em><br /><em>{</em><br /><em>System.out.println("Any exception in third catch block");</em><br /><em>}</em><br /><em>}</em></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is the difference between double and float variables in Java?-->
         <item>
-            Though both float and double datatype are used to represent floating point numbers in Java, a double data type is more precise
-            than float. A double variable can provide precision up to 15 to 16 decimal points as compared to float precision of 6 to 7
-            decimal digits. Another significant difference between float and double is their storage requirement,
-            double is more expensive than float. It takes 8 bytes to store a variable while float just takes 4 bytes.
-            Which means, if memory is constraint than its better to use float than double. BTW, the double type also has larger
-            range than float and if your numbers don\'t fit well in float then you have to use double in Java. It\'s also worth noting
-            that floating point numbers or real numbers are by default double in Java. If you want to store them into float variable,
-            you need to either cast them or use a prefix \'f\' or \'F\'.
-
-            \n\n Also to note that: float uses 1 bits for sign, 8 bits for exponent and 23 bits for mantissa,
-            while double uses 1 bits for sign, 11 bits for exponent and 52 bits for mantissa.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Though both float and double datatype are used to represent floating point numbers in Java, a double data type is more precise<br />than float. A double variable can provide precision up to 15 to 16 decimal points as compared to float precision of 6 to 7<br />decimal digits. Another significant difference between float and double is their storage requirement,<br />double is more expensive than float. It takes 8 bytes to store a variable while float just takes 4 bytes.<br />Which means, if memory is constraint than its better to use float than double. BTW, the double type also has larger<br />range than float and if your numbers don\'t fit well in float then you have to use double in Java. It\'s also worth noting<br />that floating point numbers or real numbers are by default double in Java. If you want to store them into float variable,<br />you need to either cast them or use a prefix \'f\' or \'F\'.<br /><br />Also to note that: float uses 1 bits for sign, 8 bits for exponent and 23 bits for mantissa,<br />while double uses 1 bits for sign, 11 bits for exponent and 52 bits for mantissa.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Why would it be more secure to store sensitive data (such as a password,
         social security number, etc.) in a character array rather than in a String?-->
         <item>
-            In Java, Strings are immutable and are stored in the String pool.
-            What this means is that, once a String is created, it stays in the pool in memory until being garbage collected.
-            Therefore, even after you’re done processing the string value (e.g., the password), it remains available in memory
-            for an indeterminate period of time thereafter (again, until being garbage collected) which you have no real control over.
-            Therefore, anyone having access to a memory dump can potentially extract the sensitive data and exploit it.
-
-            \n\n In contrast, if you use a mutable object like a character array, for example, to store the value, you can set it to
-            blank once you are done with it with confidence that it will no longer be retained in memory.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>In Java, Strings are immutable and are stored in the String pool.<br />What this means is that, once a String is created, it stays in the pool in memory until being garbage collected.<br />Therefore, even after you\'re done processing the string value (e.g., the password), it remains available in memory<br />for an indeterminate period of time thereafter (again, until being garbage collected) which you have no real control over.<br />Therefore, anyone having access to a memory dump can potentially extract the sensitive data and exploit it.<br /><br />In contrast, if you use a mutable object like a character array, for example, to store the value, you can set it to<br />blank once you are done with it with confidence that it will no longer be retained in memory.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is the ThreadLocal class? How and why would you use it?-->
         <item>
-            A single ThreadLocal instance can store different values for each thread independently.
-            Each thread that accesses the get() or set() method of a ThreadLocal instance is accessing its own,
-            independently initialized copy of the variable. ThreadLocal instances are typically private static fields in
-            classes that wish to associate state with a thread (e.g., a user ID or transaction ID).
-            \n The example below, from the ThreadLocal Javadoc, generates unique identifiers local to each thread.
-            A thread’s id is assigned the first time it invokes ThreadId.get() and remains unchanged on subsequent calls.
-
-            \n\n Example:
-            \n public class ThreadId {
-            \n  // Next thread ID to be assigned
-            \n private static final AtomicInteger nextId = new AtomicInteger(0);
-            \n
-            \n // Thread local variable containing each thread\'s ID
-            \n  private static final ThreadLocal&lt;Integer&gt; threadId =
-            \n  new ThreadLocal&lt;Integer&gt;() {
-            \n  @Override protected Integer initialValue() {
-            \n  return nextId.getAndIncrement();
-            \n  }
-            \n  };
-            \n
-            \n // Returns the current thread\'s unique ID, assigning it if necessary
-            \n public static int get() {
-            \n return threadId.get();
-            \n }
-            \n  }
-
-            \n\n Each thread holds an implicit reference to its copy of a thread-local variable as long as the thread is alive and
-            the ThreadLocal instance is accessible; after a thread goes away, all of its copies of thread-local instances are subject
-            to garbage collection (unless other references to these copies exist).
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>A single ThreadLocal instance can store different values for each thread independently.<br />Each thread that accesses the get() or set() method of a ThreadLocal instance is accessing its own,<br />independently initialized copy of the variable. ThreadLocal instances are typically private static fields in<br />classes that wish to associate state with a thread (e.g., a user ID or transaction ID).<br />The example below, from the ThreadLocal Javadoc, generates unique identifiers local to each thread.<br />A thread\'s id is assigned the first time it invokes ThreadId.get() and remains unchanged on subsequent calls.<br /><br /><strong>Example</strong>:<br /><em>public class ThreadId {</em><br /><em> // Next thread ID to be assigned</em><br /><em>private static final AtomicInteger nextId = new AtomicInteger(0);</em><br /><br /><em>// Thread local variable containing each thread\'s ID</em><br /><em> private static final ThreadLocal&amp;lt;Integer&amp;gt; threadId =</em><br /><em> new ThreadLocal&amp;lt;Integer&amp;gt;() {</em><br /><em> @Override protected Integer initialValue() {</em><br /><em> return nextId.getAndIncrement();</em><br /><em> }</em><br /><em> };</em><br /><br /><em>// Returns the current thread\'s unique ID, assigning it if necessary</em><br /><em>public static int get() {</em><br /><em>return threadId.get();</em><br /><em>}</em><br /><em> }</em><br /><br />Each thread holds an implicit reference to its copy of a thread-local variable as long as the thread is alive and<br />the ThreadLocal instance is accessible; after a thread goes away, all of its copies of thread-local instances are subject<br />to garbage collection (unless other references to these copies exist).</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is the volatile keyword? How and why would you use it?-->
         <item>
-            In Java, each thread has its own stack, including its own copy of variables it can access.
-            When the thread is created, it copies the value of all accessible variables into its own stack.
-            The volatile keyword basically says to the JVM "Warning, this variable may be modified in another Thread".
-
-            \n\n In all versions of Java, the volatile keyword guarantees global ordering on reads and writes to a variable.
-            This implies that every thread accessing a volatile field will read the variable’s current value instead of (potentially)
-            using a cached value.
-
-            \n In Java 5 or later, volatile reads and writes establish a happens-before relationship, much like acquiring and
-            releasing a mutex.
-
-            \n Using volatile may be faster than a lock, but it will not work in some situations. The range of situations in which
-            volatile is effective was expanded in Java 5; in particular, double-checked locking now works correctly.
-
-            \n The volatile keyword is also useful for 64-bit types like long and double since they are written in two operations.
-            Without the volatile keyword you risk stale or invalid values.
-
-            \n\n One common example for using volatile is for a flag to terminate a thread. If you’ve started a thread, and
-            you want to be able to safely interrupt it from a different thread, you can have the thread periodically
-            check a flag (i.e., to stop it, set the flag to true). By making the flag volatile, you can ensure that the thread that
-            is checking its value will see that it has been set to true without even having to use a synchronized block.
-
-            \n\n Example:
-            \n\n public class Foo extends Thread {
-            \n private volatile boolean close = false;
-            \n public void run() {
-            \n while(!close) {
-            \n // do work
-            \n }
-            \n }
-            \n public void close() {
-            \n close = true;
-            \n // interrupt here if needed
-            \n }
-            \n }
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>In Java, each thread has its own stack, including its own copy of variables it can access.<br />When the thread is created, it copies the value of all accessible variables into its own stack.<br />The volatile keyword basically says to the JVM "Warning, this variable may be modified in another Thread".<br /><br />In all versions of Java, the volatile keyword guarantees global ordering on reads and writes to a variable.<br />This implies that every thread accessing a volatile field will read the variable\'s current value instead of (potentially)<br />using a cached value.<br /><br />In Java 5 or later, volatile reads and writes establish a happens-before relationship, much like acquiring and<br />releasing a mutex.<br /><br />Using volatile may be faster than a lock, but it will not work in some situations. The range of situations in which<br />volatile is effective was expanded in Java 5; in particular, double-checked locking now works correctly.<br /><br />The volatile keyword is also useful for 64-bit types like long and double since they are written in two operations.<br />Without the volatile keyword you risk stale or invalid values.<br /><br />One common example for using volatile is for a flag to terminate a thread. If you\'ve started a thread, and<br />you want to be able to safely interrupt it from a different thread, you can have the thread periodically<br />check a flag (i.e., to stop it, set the flag to true). By making the flag volatile, you can ensure that the thread that<br />is checking its value will see that it has been set to true without even having to use a synchronized block.<br /><br /><strong>Example</strong>:<br /><em>public class Foo extends Thread {</em><br /><em>private volatile boolean close = false;</em><br /><em>public void run() {</em><br /><em>while(!close) {</em><br /><em>// do work</em><br /><em>}</em><br /><em>}</em><br /><em>public void close() {</em><br /><em>close = true;</em><br /><em>// interrupt here if needed</em><br /><em>}</em><br /><em>}</em></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Compare the sleep() and wait() methods in Java, including when and why you would use one vs. the other.-->
         <item>
-            &#8226; sleep() is a blocking operation that keeps a hold on the monitor / lock of the shared object for the specified number of
-            milliseconds.
-
-            \n &#8226; wait(), on the other hand, simply pauses the thread until either (a) the specified number of milliseconds
-            have elapsed or(b) it receives a desired notification from another thread (whichever is first),
-            without keeping a hold on the monitor/lock of the shared object.
-
-            \n &#8226; sleep() is most commonly used for polling, or to check for certain results, at a regular interval.
-            wait() is generally used in multithreaded applications, in conjunction with notify() / notifyAll(),
-            to achieve synchronization and avoid race conditions.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>- sleep() is a blocking operation that keeps a hold on the monitor / lock of the shared object for the specified number of<br />milliseconds.<br /><br />- wait(), on the other hand, simply pauses the thread until either (a) the specified number of milliseconds<br />have elapsed or(b) it receives a desired notification from another thread (whichever is first),<br />without keeping a hold on the monitor/lock of the shared object.<br /><br />- sleep() is most commonly used for polling, or to check for certain results, at a regular interval.<br />wait() is generally used in multithreaded applications, in conjunction with notify() / notifyAll(),<br />to achieve synchronization and avoid race conditions.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What is the Java Classloader? List and explain the purpose of the three types of the class loaders.        -->
         <item>
-            The Java Classloader is the part of the Java runtime environment that loads classes on demand (lazy loading)
-            into the JVM (Java Virtual Machine). Classes may be loaded from the local file system, a remote file system, or even the web.
-
-            \n\n When the JVM is started, three class loaders are used:
-            \n\n 1. Bootstrap Classloader: Loads core java API file rt.jar from folder.
-            \n 2. Extension Classloader: Loads jar files from folder.
-            \n 3. System/Application Classloader: Loads jar files from path specified in the CLASSPATH environment variable.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>The Java Classloader is the part of the Java runtime environment that loads classes on demand (lazy loading)<br />into the JVM (Java Virtual Machine). Classes may be loaded from the local file system, a remote file system, or even the web.<br /><br />When the JVM is started, three class loaders are used:<br />1. Bootstrap Classloader: Loads core java API file rt.jar from folder.<br />2. Extension Classloader: Loads jar files from folder.<br />3. System/Application Classloader: Loads jar files from path specified in the CLASSPATH environment variable.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--if one needs a Set, how do you choose between HashSet vs TreeSet?-->
         <item>
-            At first glance, HashSet is superior in almost every way: O(1) add, remove and contains, vs. O(log(N)) for TreeSet.
-
-            \n\n However, TreeSet is indispensable when you wish to maintain order over the inserted elements or query for a range of
-            elements within the set.
-
-            \n\n Consider a Set of timestamped Event objects. They could be stored in a HashSet, with equals and hashCode based on that
-            timestamp. This is efficient storage and permits looking up events by a specific timestamp, but how would you get all events
-            that happened on any given day? That would require a O(n) traversal of the HashSet, but it’s only a O(log(n)) operation with
-            TreeSet using the tailSet method:
-
-            \n\n public class Event implements Comparable&lt;Event&gt; {
-            \n private final long timestamp;
-            \n
-            \n          public Event(long timestamp) {
-            \n       this.timestamp = timestamp;
-            \n    }
-            \n
-            \n          @Override public int compareTo(Event that) {
-            \n       return Long.compare(this.timestamp, that.timestamp);
-            \n    }
-            \n }
-            \n
-            \n          ...
-            \n
-            \n          SortedSet&lt;Event&gt; events = new TreeSet&lt;&gt;();
-            \n       events.addAll(...); // events come in
-            \n
-            \n          // all events that happened today
-            \n       long midnightToday = ...;
-            \n    events.tailSet(new Event(midnightToday));}
-
-            \n\n If Event happens to be a class that we cannot extend or that doesn’t implement Comparable,
-            TreeSet allows us to pass in our own Comparator:
-            \n\n SortedSet&lt;Event&gt; events = new TreeSet&lt;&gt;(
-                (left, right) -> Long.compare(left.timestamp, right.timestamp));
-
-            \n\n Generally speaking, TreeSet is a good choice when order matters and when reads are balanced against the increased cost of writes.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>At first glance, HashSet is superior in almost every way: O(1) add, remove and contains, vs. O(log(N)) for TreeSet.<br /><br />However, TreeSet is indispensable when you wish to maintain order over the inserted elements or query for a range of<br />elements within the set.<br /><br />Consider a Set of timestamped Event objects. They could be stored in a HashSet, with equals and hashCode based on that<br />timestamp. This is efficient storage and permits looking up events by a specific timestamp, but how would you get all events<br />that happened on any given day? That would require a O(n) traversal of the HashSet, but it&rsquo;s only a O(log(n)) operation with<br />TreeSet using the tailSet method;<br /><br /><em>public class Event implements Comparable&lt;Event&gt; {</em><br /><em>private final long timestamp;</em><br /><em><br />public Event(long timestamp) {</em><br /><em>      this.timestamp = timestamp;</em><br /><em>}</em><br /><br /><em>@Override <br />public int compareTo(Event that) {</em><br /><em>      return Long.compare(this.timestamp, that.timestamp);</em><br /><em>   }</em><br /><em>}</em><br /><em>         ...<br /></em><br /><em>SortedSet&lt;Event&gt; events = new TreeSet&lt;&gt;();</em><br /><em>events.addAll(...); // events come in</em><br /><br /><em>// all events that happened today</em><br /><em>long midnightToday = ...;</em><br /><em>events.tailSet(new Event(midnightToday));</em><br /><em>}</em><br /><br />If Event happens to be a class that we cannot extend or that doesn&rsquo;t implement Comparable,<br />TreeSet allows us to pass in our own Comparator:<br /><br /><em>SortedSet&lt;Event&gt;; events = new TreeSet&lt;&gt;(</em><br /><em>    (left, right) -&gt; Long.compare(left.timestamp, right.timestamp));</em><br /><br />Generally speaking, TreeSet is a good choice when order matters and when reads are balanced against the increased cost of writes.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--How are Java enums more powerful than integer constants? How can this capability be used?-->
         <item>
-            Enums are essentially final classes with a fixed number of instances. They can implement interfaces but cannot extend
-            another class.
-            \n This flexibility is useful in implementing the strategy pattern, for example, when the number of strategies is fixed.
-            Consider an address book that records multiple methods of contact. We can represent these methods as an enum and attach fields,
-            like the filename of the icon to display in the UI, and any corresponding behaviour, like how to initiate contact via that method:
-
-            \n\n public enum ContactMethod {
-            \n PHONE("telephone.png") {
-            \n    @Override public void initiate(User user) {
-            \n     Telephone.dial(user.getPhoneNumber());
-            \n     }
-            \n },
-            \n EMAIL("envelope.png") {
-            \n     @Override public void initiate(User user) {
-            \n         EmailClient.sendTo(user.getEmailAddress());
-            \n     }
-            \n },
-            \n  SKYPE("skype.png") {
-            \n      ...
-            \n };
-            \n
-            \n ContactMethod(String icon) {
-            \n     this.icon = icon;
-            \n }
-            \n
-            \n private final String icon;
-            \n
-            \n  public abstract void initiate(User user);
-            \n
-            \n  public String getIcon() {
-            \n      return icon;
-            \n }
-            \n }
-
-            \n\n We can dispense with switch statements entirely by simply using instances of ContactMethod:
-
-            \n\n ContactMethod method = user.getPrimaryContactMethod();
-            \n displayIcon(method.getIcon());
-            \n method.initiate(user);
-
-            \n\n This is just the beginning of what can be done with enums.
-            Generally, the safety and flexibility of enums means they should be used in place of integer constants,
-            and switch statements can be eliminated with liberal use of abstract methods.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Enums are essentially final classes with a fixed number of instances. They can implement interfaces but cannot extend<br />another class.<br />This flexibility is useful in implementing the strategy pattern, for example, when the number of strategies is fixed.<br />Consider an address book that records multiple methods of contact. We can represent these methods as an enum and attach fields,<br />like the filename of the icon to display in the UI, and any corresponding behaviour, like how to initiate contact via that method:<br /><br /><em>public enum ContactMethod {</em><br /><em>PHONE("telephone.png") {</em><br /><em>@Override public void initiate(User user) {</em><br /><em>    Telephone.dial(user.getPhoneNumber());</em><br /><em>    }</em><br /><em>},</em><br /><em>EMAIL("envelope.png") {</em><br /><em>@Override public void initiate(User user) {</em><br /><em>       EmailClient.sendTo(user.getEmailAddress());</em><br /><em>    }</em><br /><em>},</em><br /><em> SKYPE("skype.png") {</em><br /><em>     ...</em><br /><em>};</em><br /><br /><em>ContactMethod(String icon) {</em><br /><em>    this.icon = icon;</em><br /><em>}</em><br /><br /><em>private final String icon;</em><br /><br /><em>public abstract void initiate(User user);</em><br /><br /><em>public String getIcon() {</em><br /><em>     return icon;</em><br /><em>}</em><br /><em>}</em><br /><br />We can dispense with switch statements entirely by simply using instances of ContactMethod:<br /><br /><em>ContactMethod method = user.getPrimaryContactMethod();</em><br /><em>displayIcon(method.getIcon());</em><br /><em>method.initiate(user);</em><br /><br />This is just the beginning of what can be done with enums.<br />Generally, the safety and flexibility of enums means they should be used in place of integer constants,<br />and switch statements can be eliminated with liberal use of abstract methods.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--What are static initializers and when would you use them?-->
         <item>
-            A static initializer gives you the opportunity to run code during the initial loading of a class and it guarantees
-            that this code will only run once and will finish running before your class can be accessed in any way.
-            \n They are useful for performing initialization of complex static objects or to register a type with a static registry,
-            as JDBC drivers do.
-            \n Suppose you want to create a static, immutable Map containing some feature flags.
-            Java doesn’t have a good one-liner for initializing maps, so you can use static initializers instead:
-
-            \n\n public static final Map&lt;String, Boolean&gt; FEATURE_FLAGS;
-            \n static {
-            \n Map&lt;String, Boolean&gt; flags = new HashMap&lt;&gt;();
-            \n flags.put("frustrate-users", false);
-            \n flags.put("reticulate-splines", true);
-            \n flags.put(...);
-            \n FEATURE_FLAGS = Collections.unmodifiableMap(flags);
-
-            \n\n Within the same class, you can repeat this pattern of declaring a static field and immediately initializing it,
-            since multiple static initializers are allowed.
-        }
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>A static initializer gives you the opportunity to run code during the initial loading of a class and it guarantees<br />that this code will only run once and will finish running before your class can be accessed in any way.<br />They are useful for performing initialization of complex static objects or to register a type with a static registry,<br />as JDBC drivers do.<br />Suppose you want to create a static, immutable Map containing some feature flags.<br />Java doesn\'t have a good one-liner for initializing maps, so you can use static initializers instead:<br /><br /><em>public static final Map&lt;String, Boolean&gt; FEATURE_FLAGS;</em><br /><em>static {</em><br /><em>Map&lt;String, Boolean&gt; flags = new HashMap&lt;&gt;();</em><br /><em>flags.put("frustrate-users", false);</em><br /><em>flags.put("reticulate-splines", true);</em><br /><em>flags.put(...);</em><br /><em>FEATURE_FLAGS = Collections.unmodifiableMap(flags);</em><br /><em>}<br /></em><br />Within the same class, you can repeat this pattern of declaring a static field and immediately initializing it,<br />since multiple static initializers are allowed.</pre>            </pre></html>
+            ]]>
         </item>
         <!--what is serialization? how do you implement it?-->
         <item>
-            Serialization is the process of converting an object into a stream of bytes in order to store an object into memory,
-            so that it can be recreated at a later time, while still keeping the object\'s original state and data.
-
-            \n\nAfter a serialized object has been written into a file, it can be read from the file and deserialized that is,
-            the type information and bytes that represent the object and its data can be used to recreate the object in memory.
-
-            \n\nMost impressive is that the entire process is JVM independent, meaning an object can be serialized on one platform and
-            deserialized on an entirely different platform.
-
-            \n\nClasses ObjectInputStream and ObjectOutputStream are high-level streams that contain the methods for serializing
-            and deserializing an object.
-
-            \n\n Example:
-
-            \n\n Suppose that we have the following Employee class, which implements the Serializable interface;
-
-            \n\npublic class Employee implements java.io.Serializable {
-            \npublic String name;
-            \npublic String address;
-            \npublic transient int SSN;
-            \npublic int number;
-            \n
-            \n        public void mailCheck() {
-            \n      System.out.println("Mailing a check to " + name + " " + address);
-            \n    }
-            \n  }
-
-            \n\n Serializing an Object;
-
-            \n\nimport java.io.*;
-            \n public class SerializeDemo {
-            \n
-            \n          public static void main(String [] args) {
-            \n       Employee e = new Employee();
-            \n    e.name = "Reyan Ali";
-            \n  e.address = "Phokka Kuan, Ambehta Peer";
-            \n e.SSN = 11122333;
-            \n e.number = 101;
-            \n
-            \n          try {
-            \n       FileOutputStream fileOut =
-            \n    new FileOutputStream("/tmp/employee.ser");
-            \n ObjectOutputStream out = new ObjectOutputStream(fileOut);
-            \n out.writeObject(e);
-            \n out.close();
-            \n  fileOut.close();
-            \n System.out.printf("Serialized data is saved in /tmp/employee.ser");
-            \n } catch (IOException i) {
-            \n i.printStackTrace();
-            \n }
-            \n }
-            \n }
-
-            \n\n Note − When serializing an object to a file, the standard convention in Java is to give the file a .ser extension.
-
-            \n\n Deserializing an Object
-
-            \n\n import java.io.*;
-            \n  public class DeserializeDemo {
-            \n
-            \n          public static void main(String [] args) {
-            \n       Employee e = null;
-            \n    try {
-            \n FileInputStream fileIn = new FileInputStream("/tmp/employee.ser");
-            \n ObjectInputStream in = new ObjectInputStream(fileIn);
-            \n e = (Employee) in.readObject();
-            \n in.close();
-            \n fileIn.close();
-            \n } catch (IOException i) {
-            \n i.printStackTrace();
-            \n return;
-            \n } catch (ClassNotFoundException c) {
-            \n System.out.println("Employee class not found");
-            \n c.printStackTrace();
-            \n return;
-            \n }
-            \n
-            \n    System.out.println("Deserialized Employee...");
-            \n System.out.println("Name: " + e.name);
-            \n System.out.println("Address: " + e.address);
-            \n System.out.println("SSN: " + e.SSN);
-            \n System.out.println("Number: " + e.number);
-            \n  }
-            \n }
-
-            \n\n Output:
-
-            \n\n Deserialized Employee...
-            \n Name: Reyan Ali
-            \n Address:Phokka Kuan, Ambehta Peer
-            \n SSN: 0
-            \n Number:101
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Serialization is the process of converting an object into a stream of bytes in order to store an object into memory,<br />so that it can be recreated at a later time, while still keeping the object\'s original state and data.<br /><br />After a serialized object has been written into a file, it can be read from the file and deserialized that is,<br />the type information and bytes that represent the object and its data can be used to recreate the object in memory.<br /><br />Most impressive is that the entire process is JVM independent, meaning an object can be serialized on one platform and<br />deserialized on an entirely different platform.<br /><br />Classes ObjectInputStream and ObjectOutputStream are high-level streams that contain the methods for serializing<br />and deserializing an object.<br /><br /><strong>Example</strong>:<br /><br />Suppose that we have the following Employee class, which implements the Serializable interface;<br /><br /><em>public class Employee implements java.io.Serializable {</em><br /><em>public String name;</em><br /><em>public String address;</em><br /><em>public transient int SSN;</em><br /><em>public int number;</em><br /><br /><em>public void mailCheck() {</em><br /><em>      System.out.println("Mailing a check to " + name + " " + address);</em><br /><em>   }</em><br /><em>}</em><br /><br /><strong>Serializing an Object</strong>;<br /><br /><em>import java.io.*;</em><br /><em>public class SerializeDemo {</em><br /><br /><em>public static void main(String [] args) {</em><br /><em>Employee e = new Employee();</em><br /><em> e.name = "Reyan Ali";</em><br /><em> e.address = "Phokka Kuan, Ambehta Peer";</em><br /><em> e.SSN = 11122333;</em><br /><em> e.number = 101;</em><br /><br /><em> try {</em><br /><em> FileOutputStream fileOut =</em><br /><em> new FileOutputStream("/tmp/employee.ser");</em><br /><em> ObjectOutputStream out = new ObjectOutputStream(fileOut);</em><br /><em> out.writeObject(e);</em><br /><em> out.close();</em><br /><em> fileOut.close();</em><br /><em> System.out.printf("Serialized data is saved in /tmp/employee.ser");</em><br /> <br /><em>} catch (IOException i) {</em><br /><em> i.printStackTrace();</em><br /><em> }</em><br /><em> }</em><br /><em> }</em><br /><br /><strong>Note</strong> &minus; When serializing an object to a file, the standard convention in Java is to give the file a .ser extension.<br /><br /><strong>Deserializing an Object</strong>;<br /><br /><em>import java.io.*;</em><br /><em>public class DeserializeDemo {</em><br /><br /><em>public static void main(String [] args) {</em><br /><em>Employee e = null;</em><br /><br /><em>try {</em><br /><em> FileInputStream fileIn = new FileInputStream("/tmp/employee.ser");</em><br /><em> ObjectInputStream in = new ObjectInputStream(fileIn);</em><br /><em> e = (Employee) in.readObject();</em><br /><em> in.close();</em><br /><em> fileIn.close();</em><br /> <br /><em>}</em><br /><em> catch (IOException i) {</em><br /><em> i.printStackTrace();</em><br /><em> return;</em><br /> <br /><em>}</em><br /><em> catch (ClassNotFoundException c) {</em><br /><em> System.out.println("Employee class not found");</em><br /><em> c.printStackTrace();</em><br /><em> return;</em><br /><em> }</em><br /><br /><em> System.out.println("Deserialized Employee...");</em><br /><em> System.out.println("Name: " + e.name);</em><br /><em> System.out.println("Address: " + e.address);</em><br /><em> System.out.println("SSN: " + e.SSN);</em><br /><em> System.out.println("Number: " + e.number);</em><br /><em>  }</em><br /><em> }</em><br /><br /><strong>Output</strong>:<br /><br />Deserialized Employee...<br />Name: Reyan Ali<br />Address:Phokka Kuan, Ambehta Peer<br />SSN: 0<br />Number:101</pre>
+            </pre></html>
+            ]]>
         </item>
     </string-array>
 
