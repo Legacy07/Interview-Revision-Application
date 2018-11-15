@@ -97,11 +97,14 @@
         <item>
             Trees - Basics
         </item>
-        <item>
-            Trees - Generic Tree
-        </item>
+        <!--<item>-->
+            <!--Trees - Generic Tree-->
+        <!--</item>-->
         <item>
             Trees - Traversals (Inorder, Preorder and Postorder)
+        </item>
+        <item>
+            Trees - Generic Traversals
         </item>
         <item>
             Binary Tree - Basics
@@ -109,1168 +112,286 @@
         <item>
             Binary Tree - Generic Binary Tree
         </item>
-        <item>
-            Binary Search Tree - Basics
-        </item>
-        <item>
-            Binary Search Tree - Generic Binary Search Tree
-        </item>
+        <!--<item>-->
+            <!--Binary Search Tree - Basics-->
+        <!--</item>-->
+        <!--<item>-->
+            <!--Binary Search Tree - Generic Binary Search Tree-->
+        <!--</item>-->
 
     </string-array>
 
     <string-array name="data_structures_answers">
         <!--Arrays - basics-->
         <item>
-            An array is a container object that holds a fixed number of values of a single type. The length of an array is established
-            when the array is created. After creation, its length is fixed.
-
-            \n\nDeclaring arrays:
-            \nint[] ages;
-            \nString[] band;
-            \nDouble[] vector;
-
-            \n\nInstantiating arrays:
-            \nages = new int[6];
-            \nband = new String[4];
-
-            \n\nBoth together:
-            \nint[] ages = new int[6];
-
-            \n\nArray indexing in Java is zero-based;
-            \nint[] ages = new int[6];
-            \ngives us
-            \nages[0], ages[1], ... ages[5]
-
-            \n\nWhen an array is created its size is held in a public constant which can be accessed as
-            \nages.length = 6;
-
-            \n\nAccessing an array element that is out of bounds gives a run time error - ArrayIndexOutOfBoundsException
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>An array is a container object that holds a fixed number of values of a single type. The length of an array is established<br />when the array is created. After creation, its length is fixed.<br /><br /><strong>Declaring arrays</strong>:<br /><em>int[] ages;</em><br /><em>String[] band;</em><br /><em>Double[] vector;</em><br /><br /><strong>Instantiating arrays</strong>:<br /><em>ages = new int[6];</em><br /><em>band = new String[4];</em><br /><br /><strong>Both together</strong>:<br /><em>int[] ages = new int[6];</em><br /><br /><strong>Array indexing in Java is zero-based</strong>:<br /><em>int[] ages = new int[6];</em><br />gives us<br /><em>ages[0], ages[1], ... ages[5]</em><br /><br />When an array is created its size is held in a public constant which can be accessed as<br /><em>ages.length = 6;</em><br /><br />Accessing an array element that is out of bounds gives a run time error - <em>ArrayIndexOutOfBoundsException.</em></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Arrays - Summing Elements of an Array-->
         <item>
-            public class ArraySum{
-            \n
-            \npublic static void main(String[] args) {
-            \n//Instantiating array
-            \nlong[] a = new long[1001];
-            \nlong sum;
-            \nint i, numbers;
-            \nnumbers = 1000;
-            \n// initialise the array a using the loop counter
-            \nfor (i = 1; i &lt;= numbers; i++) {
-            \na[i] = (long) i;
-            \n}
-            \nsum = 0;
-            \nfor (i = 1; i &lt;= numbers; i++) {
-            \n// do summation
-            \nsum = sum + a[i];
-            \n}
-            \nSystem.out.print("Sum of numbers between 1 and " + numbers + " is " + sum);
-            \n}}
-
-            \n\nOutput: Sum of numbers between 1 and 1000 is 500500
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class ArraySum{</em><br /><br /><em>public static void main(String[] args) {</em><br /><em>//Instantiating array</em><br /><em>long[] a = new long[1001];</em><br /><em>long sum;</em><br /><em>int i, numbers;</em><br /><em>numbers = 1000;</em><br /><em>// initialise the array a using the loop counter</em><br /><em>for (i = 1; i &lt;= numbers; i++) {</em><br /><em>a[i] = (long) i;</em><br /><em>}</em><br /><em>sum = 0;</em><br /><em>for (i = 1; i &lt;= numbers; i++) {</em><br /><em>// do summation</em><br /><em>sum = sum + a[i];</em><br /><em>}</em><br /><em>System.out.print("Sum of numbers between 1 and " + numbers + " is " + sum);</em><br /><em>}}</em><br /><br /><strong>Output</strong>: Sum of numbers between 1 and 1000 is 500500</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Arrays - Find the Mean of a set of number-->
         <item>
-            public class CalculateMean {
-            \n
-            \npublic static void main(String[] args) {
-            \ndouble[] a = new double[101];
-            \nint i, numbers;
-            \ndouble sum, mean;
-            \nnumbers = 100;
-            \n// initialise the array a using the loop counter
-            \nfor (i = 1; i &lt;= numbers; i++) {
-            \na[i] = (double) i;
-            \n}
-            \nsum = 0;
-            \nfor (i = 1; i &lt;= numbers; i++) { // do summation
-            \nsum = sum + a[i];
-            \n} // calculate mean
-            \nmean = sum / ((double) numbers);
-            \nSystem.out.println("mean of numbers between 1 and " + numbers + " is " + mean);
-            \n}}
-
-            \n\nOutput: mean of numbers between 1 and 100 is 50.5
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class CalculateMean {</em><br /><br /><em>public static void main(String[] args) {</em><br /><em>double[] a = new double[101];</em><br /><em>int i, numbers;</em><br /><em>double sum, mean;</em><br /><em>numbers = 100;<br /></em><br /><em>// initialise the array a using the loop counter</em><br /><em>for (i = 1; i &lt;= numbers; i++) {</em><br /><em>a[i] = (double) i;</em><br /><em>}</em><br /><em>sum = 0;</em><br /><em>for (i = 1; i &lt;= numbers; i++) { // do summation</em><br /><em>sum = sum + a[i];</em><br /><em>} // calculate mean</em><br /><em>mean = sum / ((double) numbers);</em><br /><em>System.out.println("mean of numbers between 1 and " + numbers + " is " + mean);</em><br /><em>}}</em><br /><br /><strong>Output</strong>: mean of numbers between 1 and 100 is 50.5</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Arrays - Finding the Maximum Element-->
         <item>
-            public class MaximumElement {
-            \n
-            \npublic static void main(String[] args) {
-            \ndouble maximum;
-            \nint i;
-            \ndouble[] a = {1.5, 2.3, 4.2, -9.4, 2.0, 12.9, -5.0, 12.9, -0.1, -15.0, 0.0};
-            \nmaximum = a[0];
-            \nfor (i = 1; i &lt; a.length; i++) {
-            \nif (a[i] > maximum) {
-            \nmaximum = a[i];
-            \n}}
-            \nSystem.out.println("The maximum element is " + maximum);
-            \n}}
-
-            \n\nOutput: The maximum element is 12.9
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class MaximumElement {</em><br /><br /><em>public static void main(String[] args) {</em><br /><em>double maximum;</em><br /><em>int i;</em><br /><em>double[] a = {1.5, 2.3, 4.2, -9.4, 2.0, 12.9, -5.0, 12.9, -0.1, -15.0, 0.0};</em><br /><em>maximum = a[0];</em><br /><br /><em>for (i = 1; i &lt; a.length; i++) {</em><br /><em>if (a[i] &gt; maximum) {</em><br /><em>maximum = a[i];</em><br /><em>}}</em><br /><em>System.out.println("The maximum element is " + maximum);</em><br /><em>}}</em><br /><br /><strong>Output</strong>: The maximum element is 12.9</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Arrays - Create a copy of an Array -->
         <item>
-            Arrays are treated as Objects in Java and, as such, obey the same rules for equality and assignment.
-            \n\n &#8226;An array variable is a reference variable. It stores information about where to locate the array elements
-            (like a pointer in c/c++).
-            \n\n &#8226;All array variables require the same amount of storage, irrespective of the size of the arrays or the nature of
-            their elements.
-            \n\nint[] a = new int[20];
-            \nint[] b;
-            \nb = a;
-            \n\n &#8226;b now holds the same address as a.
-            \n &#8226;only one array but there are now two ways of addressing it.
-            \n &#8226;Any change to b[i] will change a[i]
-
-            \n\nTo create a copy of an array requires more effort
-            \nb = new int[a.length];
-            \nfor (int i = 0; i &lt; a.length; i++)
-            \n{
-            \nb[i] = a[i];
-            \n}
-
-            \n\n &#8226;There are now two distinct arrays, of the same length and with the same contents.
-            \n &#8226;Change to either will leave the other unaffected, so the assignment
-            \nb[5] = 10;
-            \ndoes not change a[5]
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Arrays are treated as Objects in Java and, as such, obey the same rules for equality and assignment.<br />- An array variable is a reference variable. It stores information about where to locate the array elements<br />(like a pointer in c/c++).<br />- All array variables require the same amount of storage, irrespective of the size of the arrays or the nature of<br />their elements.<br /><br /><em>int[] a = new int[20];</em><br /><em>int[] b;</em><br /><em>b = a;<br /></em><br /> - b now holds the same address as a.<br /> - only one array but there are now two ways of addressing it.<br /> - Any change to b[i] will change a[i]<br /><br />To create a copy of an array requires more effort.<br /><br /><em>b = new int[a.length];</em><br /><em>for (int i = 0; i &lt; a.length; i++)</em><br /><em>{</em><br /><em>b[i] = a[i];</em><br /><em>}</em><br /><br /> - There are now two distinct arrays, of the same length and with the same contents.<br /> - Change to either will leave the other unaffected, so the assignment;<br /><br /><em>b[5] = 10;</em><br /><em>does not change a[5]</em></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Arrays - Multi-Dimensional Arrays-->
         <item>
-            &#8226;The elements of an array can themselves be arrays
-            \n &#8226;The array is said to be a multi-dimensional array
-            \n &#8226;To declare and create a rectangular integer array with 2 rows and 3 columns:
-            \nint a[][] = new int[2][3];
-            \n\n &#8226;It can be initialised by using nested for loops such as
-            \nfor (int i = 0; i &lt; a.length; i++)
-            \n{
-            \<n></n>for (int j = 0; j &lt; a[i].length; j++)
-            \n{
-            \<n></n>a[i][j] = 0;
-            \n}}
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>- The elements of an array can themselves be arrays<br />- The array is said to be a multi-dimensional array<br />- To declare and create a rectangular integer array with 2 rows and 3 columns:<br /><br /><em>int a[][] = new int[2][3];</em><br />- It can be initialised by using nested for loops such as;<br /><em>for (int i = 0; i &lt; a.length; i++)</em><br /><em>{</em><br /><em>for (int j = 0; j &lt; a[i].length; j++)</em><br /><em>{</em><br /><em>a[i][j] = 0;</em><br /><em>}</em><br /><em>}</em></pre>
+              </pre></html>
+            ]]>
         </item>
         <!--Arrays - Matrix Addition-->
         <item>
-            public class MatrixAddition {
-            \n
-            \npublic static void main(String[] args) {
-            \n//initialise arrays
-            \nint[][] a = {{1, 2, 3}, {3, 4, 5}, {5, 6, 7}};
-            \nint[][] b = {{7, 6, 5}, {5, 4, 3}, {3, 2, 1}};
-            \n//instantiate result array
-            \nint[][] c = new int[3][3];
-            \nint i, j;
-            \n\\matrix addition
-            \nfor (i = 0; i &lt; 3; i++) {
-            \<n></n>for (j = 0; j &lt; 3; j++) {
-            \<n></n>c[i][j] = a[i][j] + b[i][j];
-            \n}
-            \nSystem.out.println("a + b = " + c[i][0] + " " + c[i][1] + " " + c[i][2]);
-            \n}}
-
-            \n\nOutput:
-            \na + b = 8 8 8
-            \na + b = 8 8 8
-            \na + b = 8 8 8
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class MatrixAddition {</em><br /><br /><em>public static void main(String[] args) {</em><br /><em>//initialise arrays</em><br /><em>int[][] a = {{1, 2, 3}, {3, 4, 5}, {5, 6, 7}};</em><br /><em>int[][] b = {{7, 6, 5}, {5, 4, 3}, {3, 2, 1}};</em><br /><em>//instantiate result array</em><br /><em>int[][] c = new int[3][3];</em><br /><em>int i, j;</em><br /><em>\\matrix addition</em><br /><em>for (i = 0; i &lt; 3; i++) {</em><br /><em>for (j = 0; j &lt; 3; j++) {</em><br /><em>c[i][j] = a[i][j] + b[i][j];</em><br /><em>}</em><br /><em>System.out.println("a + b = " + c[i][0] + " " + c[i][1] + " " + c[i][2]);</em><br /><em>}}</em><br /><br /><strong>Output</strong>:<br />a + b = 8 8 8<br />a + b = 8 8 8<br />a + b = 8 8 8</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--Arrays - Matrix Multiplication-->
         <item>
-            public class MatrixMultiplication {
-            \n
-            \npublic static void main(String[] args) {
-            \nint[][] a = {{1, 2, 3}, {3, 4, 5}, {5, 6, 7}};
-            \nint[][] b = {{7, 6, 5}, {5, 4, 3}, {3, 2, 1}};
-            \nint[][] c = new int[3][3];
-            \nint i, j, k, m, n;
-            \n// process rows
-            \nfor (i = 0; i &lt; 3; i++) // process columns
-            \n{
-            \<n></n>for (j = 0; j &lt; 3; j++) {
-            \<n></n>c[i][j] = 0;
-            \n// process row-column interactions and sum them into array c
-            \<n>    </n>for (k = 0; k &lt; 3; k++) {
-            \<n>    </n>c[i][j] = c[i][j] + a[i][k] * b[k][j];
-            \n}}}
-            \nSystem.out.println("Multiplying A and B equals: ");
-            \nfor (m = 0; m &lt; c.length; m++) {
-            \nfor (n = 0; n &lt; c[0].length; n++) {
-            \nSystem.out.print(c[m][n] + " ");
-            \n}
-            \nSystem.out.println();
-            \n}
-            \n}}
-
-            \n\nOutput:
-            \n26 20 14
-            \n56 44 32
-            \n86 68 50
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class MatrixMultiplication {</em><br /><br /><em>public static void main(String[] args) {</em><br /><em>int[][] a = {{1, 2, 3}, {3, 4, 5}, {5, 6, 7}};</em><br /><em>int[][] b = {{7, 6, 5}, {5, 4, 3}, {3, 2, 1}};</em><br /><em>int[][] c = new int[3][3];</em><br /><em>int i, j, k, m, n;</em><br /><em>// process rows</em><br /><em>for (i = 0; i &lt; 3; i++) // process columns</em><br /><em>{</em><br /><em>for (j = 0; j &lt; 3; j++) {</em><br /><em>c[i][j] = 0;</em><br /><em>// process row-column interactions and sum them into array c</em><br /><em>for (k = 0; k &lt; 3; k++) {</em><br /><em>c[i][j] = c[i][j] + a[i][k] * b[k][j];</em><br /><em>}}}</em><br /><em>System.out.println("Multiplying A and B equals: ");</em><br /><em>for (m = 0; m &lt; c.length; m++) {</em><br /><em>for (n = 0; n &lt; c[0].length; n++) {</em><br /><em>System.out.print(c[m][n] + " ");</em><br /><em>}</em><br /><em>System.out.println();</em><br /><em>}</em><br /><em>}}</em><br /><br /><strong>Output</strong>:<br />26 20 14<br />56 44 32<br />86 68 50</pre>
+              </pre></html>
+            ]]>
         </item>
         <!--LinkedLists - Basic        -->
         <item>
-            There are different kinds of ways to link lists of information together
-            \nA linked list is based on the concept of a self-referential object - an object that refers to an object of the same class.
-
-            \n\nIt inherits the AbstractList class and implements List and Deque interfaces.
-
-            \n\nEach element (we will call it a node) of a list is comprising of two items - the data and a reference to the next node.
-            The last node has a reference to null. The entry point into a linked list is called the head of the list.
-            It should be noted that head is not a separate node, but the reference to the first node. If the list is empty
-            then the head is a null reference.
-            \nA linked list is a dynamic data structure. The number of nodes in a list is not fixed and can grow and shrink on demand.
-            Any application which has to deal with an unknown number of objects will need to use a linked list.
-
-            \n\nOne disadvantage of a linked list against an array is that it does not allow direct access to the individual elements.
-            \nIf you want to access a particular item then you have to start at the head and follow the references until you get to that item.
-
-            \n\nThe important points about Java LinkedList are:
-
-            \n\n &#8226;Java LinkedList class can contain duplicate elements.
-            \n &#8226;Java LinkedList class maintains insertion order.
-            \n &#8226;Java LinkedList class is non synchronized.
-            \n &#8226;In Java LinkedList class, manipulation is fast because no shifting needs to be occurred.
-            \n &#8226;Java LinkedList class can be used as list, stack or queue.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>There are different kinds of ways to link lists of information together<br />A linked list is based on the concept of a self-referential object - an object that refers to an object of the same class.<br /><br />It inherits the AbstractList class and implements List and Deque interfaces.<br /><br />Each element (we will call it a node) of a list is comprising of two items - the data and a reference to the next node.<br />The last node has a reference to null. The entry point into a linked list is called the head of the list.<br />It should be noted that head is not a separate node, but the reference to the first node. If the list is empty<br />then the head is a null reference.<br />A linked list is a dynamic data structure. The number of nodes in a list is not fixed and can grow and shrink on demand.<br />Any application which has to deal with an unknown number of objects will need to use a linked list.<br /><br />One disadvantage of a linked list against an array is that it does not allow direct access to the individual elements.<br />If you want to access a particular item then you have to start at the head and follow the references until you get to that item.<br /><br />The important points about Java LinkedList are:<br /><br />- Java LinkedList class can contain duplicate elements.<br />- Java LinkedList class maintains insertion order.<br />- Java LinkedList class is non synchronized.<br />- In Java LinkedList class, manipulation is fast because no shifting needs to be occurred.<br />- Java LinkedList class can be used as list, stack or queue.</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--LinkedLists - Singly Linked List-->
         <item>
-            A singly linked list is a concrete data structure consisting of a sequence of nodes
-            \nEach node stores:
-            &#8226;element
-            &#8226;link to the next node
-
-            \n\npublic class SinglyLinkedListImpl&lt;T&gt;{
-            \n
-            \nprivate Node&lt;T&gt; head;
-            \nprivate Node&lt;T&gt; tail;
-            \n
-            \n     public void add(T element){
-            \n
-            \n Node&lt;T&gt; nd = new Node&lt;T&gt;();
-            \nnd.setValue(element);
-            \nSystem.out.println("Adding: "+element);
-            \n/**
-            \n* check if the list is empty
-            \n*/
-            \nif(head == null){
-            \n//since there is only one element, both head and
-            \n//tail points to the same object.
-            \nhead = nd;
-            \ntail = nd;
-            \n } else {
-            \n//set current tail next link to new node
-            \ntail.setNextRef(nd);
-            \n//set tail as newly created node
-            \ntail = nd;
-            \n}
-            \n}
-            \n
-            \n      public void addAfter(T element, T after){
-            \n
-            \n  Node&lt;T&gt; tmp = head;
-            \n Node&lt;T&gt; refNode = null;
-            \nSystem.out.println("Traversing to all nodes..");
-            \n/**
-            \n* Traverse till given element
-            \n*/
-            \nwhile(true){
-            \nif(tmp == null){
-            \nbreak;
-            \n}
-            \nif(tmp.compareTo(after) == 0){
-            \n//found the target node, add after this node
-            \nrefNode = tmp;
-            \nbreak;
-            \n }
-            \ntmp = tmp.getNextRef();
-            \n }
-            \n if(refNode != null){
-            \n //add element after the target node
-            \n Node&lt;T&gt; nd = new Node&lt;T&gt;();
-            \n nd.setValue(element);
-            \n nd.setNextRef(tmp.getNextRef());
-            \n if(tmp == tail){
-            \n tail = nd;
-            \n }
-            \ntmp.setNextRef(nd);
-            \n
-            \n } else {
-            \n System.out.println("Unable to find the given element...");
-            \n }
-            \n }
-            \n
-            \n       public void deleteFront(){
-            \n
-            \n   if(head == null){
-            \n  System.out.println("Underflow...");
-            \n }
-            \nNode&lt;T&gt; tmp = head;
-            \nhead = tmp.getNextRef();
-            \nif(head == null){
-            \ntail = null;
-            \n }
-            \nSystem.out.println("Deleted: "+tmp.getValue());
-            \n}
-            \n
-            \n     public void deleteAfter(T after){
-            \n
-            \n Node&lt;T&gt;tmp = head;
-            \nNode&lt;T&gt; refNode = null;
-            \nSystem.out.println("Traversing to all nodes..");
-            \n/**
-            \n* Traverse till given element
-            \n*/
-            \nwhile(true){
-            \nif(tmp == null){
-            \nbreak;
-            \n }
-            \n if(tmp.compareTo(after) == 0){
-            \n //found the target node, add after this node
-            \n refNode = tmp;
-            \n break;
-            \n}
-            \n tmp = tmp.getNextRef();
-            \n }
-            \nif(refNode != null){
-            \ntmp = refNode.getNextRef();
-            \nrefNode.setNextRef(tmp.getNextRef());
-            \nif(refNode.getNextRef() == null){
-            \ntail = refNode;
-            \n}
-            \nSystem.out.println("Deleted: "+tmp.getValue());
-            \n} else {
-            \nSystem.out.println("Unable to find the given element...");
-            \n}
-            \n}
-            \n
-            \n      public void traverse(){
-            \n
-            \n  Node&lt;T&gt; tmp = head;
-            \n while(true){
-            \nif(tmp == null){
-            \nbreak;
-            \n}
-            \nSystem.out.println(tmp.getValue());
-            \ntmp = tmp.getNextRef();
-            \n}
-            \n }
-            \n
-            \n     public static void main(String a[]){
-            \n   SinglyLinkedListImpl&lt;Integer&gt; sl = new SinglyLinkedListImpl&lt;Integer&gt;();
-            \n sl.add(3);
-            \nsl.add(32);
-            \nsl.add(54);
-            \nsl.add(89);
-            \nsl.addAfter(76, 54);
-            \nsl.deleteFront();
-            \nsl.deleteAfter(76);
-            \nsl.traverse();
-            \n
-            \n }
-            \n }
-            \n
-            \nclass Node&lt;T&gt; implements Comparable&lt;T&gt; {
-
-            \n        private T value;
-            \n      private Node&lt;T&gt; nextRef;
-            \n
-            \n     public T getValue() {
-            \n   return value;
-            \n }
-            \npublic void setValue(T value) {
-            \n this.value = value;
-            \n}
-            \npublic Node&lt;T&gt; getNextRef() {
-            \nreturn nextRef;
-            \n }
-            \n public void setNextRef(Node&lt;T&gt; ref) {
-            \n this.nextRef = ref;
-            \n }
-            \n @Override
-            \n public int compareTo(T arg) {
-            \nif(arg == this.value){
-            \nreturn 0;
-            \n} else {
-            \nreturn 1;
-            \n}}}
-
-            \n\nOutput:
-            \nAdding: 3
-            \nAdding: 32
-            \n Adding: 54
-            \nAdding: 89
-            \nTraversing to all nodes..
-            \nDeleted: 3
-            \nTraversing to all nodes..
-            \nDeleted: 89
-            \n32
-            \n54
-            \n76
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>A singly linked list is a concrete data structure consisting of a sequence of nodes</em><br /><em>Each node stores:</em><br /><em>- element</em><br /><em>- link to the next node</em><br /><br /><em>public class SinglyLinkedListImpl&lt;&gt;{</em><br /><br /><em>private Node&lt;&gt; head;</em><br /><em>private Node&lt;&gt; tail;</em><br /><br /><em>public void add(T element){</em><br /><br /><em>Node&lt;&gt; nd = new Node&lt;&gt;();</em><br /><em>nd.setValue(element);</em><br /><em>System.out.println("Adding: "+element);</em><br /><em>/**</em><br /><em>* check if the list is empty</em><br /><em>*/</em><br /><em>if(head == null){</em><br /><em>//since there is only one element, both head and</em><br /><em>//tail points to the same object.</em><br /><em>head = nd;</em><br /><em>tail = nd;</em><br /><em> } else {</em><br /><em>//set current tail next link to new node</em><br /><em>tail.setNextRef(nd);</em><br /><em>//set tail as newly created node</em><br /><em>tail = nd;</em><br /><em>}</em><br /><em>}</em><br /><br /><em>public void addAfter(T element, T after){</em><br /><br /><em>Node&lt;&gt; tmp = head;</em><br /><em>Node&lt;&gt; refNode = null;</em><br /><em>System.out.println("Traversing to all nodes..");</em><br /><em>/**</em><br /><em>* Traverse till given element</em><br /><em>*/</em><br /><em>while(true){</em><br /><em>if(tmp == null){</em><br /><em>break;</em><br /><em>}</em><br /><em>if(tmp.compareTo(after) == 0){</em><br /><em>//found the target node, add after this node</em><br /><em>refNode = tmp;</em><br /><em>break;</em><br /><em> }</em><br /><em>tmp = tmp.getNextRef();</em><br /><em> }</em><br /><em> if(refNode != null){</em><br /><em> //add element after the target node</em><br /><em> Node&lt;&gt; nd = new Node&lt;&gt;();</em><br /><em> nd.setValue(element);</em><br /><em> nd.setNextRef(tmp.getNextRef());</em><br /><em> if(tmp == tail){</em><br /><em> tail = nd;</em><br /><em> }</em><br /><em>tmp.setNextRef(nd);</em><br /><br /><em> } else {</em><br /><em> System.out.println("Unable to find the given element...");</em><br /><em> }</em><br /><em> }</em><br /><br /><em>public void deleteFront(){</em><br /><br /><em>if(head == null){</em><br /><em>  System.out.println("Underflow...");</em><br /><em> }</em><br /><em>Node&lt;&gt; tmp = head;</em><br /><em>head = tmp.getNextRef();</em><br /><em>if(head == null){</em><br /><em>tail = null;</em><br /><em> }</em><br /><em>System.out.println("Deleted: "+tmp.getValue());</em><br /><em>}</em><br /><br /><em>public void deleteAfter(T after){</em><br /><br /><em>Node&lt;&gt;tmp = head;</em><br /><em>Node&lt;&gt; refNode = null;</em><br /><em>System.out.println("Traversing to all nodes..");</em><br /><em>/**</em><br /><em>* Traverse till given element</em><br /><em>*/</em><br /><em>while(true){</em><br /><em>if(tmp == null){</em><br /><em>break;</em><br /><em> }</em><br /><em> if(tmp.compareTo(after) == 0){</em><br /><em> //found the target node, add after this node</em><br /><em> refNode = tmp;</em><br /><em> break;</em><br /><em>}</em><br /><em> tmp = tmp.getNextRef();</em><br /><em> }</em><br /><em>if(refNode != null){</em><br /><em>tmp = refNode.getNextRef();</em><br /><em>refNode.setNextRef(tmp.getNextRef());</em><br /><em>if(refNode.getNextRef() == null){</em><br /><em>tail = refNode;</em><br /><em>}</em><br /><em>System.out.println("Deleted: "+tmp.getValue());</em><br /><em>} else {</em><br /><em>System.out.println("Unable to find the given element...");</em><br /><em>}</em><br /><em>}</em><br /><br /><em>public void traverse(){</em><br /><br /><em>Node&lt;&gt; tmp = head;</em><br /><em>while(true){</em><br /><em>if(tmp == null){</em><br /><em>break;</em><br /><em>}</em><br /><em>System.out.println(tmp.getValue());</em><br /><em>tmp = tmp.getNextRef();</em><br /><em>}</em><br /><em> }</em><br /><br /><em>public static void main(String a[]){</em><br /><em>SinglyLinkedListImpl&lt;Integer&gt; sl = new SinglyLinkedListImpl&lt;Integer&gt;();</em><br /><em>sl.add(3);</em><br /><em>sl.add(32);</em><br /><em>sl.add(54);</em><br /><em>sl.add(89);</em><br /><em>sl.addAfter(76, 54);</em><br /><em>sl.deleteFront();</em><br /><em>sl.deleteAfter(76);</em><br /><em>sl.traverse();</em><br /><br /><em> }</em><br /><em> }</em><br /><br /><em>class Node&lt;&gt; implements Comparable&lt;&gt; {</em><br /><br /><em>        private T value;</em><br /><em>      private Node&lt;&gt; nextRef;</em><br /><br /><em>     public T getValue() {</em><br /><em>   return value;</em><br /><em> }</em><br /><em>public void setValue(T value) {</em><br /><em> this.value = value;</em><br /><em>}</em><br /><em>public Node&lt;&gt; getNextRef() {</em><br /><em>return nextRef;</em><br /><em> }</em><br /><em> public void setNextRef(Node&lt;&gt; ref) {</em><br /><em> this.nextRef = ref;</em><br /><em> }</em><br /><em> @Override</em><br /><em> public int compareTo(T arg) {</em><br /><em>if(arg == this.value){</em><br /><em>return 0;</em><br /><em>} else {</em><br /><em>return 1;</em><br /><em>}}}</em><br /><br /><strong>Output</strong>:<br />Adding: 3<br />Adding: 32<br />Adding: 54<br />Adding: 89<br />Traversing to all nodes..<br />Deleted: 3<br />Traversing to all nodes..<br />Deleted: 89<br />32<br />54<br />76</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--LinkedList - Doubly Lined Lists-->
         <item>
-            A doubly linked list is often more convenient
-            \nEach node stores;
-            \n&#8226; element
-            \n&#8226; link to the previous node
-            \n&#8226; link to the next node
-
-            \n\n// Class for Doubly Linked List
-            \npublic class DLL
-            \n{
-            \nNode head; // head of list
-            \n
-            \n          /* Doubly Linked list Node*/
-            \n        class Node
-            \n      {
-            \n    int data;
-            \n  Node prev;
-            \nNode next;
-            \n
-            \n
-            \n          // Constructor to create a new node
-            \n        // next and prev is by default initialized as null
-            \n      Node(int d){data=d;}
-            \n    }
-            \n
-            \n          //Adding a node at the front of the list
-            \n        public void push(int new_data)
-            \n      {
-            \n    /* 1. allocate node
-            \n   * 2. put in the data */
-            \n Node new_Node = new Node(new_data);
-            \n
-            \n          /* 3. Make next of new node as head and previous as NULL */
-            \n        new_Node.next = head;
-            \n      new_Node.prev = null;
-            \n
-            \n          /* 4. change prev of head node to new node */
-            \n        if(head != null)
-            \n      head.prev = new_Node;
-            \n
-            \n          /* 5. move the head to point to the new node */
-            \n        head = new_Node;
-            \n      }
-            \n
-            \n        /* Given a node as prev_node, insert a new node after the given node */
-            \n      public void InsertAfter(Node prev_Node,int new_data)
-            \n          {
-            \n
-            \n          /*1. check if the given prev_node is NULL */
-            \n        if(prev_Node == null)
-            \n      {
-            \n    System.out.println("The given previous node cannot be NULL ");
-            \n  return;
-            \n}
-            \n
-            \n          /* 2. allocate node
-            \n        * 3. put in the data */
-            \n      Node new_node = new Node(new_data);
-            \n
-            \n          /* 4. Make next of new node as next of prev_node */
-            \n        new_node.next = prev_Node.next;
-            \n
-            \n
-            \n          /* 5. Make the next of prev_node as new_node */
-            \n        prev_Node.next = new_node;
-            \n
-            \n          /* 6. Make prev_node as previous of new_node */
-            \n        new_node.prev = prev_Node;
-            \n
-            \n          /* 7. Change previous of new_node\'s next node */
-            \n        if(new_node.next != null)
-            \n      new_node.next.prev = new_node;
-            \n    }
-            \n
-            \n          //Add a node at the end of the list
-            \n        void append(int new_data)
-            \n      {
-            \n    /* 1. allocate node
-            \n  * 2. put in the data */
-            \nNode new_node = new Node(new_data);
-            \n
-            \n          Node last = head;/* used in step 5*/
-            \n
-            \n          /* 3. This new node is going to be the last node, so
-            \n        * make next of it as NULL*/
-            \n      new_node.next = null;
-            \n
-            \n          /* 4. If the Linked List is empty, then make the new
-            \n        * node as head */
-            \n      if(head == null)
-            \n    {
-            \n  new_node.prev = null;
-            \nhead = new_node;
-            \nreturn;
-            \n}
-            \n
-            \n          /* 5. Else traverse till the last node */
-            \n        while(last.next != null)
-            \n      last = last.next;
-            \n
-            \n          /* 6. Change the next of last node */
-            \n        last.next = new_node;
-            \n
-            \n          /* 7. Make last node as previous of new node */
-            \n        new_node.prev = last;
-            \n      }
-            \n
-            \n          // This function prints contents of linked list starting from the given node
-            \n        public void printlist(Node node)
-            \n      {
-            \n    Node last = null;
-            \n   System.out.println("Traversal in forward Direction");
-            \n while(node != null)
-            {
-            \n           System.out.print(node.data + " ");
-            \n         last = node;
-            \n       node = node.next;
-            \n     }
-            \n   System.out.println();
-            \n System.out.println("Traversal in reverse direction");
-            \nwhile (last != null)
-            \n{
-            \nSystem.out.print(last.data + " ");
-            \nlast = last.prev;
-            \n }
-            \n}
-            \n
-            \n          /* Drier program to test above functions*/
-            \n        public static void main(String[] args)
-            \n      {
-            \n    /* Start with the empty list */
-            \n  DLL dll = new DLL();
-            \n
-            \n          // Insert 6. So linked list becomes 6->NULL
-            \n        dll.append(6);
-            \n
-            \n        // Insert 7 at the beginning. So linked list becomes 7->6->NULL
-            \n         dll.push(7);
-            \n
-            \n          // Insert 1 at the beginning. So linked list becomes 1->7->6->NULL
-            \n        dll.push(1);
-            \n
-            \n          // Insert 4 at the end. So linked list becomes 1->7->6->4->NULL
-            \n        dll.append(4);
-            \n
-            \n          // Insert 8, after 7. So linked list becomes 1->7->8->6->4->NULL
-            \n        dll.InsertAfter(dll.head.next, 8);
-            \n
-            \n
-            \n          System.out.println("Created DLL is: ");
-            \n        dll.printlist(dll.head);
-            \n      }
-            \n    }
-
-            \n\nOutput:
-            \nCreated DLL is:
-            \nTraversal in forward direction
-            \n1  7  8  6  4
-            \nTraversal in reverse direction
-            \n4  6  8  7  1
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>A doubly linked list is often more convenient</em><br /><em>Each node stores;</em><br /><em>- element</em><br /><em>- link to the previous node</em><br /><em>- link to the next node</em><br /><br /><em>// Class for Doubly Linked List</em><br /><em>public class DLL</em><br /><em>{</em><br /><em>Node head; // head of list</em><br /><br /><em>          /* Doubly Linked list Node*/</em><br /><em>class Node</em><br /><em>{</em><br /><em>int data;</em><br /><em>Node prev;</em><br /><em>Node next;</em><br /><br /><br /><em>          // Constructor to create a new node</em><br /><em>        // next and prev is by default initialized as null</em><br /><em>      Node(int d){data=d;}</em><br /><em>    }</em><br /><br /><em>          //Adding a node at the front of the list</em><br /><em>public void push(int new_data)</em><br /><em>{</em><br /><em>    /* 1. allocate node</em><br /><em>   * 2. put in the data */</em><br /><em> Node new_Node = new Node(new_data);</em><br /><br /><em>          /* 3. Make next of new node as head and previous as NULL */</em><br /><em>      new_Node.next = head;</em><br /><em>      new_Node.prev = null;</em><br /><br /><em>          /* 4. change prev of head node to new node */</em><br /><em>      if(head != null)</em><br /><em>      head.prev = new_Node;</em><br /><br /><em>          /* 5. move the head to point to the new node */</em><br /><em>      head = new_Node;</em><br /><em>      }</em><br /><br /><em>        /* Given a node as prev_node, insert a new node after the given node */</em><br /><em>public void InsertAfter(Node prev_Node,int new_data)</em><br /><em>{</em><br /><br /><em>          /*1. check if the given prev_node is NULL */</em><br /><em>        if(prev_Node == null)</em><br /><em>      {</em><br /><em>  System.out.println("The given previous node cannot be NULL ");</em><br /><em>  return;</em><br /><em>}</em><br /><br /><em>          /* 2. allocate node</em><br /><em>        * 3. put in the data */</em><br /><em>      Node new_node = new Node(new_data);</em><br /><br /><em>          /* 4. Make next of new node as next of prev_node */</em><br /><em>        new_node.next = prev_Node.next;</em><br /><br /><br /><em>          /* 5. Make the next of prev_node as new_node */</em><br /><em>        prev_Node.next = new_node;</em><br /><br /><em>          /* 6. Make prev_node as previous of new_node */</em><br /><em>        new_node.prev = prev_Node;</em><br /><br /><em>          /* 7. Change previous of new_node\'s next node */</em><br /><em>        if(new_node.next != null)</em><br /><em>      new_node.next.prev = new_node;</em><br /><em>    }</em><br /><br /><em>          //Add a node at the end of the list</em><br /><em>void append(int new_data)</em><br /><em>{</em><br /><em>    /* 1. allocate node</em><br /><em>  * 2. put in the data */</em><br /><em>Node new_node = new Node(new_data);</em><br /><br /><em>          Node last = head;/* used in step 5*/</em><br /><br /><em>          /* 3. This new node is going to be the last node, so</em><br /><em>        * make next of it as NULL*/</em><br /><em>      new_node.next = null;</em><br /><br /><em>          /* 4. If the Linked List is empty, then make the new</em><br /><em>        * node as head */</em><br /><em>      if(head == null)</em><br /><em>    {</em><br /><em>  new_node.prev = null;</em><br /><em>head = new_node;</em><br /><em>return;</em><br /><em>}</em><br /><br /><em>          /* 5. Else traverse till the last node */</em><br /><em>        while(last.next != null)</em><br /><em>      last = last.next;</em><br /><br /><em>          /* 6. Change the next of last node */</em><br /><em>        last.next = new_node;</em><br /><br /><em>          /* 7. Make last node as previous of new node */</em><br /><em>        new_node.prev = last;</em><br /><em>      }</em><br /><br /><em>          // This function prints contents of linked list starting from the given node</em><br /><em>        public void printlist(Node node)</em><br /><em>      {</em><br /><em>    Node last = null;</em><br /><em>   System.out.println("Traversal in forward Direction");</em><br /><em> while(node != null)</em><br /><em>{</em><br /><em>           System.out.print(node.data + " ");</em><br /><em>         last = node;</em><br /><em>       node = node.next;</em><br /><em>     }</em><br /><em>   System.out.println();</em><br /><em> System.out.println("Traversal in reverse direction");</em><br /><em>while (last != null)</em><br /><em>{</em><br /><em>System.out.print(last.data + " ");</em><br /><em>last = last.prev;</em><br /><em> }</em><br /><em>}</em><br /><br /><em>          /* Drier program to test above functions*/</em><br /><em>public static void main(String[] args)</em><br /><em>{</em><br /><em>    /* Start with the empty list */</em><br /><em>  DLL dll = new DLL();</em><br /><br /><em>          // Insert 6. So linked list becomes 6-&gt;NULL</em><br /><em>        dll.append(6);</em><br /><br /><em>        // Insert 7 at the beginning. So linked list becomes 7-&gt;6-&gt;NULL</em><br /><em>         dll.push(7);</em><br /><br /><em>          // Insert 1 at the beginning. So linked list becomes 1-&gt;7-&gt;6-&gt;NULL</em><br /><em>        dll.push(1);</em><br /><br /><em>          // Insert 4 at the end. So linked list becomes 1-&gt;7-&gt;6-&gt;4-&gt;NULL</em><br /><em>        dll.append(4);</em><br /><br /><em>          // Insert 8, after 7. So linked list becomes 1-&gt;7-&gt;8-&gt;6-&gt;4-&gt;NULL</em><br /><em>        dll.InsertAfter(dll.head.next, 8);</em><br /><br /><br /><em>          System.out.println("Created DLL is: ");</em><br /><em>        dll.printlist(dll.head);</em><br /><em>      }</em><br /><em>    }</em><br /><br /><strong>Output</strong>:<br />Created DLL is:<br />Traversal in forward direction<br />1  7  8  6  4<br />Traversal in reverse direction<br />4  6  8  7  1</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--ArrayLists - Basics-->
         <item>
-            Arraylist class implements List interface. It is widely used because of the functionality and flexibility it offers.
-            Most of the developers choose Arraylist over Array as it’s a very good alternative of traditional java arrays.
-            ArrayList is a resizable-array implementation of the List interface. It implements all optional list operations,
-            and permits all elements, including null.
-
-            \n\n &#8226; ArrayList inherits AbstractList class and implements List interface.
-            \n &#8226;  ArrayList is initialized by a size, however the size can increase if collection grows or shrunk
-            if objects are removed from the collection.
-            \n &#8226; Java ArrayList allows us to randomly access the list.
-            \n &#8226; ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases like Integer, String.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Arraylist class implements List interface. It is widely used because of the functionality and flexibility it offers.<br />Most of the developers choose Arraylist over Array as it\'s a very good alternative of traditional java arrays.<br />ArrayList is a resizable-array implementation of the List interface. It implements all optional list operations,<br />and permits all elements, including null.<br /><br />-  ArrayList inherits AbstractList class and implements List interface.<br />-  ArrayList is initialized by a size, however the size can increase if collection grows or shrunk<br />if objects are removed from the collection.<br />-  Java ArrayList allows us to randomly access the list.<br />-  ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases like Integer, String.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Arraylists - Generic arraylist-->
         <item>
-            class arrayli
-            \n{
-            \npublic static void main(String[] args)
-            \nthrows IOException
-            \n{
-            \n// size of ArrayList
-            \nint n = 5;
-            \n
-            \n          //declaring ArrayList with initial size n
-            \n        ArrayList&lt;Integer&gt; arrli = new ArrayList&lt;Integer&gt;(n);
-            \n
-            \n          // Appending the new element at the end of the list
-            \n        for (int i=1; i&lt;=n; i++)
-            \n      arrli.add(i);
-            \n
-            \n          // Printing elements
-            \n        System.out.println(arrli);
-            \n
-            \n          // Remove element at index 3
-            \n        arrli.remove(3);
-            \n
-            \n          // Displaying ArrayList after deletion
-            \n        System.out.println(arrli);
-            \n
-            \n          // Printing elements one by one
-            \n        for (int i=0; i&lt;arrli.size(); i++)
-            \n      System.out.print(arrli.get(i)+" ");
-            \n    }
-            \n  }
-
-            \n\nOutput:
-            \n[1, 2, 3, 4, 5]
-            \n[1, 2, 3, 5]
-            \n1 2 3 5
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>class arrayli</em><br /><em>{</em><br /><em>public static void main(String[] args)</em><br /><em>throws IOException</em><br /><em>{</em><br /><em>// size of ArrayList</em><br /><em>int n = 5;</em><br /><br /><em>          //declaring ArrayList with initial size n</em><br /><em>        ArrayList&lt;Integer&gt; arrli = new ArrayList&lt;Integer&gt;(n);</em><br /><br /><em>          // Appending the new element at the end of the list</em><br /><em>        for (int i=1; i&lt;=n; i++)</em><br /><em>      arrli.add(i);</em><br /><br /><em>          // Printing elements</em><br /><em>        System.out.println(arrli);</em><br /><br /><em>          // Remove element at index 3</em><br /><em>        arrli.remove(3);</em><br /><br /><em>          // Displaying ArrayList after deletion</em><br /><em>        System.out.println(arrli);</em><br /><br /><em>          // Printing elements one by one</em><br /><em>        for (int i=0; i&lt;arrli.size(); i++)</em><br /><em>      System.out.print(arrli.get(i)+" ");</em><br /><em>    }</em><br /><em>  }</em><br /><br /><strong>Output</strong>:<br />[1, 2, 3, 4, 5]<br />[1, 2, 3, 5]<br />1 2 3 5</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Arraylists - loop Arraylist-->
         <item>
-            public class LoopExample {
-            \npublic static void main(String[] args) {
-            \n
-            \n          ArrayList&lt;Integer&gt; arrlist = new ArrayList&lt;Integer&gt;();
-            \n        arrlist.add(14);
-            \n      arrlist.add(7);
-            \n    arrlist.add(39);
-            \n  arrlist.add(40);
-            \n
-            \n          /* For Loop for iterating ArrayList */
-            \n        System.out.println("For Loop");
-            \n      for (int counter = 0; counter &lt; arrlist.size(); counter++) {
-            \n    System.out.println(arrlist.get(counter));
-            \n  }
-            \n
-            \n          /* Advanced For Loop*/
-            \n        System.out.println("Advanced For Loop");
-            \n      for (Integer num : arrlist) {
-            \n    System.out.println(num);
-            \n  }
-            \n
-            \n          /* While Loop for iterating ArrayList*/
-            \n        System.out.println("While Loop");
-            \n      int count = 0;
-            \n    while (arrlist.size() > count) {
-            \n  System.out.println(arrlist.get(count));
-            \ncount++;
-            \n}
-            \n
-            \n          /*Looping Array List using Iterator*/
-            \n        System.out.println("Iterator");
-            \n      Iterator iter = arrlist.iterator();
-            \n    while (iter.hasNext()) {
-            \n  System.out.println(iter.next());
-            \n}
-            \n}
-            \n}
-
-            \n\nOutput:
-            \nFor Loop
-            \n14
-            \n7
-            \n39
-            \n40
-            \nAdvanced For Loop
-            \n14
-            \n7
-            \n39
-            \n40
-            \nWhile Loop
-            \n14
-            \n7
-            \n39
-            \n40
-            \nIterator
-            \n14
-            \n7
-            \n39
-            \n40
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class LoopExample {</em><br /><em>public static void main(String[] args) {</em><br /><br /><em>          ArrayList&lt;Integer&gt; arrlist = new ArrayList&lt;Integer&gt;();</em><br /><em>        arrlist.add(14);</em><br /><em>      arrlist.add(7);</em><br /><em>    arrlist.add(39);</em><br /><em>  arrlist.add(40);</em><br /><br /><em>          /* For Loop for iterating ArrayList */</em><br /><em>        System.out.println("For Loop");</em><br /><em>      for (int counter = 0; counter &lt; arrlist.size(); counter++) {</em><br /><em>    System.out.println(arrlist.get(counter));</em><br /><em>  }</em><br /><br /><em>          /* Advanced For Loop*/</em><br /><em>        System.out.println("Advanced For Loop");</em><br /><em>      for (Integer num : arrlist) {</em><br /><em>    System.out.println(num);</em><br /><em>  }</em><br /><br /><em>          /* While Loop for iterating ArrayList*/</em><br /><em>        System.out.println("While Loop");</em><br /><em>      int count = 0;</em><br /><em>    while (arrlist.size() &gt; count) {</em><br /><em>  System.out.println(arrlist.get(count));</em><br /><em>count++;</em><br /><em>}</em><br /><br /><em>          /*Looping Array List using Iterator*/</em><br /><em>        System.out.println("Iterator");</em><br /><em>      Iterator iter = arrlist.iterator();</em><br /><em>    while (iter.hasNext()) {</em><br /><em>  System.out.println(iter.next());</em><br /><em>}</em><br /><em>}</em><br /><em>}</em><br /><br /><strong>Output</strong>:<br />For Loop<br />14<br />7<br />39<br />40<br />Advanced For Loop<br />14<br />7<br />39<br />40<br />While Loop<br />14<br />7<br />39<br />40<br />Iterator<br />14<br />7<br />39<br />40</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--Enumeration - basic-->
         <item>
-            The Enumeration interface defines the methods by which you can enumerate (obtain one at a time) the elements in a collection
-            of objects.
-
-            \nThis legacy interface has been superceded by Iterator. Although not deprecated, Enumeration is considered obsolete for
-            new code. However, it is used by several methods defined by the legacy classes such as Vector and Properties,
-            is used by several other API classes, and is currently in widespread use in application code.
-
-            \n\nYou should use enum types any time you need to represent a fixed set of constants.
-            \nThat includes natural enum types such as the planets in our solar system and data sets where you know all possible values at
-            compile time—for example, the choices on a menu, command line flags, and so on.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>The Enumeration interface defines the methods by which you can enumerate (obtain one at a time) the elements in a collection<br />of objects.<br /><br />This legacy interface has been superceded by Iterator. Although not deprecated, Enumeration is considered obsolete for<br />new code. However, it is used by several methods defined by the legacy classes such as Vector and Properties,<br />is used by several other API classes, and is currently in widespread use in application code.<br /><br />You should use enum types any time you need to represent a fixed set of constants.<br />That includes natural enum types such as the planets in our solar system and data sets where you know all possible values at<br />compile time&mdash;for example, the choices on a menu, command line flags, and so on.</pre>
+              </pre></html>
+            ]]>
         </item>
         <!--Enumeration - Generic-->
         <item>
-            public class EnumerationTester {
-            \n
-            \n          public static void main(String args[]) {
-            \n//declare enumeration and instantiate vector
-            \n        Enumeration days;
-            \n      Vector dayNames = new Vector();
-            \n//add values to vector
-            \n          dayNames.add("Sunday");
-            \n        dayNames.add("Monday");
-            \n      dayNames.add("Tuesday");
-            \n    dayNames.add("Wednesday");
-            \n  dayNames.add("Thursday");
-            \n dayNames.add("Friday");
-            \ndayNames.add("Saturday");
-            \n//add the values from vector to Enumeration
-            \ndays = dayNames.elements();
-            \n//print days
-            \n          while (days.hasMoreElements()) {
-            \n        System.out.println(days.nextElement());
-            \n      }}}
-
-            \n\nOutput:
-            \nSunday
-            \nMonday
-            \nTuesday
-            \nWednesday
-            \nThursday
-            \nFriday
-            \nSaturday
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class EnumerationTester {</em><br /><br /><em>public static void main(String args[]) {</em><br /><em>//declare enumeration and instantiate vector</em><br /><em>Enumeration days;</em><br /><em>Vector dayNames = new Vector();</em><br /><em>//add values to vector</em><br /><em>dayNames.add("Sunday");</em><br /><em>dayNames.add("Monday");</em><br /><em>dayNames.add("Tuesday");</em><br /><em>dayNames.add("Wednesday");</em><br /><em>dayNames.add("Thursday");</em><br /><em>dayNames.add("Friday");</em><br /><em>dayNames.add("Saturday");</em><br /><em>//add the values from vector to Enumeration</em><br /><em>days = dayNames.elements();</em><br /><em>//print days</em><br /><em>while (days.hasMoreElements()) {</em><br /><em>System.out.println(days.nextElement());</em><br /><em>}}}</em><br /><br /><strong>Output</strong>:<br />Sunday<br />Monday<br />Tuesday<br />Wednesday<br />Thursday<br />Friday<br />Saturday</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--Bitset - basic-->
         <item>
-            The BitSet class creates a special type of array that holds bit values.
-            The BitSet array can increase in size as needed. This makes it similar to a vector of bits.
-            This is a legacy class but it has been completely re-engineered in Java 2, version 1.4.
-
-            \n\nIt’s efficient only from the standpoint of size; if you’re looking for efficient access, it is slightly slower
-            than using an array of some native type.
-            \nIn addition, the minimum size of the BitSet is that of a long: 64 bits. This implies that if you’re storing anything
-            smaller, like 8 bits, a BitSet will be wasteful, so you’re better off creating your own class to hold your flags.
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>The BitSet class creates a special type of array that holds bit values.<br />The BitSet array can increase in size as needed. This makes it similar to a vector of bits.<br />This is a legacy class but it has been completely re-engineered in Java 2, version 1.4.<br /><br />It\'s efficient only from the standpoint of size; if you\'re looking for efficient access, it is slightly slower<br />than using an array of some native type.<br />In addition, the minimum size of the BitSet is that of a long: 64 bits. This implies that if you\'re storing anything<br />smaller, like 8 bits, a BitSet will be wasteful, so you\'re better off creating your own class to hold your flags.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--BitSet - Generic-->
         <item>
-            public class BitSetDemo {
-            \n
-            \n           public static void main(String args[]) {
-            \n         BitSet bits1 = new BitSet(16);
-            \n       BitSet bits2 = new BitSet(16);
-            \n
-            \n          // set some bits
-            \n        for(int i = 0; i &lt; 16; i++) {
-            \n      if((i % 2) == 0) bits1.set(i);
-            \n    if((i % 5) != 0) bits2.set(i);
-            \n  }
-            \n
-            \n          System.out.println("Initial pattern in bits1: ");
-            \n        System.out.println(bits1);
-            \n      System.out.println("\nInitial pattern in bits2: ");
-            \n    System.out.println(bits2);
-            \n
-            \n          // AND bits
-            \n        bits2.and(bits1);
-            \n      System.out.println("\nbits2 AND bits1: ");
-            \n    System.out.println(bits2);
-            \n
-            \n          // OR bits
-            \n        bits2.or(bits1);
-            \n      System.out.println("\nbits2 OR bits1: ");
-            \n    System.out.println(bits2);
-            \n
-            \n          // XOR bits
-            \n        bits2.xor(bits1);
-            \n      System.out.println("\nbits2 XOR bits1: ");
-            \n    System.out.println(bits2);
-            \n  }
-            \n}
-
-            \n\n Output:
-            \nInitial pattern in bits1:
-            \n     {0, 2, 4, 6, 8, 10, 12, 14}
-            \n
-            \n          Initial pattern in bits2:
-            \n        {1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14}
-            \n
-            \n          bits2 AND bits1:
-            \n        {2, 4, 6, 8, 12, 14}
-            \n
-            \n          bits2 OR bits1:
-            \n        {0, 2, 4, 6, 8, 10, 12, 14}
-            \n
-            \n          bits2 XOR bits1:
-            \n        {}
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class BitSetDemo {</em><br /><br /><em>public static void main(String args[]) {</em><br /><em>BitSet bits1 = new BitSet(16);</em><br /><em>BitSet bits2 = new BitSet(16);</em><br /><br /><em>// set some bits</em><br /><em>for(int i = 0; i &lt; 16; i++) {</em><br /><em>if((i % 2) == 0) bits1.set(i);</em><br /><em>if((i % 5) != 0) bits2.set(i);</em><br /><em>}</em><br /><br /><em>System.out.println("Initial pattern in bits1: ");</em><br /><em>System.out.println(bits1);</em><br /><em>System.out.println("Initial pattern in bits2: ");</em><br /><em>System.out.println(bits2);</em><br /><br /><em>// AND bits</em><br /><em>bits2.and(bits1);</em><br /><em>System.out.println("bits2 AND bits1: ");</em><br /><em>System.out.println(bits2);</em><br /><br /><em>// OR bits</em><br /><em>bits2.or(bits1);</em><br /><em>System.out.println("bits2 OR bits1: ");</em><br /><em>System.out.println(bits2);</em><br /><br /><em>// XOR bits</em><br /><em>bits2.xor(bits1);</em><br /><em>System.out.println("bits2 XOR bits1: ");</em><br /><em>System.out.println(bits2);</em><br /><em>}</em><br /><em>}</em><br /><br /><em>Output:</em><br /><em>Initial pattern in bits1:</em><br /><em>{0, 2, 4, 6, 8, 10, 12, 14}</em><br /><br /><em>Initial pattern in bits2:</em><br /><em>{1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14}</em><br /><br /><em>bits2 AND bits1:</em><br /><em>{2, 4, 6, 8, 12, 14}</em><br /><br /><em>bits2 OR bits1:</em><br /><em>{0, 2, 4, 6, 8, 10, 12, 14}</em><br /><br /><em>bits2 XOR bits1:</em><br /><em>{}</em></pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Stacks - Basic-->
         <item>
-            Java Stack is LIFO object. It extends Vector class, but supports only five operations.
-            Java Stack class has only one constructor which is empty or default constructor.
-            So, when we create a Stack, initially it contains no items that means Stack is empty.
-
-            Stack internally has a pointer: TOP, which refers to the top of the Stack element. If Stack is empty, TOP refers to the before
-            first element location. If Stack is not empty, TOP refers to the top element.
-
-            \n\nIt extends Vector class with five methods that allow a vector to be treated as a stack. The five methods are:
-
-            \n\n1. Object push(Object element) : Pushes an element on the top of the stack.
-
-            \n2. Object pop() : Removes and returns the top element of the stack. An ‘EmptyStackException’ exception is thrown if
-            we call pop() when the invoking stack is empty.
-
-            \n3. Object peek( ) : Returns the element on the top of the stack, but does not remove it.
-
-            \n4. boolean empty() : It returns true if nothing is on the top of the stack. Else, returns false.
-
-            \n5. int search(Object element) : It determines whether an object exists in the stack.
-            If the element is found, it returns the position of the element from the top of the stack. Else, it returns -1.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Java Stack is LIFO object. It extends Vector class, but supports only five operations.<br />Java Stack class has only one constructor which is empty or default constructor.<br />So, when we create a Stack, initially it contains no items that means Stack is empty.<br /><br />Stack internally has a pointer: TOP, which refers to the top of the Stack element. If Stack is empty, TOP refers to the before<br />first element location. If Stack is not empty, TOP refers to the top element.<br /><br />It extends Vector class with five methods that allow a vector to be treated as a stack. The five methods are:<br /><br />1. Object push(Object element): Pushes an element on the top of the stack.<br /><br />2. Object pop(): Removes and returns the top element of the stack. An \'EmptyStackException\' exception is thrown if<br />we call pop() when the invoking stack is empty.<br /><br />3. Object peek( ): Returns the element on the top of the stack, but does not remove it.<br /><br />4. boolean empty(): It returns true if nothing is on the top of the stack. Else, returns false.<br /><br />5. int search(Object element): It determines whether an object exists in the stack.<br />If the element is found, it returns the position of the element from the top of the stack. Else, it returns -1.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Stacks - Generic Stack-->
         <item>
-            public class StackBasicExample {
-            \n
-            \npublic static void main(String a[]){
-            \n//declare stack
-            \nStack&lt;Integer&gt; stack = new Stack&lt;&gt;();
-            \nSystem.out.println("Empty stack : "  + stack);
-            \nSystem.out.println("Empty stack : "  + stack.isEmpty());
-            \n//push values to stack
-            \nstack.push(1001);
-            \nstack.push(1002);
-            \nstack.push(1003);
-            \nstack.push(1004);
-            \n
-            \nSystem.out.println("Non-Empty stack : "  + stack);
-            \nSystem.out.println("Non-Empty stack: Pop Operation : "  + stack.pop());
-            \nSystem.out.println("Non-Empty stack : After Pop Operation : "  + stack);
-            \nSystem.out.println("Non-Empty stack : search() Operation : "  + stack.search(1002));
-            \nSystem.out.println("Non-Empty stack : "  + stack.isEmpty());
-            \n}}
-
-            \n\nOutput:
-            \nEmpty stack : []
-            \nEmpty stack : true
-            \nNon-Empty stack : [1001, 1002, 1003, 1004]
-            \nNon-Empty stack: Pop Operation : 1004
-            \nNon-Empty stack : After Pop Operation : [1001, 1002, 1003]
-            \nNon-Empty stack : search() Operation : 2
-            \nNon-Empty stack : false
-
+            <![CDATA[<html><pre style="text-align:center">
+             <pre><em>public class StackBasicExample {</em><br /><br /><em>public static void main(String a[]){</em><br /><em>//declare stack</em><br /><em>Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();</em><br /><em>System.out.println("Empty stack : "  + stack);</em><br /><em>System.out.println("Empty stack : "  + stack.isEmpty());</em><br /><em>//push values to stack</em><br /><em>stack.push(1001);</em><br /><em>stack.push(1002);</em><br /><em>stack.push(1003);</em><br /><em>stack.push(1004);</em><br /><br /><em>System.out.println("Non-Empty stack : "  + stack);</em><br /><em>System.out.println("Non-Empty stack: Pop Operation : "  + stack.pop());</em><br /><em>System.out.println("Non-Empty stack : After Pop Operation : "  + stack);</em><br /><em>System.out.println("Non-Empty stack : search() Operation : "  + stack.search(1002));</em><br /><em>System.out.println("Non-Empty stack : "  + stack.isEmpty());</em><br /><em>}}</em><br /><br /><strong>Output</strong>:<br />Empty stack : []<br />Empty stack : true<br />Non-Empty stack : [1001, 1002, 1003, 1004]<br />Non-Empty stack: Pop Operation : 1004<br />Non-Empty stack : After Pop Operation : [1001, 1002, 1003]<br />Non-Empty stack : search() Operation : 2<br />Non-Empty stack : false</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Stacks - Arrays to stack-->
         <item>
-            public class ArrayToStackExample {
-            \n
-            \npublic static void main(String a[]){
-            \n//initiliase array and declare stack
-            \nInteger[] intArr = { 1001,1002,1003,1004};
-            \nStack&lt;Integer&gt; stack = new Stack&lt;&gt;();
-            \n//add the values from array to stack
-            \nfor(Integer i : intArr){
-            \nstack.push(i);
-            \n}
-            \nSystem.out.println("Non-Empty stack : "  + stack);
-            \n}}
-
-            \n\nOutput:
-            \nNon-Empty stack : [1001, 1002, 1003, 1004]
-
-            \n\nStack to List;
-
-            \n\n
-            public class StackBasicExample {
-
-            \n\npublic static void main(String a[]){
-            \n //instantiate stack
-            \nStack&lt;Integer&gt; stack = new Stack&lt;&gt;();
-            \n//push the values in stack
-            \nstack.push(1);
-            \nstack.push(2);
-            \n stack.push(3);
-            \n //instantiate list
-            \n List&lt;Integer&gt; list = new ArrayList&lt;&gt;();
-            \n//add all the values from stack to list
-            \nlist.addAll(stack);
-            \nSystem.out.println("Non-Empty stack : "  + stack);
-            \nSystem.out.println("Non-Empty List : "  + list);
-            \n}}
-
-            \n\nOutput:
-            \nNon-Empty stack : [1, 2, 3]
-            \nNon-Empty List : [1, 2, 3]
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class ArrayToStackExample {</em><br /><br /><em>public static void main(String a[]){</em><br /><em>//initiliase array and declare stack</em><br /><em>Integer[] intArr = { 1001,1002,1003,1004};</em><br /><em>Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();</em><br /><em>//add the values from array to stack</em><br /><em>for(Integer i : intArr){</em><br /><em>stack.push(i);</em><br /><em>}</em><br /><em>System.out.println("Non-Empty stack : "  + stack);</em><br /><em>}}</em><br /><br /><strong>Output</strong>:<br />Non-Empty stack: [1001, 1002, 1003, 1004]<br /><br /><strong>Stack to List</strong>;<br /><br /><em>public class StackBasicExample {</em><br /><br /><em>public static void main(String a[]){</em><br /><em>//instantiate stack</em><br /><em>Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();</em><br /><em>//push the values in stack</em><br /><em>stack.push(1);</em><br /><em>stack.push(2);</em><br /><em>stack.push(3);</em><br /><em>//instantiate list</em><br /><em>List&lt;Integer&gt; list = new ArrayList&lt;&gt;();</em><br /><em>//add all the values from stack to list</em><br /><em>list.addAll(stack);</em><br /><em>System.out.println("Non-Empty stack : "  + stack);</em><br /><em>System.out.println("Non-Empty List : "  + list);</em><br /><em>}}</em><br /><br /><strong>Output</strong>:<br />Non-Empty stack: [1, 2, 3]<br />Non-Empty List: [1, 2, 3]</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Vector - Basic -->
         <item>
-            The Vector class implements a growable array of objects. Like an array, it contains components that can be accessed using an
-            integer index. However, the size of a Vector can grow or shrink as needed to accommodate adding and removing items after the
-            Vector has been created.
-            \n\nEach vector tries to optimize storage management by maintaining a capacity and a capacityIncrement.
-            The capacity is always at least as large as the vector size; it is usually larger because as components are added to the vector,
-            the vector\'s storage increases in chunks the size of capacityIncrement. An application can increase the capacity of a vector
-            before inserting a large number of components; this reduces the amount of incremental reallocation.
-
-            \n\nVector implements a dynamic array. It is similar to ArrayList, but with two differences −
-
-            \n\n &#8226;Vector is synchronized.
-
-            \n &#8226;Vector contains many legacy methods that are not part of the collections framework.
-
-            \n\nVector proves to be very useful if you don\'t know the size of the array in advance or you just need one that can
-            change sizes over the lifetime of a program.
-
-            \n\nThere are three ways to create vector class object:
-
-            \n 1- Vector vec = new Vector();
-            It creates an empty Vector with the default initial capacity of 10.
-            It means the Vector will be re-sized when the 11th elements needs to be inserted into the Vector.
-            \nNote: By default vector doubles its size. i.e. In this case the Vector size would remain 10 till 10 insertions and once
-            we try to insert the 11th element It would become 20 (double of default capacity 10).
-
-            \n\n 2- Vector vec = new Vector(3);
-            \nIt will create a Vector of initial capacity of 3.
-
-            \n\n 3- Vector vec= new Vector(4, 6)
-
-            \nHere we have provided two arguments. The initial capacity is 4 and capacityIncrement is 6. It means upon insertion of 5th element
-            the size would be 10 (4+6) and on 11th insertion it would be 16(10+6).
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>The Vector class implements a growable array of objects. Like an array, it contains components that can be accessed using an<br />integer index. However, the size of a Vector can grow or shrink as needed to accommodate adding and removing items after the<br />Vector has been created.<br /><br />Each vector tries to optimize storage management by maintaining a capacity and a capacityIncrement.<br />The capacity is always at least as large as the vector size; it is usually larger because as components are added to the vector,<br />the vector\'s storage increases in chunks the size of capacityIncrement. An application can increase the capacity of a vector<br />before inserting a large number of components; this reduces the amount of incremental reallocation.<br /><br />Vector implements a dynamic array. It is similar to ArrayList, but with two differences &minus;<br /><br />- Vector is synchronized.<br /><br />- Vector contains many legacy methods that are not part of the collections framework.<br /><br />Vector proves to be very useful if you don\'t know the size of the array in advance or you just need one that can<br />change sizes over the lifetime of a program.<br /><br />There are three ways to create vector class object:<br /><br />1- Vector vec = new Vector();<br />It creates an empty Vector with the default initial capacity of 10.<br />It means the Vector will be re-sized when the 11th elements needs to be inserted into the Vector.<br /><strong>Note</strong>: By default vector doubles its size. i.e. In this case the Vector size would remain 10 till 10 insertions and once<br />we try to insert the 11th element It would become 20 (double of default capacity 10).<br /><br />2- Vector vec = new Vector(3);<br />It will create a Vector of initial capacity of 3.<br /><br />3- Vector vec= new Vector(4, 6)<br /><br />Here we have provided two arguments. The initial capacity is 4 and capacityIncrement is 6. It means upon insertion of 5th element<br />the size would be 10 (4+6) and on 11th insertion it would be 16(10+6).</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Vector Generic Vector-->
         <item>
-            public class VectorExample {
-            \n
-            \n          public static void main(String args[]) {
-            \n        /* Vector of initial capacity(size) of 2 */
-            \n      Vector&lt;String&gt; vec = new Vector&lt;String&gt;(2);
-            \n
-            \n          /* Adding elements to a vector*/
-            \n        vec.addElement("Apple");
-            \n      vec.addElement("Orange");
-            \n    vec.addElement("Mango");
-            \n  vec.addElement("Fig");
-            \n
-            \n          /* check size and capacityIncrement*/
-            \n        System.out.println("Size is: "+vec.size());
-            \n      System.out.println("Default capacity increment is: "+vec.capacity());
-            \n
-            \n          vec.addElement("fruit1");
-            \n        vec.addElement("fruit2");
-            \n      vec.addElement("fruit3");
-            \n
-            \n          /*size and capacityIncrement after two insertions*/
-            \n        System.out.println("Size after addition: "+vec.size());
-            \n      System.out.println("Capacity after increment is: "+vec.capacity());
-            \n
-            \n          /*Display Vector elements*/
-            \n        Enumeration en = vec.elements();
-            \n      System.out.println("\nElements are:");
-            \n    while(en.hasMoreElements())
-            \n  System.out.print(en.nextElement() + " ");
-            \n}}
-
-            \n\nOutput:
-            \nSize is: 4
-            \nDefault capacity increment is: 4
-            \n Size after addition: 7
-            \nCapacity after increment is: 8
-            \n
-            \n          Elements are:
-            \n        Apple Orange Mango Fig fruit1 fruit2 fruit3
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class VectorExample {</em><br /><br /><em>public static void main(String args[]) {</em><br /><em>/* Vector of initial capacity(size) of 2 */</em><br /><em>Vector&lt;String&gt; vec = new Vector&lt;String&gt;(2);</em><br /><br /><em>/* Adding elements to a vector*/</em><br /><em>vec.addElement("Apple");</em><br /><em>vec.addElement("Orange");</em><br /><em>vec.addElement("Mango");</em><br /><em>vec.addElement("Fig");</em><br /><br /><em>/* check size and capacityIncrement*/</em><br /><em>System.out.println("Size is: "+vec.size());</em><br /><em>System.out.println("Default capacity increment is: "+vec.capacity());</em><br /><br /><em>vec.addElement("fruit1");</em><br /><em>vec.addElement("fruit2");</em><br /><em>vec.addElement("fruit3");</em><br /><br /><em>/*size and capacityIncrement after two insertions*/</em><br /><em>System.out.println("Size after addition: "+vec.size());</em><br /><em>System.out.println("Capacity after increment is: "+vec.capacity());</em><br /><br /><em>/*Display Vector elements*/</em><br /><em>Enumeration en = vec.elements();</em><br /><em>System.out.println("Elements are:");</em><br /><em>while(en.hasMoreElements())</em><br /><em>System.out.print(en.nextElement() + " ");</em><br /><em>}}</em><br /><br /><strong>Output</strong>:<br />Size is: 4<br />Default capacity increment is: 4<br />Size after addition: 7<br />Capacity after increment is: 8<br /><br />Elements are:<br />Apple Orange Mango Fig fruit1 fruit2 fruit3</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Hash Tables - Basic-->
         <item>
-            Hashtable was part of the original java.util and is a concrete implementation of a Dictionary.
-
-            \nHowever, Java 2 re-engineered Hashtable so that it also implements the Map interface. Thus, Hashtable is now integrated into
-            the collections framework. It is similar to HashMap, but is synchronized.
-
-            \nLike HashMap, Hashtable stores key/value pairs in a hash table. When using a Hashtable, you specify an object that is
-            used as a key, and the value that you want linked to that key. The key is then hashed,
-            and the resulting hash code is used as the index at which the value is stored within the table.
-
-           \nA hash table can provide a very efficient way to search for items in large amounts of data, particularly data that is not otherwise easily searchable.
-            ("Large" here means ginormous, in the sense that it would take a long time to perform a sequential search).
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Hashtable was part of the original java.util and is a concrete implementation of a Dictionary.<br /><br />However, Java 2 re-engineered Hashtable so that it also implements the Map interface. Thus, Hashtable is now integrated into<br />the collections framework. It is similar to HashMap, but is synchronized.<br /><br />Like HashMap, Hashtable stores key/value pairs in a hash table. When using a Hashtable, you specify an object that is<br />used as a key, and the value that you want linked to that key. The key is then hashed,<br />and the resulting hash code is used as the index at which the value is stored within the table.<br /><br />A hash table can provide a very efficient way to search for items in large amounts of data, particularly data that is not otherwise easily searchable.<br />("Large" here means ginormous, in the sense that it would take a long time to perform a sequential search).</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Hash Tables - Generic hash table-->
         <item>
-            public class HashTableDemo {
-            \n
-            \n          public static void main(String args[]) {
-            \n        // Create a hash map
-            \n      Hashtable balance = new Hashtable();
-            \n    Enumeration names;
-            \n  String str;
-            \n double bal;
-            \n
-            \n          balance.put("Zara", new Double(3434.34));
-            \n        balance.put("Mahnaz", new Double(123.22));
-            \n      balance.put("Ayan", new Double(1378.00));
-            \n    balance.put("Daisy", new Double(99.22));
-            \n  balance.put("Qadir", new Double(-19.08));
-            \n
-            \n          // Show all balances in hash table.
-            \n        names = balance.keys();
-            \n
-            \n    while(names.hasMoreElements()) {
-            \n  str = (String) names.nextElement();
-            \n System.out.println(str + ": " + balance.get(str));
-            \n}
-            \nSystem.out.println();
-            \n
-            \n    // Deposit 1,000 into Zara\'s account
-            \n  bal = ((Double)balance.get("Zara")).doubleValue();
-            \nbalance.put("Zara", new Double(bal + 1000));
-            \nSystem.out.println("Zara\'s new balance: " + balance.get("Zara"));
-            \n}
-
-            \n\nOutput:
-            \nQadir: -19.08
-            \nZara: 3434.34
-            \nMahnaz: 123.22
-            \nDaisy: 99.22
-            \nAyan: 1378.0
-            \n
-            \n          Zara\'s new balance: 4434.34
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>public class HashTableDemo {</em><br /><br /><em>public static void main(String args[]) {</em><br /><em>// Create a hashtable</em><br /><em>Hashtable&lt;String, Double&gt; balance = new Hashtable&lt;&gt;();</em><br /><em>Enumeration names;</em><br /><em>String str;</em><br /><em>double bal;</em><br /><br /><em>balance.put("Zara", new Double(3434.34));</em><br /><em>balance.put("Mahnaz", new Double(123.22));</em><br /><em>balance.put("Ayan", new Double(1378.00));</em><br /><em>balance.put("Daisy", new Double(99.22));</em><br /><em>balance.put("Qadir", new Double(-19.08));</em><br /><br /><em>// Show all balances in hash table.</em><br /><em>names = balance.keys();</em><br /><br /><em>while(names.hasMoreElements()) {</em><br /><em>str = (String) names.nextElement();</em><br /><em>System.out.println(str + ": " + balance.get(str));</em><br /><em>}</em><br /><em>System.out.println();</em><br /><br /><em>// Deposit 1,000 into Zara\'s account</em><br /><em>bal = ((Double)balance.get("Zara")).doubleValue();</em><br /><em>balance.put("Zara", new Double(bal + 1000));</em><br /><em>System.out.println("Zara\'s new balance: " + balance.get("Zara"));</em><br /><em>}</em><br /><br /><strong>Output</strong>:<br />Qadir: -19.08<br />Zara: 3434.34<br />Mahnaz: 123.22<br />Daisy: 99.22<br />Ayan: 1378.0<br /><br />Zara\'s new balance: 4434.34</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Trees basic -->
         <item>
-            In computer science, a tree is an abstract model of a hierarchical structure
-            A tree consists of nodes with a parent-child relation.
-            \nThe topmost node is called root of the tree. The elements that are directly under an element are called its children.
-            The element directly above something is called its parent. For example, a is a child of f and f is the parent of a. Finally,
-            elements with no children are called leaves.
-\n\n        tree
-            ----
-  \n     j    &lt;-- root
-    \n /   \
-   \n f      k
-  \n/   \      \
- \na     h      z    &lt;-- leaves
-
-            \n\nWhy use Trees?
-            \n\n1. One reason to use trees might be because you want to store information that naturally forms a hierarchy.
-            For example, the file system on a computer.
-            \n2. Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).
-            \n3. Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists).
-            \n4. Like Linked Lists and unlike Arrays, Trees don’t have an upper limit on number of nodes as nodes are linked using pointers.
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>In computer science, a tree is an abstract model of a hierarchical structure<br />A tree consists of nodes with a parent-child relation.<br />The topmost node is called root of the tree. The elements that are directly under an element are called its children.<br />The element directly above something is called its parent. For example, a is a child of f and f is the parent of a. Finally,<br />elements with no children are called leaves.<br /><br />Why use Trees?<br />1. One reason to use trees might be because you want to store information that naturally forms a hierarchy.<br />For example, the file system on a computer.<br />2. Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).<br />3. Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists).<br />4. Like Linked Lists and unlike Arrays, Trees don&rsquo;t have an upper limit on number of nodes as nodes are linked using pointers.</pre>
+            </pre></html>
+            ]]>
         </item>
-        <!--Trees - Generic Tree -->
-        <item>
-
-        </item>
+        <!--&lt;!&ndash;Trees - Generic Tree &ndash;&gt;-->
+        <!--<item>-->
+            <!--<![CDATA[<html><pre style="text-align:center">-->
+            <!---->
+            <!--</pre></html>-->
+            <!--]]>-->
+        <!--</item>-->
         <!--Trees - Traversals -->
         <item>
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Unlike linear data structures (Array, Linked List, Queues, Stacks, etc) which have only one logical way to traverse them, trees can be traversed in different ways. Following are the generally used ways for traversing trees;<br /><br />- In-order Traversal<br />- Pre-order Traversal<br />- Postorder Traversal</pre>
+<pre><strong>Algorithm In-order:<br /></strong>1. Traverse the left subtree, i.e., call Inorder(left-subtree)<br />2. Visit the root.
+3. Traverse the right subtree, i.e., call Inorder(right-subtree)</pre>
+<pre><em>Uses of In-order</em><br />In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order. To get nodes of BST in non-increasing order, a variation of Inorder traversal where Inorder traversal s reversed can be used.<br /><br /></pre>
+<pre><strong>Algorithm Pre-order:</strong>
+1. Visit the root.
+2. Traverse the left subtree, i.e., call Preorder(left-subtree)
+3. Traverse the right subtree, i.e., call Preorder(right-subtree) <br /><br /><em>Uses of Pre-order</em><br />Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on of an expression tree. Please see&nbsp;<a href="http://en.wikipedia.org/wiki/Polish_notation">http://en.wikipedia.org/wiki/Polish_notation</a>&nbsp;to know why prefix expressions are useful.<br /><br /></pre>
+<pre><strong>Algorithm Post-order:</strong>
+1. Traverse the left subtree, i.e., call Postorder(left-subtree)
+2. Traverse the right subtree, i.e., call Postorder(right-subtree)
+3. Visit the root.
+</pre>
+<p><em>Uses of Post-order</em><br />Postorder traversal is used to delete the tree. Postorder traversal is also useful to get the postfix expression of an expression tree. Please see<a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">http://en.wikipedia.org/wiki/Reverse_Polish_notation</a>&nbsp;to for the usage of postfix expression.</p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--Generic Traversals-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p><em>// Java program for different tree traversals </em></p>
+<p><em>/* Class containing left and right child of current </em><br /><em>node and key value*/</em><br /><em>class Node </em><br /><em>{ </em><br /><em> int key; </em><br /><em> Node left, right; </em></p>
+<p><em> public Node(int item) </em><br /><em> { </em><br /><em> key = item; </em><br /><em> left = right = null; </em><br /><em> } </em><br /><em>} </em></p>
+<p><em>class BinaryTree </em><br /><em>{ </em><br /><em> // Root of Binary Tree </em><br /><em> Node root; </em></p>
+<p><em> BinaryTree() </em><br /><em> { </em><br /><em> root = null; </em><br /><em> } </em></p>
+<p><em> /* Given a binary tree, print its nodes according to the </em><br /><em> "bottom-up" postorder traversal. */</em><br /><em> void printPostorder(Node node) </em><br /><em> { </em><br /><em> if (node == null) </em><br /><em> return; </em></p>
+<p><em> // first recur on left subtree </em><br /><em> printPostorder(node.left); </em></p>
+<p><em> // then recur on right subtree </em><br /><em> printPostorder(node.right); </em></p>
+<p><em> // now deal with the node </em><br /><em> System.out.print(node.key + " "); </em><br /><em> } </em></p>
+<p><em> /* Given a binary tree, print its nodes in inorder*/</em><br /><em> void printInorder(Node node) </em><br /><em> { </em><br /><em> if (node == null) </em><br /><em> return; </em></p>
+<p><em> /* first recur on left child */</em><br /><em> printInorder(node.left); </em></p>
+<p><em> /* then print the data of node */</em><br /><em> System.out.print(node.key + " "); </em></p>
+<p><em> /* now recur on right child */</em><br /><em> printInorder(node.right); </em><br /><em> } </em></p>
+<p><em> /* Given a binary tree, print its nodes in preorder*/</em><br /><em> void printPreorder(Node node) </em><br /><em> { </em><br /><em> if (node == null) </em><br /><em> return; </em></p>
+<p><em> /* first print data of node */</em><br /><em> System.out.print(node.key + " "); </em></p>
+<p><em> /* then recur on left sutree */</em><br /><em> printPreorder(node.left); </em></p>
+<p><em> /* now recur on right subtree */</em><br /><em> printPreorder(node.right); </em><br /><em> } </em></p>
+<p><em> // Wrappers over above recursive functions </em><br /><em> void printPostorder() { printPostorder(root); } </em><br /><em> void printInorder() { printInorder(root); } </em><br /><em> void printPreorder() { printPreorder(root); } </em></p>
+<p><em> // Driver method </em><br /><em> public static void main(String[] args) </em><br /><em> { </em><br /><em> BinaryTree tree = new BinaryTree(); </em><br /><em> tree.root = new Node(1); </em><br /><em> tree.root.left = new Node(2); </em><br /><em> tree.root.right = new Node(3); </em><br /><em> tree.root.left.left = new Node(4); </em><br /><em> tree.root.left.right = new Node(5); </em></p>
+<p><em> System.out.println("Preorder traversal of binary tree is "); </em><br /><em> tree.printPreorder(); </em></p>
+<p><em> System.out.println("\nInorder traversal of binary tree is "); </em><br /><em> tree.printInorder(); </em></p>
+<p><em> System.out.println("\nPostorder traversal of binary tree is "); </em><br /><em> tree.printPostorder(); </em><br /><em> } </em><br /><em>} </em></p>
+<p><br /><strong>Output</strong>:<br />Preorder traversal of binary tree is 1 2 4 5 3</p>
+<p>Inorder traversal of binary tree is 4 2 5 1 3</p>
+<p>Postorder traversal of binary tree is 4 5 2 3 1</p>
+            </pre></html>
+            ]]>
         </item>
         <!--Binary Tree - basics-->
         <item>
-            A binary tree is a tree with the following properties:
-            \n - Each internal node has at most two children (exactly two for proper binary trees)
-            \n - The children of a node are an ordered pair
-            \nWe call the children of an internal node left child and right child.
-
-            \n\nTypes of Binary Trees;
-            \n - Degenerate – only one child (Height = O(n) for n nodes, Similar to linear list)
-            \n - Balanced – mostly two children (Height = O( log2(n) ) for n nodes, Useful for searches)
-            \n - Proper – always two children
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>A binary tree is a tree with the following properties:<br />- Each internal node has at most two children (exactly two for proper binary trees).<br />- The children of a node are an ordered pair.<br />We call the children of an internal node left child and right child.<br /><br />Types of Binary Trees;<br />- <strong>Degenerate</strong>: only one child (Height = O(n) for n nodes, Similar to linear list).<br />- <strong>Balanced</strong>: mostly two children (Height = O( log2(n) ) for n nodes, Useful for searches).<br />- <strong>Proper</strong>: always two children.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Binary Tree - generic binary tree-->
         <item>
-            /* Class containing left and right child of current
-            node and key value*/
-            \n
-            \nclass Node
-            \n{
-            \nint key;
-            \nNode left, right;
-\n
-  \n          public Node(int item)
-    \n        {
-      \n      key = item;
-        \n    left = right = null;
-          \n  }
-            \n}
-\n
-  \n          // A Java program to introduce Binary Tree
-    \n        class BinaryTree
-      \n      {
-          \n  // Root of Binary Tree
-        \n    Node root;
-\n
-  \n          // Constructors
-    \n        BinaryTree(int key)
-      \n      {
-        \n    root = new Node(key);
-          \n  }
-\n
-  \n          BinaryTree()
-    \n        {
-      \n      root = null;
-        \n    }
-\n
-  \n          public static void main(String[] args)
-    \n        {
-      \n      BinaryTree tree = new BinaryTree();
-\n
-  \n          /*create root*/
-    \n        tree.root = new Node(1);
-\n
-  \n          /* following is the tree after above statement
-\n
-\n            1
-\n          /   \
-\n        null  null     */
-\n
-  \n          tree.root.left = new Node(2);
-    \n        tree.root.right = new Node(3);
-\n
-  \n          /* 2 and 3 become left and right children of 1
-    \n         1
- \n          /   \
- \n         2      3
-  \n      /    \    /  \
-   \n   null null null null  */
-\n
-\n
-  \n          tree.root.left.left = new Node(4);
-    \n        /* 4 becomes left child of 2
-      \n            1
-        \n      /       \
-  \n           2          3
-    \n       /   \       /  \
-      \n    4    null  null  null
-    \n     /   \
-     \n   null null
-     \n    */
-   \n }}
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>/* Class containing left and right child of current</em><br /><em>node and key value*/</em><br />            <br /><em>class Node</em><br /><em>{</em><br /><em>int key;</em><br /><em>Node left, right;</em><br /><br /><em>public Node(int item)</em><br /><em>{</em><br /><em>key = item;</em><br /><em>left = right = null;</em><br /><em>}</em><br /><em>}</em><br /><br /><em>// A Java program to introduce Binary Tree</em><br /><em>class BinaryTree</em><br /><em>{</em><br /><em>// Root of Binary Tree</em><br /><em>Node root;</em><br /><br /><em>// Constructors</em><br /><em>BinaryTree(int key)</em><br /><em>{</em><br /><em>root = new Node(key);</em><br /><em>}</em><br /><em><br />BinaryTree()</em><br /><em>{</em><br /><em>root = null;</em><br /><em>}</em><br /><br /><em>public static void main(String[] args)</em><br /><em>{</em><br /><em>BinaryTree tree = new BinaryTree();</em><br /><br />/*create root*/<br /><em>tree.root = new Node(1);</em><br /><br />/*create left and right childs*/<br /><em>tree.root.left = new Node(2);</em><br /><em>tree.root.right = new Node(3);</em><br /><br />/*create a left leaf of left child*/<br /><em>tree.root.left.left = new Node(4);</em><br /><br />}<br />}</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Binary Search Tree - basic-->
-        <item>
+        <!--<item>-->
+            <!--<![CDATA[<html><pre style="text-align:center">-->
 
-        </item>
+            <!--</pre></html>-->
+            <!--]]>-->
+        <!--</item>-->
         <!--Binary search tree generic-->
-        <item>
+        <!--<item>-->
+            <!--<![CDATA[<html><pre style="text-align:center">-->
 
-        </item>
-        <item>
+            <!--</pre></html>-->
+            <!--]]>-->
 
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-
+        <!--</item>-->
 
     </string-array>
-
 
 </resources>

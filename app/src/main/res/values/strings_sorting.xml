@@ -54,6 +54,7 @@
     <string-array name="sorting_answers">
         <!--Bubble Sort - basic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             One of the oldest sorts known to man due to its simplicity.
 
             \nBased on the properly of a sorted list that any two adjacent elements are in sorted order.
@@ -88,10 +89,12 @@
 
             \n\nTime complexity is O(n2).
             \n\nMemory Space Complexity is O(1).
-
+            </pre></html>
+            ]]>
         </item>
         <!--Bubble Sort - generic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             // Java program for implementation of Bubble Sort
 
             \n\nclass BubbleSort
@@ -132,9 +135,12 @@
             \n\nOutput:
             \nSorted array:
             \n11 12 22 25 34 64 90
+            </pre></html>
+            ]]>
         </item>
         <!--Selection Sort - basic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
             from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array;
 
@@ -165,10 +171,12 @@
 
             \n\nTime Complexity is O(n2).
             \n\nMemory Space Complexity is O(1).
-
+             </pre></html>
+            ]]>
         </item>
         <!--Selection Sort - Generic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             // Java program for implementation of Selection Sort
             \nclass SelectionSort
             \n{
@@ -215,10 +223,12 @@
             \n\nOutput:
             \nSorted array:
             \n11 12 22 25 64
-
+            </pre></html>
+            ]]>
         </item>
         <!--Insertion Sort - basic-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
             The approach of Insertion Sort:
              \n - Pick any item and insert it into its proper place in a sorted sublist
              \n - Repeat until all items have been inserted
@@ -249,10 +259,12 @@
 
             \n\n Time Complexity is O(n2).
             \n\nMemory Space Complexity is O(1).
-
+             </pre></html>
+            ]]>
         </item>
         <!--Insertion Sort - generic-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
             // Java program for implementation of Insertion Sort
             \n class InsertionSort
             \n{
@@ -301,9 +313,12 @@
             \n\nOutput:
             \n5 6 11 12 13
 
+            </pre></html>
+            ]]>
         </item>
         <!--Quick Sort - basic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             - Fast sorting algorithm
             \n - Compares items and swaps them if they are out of sequence
             \n - However, here the list is divided into smaller lists which can then be sorted (Divide and Conquer approach)
@@ -363,9 +378,12 @@
             \n\nTime Complexity for Average Case is O(n log n) and Worst Case is O(n2).
             \n\nMemory Space Complexity is (log n) Best Case, (n) Average Case.
 
+             </pre></html>
+            ]]>
         </item>
         <!--Quick Sort - generic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             // Java program for implementation of QuickSort
 
             \nclass QuickSort
@@ -448,9 +466,12 @@
             \nSorted array:
             \n1 5 7 8 9 10
 
+             </pre></html>
+            ]]>
         </item>
         <!--Merge Sort - basic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two
             halves and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r)
             is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
@@ -505,9 +526,12 @@
             \n\nThe subarrays array[0..0] and array[1..1] are base cases, since each contains fewer than two elements.
 
             n\nTime Complexity is O(n log n) and Space Complexity is O(n).
+            </pre></html>
+            ]]>
         </item>
         <!--Merge Sort - generic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             /* Java program for Merge Sort */
 
             \n\nclass MergeSort
@@ -619,9 +643,12 @@
             \n
             \n          Sorted array is
             \n        5 6 7 11 12 13
+            </pre></html>
+            ]]>
         </item>
         <!--Heap Sort - basic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             Heap sort is a comparison based sorting technique based on Binary Heap data structure.
             It is similar to selection sort where we first find the maximum element and place the maximum element at the end.
             We repeat the same process for remaining element.
@@ -650,10 +677,12 @@
             We keep on doing the same repeatedly until we have the complete sorted list in our array.
 
             \n\nTime Complexity is O(n log n) and space complexity is O(k + n).
-
+             </pre></html>
+            ]]>
         </item>
         <!--Heap Sort - generic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             // Java program for implementation of Heap Sort
 
             \n\npublic class HeapSort
@@ -732,9 +761,12 @@
             \n\nOutput:
             \nSorted array is
             \n5 6 7 11 12 13
+            </pre></html>
+            ]]>
         </item>
         <!--Counting Sort - basic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             Counting sort is a sorting technique based on keys between a specific range.
             It works by counting the number of objects having distinct key values (kind of hashing).
             Then doing some arithmetic to calculate the position of each object in the output sequence.
@@ -761,9 +793,12 @@
             \n next data 1 at an index 1 smaller than this index.
 
             \n\nTime Complexity and space complexity are O(k + n).
+            </pre></html>
+            ]]>
         </item>
         <!--Counting Sort - generic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             // Java implementation of Counting Sort
 
             \nclass CountingSort
@@ -819,9 +854,12 @@
             \n    }            }
             \n\nOutput:
             \nSorted character array is eeeefggkkorss
+            </pre></html>
+            ]]>
         </item>
         <!--Bucket Sort - basic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             Bucket sort is mainly useful when input is uniformly distributed over a range. For example, consider the following problem.
             \nSort a large set of floating point numbers which are in range from 0.0 to 1.0 and are uniformly distributed across the range.
             \nHow do we sort the numbers efficiently?
@@ -841,10 +879,12 @@
             \n4) Concatenate all sorted buckets.
 
             \n\nTime complexity; Average O(n) Worst case O(n*n). Space Complexity is O(n + k).
-
+             </pre></html>
+            ]]>
         </item>
         <!--Bucket Sort - generic-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
             \npublic class BucketSort{
             \n
             \n          public static void sort(int[] a, int maxVal) {
@@ -878,6 +918,8 @@
             \n\nOutput:
             \nBefore: [5, 3, 0, 2, 4, 1, 0, 5, 2, 3, 1, 4]
             \nAfter:  [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+             </pre></html>
+            ]]>
         </item>
     </string-array>
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -54,6 +55,7 @@ public class SliderAdapter extends PagerAdapter {
         TextView questionsTextView = (TextView) view.findViewById(R.id.behaviouralslideQuestionsTextview);
 
         answersTextView.setText(Html.fromHtml(String.valueOf((CharSequence) answersList.get(position).getAnswers())));
+        answersTextView.setMovementMethod(LinkMovementMethod.getInstance());
         questionsTextView.setText(position + 1 + "- " + questionsList.get(position).getQuestions());
 
         container.addView(view);

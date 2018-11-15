@@ -43,512 +43,86 @@
     <string-array name="searching_answers">
         <!--Linear search basic-->
         <item>
-            Linear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one.
-            Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the
-            end of the data collection.
-
-            \nHowever Linear search is rarely used practically because other search algorithms such as the binary search algorithm and
-            hash tables allow significantly faster searching comparison to Linear search.
-
-            \n\n The time complexity is O(n).
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Linear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one.<br />Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the<br />end of the data collection.<br /><br />However Linear search is rarely used practically because other search algorithms such as the binary search algorithm and<br />hash tables allow significantly faster searching comparison to Linear search.<br /><br /><em>The time complexity is O(n)</em>.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Linear search - generic-->
         <item>
-            class LinearSearchExample
-            \n{
-            \npublic static void main(String args[])
-            \n{
-            \nint counter, num, item, array[];
-            \n//To capture user input
-            \nScanner input = new Scanner(System.in);
-            \nSystem.out.println("Enter number of elements:");
-            \nnum = input.nextInt();
-            \n//Creating array to store the all the numbers
-            \narray = new int[num];
-            \nSystem.out.println("Enter " + num + " integers");
-            \n//Loop to store each numbers in array
-            \nfor (counter = 0; counter &lt; num; counter++)
-            \narray[counter] = input.nextInt();
-            \n
-            \n          System.out.println("Enter the search value:");
-            \n        item = input.nextInt();
-            \n
-            \n          for (counter = 0; counter &lt; num; counter++)
-            \n        {
-            \n      if (array[counter] == item)
-            \n    {
-            \n  System.out.println(item+" is present at location "+(counter+1));
-            \n /*Item is found so to stop the search and to come out of the
-            \n* loop use break statement.*/
-            \nbreak;
-            }            }
-            \nif (counter == num)
-            \nSystem.out.println(item + " doesn\'t exist in array.");
-            \n}            }
-
-            \n\nOutput:
-            \nEnter number of elements:
-            \n6
-            \n Enter 6 integers
-            \n 22
-            \n33
-            \n45
-            \n 1
-            \n 3
-            \n99
-            \nEnter the search value:
-            \n45
-            \n45 is present at location 3
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>class LinearSearchExample</em><br /><em>{</em><br /><em>public static void main(String args[])</em><br /><em>{</em><br /><em>int counter, num, item, array[];</em><br /><em>//To capture user input</em><br /><em>Scanner input = new Scanner(System.in);</em><br /><em>System.out.println("Enter number of elements:");</em><br /><em>num = input.nextInt();</em><br /><em>//Creating array to store the all the numbers</em><br /><em>array = new int[num];</em><br /><em>System.out.println("Enter " + num + " integers");</em><br /><em>//Loop to store each numbers in array</em><br /><br /><em>for (counter = 0; counter &amp;lt; num; counter++)</em><br /><em>array[counter] = input.nextInt();</em><br /><br /><em>System.out.println("Enter the search value:");</em><br /><em>item = input.nextInt();</em><br /><br /><em>for (counter = 0; counter &amp;lt; num; counter++)</em><br /><em>{</em><br /><em>      if (array[counter] == item)</em><br /><em>{</em><br /><em>System.out.println(item+" is present at location "+(counter+1));</em><br /><em>/*Item is found so to stop the search and to come out of the</em><br /><em>* loop use break statement.*/</em><br /><em>break;</em><br /><em>} </em><br /><em>}</em><br /><br /><em>if (counter == num)</em><br /><br /><em>System.out.println(item + " doesn\'t exist in array.");</em><br /><em>}    </em><br /><em>}</em><br /><br /><strong>Output</strong>:<br />Enter number of elements:<br />6<br />Enter 6 integers<br />22<br />33<br />45<br />1<br />3<br />99<br />Enter the search value:<br />45<br />45 is present at location 3</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Binary Search Basic-->
         <item>
-            Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array.
-            If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half.
-            Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
-
-            \n\nOne of the most common ways to use binary search is to find an item in an array.
-            For example, the Tycho-2 star catalog contains information about the brightest 2,539,913 stars in our galaxy.
-            Suppose that you want to search the catalog for a particular star, based on the star\'s name. If the program examined
-            every star in the star catalog in order starting with the first, an algorithm called linear search,
-            the computer might have to examine all 2,539,913 stars to find the star you were looking for, in the worst case.
-            If the catalog were sorted alphabetically by star names, binary search would not have to examine more than 22 stars,
-            even in the worst case.
-
-            \n\nThe time complexity of binary search is:-
-
-            \n - Best Case- O(1) i.e. constant.
-            \n - Average Case- O(log n).
-            \n - Worst Case- O(log n).
+            <![CDATA[<html><pre style="text-align:center">
+           <pre>Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array.<br />If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half.<br />Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.<br /><br />One of the most common ways to use binary search is to find an item in an array.<br />For example, the Tycho-2 star catalog contains information about the brightest 2,539,913 stars in our galaxy.<br />Suppose that you want to search the catalog for a particular star, based on the star\'s name. If the program examined<br />every star in the star catalog in order starting with the first, an algorithm called linear search,<br />the computer might have to examine all 2,539,913 stars to find the star you were looking for, in the worst case.<br />If the catalog were sorted alphabetically by star names, binary search would not have to examine more than 22 stars,<br />even in the worst case.<br /><br /><em>The time complexity of binary search is:<br /></em><br />- Best Case- O(1) i.e. constant.<br />- Average Case- O(log n).<br />- Worst Case- O(log n).</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Binary Search - Generic Binary search-->
         <item>
-            class BinarySearchExample{
-            \n
-            \npublic static void binarySearch(int arr[], int first, int last, int key){
-            \nint mid = (first + last)/2;
-            \nwhile( first &lt;= last ){
-            \nif ( arr[mid] &lt; key ){
-            \nfirst = mid + 1;
-            \n}else if ( arr[mid] == key ){
-            \nSystem.out.println("Element is found at index: " + mid);
-            \nbreak;
-            \n}else{
-            \nlast = mid - 1;
-            \n }
-            \nmid = (first + last)/2;
-            \n}
-            \nif ( first > last ){
-            \nSystem.out.println("Element is not found!");
-            \n}              }
-            \npublic static void main(String args[]){
-            \nint arr[] = {10,20,30,40,50};
-            \nint key = 30;
-            \nint last=arr.length-1;
-            \nbinarySearch(arr,0,last,key);
-            \n}             }
-
-            \n\nOutput:
-            \nElement is found at index: 2
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>class BinarySearchExample{</em><br /><br /><em>public static void binarySearch(int arr[], int first, int last, int key){</em><br /><em>int mid = (first + last)/2;</em><br /><br /><em>while( first &lt;= last ){</em><br /><br /><em>if ( arr[mid] &lt; key ){</em><br /><em>first = mid + 1;</em><br /><em>}</em><br /><br /><em>else if ( arr[mid] == key ){</em><br /><em>System.out.println("Element is found at index: " + mid);</em><br /><em>break;</em><br /><em>}</em><br /><br /><em>else{</em><br /><em>last = mid - 1;</em><br /><em>}</em><br /><em>mid = (first + last)/2;</em><br /><em>}</em><br /><br /><em>if ( first &gt; last ){</em><br /><em>System.out.println("Element is not found!");</em><br /><em>}        </em><br /><em>}</em><br /><br /><em>public static void main(String args[]){</em><br /><em>int arr[] = {10,20,30,40,50};</em><br /><em>int key = 30;</em><br /><em>int last=arr.length-1;</em><br /><em>binarySearch(arr,0,last,key);</em><br /><em>}         </em><br /><em>}</em><br /><br /><strong>Output</strong>:<br />Element is found at index: 2</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Jump search - basic-->
         <item>
-            Like Binary Search, Jump Search is a searching algorithm for sorted arrays. The basic idea is to check fewer elements
-            (than linear search) by jumping ahead by fixed steps or skipping some elements in place of searching all elements.
-
-            \n\nFor example, suppose we have an array arr[] of size n and block (to be jumped) size m. Then we search at the indexes arr[0],
-            arr[m], arr[2m]…..arr[km] and so on. Once we find the interval (arr[km] &lt; x &lt; arr[(k+1)m]), we perform a linear search
-            operation from the index km to find the element x.
-
-            \n\nLet’s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610). Length of the array is 16.
-            \nJump search will find the value of 55 with the following steps assuming that the block size to be jumped is 4.
-            \nSTEP 1: Jump from index 0 to index 4;
-            \nSTEP 2: Jump from index 4 to index 8;
-            \nSTEP 3: Jump from index 8 to index 16;
-            \nSTEP 4: Since the element at index 16 is greater than 55 we will jump back a step to come to index 9.
-            \nSTEP 5: Perform linear search from index 9 to get the element 55.
-
-            \n\nWhat is the optimal block size to be skipped?
-            \nIn the worst case, we have to do n/m jumps and if the last checked value is greater than the element to be searched for,
-            we perform m-1 comparisons more for linear search. Therefore the total number of comparisons in the worst case will be
-            ((n/m) + m-1). The value of the function ((n/m) + m-1) will be minimum when m = √n. Therefore, the best step size is m = √n.
-
-            \n\nTime Complexity is  O(√n).
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Like Binary Search, Jump Search is a searching algorithm for sorted arrays. The basic idea is to check fewer elements<br />(than linear search) by jumping ahead by fixed steps or skipping some elements in place of searching all elements.<br /><br />For example, suppose we have an array arr[] of size n and block (to be jumped) size m. Then we search at the indexes arr[0],<br />arr[m], arr[2m]&hellip;..arr[km] and so on. Once we find the interval (arr[km] &lt; x &lt; arr[(k+1)m]), we perform a linear search<br />operation from the index km to find the element x.<br /><br />Let\'s consider the following array: (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610). Length of the array is 16.<br />Jump search will find the value of 55 with the following steps assuming that the block size to be jumped is 4.<br />STEP 1: Jump from index 0 to index 4;<br />STEP 2: Jump from index 4 to index 8;<br />STEP 3: Jump from index 8 to index 16;<br />STEP 4: Since the element at index 16 is greater than 55 we will jump back a step to come to index 9.<br />STEP 5: Perform linear search from index 9 to get the element 55.<br /><br />What is the optimal block size to be skipped?<br />In the worst case, we have to do n/m jumps and if the last checked value is greater than the element to be searched for,<br />we perform m-1 comparisons more for linear search. Therefore the total number of comparisons in the worst case will be<br />((n/m) + m-1). The value of the function ((n/m) + m-1) will be minimum when m = &radic;n. Therefore, the best step size is m = &radic;n.<br /><br /><em>Time Complexity is O(&radic;n)</em>.</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--Jump search - generic-->
         <item>
-            // Java program to implement Jump Search.
-            public class JumpSearch
-            \n{
-            \npublic static int jumpSearch(int[] arr, int x)
-            \n{
-            \nint n = arr.length;
-            \n
-            \n          // Finding block size to be jumped
-            \n        int step = (int)Math.floor(Math.sqrt(n));
-            \n
-            \n          // Finding the block where element is
-            \n        // present (if it is present)
-            \n      int prev = 0;
-            \n    while (arr[Math.min(step, n)-1] &lt; x)
-            \n  {
-            \nprev = step;
-            \nstep += (int)Math.floor(Math.sqrt(n));
-            \nif (prev >= n)
-            \nreturn -1;
-            \n}
-            \n
-            \n          // Doing a linear search for x in block
-            \n        // beginning with prev.
-            \n      while (arr[prev] &lt; x)
-            \n    {
-            \n  prev++;
-            \n
-            \n          // If we reached next block or end of
-            \n        // array, element is not present.
-            \n      if (prev == Math.min(step, n))
-            \n    return -1;
-            \n  }
-            \n
-            \n          // If element is found
-            \n        if (arr[prev] == x)
-            \n      return prev;
-            \n
-            \n          return -1;
-            \n        }
-            \n
-            \n          // Driver program to test function
-            \n        public static void main(String [ ] args)
-            \n      {
-            \n    int arr[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21,
-            \n  34, 55, 89, 144, 233, 377, 610};
-            \nint x = 55;
-            \n
-            \n          // Find the index of \'x\' using Jump Search
-            \n        int index = jumpSearch(arr, x);
-            \n
-            \n          // Print the index where \'x\' is located
-            \n        System.out.println("\nNumber " + x +
-            \n      " is at index " + index);
-            \n    }            }
-            \n\nOutput:
-            \nNumber 55 is at index 10
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>// Java program to implement Jump Search.</em><br /><em>public class JumpSearch</em><br /><em>{</em><br /><em>public static int jumpSearch(int[] arr, int x)</em><br /><em>{</em><br /><em>int n = arr.length;</em><br /><br /><em>// Finding block size to be jumped</em><br /><em>int step = (int)Math.floor(Math.sqrt(n));</em><br /><br /><em>// Finding the block where element is</em><br /><em>// present (if it is present)</em><br /><em>int prev = 0;</em><br /><em>while (arr[Math.min(step, n)-1] &lt; x)</em><br /><em>{</em><br /><em>prev = step;</em><br /><em>step += (int)Math.floor(Math.sqrt(n));</em><br /><em>if (prev &gt;= n)</em><br /><em>return -1;</em><br /><em>}</em><br /><br /><em>// Doing a linear search for x in block</em><br /><em>// beginning with prev.</em><br /><em>while (arr[prev] &lt; x)</em><br /><em>{</em><br /><em>  prev++;</em><br /><br /><em>// If we reached next block or end of</em><br /><em>// array, element is not present.</em><br /><em>if (prev == Math.min(step, n))</em><br /><em>return -1;</em><br /><em>}</em><br /><br /><em>// If element is found</em><br /><em>if (arr[prev] == x)</em><br /><em>return prev;</em><br /><br /><em>return -1;</em><br /><em>}</em><br /><br /><em>// Driver program to test function</em><br /><em>public static void main(String [ ] args)</em><br /><em>{</em><br /><em>int arr[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21,</em><br /><em>34, 55, 89, 144, 233, 377, 610};</em><br /><em>int x = 55;</em><br /><br /><em>// Find the index of \'x\' using Jump Search</em><br /><em>int index = jumpSearch(arr, x);</em><br /><br /><em>// Print the index where \'x\' is located</em><br /><em>System.out.println("Number " + x +</em><br /><em>" is at index " + index);</em><br /><em>}            </em><br /><em>}</em><br /><br /><strong>Output</strong>:<br />Number 55 is at index 10</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--Interpolation search basics-->
         <item>
-            Given a sorted array of n uniformly distributed values arr[], write a function to search for a particular element x in the array.
-
-            \nLinear Search finds the element in O(n) time, Jump Search takes O(√ n) time and Binary Search take O(Log n) time.
-            \n\nThe Interpolation Search is an improvement over Binary Search for instances, where the values in a sorted array are
-            uniformly distributed. Binary Search always goes to the middle element to check. On the other hand,
-            interpolation search may go to different locations according to the value of the key being searched.
-            \nFor example, if the value of the key is closer to the last element, interpolation search is likely to start search
-            toward the end side.
-
-            \n\nTo find the position to be searched, it uses following formula.
-            \n
-            \n          // The idea of formula is to return higher value of pos
-            \n        // when element to be searched is closer to arr[hi]. And
-            \n      // smaller value when closer to arr[lo]
-            \n    pos = lo + [ (x-arr[lo])*(hi-lo) / (arr[hi]-arr[Lo]) ]
-            \n
-            \n          arr[] ==> Array where elements need to be searched
-            \n        x     ==> Element to be searched
-            \n      lo    ==> Starting index in arr[]
-            \n    hi    ==> Ending index in arr[]
-
-            \n\nAlgorithm:
-            \nRest of the Interpolation algorithm is same except the above partition logic.
-            \n
-            \n          Step1: In a loop, calculate the value of “pos” using the probe position formula.
-            \n        Step2: If it is a match, return the index of the item, and exit.
-            \n      Step3: If the item is less than arr[pos], calculate the probe position of the left sub-array.
-            Otherwise calculate the same in the right sub-array.
-            \n    Step4: Repeat until a match is found or the sub-array reduces to zero.
-
-            Time complexity is; If elements are uniformly distributed, then O (log log n)). In worst case it can take upto O(n).
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Given a sorted array of n uniformly distributed values arr[], write a function to search for a particular element x in the array.<br /><br />Linear Search finds the element in O(n) time, Jump Search takes O(&radic; n) time and Binary Search take O(Log n) time.<br />The Interpolation Search is an improvement over Binary Search for instances, where the values in a sorted array are<br />uniformly distributed. Binary Search always goes to the middle element to check. On the other hand,<br />interpolation search may go to different locations according to the value of the key being searched.<br />For example, if the value of the key is closer to the last element, interpolation search is likely to start search<br />toward the end side.<br /><br />To find the position to be searched, it uses following formula.<br /><br /><em>// The idea of formula is to return higher value of pos</em><br /><em>// when element to be searched is closer to arr[hi]. And</em><br /><em>// smaller value when closer to arr[lo]</em><br /><em>pos = lo + [ (x-arr[lo])*(hi-lo) / (arr[hi]-arr[Lo]) ]</em><br /><br /><em>arr[] ==&gt; Array where elements need to be searched</em><br /><em>x     ==&gt; Element to be searched</em><br /><em>lo    ==&gt; Starting index in arr[]</em><br /><em>hi    ==&gt; Ending index in arr[]</em><br /><br /><strong>Algorithm</strong>:<br />Rest of the Interpolation algorithm is same except the above partition logic.<br /><br />Step1: In a loop, calculate the value of "pos" using the probe position formula.<br />Step2: If it is a match, return the index of the item, and exit.<br />Step3: If the item is less than arr[pos], calculate the probe position of the left sub-array.<br />Otherwise calculate the same in the right sub-array.<br />Step4: Repeat until a match is found or the sub-array reduces to zero.<br /><br /><em>Time complexity is; If elements are uniformly distributed, then O (log log n))</em>.<em> In worst case it can take upto O(n)</em>.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Interpolation search - generic-->
         <item>
-            // Java program to implement interpolation search
-
-            \nclass Test
-            \n{
-            \n// Array of items on which search will
-            \n// be conducted.
-            \nstatic int arr[] = new int[]{10, 12, 13, 16, 18, 19, 20, 21, 22, 23,
-            \n24, 33, 35, 42, 47};
-            \n
-            \n          // If x is present in arr[0..n-1], then returns
-            \n        // index of it, else returns -1.
-            \n      static int interpolationSearch(int x)
-            \n    {
-            \n  // Find indexes of two corners
-            \nint lo = 0, hi = (arr.length - 1);
-            \n
-            \n          // Since array is sorted, an element present
-            \n        // in array must be in range defined by corner
-            \n      while (lo &lt;= hi &amp;&amp; x >= arr[lo] &amp;&amp; x &lt;= arr[hi])
-            \n    {
-            \n  // Probing the position with keeping
-            \n// uniform distribution in mind.
-            \nint pos = lo + (((hi-lo) /
-            \n(arr[hi]-arr[lo]))*(x - arr[lo]));
-            \n
-            \n          // Condition of target found
-            \n        if (arr[pos] == x)
-            \n      return pos;
-            \n
-            \n          // If x is larger, x is in upper part
-            \n        if (arr[pos] &lt; x)
-            \n      lo = pos + 1;
-            \n
-            \n          // If x is smaller, x is in the lower part
-            \n        else
-            \n      hi = pos - 1;
-            \n    }
-            \n  return -1;
-            \n}
-            \n
-            \n          // Driver method
-            \n        public static void main(String[] args)
-            \n      {
-            \n    int x = 18; // Element to be searched
-            \n  int index = interpolationSearch(x);
-            \n
-            \n          // If element was found
-            \n        if (index != -1)
-            \n      System.out.println("Element found at index " + index);
-            \n    else
-            \n  System.out.println("Element not found.");
-            \n}            }
-
-            \n\nOutput:
-            \nElement found at index 4
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>// Java program to implement interpolation search</em><br /><br /><em>class Test</em><br /><em>{</em><br /><em>// Array of items on which search will</em><br /><em>// be conducted.</em><br /><em>static int arr[] = new int[]{10, 12, 13, 16, 18, 19, 20, 21, 22, 23,</em><br /><em>24, 33, 35, 42, 47};</em><br /><br /><em>// If x is present in arr[0..n-1], then returns</em><br /><em>// index of it, else returns -1.</em><br /><em>static int interpolationSearch(int x)</em><br /><em>{</em><br /><em>// Find indexes of two corners</em><br /><em>int lo = 0, hi = (arr.length - 1);</em><br /><br /><em>// Since array is sorted, an element present</em><br /><em>// in array must be in range defined by corner</em><br /><em>while (lo &lt;= hi &amp;&amp; x &gt;= arr[lo] &amp;&amp; x &lt;= arr[hi])</em><br /><em>{</em><br /><em>// Probing the position with keeping</em><br /><em>// uniform distribution in mind.</em><br /><em>int pos = lo + (((hi-lo) /</em><br /><em>(arr[hi]-arr[lo]))*(x - arr[lo]));</em><br /><br /><em>// Condition of target found</em><br /><em>if (arr[pos] == x)</em><br /><em>return pos;</em><br /><br /><em>// If x is larger, x is in upper part</em><br /><em>if (arr[pos] &lt; x)</em><br /><em>lo = pos + 1;</em><br /><br /><em>// If x is smaller, x is in the lower part</em><br /><em>else</em><br /><em>      hi = pos - 1;</em><br /><em>}</em><br /><em>  return -1;</em><br /><em>}</em><br /><br /><em>// Driver method</em><br /><em>public static void main(String[] args)</em><br /><em>{</em><br /><em>int x = 18; // Element to be searched</em><br /><em>int index = interpolationSearch(x);</em><br /><br /><em>// If element was found</em><br /><em>if (index != -1)</em><br /><em>System.out.println("Element found at index " + index);</em><br /><br /><em>else</em><br /><em>System.out.println("Element not found.");</em><br /><em>}</em><br /><em>}</em><br /><br /><strong>Output</strong>:<br />Element found at index 4</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Exponential Search - basic-->
         <item>
-            The name of this searching algorithm may be misleading as it works in O(Log n) time. The name comes from the way it searches an element.
-
-            The idea is to start with subarray size 1, compare its last element with x, then try size 2, then 4 and so on until last element of a subarray is not greater.
-            \nOnce we find an index i (after repeated doubling of i), we know that the element must be present between i/2
-            and i (Why i/2? because we could not find a greater value in previous iteration).
-
-            \n\nTime Complexity is O(Log n).
+             <![CDATA[<html><pre style="text-align:center">
+            <pre>The name of this searching algorithm may be misleading as it works in O(Log n) time. The name comes from the way it searches an element.<br /><br />The idea is to start with subarray size 1, compare its last element with x, then try size 2, then 4 and so on until last element of a subarray is not greater.<br />Once we find an index i (after repeated doubling of i), we know that the element must be present between i/2<br />and i (Why i/2? because we could not find a greater value in previous iteration).<br /><br /><em>Time Complexity is O(Log n)</em>.</pre>
+            </pre></html>
+            ]]>
         </item>
         <!--Exponential Search - Generic-->
         <item>
-            class ExponentialSearch
-            \n{
-            \n// Binary search algorithm to return the position of
-            \n// key x in the sub-array A[left..right]
-            \nprivate static int binarySearch(int[] A, int left, int right, int x)
-            \n {
-            \n// Base condition (search space is exhausted)
-            \nif (left > right) {
-            \nreturn -1;
-            \n}
-            \n
-            \n          // we find the mid value in the search space and
-            \n        // compares it with key value
-            \n
-            \n          int mid = (left + right) / 2;
-            \n
-            \n          // overflow can happen. Use
-            \n        // int mid = left + (right - left) / 2;
-            \n
-            \n          // Base condition (key value is found)
-            \n        if (x == A[mid]) {
-            \n      return mid;
-            \n    }
-            \n
-            \n          // discard all elements in the right search space
-            \n        // including the mid element
-            \n      else if (x &lt; A[mid]) {
-            \n    return binarySearch(A, left,  mid - 1, x);
-            \n  }
-            \n
-            \n          // discard all elements in the left search space
-            \n        // including the mid element
-            \n      else {
-            \n    return binarySearch(A, mid + 1,  right, x);
-            \n  }
-            \n}
-            \n
-            \n          // Returns the position of key x in the array A of length n
-            \n        public static int exponentialSearch(int[] A, int x)
-            \n      {
-            \n    int bound = 1;
-            \n
-            \n          // find the range in which the key x would reside
-            \n        while (bound &lt; A.length &amp;&amp; A[bound] &lt; x) {
-            \n      bound *= 2;    // calculate the next power of 2
-            \n    }
-            \n
-            \n          // call binary search on A[bound/2 .. min(bound, n)]
-            \n        return binarySearch(A, bound/2, Integer.min(bound, A.length), x);
-            \n      }
-            \n
-            \n          public static void main(String[] args)
-            \n        {
-            \n      int[] A = {2, 5, 6, 8, 9, 10};
-            \n    int key = 9;
-            \n
-            \n          int index = exponentialSearch(A, key);
-            \n
-            \n          if (index != -1)
-            \n        System.out.println("Element found at index " + index);
-            \n      else
-            \n    System.out.println("Element not found in the array");
-            \n  }            }
-
-            \n\nOutput:
-            \nElement found at index 4
-
+            <![CDATA[<html><pre style="text-align:center">
+            <pre><em>class ExponentialSearch</em><br /><em>{</em><br /><em>// Binary search algorithm to return the position of</em><br /><em>// key x in the sub-array A[left..right]</em><br /><em>private static int binarySearch(int[] A, int left, int right, int x)</em><br /><em>{</em><br /><em>// Base condition (search space is exhausted)</em><br /><em>if (left &gt; right) {</em><br /><em>return -1;</em><br /><em>}</em><br /><br /><em>// we find the mid value in the search space and</em><br /><em>// compares it with key value</em><br /><br /><em>int mid = (left + right) / 2;</em><br /><br /><em>// overflow can happen. Use</em><br /><em>// int mid = left + (right - left) / 2;</em><br /><br /><em>// Base condition (key value is found)</em><br /><em>if (x == A[mid]) {</em><br /><em>return mid;</em><br /><em>}</em><br /><br /><em>// discard all elements in the right search space</em><br /><em>// including the mid element</em><br /><em>else if (x &lt; A[mid]) {</em><br /><em>return binarySearch(A, left,  mid - 1, x);</em><br /><em>}</em><br /><br /><em>// discard all elements in the left search space</em><br /><em>// including the mid element</em><br /><em>else {</em><br /><em>return binarySearch(A, mid + 1,  right, x);</em><br /><em>}</em><br /><em>}</em><br /><br /><em>// Returns the position of key x in the array A of length n</em><br /><em>public static int exponentialSearch(int[] A, int x)</em><br /><em>{</em><br /><em>int bound = 1;</em><br /><br /><em>// find the range in which the key x would reside</em><br /><em>while (bound &lt; A.length &amp;&amp; A[bound] &lt; x) {</em><br /><em>bound *= 2;    // calculate the next power of 2</em><br /><em>}</em><br /><br /><em>// call binary search on A[bound/2 .. min(bound, n)]</em><br /><em>return binarySearch(A, bound/2, Integer.min(bound, A.length), x);</em><br /><em>}</em><br /><br /><em>public static void main(String[] args)</em><br /><em>{</em><br /><em>int[] A = {2, 5, 6, 8, 9, 10};</em><br /><em>int key = 9;</em><br /><br /><em>int index = exponentialSearch(A, key);</em><br /><br /><em>if (index != -1)</em><br /><em>System.out.println("Element found at index " + index);</em><br /><br /><em>else</em><br /><em>System.out.println("Element not found in the array");</em><br /><em>}</em><br /><em>}</em><br /><br /><strong>Output</strong>:<br />Element found at index 4</pre>
+             </pre></html>
+            ]]>
         </item>
         <!--Fibonacci Search - basic-->
         <item>
-            Given a sorted array arr[] of size n and an element x to be searched in it. Return index of x if it is present in array else return -1.
-            \nExamples:
-            \n
-            \n          Input:  arr[] = {2, 3, 4, 10, 40}, x = 10
-            \n        Output:  3
-            \n      Element x is present at index 3.
-
-            \n\n  Input:  arr[] = {2, 3, 4, 10, 40}, x = 11
-            \n  Output:  -1
-            \n Element x is not present.
-            \n Fibonacci Search is a comparison-based technique that uses Fibonacci numbers to search an element in a sorted array.
-
-            \n\nSimilarities with Binary Search:
-
-            \n - Works for sorted arrays
-            \n - A Divide and Conquer Algorithm.
-            \n - Has Log n time complexity.
-
-            \n\nDifferences with Binary Search:
-
-            \n - Fibonacci Search divides given array in unequal parts
-            \n - Binary Search uses division operator to divide range. Fibonacci Search doesn’t use /, but uses + and -. The division operator may be costly on some CPUs.
-            \n - Fibonacci Search examines relatively closer elements in subsequent steps. So when input array is big that cannot fit in CPU cache or even in RAM, Fibonacci Search can be useful.
-
-            \n\nBackground:
-            \nFibonacci Numbers are recursively defined as F(n) = F(n-1) + F(n-2), F(0) = 0, F(1) = 1.
-            First few Fibonacci Numbers are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …
-
-            \n\nObservations:
-            \nBelow observation is used for range elimination, and hence for the O(log(n)) complexity.
-
-            \nF(n - 2) &amp;approx; (1/3)*F(n) and
-            \nF(n - 1) &amp;approx; (2/3)*F(n).
-
-            \n\nAlgorithm:
-            \nLet the searched element be x.
-
-            \nThe idea is to first find the smallest Fibonacci number that is greater than or equal to the length of given array. Let the found Fibonacci number be fib (m’th Fibonacci number). We use (m-2)’th Fibonacci number as the index (If it is a valid index). Let (m-2)’th Fibonacci Number be i, we compare arr[i] with x, if x is same, we return i. Else if x is greater, we recur for subarray after i, else we recur for subarray before i.
-
-            \nBelow is the complete algorithm
-            \nLet arr[0..n-1] be the input array and element to be searched be x.
-
-            \n\n 1. Find the smallest Fibonacci Number greater than or equal to n. Let this number be fibM [m’th Fibonacci Number].
-            \nLet the two Fibonacci numbers preceding it be fibMm1 [(m-1)’th Fibonacci Number] and fibMm2 [(m-2)’th Fibonacci Number].
-
-            \n\n2. While the array has elements to be inspected:
-            \n - Compare x with the last element of the range covered by fibMm2
-            \n - If x matches, return index
-            \n - Else If x is less than the element, move the three Fibonacci variables two Fibonacci down,
-            indicating elimination of approximately rear two-third of the remaining array.
-            \n - Else x is greater than the element, move the three Fibonacci variables one Fibonacci down.
-            Reset offset to index. Together these indicate elimination of approximately front one-third of the remaining array.
-
-            \n3. Since there might be a single element remaining for comparison, check if fibMm1 is 1. If Yes, compare x with that remaining element. If match, return index.
-
-            Time Complexity for both average and worst cases are O(log n).
+            <![CDATA[<html><pre style="text-align:center">
+            <pre>Given a sorted array arr[] of size n and an element x to be searched in it. Return index of x if it is present in array else return -1.<br /><strong>Examples</strong>:<br /><br />Input:  arr[] = {2, 3, 4, 10, 40}, x = 10<br />Output:  3<br />Element x is present at index 3.<br /><br />Input:  arr[] = {2, 3, 4, 10, 40}, x = 11<br />Output:  -1<br />Element x is not present.<br />Fibonacci Search is a comparison-based technique that uses Fibonacci numbers to search an element in a sorted array.<br /><br />Similarities with Binary Search:<br /><br /> - Works for sorted arrays<br /> - A Divide and Conquer Algorithm.<br /> - Has Log n time complexity.<br /><br />Differences with Binary Search:<br /><br /> - Fibonacci Search divides given array in unequal parts<br /> - Binary Search uses division operator to divide range. Fibonacci Search doesn&rsquo;t use /, but uses + and -. The division operator may be costly on some CPUs.<br /> - Fibonacci Search examines relatively closer elements in subsequent steps. So when input array is big that cannot fit in CPU cache or even in RAM, Fibonacci Search can be useful.<br /><br />Background:<br />Fibonacci Numbers are recursively defined as F(n) = F(n-1) + F(n-2), F(0) = 0, F(1) = 1.<br />First few Fibonacci Numbers are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, &hellip;<br /><br />Observations:<br />Below observation is used for range elimination, and hence for the O(log(n)) complexity.<br /><br />F(n - 2) &amp;approx; (1/3)*F(n) and<br />F(n - 1) &amp;approx; (2/3)*F(n).<br /><br /><strong>Algorithm</strong>:<br />Let the searched element be x.<br /><br />The idea is to first find the smallest Fibonacci number that is greater than or equal to the length of given array. Let the found Fibonacci number be fib (m&rsquo;th Fibonacci number). We use (m-2)&rsquo;th Fibonacci number as the index (If it is a valid index). Let (m-2)&rsquo;th Fibonacci Number be i, we compare arr[i] with x, if x is same, we return i. Else if x is greater, we recur for subarray after i, else we recur for subarray before i.<br /><br />Below is the complete algorithm<br />Let arr[0..n-1] be the input array and element to be searched be x.<br /><br />1. Find the smallest Fibonacci Number greater than or equal to n. Let this number be fibM [m&rsquo;th Fibonacci Number].<br />Let the two Fibonacci numbers preceding it be fibMm1 [(m-1)&rsquo;th Fibonacci Number] and fibMm2 [(m-2)&rsquo;th Fibonacci Number].<br /><br />2. While the array has elements to be inspected:<br /> - Compare x with the last element of the range covered by fibMm2<br /> - If x matches, return index<br /> - Else If x is less than the element, move the three Fibonacci variables two Fibonacci down,<br />indicating elimination of approximately rear two-third of the remaining array.<br /> - Else x is greater than the element, move the three Fibonacci variables one Fibonacci down.<br />Reset offset to index. Together these indicate elimination of approximately front one-third of the remaining array.<br /><br />3. Since there might be a single element remaining for comparison, check if fibMm1 is 1. If Yes, compare x with that remaining element. If match, return index.<br /><br /><em>Time Complexity for both average and worst cases are O(log n).</em></pre>             </pre></html>
+            ]]>
         </item>
         <!--Fibonacci search - generic-->
         <item>
-            class Fibonacci
-            \n{
-            \n// Utility function to find minimum
-            \n // of two elements
-            \npublic static int min(int x, int y)
-            \n{ return (x &lt;= y)? x : y; }
-            \n
-            \n          /* Returns index of x if present, else returns -1 */
-            \n        public static int fibMonaccianSearch(int arr[],
-            \n      int x, int n)
-            \n    {
-            \n  /* Initialize fibonacci numbers */
-            \nint fibMMm2 = 0; // (m-2)\'th Fibonacci No.
-            \nint fibMMm1 = 1; // (m-1)\'th Fibonacci No.
-            \nint fibM = fibMMm2 + fibMMm1; // m\'th Fibonacci
-            \n
-            \n          /* fibM is going to store the smallest
-            \n        Fibonacci Number greater than or equal to n */
-            \n      while (fibM &lt; n)
-            \n    {
-            \n  fibMMm2 = fibMMm1;
-            \nfibMMm1 = fibM;
-            \nfibM = fibMMm2 + fibMMm1;
-            \n}
-            \n
-            \n          // Marks the eliminated range from front
-            \n        int offset = -1;
-            \n
-            \n          /* while there are elements to be inspected.
-            \n        Note that we compare arr[fibMm2] with x.
-            \n      When fibM becomes 1, fibMm2 becomes 0 */
-            \n    while (fibM > 1)
-            \n  {
-            \n// Check if fibMm2 is a valid location
-            \nint i = min(offset+fibMMm2, n-1);
-            \n
-            \n          /* If x is greater than the value at
-            \n        index fibMm2, cut the subarray array
-            \n    from offset to i */
-            \n      if (arr[i] &lt; x)
-            \n    {
-            \n  fibM = fibMMm1;
-            \nfibMMm1 = fibMMm2;
-            \nfibMMm2 = fibM - fibMMm1;
-            \noffset = i;
-            \n}
-            \n
-            \n          /* If x is greater than the value at index
-            \n        fibMm2, cut the subarray after i+1 */
-            \n      else if (arr[i] > x)
-            \n    {
-            \n  fibM = fibMMm2;
-            \nfibMMm1 = fibMMm1 - fibMMm2;
-            \nfibMMm2 = fibM - fibMMm1;
-            \n}
-            \n
-            \n          /* element found. return index */
-            \n        else return i;
-            \n      }
-            \n
-            \n          /* comparing the last element with x */
-            \n        if(fibMMm1 == 1 &amp;&amp; arr[offset+1] == x)
-            \n      return offset+1;
-            \n
-            \n          /*element not found. return -1 */
-            \n        return -1;
-            \n      }
-            \n
-            \n          // driver code
-            \n        public static void main(String[] args)
-            \n      {
-            \n    int arr[] = {10, 22, 35, 40, 45, 50,
-            \n  80, 82, 85, 90, 100};
-            \nint n = 11;
-            \nint x = 85;
-            \nSystem.out.print ("Found at index: "+
-            \nfibMonaccianSearch(arr, x, n));
-            \n}            }
-
-            \n\nOutput:
-            \nFound at index: 8
+             <![CDATA[<html><pre style="text-align:center">
+            <pre><em>class Fibonacci</em><br /><em>{</em><br /><em>// Utility function to find minimum</em><br /><em>// of two elements</em><br /><em>public static int min(int x, int y)</em><br /><em>{ return (x &lt;= y)? x : y; }</em><br /><br /><em>/* Returns index of x if present, else returns -1 */</em><br /><em>public static int fibMonaccianSearch(int arr[], int x, int n)</em><br /><em>{</em><br /><em>/* Initialize fibonacci numbers */</em><br /><em>int fibMMm2 = 0; // (m-2)\'th Fibonacci No.</em><br /><em>int fibMMm1 = 1; // (m-1)\'th Fibonacci No.</em><br /><em>int fibM = fibMMm2 + fibMMm1; // m\'th Fibonacci</em><br /><br /><em>/* fibM is going to store the smallest</em><br /><em>Fibonacci Number greater than or equal to n */</em><br /><em>while (fibM &lt; n)</em><br /><em>{</em><br /><em>fibMMm2 = fibMMm1;</em><br /><em>fibMMm1 = fibM;</em><br /><em>fibM = fibMMm2 + fibMMm1;</em><br /><em>}</em><br /><br /><em>// Marks the eliminated range from front</em><br /><em>int offset = -1;</em><br /><br /><em>/* while there are elements to be inspected.</em><br /><em>Note that we compare arr[fibMm2] with x.</em><br /><em>When fibM becomes 1, fibMm2 becomes 0 */</em><br /><em>while (fibM &gt; 1)</em><br /><em>{</em><br /><em>// Check if fibMm2 is a valid location</em><br /><em>int i = min(offset+fibMMm2, n-1);</em><br /><br /><em>/* If x is greater than the value at</em><br /><em>index fibMm2, cut the subarray array</em><br /><em>from offset to i */</em><br /><em>if (arr[i] &lt; x)</em><br /><em>{</em><br /><em>fibM = fibMMm1;</em><br /><em>fibMMm1 = fibMMm2;</em><br /><em>fibMMm2 = fibM - fibMMm1;</em><br /><em>offset = i;</em><br /><em>}</em><br /><br /><em>/* If x is greater than the value at index</em><br /><em>fibMm2, cut the subarray after i+1 */</em><br /><em>else if (arr[i] &gt; x)</em><br /><em>{</em><br /><em>fibM = fibMMm2;</em><br /><em>fibMMm1 = fibMMm1 - fibMMm2;</em><br /><em>fibMMm2 = fibM - fibMMm1;</em><br /><em>}</em><br /><br /><em>/* element found. return index */</em><br /><em>else return i;</em><br /><em>}</em><br /><br /><em>/* comparing the last element with x */</em><br /><em>if(fibMMm1 == 1 &lt;&lt; arr[offset+1] == x)</em><br /><br /><em>return offset+1;</em><br /><br /><em>/*element not found. return -1 */</em><br /><em>return -1;</em><br /><em>}</em><br /><br /><em>// driver code</em><br /><em>public static void main(String[] args)</em><br /><em>{</em><br /><em>int arr[] = {10, 22, 35, 40, 45, 50,</em><br /><em>80, 82, 85, 90, 100};</em><br /><em>int n = 11;</em><br /><em>int x = 85;</em><br /><em>System.out.print ("Found at index: "+</em><br /><em>fibMonaccianSearch(arr, x, n));</em><br /><em>}            </em><br /><em>}</em><br /><br /><strong>Output</strong>:<br />Found at index: 8</pre>
+            </pre></html>
+            ]]>
         </item>
 
     </string-array>
