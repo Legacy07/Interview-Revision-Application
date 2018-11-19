@@ -18,6 +18,13 @@
         it being a distraction.
     </string>
 
+    <string name="aboutText">
+        <![CDATA[<html><pre style="text-align:center">
+        <pre>An <strong>interview revision</strong> application mainly for graduates and students who wants to revise and have a look at<br />what sorts of questions may be asked generally and in specific IT related job interviews. Also typical answers are<br />provided to give you a head-start. <br /><br />There are <em>tips</em> on interview types and what to do\'s and not to do\'s so you feel confident<br />when you have your first ever interview. Even for job seekers who had their first couple interviews, these tips<br />might still help you out and self-criticise.<br /><br />For <em>technical-based</em> interviews, it is important to know such algorithmic approaches and even if you know already, this will help you brush up on it.<br />Thus, there are algorithms that explains what they are and providing generic code samples.</pre>
+        </pre></html>
+            ]]>
+    </string>
+
     <!--Behavioural Questions-->
     <string-array name="behaviouralQuestions">
         <item>So, tell me about yourself.</item>

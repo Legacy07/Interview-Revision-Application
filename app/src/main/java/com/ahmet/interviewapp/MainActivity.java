@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ahmet.interviewapp.Nav_Bar_Fragments.AboutFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.AlgorithmsFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.InterviewFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.TechnicalQuestionsFragment;
@@ -99,8 +100,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.coding) {
 
         } else if (id == R.id.about) {
-
-        } else if (id == R.id.contact) {
+            AboutFragment aboutFragment = new AboutFragment();
+            manager.beginTransaction().replace(R.id.content_layout, aboutFragment).addToBackStack(null).commit();
 
         } else if (id == R.id.references) {
             References references = new References();
