@@ -13,6 +13,8 @@
         android:background="@drawable/rounded_box"
         android:drawableRight="@drawable/ic_next"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="18sp" />
+        android:textSize="@dimen/subHeader_size"
+        android:fontFamily="@font/montserrat"
+        />
 
 </RelativeLayout>

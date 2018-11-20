@@ -111,7 +111,7 @@ public class AboutFragment extends Fragment {
                 startActivity(Intent.createChooser(share, "Share via"));
             }
         });
-        aboutTextView.setText(Html.fromHtml(getString(R.string.aboutText), 2));
+        aboutTextView.setText(Html.fromHtml(getString(R.string.aboutText)));
 
 
         //actionbar title change

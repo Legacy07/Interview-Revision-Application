@@ -17,7 +17,9 @@
             android:gravity="center"
             android:text="@string/topText"
             android:textColor="@color/colorBlack"
-            android:textSize="18sp" />
+            android:textSize="@dimen/text_size"
+            android:fontFamily="@font/poppins"
+            />
 
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/table"
@@ -33,12 +35,14 @@
                 <TextView
                     android:padding="3dip"
                     android:text="Common Questions"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"/>
 
                 <TextView
                     android:padding="3dip"
                     android:text="Project 1"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
 
                 <TextView
                     android:padding="3dip"
@@ -55,7 +59,8 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text="Challenges" />
+                    android:text="Challenges"
+                    android:fontFamily="@font/poppins"/>
 
                 <TextView
                     android:background="@drawable/rounded_box"
@@ -77,7 +82,8 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text="Mistakes/ Failures" />
+                    android:text="Mistakes/ Failures"
+                    android:fontFamily="@font/poppins"/>
 
                 <TextView
                     android:background="@drawable/rounded_box"
@@ -99,7 +105,8 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text="Enjoyed" />
+                    android:text="Enjoyed"
+                    android:fontFamily="@font/poppins"/>
 
                 <TextView
                     android:background="@drawable/rounded_box"
@@ -121,7 +128,8 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text="Leadership" />
+                    android:text="Leadership"
+                    android:fontFamily="@font/poppins"/>
 
                 <TextView
                     android:background="@drawable/rounded_box"
@@ -143,7 +151,8 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text="Conflicts" />
+                    android:text="Conflicts"
+                    android:fontFamily="@font/poppins"/>
 
                 <TextView
                     android:background="@drawable/rounded_box"
@@ -165,7 +174,9 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text="What You'd Do Differently" />
+                    android:text="What You'd Do Differently"
+                    android:fontFamily="@font/poppins"
+                    />
 
                 <TextView
                     android:background="@drawable/rounded_box"
@@ -193,7 +204,9 @@
             android:gravity="center"
             android:text="@string/belowTable"
             android:textColor="@color/colorBlack"
-            android:textSize="16sp" />
+            android:textSize="@dimen/text_size"
+            android:fontFamily="@font/poppins"
+            />
     </RelativeLayout>
 
 </ScrollView>

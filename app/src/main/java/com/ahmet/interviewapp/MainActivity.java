@@ -1,6 +1,7 @@
 package com.ahmet.interviewapp;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +14,8 @@ import android.view.MenuItem;
 
 import com.ahmet.interviewapp.Nav_Bar_Fragments.AboutFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.AlgorithmsFragment;
+import com.ahmet.interviewapp.Nav_Bar_Fragments.BlogFragment;
+import com.ahmet.interviewapp.Nav_Bar_Fragments.CodingQuestionsFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.InterviewFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.TechnicalQuestionsFragment;
 
@@ -51,6 +54,7 @@ public class MainActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
+
     }
 
     @Override
@@ -98,6 +102,8 @@ public class MainActivity extends AppCompatActivity
             manager.beginTransaction().replace(R.id.content_layout, algorithmsFragment).addToBackStack(null).commit();
 
         } else if (id == R.id.coding) {
+            CodingQuestionsFragment codingQuestionsFragment = new CodingQuestionsFragment();
+            manager.beginTransaction().replace(R.id.content_layout, codingQuestionsFragment).addToBackStack(null).commit();
 
         } else if (id == R.id.about) {
             AboutFragment aboutFragment = new AboutFragment();
@@ -106,6 +112,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.references) {
             References references = new References();
             manager.beginTransaction().replace(R.id.content_layout, references).addToBackStack(null).commit();
+        }
+
+        else if (id == R.id.blog) {
+            BlogFragment blog = new BlogFragment();
+            manager.beginTransaction().replace(R.id.content_layout, blog).addToBackStack(null).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

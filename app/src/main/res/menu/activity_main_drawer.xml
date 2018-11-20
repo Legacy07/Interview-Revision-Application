@@ -7,34 +7,37 @@
         <item
             android:id="@+id/interview"
             android:icon="@drawable/ic_interview"
-            android:title="Interview" />
+            android:title="Interview"
+            />
         <item
             android:id="@+id/technical"
             android:icon="@drawable/ic_technical"
-            android:title="Technical Questions" />
+            android:title="Technical Questions"
+            />
         <item
             android:id="@+id/algorithm"
             android:icon="@drawable/ic_algorithm"
-            android:title="Algorithm" />
+            android:title="Algorithm"
+            />
         <item
             android:id="@+id/coding"
             android:icon="@drawable/ic_coding"
-            android:title="Coding Questions" />
+            android:title="Coding Questions"
+            />
 
+        <item
+            android:id="@+id/blog"
+            android:icon="@drawable/ic_blog"
+            android:title="#Blog" />
+
+        <item
+            android:id="@+id/references"
+            android:icon="@drawable/ic_reference"
+            android:title="References" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_information"
+            android:title="About" />
     </group>
-
-    <item android:title="">
-        <menu>
-            <item
-                android:id="@+id/references"
-                android:icon="@drawable/ic_reference"
-                android:title="References" />
-            <item
-                android:id="@+id/about"
-                android:icon="@drawable/ic_information"
-                android:title="About" />
-
-        </menu>
-    </item>
 
 </menu>

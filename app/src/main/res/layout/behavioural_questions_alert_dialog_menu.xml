@@ -21,8 +21,9 @@
             android:layout_marginLeft="2dp"
             android:text="Behavioural Questions"
             android:textColor="@color/colorWhite"
-            android:textSize="25sp" />
-
+            android:textSize="@dimen/header_size"
+            android:fontFamily="@font/montserrat"
+            />
     </RelativeLayout>
 
     <TextView
@@ -34,7 +35,9 @@
         android:ems="10"
         android:paddingLeft="5dp"
         android:textColor="@color/colorBlack"
-        android:textSize="16sp">
+        android:textSize="@dimen/text_size"
+        android:fontFamily="@font/poppins"
+        >
 
     </TextView>
 
@@ -44,6 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/informationTextView"
         android:text="Interview Preparation Grid"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size"
+        android:fontFamily="@font/montserrat"
+        />
 
 </RelativeLayout>

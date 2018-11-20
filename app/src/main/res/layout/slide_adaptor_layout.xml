@@ -12,7 +12,7 @@
         android:background="@drawable/coloured_box"
         android:gravity="center"
         android:textColor="@color/colorWhite"
-        android:textSize="18sp"
+        android:textSize="@dimen/subHeader_size"
         android:fontFamily="@font/montserrat"
 
         />
@@ -31,7 +31,7 @@
             android:layout_marginLeft="10dp"
             android:textIsSelectable="true"
             android:textColor="@color/colorBlack"
-            android:textSize="14sp"
+            android:textSize="@dimen/text_size"
             android:fontFamily="@font/poppins"
             />
     </ScrollView>

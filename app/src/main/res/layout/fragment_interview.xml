@@ -11,6 +11,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:text="Behavioural Questions"
+        android:fontFamily="@font/montserrat"
         />
 
     <Button
@@ -18,14 +19,18 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_toRightOf="@id/behaviouralButton"
-        android:text="Technical Questions" />
+        android:text="Technical Questions"
+        android:fontFamily="@font/montserrat"
+        />
 
     <Button
         android:id="@+id/clicheButton"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_below="@id/behaviouralButton"
-        android:text="Cliché Questions" />
+        android:text="Cliché Questions"
+        android:fontFamily="@font/montserrat"
+        />
 
     <Button
         android:id="@+id/tipsButton"
@@ -33,5 +38,7 @@
         android:layout_height="100dp"
         android:layout_below="@id/technicalButton"
         android:layout_toRightOf="@id/clicheButton"
-        android:text="Tips" />
+        android:text="Tips"
+        android:fontFamily="@font/montserrat"
+        />
 </RelativeLayout>

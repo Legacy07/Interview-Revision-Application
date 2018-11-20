@@ -6,32 +6,38 @@
     android:gravity="center"
     tools:context=".Nav_Bar_Fragments.TipsFragment">
 
-   <Button
-       android:id="@+id/interviewTipsButton"
-       android:layout_width="150dp"
-       android:layout_height="100dp"
-       android:text="Interview Tips"
-       />
-   <Button
-       android:id="@+id/telephoneTipsButton"
-       android:layout_width="150dp"
-       android:layout_height="100dp"
-       android:layout_toRightOf="@id/interviewTipsButton"
-       android:text="Telephone Interview Tips" />
+    <Button
+        android:id="@+id/interviewTipsButton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Interview Tips" />
 
-   <Button
-       android:id="@+id/groupTipsButton"
-       android:layout_width="150dp"
-       android:layout_height="100dp"
-       android:layout_below="@id/interviewTipsButton"
-       android:text="Group Discussion Tips" />
+    <Button
+        android:id="@+id/telephoneTipsButton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/interviewTipsButton"
+        android:fontFamily="@font/montserrat"
+        android:text="Telephone Interview Tips" />
 
-   <Button
-       android:id="@+id/cvTipsButton"
-       android:layout_width="150dp"
-       android:layout_height="100dp"
-       android:layout_below="@id/interviewTipsButton"
-       android:layout_toRightOf="@id/groupTipsButton"
-       android:text="CV Tips" />
+    <Button
+        android:id="@+id/groupTipsButton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/interviewTipsButton"
+        android:fontFamily="@font/montserrat"
+        android:text="Group Discussion Tips" />
+
+    <Button
+        android:id="@+id/cvTipsButton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/interviewTipsButton"
+        android:layout_toRightOf="@id/groupTipsButton"
+        android:fontFamily="@font/montserrat"
+        android:text="CV Tips"
+
+        />
 
 </RelativeLayout>

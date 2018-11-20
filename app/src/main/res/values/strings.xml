@@ -3,6 +3,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Interview Revision</string>
+    <string name="nav_email">ahmetince771@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="what_is_behavioural_questions">Behavioural questions are asked to get to know your personality, to understand your resume more deeply,
@@ -20,9 +21,11 @@
 
     <string name="aboutText">
         <![CDATA[<html><pre style="text-align:center">
-        <pre>An <strong>interview revision</strong> application mainly for graduates and students who wants to revise and have a look at<br />what sorts of questions may be asked generally and in specific IT related job interviews. Also typical answers are<br />provided to give you a head-start. <br /><br />There are <em>tips</em> on interview types and what to do\'s and not to do\'s so you feel confident<br />when you have your first ever interview. Even for job seekers who had their first couple interviews, these tips<br />might still help you out and self-criticise.<br /><br />For <em>technical-based</em> interviews, it is important to know such algorithmic approaches and even if you know already, this will help you brush up on it.<br />Thus, there are algorithms that explains what they are and providing generic code samples.</pre>
-        </pre></html>
-            ]]>
+        <pre>An <strong>interview revision</strong> application mainly for graduates and students who wants to revise and have a look at what sorts of questions may be asked generally and in specific IT related job interviews. Also typical answers are<br />provided to give you a head-start. <br /><br />There are <em>tips</em> on interview types and what to do\'s and not to do\'s so you feel confident when you have your first ever interview. Even for job seekers who had their first couple interviews, these tips might still help you out and self-criticise.<br /><br />For <em>technical-based</em> interviews, it is important to know such algorithmic approaches and even if you know already, this will help you brush up on it. Thus, there are algorithms that explains what they are and providing generic code samples.<br /><br />
+        <p style="text-align: center;">By <strong><em>Ahmet Ince</em></strong></p>
+        </pre> </html>
+        ]]>
+
     </string>
 
     <!--Behavioural Questions-->
