@@ -8,7 +8,7 @@
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/technicalTable"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:stretchColumns="*">
 
         <!--table created -->
@@ -19,6 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableBottom="@drawable/ic_java"
+                android:fontFamily="@font/montserrat"
                 android:text="Java"
                 android:textSize="18sp" />
 
@@ -27,50 +28,61 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableBottom="@drawable/ic_android"
+                android:fontFamily="@font/montserrat"
                 android:text="Android"
                 android:textSize="18sp" />
         </TableRow>
 
-        <TableRow>
+        <!--<TableRow>-->
 
-            <Button
-                android:id="@+id/csharpButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:drawableBottom="@drawable/ic_c_sharp"
-                android:text="C#"
-                android:textSize="18sp" />
+        <!--<Button-->
+        <!--android:id="@+id/csharpButton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:drawableBottom="@drawable/ic_c_sharp"-->
+        <!--android:text="C#"-->
+        <!--android:textSize="18sp" />-->
 
-            <Button
-                android:id="@+id/htmlButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:drawableBottom="@drawable/ic_html"
-                android:text="HTML"
-                android:textSize="18sp" />
-        </TableRow>
+        <!--<Button-->
+        <!--android:id="@+id/htmlButton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:drawableBottom="@drawable/ic_html"-->
+        <!--android:text="HTML"-->
+        <!--android:textSize="18sp" />-->
+        <!--</TableRow>-->
 
-        <TableRow>
+        <!--<TableRow>-->
 
-            <Button
-                android:id="@+id/phpButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="PHP"
-                android:drawableBottom="@drawable/ic_php"
-                android:textSize="18sp" />
+        <!--<Button-->
+        <!--android:id="@+id/phpButton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="PHP"-->
+        <!--android:drawableBottom="@drawable/ic_php"-->
+        <!--android:textSize="18sp" />-->
 
-            <Button
-                android:id="@+id/cssButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:drawableBottom="@drawable/ic_css"
-                android:text="CSS"
-                android:textSize="18sp" />
-        </TableRow>
+        <!--<Button-->
+        <!--android:id="@+id/cssButton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:drawableBottom="@drawable/ic_css"-->
+        <!--android:text="CSS"-->
+        <!--android:textSize="18sp" />-->
+        <!--</TableRow>-->
 
 
     </TableLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/technicalTable"
+        android:background="@color/colorBlack"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="More Content Coming Soon - C#, HTML/CSS, PHP and JS"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
 
 </RelativeLayout>

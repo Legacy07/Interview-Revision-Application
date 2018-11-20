@@ -12,7 +12,10 @@
         android:background="@drawable/coloured_box"
         android:gravity="center"
         android:textColor="@color/colorWhite"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
+
+        />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -28,6 +31,8 @@
             android:layout_marginLeft="10dp"
             android:textIsSelectable="true"
             android:textColor="@color/colorBlack"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            />
     </ScrollView>
 </RelativeLayout>

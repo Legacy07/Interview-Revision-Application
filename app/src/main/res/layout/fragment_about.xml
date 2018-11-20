@@ -16,6 +16,7 @@
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
         android:paddingBottom="10dp"
+        android:fontFamily="@font/poppins"
         />
 
     <RelativeLayout

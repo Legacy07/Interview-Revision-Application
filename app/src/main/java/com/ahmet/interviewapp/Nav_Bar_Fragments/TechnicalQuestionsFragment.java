@@ -33,17 +33,17 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
 
         javaButton = (Button) view.findViewById(R.id.javaButton);
         androidButton = (Button) view.findViewById(R.id.androidButton);
-        cSharpButton = (Button) view.findViewById(R.id.csharpButton);
-        htmlButton = (Button) view.findViewById(R.id.htmlButton);
-        phpButton = (Button) view.findViewById(R.id.phpButton);
-        cssButton = (Button) view.findViewById(R.id.cssButton);
+//        cSharpButton = (Button) view.findViewById(R.id.csharpButton);
+//        htmlButton = (Button) view.findViewById(R.id.htmlButton);
+//        phpButton = (Button) view.findViewById(R.id.phpButton);
+//        cssButton = (Button) view.findViewById(R.id.cssButton);
 
         javaButton.setOnClickListener(this);
         androidButton.setOnClickListener(this);
-        cSharpButton.setOnClickListener(this);
-        htmlButton.setOnClickListener(this);
-        phpButton.setOnClickListener(this);
-        cssButton.setOnClickListener(this);
+//        cSharpButton.setOnClickListener(this);
+//        htmlButton.setOnClickListener(this);
+//        phpButton.setOnClickListener(this);
+//        cssButton.setOnClickListener(this);
 
         manager = getActivity().getSupportFragmentManager();
 
@@ -73,18 +73,18 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
                 manager.beginTransaction().replace(R.id.content_layout, androidTechnicalQuestionsFragment).addToBackStack(null).commit();
 
                 break;
-            case R.id.csharpButton:
-
-                break;
-            case R.id.htmlButton:
-
-                break;
-            case R.id.phpButton:
-
-                break;
-            case R.id.cssButton:
-
-                break;
+//            case R.id.csharpButton:
+//
+//                break;
+//            case R.id.htmlButton:
+//
+//                break;
+//            case R.id.phpButton:
+//
+//                break;
+//            case R.id.cssButton:
+//
+//                break;
         }
     }
 }
