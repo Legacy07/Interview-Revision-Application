@@ -33,8 +33,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="imageAsset" value="D:\Desktop\InterviewApp\blog.png" />
-                                      <entry key="outputName" value="ic_blog" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="D:\Desktop\InterviewApp\behavioural.png" />
+                                      <entry key="outputName" value="ic_behavioural" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -57,6 +57,8 @@ public class QuestionsListViewAdaptor extends BaseAdapter {
         //place gathered item into text view to output
         text.setText(questionsArrayList.get(position).getQuestions());
 
+        //check it out for custom listview with images
+        //https://www.youtube.com/watch?v=6dTmU2G4lVM
         return convertView;
     }
 }

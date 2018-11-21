@@ -1,8 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Nav_Bar_Fragments.AlgorithmsFragment">
 
-</FrameLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/algorithmsTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="*">
+
+        <!--table created -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/dataStructuresButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:drawableBottom="@drawable/data_structures"
+                android:fontFamily="@font/montserrat"
+                android:text="Data Structures"
+                android:textSize="@dimen/text_size"
+                android:layout_marginTop="-10dp"
+                />
+
+            <Button
+                android:id="@+id/searchingButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_toRightOf="@id/dataStructuresButton"
+                android:drawableBottom="@drawable/searching"
+                android:fontFamily="@font/montserrat"
+                android:text="Searching"
+                android:textSize="@dimen/text_size"
+                android:layout_marginTop="1dp"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/sortingButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:drawableBottom="@drawable/sorting"
+                android:fontFamily="@font/montserrat"
+                android:text="Sorting"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/graphAlgorithmsButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_toRightOf="@id/sortingButton"
+                android:drawableBottom="@drawable/graph_algorithm"
+                android:fontFamily="@font/montserrat"
+                android:text="Graph Algorithms"
+                android:textSize="@dimen/text_size"
+                android:layout_marginTop="-12dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

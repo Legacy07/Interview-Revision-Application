@@ -3,6 +3,7 @@ package com.ahmet.interviewapp.Nav_Bar_Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -48,6 +49,8 @@ public class BlogFragment extends Fragment {
                 return false;
             }
         });
+
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Blog");
 
         return view;
     }

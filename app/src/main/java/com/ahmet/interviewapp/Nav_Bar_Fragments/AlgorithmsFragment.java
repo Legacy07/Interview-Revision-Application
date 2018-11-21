@@ -8,33 +8,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.Button;
 
-import com.ahmet.interviewapp.Adaptors.QuestionsListViewAdaptor;
 import com.ahmet.interviewapp.Algorithms.Advanced;
 import com.ahmet.interviewapp.Algorithms.DataStructures;
 import com.ahmet.interviewapp.Algorithms.Graph;
 import com.ahmet.interviewapp.Algorithms.Searching;
 import com.ahmet.interviewapp.Algorithms.Sorting;
-import com.ahmet.interviewapp.Models.AddQuestions;
-import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.R;
 
-import java.util.ArrayList;
 
+public class AlgorithmsFragment extends Fragment implements View.OnClickListener {
 
-public class AlgorithmsFragment extends Fragment {
-
-
-    ListView listView;
-
-    ArrayList<Questions> arrayList = new ArrayList<>();
-    Questions questions;
-    QuestionsListViewAdaptor listViewAdaptor;
 
     FragmentManager fragmentManager;
+    Button dataStructuresButton, sortingButton, searchingButton, graphButton;
 
     public AlgorithmsFragment() {
 
@@ -44,50 +32,19 @@ public class AlgorithmsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.questions_layout, container, false);
-
-        final DataStructures dataStructures = new DataStructures();
-        final Searching searching = new Searching();
-        final Sorting sorting = new Sorting();
-        final Graph graph = new Graph();
-        final Advanced advanced = new Advanced();
+        View view = inflater.inflate(R.layout.fragment_algorithms, container, false);
 
         fragmentManager = getFragmentManager();
 
-        listView = (ListView) view.findViewById(R.id.listView);
-        //initialise Adaptor
-        listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), arrayList);
+        dataStructuresButton = (Button) view.findViewById(R.id.dataStructuresButton);
+        sortingButton = (Button) view.findViewById(R.id.sortingButton);
+        searchingButton = (Button) view.findViewById(R.id.searchingButton);
+        graphButton = (Button) view.findViewById(R.id.graphAlgorithmsButton);
 
-        String[] questionsArray = getResources().getStringArray(R.array.algorithm_topics);
-        //add the topics in listview
-        AddQuestions addQuestions = new AddQuestions();
-        addQuestions.add(getActivity(), questions, arrayList, questionsArray, listViewAdaptor);
-        listView.setAdapter(listViewAdaptor);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                String selected = ((TextView) view.findViewById(R.id.questionsTextView)).getText().toString();
-                String text = selected.substring(3);
-//
-                if (text.equals("Data Structures")) {
-                    fragmentManager.beginTransaction().replace(R.id.content_layout, dataStructures).addToBackStack(null).commit();
-                }
-                if (text.contains("Searching")) {
-                fragmentManager.beginTransaction().replace(R.id.content_layout, searching).addToBackStack(null).commit();
-                }
-                if (text.contains("Sorting")) {
-                fragmentManager.beginTransaction().replace(R.id.content_layout, sorting).addToBackStack(null).commit();
-                }
-                if (text.contains("Graph Algorithm")) {
-                fragmentManager.beginTransaction().replace(R.id.content_layout, graph).addToBackStack(null).commit();
-                }
-                if (text.contains("Advanced Algorithms")) {
-                fragmentManager.beginTransaction().replace(R.id.content_layout, advanced).addToBackStack(null).commit();
-                }
-            }
-        });
+        dataStructuresButton.setOnClickListener(this);
+        sortingButton.setOnClickListener(this);
+        searchingButton.setOnClickListener(this);
+        graphButton.setOnClickListener(this);
 
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Algorithms");
 
@@ -100,4 +57,30 @@ public class AlgorithmsFragment extends Fragment {
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
     }
 
+    @Override
+    public void onClick(View view) {
+        final DataStructures dataStructures = new DataStructures();
+        final Searching searching = new Searching();
+        final Sorting sorting = new Sorting();
+        final Graph graph = new Graph();
+//        final Advanced advanced = new Advanced();
+
+        switch (view.getId()) {
+            case R.id.dataStructuresButton:
+                fragmentManager.beginTransaction().replace(R.id.content_layout, dataStructures).addToBackStack(null).commit();
+                break;
+
+            case R.id.sortingButton:
+                fragmentManager.beginTransaction().replace(R.id.content_layout, sorting).addToBackStack(null).commit();
+                break;
+
+            case R.id.searchingButton:
+                fragmentManager.beginTransaction().replace(R.id.content_layout, searching).addToBackStack(null).commit();
+                break;
+
+            case R.id.graphAlgorithmsButton:
+                fragmentManager.beginTransaction().replace(R.id.content_layout, graph).addToBackStack(null).commit();
+                break;
+        }
+    }
 }

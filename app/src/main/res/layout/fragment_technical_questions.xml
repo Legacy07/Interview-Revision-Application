@@ -9,6 +9,7 @@
         android:id="@+id/technicalTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:stretchColumns="*">
 
         <!--table created -->
@@ -17,8 +18,8 @@
             <Button
                 android:id="@+id/javaButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_java"
+                android:layout_height="200dp"
+                android:drawableBottom="@drawable/java"
                 android:fontFamily="@font/montserrat"
                 android:text="Java"
                 android:textSize="@dimen/text_size"
@@ -27,8 +28,8 @@
             <Button
                 android:id="@+id/androidButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_android"
+                android:layout_height="200dp"
+                android:drawableBottom="@drawable/android"
                 android:fontFamily="@font/montserrat"
                 android:text="Android"
                 android:textSize="@dimen/text_size"

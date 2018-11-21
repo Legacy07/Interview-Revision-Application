@@ -3,42 +3,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".Nav_Bar_Fragments.InterviewFragment">
 
-    <Button
-        android:id="@+id/behaviouralButton"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:text="Behavioural Questions"
-        android:fontFamily="@font/montserrat"
-        />
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/technicalTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="*">
 
-    <Button
-        android:id="@+id/technicalButton"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_toRightOf="@id/behaviouralButton"
-        android:text="Technical Questions"
-        android:fontFamily="@font/montserrat"
-        />
+        <!--table created -->
+        <TableRow>
 
-    <Button
-        android:id="@+id/clicheButton"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/behaviouralButton"
-        android:text="Cliché Questions"
-        android:fontFamily="@font/montserrat"
-        />
+            <Button
+                android:id="@+id/behaviouralButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:drawableBottom="@drawable/behavioural"
+                android:fontFamily="@font/montserrat"
+                android:text="Behavioural Questions"
+                android:textSize="@dimen/text_size"
+                />
 
-    <Button
-        android:id="@+id/tipsButton"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/technicalButton"
-        android:layout_toRightOf="@id/clicheButton"
-        android:text="Tips"
-        android:fontFamily="@font/montserrat"
-        />
+            <Button
+                android:id="@+id/technicalButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_toRightOf="@id/behaviouralButton"
+                android:fontFamily="@font/montserrat"
+                android:text="Technical Questions"
+                android:textSize="@dimen/text_size"
+                android:drawableBottom="@drawable/coding"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/clicheButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/behaviouralButton"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Cliché Questions"
+                android:textSize="@dimen/text_size"
+                android:drawableBottom="@drawable/cliche"
+                />
+
+            <Button
+                android:id="@+id/tipsButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/technicalButton"
+                android:layout_toRightOf="@id/clicheButton"
+                android:fontFamily="@font/montserrat"
+                android:text="Tips"
+                android:textSize="@dimen/text_size"
+                android:drawableBottom="@drawable/tips"
+                android:layout_marginTop="1dp"
+                />
+        </TableRow>
+    </TableLayout>
+
 </RelativeLayout>

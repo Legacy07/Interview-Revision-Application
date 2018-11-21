@@ -15,27 +15,30 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="10dp"
         android:contentDescription="@string/nav_header_desc"
+        android:layout_below="@id/nav_Textview"
         app:srcCompat="@mipmap/ic_app_icon" />
 
-    <!--<TextView-->
-    <!--android:id="@+id/nav_Textview"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_centerInParent="true"-->
-    <!--android:fontFamily="@font/montserrat"-->
-    <!--android:text="@string/nav_header_title"-->
-    <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
-    <!--android:textSize="@dimen/nav_text_size" />-->
-
     <TextView
-        android:id="@+id/nav_Email"
+        android:id="@+id/nav_Textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_below="@id/imageView"
         android:fontFamily="@font/montserrat"
-        android:text="@string/nav_email"
+        android:text="@string/nav_header_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="@dimen/text_size" />
+        android:textSize="@dimen/nav_text_size"
+        android:textColor="@color/colorWhite"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/nav_Email"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_below="@id/imageView"-->
+        <!--android:fontFamily="@font/montserrat"-->
+        <!--android:text="@string/nav_email"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+        <!--android:textSize="@dimen/text_size" />-->
 
 </RelativeLayout>
