@@ -1,7 +1,6 @@
 package com.ahmet.interviewapp;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +16,7 @@ import com.ahmet.interviewapp.Nav_Bar_Fragments.AlgorithmsFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.BlogFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.CodingQuestionsFragment;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.InterviewFragment;
+import com.ahmet.interviewapp.Nav_Bar_Fragments.References;
 import com.ahmet.interviewapp.Nav_Bar_Fragments.TechnicalQuestionsFragment;
 
 public class MainActivity extends AppCompatActivity
