@@ -19,18 +19,23 @@
 
             <Button
                 android:id="@+id/javaButton"
-                android:layout_width="0dp"
-                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:drawableBottom="@drawable/java"
                 android:fontFamily="@font/montserrat"
                 android:text="Java"
                 android:textSize="@dimen/text_size"
                  />
+        </TableRow>
 
+        <TableRow
+            android:weightSum="2"
+            android:layout_weight="2"
+            >
             <Button
                 android:id="@+id/androidButton"
-                android:layout_width="0dp"
-                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:drawableBottom="@drawable/android"
                 android:fontFamily="@font/montserrat"
                 android:text="Android"

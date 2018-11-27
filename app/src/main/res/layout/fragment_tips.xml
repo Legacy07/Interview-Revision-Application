@@ -20,17 +20,23 @@
 
             <Button
                 android:id="@+id/interviewTipsButton"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/montserrat"
                 android:text="Interview Tips"
                 android:textSize="@dimen/text_size"
                 android:drawableBottom="@drawable/interview"
                 />
+        </TableRow>
+
+        <TableRow
+            android:weightSum="2"
+            android:layout_weight="2"
+            >
 
             <Button
                 android:id="@+id/telephoneTipsButton"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/montserrat"
                 android:text="Telephone Interview Tips"
@@ -53,7 +59,11 @@
                 android:textSize="@dimen/text_size"
                 android:drawableBottom="@drawable/group_discussion"
                 />
-
+        </TableRow>
+        <TableRow
+            android:weightSum="2"
+            android:layout_weight="2"
+            >
             <Button
                 android:id="@+id/cvTipsButton"
                 android:layout_width="0dp"
