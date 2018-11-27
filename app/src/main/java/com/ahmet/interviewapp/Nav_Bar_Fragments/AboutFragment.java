@@ -106,7 +106,7 @@ public class AboutFragment extends Fragment {
             {
                 Intent share = new Intent(android.content.Intent.ACTION_SEND);
                 share.setType("text/plain");
-                String shareText = "market://details?id=" + getContext().getPackageName();
+                String shareText = "Check out the Interview Revision app - " + "https://play.google.com/store/apps/details?id=" + getContext().getPackageName();
                 share.putExtra(android.content.Intent.EXTRA_TEXT, shareText);
                 startActivity(Intent.createChooser(share, "Share via"));
             }
