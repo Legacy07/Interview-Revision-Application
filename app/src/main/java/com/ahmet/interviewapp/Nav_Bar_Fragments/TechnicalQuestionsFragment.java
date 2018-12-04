@@ -12,6 +12,7 @@ import android.widget.Button;
 
 import com.ahmet.interviewapp.R;
 import com.ahmet.interviewapp.Technical_Questions.AndroidTechnicalQuestionsFragment;
+import com.ahmet.interviewapp.Technical_Questions.CSharpTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.JavaTechnicalQuestionsFragment;
 
 
@@ -33,14 +34,14 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
 
         javaButton = (Button) view.findViewById(R.id.javaButton);
         androidButton = (Button) view.findViewById(R.id.androidButton);
-//        cSharpButton = (Button) view.findViewById(R.id.csharpButton);
+        cSharpButton = (Button) view.findViewById(R.id.csharpButton);
 //        htmlButton = (Button) view.findViewById(R.id.htmlButton);
 //        phpButton = (Button) view.findViewById(R.id.phpButton);
 //        cssButton = (Button) view.findViewById(R.id.cssButton);
 
         javaButton.setOnClickListener(this);
         androidButton.setOnClickListener(this);
-//        cSharpButton.setOnClickListener(this);
+        cSharpButton.setOnClickListener(this);
 //        htmlButton.setOnClickListener(this);
 //        phpButton.setOnClickListener(this);
 //        cssButton.setOnClickListener(this);
@@ -73,8 +74,11 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
                 manager.beginTransaction().replace(R.id.content_layout, androidTechnicalQuestionsFragment).addToBackStack(null).commit();
 
                 break;
-//            case R.id.csharpButton:
-//
+            case R.id.csharpButton:
+                CSharpTechnicalQuestionsFragment cSharpTechnicalQuestionsFragment = new CSharpTechnicalQuestionsFragment();
+                manager.beginTransaction().replace(R.id.content_layout, cSharpTechnicalQuestionsFragment).addToBackStack(null).commit();
+
+
 //                break;
 //            case R.id.htmlButton:
 //
