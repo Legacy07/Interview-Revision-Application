@@ -961,7 +961,7 @@
             Can you list the differences between static, public and void? What is the outcome of using each?
         </item>
         <item>
-            Can you list the value types in C#? Can you list the reference types in C#?
+            What do you understand by Value and Reference Types?
         </item>
         <item>
             It is possible to store mixed datatypes such as int, string, float, char all in one array?
@@ -1033,9 +1033,6 @@
             What are Async and Await?
         </item>
         <item>
-            Explain Lock, Monitors, and Mutex Object in Threading.
-        </item>
-        <item>
             What is a Race Condition?
         </item>
         <item>
@@ -1051,7 +1048,7 @@
             What is the difference between ref and out keywords?
         </item>
         <item>
-            Can "this" be used within a static method?
+            Can \"this\" be used within a static method?
         </item>
         <item>
             Define Property in C#.net?
@@ -1087,10 +1084,7 @@
             What is an Object Pool in .Net?
         </item>
         <item>
-            What are generics in c#.net?
-        </item>
-        <item>
-            What are the Difference between Array and ArrayList in C#.Net?
+            What are the Difference between Array and ArrayList and List in C#.Net?
         </item>
         <item>
             What you understand by Value types and Reference types in C#.Net?
@@ -1099,25 +1093,13 @@
             Explain Anonymous type in C#?
         </item>
         <item>
-            Explain Hashtable in C#?
-        </item>
-        <item>
             What is LINQ in C#?
         </item>
         <item>
             What is File Handling in C#.Net?
         </item>
         <item>
-            What is Reflection in C#.Net?
-        </item>
-        <item>
-            What is Method Hiding in C#?
-        </item>
-        <item>
             Can you name three ways to pass parameters to a method in C#?
-        </item>
-        <item>
-            Explain the difference between the while and for loop. Provide a .NET syntax for both loops.
         </item>
         <item>
             What do the following acronyms in .NET stand for: IL, CIL, MSIL, CLI and JIT?
@@ -1128,9 +1110,6 @@
         <item>
             You would know that System.Object is the parent class of all .NET classes; In other words all types in .NET (whether implicit, explicit, or user-created) derive from the System.Object class.
             What are the various methods provided to System.Object\'s deriving classes/types?
-        </item>
-        <item>
-            Explain the difference between a stack and a queue.
         </item>
         <item>
             What is .NET web service?
@@ -1146,7 +1125,26 @@
         <!--What are the features of C#?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>Simple </strong></p>
+<p>C# is a simple language in the sense that it provides structured approach (to break the problem into parts), rich set of library functions, data types etc.</p>
+<p><strong>Modern Programming Language</strong></p>
+<p>C# programming is based upon the current trend and it is very powerful and simple for building scalable, interoperable and robust applications.</p>
+<p><strong>Object Oriented</strong></p>
+<p>C# is object oriented programming language. OOPs makes development and maintenance easier where as in Procedure-oriented programming language it is not easy to manage if code grows as project size grow.</p>
+<p><strong>Type Safe</strong></p>
+<p>C# type safe code can only access the memory location that it has permission to execute. Therefore it improves a security of the program.</p>
+<p><strong>Interoperability</strong></p>
+<p>Interoperability process enables the C# programs to do almost anything that a native C++ application can do.</p>
+<p><strong>Scalable and Updatedable&nbsp;</strong></p>
+<p>C# is automatic scalable and updateable programming language. For updating our application we delete the old files and update them with new ones.</p>
+<p><strong>Component Oriented</strong></p>
+<p>C# is component oriented programming language. It is the predominant software development methodology used to develop more robust and highly scalable applications.</p>
+<p><strong>Structured Programming Language</strong></p>
+<p>C# is a structured programming language in the sense that we can break the program into parts using functions. So, it is easy to understand and modify.</p>
+<p><strong>Rich Library</strong></p>
+<p>C# provides a lot of inbuilt functions that makes the development fast.</p>
+<p><strong>Fast Speed</strong></p>
+<p>The compilation and execution time of C# language is fast.</p>
             </pre></html>
             ]]>
         </item>
@@ -1160,55 +1158,111 @@
         <!--Can you describe the difference between the constants and the readonly variables-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>While constants and read-only variable share many similarities, there are some important differences:</p>
+<p>- Constants are evaluated at compile time, while the read-only variables are evaluated at run time.</p>
+<p>- Constants support only value-type variables, while read-only variables can hold reference-type variables.</p>
+<p>- Constants should be used when the value is not changing during run time, and read-only variables are used mostly when their actual value is unknown before run time.</p>
+<p>- Read-only variables can only be initialised at the time of declaration or in a constructor.</p>
             </pre></html>
             ]]>
         </item>
-        <!--what are the differenct types of classes -->
+        <!--what are the different types of classes -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+                <p><strong>- Partial class:</strong>&nbsp;Allows its members to be divided or shared with multiple .cs files. It is denoted by the keyword&nbsp;<em>Partial.</em></p>
+<p><strong>- Sealed class:</strong>&nbsp;It is a class which cannot be inherited. To access the members of a sealed class, we need to create the object of the class.&nbsp; It is denoted by the keyword&nbsp;<em>Sealed</em>.</p>
+<p><strong>- Abstract class:</strong>&nbsp;It is a class whose object cannot be instantiated. The class can only be inherited. It should contain at least one method.&nbsp; It is denoted by the keyword&nbsp;<em>abstract.</em></p>
+<p><strong>- Static class:</strong>&nbsp;It is a class which does not allow inheritance. The members of the class are also static.&nbsp; It is denoted by the keyword&nbsp;<em>static</em>. This keyword tells the compiler to check for any accidental instances of the static class.</p>
             </pre></html>
             ]]>
         </item>
         <!--Explain code compilation in c#-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>- Compiling the source code into Managed code by C# compiler.</p>
+<p>- Combining the newly created code into assemblies.</p>
+<p>- Loading the Common Language Runtime(CLR).</p>
+<p>- Executing the assembly by CLR.</p>
             </pre></html>
             ]]>
         </item>
         <!--What is the difference between virtual methods and abstract methods-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>A&nbsp;<strong>Virtual method</strong>&nbsp;must always have a default implementation. However, it can be overridden in the derived class, though not mandatory. It can be overridden using&nbsp;<em>override</em>&nbsp;keyword.</p>
+<p>An&nbsp;<strong>Abstract method</strong>&nbsp;does not have an implementation. It resides in the abstract class. It is mandatory that the derived class implements the abstract method. An&nbsp;<em>override</em>&nbsp;keyword is not necessary here though it can be used.</p>
             </pre></html>
             ]]>
         </item>
         <!--Explain namespaces -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>They are used to organize large code projects. "System" is the most widely used namespace in C#. We can create our own namespace and use one namespace in another, which are called Nested Namespaces.</p>
             </pre></html>
             ]]>
         </item>
         <!--Can you list the differences between static, public and void? What is the outcome of using each?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>-&nbsp;<strong>public</strong>: Public Modifier in C# is most liberal among all access modifiers, it can access from anywhere inside or outside other class. There is no access restriction in public modifiers .public keyword is used just before the class keyword to declare class as public.<br /><br />-&nbsp;<strong>static</strong>: Static method is used to declare main method global one and we do not need to create instance of that class. We can access methods of static class by using the class name followed by. Operator and method name .The compiler stores Static method&rsquo;s address and uses this information before any object is created for execution.<br /><br />-&nbsp;<strong>void</strong>: The void modifier tells that the Main method can\'t return any value.</p>
             </pre></html>
             ]]>
         </item>
-        <!--Can you list the value types in C#? Can you list the reference types in C#?-->
+        <!--what do you understand by value and reference types?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>In C# data types can be of two types: Value Types and Reference Types. Value type variables contain their object (or data) directly. If we copy one value type variable to another then we are actually making a copy of the object for the second variable. Both of them will independently operate on their values, Value Type member will located into Stack and reference member will located in Heap always.<br /><br /><strong>Let consider each case briefly.</strong>&nbsp;</p>
+<ol>
+<li><strong>Pure Value Type</strong><br /><br />Here I used a structure as a value type. It has an integer member. I created two instances of this structure. After wards I assigned second instance to the first one. Then I changed the state of second instance, but it hasn't effect the first one, as whole items are value type and assignments on those types will copy only values not references i.e. in a Value Type assignment, all instances have its own local copy of members.&nbsp;<br /><br /></li>
+<li><strong>Pure Reference Type</strong>&nbsp;<br /><br />I created a class and added a "DataTable" as a Reference Type member for this class. Then I performed the assignments just like below. But the difference is that on changing the state of second instance, the state of first instance will automatically alter. So in a Reference Type assignment both Value and Reference will be assigned i.e. all instances will point to the single object.<br /><br /></li>
+<li><strong>Value Type With Reference Type<br /><br /></strong>This case and the last case to come are more interesting. I used a structure in this particular scenario also. But this time it includes a Reference Type(A Custom Class Object) Member besides a Value Type (An Integer) Member. When you performing the assignments, it seems like a swallow copy, as Value Type member of first instance won't effected, but the Reference Type member will alter according to the second instance. So in this particular scenario, assignment of Reference Type member produced a reference to a single object and assignment of Value Type member produced a local copy of that member.&nbsp;<br /><br /></li>
+<li><strong>Reference Type With Value Type</strong>&nbsp;<br /><br />Contrary to the above case, in this scenario, both Reference &amp; Value Types will be effected. I.e. a Value Type member in a Reference Type will be shared among its instances.</li>
+</ol>
+</br>
+<p>There are seven value types which are decimal, byte, double, float, int, enum and long and the four reference types are class, interface, string and object.</p>
             </pre></html>
             ]]>
         </item>
         <!--It is possible to store mixed datatypes such as int, string, float, char -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
+            <p>It is possible to do so because the array can be of type&nbsp;<code>object</code>&nbsp;that can not only store any datatype but also the object of the class as shown below:</p>
+
+            <pre><code class="language-cs">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication8
+{
+    class Program
+    {
+        class Customer
+        {
+            public int ID { get; set; }
+            public string Name { get; set; }
+            public override string ToString()
+            {
+                return this.Name;
+            }
+        }
+        static void Main(string[] args)
+        {
+            object[] array = new object[3];
+            array[0] = 101;
+            array[1] = "C#";
+            Customer c = new Customer();
+            c.ID = 55;
+            c.Name = "Manish";
+            array[2] = c;
+            foreach (object obj in array)
+            {
+                Console.WriteLine(obj);
+            }
+            Console.ReadLine();
+        }
+    }
+}</code></pre>
 
             </pre></html>
             ]]>
@@ -1216,7 +1270,22 @@
         <!--compare structs and classes in c#-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>Classes and Structs in C# do have a few things in common, namely:</strong></p>
+<p>- Are compound data types</p>
+<p>- Can contain methods and events</p>
+<p>- Can support interfaces</p>
+<p><strong>But there are a number of differences. Here&rsquo;s a comparison:</strong></p>
+<p><strong><em>Classes:</em></strong></p>
+<p>- Support inheritance</p>
+<p>- Are reference (pointer) types</p>
+<p>- The reference can be null</p>
+<p>- Have memory overhead per new instance</p>
+<p><strong><em>Structs:</em></strong></p>
+<p>- Do not support inheritance</p>
+<p>- Are value types</p>
+<p>- Are passed by value (like integers)</p>
+<p>- Cannot have a null reference (unless Nullable is used)</p>
+<p>- Do not have memory overhead per new instance (unless &ldquo;boxed&rdquo;)</p>
             </pre></html>
             ]]>
         </item>
@@ -1230,378 +1299,675 @@
         <!--does c# support multiple inheritance.-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>C# does not support multiple inheritance.</p>
             </pre></html>
             ]]>
         </item>
         <!--which class acts as a base class for all exceptions-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>C# exceptions are represented by classes. The exception classes in C# are mainly directly or indirectly derived from the System.Exception class. Some of the exception classes derived from the System.Exception class are the System.ApplicationException and System.SystemException classes.</p>
             </pre></html>
             ]]>
         </item>
         <!--describe dependency injection-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Dependency injection is a way to de-couple tightly linked classes, thereby reducing the direct dependency of classes upon each other. There are different ways by which dependency injection can be achived:</p>
+<ol>
+<li>Constructor dependency</li>
+<li>Property dependency</li>
+<li>Method dependency</li>
+</ol>
             </pre></html>
             ]]>
         </item>
         <!--describe boxing and unboxing -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Boxing is an implicit conversion of a value type to the type&nbsp;<code>object</code>&nbsp;or to any interface type implemented by the value type. Boxing a value type creates an object instance containing the value and stores it on the heap.</p>
+<p>Example:&nbsp;</p>
+<p><em><code>int x = 101;
+</code></em></p>
+<p><em><code>object o = x;  // boxing value of x into object o</code></em></p>
+<p><em><code>o = 999;</code></em></p>
+<p><em><code>x = (int)o;    // unboxing value of o into integer x</code></em></p>
             </pre></html>
             ]]>
         </item>
         <!--what is managed and unmanaged code-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>Managed code</strong> is a code which is executed by CLR (Common Language Runtime) i.e all application code based on .Net Platform. It is considered as managed because of the .Net framework which internally uses the garbage collector to clear up the unused memory.</p>
+<p><strong>Unmanaged code</strong> is any code that is executed by application runtime of any other framework apart from .Net. The application runtime will take care of memory, security and other performance operations.</p>
             </pre></html>
             ]]>
         </item>
         <!--how is exception handling implemented-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>- try:</strong>&nbsp;Contains a block of code for which an exception will be checked.</p>
+<p><strong>- catch:</strong>&nbsp;It is a program that catches an exception with the help of exception handler.</p>
+<p><strong>- finally:</strong>&nbsp;It is a block of code written to execute regardless whether an exception is caught or not.</p>
+<p><strong>- Throw:</strong>&nbsp;Throws an exception when a problem occurs.</p>
             </pre></html>
             ]]>
         </item>
         <!--what are c# i/o classes? what are the commonly used-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>C# has System.IO namespace, consisting of classes that are used to perform various operations on files like creating, deleting, opening, closing etc.</p>
+<p><strong>Some commonly used I/O classes are:</strong></p>
+<p><strong>- File:&nbsp;</strong>Helps in manipulating a file.</p>
+<p><strong>- StreamWriter:</strong>&nbsp;Used for writing characters to a stream.</p>
+<p><strong>- StreamReader:</strong>&nbsp;Used for reading characters to a stream.</p>
+<p><strong>- StringWriter:</strong>&nbsp;Used for reading a string buffer.</p>
+<p><strong>- StringReader:</strong>&nbsp;Used for writing a string buffer.</p>
+<p><strong>- Path:</strong>&nbsp;Used for performing operations related to path information.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is stremreader / streamwriter-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>StreamReader and StreamWriter</strong>&nbsp;are classes of namespace System.IO. They are used when we want to read or write charact90, Reader-based data, respectively.</p>
+<p><strong>Some of the members of StreamReader are:</strong>&nbsp;Close(), Read(), Readline().</p>
+<p><strong>Members of StreamWriter are:</strong>&nbsp;Close(), Write(), Writeline().</p>
+<pre class="brush: csharp; title: ; notranslate" title=""><em>Class Program1
+{
+using(StreamReader sr = new StreamReader(&ldquo;C:\ReadMe.txt&rdquo;)
+{
+//----------------code to read-------------------//
+}
+using(StreamWriter sw = new StreamWriter(&ldquo;C:\ReadMe.txt&rdquo;))
+{
+//-------------code to write-------------------//
+}
+}</em></pre>
             </pre></html>
             ]]>
         </item>
         <!--what is a destructor-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>A&nbsp;<strong>Destructor</strong>&nbsp;is used to clean up the memory and free the resources. But in C# this is done by the garbage collector on its own. System.GC.Collect() is called internally for cleaning up. But sometimes it may be necessary to implement destructors manually.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is the difference between finally and finalize-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong><em>finally</em>&nbsp;block</strong>&nbsp;is called after the execution of try and catch block. It is used for exception handling. Regardless of whether an exception is caught or not, this block of code will be executed. Usually, this block will have clean-up code.</p>
+<p><strong>finalize</strong> method is called just before garbage collection. It is used to perform clean up operations of Unmanaged code. It is automatically called when a given instance is not subsequently called.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is the difference between continue and break-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>Break</strong> statement breaks the loop. It makes the control of the program to exit the loop.&nbsp;<strong>Continue statement</strong>&nbsp;makes the control of the program to exit only the current iteration. It does not break the loop.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is a delegate-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>A&nbsp;<strong>Delegate</strong>&nbsp;is a variable that holds the reference to a method. Hence it is a function pointer of reference type. All Delegates are derived from System.Delegate namespace. Both Delegate and the method that it refers to can have the same signature.</p>
+<p>Declaring a delegate:&nbsp;<em>public delegate void AddNumbers(int n);</em></p>
+<p>After the declaration of a delegate, the object must be created of the delegate using the new keyword.</p>
+<p><em>AddNumbers an1 = new AddNumbers(number);</em></p>
+<p>The delegate provides a kind of encapsulation to the reference method, which will internally get called when a delegate is called.</p>
+<pre class="brush: csharp; title: ; notranslate" title=""><em>public delegate int myDel(int number);
+public class Program
+{
+public int AddNumbers(int a)
+{
+int Sum = a + 10;
+return Sum;
+}
+public void Start()
+{
+myDel DelgateExample = AddNumbers;
+}
+}
+</em></pre>
+<p>In the above example, we have a delegate myDel which takes an integer value as a parameter. Class Program has a method of the same signature as the delegate, called AddNumbers().</p>
+<p>If there is another method called Start() which creates an object of the delegate, then the object can be assigned to AddNumbers as it has the same signature as that of the delegate.</p>
             </pre></html>
             ]]>
         </item>
         <!--what are events-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>Events</strong>&nbsp;are user actions that generate notifications to the application to which it must respond. The user actions can be mouse movements, keypress and so on.</p>
+<p>Programmatically, a class that raises an event is called a publisher and a class which responds/receives the event is called a subscriber. An Event should have at least one subscriber else that event is never raised.</p>
+<p>Delegates are used to declare Events.</p>
+<p><em>Public delegate void PrintNumbers();</em></p>
+<p><em>Event PrintNumbers myEvent;</em></p>
             </pre></html>
             ]]>
         </item>
         <!--how to use delegates with events-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Delegates are used to raise events and handle them. Always a delegate needs to be declared first and then the Events are declared.</p>
+<p><strong>Example:</strong></p>
+<p>Consider a class called Patient. Consider two other classes, Insurance, and Bank which requires Death information of the Patient from patient class. Here, Insurance and Bank are the subscribers and the Patient class becomes the Publisher. It triggers the death event and the other two classes should receive the event.</p>
+<pre class="brush: csharp; title: ; notranslate" title=""><em>namespace ConsoleApp2
+{
+public class Patient
+{
+public delegate void deathInfo();//Declaring a Delegate//
+public event deathInfo deathDate;//Declaring the event//
+public void Death()
+{
+deathDate();
+}
+}
+public class Insurance
+{
+Patient myPat = new Patient();
+void GetDeathDetails()
+{
+//-------Do Something with the deathDate event------------//
+}
+void Main()
+{
+//--------Subscribe the function GetDeathDetails----------//
+myPat.deathDate += GetDeathDetails;
+}
+}
+public class Bank
+{
+Patient myPat = new Patient();
+void GetPatInfo ()
+{
+//-------Do Something with the deathDate event------------//
+}
+void Main()
+{
+//--------Subscribe the function GetPatInfo ----------//
+myPat.deathDate += GetPatInfo;
+}
+}
+}</em></pre>
             </pre></html>
             ]]>
         </item>
         <!--explain publishers and subscribers in events-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>A Publisher</strong>&nbsp;is a class responsible for publishing a message of different types of other classes. The message is nothing but Event as discussed in the above questions.</p>
+<p>From the&nbsp;<strong>Example</strong>&nbsp;in Question 26, Class Patient is the Publisher class. It is generating an Event&nbsp;<em>deathEvent</em>, which the other classes receive.</p>
+<p><strong>Subscribers</strong>&nbsp;capture the message of the type that it is interested in. Again, from the&nbsp;<strong>Example</strong>&nbsp;of Question 26, Class Insurance and Bank are Subscribers. They are interested in event&nbsp;<em>deathEvent</em>&nbsp;of type&nbsp;<em>void</em>.</p>
             </pre></html>
             ]]>
         </item>
         <!--what are synchronous and asynchronous operations-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>Synchronization</strong> is a way to create a thread-safe code where only one thread can access the resource at any given time.</p>
+<p><strong>Asynchronous call</strong> waits for the method to complete before continuing with the program flow. Synchronous programming badly affects the UI operations, when the user tries to perform time-consuming operations since only one thread will be used.</p>
+<p>In Asynchronous operation, the method call will immediately return so that the program can perform other operations while the called method completes its work in certain situations.</p>
+<p>In C#, <strong>Async</strong> and <strong>Await</strong> keywords are used to achieve asynchronous programming. Look at&nbsp;<strong>Question 32</strong>&nbsp;for more details on synchronous programming.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is reflection-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Reflection is the ability of a code to access the metadata of the assembly during runtime. A program reflects upon itself and uses the metadata to inform the user or modify its behavior. Metadata refers to information about objects, methods.</p>
+<p>The namespace System.Reflection contains methods and classes that manage the information of all the loaded types and methods. It is mainly used for windows applications, for&nbsp;<strong>Example</strong>, to view the properties of a button in a windows form.</p>
+<p>The MemberInfo object of the class reflection is used to discover the attributes associated with a class.</p>
+<p>Reflection is implemented in two steps, first, we get the type of the object, and then we use the type to identify members such as methods and properties.</p>
+<p>To get type of a class, we can simply use</p>
+<p><em>Type mytype = myClass.GetType();</em></p>
+<p>Once we have a type of class, the other information of the class can be easily accessed.</p>
+<p><em>System.Reflection.MemberInfo Info =&nbsp;mytype.GetMethod(&ldquo;AddNumbers&rdquo;);</em></p>
+<p>Above statement tries to find a method with name&nbsp;<em>AddNumbers</em>&nbsp;in the class&nbsp;<em>myClass</em>.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is a generic class-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
+            Generics or Generic class is used to create classes or objects which do not have any specific data type. The data type can be assigned during runtime, i.e when it is used in the program.
+            <pre class="prettyprint notranslate prettyprinted"><span class="kwd"><strong>Example</strong>:<br /><em>using</em></span><em> <span class="typ">System</span><span class="pun">;</span>
+<span class="kwd">using</span> <span class="typ">System</span><span class="pun">.</span><span class="typ">Collections</span><span class="pun">.</span><span class="typ">Generic</span><span class="pun">;</span>
 
+<span class="kwd">namespace</span> <span class="typ">GenericApplication</span> <span class="pun">{</span>
+   <span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">MyGenericArray</span><span class="pun">&lt;</span><span class="pln">T</span><span class="pun">&gt;</span> <span class="pun">{</span>
+      <span class="kwd">private</span><span class="pln"> T</span><span class="pun">[]</span><span class="pln"> array</span><span class="pun">;</span>
+
+      <span class="kwd">public</span> <span class="typ">MyGenericArray</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
+         array </span><span class="pun">=</span> <span class="kwd">new</span><span class="pln"> T</span><span class="pun">[</span><span class="pln">size </span><span class="pun">+</span> <span class="lit">1</span><span class="pun">];</span>
+      <span class="pun">}</span>
+      <span class="kwd">public</span><span class="pln"> T getItem</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> index</span><span class="pun">)</span> <span class="pun">{</span>
+         <span class="kwd">return</span><span class="pln"> array</span><span class="pun">[</span><span class="pln">index</span><span class="pun">];</span>
+      <span class="pun">}</span>
+      <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> setItem</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> index</span><span class="pun">,</span><span class="pln"> T value</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
+         array</span><span class="pun">[</span><span class="pln">index</span><span class="pun">]</span> <span class="pun">=</span><span class="pln"> value</span><span class="pun">;</span>
+      <span class="pun">}</span>
+   <span class="pun">}</span>
+   <span class="kwd">class</span> <span class="typ">Tester</span> <span class="pun">{</span>
+      <span class="kwd">static</span> <span class="kwd">void</span> <span class="typ">Main</span><span class="pun">(</span><span class="kwd">string</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span> <span class="pun">{</span>
+
+         <span class="com">//declaring an int array</span>
+         <span class="typ">MyGenericArray</span><span class="str">&lt;int&gt;</span><span class="pln"> intArray </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">MyGenericArray</span><span class="str">&lt;int&gt;</span><span class="pun">(</span><span class="lit">5</span><span class="pun">);</span>
+
+         <span class="com">//setting values</span>
+         <span class="kwd">for</span> <span class="pun">(</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span> <span class="pun">{</span><span class="pln">
+            intArray</span><span class="pun">.</span><span class="pln">setItem</span><span class="pun">(</span><span class="pln">c</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">*</span><span class="lit">5</span><span class="pun">);</span>
+         <span class="pun">}</span>
+
+         <span class="com">//retrieving the values</span>
+         <span class="kwd">for</span> <span class="pun">(</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span> <span class="pun">{</span>
+            <span class="typ">Console</span><span class="pun">.</span><span class="typ">Write</span><span class="pun">(</span><span class="pln">intArray</span><span class="pun">.</span><span class="pln">getItem</span><span class="pun">(</span><span class="pln">c</span><span class="pun">)</span> <span class="pun">+</span> <span class="str">" "</span><span class="pun">);</span>
+         <span class="pun">}</span>
+
+         <span class="typ">Console</span><span class="pun">.</span><span class="typ">WriteLine</span><span class="pun">();</span>
+
+         <span class="com">//declaring a character array</span>
+         <span class="typ">MyGenericArray</span><span class="str">&lt;char&gt;</span><span class="pln"> charArray </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">MyGenericArray</span><span class="str">&lt;char&gt;</span><span class="pun">(</span><span class="lit">5</span><span class="pun">);</span>
+
+         <span class="com">//setting values</span>
+         <span class="kwd">for</span> <span class="pun">(</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span> <span class="pun">{</span><span class="pln">
+            charArray</span><span class="pun">.</span><span class="pln">setItem</span><span class="pun">(</span><span class="pln">c</span><span class="pun">,</span> <span class="pun">(</span><span class="kwd">char</span><span class="pun">)(</span><span class="pln">c</span><span class="pun">+</span><span class="lit">97</span><span class="pun">));</span>
+         <span class="pun">}</span>
+
+         <span class="com">//retrieving the values</span>
+         <span class="kwd">for</span> <span class="pun">(</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span> <span class="pun">{</span>
+            <span class="typ">Console</span><span class="pun">.</span><span class="typ">Write</span><span class="pun">(</span><span class="pln">charArray</span><span class="pun">.</span><span class="pln">getItem</span><span class="pun">(</span><span class="pln">c</span><span class="pun">)</span> <span class="pun">+</span> <span class="str">" "</span><span class="pun">);</span>
+         <span class="pun">}</span>
+         <span class="typ">Console</span><span class="pun">.</span><span class="typ">WriteLine</span><span class="pun">();</span>
+
+         <span class="typ">Console</span><span class="pun">.</span><span class="typ">ReadKey</span><span class="pun">();</span>
+      <span class="pun">}</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></em></pre>
             </pre></html>
             ]]>
         </item>
         <!--What are async and await-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
-            </pre></html>
-            ]]>
-        </item>
-        <!--explain lock, monitors and mutex object-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
+            <p>Async and Await keywords are used to create asynchronous methods in C.</p>
+<p>Asynchronous programming means that the process runs independently of main or other processes.</p>
+<p>- Async keyword is used for the method declaration.</p>
+<p>- The count is of a task of type int which calls the method CalculateCount().</p>
+<p>- Calculatecount() starts execution and calculates something.</p>
+<p>- Independent work is done on my thread and then await count statement is reached.</p>
+<p>- If the Calculatecount is not finished, myMethod will return to its calling method, thus the main thread doesn\'t get blocked.</p>
+<p>- If the Calculatecount is already finished, then we have the result available when the control reaches await count. So the next step will continue in the same thread. However, it is not the situation in the above case where Delay of 1 second is involved.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is a race condition-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>A&nbsp;<strong>Race condition</strong>&nbsp;occurs when two threads access the same resource and are trying to change it at the same time. The thread which will be able to access the resource first cannot be predicted.</p>
+<p>If we have two threads, T1 and T2, and they are trying to access a shared resource called X. And if both the threads try to write a value to X, the last value written to X will be saved.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is thread pooling-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>A&nbsp;<strong>Thread pool</strong>&nbsp;is a collection of threads. These threads can be used to perform tasks without disturbing the primary thread. Once the thread completes the task, the thread returns to the pool.</p>
+<p>System.Threading.ThreadPool namespace has classes which manage the threads in the pool and its operations.</p>
+<pre><em>System.Threading.ThreadPool.QueueUserWorkItem(new System.Threading.WaitCallback(SomeTask));</em></pre>
+<p>The above line queues a task. SomeTask methods should have a parameter of type Object.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is serialization?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>Serialization</strong>&nbsp;is a process of converting a code to its binary format. Once it is converted to bytes, it can be easily stored and written to a disk or any such storage devices. Serializations are mainly useful when we do not want to lose the original form of the code and it can be retrieved anytime in the future.</p>
+<p>Any class which is marked with the attribute [Serializable] will be converted to its binary form.</p>
+<p>The reverse process of getting the c# code back from the binary form is called&nbsp;<strong>Deserialization</strong>.</p>
+<p>To Serialize an object we need the object to be serialized, a stream which can contain the serialized object and namespace System.Runtime.Serialization can contain classes for serialization.</p>
             </pre></html>
             ]]>
         </item>
         <!--What is an xsd file?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>An <strong>XSD</strong> file stands for XML Schema Definition. It gives a structure for the XML file. It means it decides the elements that the XML should have and in what order and what properties should be present. Without an XSD file associated with XML, the XML can have any tags, any attributes, and any elements.</p>
+<p><strong>Xsd.exe</strong> tool converts the files to XSD format. During Serialization of C# code, the classes are converted to XSD compliant format by xsd.exe.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is the difference between ref and out -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+<p>In C Sharp (C#) we can have three types of parameters in a function. The parameters can be in parameter (which is not returned back to the caller of the function), out parameter and ref parameter. We have lots of differences in both of them.</p>
+<p>Output parameters are similar to reference parameters, except that they transfer data out of the method rather than into it. Reference parameter copies the reference to the memory location of an argument into the formal parameter. This means that changes made to the parameter affect the argument.</p>
             </pre></html>
             ]]>
         </item>
         <!--can this be used within a static method-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+                <p>We can\'t use this in static method because keyword \'this\' returns a reference to the current instance of the class containing it. Static methods (or any static member) do not belong to a particular instance. They exist without creating an instance of the class and call with the name of a class not by instance so we can\'t use this keyword in the body of static Methods, but in case of Extension Methods we can use it the functions parameters. Let\'s have a look on \"this\" keyword.<br /><br />The \"<strong>this</strong>\" keyword is a special type of reference variable that is implicitly defined within each constructor and non-static method as a first parameter of the type class in which it is defined. For example, consider the following class written in C#.</p>
             </pre></html>
             ]]>
         </item>
         <!--define property -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Properties are members that provide a flexible mechanism to read, write or compute the values of private fields, in other words by the property we can access private fields. In other words we can say that a property is a return type function/method with one parameter or without a parameter. These are always public data members. It uses methods to access and assign values to private fields called accessors.<br /><br />Now question is what are accessors?<br /><br />The get and set portions or blocks of a property are called accessors. These are useful to restrict the accessibility of a property, the set accessor specifies that we can assign a value to a private field in a property and without the set accessor property it is like a read-only field. By the get accessor we can access the value of the private field, in other words it returns a single value. A Get accessor specifies that we can access the value of a field publically.<br /><br />We have the three types of properties&nbsp;</p>
+<p>- Read/Write.</p>
+<p>- ReadOnly.</p>
+<p>- WriteOnly.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is the difference between string and stringbuilder-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><br />StringBuilder and string both use to store string value but both have many differences on the bases of instance creation and also for performance:<br /><br /><strong>String:&nbsp;</strong><br /><br />String is an immutable object. Immutable like when we create string object in code so we cannot modify or change that object in any operations like insert new value, replace or append any value with existing value in string object, when we have to do some operations to change string simply it will dispose the old value of string object and it will create new instance in memory for hold the new value in string object.</p>
+<p><strong>Note:</strong></p>
+<p>- It\'s an immutable object that hold string value.<br /><br /></p>
+<p>- Performance wise string is slow because its\' create a new instance to override or change the previous value.<br /><br /></p>
+<p>- String belongs to System namespace.</p>
+<p><strong>StringBuilder:<br /><br /></strong>System.Text.Stringbuilder is mutable object which also hold the string value, mutable means once we create a System.Text.Stringbuilder object we can use this object for any operation like insert value in existing string with insert functions also replace or append without creating new instance of System.Text.Stringbuilder for every time so it\'s use the previous object so it\'s work fast as compare than System.String.</p>
+<p><strong>Note:</strong></p>
+<p>- StringBuilder is a mutable object.</p>
+<p>- Performance wise StringBuilder is very fast because it will use same instance of StringBuilder object to perform any operation like insert value in existing string.</p>
+<p>- StringBuilder belongs to System.Text.Stringbuilder namespace.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is ienumerable<>-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>&nbsp;</p>
+<p><strong>IEnumerable</strong> is the parent interface for all non-generic collections in System.Collections namespace like ArrayList, HastTable etc. that can be enumerated. For the generic version of this interface as IEnumerable&lt;T&gt; which a parent interface of all generic collections class in System.Collections.Generic namespace like List&lt;&gt; and more.&nbsp;<br /><br />In System.Collections.Generic.IEnumerable&lt;T&gt; have only a single method which is GetEnumerator() that returns an IEnumerator. IEnumerator provides the power to iterate through the collection by exposing a Current property and Move Next and Reset methods, if we don\'t have this interface as a parent so we can&rsquo;t use iteration by foreach loop or can\'t use that class object in our LINQ query.</p>
+<p>&nbsp;</p>
             </pre></html>
             ]]>
         </item>
         <!--what are the differences between ienumerable and iqueryable-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+<p>&nbsp;</p>
+<p><strong>IEnumerable:</strong><br /><br />Is the parent interface for all non-generic collections in System.Collections namespace like ArrayList, HastTable etc. that can be enumerated. For the generic version of this interface as IEnumerable&lt;T&gt; which a parent interface of all generic collections class in System.Collections.Generic namespace like List&lt;&gt; and more.&nbsp;<br /><br /><strong>IQueryable:<br /></strong><br />As per MSDN IQueryable interface is intended for implementation by query providers. It is only supposed to be implemented by providers that also implement IQueryable&lt;T&gt;. If the provider does not also implement IQueryable&lt;T&gt;, the standard query operators cannot be used on the provider*\'s data source.<br /><br />The IQueryable interface inherits the IEnumerable interface so that if it represents a query, the results of that query can be enumerated. Enumeration causes the expression tree associated with an IQueryable object to be executed. The definition of "executing an expression tree" is specific to a query provider. For example, it may involve translating the expression tree to an appropriate query language for the underlying data source. Queries that do not return enumerable results are executed when the Execute method is called.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is the difference between late binding and early binding-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+        <p>&nbsp;</p>
+<p>Early Binding and Late Binding concepts belongs to polymorphism so let&rsquo;s see first about polymorphism:<br /><br />Polymorphism is an ability to take more than one form of a function means with a same name we can write multiple functions code in a same class or any derived class.<br /><br />Polymorphism we have 2 different types to achieve that:&nbsp;</p>
+<p>- Compile Time also known as Early Binding or Overloading.</p>
+<p>- Run Time also known as Late Binding or Overriding.</p>
+<p><strong>Compile Time Polymorphism or Early Binding:</strong></p>
+<p>In Compile time polymorphism or Early Binding we will use multiple methods with same name but different type of parameter or may be the number or parameter because of this we can perform different-different tasks with same method name in the same class which is also known as Method overloading.</p>
+<p><strong>Example</strong>:</p>
+<p><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image013.png" alt="ASP.NET" /></p>
+<div>&nbsp;</div>
+<div><strong>Run Time Polymorphism or Late Binding:</strong></div>
+<div>Run time polymorphism also known as late binding, in Run Time polymorphism or Late Binding we can do use same method names with same signatures means same type or same number of parameters but not in same class because compiler doesn&rsquo;t allowed that at compile time so we can use in derived class that bind at run time when a child class or derived class object will instantiated that&rsquo;s way we says that Late Binding. For that we have to create my parent class functions as partial and in driver or child class as override functions with override keyword.</div>
+<div>&nbsp;</div>
+<div><strong>Example</strong>:</div>
+<div><br /><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image014.png" alt="ASP.NET" />&nbsp;</div>
             </pre></html>
             ]]>
         </item>
         <!--what is the constructor chaining-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Constructor chaining is a way to connect two or more classes in a relationship as Inheritance, in Constructor Chaining every child class constructor is mapped to parent class Constructor implicitly by base keyword so when you create an instance of child class to it\'ll call parent\'s class Constructor without it inheritance is not possible.</p>
             </pre></html>
             ]]>
         </item>
         <!--can multiple catch blocs executed-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>We can use multiple Catches block with every try but when any Exceptions is thrown by debugger so every catches match this exception type with their signature and catch the exception by any single catch block so that means we can use multiple catches blocks but only one can executed at once like:&nbsp;</p>
+<div class="dp-highlighter">
+<p><em><span class="keyword">using</span>&nbsp;System;&nbsp;&nbsp;</em></p>
+<p><em><span class="keyword">class</span>&nbsp;MyClient&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">void</span>&nbsp;Main()&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em><span class="keyword">int</span>&nbsp;x&nbsp;=&nbsp;0;&nbsp;&nbsp;</em></p>
+<p><em><span class="keyword">int</span>&nbsp;div&nbsp;=&nbsp;0;&nbsp;&nbsp;</em></p>
+<p><em><span class="keyword">try</span>&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>div&nbsp;=&nbsp;100&nbsp;/&nbsp;x;&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;Console.WriteLine(<span class="string">"Not&nbsp;executed&nbsp;line"</span>);&nbsp;&nbsp;</em></p>
+<p><em>}&nbsp;<span class="keyword">catch</span>&nbsp;(DivideByZeroException&nbsp;de)&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>Console.WriteLine(<span class="string">"DivideByZeroException"</span>);&nbsp;&nbsp;</em></p>
+<p><em>}&nbsp;<span class="keyword">catch</span>&nbsp;(Exception&nbsp;ee)&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>Console.WriteLine(<span class="string">"Exception"</span>);&nbsp;&nbsp;</em></p>
+<p><em>}&nbsp;<span class="keyword">finally</span>&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;Console.WriteLine(<span class="string">"Finally&nbsp;Block"</span>);&nbsp;&nbsp;</em></p>
+<p><em>}&nbsp;&nbsp;</em></p>
+<p><em>Console.WriteLine(<span class="string">"Result&nbsp;is&nbsp;{0}"</span>,&nbsp;div);&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;}&nbsp;&nbsp;} &nbsp;</em></p>
+</div>
             </pre></html>
             ]]>
         </item>
         <!--what are indexer-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Indexer allows classes to be used in more intuitive manner. C# introduces a new concept known as Indexers which are used for treating an object as an array. The indexers are usually known as smart arrays in C#. They are not essential part of object-oriented programming.<br /><br />An indexer, also called an indexed property, is a class property that allows you to access a member variable of a class using the features of an array.<br /><br />Defining an indexer allows you to create classes that act like virtual arrays. Instances of that class can be accessed using the [] array access operator.<br /><br /><strong>Example:</strong></p>
+<div class="dp-highlighter">
+<p><em>public&nbsp;</em></p>
+<p><em>int &gt;&nbsp;<span class="keyword">this</span>[argument&nbsp;list]&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em><span class="keyword">&nbsp; &nbsp; &nbsp; get</span>&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;<span class="comment">//&nbsp;your&nbsp;get&nbsp;block&nbsp;code</span>&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">set</span>&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;your&nbsp;set&nbsp;block&nbsp;code</span>&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</em></p>
+<p><em>} &nbsp;</em></p>
+</div>
             </pre></html>
             ]]>
         </item>
         <!--difference between is and as operator -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p><strong>"is" operator<br /></strong><br />In the C# language, we use the "is" operator to check the object type. If the two objects are of the same type, it returns true and false if not.<br /><br /><strong>Example</strong>:</p>
+<p>We defined the following two classes:</p>
+<div class="dp-highlighter">
+<p><em><span class="keyword">class</span>&nbsp;Speaker&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">string</span>&nbsp;Name&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">get</span>;&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">set</span>;&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</em></p>
+<p><em>}&nbsp;&nbsp;</em></p>
+<p><em><span class="keyword">class</span>&nbsp;Author&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public</span>&nbsp;<span class="keyword">string</span>&nbsp;Name&nbsp;{&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">get</span>;&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">set</span>;&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</em></p>
+<p><em>} &nbsp;</em></p>
+</div>
+<p>Now, let's try to check the preceding types as:</p>
+<div class="dp-highlighter">
+<p><em>var&nbsp;speaker&nbsp;=&nbsp;<span class="keyword">new</span>&nbsp;Speaker&nbsp;{&nbsp;Name=<span class="string">"Gaurav&nbsp;Kumar&nbsp;Arora"</span>}; &nbsp;</em></p>
+</div>
+<p>We declared an object of Speaker as in the following:</p>
+<div class="dp-highlighter">
+<p><em>var&nbsp;isTrue&nbsp;=&nbsp;speaker&nbsp;<span class="keyword">is</span>&nbsp;Speaker; &nbsp;&nbsp;</em></p>
+</div>
+<p>In the preceding, we are just checking the matching type. Yes, our speaker is an object of Speaker type.</p>
+<div class="dp-highlighter">
+<p><em>Console.WriteLine(<span class="string">"speaker&nbsp;is&nbsp;of&nbsp;Speaker&nbsp;type:{0}"</span>,&nbsp;isTrue); &nbsp;&nbsp;</em></p>
+</div>
+<p>So, the results as true.<br /><br />But, here we get false:</p>
+<div class="dp-highlighter">
+<p><em>var&nbsp;author&nbsp;=&nbsp;<span class="keyword">new</span>&nbsp;Author&nbsp;{&nbsp;Name&nbsp;=&nbsp;<span class="string">"Gaurav&nbsp;Kumar&nbsp;Arora"</span>&nbsp;};&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>var&nbsp;isTrue&nbsp;=&nbsp;speaker&nbsp;<span class="keyword">is</span>&nbsp;Author;&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>Console.WriteLine(<span class="string">"speaker&nbsp;is&nbsp;of&nbsp;Author&nbsp;type:{0}"</span>,&nbsp;isTrue); &nbsp;</em></p>
+</div>
+<p>Because our our speaker is not an object of Author type.<br /><br /><strong>"as" operator:</strong></p>
+<div>The "as" operator behaves similar to the "is" operator. The only difference is it returns the object if both are compatible to that type else it returns null.</div>
+<div>&nbsp;</div>
+<div><strong>Example</strong>:</div>
+<p>Let's understand the preceding with a small snippet as in the following:</p>
+<div class="dp-highlighter">
+<p><em><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">string</span>&nbsp;GetAuthorName(dynamic&nbsp;obj)&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>{&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>Author&nbsp;authorObj&nbsp;=&nbsp;obj&nbsp;<span class="keyword">as</span>&nbsp;Author;&nbsp;&nbsp;&nbsp;</em></p>
+<p><em><span class="keyword">return</span>&nbsp;(authorObj&nbsp;!=&nbsp;<span class="keyword">null</span>)&nbsp;?&nbsp;authorObj.Name&nbsp;:&nbsp;<span class="keyword">string</span>.Empty;&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>} &nbsp;</em>&nbsp;</p>
+</div>
+<p>We have a method that accepts dynamic objects and returns the object name property if the object is of the Author type.&nbsp;<br /><br /><strong>Here, we declared two objects:</strong></p>
+<div class="dp-highlighter">
+<p><em>var&nbsp;speaker&nbsp;=&nbsp;<span class="keyword">new</span>&nbsp;Speaker&nbsp;{&nbsp;Name=<span class="string">"Gaurav&nbsp;Kumar&nbsp;Arora"</span>};&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>var&nbsp;author&nbsp;=&nbsp;<span class="keyword">new</span>&nbsp;Author&nbsp;{&nbsp;Name&nbsp;=&nbsp;<span class="string">"Gaurav&nbsp;Kumar&nbsp;Arora"</span>&nbsp;}; &nbsp;&nbsp;</em></p>
+</div>
+<p><strong>The following returns the "Name" property:</strong></p>
+<div class="dp-highlighter">
+<p><em>var&nbsp;authorName&nbsp;=&nbsp;GetAuthorName(author);&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>Console.WriteLine(<span class="string">"Author&nbsp;name&nbsp;is:{0}"</span>,&nbsp;authorName);&nbsp;&nbsp;&nbsp;</em></p>
+</div>
+<p><strong>It returns an empty string:</strong></p>
+<div class="dp-highlighter">
+<p><em>authorName&nbsp;=&nbsp;GetAuthorName(speaker);&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>Console.WriteLine(<span class="string">"Author&nbsp;name&nbsp;is:{0}"</span>,&nbsp;authorName); &nbsp;</em></p>
+</div>
             </pre></html>
             ]]>
         </item>
         <!--how to use nullable types-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>A nullable Type is a data type is that contain the defined data type or the value of null.<br /><br />You should note here that here variable datatype has been given and then only it can be used.<br /><br />This nullable type concept is not comaptible with "var".<br /><br />I will explain this with syntax in next section.<br /><br /><strong>Declaration:</strong></p>
+<div>Any DataType can be declared nullable type with the help of operator "?".</div>
+<div>&nbsp;</div>
+<div>Example of the syntax is as Follows :-&nbsp;</div>
+<div class="dp-highlighter">
+<p><em><span class="keyword">int</span>?&nbsp;i&nbsp;=&nbsp;<span class="keyword">null</span>; &nbsp;</em></p>
+</div>
+<p>As discussed in previous section "var" is not compatible with this Nullable Type.&nbsp;<br /><br />So we will have Compile Time error if we are declaring something like: -</p>
+<div class="dp-highlighter">
+<p><em>var?&nbsp;i&nbsp;=&nbsp;<span class="keyword">null</span>; &nbsp;</em></p>
+</div>
+<p>though following syntax is completely fine :-&nbsp;</p>
+<div class="dp-highlighter">
+<p><em>var&nbsp;i&nbsp;=&nbsp;4;&nbsp;</em></p>
+</div>
             </pre></html>
             ]]>
         </item>
         <!--what is an object pooling?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+                <p>Object Pooling is something that tries to keep a pool of objects in memory to be re-used later and hence it will reduce the load of object creation to a great extent. This article will try to explain this in detail. The example is for an Employee object, but you can make it general by using Object base class.<br /><br /><strong>What does it mean?</strong><br /><br />Object Pool is nothing but a container of objects that are ready for use. Whenever there is a request for a new object, the pool manager will take the request and it will be served by allocating an object from the pool.<br /><br /><strong>How it works?</strong><br /><br />We are going to use Factory pattern for this purpose. We will have a factory method, which will take care about the creation of objects. Whenever there is a request for a new object, the factory method will look into the object pool (we use Queue object). If there is any object available within the allowed limit, it will return the object (value object), otherwise a new object will be created and give you back.</p>
             </pre></html>
             ]]>
         </item>
-        <!--what are generics -->
+        <!--what are the difference between array and arraylist and list-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
-            </pre></html>
-            ]]>
-        </item>
-        <!--what are the difference between array and arraylist-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
-            </pre></html>
-            ]]>
-        </item>
-        <!--what do you understand by vaue types and reference types-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
+            <p>They are different object types. They have different capabilities and store their data in different ways.</p>
+<p>An Array (<code>System.Array</code>) is fixed in size once it is allocated. You can't add items to it or remove items from it. Also, all the elements must be the same type. As a result, it is type safe, and is also the most efficient of the three, both in terms of memory and performance. Also, System.Array supports multiple dimensions (i.e. it has a&nbsp;<a href="https://msdn.microsoft.com/en-us/library/system.array.rank(v=vs.110).aspx">Rank</a>&nbsp;property) while List and ArrayList do not (although you can create a List of Lists or an ArrayList of ArrayLists, if you want to).</p>
+<p>An&nbsp;<code>ArrayList</code>&nbsp;is a flexible array which contains a list of objects. You can add and remove items from it and it automatically deals with allocating space. If you store value types in it, they are boxed and unboxed, which can be a bit inefficient. Also, it is not type-safe.</p>
+<p>A&nbsp;<code>List&lt;&gt;</code>&nbsp;leverages generics; it is essentially a type-safe version of ArrayList. This means there is no boxing or unboxing (which improves performance) and if you attempt to add an item of the wrong type it'll generate a compile-time error.</p>
             </pre></html>
             ]]>
         </item>
         <!--explain anonymous-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
-            </pre></html>
-            ]]>
-        </item>
-        <!--explain hashtable-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
+            <p>Anonymous types allow us to create new type without defining them. This is way to defining read only properties into a single object without having to define type explicitly. Here Type is generating by the compiler and it is accessible only for the current block of code. The type of properties is also inferred by the compiler.<br /><br />We can create anonymous types by using "new" keyword together with the object initializer.&nbsp;<br /><br /><strong>Example</strong>&nbsp;</p>
+<div class="dp-highlighter">
+<p>var&nbsp;anonymousData&nbsp;=&nbsp;<span class="keyword">new</span>&nbsp;&nbsp;&nbsp;</p>
+<p>{&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;ForeName&nbsp;=&nbsp;<span class="string">"Jignesh"</span>,&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;SurName&nbsp;=&nbsp;<span class="string">"Trivedi"</span>&nbsp;&nbsp;</p>
+<p>};&nbsp;&nbsp;</p>
+<p>Console.WriteLine(<span class="string">"First&nbsp;Name&nbsp;:&nbsp;"</span>&nbsp;+&nbsp;anonymousData.ForeName); &nbsp;</p>
+</div>
             </pre></html>
             ]]>
         </item>
         <!--what is linq-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>LINQ stands for Language Integrated Query. LINQ is a data querying methodology which provides querying capabilities to .NET languages with a syntax similar to a SQL query.<br /><br />LINQ has a great power of querying on any source of data. The data source could be collections of objects, database or XML files. We can easily retrieve data from any object that implements the IEnumerable&lt;T&gt; interface.</p>
+<ol>
+<li>LINQ offers an object-based, language-integrated way to query over data no matter where that data came from. So through LINQ we can query database, XML as well as collections.&nbsp;<br /><br /></li>
+<li>Compile time syntax checking.<br /><br /></li>
+<li>It allows you to query collections like arrays, enumerable classes etc in the native language of your application, like VB or C# in much the same way as you would query a database using SQL.<br /><br /><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image023.png" alt="ASP.NET" /></li>
+</ol>
             </pre></html>
             ]]>
         </item>
         <!--what is file handling-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
-            </pre></html>
-            ]]>
-        </item>
-        <!--what is reflection-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
-            </pre></html>
-            ]]>
-        </item>
-        <!--what is method hiding-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
+            <p>The System.IO namespace provides four classes that allow you to manipulate individual files, as well as interact with a machine directory structure. The Directory and File directly extends System.Object and supports the creation, copying, moving and deletion of files using various static methods. They only contain static methods and are never instantiated. The FileInfo and DirecotryInfo types are derived from the abstract class FileSystemInfo type and they are typically, employed for obtaining the full details of a file or directory because their members tend to return strongly typed objects. They implement roughly the same public methods as a Directory and a File but they are stateful and the members of these classes are not static.</p>
             </pre></html>
             ]]>
         </item>
         <!--can you name three ways to pass parameters to a method-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
-            </pre></html>
-            ]]>
-        </item>
-        <!--explain the difference between the while and for loop-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
+            <p>There are three ways that parameters can be passed to a method &minus;</p>
+<p><strong>- Value parameters:</strong>&nbsp;This method copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument.</p>
+<p><strong>- Reference parameters:</strong>&nbsp;This method copies the reference to the memory location of an argument into the formal parameter. This means that changes made to the parameter affect the argument.</p>
+<p><strong>- Output parameters:</strong>&nbsp;This method helps in returning more than one value.</p>
             </pre></html>
             ]]>
         </item>
         <!--what do the following acronyms in .net-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>IL, or Intermediate Language, is a CPU independent partially compiled code. IL code will be compiled to native machine code using current environmental properties by Just-In-Time compiler (JIT). JIT compiler translates the IL code to an assembly code and uses the CPU architecture of the target machine to execute a .NET application. In .NET, IL is called Common Intermediate Language (CIL), and in the early .NET days it was called Microsoft Intermediate Language (MSIL).</p>
+<p>CLI, or Common Language Infrastructure, is an open specification developed by Microsoft. It is a compiled code library used for deployment, versioning, and security. In .NET there are two CLI types: process assemblies (EXE) and library assemblies (DLL). CLI assemblies contain code in CIL, and as mentioned, during compilation of CLI programming languages, the source code is translated into CIL code rather than into platform or processor specific object code.</p>
+<p><strong>To summarize</strong>:</p>
+<ol>
+<li>When compiled, source code is first translated to IL (in .NET, that is CIL, and previously called MSIL).</li>
+<li>CIL is then assembled into a bytecode and a CLI assembly is created.</li>
+<li>Before code execution, CLI code is passed through the runtime&rsquo;s JIT compiler to generate native machine code.</li>
+<li>The computer&rsquo;s processor executes the native machine code.</li>
+</ol>
             </pre></html>
             ]]>
         </item>
         <!--discuss what garbage collection is and how it works.-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Garbage collection is a low-priority process that serves as an automatic memory manager which manages the allocation and release of memory for the applications. Each time a new object is created, the common language runtime allocates memory for that object from the managed Heap. As long as free memory space is available in the managed Heap, the runtime continues to allocate space for new objects. However, memory is not infinite, and once an application fills the Heap memory space, garbage collection comes into play to free some memory. When the garbage collector performs a collection, it checks for objects in the managed Heap that are no longer being used by the application and performs the necessary operations to reclaim the memory. Garbage collection will stop all running threads, it will find all objects in the Heap that are not being accessed by the main program and delete them. It will then reorganize all the objects left in the Heap to make space and adjust all the Pointers to these objects in both the Stack and the Heap.</p>
+<p>To enforce garbage collection in your code manually, you can run the following command (written in C#):</p>
+<pre><em><code>System.GC.Collect();</code></em></pre>
             </pre></html>
             ]]>
         </item>
         <!--you would know that system.object is the parent class of all.net classes.-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
-            </pre></html>
-            ]]>
-        </item>
-        <!--Explain the difference between a stack and a queue-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
+            <p>System.Object provides the following important methods, among others:</p>
+<ol>
+<li><em><code>ToString</code></em>&mdash;Returns a string that represents the current object</li>
+<li>both overrides of<em>&nbsp;<code>Equals(object)</code>,&nbsp;<code>Equals(object, object)</code></em></li>
+<li><em><code>GetHashCode</code></em></li>
+<li><em><code>Finalize</code></em></li>
+<li><em><code>GetType</code></em></li>
+<li><em><code>ReferenceEquals</code></em></li>
+<li><em><code>MemberwiseClone</code></em></li>
+</ol>
+<p>Most of these methods provide the basic implementation required of any type that a developer will work with in the .NET stack.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is .net web service-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+             <p>Web services are reusable components that allow developers to publish an application&rsquo;s function over the internet to make it accessible and directly interactable with other applications and objects online. Web services communicate by using standard web protocols and data formats &mdash; including HTTP, XML and SOAP &mdash; that allow them to connect across different platforms and programming languages. ASP.NET provides a simple way to develop web services. The .NET framework provides built-in classes for building and consuming web services.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is json data and what is one way that .net developers-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>JSON (JavaScript Object Notation) provides developers with a way to organize and store data in a way that is easy to access and read. JSON is important for developers because it allows them to manipulate JSON feeds from other sites and to load them more quickly and easily than via SML/RSS feeds. Json.NET provides a way for .NET developers to define classes to parse objects and arrays from JSON text. You can also use Json.NET if you need to serialize value types into JSON text. Json.NET runs on .NET2, .NET3 and .NET4.</p>
             </pre></html>
             ]]>
         </item>
