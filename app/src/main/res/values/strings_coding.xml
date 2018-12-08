@@ -214,7 +214,7 @@
         <!--What is inheritance-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-          <pre>Inheritance is the process wherein characteristics are inherited from ancestors. Similarly, in Java, a subclass inherits the characteristics (properties and methods) of its superclass (ancestor).<br />For example, a vehicle is a superclass and a car is a subclass. The car (subclass) inherits all of the vehicle&rsquo;s properties.<br />The inheritance mechanism is very useful in code reuse.<br />The following are some limitations of Java class inheritance: A subclass cannot inherit private members of its superclass.<br />Constructor and initializer blocks cannot be inherited by a subclass. A subclass can have only one superclass.<br /><br />The keyword "extends" is used to derive a subclass from the superclass, as illustrated by the following syntax:</pre>
+          <pre>Inheritance is the process wherein characteristics are inherited from ancestors. Similarly, in Java, a subclass inherits the characteristics (properties and methods) of its superclass (ancestor).<br />For example, a vehicle is a superclass and a car is a subclass. The car (subclass) inherits all of the vehicle\'s properties.<br />The inheritance mechanism is very useful in code reuse.<br />The following are some limitations of Java class inheritance: A subclass cannot inherit private members of its superclass.<br />Constructor and initializer blocks cannot be inherited by a subclass. A subclass can have only one superclass.<br /><br />The keyword "extends" is used to derive a subclass from the superclass, as illustrated by the following syntax:</pre>
 <pre><em>class Name_of_subclass extends Name_of superclass</em><br />{ //new fields and methods that would define the subclass go here }<br /><br />If you want to derive a subclass Rectangle from a superclass Shapes, you can do it as follows:<br /><em>class Rectangle extends Shapes { &hellip;. }</em></pre>
             </pre></html>
             ]]>
@@ -406,7 +406,7 @@
         <!--if one needs a Set, how do you choose between HashSet vs TreeSet?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <pre>At first glance, HashSet is superior in almost every way: O(1) add, remove and contains, vs. O(log(N)) for TreeSet.<br /><br />However, TreeSet is indispensable when you wish to maintain order over the inserted elements or query for a range of elements within the set.<br /><br />Consider a Set of timestamped Event objects. They could be stored in a HashSet, with equals and hashCode based on that timestamp. This is efficient storage and permits looking up events by a specific timestamp, but how would you get all events that happened on any given day? That would require a O(n) traversal of the HashSet, but it&rsquo;s only a O(log(n)) operation with TreeSet using the tailSet method;<br /><br /><em>public class Event implements Comparable&lt;Event&gt; {</em><br /><em>private final long timestamp;</em><br /><em><br />public Event(long timestamp) {</em><br /><em>      this.timestamp = timestamp;</em><br /><em>}</em><br /><br /><em>@Override <br />public int compareTo(Event that) {</em><br /><em>      return Long.compare(this.timestamp, that.timestamp);</em><br /><em>   }</em><br /><em>}</em><br /><em>         ...<br /></em><br /><em>SortedSet&lt;Event&gt; events = new TreeSet&lt;&gt;();</em><br /><em>events.addAll(...); // events come in</em><br /><br /><em>// all events that happened today</em><br /><em>long midnightToday = ...;</em><br /><em>events.tailSet(new Event(midnightToday));</em><br /><em>}</em><br /><br />If Event happens to be a class that we cannot extend or that doesn&rsquo;t implement Comparable, TreeSet allows us to pass in our own Comparator:<br /><br /><em>SortedSet&lt;Event&gt;; events = new TreeSet&lt;&gt;(</em><br /><em>    (left, right) -&gt; Long.compare(left.timestamp, right.timestamp));</em><br /><br />Generally speaking, TreeSet is a good choice when order matters and when reads are balanced against the increased cost of writes.</pre>
+            <pre>At first glance, HashSet is superior in almost every way: O(1) add, remove and contains, vs. O(log(N)) for TreeSet.<br /><br />However, TreeSet is indispensable when you wish to maintain order over the inserted elements or query for a range of elements within the set.<br /><br />Consider a Set of timestamped Event objects. They could be stored in a HashSet, with equals and hashCode based on that timestamp. This is efficient storage and permits looking up events by a specific timestamp, but how would you get all events that happened on any given day? That would require a O(n) traversal of the HashSet, but it\'s only a O(log(n)) operation with TreeSet using the tailSet method;<br /><br /><em>public class Event implements Comparable&lt;Event&gt; {</em><br /><em>private final long timestamp;</em><br /><em><br />public Event(long timestamp) {</em><br /><em>      this.timestamp = timestamp;</em><br /><em>}</em><br /><br /><em>@Override <br />public int compareTo(Event that) {</em><br /><em>      return Long.compare(this.timestamp, that.timestamp);</em><br /><em>   }</em><br /><em>}</em><br /><em>         ...<br /></em><br /><em>SortedSet&lt;Event&gt; events = new TreeSet&lt;&gt;();</em><br /><em>events.addAll(...); // events come in</em><br /><br /><em>// all events that happened today</em><br /><em>long midnightToday = ...;</em><br /><em>events.tailSet(new Event(midnightToday));</em><br /><em>}</em><br /><br />If Event happens to be a class that we cannot extend or that doesn\'t implement Comparable, TreeSet allows us to pass in our own Comparator:<br /><br /><em>SortedSet&lt;Event&gt;; events = new TreeSet&lt;&gt;(</em><br /><em>    (left, right) -&gt; Long.compare(left.timestamp, right.timestamp));</em><br /><br />Generally speaking, TreeSet is a good choice when order matters and when reads are balanced against the increased cost of writes.</pre>
             </pre></html>
             ]]>
         </item>
@@ -1151,7 +1151,36 @@
         <!--What are the main differences between Java and C#-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+                <p>- In Java methods are virtual by default but you can make them final. (In C# they\'re sealed by default, but you can make them virtual.)</p>
+<p>- There are plenty of IDEs for Java, both free (e.g. Eclipse, Netbeans) and commercial (e.g. IntelliJ IDEA)</p>
+<p>- Generics are completely different between the two; Java generics are just a compile-time "trick" (but a useful one at that). In C# and .NET generics are maintained at execution time too, and work for value types as well as reference types, keeping the appropriate efficiency (e.g. a List&lt;byte&gt; as a byte[] backing it, rather than an array of boxed bytes.)</p>
+<p>- C# doesn\'t have checked exceptions</p>
+<p>- Java doesn\'t allow the creation of user-defined value types</p>
+<p>- Java doesn\'t have operator and conversion overloading</p>
+<p>- Java doesn\'t have iterator blocks for simple implemetation of iterators</p>
+<p>- Java doesn\'t have anything like LINQ</p>
+<p>- Java doesn\'t have expression trees</p>
+<p>- C# doesn\'t have anonymous inner classes</p>
+<p>- C# doesn\'t have Java\'s inner classes at all, in fact - all nested classes in C# are like Java\'s static nested classes</p>
+<p>- Java doesn\'t have static classes (which don\'t have any instance constructors, and can\'t be used for variables, parameters etc)</p>
+<p>- Java doesn\'t have any equivalent to the C# 3.0 anonymous types</p>
+<p>- Java doesn\'t have implicitly typed local variables</p>
+<p>- Java doesn\'t have extension methods</p>
+<p>- Java doesn\'t have object and collection initializer expressions</p>
+<p>- The access modifiers are somewhat different - in Java there\'s (currently) no direct equivalent of an assembly, so no idea of "internal" visibility; in C# there\'s no equivalent to the "default" visibility in Java which takes account of namespace (and inheritance)</p>
+<p>- The order of initialization in Java and C# is subtly different (C# executes variable initializers before the chained call to the base type\'s constructor)</p>
+<p>- Java doesn\'t have an equivalent of the using statement for simplified try/finally handling of resources</p>
+<p>- Java doesn\'t have properties as part of the language; they\'re a convention of get/set/is methods</p>
+<p>- Java doesn\'t have the equivalent of "unsafe" code</p>
+<p>- Interop is easier in C# (and .NET in general) than Java\'s JNI</p>
+<p>- Java has no preprocessor directives (#define, #if etc in C#).</p>
+<p>- Java has no equivalent of C#\'s ref and out for passing parameters by reference</p>
+<p>- Java has no equivalent of partial types</p>
+<p>- C# interfaces cannot declare fields</p>
+<p>- Java has no unsigned integer types</p>
+<p>- Java has no language support for a decimal type. (java.math.BigDecimal provides something like System.Decimal - with differences - but there\'s no language support)</p>
+<p>- Java has no equivalent of nullable value types</p>
+<p>- Boxing in Java uses predefined (but "normal") reference types with particular operations on them. Boxing in C# and .NET is a more transparent affair, with a reference type being created for boxing by the CLR for any value type.</p>
             </pre></html>
             ]]>
         </item>
@@ -1204,31 +1233,27 @@
         <!--Can you list the differences between static, public and void? What is the outcome of using each?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p>-&nbsp;<strong>public</strong>: Public Modifier in C# is most liberal among all access modifiers, it can access from anywhere inside or outside other class. There is no access restriction in public modifiers .public keyword is used just before the class keyword to declare class as public.<br /><br />-&nbsp;<strong>static</strong>: Static method is used to declare main method global one and we do not need to create instance of that class. We can access methods of static class by using the class name followed by. Operator and method name .The compiler stores Static method&rsquo;s address and uses this information before any object is created for execution.<br /><br />-&nbsp;<strong>void</strong>: The void modifier tells that the Main method can\'t return any value.</p>
-            </pre></html>
+<p>-&nbsp;<strong>public</strong>: Public Modifier in C# is most liberal among all access modifiers, it can access from anywhere inside or outside other class. There is no access restriction in public modifiers .public keyword is used just before the class keyword to declare class as public.<br /><br />-&nbsp;<strong>static</strong>: Static method is used to declare main method global one and we do not need to create instance of that class. We can access methods of static class by using the class name followed by. Operator and method name .The compiler stores Static method\'s address and uses this information before any object is created for execution.<br /><br />-&nbsp;<strong>void</strong>: The void modifier tells that the Main method can\'t return any value.</p>            </pre></html>
             ]]>
         </item>
         <!--what do you understand by value and reference types?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p>In C# data types can be of two types: Value Types and Reference Types. Value type variables contain their object (or data) directly. If we copy one value type variable to another then we are actually making a copy of the object for the second variable. Both of them will independently operate on their values, Value Type member will located into Stack and reference member will located in Heap always.<br /><br /><strong>Let consider each case briefly.</strong>&nbsp;</p>
-<ol>
-<li><strong>Pure Value Type</strong><br /><br />Here I used a structure as a value type. It has an integer member. I created two instances of this structure. After wards I assigned second instance to the first one. Then I changed the state of second instance, but it hasn't effect the first one, as whole items are value type and assignments on those types will copy only values not references i.e. in a Value Type assignment, all instances have its own local copy of members.&nbsp;<br /><br /></li>
-<li><strong>Pure Reference Type</strong>&nbsp;<br /><br />I created a class and added a "DataTable" as a Reference Type member for this class. Then I performed the assignments just like below. But the difference is that on changing the state of second instance, the state of first instance will automatically alter. So in a Reference Type assignment both Value and Reference will be assigned i.e. all instances will point to the single object.<br /><br /></li>
-<li><strong>Value Type With Reference Type<br /><br /></strong>This case and the last case to come are more interesting. I used a structure in this particular scenario also. But this time it includes a Reference Type(A Custom Class Object) Member besides a Value Type (An Integer) Member. When you performing the assignments, it seems like a swallow copy, as Value Type member of first instance won't effected, but the Reference Type member will alter according to the second instance. So in this particular scenario, assignment of Reference Type member produced a reference to a single object and assignment of Value Type member produced a local copy of that member.&nbsp;<br /><br /></li>
-<li><strong>Reference Type With Value Type</strong>&nbsp;<br /><br />Contrary to the above case, in this scenario, both Reference &amp; Value Types will be effected. I.e. a Value Type member in a Reference Type will be shared among its instances.</li>
-</ol>
-</br>
+<p>In C# data types can be of two types: Value Types and Reference Types. Value type variables contain their object (or data) directly. If we copy one value type variable to another then we are actually making a copy of the object for the second variable. Both of them will independently operate on their values, Value Type member will located into Stack and reference member will located in Heap always.<br /><br /><strong>Let consider each case briefly.</strong>&nbsp;</p>
+<p><strong>- Pure Value Type</strong><br />Here I used a structure as a value type. It has an integer member. I created two instances of this structure. After wards I assigned second instance to the first one. Then I changed the state of second instance, but it hasn\'t effect the first one, as whole items are value type and assignments on those types will copy only values not references i.e. in a Value Type assignment, all instances have its own local copy of members.&nbsp;</p>
+<p><strong>- Pure Reference Type</strong>&nbsp;<br />I created a class and added a "DataTable" as a Reference Type member for this class. Then I performed the assignments just like below. But the difference is that on changing the state of second instance, the state of first instance will automatically alter. So in a Reference Type assignment both Value and Reference will be assigned i.e. all instances will point to the single object.</p>
+<p><strong>- Value Type With Reference Type<br /></strong>This case and the last case to come are more interesting. I used a structure in this particular scenario also. But this time it includes a Reference Type(A Custom Class Object) Member besides a Value Type (An Integer) Member. When you performing the assignments, it seems like a swallow copy, as Value Type member of first instance won\'t effected, but the Reference Type member will alter according to the second instance. So in this particular scenario, assignment of Reference Type member produced a reference to a single object and assignment of Value Type member produced a local copy of that member.&nbsp;</p>
+<p><strong>- Reference Type With Value Type</strong>&nbsp;<br />Contrary to the above case, in this scenario, both Reference &amp; Value Types will be effected. I.e. a Value Type member in a Reference Type will be shared among its instances.</p>
 <p>There are seven value types which are decimal, byte, double, float, int, enum and long and the four reference types are class, interface, string and object.</p>
-            </pre></html>
+
+             </pre></html>
             ]]>
         </item>
         <!--It is possible to store mixed datatypes such as int, string, float, char -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p>It is possible to do so because the array can be of type&nbsp;<code>object</code>&nbsp;that can not only store any datatype but also the object of the class as shown below:</p>
-
-            <pre><code class="language-cs">using System;
+             <p>It is possible to do so because the array can be of type&nbsp;<code>object</code>&nbsp;that can not only store any datatype but also the object of the class as shown below:</p>
+<pre><em>using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -1262,8 +1287,7 @@ namespace ConsoleApplication8
             Console.ReadLine();
         }
     }
-}</code></pre>
-
+}</em></pre>
             </pre></html>
             ]]>
         </item>
@@ -1274,7 +1298,7 @@ namespace ConsoleApplication8
 <p>- Are compound data types</p>
 <p>- Can contain methods and events</p>
 <p>- Can support interfaces</p>
-<p><strong>But there are a number of differences. Here&rsquo;s a comparison:</strong></p>
+<p><strong>But there are a number of differences. Here\'s a comparison:</strong></p>
 <p><strong><em>Classes:</em></strong></p>
 <p>- Support inheritance</p>
 <p>- Are reference (pointer) types</p>
@@ -1292,7 +1316,21 @@ namespace ConsoleApplication8
         <!--what is clr-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p class="">The .NET Framework provides a run-time environment called the common language runtime, which runs the code and provides services that make the development process easier.</p>
+<p>Compilers and tools expose the common language runtime\'s functionality and enable you to write code that benefits from this managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code; it benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services.</p>
+<p class="">To enable the runtime to provide services to managed code, language compilers must emit metadata that describes the types, members, and references in your code. Metadata is stored with the code; every loadable common language runtime portable executable (PE) file contains metadata. The runtime uses metadata to locate and load classes, lay out instances in memory, resolve method invocations, generate native code, enforce security, and set run-time context boundaries.</p>
+<p class="">The runtime automatically handles object layout and manages references to objects, releasing them when they are no longer being used. Objects whose lifetimes are managed in this way are called managed data. Garbage collection eliminates memory leaks as well as some other common programming errors. If your code is managed, you can use managed data, unmanaged data, or both managed and unmanaged data in your .NET Framework application. Because language compilers supply their own types, such as primitive types, you might not always know (or need to know) whether your data is being managed.</p>
+<p>The common language runtime makes it easy to design components and applications whose objects interact across languages. Objects written in different languages can communicate with each other, and their behaviors can be tightly integrated. For example, you can define a class and then use a different language to derive a class from your original class or call a method on the original class. You can also pass an instance of a class to a method of a class written in a different language. This cross-language integration is possible because language compilers and tools that target the runtime use a common type system defined by the runtime, and they follow the runtime\'s rules for defining new types, as well as for creating, using, persisting, and binding to types.</p>
+<p>As part of their metadata, all managed components carry information about the components and resources they were built against. The runtime uses this information to ensure that your component or application has the specified versions of everything it needs, which makes your code less likely to break because of some unmet dependency. Registration information and state data are no longer stored in the registry where they can be difficult to establish and maintain. Instead, information about the types you define (and their dependencies) is stored with the code as metadata, making the tasks of component replication and removal much less complicated.</p>
+<p>Language compilers and tools expose the runtime\'s functionality in ways that are intended to be useful and intuitive to developers. This means that some features of the runtime might be more noticeable in one environment than in another. How you experience the runtime depends on which language compilers or tools you use. For example, if you are a Visual Basic developer, you might notice that with the common language runtime, the Visual Basic language has more object-oriented features than before. The runtime provides the following benefits:</p>
+<p>- Performance improvements.</p>
+<p>- The ability to easily use components developed in other languages.</p>
+<p>- Extensible types provided by a class library.</p>
+<p>- Language features such as inheritance, interfaces, and overloading for object-oriented programming.</p>
+<p>- Support for explicit free threading that allows creation of multithreaded, scalable applications.</p>
+<p>- Support for structured exception handling.</p>
+<p>- Support for custom attributes.</p>
+<p>- Garbage collection.- Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see&nbsp;<a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/common-type-system" data-linktype="relative-path">Common Type System</a>.</p>
             </pre></html>
             ]]>
         </item>
@@ -1314,11 +1352,9 @@ namespace ConsoleApplication8
         <item>
             <![CDATA[<html><pre style="text-align:center">
             <p>Dependency injection is a way to de-couple tightly linked classes, thereby reducing the direct dependency of classes upon each other. There are different ways by which dependency injection can be achived:</p>
-<ol>
-<li>Constructor dependency</li>
-<li>Property dependency</li>
-<li>Method dependency</li>
-</ol>
+<p>1. Constructor dependency</p>
+<p>2. Property dependency</p>
+<p>3. Method dependency</p>
             </pre></html>
             ]]>
         </item>
@@ -1326,7 +1362,7 @@ namespace ConsoleApplication8
         <item>
             <![CDATA[<html><pre style="text-align:center">
             <p>Boxing is an implicit conversion of a value type to the type&nbsp;<code>object</code>&nbsp;or to any interface type implemented by the value type. Boxing a value type creates an object instance containing the value and stores it on the heap.</p>
-<p>Example:&nbsp;</p>
+<p><strong>Example:</strong></p>
 <p><em><code>int x = 101;
 </code></em></p>
 <p><em><code>object o = x;  // boxing value of x into object o</code></em></p>
@@ -1397,7 +1433,7 @@ using(StreamWriter sw = new StreamWriter(&ldquo;C:\ReadMe.txt&rdquo;))
         <!--what is the difference between finally and finalize-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p><strong><em>finally</em>&nbsp;block</strong>&nbsp;is called after the execution of try and catch block. It is used for exception handling. Regardless of whether an exception is caught or not, this block of code will be executed. Usually, this block will have clean-up code.</p>
+            <p><strong><em>finally</strong></em>&nbsp;block&nbsp;is called after the execution of try and catch block. It is used for exception handling. Regardless of whether an exception is caught or not, this block of code will be executed. Usually, this block will have clean-up code.</p>
 <p><strong>finalize</strong> method is called just before garbage collection. It is used to perform clean up operations of Unmanaged code. It is automatically called when a given instance is not subsequently called.</p>
             </pre></html>
             ]]>
@@ -1666,7 +1702,7 @@ myPat.deathDate += GetPatInfo;
         <!--what is the difference between string and stringbuilder-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p><br />StringBuilder and string both use to store string value but both have many differences on the bases of instance creation and also for performance:<br /><br /><strong>String:&nbsp;</strong><br /><br />String is an immutable object. Immutable like when we create string object in code so we cannot modify or change that object in any operations like insert new value, replace or append any value with existing value in string object, when we have to do some operations to change string simply it will dispose the old value of string object and it will create new instance in memory for hold the new value in string object.</p>
+            <p>StringBuilder and string both use to store string value but both have many differences on the bases of instance creation and also for performance:<br /><br /><strong>String:&nbsp;</strong><br /><br />String is an immutable object. Immutable like when we create string object in code so we cannot modify or change that object in any operations like insert new value, replace or append any value with existing value in string object, when we have to do some operations to change string simply it will dispose the old value of string object and it will create new instance in memory for hold the new value in string object.</p>
 <p><strong>Note:</strong></p>
 <p>- It\'s an immutable object that hold string value.<br /><br /></p>
 <p>- Performance wise string is slow because its\' create a new instance to override or change the previous value.<br /><br /></p>
@@ -1682,8 +1718,7 @@ myPat.deathDate += GetPatInfo;
         <!--what is ienumerable<>-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p>&nbsp;</p>
-<p><strong>IEnumerable</strong> is the parent interface for all non-generic collections in System.Collections namespace like ArrayList, HastTable etc. that can be enumerated. For the generic version of this interface as IEnumerable&lt;T&gt; which a parent interface of all generic collections class in System.Collections.Generic namespace like List&lt;&gt; and more.&nbsp;<br /><br />In System.Collections.Generic.IEnumerable&lt;T&gt; have only a single method which is GetEnumerator() that returns an IEnumerator. IEnumerator provides the power to iterate through the collection by exposing a Current property and Move Next and Reset methods, if we don\'t have this interface as a parent so we can&rsquo;t use iteration by foreach loop or can\'t use that class object in our LINQ query.</p>
+<p><strong>IEnumerable</strong> is the parent interface for all non-generic collections in System.Collections namespace like ArrayList, HastTable etc. that can be enumerated. For the generic version of this interface as IEnumerable&lt;T&gt; which a parent interface of all generic collections class in System.Collections.Generic namespace like List&lt;&gt; and more.&nbsp;<br /><br />In System.Collections.Generic.IEnumerable&lt;T&gt; have only a single method which is GetEnumerator() that returns an IEnumerator. IEnumerator provides the power to iterate through the collection by exposing a Current property and Move Next and Reset methods, if we don\'t have this interface as a parent so we can\'t use iteration by foreach loop or can\'t use that class object in our LINQ query.</p>
 <p>&nbsp;</p>
             </pre></html>
             ]]>
@@ -1691,16 +1726,14 @@ myPat.deathDate += GetPatInfo;
         <!--what are the differences between ienumerable and iqueryable-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-<p>&nbsp;</p>
-<p><strong>IEnumerable:</strong><br /><br />Is the parent interface for all non-generic collections in System.Collections namespace like ArrayList, HastTable etc. that can be enumerated. For the generic version of this interface as IEnumerable&lt;T&gt; which a parent interface of all generic collections class in System.Collections.Generic namespace like List&lt;&gt; and more.&nbsp;<br /><br /><strong>IQueryable:<br /></strong><br />As per MSDN IQueryable interface is intended for implementation by query providers. It is only supposed to be implemented by providers that also implement IQueryable&lt;T&gt;. If the provider does not also implement IQueryable&lt;T&gt;, the standard query operators cannot be used on the provider*\'s data source.<br /><br />The IQueryable interface inherits the IEnumerable interface so that if it represents a query, the results of that query can be enumerated. Enumeration causes the expression tree associated with an IQueryable object to be executed. The definition of "executing an expression tree" is specific to a query provider. For example, it may involve translating the expression tree to an appropriate query language for the underlying data source. Queries that do not return enumerable results are executed when the Execute method is called.</p>
+<p><strong>IEnumerable:</strong><br /><br />Is the parent interface for all non-generic collections in System.Collections namespace like ArrayList, HastTable etc. that can be enumerated. For the generic version of this interface as IEnumerable&lt;T&gt; which a parent interface of all generic collections class in System.Collections.Generic namespace like List&lt;&gt; and more.&nbsp;<br /><br /><strong>IQueryable:<br /></strong><br />As per MSDN IQueryable interface is intended for implementation by query providers. It is only supposed to be implemented by providers that also implement IQueryable&lt;T&gt;. If the provider does not also implement IQueryable&lt;T&gt;, the standard query operators cannot be used on the provider\'s data source.<br /><br />The IQueryable interface inherits the IEnumerable interface so that if it represents a query, the results of that query can be enumerated. Enumeration causes the expression tree associated with an IQueryable object to be executed. The definition of "executing an expression tree" is specific to a query provider. For example, it may involve translating the expression tree to an appropriate query language for the underlying data source. Queries that do not return enumerable results are executed when the Execute method is called.</p>
             </pre></html>
             ]]>
         </item>
         <!--what is the difference between late binding and early binding-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-        <p>&nbsp;</p>
-<p>Early Binding and Late Binding concepts belongs to polymorphism so let&rsquo;s see first about polymorphism:<br /><br />Polymorphism is an ability to take more than one form of a function means with a same name we can write multiple functions code in a same class or any derived class.<br /><br />Polymorphism we have 2 different types to achieve that:&nbsp;</p>
+<p>Early Binding and Late Binding concepts belongs to polymorphism so let\'s see first about polymorphism:<br /><br />Polymorphism is an ability to take more than one form of a function means with a same name we can write multiple functions code in a same class or any derived class.<br /><br />Polymorphism we have 2 different types to achieve that:&nbsp;</p>
 <p>- Compile Time also known as Early Binding or Overloading.</p>
 <p>- Run Time also known as Late Binding or Overriding.</p>
 <p><strong>Compile Time Polymorphism or Early Binding:</strong></p>
@@ -1709,7 +1742,7 @@ myPat.deathDate += GetPatInfo;
 <p><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image013.png" alt="ASP.NET" /></p>
 <div>&nbsp;</div>
 <div><strong>Run Time Polymorphism or Late Binding:</strong></div>
-<div>Run time polymorphism also known as late binding, in Run Time polymorphism or Late Binding we can do use same method names with same signatures means same type or same number of parameters but not in same class because compiler doesn&rsquo;t allowed that at compile time so we can use in derived class that bind at run time when a child class or derived class object will instantiated that&rsquo;s way we says that Late Binding. For that we have to create my parent class functions as partial and in driver or child class as override functions with override keyword.</div>
+<div>Run time polymorphism also known as late binding, in Run Time polymorphism or Late Binding we can do use same method names with same signatures means same type or same number of parameters but not in same class because compiler doesn\'t allowed that at compile time so we can use in derived class that bind at run time when a child class or derived class object will instantiated that\'s way we says that Late Binding. For that we have to create my parent class functions as partial and in driver or child class as override functions with override keyword.</div>
 <div>&nbsp;</div>
 <div><strong>Example</strong>:</div>
 <div><br /><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image014.png" alt="ASP.NET" />&nbsp;</div>
@@ -1786,7 +1819,7 @@ myPat.deathDate += GetPatInfo;
 <p><em>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</em></p>
 <p><em>} &nbsp;</em></p>
 </div>
-<p>Now, let's try to check the preceding types as:</p>
+<p>Now, let\'s try to check the preceding types as:</p>
 <div class="dp-highlighter">
 <p><em>var&nbsp;speaker&nbsp;=&nbsp;<span class="keyword">new</span>&nbsp;Speaker&nbsp;{&nbsp;Name=<span class="string">"Gaurav&nbsp;Kumar&nbsp;Arora"</span>}; &nbsp;</em></p>
 </div>
@@ -1808,7 +1841,7 @@ myPat.deathDate += GetPatInfo;
 <div>The "as" operator behaves similar to the "is" operator. The only difference is it returns the object if both are compatible to that type else it returns null.</div>
 <div>&nbsp;</div>
 <div><strong>Example</strong>:</div>
-<p>Let's understand the preceding with a small snippet as in the following:</p>
+<p>Let\'s understand the preceding with a small snippet as in the following:</p>
 <div class="dp-highlighter">
 <p><em><span class="keyword">public</span>&nbsp;<span class="keyword">static</span>&nbsp;<span class="keyword">string</span>&nbsp;GetAuthorName(dynamic&nbsp;obj)&nbsp;&nbsp;&nbsp;</em></p>
 <p><em>{&nbsp;&nbsp;&nbsp;</em></p>
@@ -1839,8 +1872,7 @@ myPat.deathDate += GetPatInfo;
             <![CDATA[<html><pre style="text-align:center">
             <p>A nullable Type is a data type is that contain the defined data type or the value of null.<br /><br />You should note here that here variable datatype has been given and then only it can be used.<br /><br />This nullable type concept is not comaptible with "var".<br /><br />I will explain this with syntax in next section.<br /><br /><strong>Declaration:</strong></p>
 <div>Any DataType can be declared nullable type with the help of operator "?".</div>
-<div>&nbsp;</div>
-<div>Example of the syntax is as Follows :-&nbsp;</div>
+<p>Example of the syntax is as Follows :-</p>
 <div class="dp-highlighter">
 <p><em><span class="keyword">int</span>?&nbsp;i&nbsp;=&nbsp;<span class="keyword">null</span>; &nbsp;</em></p>
 </div>
@@ -1866,9 +1898,9 @@ myPat.deathDate += GetPatInfo;
         <item>
             <![CDATA[<html><pre style="text-align:center">
             <p>They are different object types. They have different capabilities and store their data in different ways.</p>
-<p>An Array (<code>System.Array</code>) is fixed in size once it is allocated. You can't add items to it or remove items from it. Also, all the elements must be the same type. As a result, it is type safe, and is also the most efficient of the three, both in terms of memory and performance. Also, System.Array supports multiple dimensions (i.e. it has a&nbsp;<a href="https://msdn.microsoft.com/en-us/library/system.array.rank(v=vs.110).aspx">Rank</a>&nbsp;property) while List and ArrayList do not (although you can create a List of Lists or an ArrayList of ArrayLists, if you want to).</p>
+<p>An Array (<code>System.Array</code>) is fixed in size once it is allocated. You can\'t add items to it or remove items from it. Also, all the elements must be the same type. As a result, it is type safe, and is also the most efficient of the three, both in terms of memory and performance. Also, System.Array supports multiple dimensions (i.e. it has a&nbsp;<a href="https://msdn.microsoft.com/en-us/library/system.array.rank(v=vs.110).aspx">Rank</a>&nbsp;property) while List and ArrayList do not (although you can create a List of Lists or an ArrayList of ArrayLists, if you want to).</p>
 <p>An&nbsp;<code>ArrayList</code>&nbsp;is a flexible array which contains a list of objects. You can add and remove items from it and it automatically deals with allocating space. If you store value types in it, they are boxed and unboxed, which can be a bit inefficient. Also, it is not type-safe.</p>
-<p>A&nbsp;<code>List&lt;&gt;</code>&nbsp;leverages generics; it is essentially a type-safe version of ArrayList. This means there is no boxing or unboxing (which improves performance) and if you attempt to add an item of the wrong type it'll generate a compile-time error.</p>
+<p>A&nbsp;<code>List&lt;&gt;</code>&nbsp;leverages generics; it is essentially a type-safe version of ArrayList. This means there is no boxing or unboxing (which improves performance) and if you attempt to add an item of the wrong type it\'ll generate a compile-time error.</p>
             </pre></html>
             ]]>
         </item>
@@ -1891,11 +1923,9 @@ myPat.deathDate += GetPatInfo;
         <item>
             <![CDATA[<html><pre style="text-align:center">
             <p>LINQ stands for Language Integrated Query. LINQ is a data querying methodology which provides querying capabilities to .NET languages with a syntax similar to a SQL query.<br /><br />LINQ has a great power of querying on any source of data. The data source could be collections of objects, database or XML files. We can easily retrieve data from any object that implements the IEnumerable&lt;T&gt; interface.</p>
-<ol>
-<li>LINQ offers an object-based, language-integrated way to query over data no matter where that data came from. So through LINQ we can query database, XML as well as collections.&nbsp;<br /><br /></li>
-<li>Compile time syntax checking.<br /><br /></li>
-<li>It allows you to query collections like arrays, enumerable classes etc in the native language of your application, like VB or C# in much the same way as you would query a database using SQL.<br /><br /><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image023.png" alt="ASP.NET" /></li>
-</ol>
+<p>1. LINQ offers an object-based, language-integrated way to query over data no matter where that data came from. So through LINQ we can query database, XML as well as collections.&nbsp;</p>
+<p><br />2. Compile time syntax checking.<br /><br /></p>
+<p>3. It allows you to query collections like arrays, enumerable classes etc in the native language of your application, like VB or C# in much the same way as you would query a database using SQL.<br /><br /><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image023.png" alt="ASP.NET" /></p>
             </pre></html>
             ]]>
         </item>
@@ -1922,12 +1952,10 @@ myPat.deathDate += GetPatInfo;
             <p>IL, or Intermediate Language, is a CPU independent partially compiled code. IL code will be compiled to native machine code using current environmental properties by Just-In-Time compiler (JIT). JIT compiler translates the IL code to an assembly code and uses the CPU architecture of the target machine to execute a .NET application. In .NET, IL is called Common Intermediate Language (CIL), and in the early .NET days it was called Microsoft Intermediate Language (MSIL).</p>
 <p>CLI, or Common Language Infrastructure, is an open specification developed by Microsoft. It is a compiled code library used for deployment, versioning, and security. In .NET there are two CLI types: process assemblies (EXE) and library assemblies (DLL). CLI assemblies contain code in CIL, and as mentioned, during compilation of CLI programming languages, the source code is translated into CIL code rather than into platform or processor specific object code.</p>
 <p><strong>To summarize</strong>:</p>
-<ol>
-<li>When compiled, source code is first translated to IL (in .NET, that is CIL, and previously called MSIL).</li>
-<li>CIL is then assembled into a bytecode and a CLI assembly is created.</li>
-<li>Before code execution, CLI code is passed through the runtime&rsquo;s JIT compiler to generate native machine code.</li>
-<li>The computer&rsquo;s processor executes the native machine code.</li>
-</ol>
+<p>1. When compiled, source code is first translated to IL (in .NET, that is CIL, and previously called MSIL).</p>
+<p>2. CIL is then assembled into a bytecode and a CLI assembly is created.</p>
+<p>3. Before code execution, CLI code is passed through the runtime\'s JIT compiler to generate native machine code.</p>
+<p>4. The computer\'s processor executes the native machine code.</p>
             </pre></html>
             ]]>
         </item>
@@ -1944,23 +1972,22 @@ myPat.deathDate += GetPatInfo;
         <item>
             <![CDATA[<html><pre style="text-align:center">
             <p>System.Object provides the following important methods, among others:</p>
-<ol>
-<li><em><code>ToString</code></em>&mdash;Returns a string that represents the current object</li>
-<li>both overrides of<em>&nbsp;<code>Equals(object)</code>,&nbsp;<code>Equals(object, object)</code></em></li>
-<li><em><code>GetHashCode</code></em></li>
-<li><em><code>Finalize</code></em></li>
-<li><em><code>GetType</code></em></li>
-<li><em><code>ReferenceEquals</code></em></li>
-<li><em><code>MemberwiseClone</code></em></li>
-</ol>
+<p><em>1. <code>ToString</code></em>&mdash;Returns a string that represents the current object</p>
+<p>2. both overrides of<em>&nbsp;<code>Equals(object)</code>,&nbsp;<code>Equals(object, object)</code></em></p>
+<p><em>3. <code>GetHashCode</code></em></p>
+<p><em>4. <code>Finalize</code></em></p>
+<p><em>5. <code>GetType</code></em></p>
+<p><em>6. <code>ReferenceEquals</code></em></p>
+<p><em>7. <code>MemberwiseClone</code></em></p>
 <p>Most of these methods provide the basic implementation required of any type that a developer will work with in the .NET stack.</p>
-            </pre></html>
+
+          pre></html>
             ]]>
         </item>
         <!--what is .net web service-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-             <p>Web services are reusable components that allow developers to publish an application&rsquo;s function over the internet to make it accessible and directly interactable with other applications and objects online. Web services communicate by using standard web protocols and data formats &mdash; including HTTP, XML and SOAP &mdash; that allow them to connect across different platforms and programming languages. ASP.NET provides a simple way to develop web services. The .NET framework provides built-in classes for building and consuming web services.</p>
+             <p>Web services are reusable components that allow developers to publish an application\'s function over the internet to make it accessible and directly interactable with other applications and objects online. Web services communicate by using standard web protocols and data formats &mdash; including HTTP, XML and SOAP &mdash; that allow them to connect across different platforms and programming languages. ASP.NET provides a simple way to develop web services. The .NET framework provides built-in classes for building and consuming web services.</p>
             </pre></html>
             ]]>
         </item>
