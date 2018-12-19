@@ -935,7 +935,6 @@
 
     <!--C# Technical Questions-->
     <string-array name="csharpTechnicalQuestions">
-
          <item>
             What are the features of C#?
         </item>
@@ -1087,9 +1086,6 @@
             What are the Difference between Array and ArrayList and List in C#.Net?
         </item>
         <item>
-            What you understand by Value types and Reference types in C#.Net?
-        </item>
-        <item>
             Explain Anonymous type in C#?
         </item>
         <item>
@@ -1125,26 +1121,16 @@
         <!--What are the features of C#?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p><strong>Simple </strong></p>
-<p>C# is a simple language in the sense that it provides structured approach (to break the problem into parts), rich set of library functions, data types etc.</p>
-<p><strong>Modern Programming Language</strong></p>
-<p>C# programming is based upon the current trend and it is very powerful and simple for building scalable, interoperable and robust applications.</p>
-<p><strong>Object Oriented</strong></p>
-<p>C# is object oriented programming language. OOPs makes development and maintenance easier where as in Procedure-oriented programming language it is not easy to manage if code grows as project size grow.</p>
-<p><strong>Type Safe</strong></p>
-<p>C# type safe code can only access the memory location that it has permission to execute. Therefore it improves a security of the program.</p>
-<p><strong>Interoperability</strong></p>
-<p>Interoperability process enables the C# programs to do almost anything that a native C++ application can do.</p>
-<p><strong>Scalable and Updatedable&nbsp;</strong></p>
-<p>C# is automatic scalable and updateable programming language. For updating our application we delete the old files and update them with new ones.</p>
-<p><strong>Component Oriented</strong></p>
-<p>C# is component oriented programming language. It is the predominant software development methodology used to develop more robust and highly scalable applications.</p>
-<p><strong>Structured Programming Language</strong></p>
-<p>C# is a structured programming language in the sense that we can break the program into parts using functions. So, it is easy to understand and modify.</p>
-<p><strong>Rich Library</strong></p>
-<p>C# provides a lot of inbuilt functions that makes the development fast.</p>
-<p><strong>Fast Speed</strong></p>
-<p>The compilation and execution time of C# language is fast.</p>
+             <p><strong>Simple -</strong>&nbsp;C# is a simple language in the sense that it provides structured approach (to break the problem into parts), rich set of library functions, data types etc.</p>
+<p><strong>Modern Programming Language -</strong> C# programming is based upon the current trend and it is very powerful and simple for building scalable, interoperable and robust applications.</p>
+<p><strong>Object Oriented -</strong> C# is object oriented programming language. OOPs makes development and maintenance easier where as in Procedure-oriented programming language it is not easy to manage if code grows as project size grow.</p>
+<p><strong>Type Safe -</strong> C# type safe code can only access the memory location that it has permission to execute. Therefore it improves a security of the program.</p>
+<p><strong>Interoperability -</strong>&nbsp;Interoperability process enables the C# programs to do almost anything that a native C++ application can do.</p>
+<p><strong>Scalable and Updatedable -&nbsp;</strong> C# is automatic scalable and updateable programming language. For updating our application we delete the old files and update them with new ones.</p>
+<p><strong>Component Oriented -</strong> C# is component oriented programming language. It is the predominant software development methodology used to develop more robust and highly scalable applications.</p>
+<p><strong>Structured Programming Language -</strong> C# is a structured programming language in the sense that we can break the program into parts using functions. So, it is easy to understand and modify.</p>
+<p><strong>Rich Library -</strong> C# provides a lot of inbuilt functions that makes the development fast.</p>
+<p><strong>Fast Speed</strong>&nbsp;- The compilation and execution time of C# language is fast.</p>
             </pre></html>
             ]]>
         </item>
@@ -1253,41 +1239,10 @@
         <item>
             <![CDATA[<html><pre style="text-align:center">
              <p>It is possible to do so because the array can be of type&nbsp;<code>object</code>&nbsp;that can not only store any datatype but also the object of the class as shown below:</p>
-<pre><em>using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace ConsoleApplication8
-{
-    class Program
-    {
-        class Customer
-        {
-            public int ID { get; set; }
-            public string Name { get; set; }
-            public override string ToString()
-            {
-                return this.Name;
-            }
-        }
-        static void Main(string[] args)
-        {
-            object[] array = new object[3];
-            array[0] = 101;
-            array[1] = "C#";
-            Customer c = new Customer();
-            c.ID = 55;
-            c.Name = "Manish";
-            array[2] = c;
-            foreach (object obj in array)
-            {
-                Console.WriteLine(obj);
-            }
-            Console.ReadLine();
-        }
-    }
-}</em></pre>
+                <pre><em>using System;</em><br /><em>using System.Collections.Generic;</em><br /><em>using System.Linq;</em><br /><em>using System.Text;</em>
+<br /><em>namespace ConsoleApplication8</em><br /><em>{</em><br /><em>    class Program</em>
+<em>    {</em><br /><em>        class Customer</em><br /><em>       {</em><br /><em>            public int ID { get; set; }</em><br /><em>            public string Name { get; set; }</em><br /><em>            public override string ToString()</em><br /><em>            {</em><br /><em>                return this.Name;</em><br /><em>            }</em><br /><em>        }</em><br /><em>        static void Main(string[] args)</em><br /><em>        {</em><br /><em>            object[] array = new object[3];</em><br /><em>            array[0] = 101;</em><br /><em>            array[1] = "C#";</em><br /><em>            Customer c = new Customer();</em><br /><em>            c.ID = 55;</em><br /><em>            c.Name = "Manish";</em><br /><em>            array[2] = c;</em><br /><em>            foreach (object obj in array)</em><br /><em>            {</em><br /><em>                Console.WriteLine(obj);</em><br /><em>            }</em><br /><em>            Console.ReadLine();</em><br /><em>        }</em><em>}</em><em>}</em></pre>
             </pre></html>
             ]]>
         </item>
@@ -1344,7 +1299,7 @@ namespace ConsoleApplication8
         <!--which class acts as a base class for all exceptions-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p>C# exceptions are represented by classes. The exception classes in C# are mainly directly or indirectly derived from the System.Exception class. Some of the exception classes derived from the System.Exception class are the System.ApplicationException and System.SystemException classes.</p>
+            <p>C# exceptions are represented by classes. The exception classes in C# are mainly directly or indirectly derived from the <em>System.Exception</em> class. Some of the exception classes derived from the<em> System.Exception</em> class are the <em>System.ApplicationException</em> and <em>System.SystemException</em> classes.</p>
             </pre></html>
             ]]>
         </item>
@@ -1403,30 +1358,32 @@ namespace ConsoleApplication8
             </pre></html>
             ]]>
         </item>
-        <!--what is stremreader / streamwriter-->
+        <!--what is streamreader / streamwriter-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
             <p><strong>StreamReader and StreamWriter</strong>&nbsp;are classes of namespace System.IO. They are used when we want to read or write charact90, Reader-based data, respectively.</p>
 <p><strong>Some of the members of StreamReader are:</strong>&nbsp;Close(), Read(), Readline().</p>
 <p><strong>Members of StreamWriter are:</strong>&nbsp;Close(), Write(), Writeline().</p>
-<pre class="brush: csharp; title: ; notranslate" title=""><em>Class Program1
-{
-using(StreamReader sr = new StreamReader(&ldquo;C:\ReadMe.txt&rdquo;)
-{
-//----------------code to read-------------------//
-}
-using(StreamWriter sw = new StreamWriter(&ldquo;C:\ReadMe.txt&rdquo;))
-{
-//-------------code to write-------------------//
-}
-}</em></pre>
+
+<em>Class Program1</em>
+<em><br>{</em>
+<em><br>using(StreamReader sr = new StreamReader(&ldquo;C:\ReadMe.txt&rdquo;)</em>
+<em><br>{</em>
+<em><br>//----------------code to read-------------------//</em>
+<em><br>}</em>
+<br>
+<em><br>using(StreamWriter sw = new StreamWriter(&ldquo;C:\ReadMe.txt&rdquo;))</em>
+<em><br>{</em>
+<em><br>//-------------code to write-------------------//</em>
+<em><br>}}</em>
+
             </pre></html>
             ]]>
         </item>
         <!--what is a destructor-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p>A&nbsp;<strong>Destructor</strong>&nbsp;is used to clean up the memory and free the resources. But in C# this is done by the garbage collector on its own. System.GC.Collect() is called internally for cleaning up. But sometimes it may be necessary to implement destructors manually.</p>
+            <p>A&nbsp;<strong>Destructor</strong>&nbsp;is used to clean up the memory and free the resources. But in C# this is done by the garbage collector on its own. <em>System.GC.Collect()</em> is called internally for cleaning up. But sometimes it may be necessary to implement destructors manually.</p>
             </pre></html>
             ]]>
         </item>
@@ -1453,20 +1410,9 @@ using(StreamWriter sw = new StreamWriter(&ldquo;C:\ReadMe.txt&rdquo;))
 <p>After the declaration of a delegate, the object must be created of the delegate using the new keyword.</p>
 <p><em>AddNumbers an1 = new AddNumbers(number);</em></p>
 <p>The delegate provides a kind of encapsulation to the reference method, which will internally get called when a delegate is called.</p>
-<pre class="brush: csharp; title: ; notranslate" title=""><em>public delegate int myDel(int number);
-public class Program
-{
-public int AddNumbers(int a)
-{
-int Sum = a + 10;
-return Sum;
-}
-public void Start()
-{
-myDel DelgateExample = AddNumbers;
-}
-}
-</em></pre>
+
+<p><em>public delegate int myDel(int number); </em><br /><em>public class Program{</em> <br /><em> public int AddNumbers(int a) </em> <br /><em>{ </em> <br /><em>int Sum = a + 10; </em> <br /><em>return Sum; </em> <br /><em>} </em> <br /><br /><em>public void Start() </em> <br /><em>{ </em> <br /><em>myDel DelegateExample = AddNumbers; </em> <br /><em>}} </em></p>
+
 <p>In the above example, we have a delegate myDel which takes an integer value as a parameter. Class Program has a method of the same signature as the delegate, called AddNumbers().</p>
 <p>If there is another method called Start() which creates an object of the delegate, then the object can be assigned to AddNumbers as it has the same signature as that of the delegate.</p>
             </pre></html>
@@ -1478,8 +1424,8 @@ myDel DelgateExample = AddNumbers;
             <p><strong>Events</strong>&nbsp;are user actions that generate notifications to the application to which it must respond. The user actions can be mouse movements, keypress and so on.</p>
 <p>Programmatically, a class that raises an event is called a publisher and a class which responds/receives the event is called a subscriber. An Event should have at least one subscriber else that event is never raised.</p>
 <p>Delegates are used to declare Events.</p>
-<p><em>Public delegate void PrintNumbers();</em></p>
-<p><em>Event PrintNumbers myEvent;</em></p>
+    <p><em>Public delegate void PrintNumbers();</em><br/>
+<em>Event PrintNumbers myEvent;</em></p>
             </pre></html>
             ]]>
         </item>
@@ -1489,44 +1435,8 @@ myDel DelgateExample = AddNumbers;
             <p>Delegates are used to raise events and handle them. Always a delegate needs to be declared first and then the Events are declared.</p>
 <p><strong>Example:</strong></p>
 <p>Consider a class called Patient. Consider two other classes, Insurance, and Bank which requires Death information of the Patient from patient class. Here, Insurance and Bank are the subscribers and the Patient class becomes the Publisher. It triggers the death event and the other two classes should receive the event.</p>
-<pre class="brush: csharp; title: ; notranslate" title=""><em>namespace ConsoleApp2
-{
-public class Patient
-{
-public delegate void deathInfo();//Declaring a Delegate//
-public event deathInfo deathDate;//Declaring the event//
-public void Death()
-{
-deathDate();
-}
-}
-public class Insurance
-{
-Patient myPat = new Patient();
-void GetDeathDetails()
-{
-//-------Do Something with the deathDate event------------//
-}
-void Main()
-{
-//--------Subscribe the function GetDeathDetails----------//
-myPat.deathDate += GetDeathDetails;
-}
-}
-public class Bank
-{
-Patient myPat = new Patient();
-void GetPatInfo ()
-{
-//-------Do Something with the deathDate event------------//
-}
-void Main()
-{
-//--------Subscribe the function GetPatInfo ----------//
-myPat.deathDate += GetPatInfo;
-}
-}
-}</em></pre>
+
+<p><em>namespace ConsoleApp2</em> <em><br />{</em> <em><br />public class Patient</em> <em><br />{</em> <em><br />public delegate void deathInfo();//Declaring a Delegate//</em> <em><br />public event deathInfo deathDate;//Declaring the event//</em> <em><br />public void Death()</em> <em><br />{</em> <em><br />deathDate();</em> <em><br />}</em> <em><br />}</em> <em><br />public class Insurance</em> <em><br />{</em> <em><br />Patient myPat = new Patient();</em> <em><br />void GetDeathDetails()</em> <em><br />{</em> <em><br />//-------Do Something with the deathDate event------------//</em> <em><br />}</em> <em><br />void Main()</em> <em><br />{</em> <em><br />//--------Subscribe the function GetDeathDetails----------//</em> <em><br />myPat.deathDate += GetDeathDetails;</em> <em><br />}</em> <em><br />}</em> <em><br />public class Bank</em> <em><br />{</em> <em><br />Patient myPat = new Patient();</em> <em><br />void GetPatInfo ()</em> <em><br />{</em> <em><br />//-------Do Something with the deathDate event------------//</em> <em><br />}</em> <em><br />void Main()</em> <em><br />{</em> <em><br />//--------Subscribe the function GetPatInfo ----------//</em> <em><br />myPat.deathDate += GetPatInfo;</em> <em><br />}</em> <em><br />}</em> <em><br />}</em></p>
             </pre></html>
             ]]>
         </item>
@@ -1545,7 +1455,7 @@ myPat.deathDate += GetPatInfo;
             <p><strong>Synchronization</strong> is a way to create a thread-safe code where only one thread can access the resource at any given time.</p>
 <p><strong>Asynchronous call</strong> waits for the method to complete before continuing with the program flow. Synchronous programming badly affects the UI operations, when the user tries to perform time-consuming operations since only one thread will be used.</p>
 <p>In Asynchronous operation, the method call will immediately return so that the program can perform other operations while the called method completes its work in certain situations.</p>
-<p>In C#, <strong>Async</strong> and <strong>Await</strong> keywords are used to achieve asynchronous programming. Look at&nbsp;<strong>Question 32</strong>&nbsp;for more details on synchronous programming.</p>
+<p>In C#, <strong>Async</strong> and <strong>Await</strong> keywords are used to achieve asynchronous programming. Look at&nbsp;<strong>Question 33</strong>&nbsp;for more details on synchronous programming.</p>
             </pre></html>
             ]]>
         </item>
@@ -1568,59 +1478,49 @@ myPat.deathDate += GetPatInfo;
         <item>
             <![CDATA[<html><pre style="text-align:center">
             Generics or Generic class is used to create classes or objects which do not have any specific data type. The data type can be assigned during runtime, i.e when it is used in the program.
-            <pre class="prettyprint notranslate prettyprinted"><span class="kwd"><strong>Example</strong>:<br /><em>using</em></span><em> <span class="typ">System</span><span class="pun">;</span>
-<span class="kwd">using</span> <span class="typ">System</span><span class="pun">.</span><span class="typ">Collections</span><span class="pun">.</span><span class="typ">Generic</span><span class="pun">;</span>
 
-<span class="kwd">namespace</span> <span class="typ">GenericApplication</span> <span class="pun">{</span>
-   <span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">MyGenericArray</span><span class="pun">&lt;</span><span class="pln">T</span><span class="pun">&gt;</span> <span class="pun">{</span>
-      <span class="kwd">private</span><span class="pln"> T</span><span class="pun">[]</span><span class="pln"> array</span><span class="pun">;</span>
+            <p><em>using System;</em><br /><em>using System.Collections.Generic;</em></p>
+<p><em>namespace GenericApplication {</em><br /><em>public class MyGenericArray&lt;T&gt; {</em><br /><em>private T[] array;</em></p>
+<p><em>public MyGenericArray(int size) {</em><br /><em>array = new T[size + 1];</em><br /><em>}</em><br /><em>public T getItem(int index) {</em><br /><em>return array[index];</em><br /><em>}</em><br /><em>public void setItem(int index, T value) {</em><br /><em>array[index] = value;</em><br /><em>}</em><br /><em>}</em></p>
+<p><br /><em>class Tester {</em><br /><em>static void Main(string[] args) {</em></p>
+<p><em>//declaring an int array</em><br /><em>MyGenericArray&lt;int&gt; intArray = new MyGenericArray&lt;int&gt;(5);</em></p>
+<p><em>//setting values</em><br /><em>for (int c = 0; c &lt; 5; c++) {</em><br /><em>intArray.setItem(c, c*5);</em><br /><em>}</em></p>
+<p><em>//retrieving the values</em><br /><em>for (int c = 0; c &lt; 5; c++) {</em><br /><em>Console.Write(intArray.getItem(c) + " ");</em><br /><em>}</em></p>
+<p><em>Console.WriteLine();</em></p>
+<p><em>//declaring a character array</em><br /><em>MyGenericArray&lt;char&gt; charArray = new MyGenericArray&lt;char&gt;(5);</em></p>
+<p><em>//setting values</em><br /><em>for (int c = 0; c &lt; 5; c++) {</em><br /><em>charArray.setItem(c, (char)(c+97));</em><br /><em>}</em></p>
+<p><em>//retrieving the values</em><br /><em>for (int c = 0; c&lt; 5; c++) {</em><br /><em>Console.Write(charArray.getItem(c) + " ");</em><br /><em>}</em><br /><em>Console.WriteLine();</em><br /><em>Console.ReadKey();</em><br /><em>}</em><em>}</em><em>}</em></p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--explain get and set accessor properties?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
 
-      <span class="kwd">public</span> <span class="typ">MyGenericArray</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-         array </span><span class="pun">=</span> <span class="kwd">new</span><span class="pln"> T</span><span class="pun">[</span><span class="pln">size </span><span class="pun">+</span> <span class="lit">1</span><span class="pun">];</span>
-      <span class="pun">}</span>
-      <span class="kwd">public</span><span class="pln"> T getItem</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> index</span><span class="pun">)</span> <span class="pun">{</span>
-         <span class="kwd">return</span><span class="pln"> array</span><span class="pun">[</span><span class="pln">index</span><span class="pun">];</span>
-      <span class="pun">}</span>
-      <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> setItem</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> index</span><span class="pun">,</span><span class="pln"> T value</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-         array</span><span class="pun">[</span><span class="pln">index</span><span class="pun">]</span> <span class="pun">=</span><span class="pln"> value</span><span class="pun">;</span>
-      <span class="pun">}</span>
-   <span class="pun">}</span>
-   <span class="kwd">class</span> <span class="typ">Tester</span> <span class="pun">{</span>
-      <span class="kwd">static</span> <span class="kwd">void</span> <span class="typ">Main</span><span class="pun">(</span><span class="kwd">string</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span> <span class="pun">{</span>
-
-         <span class="com">//declaring an int array</span>
-         <span class="typ">MyGenericArray</span><span class="str">&lt;int&gt;</span><span class="pln"> intArray </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">MyGenericArray</span><span class="str">&lt;int&gt;</span><span class="pun">(</span><span class="lit">5</span><span class="pun">);</span>
-
-         <span class="com">//setting values</span>
-         <span class="kwd">for</span> <span class="pun">(</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span> <span class="pun">{</span><span class="pln">
-            intArray</span><span class="pun">.</span><span class="pln">setItem</span><span class="pun">(</span><span class="pln">c</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">*</span><span class="lit">5</span><span class="pun">);</span>
-         <span class="pun">}</span>
-
-         <span class="com">//retrieving the values</span>
-         <span class="kwd">for</span> <span class="pun">(</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span> <span class="pun">{</span>
-            <span class="typ">Console</span><span class="pun">.</span><span class="typ">Write</span><span class="pun">(</span><span class="pln">intArray</span><span class="pun">.</span><span class="pln">getItem</span><span class="pun">(</span><span class="pln">c</span><span class="pun">)</span> <span class="pun">+</span> <span class="str">" "</span><span class="pun">);</span>
-         <span class="pun">}</span>
-
-         <span class="typ">Console</span><span class="pun">.</span><span class="typ">WriteLine</span><span class="pun">();</span>
-
-         <span class="com">//declaring a character array</span>
-         <span class="typ">MyGenericArray</span><span class="str">&lt;char&gt;</span><span class="pln"> charArray </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">MyGenericArray</span><span class="str">&lt;char&gt;</span><span class="pun">(</span><span class="lit">5</span><span class="pun">);</span>
-
-         <span class="com">//setting values</span>
-         <span class="kwd">for</span> <span class="pun">(</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span> <span class="pun">{</span><span class="pln">
-            charArray</span><span class="pun">.</span><span class="pln">setItem</span><span class="pun">(</span><span class="pln">c</span><span class="pun">,</span> <span class="pun">(</span><span class="kwd">char</span><span class="pun">)(</span><span class="pln">c</span><span class="pun">+</span><span class="lit">97</span><span class="pun">));</span>
-         <span class="pun">}</span>
-
-         <span class="com">//retrieving the values</span>
-         <span class="kwd">for</span> <span class="pun">(</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span> <span class="pun">{</span>
-            <span class="typ">Console</span><span class="pun">.</span><span class="typ">Write</span><span class="pun">(</span><span class="pln">charArray</span><span class="pun">.</span><span class="pln">getItem</span><span class="pun">(</span><span class="pln">c</span><span class="pun">)</span> <span class="pun">+</span> <span class="str">" "</span><span class="pun">);</span>
-         <span class="pun">}</span>
-         <span class="typ">Console</span><span class="pun">.</span><span class="typ">WriteLine</span><span class="pun">();</span>
-
-         <span class="typ">Console</span><span class="pun">.</span><span class="typ">ReadKey</span><span class="pun">();</span>
-      <span class="pun">}</span>
-   <span class="pun">}</span>
-<span class="pun">}</span></em></pre>
+            <p class="">- Properties enable a class to expose a public way of getting and setting values, while hiding implementation or verification code.</p>
+<p class="">- A <em><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/get" data-linktype="relative-path">get</a></em> property accessor is used to return the property value, and a <em><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/set" data-linktype="relative-path">set</a></em> property accessor is used to assign a new value. These accessors can have different access levels. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility" data-linktype="relative-path">Restricting Accessor Accessibility</a>.</p>
+<p class="">- The <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value" data-linktype="relative-path">value</a> keyword is used to define the value being assigned by the <code>set</code> accessor.</p>
+<p class="">- Properties can be <em>read-write</em> (they have both a <em><code>get</code></em> and a <em><code>set</code></em> accessor), <em>read-only</em> (they have a <code><em>get</em> </code>accessor but no <em><code>set</code></em> accessor), or <em>write-only</em> (they have a <em><code>set</code></em> accessor, but no <em><code>get</code></em> accessor). Write-only properties are rare and are most commonly used to restrict access to sensitive data.</p>
+<p class="">- Simple properties that require no custom accessor code can be implemented either as expression body definitions or as <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties" data-linktype="relative-path">auto-implemented properties</a>.</p>
+<p class=""><strong>Properties with backing fields</strong></p>
+<p class="">One basic pattern for implementing a property involves using a private backing field for setting and retrieving the property value. The <em><code>get</code></em> accessor returns the value of the private field, and the <em><code>set</code></em> accessor may perform some data validation before assigning a value to the private field. Both accessors may also perform some conversion or computation on the data before it is stored or returned.</p>
+<p class="">The following example illustrates this pattern. In this example, the <code>TimePeriod</code> class represents an interval of time. Internally, the class stores the time interval in seconds in a private field named <code>_seconds</code>. A read-write property named <code>Hours</code> allows the customer to specify the time interval in hours. Both the <code>get</code> and the <code>set</code>accessors perform the necessary conversion between hours and seconds. In addition, the <code>set</code> accessor validates the data and throws an <a class="xref" href="https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception" data-linktype="absolute-path">ArgumentOutOfRangeException</a> if the number of hours is invalid.</p>
+<p class=""><strong>Example</strong>:</p>
+<p><em>using System;</em></p>
+<p><em>class TimePeriod</em><br /><em>{</em><br /><em>private double _seconds;</em></p>
+<p><em>public double Hours</em><br /><em>{</em><br /><em>get { return _seconds / 3600; }</em><br /><em>set { </em><br /><em>if (value &lt; 0 || value &gt; 24)</em><br /><em>throw new ArgumentOutOfRangeException(</em><br /><em>$"{nameof(value)} must be between 0 and 24.");</em></p>
+<p><em>_seconds = value * 3600; </em><br /><em>}</em><br /><em>}</em><br /><em>}</em></p>
+<p><em>class Program</em><br /><em>{</em><br /><em>static void Main()</em><br /><em>{</em><br /><em>TimePeriod t = new TimePeriod();</em><br /><em>// The property assignment causes the \'set\' accessor to be called.</em><br /><em>t.Hours = 24;</em></p>
+<p><em>// Retrieving the property causes the \'get\' accessor to be called.</em><br /><em>Console.WriteLine($"Time in hours: {t.Hours}");</em><br /><em>}</em><br /><em>}</em></p>
+<p><br /><em>// The example displays the following output:</em><br /><em>// Time in hours: 24</em></p>
+<p class=""><strong>Auto-Implemented Properties</strong></p>
+<p class="">In some cases, property <em><code>get</code></em> and <em><code>set</code></em> accessors just assign a value to or retrieve a value from a backing field without including any additional logic. By using auto-implemented properties, you can simplify your code while having the C# compiler transparently provide the backing field for you.</p>
+<p class="">If a property has both a <em><code>get</code></em> and a <em><code>set</code></em> accessor, both must be auto-implemented. You define an auto-implemented property by using the <em><code>get</code></em> and <em><code>set</code></em> keywords without providing any implementation.</p>
+<p class=""><strong>Example</strong>:</p>
+<p><em>using System;</em></p>
+<p><em>public class SaleItem </em><br /><em>{</em><br /><em>public string Name </em><br /><em>{ get; set; } </em><br /><br /><em>public decimal Price </em><br /><em>{ get; set; } </em><br /><em>}</em></p>
+<p><em>class Program</em><br /><em>{ </em><br /><em>static void Main(string[] args)</em><br /><em>{</em><br /><em>var item = new SaleItem{ Name = "Shoes", Price = 19.95m }; </em><br /><em>Console.WriteLine($"{item.Name}: sells for {item.Price:C2}"); </em><br /><em>} }</em></p>
+<p><em>// The example displays output like the following: // Shoes: sells for $19.95</em></p>
             </pre></html>
             ]]>
         </item>
@@ -1738,14 +1638,11 @@ myPat.deathDate += GetPatInfo;
 <p>- Run Time also known as Late Binding or Overriding.</p>
 <p><strong>Compile Time Polymorphism or Early Binding:</strong></p>
 <p>In Compile time polymorphism or Early Binding we will use multiple methods with same name but different type of parameter or may be the number or parameter because of this we can perform different-different tasks with same method name in the same class which is also known as Method overloading.</p>
-<p><strong>Example</strong>:</p>
-<p><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image013.png" alt="ASP.NET" /></p>
+
 <div>&nbsp;</div>
 <div><strong>Run Time Polymorphism or Late Binding:</strong></div>
 <div>Run time polymorphism also known as late binding, in Run Time polymorphism or Late Binding we can do use same method names with same signatures means same type or same number of parameters but not in same class because compiler doesn\'t allowed that at compile time so we can use in derived class that bind at run time when a child class or derived class object will instantiated that\'s way we says that Late Binding. For that we have to create my parent class functions as partial and in driver or child class as override functions with override keyword.</div>
 <div>&nbsp;</div>
-<div><strong>Example</strong>:</div>
-<div><br /><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image014.png" alt="ASP.NET" />&nbsp;</div>
             </pre></html>
             ]]>
         </item>
@@ -1839,7 +1736,6 @@ myPat.deathDate += GetPatInfo;
 </div>
 <p>Because our our speaker is not an object of Author type.<br /><br /><strong>"as" operator:</strong></p>
 <div>The "as" operator behaves similar to the "is" operator. The only difference is it returns the object if both are compatible to that type else it returns null.</div>
-<div>&nbsp;</div>
 <div><strong>Example</strong>:</div>
 <p>Let\'s understand the preceding with a small snippet as in the following:</p>
 <div class="dp-highlighter">
@@ -1909,12 +1805,12 @@ myPat.deathDate += GetPatInfo;
             <![CDATA[<html><pre style="text-align:center">
             <p>Anonymous types allow us to create new type without defining them. This is way to defining read only properties into a single object without having to define type explicitly. Here Type is generating by the compiler and it is accessible only for the current block of code. The type of properties is also inferred by the compiler.<br /><br />We can create anonymous types by using "new" keyword together with the object initializer.&nbsp;<br /><br /><strong>Example</strong>&nbsp;</p>
 <div class="dp-highlighter">
-<p>var&nbsp;anonymousData&nbsp;=&nbsp;<span class="keyword">new</span>&nbsp;&nbsp;&nbsp;</p>
-<p>{&nbsp;&nbsp;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;ForeName&nbsp;=&nbsp;<span class="string">"Jignesh"</span>,&nbsp;&nbsp;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;SurName&nbsp;=&nbsp;<span class="string">"Trivedi"</span>&nbsp;&nbsp;</p>
-<p>};&nbsp;&nbsp;</p>
-<p>Console.WriteLine(<span class="string">"First&nbsp;Name&nbsp;:&nbsp;"</span>&nbsp;+&nbsp;anonymousData.ForeName); &nbsp;</p>
+<p><em>var&nbsp;anonymousData&nbsp;=&nbsp;<span class="keyword">new</span>&nbsp;&nbsp;&nbsp;</em></p>
+<p><em>{&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;ForeName&nbsp;=&nbsp;<span class="string">"Jignesh"</span>,&nbsp;&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;SurName&nbsp;=&nbsp;<span class="string">"Trivedi"</span>&nbsp;&nbsp;</em></p>
+<p><em>};&nbsp;&nbsp;</em></p>
+<p><em>Console.WriteLine(<span class="string">"First&nbsp;Name&nbsp;:&nbsp;"</span>&nbsp;+&nbsp;anonymousData.ForeName); &nbsp;</em></p>
 </div>
             </pre></html>
             ]]>
@@ -1925,7 +1821,7 @@ myPat.deathDate += GetPatInfo;
             <p>LINQ stands for Language Integrated Query. LINQ is a data querying methodology which provides querying capabilities to .NET languages with a syntax similar to a SQL query.<br /><br />LINQ has a great power of querying on any source of data. The data source could be collections of objects, database or XML files. We can easily retrieve data from any object that implements the IEnumerable&lt;T&gt; interface.</p>
 <p>1. LINQ offers an object-based, language-integrated way to query over data no matter where that data came from. So through LINQ we can query database, XML as well as collections.&nbsp;</p>
 <p><br />2. Compile time syntax checking.<br /><br /></p>
-<p>3. It allows you to query collections like arrays, enumerable classes etc in the native language of your application, like VB or C# in much the same way as you would query a database using SQL.<br /><br /><img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-and-answers/Images/image023.png" alt="ASP.NET" /></p>
+<p>3. It allows you to query collections like arrays, enumerable classes etc in the native language of your application, like VB or C# in much the same way as you would query a database using SQL.</p>
             </pre></html>
             ]]>
         </item>
@@ -1981,7 +1877,7 @@ myPat.deathDate += GetPatInfo;
 <p><em>7. <code>MemberwiseClone</code></em></p>
 <p>Most of these methods provide the basic implementation required of any type that a developer will work with in the .NET stack.</p>
 
-          pre></html>
+          </pre></html>
             ]]>
         </item>
         <!--what is .net web service-->
