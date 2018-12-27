@@ -14,12 +14,13 @@ import com.ahmet.interviewapp.R;
 import com.ahmet.interviewapp.Technical_Questions.AndroidTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.CSharpTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.JavaTechnicalQuestionsFragment;
+import com.ahmet.interviewapp.Technical_Questions.ObjectOrientedQuestionsFragment;
 
 
 public class TechnicalQuestionsFragment extends Fragment implements View.OnClickListener {
 
 
-    Button javaButton, androidButton, cSharpButton, htmlButton, phpButton, cssButton;
+    Button javaButton, androidButton, cSharpButton, objectOrientedButton, htmlButton, phpButton, cssButton;
     FragmentManager manager;
 
     public TechnicalQuestionsFragment() {
@@ -35,6 +36,7 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
         javaButton = (Button) view.findViewById(R.id.javaButton);
         androidButton = (Button) view.findViewById(R.id.androidButton);
         cSharpButton = (Button) view.findViewById(R.id.csharpButton);
+        objectOrientedButton = (Button) view.findViewById(R.id.objectOrientedButton);
 //        htmlButton = (Button) view.findViewById(R.id.htmlButton);
 //        phpButton = (Button) view.findViewById(R.id.phpButton);
 //        cssButton = (Button) view.findViewById(R.id.cssButton);
@@ -42,6 +44,7 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
         javaButton.setOnClickListener(this);
         androidButton.setOnClickListener(this);
         cSharpButton.setOnClickListener(this);
+        objectOrientedButton.setOnClickListener(this);
 //        htmlButton.setOnClickListener(this);
 //        phpButton.setOnClickListener(this);
 //        cssButton.setOnClickListener(this);
@@ -78,8 +81,13 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
                 CSharpTechnicalQuestionsFragment cSharpTechnicalQuestionsFragment = new CSharpTechnicalQuestionsFragment();
                 manager.beginTransaction().replace(R.id.content_layout, cSharpTechnicalQuestionsFragment).addToBackStack(null).commit();
 
+                break;
 
-//                break;
+            case R.id.objectOrientedButton:
+                ObjectOrientedQuestionsFragment objectOrientedQuestionsFragment = new ObjectOrientedQuestionsFragment();
+                manager.beginTransaction().replace(R.id.content_layout, objectOrientedQuestionsFragment).addToBackStack(null).commit();
+
+                break;
 //            case R.id.htmlButton:
 //
 //                break;

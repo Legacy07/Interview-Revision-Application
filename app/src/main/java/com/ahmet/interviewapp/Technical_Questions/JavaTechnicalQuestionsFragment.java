@@ -22,7 +22,6 @@ import java.util.ArrayList;
 
 public class JavaTechnicalQuestionsFragment extends Fragment {
 
-
     ListView javaTechnicalListView;
     ArrayList<Questions> questionsArrayList = new ArrayList<>();
     Questions questions;
