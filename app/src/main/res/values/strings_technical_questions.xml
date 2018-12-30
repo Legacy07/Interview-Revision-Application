@@ -1981,48 +1981,20 @@
              <![CDATA[<html><pre style="text-align:center">
             <p>- It is a technique to hide the properties and behaviours of an object.&nbsp;<br />- The access is provided only as required which are used by \'getters\' &amp;\'setters\'.&nbsp;<br />- It prevents other objects from altering or accessing the properties of an encapsulated object.&nbsp;<br />- Encapsulation can be achieved by using private, protected or internal access specifiers.</p>
 <p><strong>Example</strong>:&nbsp;</p>
-<pre class="prettyprint notranslate prettyprinted"><em><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">EncapTest</span> <span class="pun">{</span>
-   <span class="kwd">private</span> <span class="typ">String</span><span class="pln"> name</span><span class="pun">;</span>
-   <span class="kwd">private</span> <span class="typ">String</span><span class="pln"> idNum</span><span class="pun">;</span>
-   <span class="kwd">private</span> <span class="kwd">int</span><span class="pln"> age</span><span class="pun">;</span>
 
-   <span class="kwd">public</span> <span class="kwd">int</span><span class="pln"> getAge</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="kwd">return</span><span class="pln"> age</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="typ">String</span><span class="pln"> getName</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="kwd">return</span><span class="pln"> name</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="typ">String</span><span class="pln"> getIdNum</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="kwd">return</span><span class="pln"> idNum</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> setAge</span><span class="pun">(</span> <span class="kwd">int</span><span class="pln"> newAge</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-      age </span><span class="pun">=</span><span class="pln"> newAge</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> setName</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> newName</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-      name </span><span class="pun">=</span><span class="pln"> newName</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> setIdNum</span><span class="pun">(</span> <span class="typ">String</span><span class="pln"> newId</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-      idNum </span><span class="pun">=</span><span class="pln"> newId</span><span class="pun">;</span>
-   <span class="pun">}</span>
-</em><span class="pun"><em>}</em><br /><br /></span>The public setXXX() and getXXX() methods are the access points of the instance variables of the EncapTest class. Normally, these methods are referred as getters and setters. Therefore, any class that wants to access the variables should access them through these getters and setters.<br /><br /><em><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">RunEncap</span> <span class="pun">{</span>
-
-   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
-      <span class="typ">EncapTest</span><span class="pln"> encap </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">EncapTest</span><span class="pun">();</span><span class="pln">
-      encap</span><span class="pun">.</span><span class="pln">setName</span><span class="pun">(</span><span class="str">"James"</span><span class="pun">);</span><span class="pln">
-      encap</span><span class="pun">.</span><span class="pln">setAge</span><span class="pun">(</span><span class="lit">20</span><span class="pun">);</span><span class="pln">
-      encap</span><span class="pun">.</span><span class="pln">setIdNum</span><span class="pun">(</span><span class="str">"12343ms"</span><span class="pun">);</span>
-
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Name : "</span> <span class="pun">+</span><span class="pln"> encap</span><span class="pun">.</span><span class="pln">getName</span><span class="pun">()</span> <span class="pun">+</span> <span class="str">" Age : "</span> <span class="pun">+</span><span class="pln"> encap</span><span class="pun">.</span><span class="pln">getAge</span><span class="pun">());</span>
-   <span class="pun">}</span>
-<span class="pun">}<br /><br /><br /></span></em><strong><span class="pun">Output: <br /></span></strong></pre>
-<pre class="result notranslate">Name : James Age : 20
-</pre>
-<pre class="prettyprint notranslate prettyprinted">&nbsp;</pre>
+<p><em>public class EncapTest {</em><br /><em>private String name;</em><br /><em>private String idNum;</em><br /><em>private int age;</em></p>
+<p><em>public int getAge() {</em><br /><em>return age;</em><br /><em>}</em></p>
+<p><em>public String getName() {</em><br /><em>return name;</em><br /><em>}</em></p>
+<p><em>public String getIdNum() {</em><br /><em>return idNum;</em><br /><em>}</em></p>
+<p><em>public void setAge( int newAge) {</em><br /><em>age = newAge;</em><br /><em>}</em></p>
+<p><em>public void setName(String newName) {</em><br /><em>name = newName;</em><br /><em>}</em></p>
+<p><em>public void setIdNum( String newId) {</em><br /><em>idNum = newId;</em><br /><em>}</em><br /><em>}</em></p>
+<pre class="prettyprint notranslate prettyprinted"><span class="pun"><br /></span>The public setXXX() and getXXX() methods are the access points of the instance variables of the EncapTest class. Normally, these methods are referred as getters and setters. Therefore, any class that wants to access the variables should access them through these getters and setters.<br /><br /></pre>
+<p><em>public class RunEncap {</em></p>
+<p><em>public static void main(String args[]) {</em><br /><em>EncapTest encap = new EncapTest();</em><br /><em>encap.setName("James");</em><br /><em>encap.setAge(20);</em><br /><em>encap.setIdNum("12343ms");</em></p>
+<p><em>System.out.print("Name : " + encap.getName() + " Age : " + encap.getAge());</em><br /><em>}</em><br /><em>}</em></p>
+<pre class="prettyprint notranslate prettyprinted"><strong><span class="pun">Output: <br /></span></strong></pre>
+<pre class="result notranslate">Name : James Age : 20</pre>
 
             </pre></html>
             ]]>
@@ -2035,15 +2007,10 @@
 <p>The reference variable can be reassigned to other objects provided that it is not declared final. The type of the reference variable would determine the methods that it can invoke on the object.</p>
 <p>A reference variable can refer to any object of its declared type or any subtype of its declared type. A reference variable can be declared as a class or interface type.</p>
 <p><strong>Example</strong>:</p>
-<pre class="prettyprint notranslate prettyprinted"><em><span class="kwd">public</span> <span class="kwd">interface</span> <span class="typ">Vegetarian</span><span class="pun">{}</span>
-<span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">Animal</span><span class="pun">{}</span>
-<span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">Deer</span> <span class="kwd">extends</span> <span class="typ">Animal</span> <span class="kwd">implements</span> <span class="typ">Vegetarian</span><span class="pun">{}</span></em></pre>
-<p>When we apply the reference variable facts to a Deer object reference, the following declarations are legal;&nbsp;</p>
-<pre class="prettyprint notranslate prettyprinted"><em><span class="typ">Deer</span><span class="pln"> d </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">Deer</span><span class="pun">();</span>
-<span class="typ">Animal</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> d</span><span class="pun">;</span>
-<span class="typ">Vegetarian</span><span class="pln"> v </span><span class="pun">=</span><span class="pln"> d</span><span class="pun">;</span>
-<span class="typ">Object</span><span class="pln"> o </span><span class="pun">=</span><span class="pln"> d</span><span class="pun">;</span></em></pre>
 
+<p><em>public interface Vegetarian{}</em><br /><em>public class Animal{}</em><br /><em>public class Deer extends Animal implements Vegetarian{}</em></p>
+<p>When we apply the reference variable facts to a Deer object reference, the following declarations are legal;&nbsp;</p>
+<p><em>Deer d = new Deer();</em><br /><em>Animal a = d;</em><br /><em>Vegetarian v = d;</em><br /><em>Object o = d;</em></p>
 
             </pre></html>
             ]]>
@@ -2054,38 +2021,13 @@
             <p>Inheritance can be defined as the process where one class acquires the properties (methods and fields) of another. With the use of inheritance the information is made manageable in a hierarchical order.</p>
 <p>The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).</p>
 <p><strong>Example</strong>:&nbsp;</p>
-<pre class="prettyprint notranslate prettyprinted"><em><span class="kwd">class</span> <span class="typ">Calculation</span> <span class="pun">{</span>
-   <span class="kwd">int</span><span class="pln"> z</span><span class="pun">;</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> addition</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span> <span class="kwd">int</span><span class="pln"> y</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-      z </span><span class="pun">=</span><span class="pln"> x </span><span class="pun">+</span><span class="pln"> y</span><span class="pun">;</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"The sum of the given numbers:"</span><span class="pun">+</span><span class="pln">z</span><span class="pun">);</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span> <span class="typ">Subtraction</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span> <span class="kwd">int</span><span class="pln"> y</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-      z </span><span class="pun">=</span><span class="pln"> x </span><span class="pun">-</span><span class="pln"> y</span><span class="pun">;</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"The difference between the given numbers:"</span><span class="pun">+</span><span class="pln">z</span><span class="pun">);</span>
-   <span class="pun">}</span>
-<span class="pun">}</span>
-
-<span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">My_Calculation</span> <span class="kwd">extends</span> <span class="typ">Calculation</span> <span class="pun">{</span>
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> multiplication</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span> <span class="kwd">int</span><span class="pln"> y</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-      z </span><span class="pun">=</span><span class="pln"> x </span><span class="pun">*</span><span class="pln"> y</span><span class="pun">;</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"The product of the given numbers:"</span><span class="pun">+</span><span class="pln">z</span><span class="pun">);</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
-      <span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span> <span class="lit">20</span><span class="pun">,</span><span class="pln"> b </span><span class="pun">=</span> <span class="lit">10</span><span class="pun">;</span>
-      <span class="typ">My_Calculation</span><span class="pln"> demo </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">My_Calculation</span><span class="pun">();</span><span class="pln">
-      demo</span><span class="pun">.</span><span class="pln">addition</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> b</span><span class="pun">);</span><span class="pln">
-      demo</span><span class="pun">.</span><span class="typ">Subtraction</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> b</span><span class="pun">);</span><span class="pln">
-      demo</span><span class="pun">.</span><span class="pln">multiplication</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> b</span><span class="pun">);</span>
-   <span class="pun">}</span>
-<span class="pun">}</span></em></pre>
+    <p><em>class Calculation {</em><br /><em> int z;</em></p>
+<p><em> public void addition(int x, int y) {</em><br /><em> z = x + y;</em><br /><em> System.out.println("The sum of the given numbers:"+z);</em><br /><em> }</em></p>
+<p><em> public void Subtraction(int x, int y) {</em><br /><em> z = x - y;</em><br /><em> System.out.println("The difference between the given numbers:"+z);</em><br /><em> }</em><br /><em>}</em></p>
+<p><em>public class My_Calculation extends Calculation {</em><br /><em> public void multiplication(int x, int y) {</em><br /><em> z = x * y;</em><br /><em> System.out.println("The product of the given numbers:"+z);</em><br /><em> }</em></p>
+<p><em> public static void main(String args[]) {</em><br /><em> int a = 20, b = 10;</em><br /><em> My_Calculation demo = new My_Calculation();</em><br /><em> demo.addition(a, b);</em><br /><em> demo.Subtraction(a, b);</em><br /><em> demo.multiplication(a, b);</em><br /><em> }</em><br /><em>}</em></p>
 <p><strong>Output</strong>:</p>
-<pre class="result notranslate">The sum of the given numbers:30
-The difference between the given numbers:10
-The product of the given numbers:200</pre>
+<p>The sum of the given numbers:30<br />The difference between the given numbers:10<br />The product of the given numbers:200</p>
 
 
             </pre></html>
@@ -2098,96 +2040,28 @@ The product of the given numbers:200</pre>
 <p>Likewise in Object-oriented programming, abstraction is a process of hiding the implementation details from the user, only the functionality will be provided to the user. In other words, the user will have the information on what the object does instead of how it does it.</p>
 <p><strong>Abstraction</strong> is achieved using <strong>Abstract classes</strong> and <strong>Interfaces</strong>.</p>
 <p><strong>Example:</strong></p>
-<pre class="prettyprint notranslate prettyprinted"><em><span class="kwd">public</span> <span class="kwd">abstract</span> <span class="kwd">class</span> <span class="typ">Employee</span> <span class="pun">{</span>
-   <span class="kwd">private</span> <span class="typ">String</span><span class="pln"> name</span><span class="pun">;</span>
-   <span class="kwd">private</span> <span class="typ">String</span><span class="pln"> address</span><span class="pun">;</span>
-   <span class="kwd">private</span> <span class="kwd">int</span><span class="pln"> number</span><span class="pun">;</span>
 
-   <span class="kwd">public</span> <span class="typ">Employee</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> name</span><span class="pun">,</span> <span class="typ">String</span><span class="pln"> address</span><span class="pun">,</span> <span class="kwd">int</span><span class="pln"> number</span><span class="pun">)</span> <span class="pun">{</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Constructing an Employee"</span><span class="pun">);</span>
-      <span class="kwd">this</span><span class="pun">.</span><span class="pln">name </span><span class="pun">=</span><span class="pln"> name</span><span class="pun">;</span>
-      <span class="kwd">this</span><span class="pun">.</span><span class="pln">address </span><span class="pun">=</span><span class="pln"> address</span><span class="pun">;</span>
-      <span class="kwd">this</span><span class="pun">.</span><span class="pln">number </span><span class="pun">=</span><span class="pln"> number</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">double</span><span class="pln"> computePay</span><span class="pun">()</span> <span class="pun">{</span>
-     <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Inside Employee computePay"</span><span class="pun">);</span>
-     <span class="kwd">return</span> <span class="lit">0.0</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> mailCheck</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Mailing a check to "</span> <span class="pun">+</span> <span class="kwd">this</span><span class="pun">.</span><span class="pln">name </span><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span> <span class="kwd">this</span><span class="pun">.</span><span class="pln">address</span><span class="pun">);</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="typ">String</span><span class="pln"> toString</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="kwd">return</span><span class="pln"> name </span><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span><span class="pln"> address </span><span class="pun">+</span> <span class="str">" "</span> <span class="pun">+</span><span class="pln"> number</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="typ">String</span><span class="pln"> getName</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="kwd">return</span><span class="pln"> name</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="typ">String</span><span class="pln"> getAddress</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="kwd">return</span><span class="pln"> address</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> setAddress</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> newAddress</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-      address </span><span class="pun">=</span><span class="pln"> newAddress</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">int</span><span class="pln"> getNumber</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="kwd">return</span><span class="pln"> number</span><span class="pun">;</span>
-   <span class="pun">}</span>
-<span class="pun">}</span></em></pre>
+         <p><em>public abstract class Employee {</em><br /><em>private String name;</em><br /><em>private String address;</em><br /><em>private int number;</em></p>
+<p><em>public Employee(String name, String address, int number) {</em><br /><em>System.out.println("Constructing an Employee");</em><br /><em>this.name = name;</em><br /><em>this.address = address;</em><br /><em>this.number = number;</em><br /><em>}</em></p>
+<p><em>public double computePay() {</em><br /><em>System.out.println("Inside Employee computePay");</em><br /><em>return 0.0;</em><br /><em>}</em></p>
+<p><em>public void mailCheck() {</em><br /><em>System.out.println("Mailing a check to " + this.name + " " + this.address);</em><br /><em>}</em></p>
+<p><em>public String toString() {</em><br /><em>return name + " " + address + " " + number;</em><br /><em>}</em></p>
+<p><em>public String getName() {</em><br /><em>return name;</em><br /><em>}</em></p>
+<p><em>public String getAddress() {</em><br /><em>return address;</em><br /><em>}</em></p>
+<p><em>public void setAddress(String newAddress) {</em><br /><em>address = newAddress;</em><br /><em>}</em></p>
+<p><em>public int getNumber() {</em><br /><em>return number;</em><br /><em>}</em><br /><em>}</em></p>
 <p>We can inherit the properties of Employee class just like concrete class in the following way;&nbsp;</p>
-<pre class="prettyprint notranslate prettyprinted"><em><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">Salary</span> <span class="kwd">extends</span> <span class="typ">Employee</span> <span class="pun">{</span>
-   <span class="kwd">private</span> <span class="kwd">double</span><span class="pln"> salary</span><span class="pun">;</span>   <span class="com">// Annual salary</span>
-
-   <span class="kwd">public</span> <span class="typ">Salary</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> name</span><span class="pun">,</span> <span class="typ">String</span><span class="pln"> address</span><span class="pun">,</span> <span class="kwd">int</span><span class="pln"> number</span><span class="pun">,</span> <span class="kwd">double</span><span class="pln"> salary</span><span class="pun">)</span> <span class="pun">{</span>
-      <span class="kwd">super</span><span class="pun">(</span><span class="pln">name</span><span class="pun">,</span><span class="pln"> address</span><span class="pun">,</span><span class="pln"> number</span><span class="pun">);</span><span class="pln">
-      setSalary</span><span class="pun">(</span><span class="pln">salary</span><span class="pun">);</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> mailCheck</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Within mailCheck of Salary class "</span><span class="pun">);</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Mailing check to "</span> <span class="pun">+</span><span class="pln"> getName</span><span class="pun">()</span> <span class="pun">+</span> <span class="str">" with salary "</span> <span class="pun">+</span><span class="pln"> salary</span><span class="pun">);</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">double</span><span class="pln"> getSalary</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="kwd">return</span><span class="pln"> salary</span><span class="pun">;</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">void</span><span class="pln"> setSalary</span><span class="pun">(</span><span class="kwd">double</span><span class="pln"> newSalary</span><span class="pun">)</span> <span class="pun">{</span>
-      <span class="kwd">if</span><span class="pun">(</span><span class="pln">newSalary </span><span class="pun">&gt;=</span> <span class="lit">0.0</span><span class="pun">)</span> <span class="pun">{</span><span class="pln">
-         salary </span><span class="pun">=</span><span class="pln"> newSalary</span><span class="pun">;</span>
-      <span class="pun">}</span>
-   <span class="pun">}</span>
-
-   <span class="kwd">public</span> <span class="kwd">double</span><span class="pln"> computePay</span><span class="pun">()</span> <span class="pun">{</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Computing salary pay for "</span> <span class="pun">+</span><span class="pln"> getName</span><span class="pun">());</span>
-      <span class="kwd">return</span><span class="pln"> salary</span><span class="pun">/</span><span class="lit">52</span><span class="pun">;</span>
-   <span class="pun">}</span>
-<span class="pun">}<br /><br /></span></em><span class="pun">Here, you cannot instantiate the Employee class, but you can instantiate the Salary Class, and using this instance you can access all the three fields and seven methods of Employee class as shown below.<br /></span></pre>
-<pre class="prettyprint notranslate prettyprinted"><em><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">AbstractDemo</span> <span class="pun">{</span>
-
-   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span> <span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span> <span class="pun">{</span>
-      <span class="typ">Salary</span><span class="pln"> s </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">Salary</span><span class="pun">(</span><span class="str">"Mohd Mohtashim"</span><span class="pun">,</span> <span class="str">"Ambehta, UP"</span><span class="pun">,</span> <span class="lit">3</span><span class="pun">,</span> <span class="lit">3600.00</span><span class="pun">);</span>
-      <span class="typ">Employee</span><span class="pln"> e </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">Salary</span><span class="pun">(</span><span class="str">"John Adams"</span><span class="pun">,</span> <span class="str">"Boston, MA"</span><span class="pun">,</span> <span class="lit">2</span><span class="pun">,</span> <span class="lit">2400.00</span><span class="pun">);</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Call mailCheck using Salary reference --"</span><span class="pun">);</span><span class="pln">
-      s</span><span class="pun">.</span><span class="pln">mailCheck</span><span class="pun">();</span>
-      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"\n Call mailCheck using Employee reference--"</span><span class="pun">);</span><span class="pln">
-      e</span><span class="pun">.</span><span class="pln">mailCheck</span><span class="pun">();</span>
-   <span class="pun">}</span>
-<span class="pun">}</span></em></pre>
-<pre class="prettyprint notranslate prettyprinted"><strong>Output</strong>:<br />Constructing an Employee
-Constructing an Employee
-Call mailCheck using Salary reference --
-Within mailCheck of Salary class
-Mailing check to Mohd Mohtashim with salary 3600.0
-
- Call mailCheck using Employee reference--
-Within mailCheck of Salary class
-Mailing check to John Adams with salary 2400.0</pre>
+<p><em>public class Salary extends Employee {</em><br /><em>private double salary; // Annual salary</em></p>
+<p><em>public Salary(String name, String address, int number, double salary) {</em><br /><em>super(name, address, number);</em><br /><em>setSalary(salary);</em><br /><em>}</em></p>
+<p><em>public void mailCheck() {</em><br /><em>System.out.println("Within mailCheck of Salary class ");</em><br /><em>System.out.println("Mailing check to " + getName() + " with salary " + salary);</em><br /><em>}</em></p>
+<p><em>public double getSalary() {</em><br /><em>return salary;</em><br /><em>}</em></p>
+<p><em>public void setSalary(double newSalary) {</em><br /><em>if(newSalary &gt;= 0.0) {</em><br /><em>salary = newSalary;</em><br /><em>}</em><br /><em>}</em></p>
+<p><em>public double computePay() {</em><br /><em>System.out.println("Computing salary pay for " + getName());</em><br /><em>return salary/52;</em><br /><em>}</em><br /><em>}</em></p>
+<p>Here, you cannot instantiate the Employee class, but you can instantiate the Salary Class, and using this instance you can access all the three fields and seven methods of Employee class as shown below.</p>
+<p><em>public class AbstractDemo {</em></p>
+<p><em>public static void main(String [] args) {</em><br /><em>Salary s = new Salary("Mohd Mohtashim", "Ambehta, UP", 3, 3600.00);</em><br /><em>Employee e = new Salary("John Adams", "Boston, MA", 2, 2400.00);</em><br /><em>System.out.println("Call mailCheck using Salary reference --");</em><br /><em>s.mailCheck();</em><br /><em>System.out.println("\n Call mailCheck using Employee reference--");</em><br /><em>e.mailCheck();</em><br /><em>}</em><br /><em>}</em></p>
+<p><strong>Output</strong>:<br />Constructing an Employee Constructing an Employee Call mailCheck using Salary reference -- Within mailCheck of Salary class Mailing check to Mohd Mohtashim with salary 3600.0 Call mailCheck using Employee reference-- Within mailCheck of Salary class Mailing check to John Adams with salary 2400.0</p>
+        </pre>
 
             </pre></html>
             ]]>
@@ -2221,13 +2095,15 @@ Mailing check to John Adams with salary 2400.0</pre>
         <!--what is a class, constructor, destructor and object-->
         <item>
              <![CDATA[<html><pre style="text-align:center">
-            <p>A <strong>class</strong> is simply a representation of a type of object. It is the blueprint/ plan/ template that describe the details of an object.</p>
+             <p>A <strong>class</strong> is simply a representation of a type of object. It is the blueprint/ plan/ template that describe the details of an object.</p>
 <p><strong>Object</strong> is termed as an instance of a class, and it has its own state, behavior and identity.</p>
-<p id="8b2d" class="graf graf--p graf-after--p"><strong>Constructor</strong> is a method used to initialize the state of an object, and it gets invoked at the time of object creation. Rules forconstructor are:</p>
+<p id="8b2d" class="graf graf--p graf-after--p"><strong>Constructor</strong> is a method used to initialize the state of an object, and it gets invoked at the time of object creation.</p>
+<p class="graf graf--p graf-after--p">Rules forconstructor are:</p>
 <p id="8c2b" class="graf graf--p graf-after--p">- Constructor Name should be same asclass name.</p>
 <p id="08f7" class="graf graf--p graf-after--p">- Constructor must have no return type.</p>
 <p class="graf graf--p graf-after--p">A <strong>Destructor</strong> is a method which is invoked at the time of the object is destroyed or when its&rsquo; scope is about to end. The method will be called explicitly or implicitly based on the programming language used. In C++, destructor needs to be called whereas in Java, it is not needed and it will be handled by garbage collection mechanism.</p>
-            </pre></html>
+
+              </pre></html>
             ]]>
         </item>
         <!--tell me the differences between abstract class and an interface-->
@@ -2240,8 +2116,7 @@ Mailing check to John Adams with salary 2400.0</pre>
         <!--what is exception handling-->
         <item>
              <![CDATA[<html><pre style="text-align:center">
-            <p>Exception is an event that occurs during the execution of a program. Exceptions can be of any type  - <em>Run time exception</em>,&nbsp;<em>Error exceptions</em>. Those exceptions are handled properly through exception handling mechanism like try, catch and throw keywords.</p>
-
+            <p>Exception is an event that occurs during the execution of a program. Exceptions can be of any type  - <strong>Run time exception,&nbsp;Error exceptions</strong>. Those exceptions are handled properly through exception handling mechanism like <strong>try</strong>, <strong>catch</strong> and <strong>throw</strong> keywords.</p>
             </pre></html>
             ]]>
         </item>
@@ -2262,7 +2137,7 @@ Mailing check to John Adams with salary 2400.0</pre>
         <!--what are different types of arguments-->
         <item>
              <![CDATA[<html><pre style="text-align:center">
-                <p>A parameter is a variable used during the declaration of the function or subroutine and arguments are passed to the an, and it should match with the parameter defined. There are two types of Arguments.</p>
+                <p>A parameter is a variable used during the declaration of the function or subroutine and arguments are passed to the an, and it should match with the parameter defined. There are two types of arguments.</p>
 <p>&nbsp;- Call by Value: Value passed will get modified only inside the function, and it returns the same value whatever it is passed it into the function.</p>
 <p>&nbsp;- Call by Reference: Value passed will get modified in both inside and outside the functions and it returns the same or different value.</p>
             </pre></html>
