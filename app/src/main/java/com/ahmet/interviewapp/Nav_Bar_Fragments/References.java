@@ -1,7 +1,10 @@
 package com.ahmet.interviewapp.Nav_Bar_Fragments;
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -11,14 +14,23 @@ import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ahmet.interviewapp.R;
 import com.xeoh.android.texthighlighter.TextHighlighter;
+
+import java.io.FileOutputStream;
 
 public class References extends Fragment {
 
@@ -136,43 +148,31 @@ public class References extends Fragment {
 
     }
 
-//    //inflating the menu on action bar within fragment
-//    @Override
-//    public void onCreateOptionsMenu(
-//            Menu menu, MenuInflater inflater) {
-//        inflater.inflate(R.menu.references_menu, menu);
-//    }
+    //inflating the menu on action bar within fragment
+    @Override
+    public void onCreateOptionsMenu(
+            Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.references_menu, menu);
+    }
 
     //action bar button options
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        String fileName = String.valueOf(getActivity().getApplicationInfo().loadLabel(getActivity().getPackageManager())) + "_References.txt";
-//        FileOutputStream outputStream;
-//
-//        switch (item.getItemId()) {
-//            //save file internally
-//            case R.id.saveFileBarButton:
-////                https://developer.android.com/training/data-storage/files#java
-////                File file = new File(getActivity().getFilesDir(), fileName);
-//
-//                try {
-////                    https://stackoverflow.com/questions/35481924/write-a-string-to-a-file/35481977
-//                    outputStream = getActivity().openFileOutput(fileName, Context.MODE_PRIVATE);
-//                    outputStream.write(referenceTextView.toString().getBytes());
-//                    outputStream.close();
-//                } catch (Exception e) {
-//                    Toast.makeText(getActivity(), "Error saving file!", Toast.LENGTH_LONG).show();
-//                    e.printStackTrace();
-//                }
-//
-//                return true;
-//
-//            default:
-//                // If we got here, the user's action was not recognized.
-//                // Invoke the superclass to handle it.
-//                return super.onOptionsItemSelected(item);
-//
-//        }
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case R.id.saveFileBarButton:
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://ahmetince.co.uk/android_projects/interview_revision_app_references.html"));
+                startActivity(browserIntent);
+
+                return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
 
 }

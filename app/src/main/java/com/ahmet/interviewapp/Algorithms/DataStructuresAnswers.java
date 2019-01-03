@@ -19,9 +19,6 @@ import com.ahmet.interviewapp.R;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class DataStructuresAnswers extends Fragment implements View.OnClickListener {
 
     ViewPager viewPager;
