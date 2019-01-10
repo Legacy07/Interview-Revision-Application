@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.ahmet.interviewapp.Adaptors.QuestionsListViewAdaptor;
 import com.ahmet.interviewapp.Models.AddQuestions;
@@ -20,16 +19,16 @@ import com.ahmet.interviewapp.R;
 
 import java.util.ArrayList;
 
-public class CSharpTechnicalQuestionsFragment extends Fragment {
+public class GeneralWebQuestionsFragment extends Fragment {
 
-    ListView cSharpTechnicalList;
+    ListView technicalListview;
 
     ArrayList<Questions> questionsArrayList = new ArrayList<>();
     Questions questions;
     QuestionsListViewAdaptor listViewAdaptor;
 
-    public CSharpTechnicalQuestionsFragment() {
-        // Required empty public constructor
+
+    public GeneralWebQuestionsFragment() {
     }
 
 
@@ -39,24 +38,24 @@ public class CSharpTechnicalQuestionsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.questions_layout, container, false);
 
-        cSharpTechnicalList = (ListView) view.findViewById(R.id.listView);
+        technicalListview = (ListView) view.findViewById(R.id.listView);
         //initialise Adaptor
         listViewAdaptor = new QuestionsListViewAdaptor(getActivity(), questionsArrayList);
 
-        String[] questionsArray = getResources().getStringArray(R.array.csharpTechnicalQuestions);
+        String[] questionsArray = getResources().getStringArray(R.array.general_web_questions);
         //add the questions in listview
         AddQuestions addQuestions = new AddQuestions();
         addQuestions.add(getActivity(), questions, questionsArrayList, questionsArray, listViewAdaptor);
-        cSharpTechnicalList.setAdapter(listViewAdaptor);
+        technicalListview.setAdapter(listViewAdaptor);
 
-        cSharpTechnicalList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        technicalListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 //open slides when clicked on a list item
-                CSharpTechnicalAnswers cSharpTechnicalAnswers = new CSharpTechnicalAnswers();
+                GeneralWebAnswers generalWebAnswers = new GeneralWebAnswers();
 
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_layout, cSharpTechnicalAnswers).addToBackStack(null).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_layout, generalWebAnswers).addToBackStack(null).commit();
 //                send the position of the item so it opens the corresponding slide to the question
                 Bundle bundle = new Bundle();
                 bundle.putInt("Position", position);
@@ -66,7 +65,7 @@ public class CSharpTechnicalQuestionsFragment extends Fragment {
         });
 
 
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("C# Technical Questions");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("General Web Questions");
 
         return view;
     }

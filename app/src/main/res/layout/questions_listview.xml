@@ -9,12 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:padding="10dp"
+        android:layout_margin="5dp"
         android:background="@drawable/rounded_box"
         android:drawableRight="@drawable/ic_next"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="@dimen/subHeader_size"
         android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/text_size"
         />
 
 </RelativeLayout>

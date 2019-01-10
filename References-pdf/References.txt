@@ -193,6 +193,21 @@ General Object Oriented
 - https://www.tutorialspoint.com/java/java_encapsulation.htm
 - https://medium.com/@LiliOuakninFelsen/functional-vs-object-oriented-vs-procedural-programming-a3d4585557f3
 
+General Web
+- https://www.wisdomjobs.com/e-university/internet-interview-questions.html
+- https://learning.naukri.com/articles/top-20-web-developer-interview-questions-answers/
+- https://www.toptal.com/web/interview-questionsx
+- https://www.codementor.io/blog/web-developer-interview-questions-3ey8yl7epg
+- https://career.guru99.com/top-17-web-developer-interview-questions/
+
+Html 
+- https://www.techbeamers.com/top-web-developer-interview-questions/
+- 
+- 
+- 
+- 
+- 
+- 
 
 pdf references 
 - https://theinterviewguys.com/jeff-mike-resources/

@@ -8,9 +8,10 @@
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/technicalTable"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:padding="5dp"
-        android:stretchColumns="*">
+        android:stretchColumns="*"
+        >
 
         <TableRow
             android:layout_weight="2"
@@ -18,7 +19,7 @@
 
             <Button
                 android:id="@+id/objectOrientedButton"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:drawableBottom="@drawable/object_oriented"
                 android:fontFamily="@font/montserrat"
@@ -32,7 +33,7 @@
 
             <Button
                 android:id="@+id/javaButton"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:drawableBottom="@drawable/java"
                 android:fontFamily="@font/montserrat"
@@ -46,7 +47,7 @@
 
             <Button
                 android:id="@+id/androidButton"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:drawableBottom="@drawable/android"
                 android:fontFamily="@font/montserrat"
@@ -60,11 +61,25 @@
 
             <Button
                 android:id="@+id/csharpButton"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:drawableBottom="@drawable/csharp"
                 android:fontFamily="@font/montserrat"
                 android:text="C#"
+                android:textSize="@dimen/text_size" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="2"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/generalWebButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:drawableBottom="@drawable/general_web"
+                android:text="General Web"
                 android:textSize="@dimen/text_size" />
         </TableRow>
 
@@ -97,16 +112,5 @@
         <!--</TableRow>-->
 
     </TableLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/technicalTable"
-        android:background="@color/colorBlack"
-        android:gravity="center_horizontal"
-        android:paddingTop="10dp"
-        android:text="More Content Coming Soon - HTML/CSS, PHP and JS"
-        android:textColor="@color/colorAccent"
-        android:textSize="20dp" />
 
 </RelativeLayout>

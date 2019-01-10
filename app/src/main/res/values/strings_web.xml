@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--general web questions-->
+    <string-array name="general_web_questions">
+        <item>
+            Can you explain the back-end process after clicking on a link to a web page?
+        </item>
+        <item>
+            What Is Common Gateway Interface?
+        </item>
+        <item>
+            Describe the key advantages of HTTP/2 as compared with HTTP 1.1.
+        </item>
+        <item>
+            Explain the purpose of each of the HTTP request types when used with a RESTful web service.
+        </item>
+        <item>
+            What is a "MIME type", what does it consist of, and what is it used for? Provide an example.
+        </item>
+        <item>
+            Explain the basic structure of a MIME multipart message when used to transfer different content type parts. Provide a simple example.
+        </item>
+        <item>
+            What is Long polling, how does it work, and why would you use it? Considering server and client resources, what is the main drawback of using long polling? Which HTML5 feature is the best alternative to long polling?
+        </item>
+        <item>
+            Explain the difference between stateless and stateful protocols. Which type of protocol is HTTP? Explain your answer.
+        </item>
+        <item>
+            How do you take into account SEO, maintainability, UX, performance, and security when you’re building a web application?
+        </item>
+        <item>
+            What is CORS?
+        </item>
+        <item>
+            How can you reduce page loading time?
+        </item>
+        <item>
+            What\'s the difference between Canvas and SVG?
+        </item>
+        <item>
+            Explain what is DTD (Document Type Declaration)? Mention what is the difference between CDATA and PCDATA in DTD?
+        </item>
+        <item>
+            Explain what is the difference between cookies and local storage?
+        </item>
+
+    </string-array>
+
+    <!--general web answers-->
+    <string-array name="general_web_answers">
+        <!--Can you explain the back-end process after clicking on a link to a web page?-->
+        <item>
+
+        </item>
+        <!--What Is Common Gateway Interface?-->
+        <item>
+
+        </item>
+        <!--Describe the key advantages of HTTP/2 as compared with HTTP 1.1.-->
+        <item>
+
+        </item>
+        <!--Explain the purpose of each of the HTTP request types when used with a RESTful web service.-->
+        <item>
+
+        </item>
+        <!--What is a "MIME type", what does it consist of, and what is it used for? Provide an example.-->
+        <item>
+
+        </item>
+        <!--Explain the basic structure of a MIME multipart message when used to transfer different content type parts. Provide a simple example.-->
+        <item>
+
+        </item>
+        <!--What is Long polling, how does it work, and why would you use it? Considering server and client resources, what is the main drawback of using long polling? Which HTML5 feature is the best alternative to long polling?-->
+        <item>
+
+        </item>
+        <!--Explain the difference between stateless and stateful protocols. Which type of protocol is HTTP? Explain your answer.-->
+        <item>
+
+        </item>
+        <!--How do you take into account SEO, maintainability, UX, performance, and security when you’re building a web application?-->
+        <item>
+
+        </item>
+        <!--What is CORS?-->
+        <item>
+
+        </item>
+        <!--How can you reduce page loading time?-->
+        <item>
+
+        </item>
+        <!--What\'s the difference between Canvas and SVG?-->
+        <item>
+
+        </item>
+        <!--Explain what is DTD (Document Type Declaration)? Mention what is the difference between CDATA and PCDATA in DTD?-->
+        <item>
+
+        </item>
+        <!--Explain what is the difference between cookies and local storage?-->
+        <item>
+
+        </item>
+    </string-array>
+</resources>
