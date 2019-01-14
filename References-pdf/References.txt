@@ -196,9 +196,11 @@ General Object Oriented
 General Web
 - https://www.wisdomjobs.com/e-university/internet-interview-questions.html
 - https://learning.naukri.com/articles/top-20-web-developer-interview-questions-answers/
-- https://www.toptal.com/web/interview-questionsx
+- https://www.toptal.com/web/interview-questions
 - https://www.codementor.io/blog/web-developer-interview-questions-3ey8yl7epg
 - https://career.guru99.com/top-17-web-developer-interview-questions/
+- https://whatis.techtarget.com/definition/common-gateway-interface-CGI
+
 
 Html 
 - https://www.techbeamers.com/top-web-developer-interview-questions/

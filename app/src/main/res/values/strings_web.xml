@@ -52,58 +52,183 @@
     <string-array name="general_web_answers">
         <!--Can you explain the back-end process after clicking on a link to a web page?-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+            <p>Firstly, the browser checks the cache for a DNS record to find the corresponding IP address of the url.&nbsp;</p>
+<p id="ee3b" class="graf graf--p graf-after--p">Though, in order to find the DNS record, the browser checks four caches.</p>
+<p id="415e" class="graf graf--p graf-after--p">- First, it checks the browser cache. The browser maintains a repository of DNS records for a fixed duration for websites you have previously visited. So, it is the first place to run a DNS query.</p>
+<p id="6a89" class="graf graf--p graf-after--p">- Second, the browser checks the OS cache. If it is not found in the browser cache, the browser would make a system call (i.e.&nbsp;<em class="markup--em markup--p-em">gethostname</em>&nbsp;on Windows) to your underlying computer OS to fetch the record since the OS also maintains a cache of DNS records.</p>
+<p id="a73f" class="graf graf--p graf-after--p">- Third, it checks the router cache. If it&rsquo;s not found on your computer, the browser would communicate with the router that maintains its&rsquo; own cache of DNS records.</p>
+<p id="edce" class="graf graf--p graf-after--p">- Fourth, it checks the ISP cache. If all steps fail, the browser would move on to the ISP. Your ISP maintains its&rsquo; own DNS server which includes a cache of DNS records which the browser would check with the last hope of finding your requested URL.</p>
+<p class="graf graf--p graf-after--p">Then, if the requested URL is not in the cache, ISP&rsquo;s DNS server initiates a DNS query to find the IP address of the server that hosts.</p>
+<p class="graf graf--p graf-after--p">Once the IP address is found, the browser will initiate a TCP connection with the server using the following order;&nbsp;</p>
+<p id="4fd5" class="graf graf--p graf-after--p">1. Client machine sends a SYN packet to the server over the internet asking if it is open for new connections.</p>
+<p id="e77a" class="graf graf--p graf-after--p">2. If the server has open ports that can accept and initiate new connections, it&rsquo;ll respond with an ACKnowledgment of the SYN packet using a SYN/ACK packet.</p>
+<p id="92ec" class="graf graf--p graf-after--p">3. The client will receive the SYN/ACK packet from the server and will acknowledge it by sending an ACK packet.</p>
+<p class="graf graf--p graf-after--p">Consequently, the browser sends an HTTP request to the web&nbsp;server then the server will handle the request and send back a response. Lastly, the server sends out an HTTP response which result the browser displaying the HTML content (for HTML responses which is the most&nbsp;common).</p>
 
+            </pre></html>
+            ]]>
         </item>
         <!--What Is Common Gateway Interface?-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
+              <p>The common gateway interface (CGI) is a standard way for a Web server to pass a Web user\'s request to an application program and to receive data back to forward to the user. When the user requests a Web page (for example, by clicking on a highlighted word or entering a Web site address), the server sends back the requested page. However, when a user fills out a form on a Web page and sends it in, it usually needs to be processed by an application program. The Web server typically passes the form information to a small application program that processes the data and may send back a confirmation message. This method or convention for passing data back and forth between the server and the application is called the common gateway interface (CGI). It is part of the Web\'s Hypertext Transfer Protocol.</p>
+<p>If you are creating a Web site and want a CGI application to get control, you specify the name of the application in the uniform resource locator&nbsp;that you code in an HTML file. This URL can be specified as part of the FORMS tags if you are creating a form.</p>
+<p>For example, you might code:</p>
+<p><em>&lt;FORM METHOD=POST ACTION=http://www.mybiz.com/cgi-bin/formprog.pl&gt;</em></p>
+<p>and the server at "<em>mybiz.com</em>" would pass control to the CGI application called "<em>formprog.pl</em>" to record the entered data and return a confirmation message. (The ".pl" indicates a program written in Perl but other languages could have been used.)</p>
 
+            </pre></html>
+            ]]>
         </item>
         <!--Describe the key advantages of HTTP/2 as compared with HTTP 1.1.-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+        <p>HTTP/2 provides decreased latency to improve page load speed by supporting:</p>
+<p>- Data compression of HTTP headers</p>
+<p>- Server push technologies</p>
+<p>- Loading of page elements in parallel over a single TCP connection</p>
+<p>- Prioritization of requests</p>
+<p>An important operational benefit of HTTP/2 is that it avoids the&nbsp;<a href="https://en.wikipedia.org/wiki/Head-of-line_blocking" rel="noopener noreferrer">head-of-line blocking</a>&nbsp;problem in HTTP 1.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--Explain the purpose of each of the HTTP request types when used with a RESTful web service.-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+       <p>The purpose of each of the HTTP request types when used with a RESTful web service is as follows:</p>
+<p><strong>- GET:</strong>&nbsp;Retrieves data from the server (should only retrieve data and should have no other effect).</p>
+<p><strong>- POST:</strong>&nbsp;Sends data to the server for a new entity. It is often used when uploading a file or submitting a completed web form.</p>
+<p><strong>- PUT:</strong>&nbsp;Similar to POST, but used to replace an existing entity.</p>
+<p><strong>- PATCH:</strong>&nbsp;Similar to PUT, but used to update only certain fields within an existing entity.</p>
+<p><strong>- DELETE:</strong>&nbsp;Removes data from the server.</p>
+<p><strong>- TRACE:</strong>&nbsp;Provides a means to test what a machine along the network path receives when a request is made. As such, it simply returns what was sent.</p>
+<p><strong>OPTIONS:</strong>&nbsp;Allows a client to request information about the request methods supported by a service. The relevant response header is Allow and it simply lists the supported methods. (It can also be used to request information about the request methods supported for the server where the service resides by using a * wildcard in the URI.)</p>
+<p><strong>- HEAD:</strong>&nbsp;Same as the GET method for a resource, but returns only the response headers (i.e., with no entity-body).</p>
+<p><strong>- CONNECT:</strong>&nbsp;Primarily used to establish a network connection to a resource (usually via some proxy that can be requested to forward an HTTP request as TCP and maintain the connection). Once established, the response sends a 200 status code and a &ldquo;Connection Established&rdquo; message.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--What is a "MIME type", what does it consist of, and what is it used for? Provide an example.-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+            <p>MIME is an acronym for&nbsp;<strong>M</strong>ulti-purpose&nbsp;<strong>I</strong>nternet&nbsp;<strong>M</strong>ail&nbsp;<strong>E</strong>xtensions. It is used as a standard way of classifying file types over the Internet.</p>
+<p>Web servers and browsers have a defined list of MIME types, which facilitates transfer of files of a known type, irrespective of operating system or browser.</p>
+<p>A MIME type actually has two parts: a&nbsp;<em>type</em>&nbsp;and a&nbsp;<em>subtype</em>&nbsp;that are separated by a slash (/). For example, the MIME type for Microsoft Word files is&nbsp;<code><em>application</em>/<em>msword</em></code>&nbsp;(i.e., type is&nbsp;<em><code>application</code></em>&nbsp;and the subtype is&nbsp;<em><code>msword</code></em>).</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--Explain the basic structure of a MIME multipart message when used to transfer different content type parts. Provide a simple example.-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+            <p>A simple example of a MIME multipart message is as follows:</p>
+<p><em>MIME-Version: 1.0</em></p>
+<p><br /><em>Content-Type: multipart/mixed; boundary=frontier </em><br /><em>This is a message with multiple parts in MIME format. </em><br /><em>--frontier </em><br /><em>Content-Type: text/plain </em><br /><br /><em>This is the body of the message. </em><br /><em>--frontier </em><br /><em>Content-Type: application/octet-stream </em><br /><em>Content-Transfer-Encoding: base64 </em><br /><br /><em>PGh0bWw+CiAgPGhlYWQ+CiAgPC9oZWFkPgogIDxib2R5PgogICAgPHA+VGhpcyBpcyB0aGUg </em><br /><em>Ym9keSBvZiB0aGUgbWVzc2FnZS48L3A+CiAgPC9ib2R5Pgo8L2h0bWw+Cg== </em><br /><em>--frontier--</em></p>
+<p>Each MIME message starts with a message header. This header contains information about the message content and boundary. In this case&nbsp;<em><code>Content-Type: multipart/mixed; boundary=frontier</code>&nbsp;</em>means that message contains multiple parts where each part is of different content type and they are separated by&nbsp;<code>--<em>frontier</em></code>&nbsp;as their boundary.</p>
+<p>Each part consists of its own content header (zero or more&nbsp;<code>Content-</code>&nbsp;header fields) and a body. Multipart content can be nested. The&nbsp;<em><code>content-transfer-encoding</code></em>&nbsp;of a multipart type must always be&nbsp;<em><code>7bit</code></em>,&nbsp;<em><code>8bit</code></em>, or&nbsp;<em><code>binary</code></em>&nbsp;to avoid the complications that would be posed by multiple levels of decoding. The multipart block as a whole does not have a charset; non-ASCII characters in the part headers are handled by the&nbsp;<code><em>Encoded</em>-<em>Word</em></code>&nbsp;system, and the part bodies can have charsets specified if appropriate for their&nbsp;<code><em>content</em>-<em>type</em></code>.</p>
+            </pre></html>
+            ]]>
 
         </item>
         <!--What is Long polling, how does it work, and why would you use it? Considering server and client resources, what is the main drawback of using long polling? Which HTML5 feature is the best alternative to long polling?-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+<p>The HTTP protocol is based on a request/response pattern, which means that the server cannot&nbsp;<em>push</em>&nbsp;any data to the client (i.e., the server can only provide data to the client in response to a client request).&nbsp;<strong>Long polling</strong>&nbsp;is a web application development pattern used to&nbsp;<em>emulate</em>&nbsp;pushing data from server to client. When the long polling pattern is used, the client submits a request to the server and&nbsp;<em>the connection then remains active until the server is ready to send data to the client</em>. The connection is closed only after data is sent back to the client or connection timeout occurs. The client then creates a new request when the connection is closed, thus restarting the loop.</p>
+<p>There are two important drawbacks that need to be considered when using long polling:</p>
+<ol>
+<li>
+<p>Long polling requests are not different from any other HTTP request and web servers handle them the same way. This means that every long poll connection will reserve server resources, potentially maxing out the number of connections the server can handle. This can lead to HTTP connection timeouts.</p>
+</li>
+<li>
+<p>Each web browser will limit the maximum number of connections web application can make. This means that your application load time and performance may be degraded.</p>
+</li>
+</ol>
+<p>In HTML5, a useful alternative to long polling is using a&nbsp;<strong>WebSocket</strong>. A WebSocket is a protocol providing full-duplex communications channels over a single TCP connection. The WebSocket protocol makes possible more interaction between a browser and a web site, facilitating live content and eliminates the need for the long polling paradigm.</p>
+<p>Another potential answer could be&nbsp;<strong>Server-sent DOM Events</strong>. Which is method of continuously sending data from a server to the browser, rather than repeatedly requesting it. However, this HTML5 feature is not supported by Microsoft Internet Explorer, thus making it less attractive solution.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--Explain the difference between stateless and stateful protocols. Which type of protocol is HTTP? Explain your answer.-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+              <p>A&nbsp;<strong>stateless</strong>&nbsp;communications protocol treats each request as an independent transaction. It therefore does not require the server to retain any session, identity, or status information spanning multiple requests from the same source. Similarly, the requestor can not rely on any such information being retained by the responder.</p>
+<p>In contrast, a&nbsp;<strong>stateful</strong>&nbsp;communications protocol is one in which the responder maintains &ldquo;state&rdquo; information (session data, identity, status, etc.) across multiple requests from the same source.</p>
+<p><strong>HTTP is a stateless protocol</strong>. HTTP does not require server to retain information or status about each user for the duration of multiple requests.</p>
+<p>Some web servers implement states using different methods (using cookies, custom headers, hidden form fields etc.). However, in the very core of every web application everything relies on HTTP which is still a stateless protocol that is based on simple request/response paradigm.</p>
 
+            </pre></html>
+            ]]>
         </item>
-        <!--How do you take into account SEO, maintainability, UX, performance, and security when you’re building a web application?-->
+        <!--  SEO, maintainability, UX, performance, and security when you’re building a web application?-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+                <p>Explain how you prioritise your actions as per the requirements of the organisation. If your organisation handles vital data, then security will be your top priority. If it is a medium-sized online business, SEO and UX might be your top priority and so on.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--What is CORS?-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+            <p><a href="http://www.w3.org/TR/cors/" rel="noopener noreferrer">Cross-origin resource sharing (CORS)</a>&nbsp;is a mechanism that allows many resources (e.g., fonts, JavaScript, etc.) on a web page to be requested from another domain outside the domain from which the resource originated. It&rsquo;s a mechanism supported in HTML5 that manages&nbsp;<em><code>XMLHttpRequest</code></em>&nbsp;access to a domain different.</p>
+<p>CORS adds new HTTP headers that provide access to permitted origin domains. For HTTP methods other than GET (or POST with certain MIME types), the specification mandates that browsers first use an HTTP OPTIONS request header to solicit a list of supported (and available) methods from the server. The actual request can then be submitted. Servers can also notify clients whether &ldquo;credentials&rdquo; (including Cookies and HTTP Authentication data) should be sent with requests.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--How can you reduce page loading time?-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+            <p>These are the following ways you can reduce web page loading time: reduce image size, remove unnecessary widgets, HTTP compression, placing CSS at the top and script referencing at the bottom or external files, reduce lookups, minimise redirects and caching.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--What\'s the difference between Canvas and SVG?-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+             <p>Canvas is an HTML5 element which can draw graphics on the fly with the help of JavaScript. SVG (Scalable Vector Graphics) is used to display vector-based graphics on the web.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--Explain what is DTD (Document Type Declaration)? Mention what is the difference between CDATA and PCDATA in DTD?-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+             <p>A DTD means Document Type Definition (DTD) which defines the structure, legal elements and attributes of an XML document.</p>
+<p><strong>- PCDATA</strong>: A PCDATA is a Parsed Character Data. XML parsers usually parse all the text in an XML document.</p>
+<p><strong>- CDATA</strong>: While CDATA is an Unparsed Character Data, the term CDATA is used about text data that should not be parsed by the XML parser.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
         <!--Explain what is the difference between cookies and local storage?-->
         <item>
+             <![CDATA[<html><pre style="text-align:center">
+              <p><strong>Cookies</strong>:&nbsp;</p>
+<p>- Data accessible both at client side and server side. The data is sent to the server-side with every cookie request.&nbsp;</p>
+<p>- Storage capacity of cookies is 4095 bytes/cookie.</p>
+<p>- Cookies have expiration and cookie data gets deleted after some time.&nbsp;</p>
+<p><strong>Local Storage:</strong></p>
+<p>- Only at the local browser side data is accessible.&nbsp; Server cannot use local storage until deliberately sent a request to the server via POST or GET.</p>
+<p>- Storage capacity of local storage is 5MB per domain.</p>
+<p>- There is no expiration and has to remove manually.</p>
+
+            </pre></html>
+            ]]>
 
         </item>
     </string-array>
