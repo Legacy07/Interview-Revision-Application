@@ -28,7 +28,7 @@
             Explain the difference between stateless and stateful protocols. Which type of protocol is HTTP? Explain your answer.
         </item>
         <item>
-            How do you take into account SEO, maintainability, UX, performance, and security when you’re building a web application?
+            How do you take into account SEO, maintainability, UX, performance, and security when you\'re building a web application?
         </item>
         <item>
             What is CORS?
@@ -231,5 +231,122 @@
             ]]>
 
         </item>
+    </string-array>
+
+    <string-array name="html_questions">
+
+        <item>
+            What are some of the key new features in HTML5?
+        </item>
+        <item>
+            What are the differences between XHTML &amp; HTML5?
+        </item>
+        <item>
+            Discuss the differences between an HTML specification and a browser\'s implementation thereof.
+        </item>
+        <item>
+            Briefly describe the correct usage of the following HTML5 semantic elements: &lt;header&gt;, &lt;article&gt;, &lt;section&gt;, &lt;footer&gt;.
+        </item>
+        <item>
+            Can a &lt;section&gt; contain &lt;article&gt; elements? Can an &lt;article&gt; contain &lt;section&gt; elements? Provide usage examples.
+        </item>
+        <item>
+            Give a simple implementation of the &lt;video&gt; tag to embed a video stored at http://www.example.com/amazing_video.mp4. Give the video a width of 640 pixels by 360 pixels. Provide the user with controls.
+        </item>
+        <item>
+            What is HTML5 Web Storage? Explain localStorage and sessionStorage.
+        </item>
+        <item>
+            What\'s one main result if you do not specify a doctype in an HTML page?
+        </item>
+        <item>
+            What\'s the difference between the &lt;svg&gt; and &lt;canvas&gt; elements?
+        </item>
+        <item>
+            What is a class? What is an ID?
+        </item>
+        <item>
+            What\'s the difference between a block-level element and an inline element?
+        </item>
+        <item>
+            How do you apply CSS styles to a web page?
+        </item>
+        <item>
+            How do you apply JavaScript to a web page?
+        </item>
+        <item>
+            What is Web Forms 2.0?
+        </item>
+        <item>
+            What are the drawbacks of cookies?
+        </item>
+        <item>
+            What is Server Side Events in HTML5?
+        </item>
+        <item>
+            Differences between HTML &amp; XML?
+        </item>
+        <item>
+            How do CSS precedence/cascading rules work? How does the !important directive affect the rules?
+        </item>
+
+    </string-array>
+
+    <string-array name="html_answers">
+            <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+
     </string-array>
 </resources>

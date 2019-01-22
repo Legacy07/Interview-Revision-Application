@@ -204,12 +204,13 @@ General Web
 
 Html 
 - https://www.techbeamers.com/top-web-developer-interview-questions/
-- 
-- 
-- 
-- 
-- 
-- 
+- https://www.toptal.com/html5/interview-questions
+- https://www.goskills.com/Development/Articles/HTML-interview-questions-answers
+- https://www.onlineinterviewquestions.com/html-interview-questions/
+- https://career.guru99.com/top-50-html-interview-questions/
+- https://www.tutorialspoint.com/html5/html5_interview_questions.htm
+- https://intellipaat.com/interview-question/html-interview-questions/
+- https://www.wisdomjobs.com/e-university/html-interview-questions.html
 
 pdf references 
 - https://theinterviewguys.com/jeff-mike-resources/
