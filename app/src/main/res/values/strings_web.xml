@@ -239,7 +239,7 @@
             What are some of the key new features in HTML5?
         </item>
         <item>
-            What are the differences between XHTML &amp; HTML5?
+            What are the differences between XHTML &amp;amp; HTML5?
         </item>
         <item>
             Discuss the differences between an HTML specification and a browser\'s implementation thereof.
@@ -293,60 +293,229 @@
     </string-array>
 
     <string-array name="html_answers">
-            <item>
-
-        </item>
+        <!--What are some of the key new features in HTML5?-->
         <item>
-
+            <![CDATA[<html><pre style="text-align:center">
+            <p>Key new features of HTML5 include:</p>
+<p>- Improved support for embedding graphics, audio, and video content via the new&nbsp;<a href="http://www.w3schools.com/tags/tag_canvas.asp" rel="noopener noreferrer"><code>&lt;canvas&gt;</code></a>,&nbsp;<a href="http://www.w3schools.com/tags/tag_audio.asp" rel="noopener noreferrer"><code>&lt;audio&gt;</code></a>, and&nbsp;<a href="http://www.w3schools.com/tags/tag_video.asp" rel="noopener noreferrer"><code>&lt;video&gt;</code></a>&nbsp;tags.</p>
+<p>- Extensions to the JavaScript API such as&nbsp;<a href="http://www.w3schools.com/html/html5_geolocation.asp" rel="noopener noreferrer">geolocation</a>&nbsp;and&nbsp;<a href="http://www.w3schools.com/html/html5_draganddrop.asp" rel="noopener noreferrer">drag-and-drop</a>&nbsp;as well for&nbsp;<a href="http://www.w3schools.com/html/html5_webstorage.asp" rel="noopener noreferrer">storage</a>&nbsp;and&nbsp;<a href="http://www.w3schools.com/html/html5_app_cache.asp" rel="noopener noreferrer">caching</a>.</p>
+<p>- Introduction of&nbsp;<a href="http://www.w3schools.com/html/html5_webworkers.asp" rel="noopener noreferrer">"web workers"</a>.</p>
+<p>- Several new semantic tags were also added to complement the structural logic of modern web applications. These include the&nbsp;<code>&lt;main&gt;</code>,&nbsp;<code>&lt;nav&gt;</code>,&nbsp;<code>&lt;article&gt;</code>,&nbsp;<code>&lt;section&gt;</code>,&nbsp;<code>&lt;header&gt;</code>,&nbsp;<code>&lt;footer&gt;</code>, and&nbsp;<code>&lt;aside&gt;</code>&nbsp;tags.</p>
+<p>- New form controls, such as&nbsp;<code>&lt;calendar&gt;</code>,&nbsp;<code>&lt;date&gt;</code>,&nbsp;<code>&lt;time&gt;</code>,&nbsp;<code>&lt;email&gt;</code>,&nbsp;<code>&lt;url&gt;</code>, and&nbsp;<code>&lt;search&gt;</code>.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--What are the differences between XHTML &amp;amp; HTML5?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+             
+            </pre></html>
+            ]]>
         </item>
+        <!--Discuss the differences between an HTML specification and a browser\'s implementation thereof.-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+             <p>HTML specifications such as HTML5 define a set of rules that a document must adhere to in order to be "valid" according to that specification. In addition, a specification provides instructions on how a browser must interpret and render such a document.</p>
+<p>A browser is said to "support" a specification if it handles valid documents according to the rules of the specification. As of yet, no browser supports all aspects of the HTML5 specification (although all of the major browser support&nbsp;<em>most</em>&nbsp;of it), and as a result, it is necessary for the developer to confirm whether the aspect they are making use of will be supported by all of the browsers on which they hope to display their content. This is why cross-browser support continues to be a headache for developers, despite the improved specificiations.</p>
+<p>In addition, while HTML5 defines some rules to follow for an invalid HTML5 document (i.e., one that contains syntactical errors), invalid documents may contain anything, and it is impossible for the specification to handle all possibilities comprehensively. Thus, many decisions about how to handle malformed documents are left up to the browser.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--Briefly describe the correct usage of the following HTML5 semantic elements: &lt;header&gt;, &lt;article&gt;, &lt;section&gt;, &lt;footer&gt;.-->
         <item>
-
+            <![CDATA[<html><pre style="text-align:center">
+            <p>The&nbsp;<em><code>&lt;header&gt;</code></em>&nbsp;element is used to contain introductory and navigational information about a section of the page. This can include the section heading, the author&rsquo;s name, time and date of publication, table of contents, or other navigational information.</p>
+<p>The&nbsp;<em><code>&lt;article&gt;</code>&nbsp;</em>element is meant to house a self-contained composition that can logically be independently recreated outside of the page without losing it&rsquo;s meaining. Individual blog posts or news stories are good examples.</p>
+<p>The&nbsp;<em><code>&lt;section&gt;</code></em>&nbsp;element is a flexible container for holding content that shares a common informational theme or purpose.</p>
+<p>The&nbsp;<em><code>&lt;footer&gt;</code>&nbsp;</em>element is used to hold information that should appear at the end of a section of content and contain additional information about the section. Author&rsquo;s name, copyright information, and related links are typical examples of such content.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--Can a &lt;section&gt; contain &lt;article&gt; elements? Can an &lt;article&gt; contain &lt;section&gt; elements? Provide usage examples.-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+            <p>The answer to both questions is yes; i.e., a&nbsp;<em><code>&lt;section&gt;</code></em>&nbsp;can contain&nbsp;<em><code>&lt;article&gt;</code></em>&nbsp;elements, and an&nbsp;<em><code>&lt;article&gt;</code></em>&nbsp;can contain&nbsp;<code>&lt;section&gt;</code>elements.</p>
+<p>For example, a personal dashboard page might contain a&nbsp;<em><code>&lt;section&gt;</code></em>&nbsp;for social network interactions as well as a&nbsp;<em><code>&lt;section&gt;</code></em>&nbsp;for the latest news articles, the latter of which could contain several&nbsp;<em><code>&lt;article&gt;</code></em>&nbsp;elements.</p>
+<p>Conversely, an<em>&nbsp;</em><code><em>&lt;article&gt;</em></code>&nbsp;might contain a&nbsp;<em><code>&lt;section&gt;</code></em>&nbsp;at the end for reader comments.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--Give a simple implementation of the &lt;video&gt; tag to embed a video stored at http://www.example.com/amazing_video.mp4. Give the video a width of 640 pixels by 360 pixels. Provide the user with controls.-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+              <p>Here is one simple implementation:</p>
+<pre><em><code>&lt;video src="http://www.example.com/amazing_video.mp4" width="640" height="360" controls&gt;&lt;/video&gt;
+</code></em></pre>
+<p>Alternatively, the source file may be indicated with a separate&nbsp;<em><code>&lt;source&gt;</code>&nbsp;</em>tag inside the&nbsp;<em><code>&lt;video&gt;</code></em>&nbsp;element, as in:</p>
+<pre><em><code>&lt;video width="640" height="360" controls&gt;
+  &lt;source src="http://www.example.com/amazing_video.mp4"&gt;
+&lt;/video&gt;</code></em></pre>
+            </pre></html>
+            ]]>
         </item>
+        <!--What is HTML5 Web Storage? Explain localStorage and sessionStorage.-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+             <p>With HTML5, web pages can store data locally within the user&rsquo;s browser.</p>
+<p>Earlier, this was done with cookies. However, Web Storage is more secure and faster. The data is not included with every server request, but used ONLY when asked for.</p>
+<p>The data is stored in name/value pairs, and a web page can only access data stored by itself. Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.</p>
+<p>The difference between localStorage and sessionStorage involves the lifetime and scope of the storage.</p>
+<p>Data stored through localStorage is permanent: it does not expire and remains stored on the user&rsquo;s computer until a web app deletes it or the user asks the browser to delete it. SessionStorage has the same lifetime as the top-level window or browser tab in which the script that stored it is running. When the window or tab is permanently closed, any data stored through sessionStorage is deleted.</p>
+<p>Both forms of storage are scoped to the document origin so that documents with different origins will never share the stored objects. But sessionStorage is also scoped on a per-window basis. If a user has two browser tabs displaying documents from the same origin, those two tabs have separate sessionStorage data: the scripts running in one tab cannot read or overwrite the data written by scripts in the other tab, even if both tabs are visiting exactly the same page and are running exactly the same scripts.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--What\'s one main result if you do not specify a doctype in an HTML page?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+            <p>New HTML5-specific tags will not be interpreted by the browser.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--What\'s the difference between the &lt;svg&gt; and &lt;canvas&gt; elements?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+            <p>The&nbsp;<em><code>&lt;svg&gt;</code></em>&nbsp;element is a container for SVG graphics. SVG has several methods for drawing paths, boxes, circles, text, and even bitmap images.</p>
+<p>SVG is a language for describing 2D graphics, but&nbsp;<em><code>&lt;canvas&gt;</code>&nbsp;</em>allows you to draw 2D graphics on the fly using JavaScript.</p>
+<p>SVG is XML-based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers for an element.</p>
+<p>In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are changed, the browser can automatically re-render the shape.</p>
+<p>Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--What is a class? What is an ID?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+            <p>In CSS, a</p>
+<p>&nbsp;selector is an expression which begins with a full stop (".") and followed by the name of a class. The class attribute could be a space-separated list of items, and one of those must match with the class name specified in the selector.</p>
+<p>Here is an example which selects a div and modified it style.</p>
+<p><em>//css</em></p>
+<p><em><span class="pun">.</span><span class="pln">sampleclass </span><span class="pun">{</span><span class="pln">font</span><span class="pun">-</span><span class="pln">family</span><span class="pun">:</span> <span class="typ">Ariel</span><span class="pun">;</span><span class="pln"> font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span> <span class="lit">10</span><span class="pun">;</span><span class="pln"> background</span><span class="pun">:</span><span class="pln"> green</span><span class="pun">;}<br /></span></em></p>
+<p>//html</p>
+<p><em><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"sampleclass"</span><span class="pun">&gt;....&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></em></p>
+<p>The <strong>ID</strong> selector uses the &ldquo;ID&rdquo; attribute of the target HTML element to select it. The constraint to work is that the ID should be unique within a page so that the selector can point it out correctly.</p>
+<p>To build an ID selector expression, start with a hash (#) character, followed by the id of the element.</p>
+<p>Here is an example which selects a paragraph element using its ID.</p>
+<p><em>//css</em></p>
+<pre class="lang:css decode:true prettyprinted"><em><span class="com">#sample {padding: 10px;}</span>
+<br />//html
+<span class="pun">&lt;</span><span class="pln">p id</span><span class="pun">=</span><span class="str">"selector"</span><span class="pun">&gt;...&lt;/</span><span class="pln">p</span><span class="pun">&gt;</span></em></pre>
+            </pre></html>
+            ]]>
         </item>
+        <!--What\'s the difference between a block-level element and an inline element?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+             <p>Each element in HTML is displayed in one of a few ways. By default, most tags are either displayed as block-level or inline. This value can be overridden using&nbsp;<a href="https://www.goskills.com/Course/Intro-CSS">CSS</a>.</p>
+<p><strong>Block</strong></p>
+<p>As the name suggests, a block-level element is drawn as a block that stretches to fill the full width available to it (the width of its container) and will always start on a new line.</p>
+<p>Examples of elements that are block-level by default:<em>&nbsp;</em><em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>div<span class="punctuation token">&gt;</span></span></code>,&nbsp;<code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>img<span class="punctuation token">&gt;</span></span></code>,&nbsp;<code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>section<span class="punctuation token">&gt;</span></span></code>,&nbsp;<code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>form<span class="punctuation token">&gt;</span></span></code>,&nbsp;<code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>nav<span class="punctuation token">&gt;</span></span></code>.</em></p>
+<p><strong>Inline</strong></p>
+<p>Unlike the block-level elements, inline elements are drawn where they are defined and only take up space that is absolutely needed. The easiest way to understand how they work is to look at how text flows on a page. When a line of text gets to the end of the space available, it wraps onto the next line and happily keeps going. If you were to tack more text onto an existing line of text, it will stay on the same line, as if it was all part of the same text to begin with.</p>
+<p>Examples of elements that are inline by default:&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>span<span class="punctuation token">&gt;</span></span></code>,&nbsp;<code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>b<span class="punctuation token">&gt;</span></span></code>,&nbsp;<code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>strong<span class="punctuation token">&gt;</span></span></code>,&nbsp;<code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>a<span class="punctuation token">&gt;</span></span></code>,&nbsp;<code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>input<span class="punctuation token">&gt;</span></span></code>.</em></p>
+<p>&nbsp;</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--How do you apply CSS styles to a web page?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+                <p>There are three main ways to apply CSS styles to a webpage:</p>
+<h3>Inline styles</h3>
+<p>You can add a style attribute to almost any tag. Inside this attribute you can write your CSS rules.</p>
+<pre class="language-html"><em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>div<span class="language-css style-attr token"><span class="attr-name token"> style</span><span class="punctuation token">="</span><span class="attr-value token"><span class="property token">background-color</span><span class="punctuation token">:</span> red<span class="punctuation token">;</span></span><span class="punctuation token">"</span></span><span class="punctuation token">&gt;</span></span>A container with a red background.<span class="tag token"><span class="punctuation token">&lt;/</span>div<span class="punctuation token">&gt;</span></span></code></em></pre>
+<h3>A style block</h3>
+<p>You are able to define one or more style blocks inside the head section of your HTML document. Inside these blocks you can write your CSS rules. You will have to specify which elements on the page you&rsquo;d like to style. In the below example, we&rsquo;re targeting the&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>body<span class="punctuation token">&gt;</span></span></code></em>&nbsp;tag and an element with a class attribute equal to&nbsp;<em><code class="language-html">.button</code>.</em></p>
+<pre class="language-html"><code class="language-html"><span class="tag token"><span class="punctuation token"><em>&lt;</em></span><em>head<span class="punctuation token">&gt;</span></em></span><em>
+    <span class="tag token"><span class="punctuation token">&lt;</span>style<span class="punctuation token">&gt;</span></span><span class="language-css style token">
+         <span class="selector token">body</span> <span class="punctuation token">{</span>
+             <span class="property token">font-size</span><span class="punctuation token">:</span> 16px<span class="punctuation token">;</span>
+         <span class="punctuation token">}
+</span>
+         <span class="selector token">.button</span> <span class="punctuation token">{</span>
+             <span class="property token">padding</span><span class="punctuation token">:</span> 10px<span class="punctuation token">;</span>
+         <span class="punctuation token">}</span>
+    </span><span class="tag token"><span class="punctuation token">&lt;/</span>style<span class="punctuation token">&gt;</span></span>
+<span class="tag token"><span class="punctuation token">&lt;/</span>head<span class="punctuation token">&gt;</span></span></em></code></pre>
+<h3>Link to a CSS file</h3>
+<p>By far the most recommended option is to link to a CSS file. This way you are able to keep the content (HTML) separate from the way you present that content (CSS). It also means you can use the same styles on multiple pages. To link to a CSS file, you will have to add a&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>link<span class="punctuation token">&gt;</span></span></code></em>&nbsp;tag to the&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>head<span class="punctuation token">&gt;</span></span></code></em>&nbsp;section in your document with an&nbsp;<em><code class="language-markup"><span class="tag token"><span class="attr-name token">href</span></span></code></em>&nbsp;attribute that specifies the location of the CSS file.</p>
+<pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;</span>head<span class="punctuation token">&gt;</span></span>
+    <span class="tag token"><span class="punctuation token">&lt;</span>link <span class="attr-name token">rel</span><span class="attr-value token"><span class="punctuation token">=</span><span class="punctuation token">"</span>stylesheet<span class="punctuation token">"</span></span> <span class="attr-name token">href</span><span class="attr-value token"><span class="punctuation token">=</span><span class="punctuation token">"</span>styles.css<span class="punctuation token">"</span></span><span class="punctuation token">&gt;</span></span>
+<span class="tag token"><span class="punctuation token">&lt;/</span>head<span class="punctuation token">&gt;</span></span></code></em></pre>
+            </pre></html>
+            ]]>
         </item>
+        <!--How do you apply JavaScript to a web page?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+             <p>As with CSS, there are three main ways of including JavaScript:</p>
+<h3>Inline</h3>
+<p>Certain HTML elements allow you to execute a piece of JavaScript when a certain event occurs. For example, a button allows you to run a script when you click on it. These events are accessed through attributes and differ based on the events that are available on each element. The following example shows an alert with a message when the user clicks on it.</p>
+<pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;</span>button <span class="attr-name token">onclick</span><span class="attr-value token"><span class="punctuation token">=</span><span class="punctuation token">"</span>alert(<span class="punctuation token">\'</span>You clicked on me!<span class="punctuation token">\'</span>);<span class="punctuation token">"</span></span><span class="punctuation token">&gt;</span></span>Click me!<span class="tag token"><span class="punctuation token">&lt;/</span>button<span class="punctuation token">&gt;</span></span></code></em></pre>
+<h3>A script block</h3>
+<p>You can define a script block anywhere on the page, which will get executed as soon as the browser reaches that part of the document. Note that this can be inside the&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>head<span class="punctuation token">&gt;</span></span></code>&nbsp;</em>or<em>&nbsp;</em><code class="language-html"><span class="tag token"><em><span class="punctuation token">&lt;</span>body</em><span class="punctuation token"><em>&gt;</em>&nbsp;</span></span></code>section of your document.</p>
+<pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;</span>script<span class="punctuation token">&gt;</span></span><span class="language-javascript script token">
+    <span class="keyword token">var</span> x <span class="operator token">=</span> <span class="number token">5</span><span class="punctuation token">;</span>
+    <span class="keyword token">var</span> y <span class="operator token">=</span> <span class="number token">6</span><span class="punctuation token">;</span>
+    <span class="keyword token">var</span> result <span class="operator token">=</span> x <span class="operator token">+</span> y<span class="punctuation token">;</span>
+    <span class="function token">alert</span><span class="punctuation token">(</span>&ldquo;X <span class="operator token">+</span> Y is equal to " <span class="operator token">+</span> result<span class="punctuation token">)</span><span class="punctuation token">;</span>
+</span><span class="tag token"><span class="punctuation token">&lt;/</span>script<span class="punctuation token">&gt;</span></span></code></em></pre>
+<h3>Link to a JavaScript file</h3>
+<p>Again, as with CSS, this is the preferred way of including JavaScript. It allows you to keep the content of the page separate to how users interact with that content, and it allows you to load the same script on multiple pages. As with the script block, you can load a JavaScript file from the&nbsp;<code class="language-html"><span class="tag token"><em><span class="punctuation token">&lt;</span>head</em><span class="punctuation token"><em>&gt;</em></span></span></code>&nbsp;or&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>body<span class="punctuation token">&gt;</span></span></code></em>, but keep in mind it will be loaded in the order you\'ve structured your document.</p>
+<pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;</span>script <span class="attr-name token">src</span><span class="attr-value token"><span class="punctuation token">=</span><span class="punctuation token">"</span>my-code.js<span class="punctuation token">"</span></span><span class="punctuation token">&gt;</span></span><span class="tag token"><span class="punctuation token">&lt;/</span>script<span class="punctuation token">&gt;</span></span></code></em></pre>
+            </pre></html>
+            ]]>
         </item>
+        <!--What is Web Forms 2.0?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+             <p>Web Forms 2.0 is an extension to the forms features found in HTML4. Form elements and attributes in HTML5 provide a greater degree of semantic mark-up than HTML4 and remove a great deal of the need for tedious scripting and styling that was required in HTML4.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--What are the drawbacks of cookies?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+            <p>Cookies have following drawbacks;</p>
+<p>- Cookies are included with every HTTP request, thereby slowing down your web application by transmitting the same data.</p>
+<p>- Cookies are included with every HTTP request, thereby sending data unencrypted over the internet.</p>
+<p>- Cookies are limited to about 4 KB of data . Not enough to store required data.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--What is Server Side Events in HTML5?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+            <p>Along with HTML5, WHATWG Web Applications 1.0 introduces events which flow from web server to the web browsers and they are called Server-Sent Events (SSE). Using SSE you can push DOM events continously from your web server to the visitor\'s browser.</p>
+<p>The event streaming approach opens a persistent connection to the server, sending data to the client when new information is available, eliminating the need for continuous polling.</p>
+<p>Server-sent events standardizes how we stream data from the server to the client.</p>
+            </pre></html>
+            ]]>
         </item>
+        <!--Differences between HTML &amp; XML?-->
         <item>
-
+             <![CDATA[<html><pre style="text-align:center">
+            <p><strong>XML (Extensible Markup Language)</strong>&nbsp;is a language that enables a user to define a representation of data or data structure where values are assigned in each field in the structure. In XML to create a language or elements, one must follow some set of rules defined in the XML. The XML document includes data as strings and text which is surrounded by text markup. The fundamental unit in the XML is known as an&nbsp;<strong>element</strong>.</p>
+<p>On the other hand, <strong>HTML (Hypertext Markup Language)</strong>&nbsp;is the markup language for constructing web pages. The markup commands employed in the web-based content signifies structure of the document and its layout to the browser. Browsers simply read the document with the HTML markup in it and render it on the screen through examining the placed HTML elements in the document.</p>
+<h2>Key Differences Between XML and HTML</h2>
+<p>- XML is a text-based markup language which has the self-describing structure and can effectively define another markup language. On the other hand, HTML is a predefined markup language and has a limited capability.</p>
+<p>- XML provides logical structuring of the document while HTML structure is predefined where "head" and "body" tags are used.</p>
+<p>- When it comes to language type HTML is case insensitive. As against, XML is case sensitive.</p>
+<p>- HTML was designed with the emphasis on the presentational features of the data. In contrast, XML is data specific where the data storage and transfer was the prior concern.</p>
+<p>- XML does not permit any mistake if there are some errors in the code it could not be parsed. Inversely, in HTML small errors can be neglected.</p>
+<p>- Whitespaces in XML are used for a specific use as XML considers every single character. On the contrary, HTML can ignore the whitespaces.</p>
+<p>- The tags in XML are mandatory to be closed, whereas in HTML an open tag can also work completely fine.</p>
+<p>- Nesting in XML should be done correctly, it has a big importance in XML syntax. Conversely, HTML does not care much about nesting.</p>
+            </pre></html>
+            ]]>
         </item>
-
+        <!--How do CSS precedence/cascading rules work? How does the !important directive affect the rules?-->
+        <item>
+             <![CDATA[<html><pre style="text-align:center">
+            <p>CSS style rules "<em>cascade</em>" in the sense that they follow an order of precedence. Global style rules apply first to HTML elements, and local style rules override them. For example, a style defined in a style element in a webpage overrides a style defined in an external style sheet. Similarly, an inline style that is defined in an HTML element in the page overrides any styles that are defined for that same element elsewhere. The !important rule is a way to make your CSS cascade but also have the rules you feel are most crucial always be applied. A rule that has the !important property will always be applied no matter where that rule appears in the CSS document. So if you wanted to make sure that a property always applied, you would add the !important property to the tag. So, to make the paragraph text always red, in the above example, you would write:</p>
+<p><em>p { color: #ff0000 !important; }p { color: #000000; }</em></p>
+            </pre></html>
+            ]]>
+        </item>
     </string-array>
 </resources>

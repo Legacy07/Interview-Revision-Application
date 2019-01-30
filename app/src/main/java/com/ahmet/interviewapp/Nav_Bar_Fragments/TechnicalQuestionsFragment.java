@@ -14,6 +14,7 @@ import com.ahmet.interviewapp.R;
 import com.ahmet.interviewapp.Technical_Questions.AndroidTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.CSharpTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.GeneralWebQuestionsFragment;
+import com.ahmet.interviewapp.Technical_Questions.HtmlQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.JavaTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.ObjectOrientedQuestionsFragment;
 
@@ -39,9 +40,9 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
         cSharpButton = (Button) view.findViewById(R.id.csharpButton);
         objectOrientedButton = (Button) view.findViewById(R.id.objectOrientedButton);
         generalWebButton = (Button) view.findViewById(R.id.generalWebButton);
+        htmlButton = (Button) view.findViewById(R.id.htmlButton);
 
-//        htmlButton = (Button) view.findViewById(R.id.htmlButton);
-//        phpButton = (Button) view.findViewById(R.id.phpButton);
+//  phpButton = (Button) view.findViewById(R.id.phpButton);
 //        cssButton = (Button) view.findViewById(R.id.cssButton);
 
         javaButton.setOnClickListener(this);
@@ -49,8 +50,8 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
         cSharpButton.setOnClickListener(this);
         objectOrientedButton.setOnClickListener(this);
         generalWebButton.setOnClickListener(this);
+        htmlButton.setOnClickListener(this);
 
-//        htmlButton.setOnClickListener(this);
 //        phpButton.setOnClickListener(this);
 //        cssButton.setOnClickListener(this);
 
@@ -60,6 +61,7 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
 
         return view;
     }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -72,8 +74,8 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
         switch (view.getId()) {
 
             case R.id.javaButton:
-            JavaTechnicalQuestionsFragment javaTechnicalQuestionsFragment = new JavaTechnicalQuestionsFragment();
-            manager.beginTransaction().replace(R.id.content_layout, javaTechnicalQuestionsFragment).addToBackStack(null).commit();
+                JavaTechnicalQuestionsFragment javaTechnicalQuestionsFragment = new JavaTechnicalQuestionsFragment();
+                manager.beginTransaction().replace(R.id.content_layout, javaTechnicalQuestionsFragment).addToBackStack(null).commit();
 
                 break;
 
@@ -99,9 +101,11 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
                 manager.beginTransaction().replace(R.id.content_layout, generalWebQuestionsFragment).addToBackStack(null).commit();
 
                 break;
-//            case R.id.htmlButton:
-//
-//                break;
+            case R.id.htmlButton:
+                HtmlQuestionsFragment htmlQuestionsFragment = new HtmlQuestionsFragment();
+                manager.beginTransaction().replace(R.id.content_layout, htmlQuestionsFragment).addToBackStack(null).commit();
+
+                break;
 //            case R.id.phpButton:
 //
 //                break;
