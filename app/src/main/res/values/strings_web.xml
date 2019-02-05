@@ -239,7 +239,7 @@
             What are some of the key new features in HTML5?
         </item>
         <item>
-            What are the differences between XHTML &amp;amp; HTML5?
+            What are the differences between XHTML &amp; HTML5?
         </item>
         <item>
             Discuss the differences between an HTML specification and a browser\'s implementation thereof.
@@ -308,7 +308,24 @@
         <!--What are the differences between XHTML &amp;amp; HTML5?-->
         <item>
              <![CDATA[<html><pre style="text-align:center">
-             
+              <p>- XHTML is hybrid between HTML and XML, whereas HTML5 is a version of HTML.</p>
+<p>- XHTML and HTML are two different ways of representing markup.</p>
+<p>- XHTML is almost identical to HTML 4.01. HTML5 is the latest version of HTML.</p>
+<p>- In XHTML, all tags, once opened, must be closed. HTML is less strict.</p>
+<p>- XHTML has some restrictions about what tags can be nested inside each other.</p>
+<p>- XHTML is stricter version of HTML; HTML5 is an upgrade of HTML.</p>
+<p>- XHTML uses XML parsing requirements. HTML uses its own.</p>
+<p>- HTML does not have a well-formedness constraint, no errors are fatal. In XHTML, well-formedness errors are fatal.</p>
+<p>- While XHTML is case sensitive, HTML5 is not (HTML is also case insensitive).</p>
+<p>- In HTML5, one does not need to manually declare the namespace.</p>
+<p>- In HTML5, one does not need to add type attributes to script and style elements.</p>
+<p>- In HTML5, one must use &lt;!DOCTYPE html&gt;, instead of a long doctype.</p>
+<p>- In HTML5, the charset declaration is much simpler.</p>
+<p>- In HTML5, one does not have a choice to include or not include a dtd uri in the doctype or a choice between transitional and strict.</p>
+<p>- In HTML5, one can use embed if needed.</p>
+<p>- XHTML 5 is the XML serialization of HTML 5.</p>
+<p>- [HTML 5] is intended to replace XHTML 1.0 as the normative definition of the XML serialization of the HTML vocabulary.</p>
+<p>- HTML5 is compatible with all browsers while XHTML isn\'t.</p>
             </pre></html>
             ]]>
         </item>
@@ -316,7 +333,7 @@
         <item>
              <![CDATA[<html><pre style="text-align:center">
              <p>HTML specifications such as HTML5 define a set of rules that a document must adhere to in order to be "valid" according to that specification. In addition, a specification provides instructions on how a browser must interpret and render such a document.</p>
-<p>A browser is said to "support" a specification if it handles valid documents according to the rules of the specification. As of yet, no browser supports all aspects of the HTML5 specification (although all of the major browser support&nbsp;<em>most</em>&nbsp;of it), and as a result, it is necessary for the developer to confirm whether the aspect they are making use of will be supported by all of the browsers on which they hope to display their content. This is why cross-browser support continues to be a headache for developers, despite the improved specificiations.</p>
+<p>A browser is said to "support" a specification if it handles valid documents according to the rules of the specification. As of yet, no browser supports all aspects of the HTML5 specification (although all of the major browser support&nbsp;<em>most</em>&nbsp;of it), and as a result, it is necessary for the developer to confirm whether the aspect they are making use of will be supported by all of the browsers on which they hope to display their content. This is why cross-browser support continues to be a headache for developers, despite the improved specifications.</p>
 <p>In addition, while HTML5 defines some rules to follow for an invalid HTML5 document (i.e., one that contains syntactical errors), invalid documents may contain anything, and it is impossible for the specification to handle all possibilities comprehensively. Thus, many decisions about how to handle malformed documents are left up to the browser.</p>
             </pre></html>
             ]]>
@@ -343,13 +360,11 @@
         <!--Give a simple implementation of the &lt;video&gt; tag to embed a video stored at http://www.example.com/amazing_video.mp4. Give the video a width of 640 pixels by 360 pixels. Provide the user with controls.-->
         <item>
              <![CDATA[<html><pre style="text-align:center">
-              <p>Here is one simple implementation:</p>
+             <p>Here is one simple implementation:</p>
 <pre><em><code>&lt;video src="http://www.example.com/amazing_video.mp4" width="640" height="360" controls&gt;&lt;/video&gt;
 </code></em></pre>
 <p>Alternatively, the source file may be indicated with a separate&nbsp;<em><code>&lt;source&gt;</code>&nbsp;</em>tag inside the&nbsp;<em><code>&lt;video&gt;</code></em>&nbsp;element, as in:</p>
-<pre><em><code>&lt;video width="640" height="360" controls&gt;
-  &lt;source src="http://www.example.com/amazing_video.mp4"&gt;
-&lt;/video&gt;</code></em></pre>
+<p><em>&lt;video width="640" height="360" controls&gt;</em><br /><em>&lt;source src="http://www.example.com/amazing_video.mp4"&gt;</em><br /><em>&lt;/video&gt;</em></p>
             </pre></html>
             ]]>
         </item>
@@ -420,50 +435,34 @@
         <!--How do you apply CSS styles to a web page?-->
         <item>
              <![CDATA[<html><pre style="text-align:center">
-                <p>There are three main ways to apply CSS styles to a webpage:</p>
-<h3>Inline styles</h3>
+             <p>There are three main ways to apply CSS styles to a webpage:</p>
+<p><strong>Inline styles</strong></p>
 <p>You can add a style attribute to almost any tag. Inside this attribute you can write your CSS rules.</p>
-<pre class="language-html"><em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>div<span class="language-css style-attr token"><span class="attr-name token"> style</span><span class="punctuation token">="</span><span class="attr-value token"><span class="property token">background-color</span><span class="punctuation token">:</span> red<span class="punctuation token">;</span></span><span class="punctuation token">"</span></span><span class="punctuation token">&gt;</span></span>A container with a red background.<span class="tag token"><span class="punctuation token">&lt;/</span>div<span class="punctuation token">&gt;</span></span></code></em></pre>
-<h3>A style block</h3>
+<pre class="language-html"><em>&lt;div style="background-color: red;"&gt;A container with a red background.&lt;/div&gt;</em></pre>
+<p><strong>A style block</strong></p>
 <p>You are able to define one or more style blocks inside the head section of your HTML document. Inside these blocks you can write your CSS rules. You will have to specify which elements on the page you&rsquo;d like to style. In the below example, we&rsquo;re targeting the&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>body<span class="punctuation token">&gt;</span></span></code></em>&nbsp;tag and an element with a class attribute equal to&nbsp;<em><code class="language-html">.button</code>.</em></p>
-<pre class="language-html"><code class="language-html"><span class="tag token"><span class="punctuation token"><em>&lt;</em></span><em>head<span class="punctuation token">&gt;</span></em></span><em>
-    <span class="tag token"><span class="punctuation token">&lt;</span>style<span class="punctuation token">&gt;</span></span><span class="language-css style token">
-         <span class="selector token">body</span> <span class="punctuation token">{</span>
-             <span class="property token">font-size</span><span class="punctuation token">:</span> 16px<span class="punctuation token">;</span>
-         <span class="punctuation token">}
-</span>
-         <span class="selector token">.button</span> <span class="punctuation token">{</span>
-             <span class="property token">padding</span><span class="punctuation token">:</span> 10px<span class="punctuation token">;</span>
-         <span class="punctuation token">}</span>
-    </span><span class="tag token"><span class="punctuation token">&lt;/</span>style<span class="punctuation token">&gt;</span></span>
-<span class="tag token"><span class="punctuation token">&lt;/</span>head<span class="punctuation token">&gt;</span></span></em></code></pre>
-<h3>Link to a CSS file</h3>
+<p><em>&lt;head&gt;</em><br /><em>&lt;style&gt;</em><br /><em>body {</em><br /><em>font-size: 16px;</em><br /><em>}</em></p>
+<p><em>.button {</em><br /><em>padding: 10px;</em><br /><em>}</em><br /><em>&lt;/style&gt;</em><br /><em>&lt;/head&gt;</em></p>
+<p><strong>Link to a CSS file</strong></p>
 <p>By far the most recommended option is to link to a CSS file. This way you are able to keep the content (HTML) separate from the way you present that content (CSS). It also means you can use the same styles on multiple pages. To link to a CSS file, you will have to add a&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>link<span class="punctuation token">&gt;</span></span></code></em>&nbsp;tag to the&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>head<span class="punctuation token">&gt;</span></span></code></em>&nbsp;section in your document with an&nbsp;<em><code class="language-markup"><span class="tag token"><span class="attr-name token">href</span></span></code></em>&nbsp;attribute that specifies the location of the CSS file.</p>
-<pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;</span>head<span class="punctuation token">&gt;</span></span>
-    <span class="tag token"><span class="punctuation token">&lt;</span>link <span class="attr-name token">rel</span><span class="attr-value token"><span class="punctuation token">=</span><span class="punctuation token">"</span>stylesheet<span class="punctuation token">"</span></span> <span class="attr-name token">href</span><span class="attr-value token"><span class="punctuation token">=</span><span class="punctuation token">"</span>styles.css<span class="punctuation token">"</span></span><span class="punctuation token">&gt;</span></span>
-<span class="tag token"><span class="punctuation token">&lt;/</span>head<span class="punctuation token">&gt;</span></span></code></em></pre>
-            </pre></html>
+<pre class="language-markup"><em>&lt;head&gt;</em><br /><em>    &lt;link rel="stylesheet" href="styles.css"&gt;</em><br /><em>&lt;/head&gt;</em></pre>
+             </pre></html>
             ]]>
         </item>
         <!--How do you apply JavaScript to a web page?-->
         <item>
              <![CDATA[<html><pre style="text-align:center">
-             <p>As with CSS, there are three main ways of including JavaScript:</p>
-<h3>Inline</h3>
+                <p>As with CSS, there are three main ways of including JavaScript:</p>
+<p><strong>Inline</strong></p>
 <p>Certain HTML elements allow you to execute a piece of JavaScript when a certain event occurs. For example, a button allows you to run a script when you click on it. These events are accessed through attributes and differ based on the events that are available on each element. The following example shows an alert with a message when the user clicks on it.</p>
-<pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;</span>button <span class="attr-name token">onclick</span><span class="attr-value token"><span class="punctuation token">=</span><span class="punctuation token">"</span>alert(<span class="punctuation token">\'</span>You clicked on me!<span class="punctuation token">\'</span>);<span class="punctuation token">"</span></span><span class="punctuation token">&gt;</span></span>Click me!<span class="tag token"><span class="punctuation token">&lt;/</span>button<span class="punctuation token">&gt;</span></span></code></em></pre>
-<h3>A script block</h3>
+<pre class="language-markup"><em>&lt;button onclick="alert(\'You clicked on me!\');"&gt;Click me!&lt;/button&gt;</em></pre>
+<p><strong>A script block</strong></p>
 <p>You can define a script block anywhere on the page, which will get executed as soon as the browser reaches that part of the document. Note that this can be inside the&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>head<span class="punctuation token">&gt;</span></span></code>&nbsp;</em>or<em>&nbsp;</em><code class="language-html"><span class="tag token"><em><span class="punctuation token">&lt;</span>body</em><span class="punctuation token"><em>&gt;</em>&nbsp;</span></span></code>section of your document.</p>
-<pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;</span>script<span class="punctuation token">&gt;</span></span><span class="language-javascript script token">
-    <span class="keyword token">var</span> x <span class="operator token">=</span> <span class="number token">5</span><span class="punctuation token">;</span>
-    <span class="keyword token">var</span> y <span class="operator token">=</span> <span class="number token">6</span><span class="punctuation token">;</span>
-    <span class="keyword token">var</span> result <span class="operator token">=</span> x <span class="operator token">+</span> y<span class="punctuation token">;</span>
-    <span class="function token">alert</span><span class="punctuation token">(</span>&ldquo;X <span class="operator token">+</span> Y is equal to " <span class="operator token">+</span> result<span class="punctuation token">)</span><span class="punctuation token">;</span>
-</span><span class="tag token"><span class="punctuation token">&lt;/</span>script<span class="punctuation token">&gt;</span></span></code></em></pre>
-<h3>Link to a JavaScript file</h3>
+<pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;script&gt;<br />var x = 5;<br />var y = 6;<br />var result = x + y;<br />alert("X + Y is equal to " + result);<br />&lt;/script&gt;</span></span></code></em></pre>
+<p><strong>Link to a JavaScript file</strong></p>
 <p>Again, as with CSS, this is the preferred way of including JavaScript. It allows you to keep the content of the page separate to how users interact with that content, and it allows you to load the same script on multiple pages. As with the script block, you can load a JavaScript file from the&nbsp;<code class="language-html"><span class="tag token"><em><span class="punctuation token">&lt;</span>head</em><span class="punctuation token"><em>&gt;</em></span></span></code>&nbsp;or&nbsp;<em><code class="language-html"><span class="tag token"><span class="punctuation token">&lt;</span>body<span class="punctuation token">&gt;</span></span></code></em>, but keep in mind it will be loaded in the order you\'ve structured your document.</p>
 <pre class="language-markup"><em><code class="language-markup"><span class="tag token"><span class="punctuation token">&lt;</span>script <span class="attr-name token">src</span><span class="attr-value token"><span class="punctuation token">=</span><span class="punctuation token">"</span>my-code.js<span class="punctuation token">"</span></span><span class="punctuation token">&gt;</span></span><span class="tag token"><span class="punctuation token">&lt;/</span>script<span class="punctuation token">&gt;</span></span></code></em></pre>
-            </pre></html>
+             </pre></html>
             ]]>
         </item>
         <!--What is Web Forms 2.0?-->
@@ -497,7 +496,7 @@
              <![CDATA[<html><pre style="text-align:center">
             <p><strong>XML (Extensible Markup Language)</strong>&nbsp;is a language that enables a user to define a representation of data or data structure where values are assigned in each field in the structure. In XML to create a language or elements, one must follow some set of rules defined in the XML. The XML document includes data as strings and text which is surrounded by text markup. The fundamental unit in the XML is known as an&nbsp;<strong>element</strong>.</p>
 <p>On the other hand, <strong>HTML (Hypertext Markup Language)</strong>&nbsp;is the markup language for constructing web pages. The markup commands employed in the web-based content signifies structure of the document and its layout to the browser. Browsers simply read the document with the HTML markup in it and render it on the screen through examining the placed HTML elements in the document.</p>
-<h2>Key Differences Between XML and HTML</h2>
+<p><b>Key Differences Between XML and HTML</b></p>
 <p>- XML is a text-based markup language which has the self-describing structure and can effectively define another markup language. On the other hand, HTML is a predefined markup language and has a limited capability.</p>
 <p>- XML provides logical structuring of the document while HTML structure is predefined where "head" and "body" tags are used.</p>
 <p>- When it comes to language type HTML is case insensitive. As against, XML is case sensitive.</p>
@@ -512,8 +511,8 @@
         <!--How do CSS precedence/cascading rules work? How does the !important directive affect the rules?-->
         <item>
              <![CDATA[<html><pre style="text-align:center">
-            <p>CSS style rules "<em>cascade</em>" in the sense that they follow an order of precedence. Global style rules apply first to HTML elements, and local style rules override them. For example, a style defined in a style element in a webpage overrides a style defined in an external style sheet. Similarly, an inline style that is defined in an HTML element in the page overrides any styles that are defined for that same element elsewhere. The !important rule is a way to make your CSS cascade but also have the rules you feel are most crucial always be applied. A rule that has the !important property will always be applied no matter where that rule appears in the CSS document. So if you wanted to make sure that a property always applied, you would add the !important property to the tag. So, to make the paragraph text always red, in the above example, you would write:</p>
-<p><em>p { color: #ff0000 !important; }p { color: #000000; }</em></p>
+            <p>CSS style rules "<em>cascade</em>" in the sense that they follow an order of precedence. Global style rules apply first to HTML elements, and local style rules override them. For example, a style defined in a style element in a webpage overrides a style defined in an external style sheet. Similarly, an inline style that is defined in an HTML element in the page overrides any styles that are defined for that same element elsewhere. The !important rule is a way to make your CSS cascade but also have the rules you feel are most crucial always be applied. A rule that has the !important property will always be applied no matter where that rule appears in the CSS document. So if you wanted to make sure that a property always applied, you would add the !important property to the tag. So, like the example below, you would write:</p>
+            <p><em>p { </em><br /><em>color: #ff0000 !important; }</em><br /><em>p {</em><br /><em>color: #000000; }</em></p>
             </pre></html>
             ]]>
         </item>
