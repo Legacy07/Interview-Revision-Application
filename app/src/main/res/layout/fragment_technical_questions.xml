@@ -95,6 +95,20 @@
                 android:text="HTML"
                 android:textSize="@dimen/text_size" />
         </TableRow>
+
+        <TableRow
+            android:layout_weight="2"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/jsButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/javascript"
+                android:fontFamily="@font/montserrat"
+                android:text="JavaScript"
+                android:textSize="@dimen/text_size" />
+        </TableRow>
     </TableLayout>
 
 </RelativeLayout>

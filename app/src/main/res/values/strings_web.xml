@@ -517,4 +517,163 @@
             ]]>
         </item>
     </string-array>
+
+    <string-array name="javascript_questions">
+        <item>
+            What is an EcmaScript? What is the latest version of JavaScript?
+        </item>
+        <item>
+             What are the pros and cons of functional programming vs object-oriented programming?
+        </item>
+        <item>
+            What are the advantages &amp; disadvantages of using JavaScript?
+        </item>
+        <item>
+            What is the difference between classical inheritance and prototypal inheritance?
+        </item>
+        <item>
+            What is a callback and closure?
+        </item>
+        <item>
+            What are two-way data binding and one-way data flow, and how are they different?
+        </item>
+        <item>
+            What is asynchronous programming, and why is it important in JavaScript?
+        </item>
+        <item>
+            What are JavaScript Data Types?
+        </item>
+        <item>
+            What is the difference between undefined and not defined?
+        </item>
+        <item>
+            Difference between "var" and "let" Keywords?
+        </item>
+        <item>
+            Difference between "==" and "===" ?
+        </item>
+        <item>
+            What is SetTimeout()?
+        </item>
+        <item>
+            What does "use strict" do?
+        </item>
+        <item>
+            When would you use the bind function?
+        </item>
+        <item>
+            What is a Typed Language?
+        </item>
+        <item>
+            What does a typeof operator do? What is the difference between typeof and instanceof operators?
+        </item>
+        <item>
+            Are Typescript and Javascript the same?
+        </item>
+        <item>
+            Name some of the Javascript frameworks.
+        </item>
+        <item>
+            What are self Executing Functions?
+        </item>
+        <item>
+            What is the use of the \'this\' keyword?
+        </item>
+        <item>
+            What is the difference between window and document?
+        </item>
+        <item>
+            What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
+        </item>
+        <item>
+            How do you clone an object?
+        </item>
+        <item>
+            What is the difference between ViewState and SessionState?
+        </item>
+        <item>
+            Define event bubbling?
+        </item>
+        <item>
+            How are event handlers utilized in JavaScript?
+        </item>
+        <item>
+            Write about the errors shown in JavaScript?
+        </item>
+    </string-array>
+
+    <string-array name="javascript_answers">
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+        <item>
+
+        </item>
+    </string-array>
 </resources>

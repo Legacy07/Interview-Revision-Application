@@ -15,6 +15,7 @@ import com.ahmet.interviewapp.Technical_Questions.AndroidTechnicalQuestionsFragm
 import com.ahmet.interviewapp.Technical_Questions.CSharpTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.GeneralWebQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.HtmlQuestionsFragment;
+import com.ahmet.interviewapp.Technical_Questions.JavaScriptQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.JavaTechnicalQuestionsFragment;
 import com.ahmet.interviewapp.Technical_Questions.ObjectOrientedQuestionsFragment;
 
@@ -22,7 +23,7 @@ import com.ahmet.interviewapp.Technical_Questions.ObjectOrientedQuestionsFragmen
 public class TechnicalQuestionsFragment extends Fragment implements View.OnClickListener {
 
 
-    Button javaButton, androidButton, cSharpButton, objectOrientedButton, generalWebButton, htmlButton, phpButton, cssButton;
+    Button javaButton, androidButton, cSharpButton, objectOrientedButton, generalWebButton, htmlButton, jsButton, phpButton, cssButton;
     FragmentManager manager;
 
     public TechnicalQuestionsFragment() {
@@ -41,8 +42,9 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
         objectOrientedButton = (Button) view.findViewById(R.id.objectOrientedButton);
         generalWebButton = (Button) view.findViewById(R.id.generalWebButton);
         htmlButton = (Button) view.findViewById(R.id.htmlButton);
+        jsButton = (Button) view.findViewById(R.id.jsButton);
 
-//  phpButton = (Button) view.findViewById(R.id.phpButton);
+//        phpButton = (Button) view.findViewById(R.id.phpButton);
 //        cssButton = (Button) view.findViewById(R.id.cssButton);
 
         javaButton.setOnClickListener(this);
@@ -51,6 +53,7 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
         objectOrientedButton.setOnClickListener(this);
         generalWebButton.setOnClickListener(this);
         htmlButton.setOnClickListener(this);
+        jsButton.setOnClickListener(this);
 
 //        phpButton.setOnClickListener(this);
 //        cssButton.setOnClickListener(this);
@@ -104,6 +107,11 @@ public class TechnicalQuestionsFragment extends Fragment implements View.OnClick
             case R.id.htmlButton:
                 HtmlQuestionsFragment htmlQuestionsFragment = new HtmlQuestionsFragment();
                 manager.beginTransaction().replace(R.id.content_layout, htmlQuestionsFragment).addToBackStack(null).commit();
+
+                break;
+            case R.id.jsButton:
+                JavaScriptQuestionsFragment javaScriptQuestionsFragment = new JavaScriptQuestionsFragment();
+                manager.beginTransaction().replace(R.id.content_layout, javaScriptQuestionsFragment).addToBackStack(null).commit();
 
                 break;
 //            case R.id.phpButton:
