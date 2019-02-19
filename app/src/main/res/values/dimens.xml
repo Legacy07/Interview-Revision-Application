@@ -11,4 +11,5 @@
     <dimen name="subHeader_size">22sp</dimen>
     <dimen name="text_size">18sp</dimen>
 
+    <dimen name="buttonHeight">150dp</dimen>
 </resources>

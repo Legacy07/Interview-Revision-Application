@@ -5,110 +5,190 @@
     android:layout_height="match_parent"
     tools:context=".Nav_Bar_Fragments.TechnicalQuestionsFragment">
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/technicalTable"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dp"
-        android:stretchColumns="*">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
-        <TableRow
-            android:layout_weight="2"
-            android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/objectOrientedButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
                 android:drawableBottom="@drawable/object_oriented"
                 android:fontFamily="@font/montserrat"
                 android:text="General Object Oriented"
                 android:textSize="@dimen/text_size" />
-        </TableRow>
-
-        <TableRow
-            android:layout_weight="2"
-            android:weightSum="2">
 
             <Button
                 android:id="@+id/javaButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_below="@id/objectOrientedButton"
                 android:drawableBottom="@drawable/java"
                 android:fontFamily="@font/montserrat"
                 android:text="Java"
                 android:textSize="@dimen/text_size" />
-        </TableRow>
-
-        <TableRow
-            android:layout_weight="2"
-            android:weightSum="2">
 
             <Button
                 android:id="@+id/androidButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_below="@id/javaButton"
                 android:drawableBottom="@drawable/android"
                 android:fontFamily="@font/montserrat"
                 android:text="Android"
                 android:textSize="@dimen/text_size" />
-        </TableRow>
-
-        <TableRow
-            android:layout_weight="2"
-            android:weightSum="2">
 
             <Button
                 android:id="@+id/csharpButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_below="@id/androidButton"
                 android:drawableBottom="@drawable/csharp"
                 android:fontFamily="@font/montserrat"
                 android:text="C#"
                 android:textSize="@dimen/text_size" />
-        </TableRow>
-
-        <TableRow
-            android:layout_weight="2"
-            android:weightSum="2">
 
             <Button
                 android:id="@+id/generalWebButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_below="@id/csharpButton"
                 android:drawableBottom="@drawable/general_web"
                 android:fontFamily="@font/montserrat"
                 android:text="General Web"
                 android:textSize="@dimen/text_size" />
-        </TableRow>
-
-        <TableRow
-            android:layout_weight="2"
-            android:weightSum="2">
 
             <Button
                 android:id="@+id/htmlButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_below="@id/generalWebButton"
                 android:drawableBottom="@drawable/html"
                 android:fontFamily="@font/montserrat"
                 android:text="HTML"
                 android:textSize="@dimen/text_size" />
-        </TableRow>
-
-        <TableRow
-            android:layout_weight="2"
-            android:weightSum="2">
 
             <Button
                 android:id="@+id/jsButton"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_below="@id/htmlButton"
                 android:drawableBottom="@drawable/javascript"
                 android:fontFamily="@font/montserrat"
                 android:text="JavaScript"
                 android:textSize="@dimen/text_size" />
-        </TableRow>
-    </TableLayout>
 
+        </RelativeLayout>
+    </ScrollView>
+    <!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/technicalTable"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="5dp"-->
+    <!--android:stretchColumns="*">-->
+
+    <!--<TableRow-->
+    <!--android:layout_weight="2"-->
+    <!--android:weightSum="2">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/objectOrientedButton"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/buttonHeight"-->
+    <!--android:drawableBottom="@drawable/object_oriented"-->
+    <!--android:fontFamily="@font/montserrat"-->
+    <!--android:text="General Object Oriented"-->
+    <!--android:textSize="@dimen/text_size" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_weight="2"-->
+    <!--android:weightSum="2">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/javaButton"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:drawableBottom="@drawable/java"-->
+    <!--android:fontFamily="@font/montserrat"-->
+    <!--android:text="Java"-->
+    <!--android:textSize="@dimen/text_size" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_weight="2"-->
+    <!--android:weightSum="2">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/androidButton"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:drawableBottom="@drawable/android"-->
+    <!--android:fontFamily="@font/montserrat"-->
+    <!--android:text="Android"-->
+    <!--android:textSize="@dimen/text_size" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_weight="2"-->
+    <!--android:weightSum="2">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/csharpButton"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:drawableBottom="@drawable/csharp"-->
+    <!--android:fontFamily="@font/montserrat"-->
+    <!--android:text="C#"-->
+    <!--android:textSize="@dimen/text_size" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_weight="2"-->
+    <!--android:weightSum="2">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/generalWebButton"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:drawableBottom="@drawable/general_web"-->
+    <!--android:fontFamily="@font/montserrat"-->
+    <!--android:text="General Web"-->
+    <!--android:textSize="@dimen/text_size" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_weight="2"-->
+    <!--android:weightSum="2">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/htmlButton"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:drawableBottom="@drawable/html"-->
+    <!--android:fontFamily="@font/montserrat"-->
+    <!--android:text="HTML"-->
+    <!--android:textSize="@dimen/text_size" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_weight="2"-->
+    <!--android:weightSum="2">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/jsButton"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:drawableBottom="@drawable/javascript"-->
+    <!--android:fontFamily="@font/montserrat"-->
+    <!--android:text="JavaScript"-->
+    <!--android:textSize="@dimen/text_size" />-->
+    <!--</TableRow>-->
+    <!--</TableLayout>-->
 </RelativeLayout>
