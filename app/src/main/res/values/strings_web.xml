@@ -544,7 +544,7 @@
             What are JavaScript Data Types?
         </item>
         <item>
-            What is the difference between undefined and not defined?
+            Differences between null, undefined and not defined?
         </item>
         <item>
             Difference between "var" and "let" Keywords?
@@ -603,77 +603,303 @@
     </string-array>
 
     <string-array name="javascript_answers">
+        <!--What is an EcmaScript? What is the latest version of JavaScript?-->
         <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p>ECMAScript (European Computer Manufacturers Association) Script is a specification for the scripting language standards. It has standardized Javascript which made Javascript the best implementation of ECMAScript.</p>
+<p>The latest version of ECMAScript is ECMAScript 9;</p>
+<p>- Added rest / spread properties.<br />- Added Asynchronous iteration.<br />- Added Promise.finally().<br />- Additions to RegExp.</p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--What are the pros and cons of functional programming vs object-oriented programming?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p id="f27f" class="graf graf--p graf-after--h4"><strong class="markup--strong markup--p-strong">Object-Oriented Programming Pros:&nbsp;</strong>It&rsquo;s easy to understand the basic concept of objects and easy to interpret the meaning of method calls. OOP tends to use an imperative style rather than a declarative style, which reads like a straight-forward set of instructions for the computer to follow.</p>
+<p id="d62d" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Object-Oriented Programming Cons:</strong>&nbsp;OOP Typically depends on shared state. Objects and behaviors are typically tacked together on the same entity, which may be accessed at random by any number of functions with non-deterministic order, which may lead to undesirable behavior such as race conditions.</p>
+<p id="febf" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Functional Programming Pros:</strong>&nbsp;Using the functional paradigm, programmers avoid any shared state or side-effects, which eliminates bugs caused by multiple functions competing for the same resources. With features such as the availability of point-free style (aka tacit programming), functions tend to be radically simplified and easily recomposed for more generally reusable code compared to OOP.</p>
+<p id="e045" class="graf graf--p graf-after--p">FP also tends to favor declarative and denotational styles, which do not spell out step-by-step instructions for operations, but instead concentrate on&nbsp;<strong class="markup--strong markup--p-strong">what&nbsp;</strong>to do, letting the underlying functions take care of the&nbsp;<strong class="markup--strong markup--p-strong">how</strong>. This leaves tremendous latitude for refactoring and performance optimization, even allowing you to replace entire algorithms with more efficient ones with very little code change. (e.g., memoize, or use lazy evaluation in place of eager evaluation.)</p>
+<p id="d4df" class="graf graf--p graf-after--p">Computation that makes use of pure functions is also easy to scale across multiple processors, or across distributed computing clusters without fear of threading resource conflicts, race conditions, etc&hellip;</p>
+<p id="a116" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Functional Programming Cons:</strong>&nbsp;Over exploitation of FP features such as point-free style and large compositions can potentially reduce readability because the resulting code is often more abstractly specified, more terse, and less concrete.</p>
+<p id="7f77" class="graf graf--p graf-after--p">More people are familiar with<em class="markup--em markup--p-em">&nbsp;OO</em>&nbsp;and imperative programming than functional programming, so even common idioms in functional programming can be confusing to new team members.</p>
+<p id="2dd7" class="graf graf--p graf-after--p">FP has a much steeper learning curve than OOP because the broad popularity of OOP has allowed the language and learning materials of OOP to become more conversational, whereas the language of FP tends to be much more academic and formal. FP concepts are frequently written about using idioms and notations from lambda calculus, algebras, and category theory, all of which requires a prior knowledge foundation in those domains to be understood.</p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--What are the advantages &amp; disadvantages of using JavaScript?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
 
+            </pre></html>
+            ]]>
+        </item>
+        <!--What is the difference between classical inheritance and prototypal inheritance?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p id="9e70" class="graf graf--p graf-after--h4"><strong class="markup--strong markup--p-strong">Class Inheritance:&nbsp;</strong>instances inherit from classes (like a blueprint &mdash; a description of the class), and create sub-class relationships: hierarchical class taxonomies. Instances are typically instantiated via constructor functions with the&nbsp;<em class="markup--em markup--p-em">'new'</em>&nbsp;keyword. Class inheritance may or may not use the&nbsp;<em class="markup--em markup--p-em">'class'</em>&nbsp;keyword from ES6.</p>
+<p id="8ea1" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Prototypal Inheritance:</strong>&nbsp;instances inherit directly from other objects. Instances are typically instantiated via factory functions or&nbsp;<em class="markup--em markup--p-em">'Object.create()'.</em>Instances may be composed from many different objects, allowing for easy selective inheritance.</p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--What is a callback and closure?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <div class="toggle-content">
+<p>A <strong>callback</strong> is a plain JavaScript function passed to some method as an argument or option. Some callbacks are just events, called to give the user a chance to react when a certain state is triggered.</p>
+
+  <div class="toggle-content">
+<p><strong>Closures</strong> are created whenever a variable that is defined outside the current scope is accessed from within some inner scope.</p>
+</div>
+
+            </pre></html>
+            ]]>
+        </item>
+        <!--What are two-way data binding and one-way data flow, and how are they different?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <div class="toggle-content">
+<p id="4585" class="graf graf--p graf-after--h4">Two way data binding means that UI fields are bound to model data dynamically such that when a UI field changes, the model data changes with it and vice-versa.</p>
+<p id="5c7c" class="graf graf--p graf-after--p">One way data flow means that the model is the single source of truth. Changes in the UI trigger messages that signal user intent to the model (or "store" in React). Only the model has the access to change the app's state. The effect is that data always flows in a single direction, which makes it easier to understand.</p>
+<p id="fcde" class="graf graf--p graf-after--p">One way data flows are deterministic, whereas two-way binding can cause side-effects which are harder to follow and understand.</p>
+</div>
+            </pre></html>
+            ]]>
+        </item>
+        <!--What is asynchronous programming, and why is it important in JavaScript?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <div class="toggle-content">
+<p id="3a96" class="graf graf--p graf-after--h4">Synchronous programming means that, barring conditionals and function calls, code is executed sequentially from top-to-bottom, blocking on long-running tasks such as network requests and disk I/O.</p>
+<p id="06d9" class="graf graf--p graf-after--p">Asynchronous programming means that the engine runs in an event loop. When a blocking operation is needed, the request is started, and the code keeps running without blocking for the result. When the response is ready, an interrupt is fired, which causes an event handler to be run, where the control flow continues. In this way, a single program thread can handle many concurrent operations.</p>
+<p id="6f75" class="graf graf--p graf-after--p">User interfaces are asynchronous by nature, and spend most of their time waiting for user input to interrupt the event loop and trigger event handlers.</p>
+<p id="2ce9" class="graf graf--p graf-after--p">Node is asynchronous by default, meaning that the server works in much the same way, waiting in a loop for a network request, and accepting more incoming requests while the first one is being handled.</p>
+<p id="7b67" class="graf graf--p graf-after--p">This is important in JavaScript, because it is a very natural fit for user interface code, and very beneficial to performance on the server.</p>
+</div>
+            </pre></html>
+            ]]>
+        </item>
+        <!--What are JavaScript Data Types?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p>There are 7 basic types in JavaScript.</p>
+<p>- <code>number</code>&nbsp;for numbers of any kind: integer or floating-point.</p>
+<p>- <code>string</code>&nbsp;for strings. A string may have one or more characters, there&rsquo;s no separate single-character type.</p>
+<p>- <code>boolean</code>&nbsp;for&nbsp;<code>true</code>/<code>false</code>.</p>
+<p>- <code>null</code>&nbsp;for unknown values &ndash; a standalone type that has a single value&nbsp;<code>null</code>.</p>
+<p>- <code>undefined</code>&nbsp;for unassigned values &ndash; a standalone type that has a single value&nbsp;<code>undefined</code>.</p>
+<p>- <code>object</code>&nbsp;for more complex data structures.</p>
+<p>- <code>symbol</code>&nbsp;for unique identifiers.</p>
+<p>A variable in JavaScript can contain any data. A variable can at one moment be a string and at another be a number:</p>
+<div class="code-example" data-trusted="1" data-prism-highlighted="1">
+<div class="codebox code-example__codebox">
+<div class="codebox__code" data-code="1">
+<pre class="line-numbers  language-javascript"><code class=" language-javascript"><code class="token comment">// no error</code> <br /><em><code class="token keyword">let</code> message <code class="token operator">=</code> <code class="token string">"hello"</code><code class="token punctuation">;<br /></code>message <code class="token operator">=</code> <code class="token number">123456</code><code class="token punctuation">;<br />message = 12.35;</code></em></code></pre>
+</div>
+</div>
+</div>
+            </pre></html>
+            ]]>
+        </item>
+        <!--Differences between null, undefined and not defined?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p><strong>Undefined</strong></p>
+<p>Whenever we declare a variable without assigning any value to it, javascript implicitly assigns its value as undefined.&nbsp;</p>
+<pre class="graf graf--pre graf-after--p"><em><code class="markup--code markup--pre-code">let name;<br />console.log(name);</code></em> //undefined<br /><br />Or When functions don\'t have a return statement but are called for assigning a<br />value to a variable.<br /><br /></pre>
+<pre id="d923" class="graf graf--pre graf-after--p"><em><code class="markup--code markup--pre-code">let add = (a,b) =&gt; {<br />  let c = a+b;<br />  //return c;<br />}</code></em></pre>
+<pre id="612d" class="graf graf--pre graf-after--pre"><em><code class="markup--code markup--pre-code">let sum = add(2,3);</code></em></pre>
+<pre class="graf graf--pre graf-after--pre"><em><code class="markup--code markup--pre-code">console.log(sum); <br />//Output:</code></em><code class="markup--code markup--pre-code"> undefined</code><em><br /><br /><br /></em><strong>Null</strong><br /><code class="markup--code markup--p-code"><em class="markup--em markup--p-em">null</em></code>&nbsp;is a reserved keyword in javascript. We can assign a null value to a variable <br />explicitly using the keyword&nbsp;<code class="markup--code markup--p-code">null</code>. Null essentially represents a non-existent or <br />an empty value i.e. we explicitly tell javascript interpreter that the variable <br />has no value.<br /><br /><em><code class="markup--code markup--pre-code">let life = null;<br />console.log(life); //null<br /></code></em></pre>
+<pre class="graf graf--pre graf-after--pre"><strong>Not defined</strong><br />A not defined is a variable which is not declared at a given point of time with<br />declaration keyword like var, let or const.<br /><br /></pre>
+<pre id="19de" class="graf graf--pre graf-after--p"><em><code class="markup--code markup--pre-code">console.log(b);<br />b = 5;<br />//Output:- "ReferenceError: b is not defined</code></em></pre>
+<pre id="32eb" class="graf graf--pre graf-after--pre"><br /><br /></pre>
+            </pre></html>
+            ]]>
+        </item>
+        <!--Difference between "var" and "let" Keywords?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p>The difference is scoping.&nbsp;<code>var</code>&nbsp;is scoped to the nearest function block and&nbsp;<code>let</code>&nbsp;is scoped to the nearest&nbsp;<em>enclosing</em>&nbsp;block, which can be smaller than a function block. Both are global if outside any block.</p>
+<p>Also, variables declared with&nbsp;<code>let</code>&nbsp;are not accessible before they are declared in their enclosing block. As seen in the demo, this will throw a ReferenceError exception.</p>
+<h3>Global:</h3>
+<p>They are very similar when used like this outside a function block.</p>
+<pre class="lang-js prettyprint prettyprinted"><em><code><span class="kwd">let</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'go'</span><span class="pun">;</span>  <span class="com">// globally scoped</span>
+<span class="kwd">var</span><span class="pln"> i </span><span class="pun">=</span> <span class="str">'able'</span><span class="pun">;</span> <span class="com">// globally scoped</span></code></em></pre>
+<p>However, global variables defined with&nbsp;<code>let</code>&nbsp;will not be added as properties on the global&nbsp;<code>window</code>object like those defined with&nbsp;<code>var</code>.</p>
+<pre class="lang-js prettyprint prettyprinted"><em><code><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">window</span><span class="pun">.</span><span class="pln">me</span><span class="pun">);</span> <span class="com">// undefined</span><span class="pln">
+console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">window</span><span class="pun">.</span><span class="pln">i</span><span class="pun">);</span> <span class="com">// 'able'</span></code></em></pre>
+<h3>Function:</h3>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+<p>They are identical when used like this in a function block.</p>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+<pre class="lang-js prettyprint prettyprinted"><em><code><span class="kwd">function</span><span class="pln"> ingWithinEstablishedParameters</span><span class="pun">()</span> <span class="pun">{</span>
+    <span class="kwd">let</span><span class="pln"> terOfRecommendation </span><span class="pun">=</span> <span class="str">'awesome worker!'</span><span class="pun">;</span> <span class="com">//function block scoped</span>
+    <span class="kwd">var</span><span class="pln"> sityCheerleading </span><span class="pun">=</span> <span class="str">'go!'</span><span class="pun">;</span> <span class="com">//function block scoped</span>
+<span class="pun">}</span></code></em></pre>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+<h3>Block:</h3>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+<p>Here is the difference.&nbsp;<code>let</code>&nbsp;is only visible in the&nbsp;<code>for()</code>&nbsp;loop and&nbsp;<code>var</code>&nbsp;is visible to the whole function.</p>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+<pre class="lang-js prettyprint prettyprinted"><code><span class="kwd"><em>function</em></span><em><span class="pln"> allyIlliterate</span><span class="pun">()</span> <span class="pun">{</span>
+    <span class="com">//tuce is *not* visible out here</span>
+
+    <span class="kwd">for</span><span class="pun">(</span> <span class="kwd">let</span><span class="pln"> tuce </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> tuce </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> tuce</span><span class="pun">++</span> <span class="pun">)</span> <span class="pun">{</span>
+        <span class="com">//tuce is only visible in here (and in the for() parentheses)</span>
+        <span class="com">//and there is a separate tuce variable for each iteration of the loop</span>
+    <span class="pun">}</span>
+
+    <span class="com">//tuce is *not* visible out here</span>
+<span class="pun">}</span>
+
+<span class="kwd">function</span><span class="pln"> byE40</span><span class="pun">()</span> <span class="pun">{</span>
+    <span class="com">//nish *is* visible out here</span>
+
+    <span class="kwd">for</span><span class="pun">(</span> <span class="kwd">var</span><span class="pln"> nish </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> nish </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> nish</span><span class="pun">++</span> <span class="pun">)</span> <span class="pun">{</span>
+        <span class="com">//nish is visible to the whole function</span>
+    <span class="pun">}</span>
+
+    <span class="com">//nish *is* visible out here</span>
+<span class="pun">}<br /><br /></span></em></code></pre>
+<h3>Redeclaration:</h3>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+<p>Assuming strict mode,&nbsp;<code>var</code>&nbsp;will let you re-declare the same variable in the same scope. On the other hand,&nbsp;<code>let</code>&nbsp;will not:</p>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+<pre class="lang-js prettyprint prettyprinted"><em><code><span class="str">'use strict'</span><span class="pun">;</span>
+<span class="kwd">let</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'foo'</span><span class="pun">;</span>
+<span class="kwd">let</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'bar'</span><span class="pun">;</span> <span class="com">// SyntaxError: Identifier 'me' has already been declared</span></code></em></pre>
+<pre class="lang-js prettyprint prettyprinted"><em><code></code></em></pre>
+<pre class="lang-js prettyprint prettyprinted"><em><code><span class="str">'use strict'</span><span class="pun">;</span>
+<span class="kwd">var</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'foo'</span><span class="pun">;</span>
+<span class="kwd">var</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'bar'</span><span class="pun">;</span> <span class="com">// No problem, `me` is replaced.</span></code></em></pre>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+<pre class="lang-js prettyprint prettyprinted"><code></code></pre>
+            </pre></html>
+            ]]>
+        </item>
+        <!--Difference between "==" and "===" ?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p>JavaScript has both strict and type-converting equality comparison. For&nbsp;<code>strict</code>&nbsp;equality the objects being compared must have the same type and:</p>
+<pre class="default prettyprint prettyprinted"><code></code></pre>
+<p>- Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.</p>
+<p>- Two numbers are strictly equal when they are numerically equal (have the same number value). <code>NaN</code>&nbsp;is not equal to anything, including&nbsp;<code>NaN</code>. Positive and negative zeros are equal to one another.</p>
+<p>- Two Boolean operands are strictly equal if both are true or both are false.</p>
+<p>- Two objects are strictly equal if they refer to the same <code>Object</code>.</p>
+<p><code><span class="lit"><strong><br />Examples</strong>: <br /><em>0</em></span><em> <span class="pun">==</span> <span class="kwd">false</span> <span class="com">// true</span></em></code></p>
+<p><code><em> <span class="lit">0</span> <span class="pun">===</span> <span class="kwd">false</span> <span class="com">// false, because they are of a different type</span> </em></code></p>
+<p><code><em><span class="lit">1</span> <span class="pun">==</span> <span class="str">"1"</span> <span class="com">// true, automatic type conversion for value only</span> </em></code></p>
+<p><code><em><span class="lit">1</span> <span class="pun">===</span> <span class="str">"1"</span> <span class="com">// false, because they are of a different type</span></em></code></p>
+<p><code><em> <span class="kwd">null</span> <span class="pun">==</span> <span class="kwd">undefined</span> <span class="com">// true</span></em></code></p>
+<p><code><em> <span class="kwd">null</span> <span class="pun">===</span> <span class="kwd">undefined</span> <span class="com">// false</span> </em></code></p>
+<p><code><em><span class="str">'0'</span> <span class="pun">==</span> <span class="kwd">false</span> <span class="com">// true</span> </em></code></p>
+<p><code><em><span class="str">'0'</span> <span class="pun">===</span> <span class="kwd">false</span> <span class="com">// false</span></em></code></p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--What is SetTimeout()?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p>setTimeout sets a timer and executes the given code after that timer timed out.</p>
+<p><strong>Example</strong>:&nbsp;</p>
+<p>Display an alert box after 3 seconds (3000 milliseconds):</p>
+<div class="w3-code notranslate jsHigh"><em>setTimeout(function(){ alert("Hello"); },&nbsp;3000);</em></div>
+            </pre></html>
+            ]]>
+        </item>
+        <!--What does "use strict" do?-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p>The "use strict" literal is entered at the top of a JavaScript program or at the top of a function and it helps you write safer JavaScript code by throwing an error if a global variable is created by mistake. For example, the following program will throw an error:</p>
+<p><em><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doSomething</span>(<span class="hljs-params">val</span>) </span>{</em></p>
+<p><em> <span class="hljs-meta"> "use strict"</span>;</em></p>
+<p><em> x = val + <span class="hljs-number">10</span>; </em></p>
+<p><em>}</em></p>
+<p>It will throw an error because x was not defined and it is being set to some value in the global scope, which isn't allowed with "use strict" The small change below fixes the error being thrown:</p>
+<p><em><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doSomething</span>(<span class="hljs-params">val</span>) </span>{ </em></p>
+<p><em><span class="hljs-meta"> "use strict"</span>; </em></p>
+<p><em><span class="hljs-keyword">var</span> x = val + <span class="hljs-number">10</span>; </em></p>
+<p><em>}</em></p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--When would you use the bind function -->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+                <p>A good use of the bind function is when you have a particular function that you want to call with a specific this value. You can then use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">bind</a> to pass a specific object to a function that uses a this reference.</p>
+<p><em><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fullName</span>() </span>{</em></p>
+<p><em> <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, this is "</span> + <span class="hljs-keyword">this</span>.first + <span class="hljs-string">" "</span> + <span class="hljs-keyword">this</span>.last; </em></p>
+<p><em>} </em></p>
+<p><em><span class="hljs-built_in">console</span>.log(fullName()); <span class="hljs-comment">// =&gt; Hello this is undefined undefined</span></em></p>
+<p><em> <span class="hljs-comment">// create a person object and pass its values to the fullName function</span></em></p>
+<p><em> <span class="hljs-keyword">var</span> person = {<span class="hljs-attr">first</span>: <span class="hljs-string">"Foo"</span>, <span class="hljs-attr">last</span>: <span class="hljs-string">"Bar"</span>};</em></p>
+<p><em> <span class="hljs-built_in">console</span>.log(fullName.bind(person)()); <span class="hljs-comment">// =&gt; Hello this is Foo Bar</span></em></p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--What is a typed language-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p>Typed Language is in which the values are associated with values and not with variables. It is of two types:</p>
+<p><strong>Dynamically</strong>: in this, the variable can hold multiple types; like in JS a variable can take number, chars.</p>
+<p><strong>Statically</strong>: in this, the variable can hold only one type, like in Java a variable declared of string can take only set of characters and nothing else.</p>
+<p><strong>NOTE</strong>: Typescript is a superset of JS which is of typed language.</p>
+            </pre></html>
+            ]]>
+        </item>
+
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+
+            </pre></html>
+            ]]>
         </item>
         <item>
+            <![CDATA[<html><pre style="text-align:center">
 
+            </pre></html>
+            ]]>
         </item>
         <item>
+            <![CDATA[<html><pre style="text-align:center">
 
+            </pre></html>
+            ]]>
         </item>
         <item>
+            <![CDATA[<html><pre style="text-align:center">
 
+            </pre></html>
+            ]]>
         </item>
         <item>
+            <![CDATA[<html><pre style="text-align:center">
 
+            </pre></html>
+            ]]>
         </item>
         <item>
+            <![CDATA[<html><pre style="text-align:center">
 
+            </pre></html>
+            ]]>
         </item>
         <item>
+            <![CDATA[<html><pre style="text-align:center">
 
+            </pre></html>
+            ]]>
         </item>
         <item>
+            <![CDATA[<html><pre style="text-align:center">
 
+            </pre></html>
+            ]]>
         </item>
         <item>
+            <![CDATA[<html><pre style="text-align:center">
 
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
-        </item>
-        <item>
-
+            </pre></html>
+            ]]>
         </item>
     </string-array>
 </resources>

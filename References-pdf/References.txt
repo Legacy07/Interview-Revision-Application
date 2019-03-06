@@ -219,7 +219,8 @@ JavaScript
 - https://www.geeksforgeeks.org/commonly-asked-javascript-interview-questions-set-1/
 - https://coderbyte.com/algorithm/10-common-javascript-interview-questions
 - https://www.tutorialspoint.com/javascript/javascript_interview_questions.htm
-- 
+- https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable-in-jav
+- https://medium.com/technoetics/difference-between-null-undefined-and-not-defined-in-javascript-3a52a62894b
 
 pdf references 
 - https://theinterviewguys.com/jeff-mike-resources/
