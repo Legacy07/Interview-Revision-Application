@@ -526,9 +526,6 @@
              What are the pros and cons of functional programming vs object-oriented programming?
         </item>
         <item>
-            What are the advantages &amp; disadvantages of using JavaScript?
-        </item>
-        <item>
             What is the difference between classical inheritance and prototypal inheritance?
         </item>
         <item>
@@ -592,13 +589,7 @@
             What is the difference between ViewState and SessionState?
         </item>
         <item>
-            Define event bubbling?
-        </item>
-        <item>
             How are event handlers utilized in JavaScript?
-        </item>
-        <item>
-            Write about the errors shown in JavaScript?
         </item>
     </string-array>
 
@@ -623,13 +614,6 @@
 <p id="a116" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Functional Programming Cons:</strong>&nbsp;Over exploitation of FP features such as point-free style and large compositions can potentially reduce readability because the resulting code is often more abstractly specified, more terse, and less concrete.</p>
 <p id="7f77" class="graf graf--p graf-after--p">More people are familiar with<em class="markup--em markup--p-em">&nbsp;OO</em>&nbsp;and imperative programming than functional programming, so even common idioms in functional programming can be confusing to new team members.</p>
 <p id="2dd7" class="graf graf--p graf-after--p">FP has a much steeper learning curve than OOP because the broad popularity of OOP has allowed the language and learning materials of OOP to become more conversational, whereas the language of FP tends to be much more academic and formal. FP concepts are frequently written about using idioms and notations from lambda calculus, algebras, and category theory, all of which requires a prior knowledge foundation in those domains to be understood.</p>
-            </pre></html>
-            ]]>
-        </item>
-        <!--What are the advantages &amp; disadvantages of using JavaScript?-->
-        <item>
-            <![CDATA[<html><pre style="text-align:center">
-
             </pre></html>
             ]]>
         </item>
@@ -703,13 +687,13 @@
         <!--Differences between null, undefined and not defined?-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-            <p><strong>Undefined</strong></p>
+<p><strong>Undefined</strong></p>
 <p>Whenever we declare a variable without assigning any value to it, javascript implicitly assigns its value as undefined.&nbsp;</p>
 <pre class="graf graf--pre graf-after--p"><em><code class="markup--code markup--pre-code">let name;<br />console.log(name);</code></em> //undefined<br /><br />Or When functions don\'t have a return statement but are called for assigning a<br />value to a variable.<br /><br /></pre>
 <pre id="d923" class="graf graf--pre graf-after--p"><em><code class="markup--code markup--pre-code">let add = (a,b) =&gt; {<br />  let c = a+b;<br />  //return c;<br />}</code></em></pre>
 <pre id="612d" class="graf graf--pre graf-after--pre"><em><code class="markup--code markup--pre-code">let sum = add(2,3);</code></em></pre>
-<pre class="graf graf--pre graf-after--pre"><em><code class="markup--code markup--pre-code">console.log(sum); <br />//Output:</code></em><code class="markup--code markup--pre-code"> undefined</code><em><br /><br /><br /></em><strong>Null</strong><br /><code class="markup--code markup--p-code"><em class="markup--em markup--p-em">null</em></code>&nbsp;is a reserved keyword in javascript. We can assign a null value to a variable <br />explicitly using the keyword&nbsp;<code class="markup--code markup--p-code">null</code>. Null essentially represents a non-existent or <br />an empty value i.e. we explicitly tell javascript interpreter that the variable <br />has no value.<br /><br /><em><code class="markup--code markup--pre-code">let life = null;<br />console.log(life); //null<br /></code></em></pre>
-<pre class="graf graf--pre graf-after--pre"><strong>Not defined</strong><br />A not defined is a variable which is not declared at a given point of time with<br />declaration keyword like var, let or const.<br /><br /></pre>
+<pre class="graf graf--pre graf-after--pre"><em><code class="markup--code markup--pre-code">console.log(sum); <br />//Output:</code></em><code class="markup--code markup--pre-code"> undefined</code><em><br /><br /></em><strong>Null</strong><br /><code class="markup--code markup--p-code"><em class="markup--em markup--p-em">null</em></code>&nbsp;is a reserved keyword in javascript. We can assign a null value to a variable <br />explicitly using the keyword&nbsp;<code class="markup--code markup--p-code">null</code>. Null essentially represents a non-existent or <br />an empty value i.e. we explicitly tell javascript interpreter that the variable <br />has no value.<br /><br /><em><code class="markup--code markup--pre-code">let life = null;<br />console.log(life); //null<br /></code></em></pre>
+<pre class="graf graf--pre graf-after--pre"><strong>Not defined</strong><br />A not defined is a variable which is not declared at a given point of time with<br />declaration keyword like var, let or const.</pre>
 <pre id="19de" class="graf graf--pre graf-after--p"><em><code class="markup--code markup--pre-code">console.log(b);<br />b = 5;<br />//Output:- "ReferenceError: b is not defined</code></em></pre>
 <pre id="32eb" class="graf graf--pre graf-after--pre"><br /><br /></pre>
             </pre></html>
@@ -720,57 +704,66 @@
             <![CDATA[<html><pre style="text-align:center">
             <p>The difference is scoping.&nbsp;<code>var</code>&nbsp;is scoped to the nearest function block and&nbsp;<code>let</code>&nbsp;is scoped to the nearest&nbsp;<em>enclosing</em>&nbsp;block, which can be smaller than a function block. Both are global if outside any block.</p>
 <p>Also, variables declared with&nbsp;<code>let</code>&nbsp;are not accessible before they are declared in their enclosing block. As seen in the demo, this will throw a ReferenceError exception.</p>
-<h3>Global:</h3>
+<p><strong>Global</strong>:</p>
 <p>They are very similar when used like this outside a function block.</p>
-<pre class="lang-js prettyprint prettyprinted"><em><code><span class="kwd">let</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'go'</span><span class="pun">;</span>  <span class="com">// globally scoped</span>
-<span class="kwd">var</span><span class="pln"> i </span><span class="pun">=</span> <span class="str">'able'</span><span class="pun">;</span> <span class="com">// globally scoped</span></code></em></pre>
+<div>
+<div><em>let me = 'go'; // globally scoped</em></div>
+<div><em>var i = 'able'; // globally scoped</em></div>
+</div>
 <p>However, global variables defined with&nbsp;<code>let</code>&nbsp;will not be added as properties on the global&nbsp;<code>window</code>object like those defined with&nbsp;<code>var</code>.</p>
-<pre class="lang-js prettyprint prettyprinted"><em><code><span class="pln">console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">window</span><span class="pun">.</span><span class="pln">me</span><span class="pun">);</span> <span class="com">// undefined</span><span class="pln">
-console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">window</span><span class="pun">.</span><span class="pln">i</span><span class="pun">);</span> <span class="com">// 'able'</span></code></em></pre>
-<h3>Function:</h3>
+<div>
+<div><em>console.log(window.me); // undefined</em></div>
+<div><em>console.log(window.i); // 'able'</em></div>
+</div>
+<p><strong>Function</strong>:</p>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
 <p>They are identical when used like this in a function block.</p>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
-<pre class="lang-js prettyprint prettyprinted"><em><code><span class="kwd">function</span><span class="pln"> ingWithinEstablishedParameters</span><span class="pun">()</span> <span class="pun">{</span>
-    <span class="kwd">let</span><span class="pln"> terOfRecommendation </span><span class="pun">=</span> <span class="str">'awesome worker!'</span><span class="pun">;</span> <span class="com">//function block scoped</span>
-    <span class="kwd">var</span><span class="pln"> sityCheerleading </span><span class="pun">=</span> <span class="str">'go!'</span><span class="pun">;</span> <span class="com">//function block scoped</span>
-<span class="pun">}</span></code></em></pre>
+<div>
+<div><em>function ingWithinEstablishedParameters() {</em></div>
+<div><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let terOfRecommendation = 'awesome worker!'; //function block scoped</em></div>
+<div><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var sityCheerleading = 'go!'; //function block scoped</em></div>
+<div><em>}</em></div>
+</div>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
-<h3>Block:</h3>
+<p><strong>Block</strong>:</p>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
-<p>Here is the difference.&nbsp;<code>let</code>&nbsp;is only visible in the&nbsp;<code>for()</code>&nbsp;loop and&nbsp;<code>var</code>&nbsp;is visible to the whole function.</p>
+<p>Here is the difference.&nbsp;<code>let</code>&nbsp;is only visible in the&nbsp;<code>for()</code>&nbsp;loop and&nbsp;<code>var</code>&nbsp;is visible to the whole function.<code></code></p>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
-<pre class="lang-js prettyprint prettyprinted"><code><span class="kwd"><em>function</em></span><em><span class="pln"> allyIlliterate</span><span class="pun">()</span> <span class="pun">{</span>
-    <span class="com">//tuce is *not* visible out here</span>
-
-    <span class="kwd">for</span><span class="pun">(</span> <span class="kwd">let</span><span class="pln"> tuce </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> tuce </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> tuce</span><span class="pun">++</span> <span class="pun">)</span> <span class="pun">{</span>
-        <span class="com">//tuce is only visible in here (and in the for() parentheses)</span>
-        <span class="com">//and there is a separate tuce variable for each iteration of the loop</span>
-    <span class="pun">}</span>
-
-    <span class="com">//tuce is *not* visible out here</span>
-<span class="pun">}</span>
-
-<span class="kwd">function</span><span class="pln"> byE40</span><span class="pun">()</span> <span class="pun">{</span>
-    <span class="com">//nish *is* visible out here</span>
-
-    <span class="kwd">for</span><span class="pun">(</span> <span class="kwd">var</span><span class="pln"> nish </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln"> nish </span><span class="pun">&lt;</span> <span class="lit">5</span><span class="pun">;</span><span class="pln"> nish</span><span class="pun">++</span> <span class="pun">)</span> <span class="pun">{</span>
-        <span class="com">//nish is visible to the whole function</span>
-    <span class="pun">}</span>
-
-    <span class="com">//nish *is* visible out here</span>
-<span class="pun">}<br /><br /></span></em></code></pre>
-<h3>Redeclaration:</h3>
+<div>
+<div><em>function allyIlliterate() {</em></div>
+<div><em>&nbsp; &nbsp; &nbsp;//tuce is *not* visible out here</em></div>
+<br />
+<div><em>for( let tuce = 0; tuce &lt; 5; tuce++ ) {</em></div>
+<div><em>&nbsp; &nbsp; //tuce is only visible in here (and in the for() parentheses)</em></div>
+<div><em>&nbsp; &nbsp;//and there is a separate tuce variable for each iteration of the loop</em></div>
+<div><em>}</em></div>
+<br />
+<div><em>&nbsp; &nbsp;//tuce is *not* visible out here</em></div>
+<div><em>}</em></div>
+<br />
+<div><em>function byE40() {</em></div>
+<div><em>&nbsp; &nbsp;//nish *is* visible out here</em></div>
+<br />
+<div><em>for( var nish = 0; nish &lt; 5; nish++ ) {</em></div>
+<div><em>&nbsp; &nbsp;//nish is visible to the whole function</em></div>
+<div><em>}</em></div>
+<br />
+<div><em>&nbsp; //nish *is* visible out here</em></div>
+<div><em>}</em></div>
+</div>
+<p><strong>Redeclaration</strong>:</p>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
 <p>Assuming strict mode,&nbsp;<code>var</code>&nbsp;will let you re-declare the same variable in the same scope. On the other hand,&nbsp;<code>let</code>&nbsp;will not:</p>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
-<pre class="lang-js prettyprint prettyprinted"><em><code><span class="str">'use strict'</span><span class="pun">;</span>
-<span class="kwd">let</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'foo'</span><span class="pun">;</span>
-<span class="kwd">let</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'bar'</span><span class="pun">;</span> <span class="com">// SyntaxError: Identifier 'me' has already been declared</span></code></em></pre>
-<pre class="lang-js prettyprint prettyprinted"><em><code></code></em></pre>
-<pre class="lang-js prettyprint prettyprinted"><em><code><span class="str">'use strict'</span><span class="pun">;</span>
-<span class="kwd">var</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'foo'</span><span class="pun">;</span>
-<span class="kwd">var</span><span class="pln"> me </span><span class="pun">=</span> <span class="str">'bar'</span><span class="pun">;</span> <span class="com">// No problem, `me` is replaced.</span></code></em></pre>
+<div>
+<div><em>'use strict';</em></div>
+<div><em>let me = 'foo';</em></div>
+<div><em>let me = 'bar'; // SyntaxError: Identifier 'me' has already been declared'use strict';</em></div>
+<div>&nbsp;</div>
+<div><em>var me = 'foo';</em></div>
+<div><em>var me = 'bar'; // No problem, `me` is replaced.</em></div>
+</div>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
 <pre class="lang-js prettyprint prettyprinted"><code></code></pre>
             </pre></html>
@@ -846,58 +839,141 @@ console</span><span class="pun">.</span><span class="pln">log</span><span class=
             </pre></html>
             ]]>
         </item>
-
+        <!--What does typeof operator do? what is the difference between typeof and instanceof-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>The operator <strong>typeof</strong> gives the type of a variable/data available in it. The typeof operator can be used on Reference data types also.</p>
+<p>The <strong>typeof</strong> operator returns a string of what type the operand is. Whereas, the <strong>instanceof</strong> operator does not work with primitive data types; but works with objects and checks on what type the object is.</p>
             </pre></html>
             ]]>
         </item>
+        <!--Are typescript and javasript the same-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Typescript is a modern age Javascript development language. It is a statically compiled language to write clear and simple Javascript code. It can be run on Node js or any browser which supports ECMAScript 3 or newer versions.</p>
+<p>Typescript provides optional static typing, classes, and interface. For a large JavaScript project adopting Typescript can bring you more robust software and easily deployable with a regular JavaScript application.</p>
+<p><strong>Difference between TypeScript and JavaScript:</strong></p>
+<p>- TypesScript is known as Object oriented programming language whereas JavaScript is a scripting language.</p>
+<p>- TypeScript has a feature known as Static typing but JavaScript does not have this feature.</p>
+<p>- TypeScript gives support for modules whereas JavaScript does not support modules.</p>
+<p>- TypeScript has Interface but JavaScript does not have Interface.</p>
+<p>- TypeScript support optional parameter function but JavaScript does not support optional parameter function.</p>
+<p>You can get a good understanding of Typescript <a href="https://channel9.msdn.com/posts/Anders-Hejlsberg-Introducing-TypeScript">here</a>.</p>
+<p>&nbsp;</p>
             </pre></html>
             ]]>
         </item>
+        <!--Name some of js frameworks-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Some of the Javascript frameworks are;&nbsp;</p>
+<p>- Jquery</p>
+<p>- React&nbsp;</p>
+<p>- Angular</p>
+<p>- Node</p>
+<p>- Protractor</p>
             </pre></html>
             ]]>
         </item>
+        <!--what are self executing functions-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>These functions are executed right after its definition. &nbsp;Also called as Immediately Invoked Function Expressions (IIFE's).&nbsp;</p>
+<p><strong>Example</strong>:</p>
+<div>
+<div><em>(function(){</em></div>
+<div><em>&nbsp; &nbsp; var foo = 3;</em></div>
+<div><em>&nbsp; &nbsp; alert(foo);</em></div>
+<div><em>})();</em></div>
+<br />
+<div><em>alert(foo); </em></div>
+</div>
             </pre></html>
             ]]>
         </item>
+        <!--what is the use of the this keyword-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>The JavaScript&nbsp;<code class="w3-codespan">this</code>&nbsp;keyword refers to the object it belongs to.</p>
+<div class="w3-panel w3-note">
+<p>It has different values depending on where it is used:</p>
+<p>- In a method, <code class="w3-codespan">this</code>&nbsp;refers to the&nbsp;<strong>owner object</strong>.</p>
+<p>- Alone, <code class="w3-codespan">this</code>&nbsp;refers to the&nbsp;<strong>global object</strong>.</p>
+<p>- In a function, <code class="w3-codespan">this</code>&nbsp;refers to the&nbsp;<strong>global object</strong>.</p>
+<p>- In a function, in strict mode, <code class="w3-codespan">this</code>&nbsp;is&nbsp;<code class="w3-codespan">undefined</code>.</p>
+<p>- In an event, <code class="w3-codespan">this</code>&nbsp;refers to the&nbsp;<strong>element</strong>&nbsp;that received the event.</p>
+<p>- Methods like <code class="w3-codespan">call()</code>, and&nbsp;<code class="w3-codespan">apply()</code>&nbsp;can refer&nbsp;<code class="w3-codespan">this</code>&nbsp;to&nbsp;<strong>any object</strong>.</p>
+<p>&nbsp;</p>
+</div>
             </pre></html>
             ]]>
         </item>
+        <!--what is the difference between window and doc-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>Javascript window is a global object which holds variables, functions, history, location; the document also comes under the window and can be considered as the property of the window.</p>
             </pre></html>
             ]]>
         </item>
+        <!--what is the significance of and reason for -->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p>This is an increasingly common practice, employed by many popular JavaScript libraries (jQuery, Node.js, etc.). This technique creates a closure around the entire contents of the file which, perhaps most importantly, creates a private namespace and thereby helps avoid potential name clashes between different JavaScript modules and libraries.</p>
+<p>Another feature of this technique is to allow for an easily referenceable (presumably shorter) alias for a global variable. This is often used, for example, in jQuery plugins. jQuery allows you to disable the&nbsp;<code>$</code>&nbsp;reference to the jQuery namespace, using&nbsp;<code>jQuery.noConflict()</code>. If this has been done, your code can still use&nbsp;<code>$</code>&nbsp;employing this closure technique, as follows:</p>
+<pre><em><code>(function($) { /* jQuery plugin code referencing $ */ } )(jQuery);</code></em></pre>
             </pre></html>
             ]]>
         </item>
+        <!--how do you clone an obj-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <pre><em><code class="language-js"></code></em></pre>
+<div>
+<div><em>var obj = {a: 1 ,b: 2}</em></div>
+<div><em>var objclone = Object.assign({},obj);</em></div>
+</div>
+<p>Now the value of objclone is&nbsp;<code>{a: 1 ,b: 2}</code>&nbsp;but points to a different object than&nbsp;<code>obj</code>.</p>
+<p>Note the potential pitfall, though:&nbsp;<code>Object.clone()</code>&nbsp;will just do a shallow copy,&nbsp;<em>not</em>&nbsp;a deep copy. This means that nested objects aren&rsquo;t copied. They still refer to the same nested objects as the original:<em><code class="language-js"></code></em></p>
+<div>
+<div><em>let obj = {</em></div>
+<div><em>&nbsp; &nbsp;a: 1,</em></div>
+<div><em>&nbsp; &nbsp;b: 2,</em></div>
+<div><em>&nbsp; &nbsp;c: {</em></div>
+<div><em>&nbsp; &nbsp; &nbsp; &nbsp;age: 30</em></div>
+<div><em>&nbsp; &nbsp; &nbsp; }</em></div>
+<div><em>};</em></div>
+<br />
+<div><em>var objclone = Object.assign({},obj);</em></div>
+<div><em>console.log('objclone: ', objclone);</em></div>
+<br />
+<div><em>obj.c.age = 45;</em></div>
+<div><em>console.log('After Change - obj: ', obj); // 45 - This also changes</em></div>
+<div><em>console.log('After Change - objclone: ', objclone); // 45</em></div>
+</div>
+<pre><code class="language-js"></code></pre>
             </pre></html>
             ]]>
         </item>
+        <!--what is the difference between viewstate and session state-->
         <item>
             <![CDATA[<html><pre style="text-align:center">
-
+            <p align="left"><strong>Session State</strong>&nbsp;contains information that is pertaining to a specific session (by a particular client/browser/machine) with the server. It's a way to track what the user is doing on the site..&nbsp;<strong>across multiple pages</strong>...amid the statelessness of the Web. e.g. the contents of a particular user's shopping cart is session data. Cookies can be used for session state.<br /><strong>View State</strong>&nbsp;on the other hand is information specific to particular web page. It is stored in a hidden field so that it isn't visible to the user. It is used to maintain the user's illusion that the page remembers what he did on it the last time - dont give him a clean page every time he posts back.&nbsp;</p>
+<p align="left"><a href="http://msdn.microsoft.com/en-us/library/ms972976.aspx" rel="noreferrer">Check this page for more</a>.</p>
+            </pre></html>
+            ]]>
+        </item>
+        <!--how are event handlers utilised-->
+        <item>
+            <![CDATA[<html><pre style="text-align:center">
+            <p align="left"><strong>For example:</strong></p>
+<div class="line number1 index0 alt2"><em><code class="js plain">&lt;a href=</code><code class="js string">"<a href="http://google.com/">http://google.com</a>"</code> <code class="js plain">onClick=</code><code class="js string">"alert('hello!')"</code><code class="js plain">&gt;Google&lt;/a&gt;</code></em></div>
+<pre>As you can, this is certainly unlike a regular JavaScript code in that here we're inserting it directly inside a HTML tag, via the onClick event handler. When the above link is clicked, the user will first see an alert message before being taken to Google.</pre>
+<p>Different event handlers with with different HTML tags. For example, while "onclick" can be inserted into most HTML tags to respond to that tag's onclick action, something like "onload" (see below) only works inside the &lt;body&gt; and &lt;img&gt; tags. Below are some of the most commonly used event handlers supported by JavaScript:</p>
+<p>- onClick</p>
+<p>- onLoad</p>
+<p>- onMouseOver</p>
+<p>- onMouseOut</p>
+<p>- onUnload</p>
             </pre></html>
             ]]>
         </item>
