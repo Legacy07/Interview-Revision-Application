@@ -107,7 +107,6 @@ public class DataStructuresAnswers extends Fragment implements View.OnClickListe
                 manager.beginTransaction().replace(R.id.content_layout, dataStructures).addToBackStack(null).commit();
                 break;
         }
-
     }
 
     @Override

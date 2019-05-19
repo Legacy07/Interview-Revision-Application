@@ -131,9 +131,29 @@
         </item>
         <!--Arrays - Summing Elements of an Array-->
         <item>
-            <![CDATA[<html><pre style="text-align:center">
-            <pre><em>public class ArraySum{</em><br /><br /><em>public static void main(String[] args) {</em><br /><em>//Instantiating array</em><br /><em>long[] a = new long[1001];</em><br /><em>long sum;</em><br /><em>int i, numbers;</em><br /><em>numbers = 1000;</em><br /><em>// initialise the array a using the loop counter</em><br /><em>for (i = 1; i &lt;= numbers; i++) {</em><br /><em>a[i] = (long) i;</em><br /><em>}</em><br /><em>sum = 0;</em><br /><em>for (i = 1; i &lt;= numbers; i++) {</em><br /><em>// do summation</em><br /><em>sum = sum + a[i];</em><br /><em>}</em><br /><em>System.out.print("Sum of numbers between 1 and " + numbers + " is " + sum);</em><br /><em>}}</em><br /><br /><strong>Output</strong>: Sum of numbers between 1 and 1000 is 500500</pre>
-            </pre></html>
+           <![CDATA[
+<font face="monospace">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;ArraySum {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">static</font>&nbsp;<font color="#00ff00">void</font>&nbsp;main(String[]&nbsp;args)&nbsp;{<br>
+<font color="#ffff00">//Instantiating array</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">long</font>[]&nbsp;a =&nbsp;<font color="#00ffff"><b>new</b></font>&nbsp;<font color="#00ff00">long</font>[<font color="#ff40ff">1001</font>];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">long</font>&nbsp;sum;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">int</font>&nbsp;i, numbers;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numbers =&nbsp;<font color="#ff40ff">1000</font>;<br>
+<font color="#ffff00">// initialise the array a using the loop counter</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ffff"><b>for</b></font>&nbsp;(i =&nbsp;<font color="#ff40ff">1</font>; i &lt;= numbers; i++)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a[i]&nbsp;=&nbsp;(<font color="#00ff00">long</font>)&nbsp;i;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum =&nbsp;<font color="#ff40ff">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ffff"><b>for</b></font>&nbsp;(i =&nbsp;<font color="#ff40ff">1</font>; i &lt;= numbers; i++)&nbsp;{<br>
+<font color="#ffff00">// do summation</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + a[i];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(<font color="#ff40ff">&quot;Sum of numbers between 1 and &quot;</font>&nbsp;+ numbers +&nbsp;<font color="#ff40ff">&quot; is &quot;</font>&nbsp;+ sum);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+</font>
             ]]>
         </item>
         <!--Arrays - Find the Mean of a set of number-->

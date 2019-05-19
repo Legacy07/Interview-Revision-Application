@@ -28,9 +28,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="10dp"
             android:textIsSelectable="true"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorDarkGray"
+            android:padding="2dp"
             android:textSize="@dimen/text_size"
             android:fontFamily="@font/poppins"
             />

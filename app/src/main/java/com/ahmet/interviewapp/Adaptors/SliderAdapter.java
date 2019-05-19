@@ -1,9 +1,11 @@
 package com.ahmet.interviewapp.Adaptors;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.text.Html;
+import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -17,6 +19,9 @@ import com.ahmet.interviewapp.Models.Questions;
 import com.ahmet.interviewapp.Models.Answers;
 import com.ahmet.interviewapp.R;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class SliderAdapter extends PagerAdapter {
